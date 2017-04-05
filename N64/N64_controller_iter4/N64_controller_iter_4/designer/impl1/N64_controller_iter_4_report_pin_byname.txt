@@ -1,0 +1,21 @@
+*****************************************************************
+Pin Report - Date: Tue Apr 04 17:20:28 2017 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.7 SP1.1
+Version: 11.7.1.14
+Design Name: N64_controller_iter_4
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+*****************************************************************
+Port           |Pin |Fixed |Function           |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+---------------|----|------|-------------------|--------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
+data_line       J19  Yes    GCA0/IO28NDB1V0     LVTTL    12                 High  None           No               No    35                No           No
+LED_test[0]     B19  Yes    GBB0/IO18NDB0V0     LVTTL    12                 High  None           ---              No    35                No           No
+LED_test[1]     B20  Yes    GBB1/IO18PDB0V0     LVTTL    12                 High  None           ---              No    35                No           No
+monitor_sig[0]  E3   Yes    GFA2/IO68PDB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+monitor_sig[1]  F3   Yes    GFB2/IO68NDB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+monitor_sig[2]  G4   Yes    GFC1/IO66PPB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+sigout          J20  Yes    GCA1/IO28PDB1V0     LVTTL    12                 High  None           ---              No    35                No           No
+UART_0_RXD      U18  Yes    UART_0_RXD/GPIO_21  LVTTL    ---                ---   None           No               ---   ---               No           Yes
+UART_0_TXD      Y22  Yes    UART_0_TXD/GPIO_20  LVTTL    8                  High  None           ---              No    35                No           Yes

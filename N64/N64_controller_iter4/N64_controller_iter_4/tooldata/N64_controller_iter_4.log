@@ -1,0 +1,16 @@
+Project Name: N64_controller_iter_4
+Location: N:\eecs373\project\N64\N64_controller_iter4\N64_controller_iter_4
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : A2F200M3F-FG484
+Family         : SmartFusion
+Die            : A2F200M3F
+Package        : 484 FBGA
+Speed          : STD
+Core Voltage   : 1.5
+Range          : COM

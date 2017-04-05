@@ -1,0 +1,629 @@
+Timing Report Min Delay Analysis
+
+SmartTime Version v11.7 SP1.1
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
+Date: Tue Apr 04 17:20:38 2017
+
+
+Design: N64_controller_iter_4
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               mss_aclk
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_fabric_interface_clock
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       40.000
+Required Frequency (MHz):   25.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_pclk1
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_ccc_gla0
+Period (ns):                12.500
+Frequency (MHz):            80.000
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_ccc_glb
+Period (ns):                25.432
+Frequency (MHz):            39.321
+Required Period (ns):       40.000
+Required Frequency (MHz):   25.000
+External Setup (ns):        -1.432
+External Hold (ns):         2.314
+Min Clock-To-Out (ns):      5.245
+Max Clock-To-Out (ns):      15.913
+
+Clock Domain:               N64_controller_iter_4_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+                            Input to Output
+Min Delay (ns):             N/A
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain mss_aclk
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+No Path
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_fabric_interface_clock
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+No Path
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_pclk1
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+No Path
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla0
+
+Info: The maximum frequency of this clock domain is limited by the period of pin N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+No Path
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_glb
+
+SET Register to Register
+
+Path 1
+  From:                        controller_interface_0/sync_data_line[1]:CLK
+  To:                          controller_interface_0/controller_data_accumulator[30]:D
+  Delay (ns):                  0.395
+  Slack (ns):                  0.376
+  Arrival (ns):                3.906
+  Required (ns):               3.530
+  Hold (ns):                   0.000
+
+Path 2
+  From:                        controller_interface_0/next_state[2]:CLK
+  To:                          controller_interface_0/state[2]:D
+  Delay (ns):                  0.395
+  Slack (ns):                  0.378
+  Arrival (ns):                3.898
+  Required (ns):               3.520
+  Hold (ns):                   0.000
+
+Path 3
+  From:                        controller_interface_0/next_state[1]:CLK
+  To:                          controller_interface_0/state[1]:D
+  Delay (ns):                  0.395
+  Slack (ns):                  0.378
+  Arrival (ns):                3.898
+  Required (ns):               3.520
+  Hold (ns):                   0.000
+
+Path 4
+  From:                        controller_interface_0/controller_data_accumulator[6]:CLK
+  To:                          controller_interface_0/controller_data_1[6]:D
+  Delay (ns):                  0.421
+  Slack (ns):                  0.395
+  Arrival (ns):                3.924
+  Required (ns):               3.529
+  Hold (ns):                   0.000
+
+Path 5
+  From:                        controller_interface_0/controller_data_accumulator[7]:CLK
+  To:                          controller_interface_0/controller_data_1[7]:D
+  Delay (ns):                  0.421
+  Slack (ns):                  0.401
+  Arrival (ns):                3.949
+  Required (ns):               3.548
+  Hold (ns):                   0.000
+
+
+Expanded Path 1
+  From: controller_interface_0/sync_data_line[1]:CLK
+  To: controller_interface_0/controller_data_accumulator[30]:D
+  data arrival time                              3.906
+  data required time                         -   3.530
+  slack                                          0.376
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_glb
+               +     0.000          Clock source
+  0.000                        N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLB (r)
+               +     3.211          Clock generation
+  3.211
+               +     0.000          net: N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/GLB_INT
+  3.211                        N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE2:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  3.211                        N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE2:PIN5 (r)
+               +     0.300          net: FAB_CLK
+  3.511                        controller_interface_0/sync_data_line[1]:CLK (r)
+               +     0.249          cell: ADLIB:DFN1
+  3.760                        controller_interface_0/sync_data_line[1]:Q (r)
+               +     0.146          net: controller_interface_0/sync_data_line[1]
+  3.906                        controller_interface_0/controller_data_accumulator[30]:D (r)
+                                    
+  3.906                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  0.000                        mss_ccc_glb
+               +     0.000          Clock source
+  0.000                        N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLB (r)
+               +     3.211          Clock generation
+  3.211
+               +     0.000          net: N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/GLB_INT
+  3.211                        N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE2:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  3.211                        N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE2:PIN5 (r)
+               +     0.319          net: FAB_CLK
+  3.530                        controller_interface_0/controller_data_accumulator[30]:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1E1
+  3.530                        controller_interface_0/controller_data_accumulator[30]:D
+                                    
+  3.530                        data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+Path 1
+  From:                        data_line
+  To:                          controller_interface_0/sync_data_line[0]:D
+  Delay (ns):                  1.257
+  Slack (ns):
+  Arrival (ns):                1.257
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          2.314
+
+
+Expanded Path 1
+  From: data_line
+  To: controller_interface_0/sync_data_line[0]:D
+  data arrival time                              1.257
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        data_line (f)
+               +     0.000          net: data_line
+  0.000                        data_line_pad/U0/U0:PAD (f)
+               +     0.277          cell: ADLIB:IOPAD_BI
+  0.277                        data_line_pad/U0/U0:Y (f)
+               +     0.000          net: data_line_pad/U0/NET3
+  0.277                        data_line_pad/U0/U1:YIN (f)
+               +     0.017          cell: ADLIB:IOBI_IB_OB_EB
+  0.294                        data_line_pad/U0/U1:Y (f)
+               +     0.963          net: data_line_in
+  1.257                        controller_interface_0/sync_data_line[0]:D (f)
+                                    
+  1.257                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_glb
+               +     0.000          Clock source
+  N/C                          N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLB (r)
+               +     3.211          Clock generation
+  N/C
+               +     0.000          net: N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/GLB_INT
+  N/C                          N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE2:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  N/C                          N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE2:PIN5 (r)
+               +     0.360          net: FAB_CLK
+  N/C                          controller_interface_0/sync_data_line[0]:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1
+  N/C                          controller_interface_0/sync_data_line[0]:D
+
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        controller_interface_0/temp:CLK
+  To:                          sigout
+  Delay (ns):                  1.740
+  Slack (ns):
+  Arrival (ns):                5.245
+  Required (ns):
+  Clock to Out (ns):           5.245
+
+Path 2
+  From:                        controller_interface_0/monitor_sig[1]:CLK
+  To:                          monitor_sig[1]
+  Delay (ns):                  1.748
+  Slack (ns):
+  Arrival (ns):                5.259
+  Required (ns):
+  Clock to Out (ns):           5.259
+
+Path 3
+  From:                        controller_interface_0/request_data:CLK
+  To:                          data_line
+  Delay (ns):                  2.121
+  Slack (ns):
+  Arrival (ns):                5.622
+  Required (ns):
+  Clock to Out (ns):           5.622
+
+Path 4
+  From:                        controller_interface_0/monitor_sig[0]:CLK
+  To:                          monitor_sig[0]
+  Delay (ns):                  2.244
+  Slack (ns):
+  Arrival (ns):                5.744
+  Required (ns):
+  Clock to Out (ns):           5.744
+
+Path 5
+  From:                        controller_interface_0/LED_test[0]:CLK
+  To:                          LED_test[0]
+  Delay (ns):                  2.411
+  Slack (ns):
+  Arrival (ns):                5.903
+  Required (ns):
+  Clock to Out (ns):           5.903
+
+
+Expanded Path 1
+  From: controller_interface_0/temp:CLK
+  To: sigout
+  data arrival time                              5.245
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_glb
+               +     0.000          Clock source
+  0.000                        N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLB (r)
+               +     3.211          Clock generation
+  3.211
+               +     0.000          net: N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/GLB_INT
+  3.211                        N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE2:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  3.211                        N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE2:PIN5 (r)
+               +     0.294          net: FAB_CLK
+  3.505                        controller_interface_0/temp:CLK (r)
+               +     0.249          cell: ADLIB:DFN1E0
+  3.754                        controller_interface_0/temp:Q (r)
+               +     0.146          net: sigout_c
+  3.900                        sigout_pad/U0/U1:D (r)
+               +     0.257          cell: ADLIB:IOTRI_OB_EB
+  4.157                        sigout_pad/U0/U1:DOUT (r)
+               +     0.000          net: sigout_pad/U0/NET1
+  4.157                        sigout_pad/U0/U0:D (r)
+               +     1.088          cell: ADLIB:IOPAD_TRI
+  5.245                        sigout_pad/U0/U0:PAD (r)
+               +     0.000          net: sigout
+  5.245                        sigout (r)
+                                    
+  5.245                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_glb
+               +     0.000          Clock source
+  N/C                          N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLB (r)
+               +     3.211          Clock generation
+  N/C
+                                    
+  N/C                          sigout (r)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+No Path
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain N64_controller_iter_4_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+No Path
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+
