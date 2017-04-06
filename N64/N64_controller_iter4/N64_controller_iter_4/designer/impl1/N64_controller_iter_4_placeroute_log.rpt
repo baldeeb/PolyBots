@@ -10,7 +10,7 @@ Opened an existing Libero design N64_controller_iter_4.adb.
 'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
 'IDE_DESIGNERVIEW_REVNUM0' set to '1'
 'IDE_DESIGNERVIEW_ROOTDIR' set to
-'N:\eecs373\project\N64\N64_controller_iter4\N64_controller_iter_4\designer'
+'N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 ***** Layout Variables *********************************************
 
@@ -34,16 +34,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Tue Apr 04 17:19:37 2017
+Timing-driven Placer Started: Thu Apr 06 10:00:10 2017
 
-Placer Finished: Tue Apr 04 17:20:00 2017
-Total Placer CPU Time:     00:00:23
+Placer Finished: Thu Apr 06 10:00:35 2017
+Total Placer CPU Time:     00:00:25
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: N64_controller_iter_4           Started: Tue Apr 04 17:20:06 2017
+Design: N64_controller_iter_4           Started: Thu Apr 06 10:00:41 2017
 
  
 Iterative improvement...
@@ -51,9 +51,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: N64_controller_iter_4           
-Finished: Tue Apr 04 17:20:23 2017
-Total CPU Time:     00:00:16            Total Elapsed Time: 00:00:17
-Total Memory Usage: 187.1 Mbytes
+Finished: Thu Apr 06 10:01:03 2017
+Total CPU Time:     00:00:20            Total Elapsed Time: 00:00:22
+Total Memory Usage: 186.7 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
@@ -61,7 +61,7 @@ Finished loading the Timing data.
 TIMER: Max delay timing requirements have been met.
 TIMER: Min delay timing requirements have been met.
 
-The Layout command succeeded ( 00:00:55 )
+The Layout command succeeded ( 00:01:02 )
 Wrote status report to file: N64_controller_iter_4_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -81,9 +81,9 @@ Wrote pin report to file: N64_controller_iter_4_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
 Design saved to file
-N:\eecs373\project\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller\
-_iter_4.adb.
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controlle\
+r_iter_4.adb.
 
-The Execute Script command succeeded ( 00:01:01 )
+The Execute Script command succeeded ( 00:01:09 )
 Design closed.
 

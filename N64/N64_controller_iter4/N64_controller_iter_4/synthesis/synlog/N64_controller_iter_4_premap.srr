@@ -4,19 +4,19 @@ Product Version J-2015.03M-SP1-2
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
-Reading constraint file: N:\eecs373\project\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc
-@L: N:\eecs373\project\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4_scck.rpt 
-Printing clock  summary report in "N:\eecs373\project\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4_scck.rpt" file 
+Reading constraint file: N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc
+@L: N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4_scck.rpt 
+Printing clock  summary report in "N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled 
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 104MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
 
 
 
@@ -31,12 +31,14 @@ FCLK        25.0 MHz      40.000        declared     clk_group_0
 ================================================================
 
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file N:\eecs373\project\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap.
+@W: MO111 :|Tristate driver CoreAPB3_0_APBmslave0_PREADY_t on net CoreAPB3_0_APBmslave0_PREADY has its enable tied to GND (module N64_controller_iter_4) 
+@W: MO111 :|Tristate driver CoreAPB3_0_APBmslave0_PSLVERR_t on net CoreAPB3_0_APBmslave0_PSLVERR has its enable tied to GND (module N64_controller_iter_4) 
+@N: BN225 |Writing default property annotation file N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap.
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 113MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 50MB peak: 114MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Apr 04 17:18:56 2017
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Thu Apr 06 09:59:32 2017
 
 ###########################################################]

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Apr 04 16:48:22 2017
+// Created by SmartDesign Thu Apr 06 09:54:38 2017
 // Version: v11.7 SP1 11.7.1.14
 //////////////////////////////////////////////////////////////////////
 
@@ -8,49 +8,85 @@
 // N64_controller_iter_4_MSS
 module N64_controller_iter_4_MSS(
     // Inputs
+    MSSPRDATA,
+    MSSPREADY,
+    MSSPSLVERR,
+    MSS_RESET_N,
     UART_0_RXD,
     // Outputs
     FAB_CLK,
+    M2F_RESET_N,
+    MSSPADDR,
+    MSSPENABLE,
+    MSSPSEL,
+    MSSPWDATA,
+    MSSPWRITE,
     UART_0_TXD
 );
 
 //--------------------------------------------------------------------
 // Input
 //--------------------------------------------------------------------
-input  UART_0_RXD;
+input  [31:0] MSSPRDATA;
+input         MSSPREADY;
+input         MSSPSLVERR;
+input         MSS_RESET_N;
+input         UART_0_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
-output FAB_CLK;
-output UART_0_TXD;
+output        FAB_CLK;
+output        M2F_RESET_N;
+output [19:0] MSSPADDR;
+output        MSSPENABLE;
+output        MSSPSEL;
+output [31:0] MSSPWDATA;
+output        MSSPWRITE;
+output        UART_0_TXD;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
-wire   MSS_ADLIB_INST_EMCCLK;
-wire   MSS_ADLIB_INST_FCLK;
-wire   MSS_ADLIB_INST_MACCLK;
-wire   MSS_ADLIB_INST_MACCLKCCC;
-wire   MSS_ADLIB_INST_PLLLOCK;
-wire   MSS_ADLIB_INST_SYNCCLKFDBK;
-wire   MSS_UART_0_RXD_Y;
-wire   MSS_UART_0_TXD_D;
-wire   UART_0_RXD;
-wire   UART_0_TXD_net_0;
-wire   MSS_ADLIB_INST_SYNCCLKFDBK_net_0;
-wire   UART_0_TXD_net_1;
+wire          MSS_ADLIB_INST_EMCCLK;
+wire          MSS_ADLIB_INST_FCLK;
+wire          MSS_ADLIB_INST_MACCLK;
+wire          MSS_ADLIB_INST_MACCLKCCC;
+wire          MSS_ADLIB_INST_PLLLOCK;
+wire          MSS_ADLIB_INST_SYNCCLKFDBK;
+wire          MSS_RESET_0_MSS_RESET_N_Y;
+wire          MSS_RESET_N;
+wire          MSS_UART_0_RXD_Y;
+wire          MSS_UART_0_TXD_D;
+wire          net_71;
+wire   [19:0] net_72_PADDR;
+wire          net_72_PENABLE;
+wire   [31:0] MSSPRDATA;
+wire          MSSPREADY;
+wire          net_72_PSELx;
+wire          MSSPSLVERR;
+wire   [31:0] net_72_PWDATA;
+wire          net_72_PWRITE;
+wire          UART_0_RXD;
+wire          UART_0_TXD_net_0;
+wire          MSS_ADLIB_INST_SYNCCLKFDBK_net_0;
+wire          net_71_net_0;
+wire          net_72_PSELx_net_0;
+wire          net_72_PENABLE_net_0;
+wire          net_72_PWRITE_net_0;
+wire   [19:0] net_72_PADDR_net_0;
+wire   [31:0] net_72_PWDATA_net_0;
+wire          UART_0_TXD_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
-wire   GND_net;
-wire   VCC_net;
-wire   [1:0]DMAREADY_const_net_0;
-wire   [31:0]GPI_const_net_0;
-wire   [1:0]MACF2MRXD_const_net_0;
-wire   [1:0]MACRXD_const_net_0;
-wire   [15:0]EMCRDB_const_net_0;
-wire   [31:0]MSSPRDATA_const_net_0;
-wire   [31:0]FABPADDR_const_net_0;
-wire   [31:0]FABPWDATA_const_net_0;
+wire          GND_net;
+wire          VCC_net;
+wire   [1:0]  DMAREADY_const_net_0;
+wire   [31:0] GPI_const_net_0;
+wire   [1:0]  MACF2MRXD_const_net_0;
+wire   [1:0]  MACRXD_const_net_0;
+wire   [15:0] EMCRDB_const_net_0;
+wire   [31:0] FABPADDR_const_net_0;
+wire   [31:0] FABPWDATA_const_net_0;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -61,7 +97,6 @@ assign GPI_const_net_0       = 32'h00000000;
 assign MACF2MRXD_const_net_0 = 2'h0;
 assign MACRXD_const_net_0    = 2'h0;
 assign EMCRDB_const_net_0    = 16'h0000;
-assign MSSPRDATA_const_net_0 = 32'h00000000;
 assign FABPADDR_const_net_0  = 32'h00000000;
 assign FABPWDATA_const_net_0 = 32'h00000000;
 //--------------------------------------------------------------------
@@ -69,6 +104,18 @@ assign FABPWDATA_const_net_0 = 32'h00000000;
 //--------------------------------------------------------------------
 assign MSS_ADLIB_INST_SYNCCLKFDBK_net_0 = MSS_ADLIB_INST_SYNCCLKFDBK;
 assign FAB_CLK                          = MSS_ADLIB_INST_SYNCCLKFDBK_net_0;
+assign net_71_net_0                     = net_71;
+assign M2F_RESET_N                      = net_71_net_0;
+assign net_72_PSELx_net_0               = net_72_PSELx;
+assign MSSPSEL                          = net_72_PSELx_net_0;
+assign net_72_PENABLE_net_0             = net_72_PENABLE;
+assign MSSPENABLE                       = net_72_PENABLE_net_0;
+assign net_72_PWRITE_net_0              = net_72_PWRITE;
+assign MSSPWRITE                        = net_72_PWRITE_net_0;
+assign net_72_PADDR_net_0               = net_72_PADDR;
+assign MSSPADDR[19:0]                   = net_72_PADDR_net_0;
+assign net_72_PWDATA_net_0              = net_72_PWDATA;
+assign MSSPWDATA[31:0]                  = net_72_PWDATA_net_0;
 assign UART_0_TXD_net_1                 = UART_0_TXD_net_0;
 assign UART_0_TXD                       = UART_0_TXD_net_1;
 //--------------------------------------------------------------------
@@ -82,9 +129,9 @@ MSS_APB #(
         .ACT_PKG    ( "fg484" ) )
 MSS_ADLIB_INST(
         // Inputs
-        .MSSPRDATA      ( MSSPRDATA_const_net_0 ), // tied to 32'h00000000 from definition
-        .MSSPREADY      ( VCC_net ), // tied to 1'b1 from definition
-        .MSSPSLVERR     ( GND_net ), // tied to 1'b0 from definition
+        .MSSPRDATA      ( MSSPRDATA ),
+        .MSSPREADY      ( MSSPREADY ),
+        .MSSPSLVERR     ( MSSPSLVERR ),
         .FABPADDR       ( FABPADDR_const_net_0 ), // tied to 32'h00000000 from definition
         .FABPWDATA      ( FABPWDATA_const_net_0 ), // tied to 32'h00000000 from definition
         .FABPWRITE      ( GND_net ), // tied to 1'b0 from definition
@@ -140,7 +187,7 @@ MSS_ADLIB_INST(
         .RCOSC          ( GND_net ), // tied to 1'b0 from definition
         .MACCLK         ( MSS_ADLIB_INST_MACCLK ),
         .PLLLOCK        ( MSS_ADLIB_INST_PLLLOCK ),
-        .MSSRESETn      ( VCC_net ), // tied to 1'b1 from definition
+        .MSSRESETn      ( MSS_RESET_0_MSS_RESET_N_Y ),
         .SPI0DI         ( GND_net ), // tied to 1'b0 from definition
         .SPI0CLKI       ( GND_net ), // tied to 1'b0 from definition
         .SPI0SSI        ( GND_net ), // tied to 1'b0 from definition
@@ -204,18 +251,18 @@ MSS_ADLIB_INST(
         .GNDVAREF       ( GND_net ), // tied to 1'b0 from definition
         .PUn            ( GND_net ), // tied to 1'b0 from definition
         // Outputs
-        .MSSPADDR       (  ),
-        .MSSPWDATA      (  ),
-        .MSSPWRITE      (  ),
-        .MSSPSEL        (  ),
-        .MSSPENABLE     (  ),
+        .MSSPADDR       ( net_72_PADDR ),
+        .MSSPWDATA      ( net_72_PWDATA ),
+        .MSSPWRITE      ( net_72_PWRITE ),
+        .MSSPSEL        ( net_72_PSELx ),
+        .MSSPENABLE     ( net_72_PENABLE ),
         .FABPRDATA      (  ),
         .FABPREADY      (  ),
         .FABPSLVERR     (  ),
         .CALIBOUT       (  ),
         .MSSINT         (  ),
         .WDINT          (  ),
-        .M2FRESETn      (  ),
+        .M2FRESETn      ( net_71 ),
         .DEEPSLEEP      (  ),
         .SLEEP          (  ),
         .TXEV           (  ),
@@ -332,6 +379,17 @@ N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC MSS_CCC_0(
         .MSS_LOCK       ( MSS_ADLIB_INST_PLLLOCK ),
         .MAC_CLK_CCC    ( MSS_ADLIB_INST_MACCLKCCC ),
         .MAC_CLK_IO     ( MSS_ADLIB_INST_MACCLK ) 
+        );
+
+//--------INBUF_MSS
+INBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "R1" ) )
+MSS_RESET_0_MSS_RESET_N(
+        // Inputs
+        .PAD ( MSS_RESET_N ),
+        // Outputs
+        .Y   ( MSS_RESET_0_MSS_RESET_N_Y ) 
         );
 
 //--------INBUF_MSS

@@ -3,23 +3,23 @@ Version: 11.7.1.14
 Release: v11.7 SP1.1
 
 Info: The design
-      N:/eecs373/project/N64/N64_controller_iter4/N64_controller_iter_4/designer/impl1/N64_cont\
-      roller_iter_4.adb was last modified by software version 11.7.1.14.
+      N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/designer/impl1/N64_con\
+      troller_iter_4.adb was last modified by software version 11.7.1.14.
 Opened an existing Libero design
-N:/eecs373/project/N64/N64_controller_iter4/N64_controller_iter_4/designer/impl1/N64_controller\
-_iter_4.adb.
+N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/designer/impl1/N64_controlle\
+r_iter_4.adb.
 
 The Export-map command succeeded ( 00:00:13 )
-CHECKSUM: 6D8A
+CHECKSUM: 776B
 Wrote to the file:
-N:\eecs373\project\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller\
-_iter_4.fdb
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controlle\
+r_iter_4.fdb
 
-The Export command succeeded ( 00:00:18 )
+The Export command succeeded ( 00:00:17 )
 Design saved to file
-N:/eecs373/project/N64/N64_controller_iter4/N64_controller_iter_4/designer/impl1/N64_controller\
-_iter_4.adb.
+N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/designer/impl1/N64_controlle\
+r_iter_4.adb.
 
-The Execute Script command succeeded ( 00:00:21 )
+The Execute Script command succeeded ( 00:00:19 )
 Design closed.
 

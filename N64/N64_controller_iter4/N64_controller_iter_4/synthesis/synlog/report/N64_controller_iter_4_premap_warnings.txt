@@ -1,0 +1,2 @@
+@W: MO111 :|Tristate driver CoreAPB3_0_APBmslave0_PREADY_t on net CoreAPB3_0_APBmslave0_PREADY has its enable tied to GND (module N64_controller_iter_4) 
+@W: MO111 :|Tristate driver CoreAPB3_0_APBmslave0_PSLVERR_t on net CoreAPB3_0_APBmslave0_PSLVERR has its enable tied to GND (module N64_controller_iter_4) 

@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Tue Apr 04 17:20:29 2017 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Thu Apr 06 10:01:10 2017 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
@@ -362,7 +362,7 @@ P19                     GND                           Reserved
 P20                     TMS                           Reserved
 P21                     TDO                           Reserved
 P22                     TRSTB                         Reserved
-R1                      MSS_RESET_N                   Special
+R1      MSS_RESET_N     MSS_RESET_N                   Special      LVTTL    ---                ---   None           No               ---   ---               No           Yes
 R2                      VCCFPGAIOB5                   Reserved
 R3                      GPIO_1/IO46RSB4V0             Unassigned
 R4                      Not Bonded                    Unconnected

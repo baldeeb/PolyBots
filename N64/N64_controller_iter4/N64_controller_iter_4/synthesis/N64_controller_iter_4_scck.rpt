@@ -1,13 +1,13 @@
 # Synopsys Constraint Checker(syntax only), version mapact, Build 1659R, built Dec 10 2015
 # Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
 
-# Written on Tue Apr 04 17:18:55 2017
+# Written on Thu Apr 06 09:59:30 2017
 
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "N64_controller_iter_4"
-Constraint File(s):      "N:\eecs373\project\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
+Constraint File(s):      "N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
 
 #Run constraint checker to find more issues with constraints.
 #########################################################################

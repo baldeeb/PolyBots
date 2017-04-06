@@ -4,7 +4,19 @@ module controller_interface(
     inout data_line,
     output wire sigout,
 	output reg [2:0] monitor_sig,
-    output reg [1:0]LED_test
+    output reg [1:0]LED_test,
+
+    /*** APB3 BUS INTERFACE ***/
+    input PRESERN, 				// system reset
+    input PSEL, 				// peripheral select
+    input PENABLE, 				// distinguishes access phase
+    output wire PREADY, 		// peripheral ready signal
+    output wire PSLVERR,		// error signal
+    input PWRITE,				// distinguishes read and write cycles
+    input [31:0] PADDR,			// I/O address
+    input wire [31:0] PWDATA,	// data from processor to I/O device (32 bits)
+    output reg [31:0] PRDATA	// data to processor from I/O device (32-bits)
+
 );
 `define TICKS_PER_MICRO 25 // clock frequecny in MHz = ticks per micro second
 
@@ -32,7 +44,7 @@ parameter UPDATE_N64_BIT_COUNT = 3'b011;
 parameter INIT_BIT_RECEIVE = 3'b100;
 parameter RECEIVE_BIT = 3'b101;
 parameter UPDATE_N64_BIT_RECEIVED_COUNT = 3'b110;
-parameter WAIT = 3'b111;
+parameter WAITE = 3'b111;
 //*********END STATE MACHINE DECLARATIONS***************//
 
 reg [31:0] global_count;//global counter based on clock frequency
@@ -51,7 +63,7 @@ reg temp;
 ///////////////////////////////END OF DECLARATIONS// ////////////////////////
 
 
-assign sigout = temp;
+assign sigout = PRDATA[0];
 
 always @(negedge PCLK) begin 
 
@@ -82,6 +94,9 @@ end//end always
 //*********REQUEST STATE MACHINE***************//
 always@(posedge PCLK)//*
 begin
+    
+    if(~PRESERN)
+        next_state = IDLE;
 
     case(state)
     IDLE:           begin 
@@ -115,7 +130,7 @@ begin
 
     INIT_BIT_RECEIVE:   begin 
                         if(N64_bits_received >= 33) begin 
-                            next_state = WAIT;
+                            next_state = WAITE;
 						end
                         else begin 
                             next_state = RECEIVE_BIT;
@@ -152,9 +167,9 @@ begin
 						end
                     end
 
-    WAIT:           begin 
+    WAITE:           begin 
                         if(global_count < (1000 * `TICKS_PER_MICRO))
-                            next_state = WAIT;
+                            next_state = WAITE;
                         else 
                             next_state = IDLE;
                     end
@@ -243,7 +258,7 @@ begin
                                         
                                     end  
                                    end
-    WAIT: begin // to get access to complete data all the time we utilize this stage to allign the valid controller_data with controller_data_accumulator
+    WAITE: begin // to get access to complete data all the time we utilize this stage to allign the valid controller_data with controller_data_accumulator
 		if(controller_data_accumulator != controller_data)
 			controller_data = controller_data_accumulator;
 	end
@@ -259,6 +274,11 @@ always@(posedge PCLK)
 begin
     LED_test[0] <= ~controller_data[0]; //A button
     LED_test[1] <= ~controller_data[1]; //B button
+end
+
+always@(posedge PCLK)
+begin
+    PRDATA[31:0] <= controller_data[31:0];
 end
 
 
