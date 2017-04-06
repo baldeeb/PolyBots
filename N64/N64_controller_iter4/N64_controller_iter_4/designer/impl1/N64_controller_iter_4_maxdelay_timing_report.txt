@@ -2,7 +2,7 @@ Timing Report Max Delay Analysis
 
 SmartTime Version v11.7 SP1.1
 Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
-Date: Thu Apr 06 10:40:14 2017
+Date: Thu Apr 06 12:03:57 2017
 
 
 Design: N64_controller_iter_4
@@ -34,8 +34,8 @@ Min Clock-To-Out (ns):      N/A
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               mss_fabric_interface_clock
-Period (ns):                17.785
-Frequency (MHz):            56.227
+Period (ns):                17.873
+Frequency (MHz):            55.950
 Required Period (ns):       40.000
 Required Frequency (MHz):   25.000
 External Setup (ns):        N/A
@@ -71,7 +71,7 @@ Required Frequency (MHz):   25.000
 External Setup (ns):        -0.892
 External Hold (ns):         2.026
 Min Clock-To-Out (ns):      5.650
-Max Clock-To-Out (ns):      17.366
+Max Clock-To-Out (ns):      17.392
 
 Clock Domain:               N64_controller_iter_4_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
 Period (ns):                N/A
@@ -147,34 +147,24 @@ SET Register to Register
 Path 1
   From:                        N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
   To:                          N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[26]
-  Delay (ns):                  20.017
-  Slack (ns):                  22.215
-  Arrival (ns):                23.572
+  Delay (ns):                  20.105
+  Slack (ns):                  22.127
+  Arrival (ns):                23.660
   Required (ns):               45.787
   Setup (ns):                  -2.232
-  Minimum Period (ns):         17.785
+  Minimum Period (ns):         17.873
 
 Path 2
   From:                        N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
   To:                          N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[5]
-  Delay (ns):                  19.873
-  Slack (ns):                  22.350
-  Arrival (ns):                23.428
+  Delay (ns):                  19.960
+  Slack (ns):                  22.263
+  Arrival (ns):                23.515
   Required (ns):               45.778
   Setup (ns):                  -2.223
-  Minimum Period (ns):         17.650
+  Minimum Period (ns):         17.737
 
 Path 3
-  From:                        N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[30]
-  Delay (ns):                  19.616
-  Slack (ns):                  22.621
-  Arrival (ns):                23.171
-  Required (ns):               45.792
-  Setup (ns):                  -2.237
-  Minimum Period (ns):         17.379
-
-Path 4
   From:                        N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
   To:                          N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[18]
   Delay (ns):                  19.453
@@ -184,23 +174,33 @@ Path 4
   Setup (ns):                  -2.221
   Minimum Period (ns):         17.232
 
+Path 4
+  From:                        N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[28]
+  Delay (ns):                  19.158
+  Slack (ns):                  23.077
+  Arrival (ns):                22.713
+  Required (ns):               45.790
+  Setup (ns):                  -2.235
+  Minimum Period (ns):         16.923
+
 Path 5
   From:                        N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[6]
-  Delay (ns):                  19.317
-  Slack (ns):                  22.917
-  Arrival (ns):                22.872
-  Required (ns):               45.789
-  Setup (ns):                  -2.234
-  Minimum Period (ns):         17.083
+  To:                          N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[27]
+  Delay (ns):                  19.060
+  Slack (ns):                  23.175
+  Arrival (ns):                22.615
+  Required (ns):               45.790
+  Setup (ns):                  -2.235
+  Minimum Period (ns):         16.825
 
 
 Expanded Path 1
   From: N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
   To: N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[26]
   data required time                             45.787
-  data arrival time                          -   23.572
-  slack                                          22.215
+  data arrival time                          -   23.660
+  slack                                          22.127
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_fabric_interface_clock
@@ -218,18 +218,18 @@ Expanded Path 1
   17.939                       CoreAPB3_0/iPSELS_2[0]:A (r)
                +     0.604          cell: ADLIB:NOR3A
   18.543                       CoreAPB3_0/iPSELS_2[0]:Y (r)
-               +     2.160          net: CoreAPB3_0/iPSELS_2[0]
-  20.703                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_26:B (r)
+               +     2.248          net: CoreAPB3_0/iPSELS_2[0]
+  20.791                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_26:B (r)
                +     0.568          cell: ADLIB:NOR3C
-  21.271                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_26:Y (r)
+  21.359                       CoreAPB3_0/u_mux_p_to_b3/PRDATA_26:Y (r)
                +     1.790          net: N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[26]
-  23.061                       N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_56:PIN4 (r)
+  23.149                       N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_56:PIN4 (r)
                +     0.079          cell: ADLIB:MSS_IF
-  23.140                       N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_56:PIN4INT (r)
+  23.228                       N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_56:PIN4INT (r)
                +     0.432          net: N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/MSSPRDATA[26]INT_NET
-  23.572                       N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[26] (r)
+  23.660                       N64_controller_iter_4_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[26] (r)
                                     
-  23.572                       data arrival time
+  23.660                       data arrival time
   ________________________________________________________
   Data required time calculation
   40.000                       mss_fabric_interface_clock
@@ -533,60 +533,60 @@ SET Register to Register
 Path 1
   From:                        controller_interface_0/state[0]:CLK
   To:                          controller_interface_0/controller_data_tile_I_1:RADDR5
-  Delay (ns):                  7.987
-  Slack (ns):                  12.010
-  Arrival (ns):                12.753
+  Delay (ns):                  7.972
+  Slack (ns):                  12.025
+  Arrival (ns):                12.738
   Required (ns):               24.763
   Setup (ns):                  0.256
-  Minimum Period (ns):         15.980
+  Minimum Period (ns):         15.950
 
 Path 2
   From:                        controller_interface_0/state[1]:CLK
   To:                          controller_interface_0/controller_data_tile_I_1:RADDR5
-  Delay (ns):                  7.963
-  Slack (ns):                  12.024
-  Arrival (ns):                12.739
+  Delay (ns):                  7.941
+  Slack (ns):                  12.046
+  Arrival (ns):                12.717
   Required (ns):               24.763
   Setup (ns):                  0.256
-  Minimum Period (ns):         15.952
+  Minimum Period (ns):         15.908
 
 Path 3
   From:                        controller_interface_0/state[2]:CLK
   To:                          controller_interface_0/controller_data_tile_I_1:RADDR5
-  Delay (ns):                  7.927
-  Slack (ns):                  12.060
-  Arrival (ns):                12.703
+  Delay (ns):                  7.905
+  Slack (ns):                  12.082
+  Arrival (ns):                12.681
   Required (ns):               24.763
   Setup (ns):                  0.256
-  Minimum Period (ns):         15.880
+  Minimum Period (ns):         15.836
 
 Path 4
   From:                        controller_interface_0/state[1]:CLK
   To:                          controller_interface_0/controller_data_tile_I_1:RADDR3
-  Delay (ns):                  7.454
-  Slack (ns):                  12.485
-  Arrival (ns):                12.230
+  Delay (ns):                  7.432
+  Slack (ns):                  12.507
+  Arrival (ns):                12.208
   Required (ns):               24.715
   Setup (ns):                  0.304
-  Minimum Period (ns):         15.030
+  Minimum Period (ns):         14.986
 
 Path 5
   From:                        controller_interface_0/state[2]:CLK
   To:                          controller_interface_0/controller_data_tile_I_1:RADDR3
-  Delay (ns):                  7.418
-  Slack (ns):                  12.521
-  Arrival (ns):                12.194
+  Delay (ns):                  7.396
+  Slack (ns):                  12.543
+  Arrival (ns):                12.172
   Required (ns):               24.715
   Setup (ns):                  0.304
-  Minimum Period (ns):         14.958
+  Minimum Period (ns):         14.914
 
 
 Expanded Path 1
   From: controller_interface_0/state[0]:CLK
   To: controller_interface_0/controller_data_tile_I_1:RADDR5
   data required time                             24.763
-  data arrival time                          -   12.753
-  slack                                          12.010
+  data arrival time                          -   12.738
+  slack                                          12.025
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_glb
@@ -602,38 +602,38 @@ Expanded Path 1
   4.766                        controller_interface_0/state[0]:CLK (r)
                +     0.671          cell: ADLIB:DFN1
   5.437                        controller_interface_0/state[0]:Q (f)
-               +     0.577          net: controller_interface_0/state[0]
-  6.014                        controller_interface_0/state_RNIH7DT[1]:C (f)
+               +     0.588          net: controller_interface_0/state[0]
+  6.025                        controller_interface_0/state_RNIH7DT[1]:C (f)
                +     0.478          cell: ADLIB:NOR3B
-  6.492                        controller_interface_0/state_RNIH7DT[1]:Y (r)
-               +     0.395          net: controller_interface_0/un1_state_5
-  6.887                        controller_interface_0/N64_bits_received_incremented_RNIU5LC1:A (r)
+  6.503                        controller_interface_0/state_RNIH7DT[1]:Y (r)
+               +     0.369          net: controller_interface_0/un1_state_5
+  6.872                        controller_interface_0/N64_bits_received_incremented_RNIU5LC1:A (r)
                +     0.470          cell: ADLIB:NOR2A
-  7.357                        controller_interface_0/N64_bits_received_incremented_RNIU5LC1:Y (r)
+  7.342                        controller_interface_0/N64_bits_received_incremented_RNIU5LC1:Y (r)
                +     0.351          net: controller_interface_0/N64_bits_received_incremented_0_sqmuxa
-  7.708                        controller_interface_0/un1_N64_bits_received_1_I_1:B (r)
+  7.693                        controller_interface_0/un1_N64_bits_received_1_I_1:B (r)
                +     0.538          cell: ADLIB:AND2
-  8.246                        controller_interface_0/un1_N64_bits_received_1_I_1:Y (r)
+  8.231                        controller_interface_0/un1_N64_bits_received_1_I_1:Y (r)
                +     0.336          net: controller_interface_0/DWACT_ADD_CI_0_TMP_0[0]
-  8.582                        controller_interface_0/un1_N64_bits_received_1_I_135:A (r)
+  8.567                        controller_interface_0/un1_N64_bits_received_1_I_135:A (r)
                +     0.370          cell: ADLIB:NOR2B
-  8.952                        controller_interface_0/un1_N64_bits_received_1_I_135:Y (r)
+  8.937                        controller_interface_0/un1_N64_bits_received_1_I_135:Y (r)
                +     0.409          net: controller_interface_0/DWACT_ADD_CI_0_g_array_1_0[0]
-  9.361                        controller_interface_0/un1_N64_bits_received_1_I_184:C (r)
+  9.346                        controller_interface_0/un1_N64_bits_received_1_I_184:C (r)
                +     0.683          cell: ADLIB:NOR3C
-  10.044                       controller_interface_0/un1_N64_bits_received_1_I_184:Y (r)
+  10.029                       controller_interface_0/un1_N64_bits_received_1_I_184:Y (r)
                +     0.355          net: controller_interface_0/DWACT_ADD_CI_0_g_array_2_0[0]
-  10.399                       controller_interface_0/un1_N64_bits_received_1_I_137:A (r)
+  10.384                       controller_interface_0/un1_N64_bits_received_1_I_137:A (r)
                +     0.445          cell: ADLIB:NOR2B
-  10.844                       controller_interface_0/un1_N64_bits_received_1_I_137:Y (r)
+  10.829                       controller_interface_0/un1_N64_bits_received_1_I_137:Y (r)
                +     0.316          net: controller_interface_0/DWACT_ADD_CI_0_g_array_12_1_0[0]
-  11.160                       controller_interface_0/state_RNIE83I2[1]:B (r)
+  11.145                       controller_interface_0/state_RNIE83I2[1]:B (r)
                +     0.652          cell: ADLIB:XA1B
-  11.812                       controller_interface_0/state_RNIE83I2[1]:Y (r)
+  11.797                       controller_interface_0/state_RNIE83I2[1]:Y (r)
                +     0.941          net: controller_interface_0/N64_bits_received_4[5]
-  12.753                       controller_interface_0/controller_data_tile_I_1:RADDR5 (r)
+  12.738                       controller_interface_0/controller_data_tile_I_1:RADDR5 (r)
                                     
-  12.753                       data arrival time
+  12.738                       data arrival time
   ________________________________________________________
   Data required time calculation
   20.000                       mss_ccc_glb
@@ -717,11 +717,11 @@ SET Clock to Output
 Path 1
   From:                        controller_interface_0/state[0]:CLK
   To:                          data_line
-  Delay (ns):                  12.600
+  Delay (ns):                  12.626
   Slack (ns):
-  Arrival (ns):                17.366
+  Arrival (ns):                17.392
   Required (ns):
-  Clock to Out (ns):           17.366
+  Clock to Out (ns):           17.392
 
 Path 2
   From:                        controller_interface_0/state[1]:CLK
@@ -764,7 +764,7 @@ Expanded Path 1
   From: controller_interface_0/state[0]:CLK
   To: data_line
   data required time                             N/C
-  data arrival time                          -   17.366
+  data arrival time                          -   17.392
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -781,34 +781,34 @@ Expanded Path 1
   4.766                        controller_interface_0/state[0]:CLK (r)
                +     0.671          cell: ADLIB:DFN1
   5.437                        controller_interface_0/state[0]:Q (f)
-               +     1.179          net: controller_interface_0/state[0]
-  6.616                        controller_interface_0/state_RNILEJJ_0[1]:A (f)
+               +     1.205          net: controller_interface_0/state[0]
+  6.642                        controller_interface_0/state_RNILEJJ_0[1]:A (f)
                +     0.574          cell: ADLIB:NOR2A
-  7.190                        controller_interface_0/state_RNILEJJ_0[1]:Y (f)
+  7.216                        controller_interface_0/state_RNILEJJ_0[1]:Y (f)
                +     0.396          net: controller_interface_0/un21_data_line_0
-  7.586                        controller_interface_0/state_RNIH7DT_2[2]:A (f)
+  7.612                        controller_interface_0/state_RNIH7DT_2[2]:A (f)
                +     0.574          cell: ADLIB:NOR2A
-  8.160                        controller_interface_0/state_RNIH7DT_2[2]:Y (f)
+  8.186                        controller_interface_0/state_RNIH7DT_2[2]:Y (f)
                +     2.239          net: controller_interface_0/state_RNIH7DT_2[2]
-  10.399                       controller_interface_0/state_RNIH7DT_3[2]/U_CLKSRC:A (f)
+  10.425                       controller_interface_0/state_RNIH7DT_3[2]/U_CLKSRC:A (f)
                +     0.834          cell: ADLIB:CLKSRC
-  11.233                       controller_interface_0/state_RNIH7DT_3[2]/U_CLKSRC:Y (f)
+  11.259                       controller_interface_0/state_RNIH7DT_3[2]/U_CLKSRC:Y (f)
                +     0.605          net: controller_interface_0/un21_data_line
-  11.838                       controller_interface_0/state_RNI2FQQ1_0[1]:B (f)
+  11.864                       controller_interface_0/state_RNI2FQQ1_0[1]:B (f)
                +     0.588          cell: ADLIB:OR2
-  12.426                       controller_interface_0/state_RNI2FQQ1_0[1]:Y (f)
+  12.452                       controller_interface_0/state_RNI2FQQ1_0[1]:Y (f)
                +     1.262          net: state_RNI2FQQ1_0[1]
-  13.688                       data_line_pad/U0/U1:E (f)
+  13.714                       data_line_pad/U0/U1:E (f)
                +     0.380          cell: ADLIB:IOBI_IB_OB_EB
-  14.068                       data_line_pad/U0/U1:EOUT (f)
+  14.094                       data_line_pad/U0/U1:EOUT (f)
                +     0.000          net: data_line_pad/U0/NET2
-  14.068                       data_line_pad/U0/U0:E (f)
+  14.094                       data_line_pad/U0/U0:E (f)
                +     3.298          cell: ADLIB:IOPAD_BI
-  17.366                       data_line_pad/U0/U0:PAD (f)
+  17.392                       data_line_pad/U0/U0:PAD (f)
                +     0.000          net: data_line
-  17.366                       data_line (f)
+  17.392                       data_line (f)
                                     
-  17.366                       data arrival time
+  17.392                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_glb

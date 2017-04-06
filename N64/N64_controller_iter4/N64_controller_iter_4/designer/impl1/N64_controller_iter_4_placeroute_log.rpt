@@ -34,16 +34,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Thu Apr 06 10:39:05 2017
+Timing-driven Placer Started: Thu Apr 06 12:02:28 2017
 
-Placer Finished: Thu Apr 06 10:39:29 2017
-Total Placer CPU Time:     00:00:24
+Placer Finished: Thu Apr 06 12:02:53 2017
+Total Placer CPU Time:     00:00:25
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: N64_controller_iter_4           Started: Thu Apr 06 10:39:34 2017
+Design: N64_controller_iter_4           Started: Thu Apr 06 12:02:59 2017
 
  
 Iterative improvement...
@@ -51,9 +51,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: N64_controller_iter_4           
-Finished: Thu Apr 06 10:39:57 2017
-Total CPU Time:     00:00:21            Total Elapsed Time: 00:00:23
-Total Memory Usage: 187.1 Mbytes
+Finished: Thu Apr 06 12:03:29 2017
+Total CPU Time:     00:00:25            Total Elapsed Time: 00:00:30
+Total Memory Usage: 186.9 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
@@ -61,7 +61,7 @@ Finished loading the Timing data.
 TIMER: Max delay timing requirements have been met.
 TIMER: Min delay timing requirements have been met.
 
-The Layout command succeeded ( 00:01:01 )
+The Layout command succeeded ( 00:01:11 )
 Wrote status report to file: N64_controller_iter_4_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -70,13 +70,13 @@ Wrote globalnet report to file: N64_controller_iter_4_globalnet_report.txt
 The Report command succeeded ( 00:00:00 )
 Wrote globalusage report to file: N64_controller_iter_4_globalusage_report.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:00 )
 Wrote iobank report to file: N64_controller_iter_4_iobank_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: N64_controller_iter_4_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:05 )
 Wrote pin report to file: N64_controller_iter_4_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
@@ -84,6 +84,6 @@ Design saved to file
 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controlle\
 r_iter_4.adb.
 
-The Execute Script command succeeded ( 00:01:08 )
+The Execute Script command succeeded ( 00:01:21 )
 Design closed.
 

@@ -17,13 +17,13 @@ Report for cell N64_controller_iter_4_MSS.netlist
                                           Cell usage:
                                cell       count     area    count*area
                                 GND         1       0.0        0.0
-                          INBUF_MSS         2       0.0        0.0
+                          INBUF_MSS         3       0.0        0.0
                             MSS_APB         1       0.0        0.0
           N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC         1       1.0        1.0
-                         OUTBUF_MSS         1       0.0        0.0
+                         OUTBUF_MSS         2       0.0        0.0
                                 VCC         1       0.0        0.0
                             
-                         TOTAL              7                  1.0
+                         TOTAL              9                  1.0
 ----------------------------------------------------------------------
 Report for cell N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.netlist
      Instance path:  N64_controller_iter_4_MSS_0.MSS_CCC_0

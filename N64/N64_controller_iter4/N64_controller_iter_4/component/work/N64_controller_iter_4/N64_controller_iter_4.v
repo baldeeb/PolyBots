@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Apr 06 10:35:39 2017
+// Created by SmartDesign Thu Apr 06 11:53:51 2017
 // Version: v11.7 SP1 11.7.1.14
 //////////////////////////////////////////////////////////////////////
 
@@ -10,9 +10,11 @@ module N64_controller_iter_4(
     // Inputs
     MSS_RESET_N,
     UART_0_RXD,
+    UART_1_RXD,
     // Outputs
     LED_test,
     UART_0_TXD,
+    UART_1_TXD,
     monitor_sig,
     sigout,
     // Inouts
@@ -24,11 +26,13 @@ module N64_controller_iter_4(
 //--------------------------------------------------------------------
 input        MSS_RESET_N;
 input        UART_0_RXD;
+input        UART_1_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
 output [1:0] LED_test;
 output       UART_0_TXD;
+output       UART_1_TXD;
 output [2:0] monitor_sig;
 output       sigout;
 //--------------------------------------------------------------------
@@ -61,11 +65,14 @@ wire   [31:0] N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PWDATA;
 wire          N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PWRITE;
 wire          sigout_net_0;
 wire          UART_0_RXD;
-wire          UART_0_TXD_1;
+wire          UART_0_TXD_0;
+wire          UART_1_RXD;
+wire          UART_1_TXD_0;
 wire          sigout_net_1;
-wire          UART_0_TXD_1_net_0;
+wire          UART_0_TXD_0_net_0;
 wire   [2:0]  monitor_sig_net_1;
 wire   [1:0]  LED_test_net_1;
+wire          UART_1_TXD_0_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -122,12 +129,14 @@ assign PRDATAS16_const_net_0 = 32'h00000000;
 //--------------------------------------------------------------------
 assign sigout_net_1       = sigout_net_0;
 assign sigout             = sigout_net_1;
-assign UART_0_TXD_1_net_0 = UART_0_TXD_1;
-assign UART_0_TXD         = UART_0_TXD_1_net_0;
+assign UART_0_TXD_0_net_0 = UART_0_TXD_0;
+assign UART_0_TXD         = UART_0_TXD_0_net_0;
 assign monitor_sig_net_1  = monitor_sig_net_0;
 assign monitor_sig[2:0]   = monitor_sig_net_1;
 assign LED_test_net_1     = LED_test_net_0;
 assign LED_test[1:0]      = LED_test_net_1;
+assign UART_1_TXD_0_net_0 = UART_1_TXD_0;
+assign UART_1_TXD         = UART_1_TXD_0_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -303,15 +312,17 @@ N64_controller_iter_4_MSS N64_controller_iter_4_MSS_0(
         .MSSPREADY   ( N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PREADY ),
         .MSSPSLVERR  ( N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PSLVERR ),
         .MSS_RESET_N ( MSS_RESET_N ),
+        .UART_1_RXD  ( UART_1_RXD ),
         // Outputs
         .FAB_CLK     ( N64_controller_iter_4_MSS_0_FAB_CLK ),
-        .UART_0_TXD  ( UART_0_TXD_1 ),
+        .UART_0_TXD  ( UART_0_TXD_0 ),
         .M2F_RESET_N ( N64_controller_iter_4_MSS_0_M2F_RESET_N ),
         .MSSPADDR    ( N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PADDR ),
         .MSSPSEL     ( N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PSELx ),
         .MSSPENABLE  ( N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PENABLE ),
         .MSSPWRITE   ( N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PWRITE ),
-        .MSSPWDATA   ( N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PWDATA ) 
+        .MSSPWDATA   ( N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PWDATA ),
+        .UART_1_TXD  ( UART_1_TXD_0 ) 
         );
 
 

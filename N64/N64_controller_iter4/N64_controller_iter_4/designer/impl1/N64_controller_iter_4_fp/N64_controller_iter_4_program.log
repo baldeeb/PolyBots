@@ -6,7 +6,7 @@ Software Version: 11.7.1.14
 PDB file
 'N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controll\
 er_iter_4_fp\N64_controller_iter_4.pdb' has been loaded successfully.
-DESIGN : N64_controller_iter_4;  CHECKSUM : 776B;  PDB_VERSION : 1.9
+DESIGN : N64_controller_iter_4;  CHECKSUM : BCA5;  PDB_VERSION : 1.9
 Driver : 3.0.0 build 1
 programmer '79419' : FlashPro3
 Opened
@@ -25,7 +25,7 @@ Info: Adding FPGA Array data from file
 PDB file
 'N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controll\
 er_iter_4_fp\N64_controller_iter_4.pdb' has been loaded successfully.
-DESIGN : N64_controller_iter_4;  CHECKSUM : BCA5;  PDB_VERSION : 1.9
+DESIGN : N64_controller_iter_4;  CHECKSUM : 5314;  PDB_VERSION : 1.9
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
 programmer '79419' : Scan Chain...
@@ -36,13 +36,13 @@ programmer '79419' : Executing action PROGRAM
 programmer '79419' : EXPORT FSN[48] = 014b3e602c80
 programmer '79419' : Erase ...
 programmer '79419' : Completed erase
-programmer '79419' : EXPORT CHECKSUM: [16] = bca5
+programmer '79419' : EXPORT CHECKSUM: [16] = 5314
 programmer '79419' : Programming FPGA Array
 programmer '79419' : Verifying FPGA Array
 programmer '79419' :         Verifying FPGA Array -- pass
 programmer '79419' : Program System Init and Boot Clients...
 programmer '79419' : Verify System Init and Boot Clients...
-programmer '79419' : Finished: Thu Apr 06 10:41:49 2017 (Elapsed time 00:00:35)
+programmer '79419' : Finished: Thu Apr 06 12:05:33 2017 (Elapsed time 00:00:35)
 programmer '79419' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o

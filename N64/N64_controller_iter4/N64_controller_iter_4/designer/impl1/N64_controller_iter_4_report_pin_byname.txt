@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Thu Apr 06 10:40:04 2017 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Thu Apr 06 12:03:39 2017 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
@@ -20,3 +20,5 @@ MSS_RESET_N     R1   Yes    MSS_RESET_N         LVTTL    ---                --- 
 sigout          J20  Yes    GCA1/IO28PDB1V0     LVTTL    12                 High  None           ---              No    35                No           No
 UART_0_RXD      U18  Yes    UART_0_RXD/GPIO_21  LVTTL    ---                ---   None           No               ---   ---               No           Yes
 UART_0_TXD      Y22  Yes    UART_0_TXD/GPIO_20  LVTTL    8                  High  None           ---              No    35                No           Yes
+UART_1_RXD      W22  Yes    UART_1_RXD/GPIO_29  LVTTL    ---                ---   None           No               ---   ---               No           Yes
+UART_1_TXD      V20  Yes    UART_1_TXD/GPIO_28  LVTTL    8                  High  None           ---              No    35                No           Yes

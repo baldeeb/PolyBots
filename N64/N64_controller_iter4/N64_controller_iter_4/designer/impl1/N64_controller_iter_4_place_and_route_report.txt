@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Thu Apr 06 10:40:02 2017 ***************************************************************************
+                          Thu Apr 06 12:03:34 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
 File Name: N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller_iter_4.adb
 Design Name: N64_controller_iter_4  Design State: layout
-Last Saved: Thu Apr 06 10:38:55 2017
+Last Saved: Thu Apr 06 12:02:15 2017
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Thu Apr 06 10:38:44 2017:
+Source File(s) Imported on Thu Apr 06 12:02:06 2017:
         N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.edn
         N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.pdc
 
@@ -125,7 +125,6 @@ Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1DO drives no
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1DOE drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1CLKO drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1MODE drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_UART1TXD drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_I2C1SDAO drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_I2C1SCLO drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_MACTXEN drives no load.
@@ -441,7 +440,7 @@ Optimized macros:
 
     Total macros optimized  136
 
-There were 0 error(s) and 346 warning(s) in this design.
+There were 0 error(s) and 345 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -465,7 +464,7 @@ Compile report:
     Fabric IO (W/ clocks)      Used:      7  Total:     94   (7.45%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:      3  Total:     43   (6.98%)
+    Dedicated MSS IO           Used:      5  Total:     43   (11.63%)
     GLOBAL (Chip+Quadrant)     Used:      3  Total:     15   (20.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -608,16 +607,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Thu Apr 06 10:39:05 2017
+Timing-driven Placer Started: Thu Apr 06 12:02:28 2017
 
-Placer Finished: Thu Apr 06 10:39:29 2017
-Total Placer CPU Time:     00:00:24
+Placer Finished: Thu Apr 06 12:02:53 2017
+Total Placer CPU Time:     00:00:25
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: N64_controller_iter_4           Started: Thu Apr 06 10:39:34 2017
+Design: N64_controller_iter_4           Started: Thu Apr 06 12:02:59 2017
 
  
 Iterative improvement...
@@ -625,9 +624,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: N64_controller_iter_4           
-Finished: Thu Apr 06 10:39:57 2017
-Total CPU Time:     00:00:21            Total Elapsed Time: 00:00:23
-Total Memory Usage: 187.1 Mbytes
+Finished: Thu Apr 06 12:03:29 2017
+Total CPU Time:     00:00:25            Total Elapsed Time: 00:00:30
+Total Memory Usage: 186.9 Mbytes
                         o - o - o - o - o - o
 
 

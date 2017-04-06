@@ -64,15 +64,15 @@ Report for cell N64_controller_iter_4.verilog
   IO Cell usage:
               cell count
              BIBUF     1
-         INBUF_MSS     2
+         INBUF_MSS     3
             OUTBUF     6
-        OUTBUF_MSS     1
+        OUTBUF_MSS     2
                    -----
-             TOTAL    10
+             TOTAL    12
 
 
 Core Cells         : 1821 of 4608 (40%)
-IO Cells           : 10
+IO Cells           : 12
 
   RAM/ROM Usage Summary
 Block Rams : 1 of 8 (12%)

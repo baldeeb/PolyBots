@@ -21,6 +21,16 @@ int main(void)
 	uint32_t left_mask = 0x00000040;
 	uint32_t right_mask = 0x00000080;
 
+	int relevant_data_bytes = 6;
+	uint8_t tx_buff[relevant_data_bytes];
+	int i;
+
+	MSS_UART_init(
+			&g_mss_uart1,
+			MSS_UART_57600_BAUD,
+			MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT
+	);
+
 	while( 1 )
 	{
 		controller_buff = *CONTROLLER_DATA_REG;
@@ -31,6 +41,15 @@ int main(void)
 		down = (uint8_t)((controller_buff & down_mask) >> 5);
 		left = (uint8_t)((controller_buff & left_mask) >> 6);
 		right =(uint8_t)((controller_buff & right_mask) >> 7);
+
+		tx_buff[0] = y_axis;
+		tx_buff[1] = x_axis;
+		tx_buff[2] = up;
+		tx_buff[3] = down;
+		tx_buff[4] = left;
+		tx_buff[5] = right;
+
+		MSS_UART_polled_tx(&g_mss_uart1, tx_buff, sizeof(tx_buff));
 
 		//printf("Controller Data: %" PRIu32 "\n",controller_buff);
 

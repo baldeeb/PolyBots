@@ -21,7 +21,9 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v"
 @I::"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.v"
 Verilog syntax check successful!
-File N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v changed - recompiling
+File N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell.v changed - recompiling
+File N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
+File N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v changed - recompiling
 File N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.v changed - recompiling
 Selecting top level module N64_controller_iter_4
 @N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":2:7:2:26|Synthesizing module controller_interface
@@ -219,10 +221,10 @@ Selecting top level module N64_controller_iter_4
 @W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":16:17:16:21|Input PADDR is unused
 @W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":17:22:17:27|Input PWDATA is unused
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 79MB peak: 81MB)
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 79MB peak: 81MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Apr 06 10:38:20 2017
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Thu Apr 06 12:01:38 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
@@ -231,7 +233,7 @@ Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Apr 06 10:38:20 2017
+# Thu Apr 06 12:01:38 2017
 
 ###########################################################]
 @END
@@ -239,6 +241,6 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Thu Apr 06 10:38:20 2017
+# Thu Apr 06 12:01:38 2017
 
 ###########################################################]

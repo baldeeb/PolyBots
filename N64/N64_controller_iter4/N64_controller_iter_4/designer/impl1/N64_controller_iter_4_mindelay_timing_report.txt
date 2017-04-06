@@ -2,7 +2,7 @@ Timing Report Min Delay Analysis
 
 SmartTime Version v11.7 SP1.1
 Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
-Date: Thu Apr 06 10:40:14 2017
+Date: Thu Apr 06 12:03:57 2017
 
 
 Design: N64_controller_iter_4
@@ -34,8 +34,8 @@ Min Clock-To-Out (ns):      N/A
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               mss_fabric_interface_clock
-Period (ns):                17.785
-Frequency (MHz):            56.227
+Period (ns):                17.873
+Frequency (MHz):            55.950
 Required Period (ns):       40.000
 Required Frequency (MHz):   25.000
 External Setup (ns):        N/A
@@ -71,7 +71,7 @@ Required Frequency (MHz):   25.000
 External Setup (ns):        -0.892
 External Hold (ns):         2.026
 Min Clock-To-Out (ns):      5.650
-Max Clock-To-Out (ns):      17.366
+Max Clock-To-Out (ns):      17.392
 
 Clock Domain:               N64_controller_iter_4_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
 Period (ns):                N/A

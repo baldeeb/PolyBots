@@ -51,7 +51,7 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:04s; CP
 
 @N: MF794 |RAM controller_data[2] required 3 registers during mapping 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 122MB peak: 122MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 122MB peak: 122MB)
 
 
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 122MB peak: 122MB)
@@ -196,7 +196,7 @@ Found clock FAB_CLK with period 40.00ns
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Thu Apr 06 10:38:32 2017
+# Timing Report written on Thu Apr 06 12:01:50 2017
 #
 
 
@@ -450,7 +450,7 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Finished final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:03s; Memory used current: 120MB peak: 124MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:03s; Memory used current: 120MB peak: 124MB)
+Finished timing report (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:03s; Memory used current: 120MB peak: 124MB)
 
 --------------------------------------------------------------------------------
 Target Part: A2F200M3F_FBGA484_STD
@@ -519,24 +519,24 @@ Report for cell N64_controller_iter_4.verilog
   IO Cell usage:
               cell count
              BIBUF     1
-         INBUF_MSS     2
+         INBUF_MSS     3
             OUTBUF     6
-        OUTBUF_MSS     1
+        OUTBUF_MSS     2
                    -----
-             TOTAL    10
+             TOTAL    12
 
 
 Core Cells         : 1821 of 4608 (40%)
-IO Cells           : 10
+IO Cells           : 12
 
   RAM/ROM Usage Summary
 Block Rams : 1 of 8 (12%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:03s; Memory used current: 51MB peak: 124MB)
+At Mapper Exit (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:03s; Memory used current: 51MB peak: 124MB)
 
-Process took 0h:00m:07s realtime, 0h:00m:03s cputime
-# Thu Apr 06 10:38:32 2017
+Process took 0h:00m:10s realtime, 0h:00m:03s cputime
+# Thu Apr 06 12:01:53 2017
 
 ###########################################################]
