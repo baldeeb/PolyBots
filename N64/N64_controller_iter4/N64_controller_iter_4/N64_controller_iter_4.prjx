@@ -367,8 +367,8 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\N64_controller_iter_4.adb,adb"
 STATE="utd"
-TIME="1491484924"
-SIZE="1448448"
+TIME="1491494664"
+SIZE="1521664"
 ENDFILE
 VALUE "<project>\designer\impl1\N64_controller_iter_4.fdb,fdb"
 STATE="utd"
@@ -377,28 +377,28 @@ SIZE="76756"
 ENDFILE
 VALUE "<project>\designer\impl1\N64_controller_iter_4.ide_des,ide_des"
 STATE="utd"
-TIME="1491484924"
-SIZE="1205"
+TIME="1491494664"
+SIZE="1208"
 ENDFILE
 VALUE "<project>\designer\impl1\N64_controller_iter_4_compile_log.rpt,log"
 STATE="utd"
-TIME="1491484924"
-SIZE="42126"
+TIME="1491494536"
+SIZE="40821"
 ENDFILE
 VALUE "<project>\designer\impl1\N64_controller_iter_4_fp\N64_controller_iter_4.pdb,pdb"
 STATE="utd"
-TIME="1491484924"
-SIZE="79368"
+TIME="1491494694"
+SIZE="82278"
 ENDFILE
 VALUE "<project>\designer\impl1\N64_controller_iter_4_fp\N64_controller_iter_4.pro,pro"
 STATE="utd"
-TIME="1491484924"
-SIZE="2567"
+TIME="1491494737"
+SIZE="2570"
 ENDFILE
 VALUE "<project>\designer\impl1\N64_controller_iter_4_fp\projectData\N64_controller_iter_4.pdb,pdb"
 STATE="utd"
-TIME="1491484924"
-SIZE="79368"
+TIME="1491494735"
+SIZE="82278"
 ENDFILE
 VALUE "<project>\designer\impl1\N64_controller_iter_4_placeroute_log.rpt,log"
 STATE="utd"
@@ -458,23 +458,23 @@ PARENT="<project>\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4
 ENDFILE
 VALUE "<project>\synthesis\N64_controller_iter_4.edn,syn_edn"
 STATE="utd"
-TIME="1491484925"
-SIZE="929768"
+TIME="1491494509"
+SIZE="1020476"
 ENDFILE
 VALUE "<project>\synthesis\N64_controller_iter_4.so,so"
 STATE="utd"
-TIME="1491484925"
-SIZE="277"
+TIME="1491494509"
+SIZE="278"
 ENDFILE
 VALUE "<project>\synthesis\N64_controller_iter_4_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1491484925"
+TIME="1491494509"
 SIZE="570"
 ENDFILE
 VALUE "<project>\synthesis\N64_controller_iter_4_syn.prj,prj"
 STATE="utd"
-TIME="1491484925"
-SIZE="2562"
+TIME="1491494514"
+SIZE="3114"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -487,14 +487,6 @@ VALUE "<project>\simulation\subsystem.bfm,sim"
 VALUE "<project>\component\work\N64_controller_iter_4\N64_controller_iter_4.pdc,pdc"
 ENDLIST
 LIST SynthesisConstraints
-VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
-VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
 VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
 ENDLIST
 LIST ProjectState5.1
@@ -548,6 +540,17 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -640,10 +643,10 @@ ENDLIST
 LIST PhySynthesisOptions
 ENDLIST
 LIST Profiles
-NAME="SoftConsole v3.3"
+NAME="SoftConsole"
 FUNCTION="SoftwareIDE"
 TOOL="SoftConsole"
-LOCATION="C:\Program Files (x86)\Microsemi\SoftConsole v3.3\Eclipse\eclipse.exe"
+LOCATION="eclipse.exe"
 PARAM=""
 BATCH=0
 LICENSE=""
@@ -653,8 +656,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.7\\\Synplify\\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -700,6 +703,17 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -713,13 +727,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:N64_controller_iter_4_prgdata_log.rpt
 StartPage;StartPage;0
-SmartDesign;N64_controller_iter_4;0
-SmartDesign;N64_controller_iter_4_MSS;0
-HDL;hdl\controller_interface.v;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"

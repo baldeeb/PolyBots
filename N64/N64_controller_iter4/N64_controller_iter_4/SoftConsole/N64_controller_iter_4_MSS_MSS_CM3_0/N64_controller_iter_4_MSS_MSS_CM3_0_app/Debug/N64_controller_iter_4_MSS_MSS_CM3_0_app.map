@@ -4,6 +4,12 @@ N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N
                               ./main.o (MSS_UART_polled_tx)
 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
                               N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o (SystemInit)
+c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubsf3.o)
+                              ./main.o (__aeabi_ui2f)
+c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivsf3.o)
+                              ./main.o (__aeabi_fmul)
+c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunssfsi.o)
+                              ./main.o (__aeabi_f2uiz)
 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
                               N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o (__errno)
 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
@@ -37,6 +43,12 @@ Discarded input sections
  .data          0x00000000        0x0 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .bss           0x00000000        0x0 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .bss           0x00000000        0x0 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunssfsi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunssfsi.o)
  .text          0x00000000        0xc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
  .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
  .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
@@ -90,7 +102,7 @@ END GROUP
                 0x20010000                PROVIDE (_estack, __main_stack_start)
                 0x00000000                PROVIDE (__mirrored_nvm, 0x0)
 
-.text           0x20000000     0x1184
+.text           0x20000000     0x17e0
  CREATE_OBJECT_SYMBOLS
                 0x20000000                __text_load = LOADADDR (.text)
                 0x20000000                __text_start = .
@@ -252,33 +264,61 @@ END GROUP
                 0x20000438                ACE_PPE_Flag31_IRQHandler
  *(.text .text.* .gnu.linkonce.t.*)
  .text          0x20000470       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .text.main     0x200004a0      0x190 ./main.o
+ .text.main     0x200004a0      0x1b0 ./main.o
                 0x200004a0                main
- .text          0x20000630      0x9c8 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20000630                MSS_UART_polled_tx
-                0x200006dc                MSS_UART_polled_tx_string
-                0x2000076c                MSS_UART_irq_tx
-                0x20000804                MSS_UART_tx_complete
-                0x20000840                MSS_UART_get_rx
-                0x200008dc                MSS_UART_enable_irq
-                0x20000944                MSS_UART_disable_irq
-                0x20000abc                MSS_UART_set_rx_handler
-                0x20000b60                MSS_UART_set_loopback
-                0x20000b98                UART0_IRQHandler
-                0x20000bc8                UART1_IRQHandler
-                0x20000bf8                MSS_UART_set_rxstatus_handler
-                0x20000c78                MSS_UART_set_tx_handler
-                0x20000d00                MSS_UART_set_modemstatus_handler
-                0x20000d80                MSS_UART_fill_tx_fifo
-                0x20000e14                MSS_UART_get_rx_status
-                0x20000e4c                MSS_UART_get_modem_status
-                0x20000e74                MSS_UART_get_tx_status
-                0x20000ea8                MSS_UART_init
- .text          0x20000ff8      0x10c N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20000ff8                SystemInit
-                0x20000ffc                SystemCoreClockUpdate
- .text          0x20001104       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
-                0x20001104                __libc_init_array
+ .text.change_endianness
+                0x20000650       0x58 ./main.o
+                0x20000650                change_endianness
+ .text.calc_speed_percent_stick
+                0x200006a8       0xe8 ./main.o
+                0x200006a8                calc_speed_percent_stick
+ .text          0x20000790      0x9c8 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20000790                MSS_UART_polled_tx
+                0x2000083c                MSS_UART_polled_tx_string
+                0x200008cc                MSS_UART_irq_tx
+                0x20000964                MSS_UART_tx_complete
+                0x200009a0                MSS_UART_get_rx
+                0x20000a3c                MSS_UART_enable_irq
+                0x20000aa4                MSS_UART_disable_irq
+                0x20000c1c                MSS_UART_set_rx_handler
+                0x20000cc0                MSS_UART_set_loopback
+                0x20000cf8                UART0_IRQHandler
+                0x20000d28                UART1_IRQHandler
+                0x20000d58                MSS_UART_set_rxstatus_handler
+                0x20000dd8                MSS_UART_set_tx_handler
+                0x20000e60                MSS_UART_set_modemstatus_handler
+                0x20000ee0                MSS_UART_fill_tx_fifo
+                0x20000f74                MSS_UART_get_rx_status
+                0x20000fac                MSS_UART_get_modem_status
+                0x20000fd4                MSS_UART_get_tx_status
+                0x20001008                MSS_UART_init
+ .text          0x20001158      0x10c N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20001158                SystemInit
+                0x2000115c                SystemCoreClockUpdate
+ .text          0x20001264      0x21c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubsf3.o)
+                0x20001264                __aeabi_frsub
+                0x2000126c                __subsf3
+                0x2000126c                __aeabi_fsub
+                0x20001270                __aeabi_fadd
+                0x20001270                __addsf3
+                0x200013d0                __aeabi_ui2f
+                0x200013d0                __floatunsisf
+                0x200013d8                __aeabi_i2f
+                0x200013d8                __floatsisf
+                0x200013f4                __aeabi_ul2f
+                0x200013f4                __floatundisf
+                0x20001404                __aeabi_l2f
+                0x20001404                __floatdisf
+ .text          0x20001480      0x2a0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivsf3.o)
+                0x20001480                __mulsf3
+                0x20001480                __aeabi_fmul
+                0x200015e8                __aeabi_fdiv
+                0x200015e8                __divsf3
+ .text          0x20001720       0x40 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunssfsi.o)
+                0x20001720                __fixunssfsi
+                0x20001720                __aeabi_f2uiz
+ .text          0x20001760       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x20001760                __libc_init_array
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -287,7 +327,7 @@ END GROUP
  .glue_7        0x00000000        0x0 linker stubs
  *(.vfp11_veneer)
  .vfp11_veneer  0x00000000        0x0 linker stubs
-                0x20001154                . = ALIGN (0x4)
+                0x200017b0                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
@@ -297,92 +337,91 @@ END GROUP
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x20001154       0x10 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .rodata        0x200017b0       0x10 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
  *(.eh_frame_hdr)
  *(.eh_frame)
  *(.init)
- .init          0x20001164        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x20001164                _init
- .init          0x20001168        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .init          0x200017c0        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x200017c0                _init
+ .init          0x200017c4        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
  *(.fini)
- .fini          0x20001170        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x20001170                _fini
- .fini          0x20001174        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
-                0x2000117c                PROVIDE (__preinit_array_start, .)
+ .fini          0x200017cc        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x200017cc                _fini
+ .fini          0x200017d0        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x200017d8                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x2000117c                PROVIDE (__preinit_array_end, .)
-                0x2000117c                PROVIDE (__init_array_start, .)
+                0x200017d8                PROVIDE (__preinit_array_end, .)
+                0x200017d8                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x2000117c        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
-                0x20001180                PROVIDE (__init_array_end, .)
-                0x20001180                PROVIDE (__fini_array_start, .)
+ .init_array    0x200017d8        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+                0x200017dc                PROVIDE (__init_array_end, .)
+                0x200017dc                PROVIDE (__fini_array_start, .)
  *(.fini_array)
- .fini_array    0x20001180        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .fini_array    0x200017dc        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(SORT(.fini_array.*))
-                0x20001184                PROVIDE (__fini_array_end, .)
-                0x20001184                __exidx_start = .
+                0x200017e0                PROVIDE (__fini_array_end, .)
+                0x200017e0                __exidx_start = .
 
-.v4_bx          0x20001184        0x0
+.v4_bx          0x200017e0        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x20001184                __exidx_end = .
-                0x20001184                _etext = .
-                0x20001184                PROVIDE (__text_end, .)
+                0x200017e0                __exidx_end = .
+                0x200017e0                _etext = .
+                0x200017e0                PROVIDE (__text_end, .)
 
-.data           0x20001184       0x1c
-                0x20001184                __data_load = LOADADDR (.data)
-                0x20001184                _sidata = LOADADDR (.data)
-                0x20001184                __data_start = .
-                0x20001184                _sdata = .
+.data           0x200017e0       0x1c
+                0x200017e0                __data_load = LOADADDR (.data)
+                0x200017e0                _sidata = LOADADDR (.data)
+                0x200017e0                __data_start = .
+                0x200017e0                _sdata = .
  *(.jcr)
- .jcr           0x20001184        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .jcr           0x20001184        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .jcr           0x200017e0        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .jcr           0x200017e0        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
  *(.got.plt)
  *(.got)
  *(.shdata)
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x20001188       0x18 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20001188                SystemCoreClock
-                0x2000118c                g_FrequencyPCLK0
-                0x20001190                g_FrequencyPCLK1
-                0x20001194                g_FrequencyACE
-                0x20001198                g_FrequencyFPGA
-                0x2000119c                SystemFrequency
-                0x200011a0                . = ALIGN (0x4)
-                0x200011a0                _edata = .
+ .data          0x200017e4       0x18 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x200017e4                SystemCoreClock
+                0x200017e8                g_FrequencyPCLK0
+                0x200017ec                g_FrequencyPCLK1
+                0x200017f0                g_FrequencyACE
+                0x200017f4                g_FrequencyFPGA
+                0x200017f8                SystemFrequency
+                0x200017fc                . = ALIGN (0x4)
+                0x200017fc                _edata = .
 
-.bss            0x200011a0       0x58
-                0x200011a0                __bss_start__ = .
-                0x200011a0                _sbss = .
+.bss            0x200017fc       0x54
+                0x200017fc                __bss_start__ = .
+                0x200017fc                _sbss = .
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x200011a0        0x1 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .bss           0x200017fc        0x1 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(COMMON)
- *fill*         0x200011a1        0x3 00
- COMMON         0x200011a4       0x50 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x200011a4                g_mss_uart1
-                0x200011cc                g_mss_uart0
-                0x200011f8                . = ALIGN (0x8)
- *fill*         0x200011f4        0x4 00
-                0x200011f8                __bss_end__ = .
-                0x200011f8                _end = .
-                0x200011f8                __end = _end
-                0x200011f8                _ebss = .
-                0x200011f8                PROVIDE (end, .)
+ *fill*         0x200017fd        0x3 00
+ COMMON         0x20001800       0x50 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20001800                g_mss_uart1
+                0x20001828                g_mss_uart0
+                0x20001850                . = ALIGN (0x8)
+                0x20001850                __bss_end__ = .
+                0x20001850                _end = .
+                0x20001850                __end = _end
+                0x20001850                _ebss = .
+                0x20001850                PROVIDE (end, .)
 
-.stack          0x200011f8     0x3000
-                0x200011f8                . = ALIGN (0x4)
-                0x200021f8                . = (. + PROCESS_STACK_SIZE)
- *fill*         0x200011f8     0x1000 00
-                0x200021f8                . = ALIGN (0x4)
-                0x200041f8                . = (. + MAIN_STACK_SIZE)
- *fill*         0x200021f8     0x2000 00
-                0x200041f8                . = ALIGN (0x4)
+.stack          0x20001850     0x3000
+                0x20001850                . = ALIGN (0x4)
+                0x20002850                . = (. + PROCESS_STACK_SIZE)
+ *fill*         0x20001850     0x1000 00
+                0x20002850                . = ALIGN (0x4)
+                0x20004850                . = (. + MAIN_STACK_SIZE)
+ *fill*         0x20002850     0x2000 00
+                0x20004850                . = ALIGN (0x4)
 
 .stab
  *(.stab)
@@ -408,87 +447,87 @@ END GROUP
  .comment       0x00000056       0x2b N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .comment       0x00000081       0x2b N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_aranges  0x00000000       0x80
+.debug_aranges  0x00000000       0x90
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x20 ./main.o
+                0x00000000       0x30 ./main.o
  .debug_aranges
-                0x00000020       0x20 N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x00000030       0x20 N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .debug_aranges
-                0x00000040       0x20 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x00000050       0x20 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .debug_aranges
-                0x00000060       0x20 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000070       0x20 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_pubnames
-                0x00000000      0x3d6
+                0x00000000      0x409
  *(.debug_pubnames)
  .debug_pubnames
-                0x00000000       0x1b ./main.o
+                0x00000000       0x4e ./main.o
  .debug_pubnames
-                0x0000001b       0xeb N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x0000004e       0xeb N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .debug_pubnames
-                0x00000106      0x21c N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x00000139      0x21c N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .debug_pubnames
-                0x00000322       0xb4 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000355       0xb4 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_info     0x00000000     0x3943
+.debug_info     0x00000000     0x3988
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0xbaf ./main.o
- .debug_info    0x00000baf     0x10e7 N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_info    0x00001c96     0x173c N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_info    0x000033d2      0x571 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_info    0x00000000      0xbf4 ./main.o
+ .debug_info    0x00000bf4     0x10e7 N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_info    0x00001cdb     0x173c N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_info    0x00003417      0x571 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_abbrev   0x00000000      0x81e
+.debug_abbrev   0x00000000      0x83c
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x179 ./main.o
- .debug_abbrev  0x00000179      0x24f N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_abbrev  0x000003c8      0x304 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_abbrev  0x000006cc      0x152 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_abbrev  0x00000000      0x197 ./main.o
+ .debug_abbrev  0x00000197      0x24f N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_abbrev  0x000003e6      0x304 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_abbrev  0x000006ea      0x152 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_line     0x00000000      0xf28
+.debug_line     0x00000000     0x114c
  *(.debug_line)
- .debug_line    0x00000000      0x31a ./main.o
- .debug_line    0x0000031a      0x464 N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_line    0x0000077e      0x519 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_line    0x00000c97      0x291 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_line    0x00000000      0x53e ./main.o
+ .debug_line    0x0000053e      0x464 N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_line    0x000009a2      0x519 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_line    0x00000ebb      0x291 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_frame    0x00000000      0x424
+.debug_frame    0x00000000      0x460
  *(.debug_frame)
- .debug_frame   0x00000000       0x38 ./main.o
- .debug_frame   0x00000038      0x174 N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_frame   0x000001ac      0x1f0 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_frame   0x0000039c       0x3c N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .debug_frame   0x000003d8       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
- .debug_frame   0x000003f8       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .debug_frame   0x00000000       0x74 ./main.o
+ .debug_frame   0x00000074      0x174 N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_frame   0x000001e8      0x1f0 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_frame   0x000003d8       0x3c N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_frame   0x00000414       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+ .debug_frame   0x00000434       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
 
-.debug_str      0x00000000     0x188e
+.debug_str      0x00000000     0x18af
  *(.debug_str)
- .debug_str     0x00000000      0xec0 ./main.o
-                                0xf2f (size before relaxing)
- .debug_str     0x00000ec0      0x2bb N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_str     0x00000000      0xee1 ./main.o
+                                0xf5c (size before relaxing)
+ .debug_str     0x00000ee1      0x2bb N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
                                0x10e9 (size before relaxing)
- .debug_str     0x0000117b      0x61c N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_str     0x0000119c      0x61c N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
                                0x14fa (size before relaxing)
- .debug_str     0x00001797       0xf7 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_str     0x000017b8       0xf7 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
                                 0x49d (size before relaxing)
 
-.debug_loc      0x00000000      0xca3
+.debug_loc      0x00000000      0xd0f
  *(.debug_loc)
- .debug_loc     0x00000000       0x39 ./main.o
- .debug_loc     0x00000039      0x30d N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_loc     0x00000346      0x894 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_loc     0x00000bda       0xc9 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_loc     0x00000000       0xa5 ./main.o
+ .debug_loc     0x000000a5      0x30d N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_loc     0x000003b2      0x894 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_loc     0x00000c46       0xc9 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_macinfo  0x00000000    0x1c582
+.debug_macinfo  0x00000000    0x1ef7e
  *(.debug_macinfo)
  .debug_macinfo
-                0x00000000     0x6da3 ./main.o
+                0x00000000     0x979f ./main.o
  .debug_macinfo
-                0x00006da3     0x9964 N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x0000979f     0x9964 N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .debug_macinfo
-                0x00010707     0x63e3 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x00013103     0x63e3 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .debug_macinfo
-                0x00016aea     0x5a98 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x000194e6     0x5a98 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_weaknames
  *(.debug_weaknames)
@@ -523,21 +562,27 @@ END GROUP
  .ARM.attributes
                 0x000000f6       0x31 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .ARM.attributes
-                0x00000127       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+                0x00000127       0x1b c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubsf3.o)
  .ARM.attributes
-                0x00000150       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x00000142       0x1b c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivsf3.o)
  .ARM.attributes
-                0x00000179       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x0000015d       0x1b c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunssfsi.o)
  .ARM.attributes
-                0x000001a2       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+                0x00000178       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
  .ARM.attributes
-                0x000001cb       0x19 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x000001a1       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000001ca       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x000001f3       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .ARM.attributes
+                0x0000021c       0x19 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
 
 /DISCARD/
  *(.note.GNU-stack)
  *(.isr_vector)
 OUTPUT(N64_controller_iter_4_MSS_MSS_CM3_0_app elf32-littlearm)
 
-.debug_ranges   0x00000000       0x30
- .debug_ranges  0x00000000       0x18 ./main.o
- .debug_ranges  0x00000018       0x18 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+.debug_ranges   0x00000000       0x40
+ .debug_ranges  0x00000000       0x28 ./main.o
+ .debug_ranges  0x00000028       0x18 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole\N64_controller_iter_4_MSS_MSS_CM3_0\N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform\Debug\libN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
