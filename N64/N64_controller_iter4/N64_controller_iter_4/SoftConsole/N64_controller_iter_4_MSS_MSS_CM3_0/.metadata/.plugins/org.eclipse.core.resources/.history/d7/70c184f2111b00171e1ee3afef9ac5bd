@@ -27,7 +27,7 @@ int main(void)
 
 	int relevant_data_bytes = 6;
 	uint8_t controller_buff[relevant_data_bytes];
-	//uint8_t tx_buff[relevant_data_bytes];
+	uint8_t tx_buff[relevant_data_bytes];
 
 	MSS_UART_init(
 			&g_mss_uart1,

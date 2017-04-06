@@ -17,17 +17,25 @@
 
 int8_t change_endianness(int8_t old);
 uint8_t calc_speed_percent_stick(uint8_t abs_x, uint8_t abs_y);
-void parse_controller_data(uint32_t controller_data_local, uint8_t controller_buff[6]);
+uint8_t* controller_data(uint32_t controller_data_local);
 
 int main(void)
 {
 	uint32_t controller_data; //holds all 32 bits of controller data
 
+
+	int8_t y_axis; //all 8 bits hold data about y_axis data from controller
+	int8_t x_axis; //all 8 bits hold data about x_axis data from controller
+	uint8_t up; //1 or 0
+	uint8_t down; //1 or 0
+	uint8_t left; //1 or 0
+	uint8_t right; //1 or 0
+
 	uint8_t speed_percent;
 
 	int relevant_data_bytes = 6;
 	uint8_t controller_buff[relevant_data_bytes];
-	//uint8_t tx_buff[relevant_data_bytes];
+	uint8_t tx_buff[relevant_data_bytes];
 
 	MSS_UART_init(
 			&g_mss_uart1,
@@ -39,13 +47,29 @@ int main(void)
 	{
 		controller_data = *CONTROLLER_DATA_REG;
 
-		parse_controller_data(controller_data, controller_buff);
+		y_axis = (int8_t)((controller_buff & y_mask) >> 24);
+		y_axis = change_endianness(y_axis);
 
-		speed_percent = (!controller_buff[2] && !controller_buff[3] && !controller_buff[4] && !controller_buff[5] ) ?
-				calc_speed_percent_stick(abs(controller_buff[1]), abs(controller_buff[0])) :
+		x_axis = (int8_t)((controller_buff & x_mask) >> 16);
+		x_axis = change_endianness(x_axis);
+
+		up = (uint8_t)((controller_buff & up_mask) >> 4);
+		down = (uint8_t)((controller_buff & down_mask) >> 5);
+		left = (uint8_t)((controller_buff & left_mask) >> 6);
+		right =(uint8_t)((controller_buff & right_mask) >> 7);
+
+		speed_percent = (!up && !down && !left && !right ) ?
+				calc_speed_percent_stick(abs(x_axis), abs(y_axis)) :
 				100;
 
-		MSS_UART_polled_tx(&g_mss_uart1, controller_buff, sizeof(controller_buff));
+		tx_buff[0] = y_axis;
+		tx_buff[1] = x_axis;
+		tx_buff[2] = up;
+		tx_buff[3] = down;
+		tx_buff[4] = left;
+		tx_buff[5] = right;
+
+		MSS_UART_polled_tx(&g_mss_uart1, tx_buff, sizeof(tx_buff));
 
 		//printf("Controller Data: %" PRIu32 "\n",controller_buff);
 
@@ -83,15 +107,7 @@ uint8_t calc_speed_percent_stick(uint8_t abs_x, uint8_t abs_y) {
 	return speed_percentage;
 }
 
-void parse_controller_data(uint32_t controller_data_local, uint8_t controller_buff[6]) {
-
-	int8_t y_axis; //all 8 bits hold data about y_axis data from controller
-	int8_t x_axis; //all 8 bits hold data about x_axis data from controller
-	uint8_t up; //1 or 0
-	uint8_t down; //1 or 0
-	uint8_t left; //1 or 0
-	uint8_t right; //1 or 0
-
+uint8_t* parse_controller_data(uint32_t controller_data_local) {
 	y_axis = (int8_t)((controller_data_local & y_mask) >> 24);
 	y_axis = change_endianness(y_axis);
 
@@ -110,4 +126,5 @@ void parse_controller_data(uint32_t controller_data_local, uint8_t controller_bu
 	controller_buff[4] = left;
 	controller_buff[5] = right;
 
+	return controller_buff;
 }

@@ -17,7 +17,7 @@
 
 int8_t change_endianness(int8_t old);
 uint8_t calc_speed_percent_stick(uint8_t abs_x, uint8_t abs_y);
-void parse_controller_data(uint32_t controller_data_local, uint8_t controller_buff[6]);
+uint8_t* parse_controller_data(uint32_t controller_data_local, uint8_t controller_buff[6]);
 
 int main(void)
 {
@@ -27,7 +27,7 @@ int main(void)
 
 	int relevant_data_bytes = 6;
 	uint8_t controller_buff[relevant_data_bytes];
-	//uint8_t tx_buff[relevant_data_bytes];
+	uint8_t tx_buff[relevant_data_bytes];
 
 	MSS_UART_init(
 			&g_mss_uart1,
@@ -39,13 +39,13 @@ int main(void)
 	{
 		controller_data = *CONTROLLER_DATA_REG;
 
-		parse_controller_data(controller_data, controller_buff);
+		parse_controller_data(controller_data, controller_buff, relevant_data_bytes);
 
-		speed_percent = (!controller_buff[2] && !controller_buff[3] && !controller_buff[4] && !controller_buff[5] ) ?
+		speed_percent = (!up && !down && !left && !right ) ?
 				calc_speed_percent_stick(abs(controller_buff[1]), abs(controller_buff[0])) :
 				100;
 
-		MSS_UART_polled_tx(&g_mss_uart1, controller_buff, sizeof(controller_buff));
+		MSS_UART_polled_tx(&g_mss_uart1, tx_buff, sizeof(tx_buff));
 
 		//printf("Controller Data: %" PRIu32 "\n",controller_buff);
 

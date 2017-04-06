@@ -643,10 +643,10 @@ ENDLIST
 LIST PhySynthesisOptions
 ENDLIST
 LIST Profiles
-NAME="SoftConsole"
+NAME="SoftConsole v3.3"
 FUNCTION="SoftwareIDE"
 TOOL="SoftConsole"
-LOCATION="eclipse.exe"
+LOCATION="C:\Program Files (x86)\Microsemi\SoftConsole v3.3\Eclipse\eclipse.exe"
 PARAM=""
 BATCH=0
 LICENSE=""
@@ -727,8 +727,13 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+HDL;hdl\controller_interface.v;0
+Reports;Reports;0
+ReportsCurrentItem;Generate Programming Data:N64_controller_iter_4_prgdata_log.rpt
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;N64_controller_iter_4;0
+SmartDesign;N64_controller_iter_4_MSS;0
+ACTIVEVIEW;hdl\controller_interface.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"

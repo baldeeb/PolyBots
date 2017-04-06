@@ -27,7 +27,7 @@ int main(void)
 
 	int relevant_data_bytes = 6;
 	uint8_t controller_buff[relevant_data_bytes];
-	//uint8_t tx_buff[relevant_data_bytes];
+	uint8_t tx_buff[relevant_data_bytes];
 
 	MSS_UART_init(
 			&g_mss_uart1,
@@ -45,7 +45,7 @@ int main(void)
 				calc_speed_percent_stick(abs(controller_buff[1]), abs(controller_buff[0])) :
 				100;
 
-		MSS_UART_polled_tx(&g_mss_uart1, controller_buff, sizeof(controller_buff));
+		MSS_UART_polled_tx(&g_mss_uart1, tx_buff, sizeof(tx_buff));
 
 		//printf("Controller Data: %" PRIu32 "\n",controller_buff);
 
