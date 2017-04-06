@@ -26,13 +26,13 @@ Report for cell N64_controller_iter_4.verilog
               MX2A     2      1.0        2.0
               MX2B     4      1.0        4.0
               MX2C     6      1.0        6.0
-              NOR2    33      1.0       33.0
-             NOR2A   187      1.0      187.0
+              NOR2    34      1.0       34.0
+             NOR2A   155      1.0      155.0
              NOR2B    82      1.0       82.0
               NOR3     5      1.0        5.0
-             NOR3A    35      1.0       35.0
+             NOR3A    36      1.0       36.0
              NOR3B    24      1.0       24.0
-             NOR3C    76      1.0       76.0
+             NOR3C   108      1.0      108.0
                OA1    22      1.0       22.0
               OA1A    41      1.0       41.0
               OA1B     1      1.0        1.0
@@ -40,7 +40,7 @@ Report for cell N64_controller_iter_4.verilog
               OAI1     1      1.0        1.0
                OR2     5      1.0        5.0
               OR2A   100      1.0      100.0
-              OR2B     4      1.0        4.0
+              OR2B     2      1.0        2.0
                OR3    14      1.0       14.0
               OR3B     1      1.0        1.0
               OR3C     4      1.0        4.0

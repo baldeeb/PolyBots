@@ -324,3 +324,109 @@ org.eclipse.cdt.debug.mi.core.MIException: The program is not being run.
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:866)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$7.run(DebugUIPlugin.java:952)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SESSION 2017-04-06 10:08:56.120 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0
+
+!ENTRY com.actel.softconsole.embeddedcdt.cortexm3 4 150 2017-04-06 10:18:48.532
+!MESSAGE Failed command: load
+!STACK 0
+org.eclipse.cdt.debug.mi.core.MIException: No executable file specified.\nUse the "file" or "exec-file" command.
+	at org.eclipse.cdt.debug.mi.core.command.Command.throwMIException(Command.java:105)
+	at org.eclipse.cdt.debug.mi.core.command.Command.getMIInfo(Command.java:79)
+	at com.actel.softconsole.embeddedcdt.cortexm3.launch.Launch.executeGDBScript(Launch.java:562)
+	at com.actel.softconsole.embeddedcdt.cortexm3.launch.Launch.launch(Launch.java:271)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:866)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$7.run(DebugUIPlugin.java:952)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 com.actel.softconsole.embeddedcdt.cortexm3 4 150 2017-04-06 10:18:48.532
+!MESSAGE No executable file specified.\nUse the "file" or "exec-file" command.
+!STACK 0
+org.eclipse.cdt.debug.mi.core.MIException: No executable file specified.\nUse the "file" or "exec-file" command.
+	at org.eclipse.cdt.debug.mi.core.command.Command.throwMIException(Command.java:105)
+	at org.eclipse.cdt.debug.mi.core.command.Command.getMIInfo(Command.java:79)
+	at com.actel.softconsole.embeddedcdt.cortexm3.launch.Launch.executeGDBScript(Launch.java:562)
+	at com.actel.softconsole.embeddedcdt.cortexm3.launch.Launch.launch(Launch.java:271)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:866)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$7.run(DebugUIPlugin.java:952)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-04-06 10:18:49.706
+!MESSAGE An internal error occurred during: "Debug Source Lookup".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.debug.internal.core.model.CStackFrame.getAddress(CStackFrame.java:610)
+	at org.eclipse.cdt.debug.internal.ui.CDebugModelPresentation.getStackFrameText(CDebugModelPresentation.java:736)
+	at org.eclipse.cdt.debug.internal.ui.CDebugModelPresentation.getBaseText(CDebugModelPresentation.java:401)
+	at org.eclipse.cdt.debug.internal.ui.CDebugModelPresentation.getBaseText(CDebugModelPresentation.java:405)
+	at org.eclipse.cdt.debug.internal.ui.CDebugModelPresentation.getText(CDebugModelPresentation.java:367)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.debug.ui.sourcelookup.CommonSourceNotFoundEditorInput.<init>(CommonSourceNotFoundEditorInput.java:53)
+	at org.eclipse.cdt.debug.internal.ui.sourcelookup.CSourceNotFoundEditorInput.<init>(CSourceNotFoundEditorInput.java:19)
+	at org.eclipse.cdt.debug.internal.ui.CDebugModelPresentation.getEditorInput(CDebugModelPresentation.java:199)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getEditorInput(LazyModelPresentation.java:234)
+	at org.eclipse.debug.internal.ui.sourcelookup.SourceLookupFacility.lookup(SourceLookupFacility.java:175)
+	at org.eclipse.debug.ui.DebugUITools.lookupSource(DebugUITools.java:777)
+	at org.eclipse.debug.internal.ui.elements.adapters.StackFrameSourceDisplayAdapter$SourceLookupJob.run(StackFrameSourceDisplayAdapter.java:109)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-04-06 10:18:49.711
+!MESSAGE An internal error occurred during: "Label Job".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.debug.internal.core.model.CStackFrame.getAddress(CStackFrame.java:610)
+	at org.eclipse.cdt.debug.internal.ui.CDebugModelPresentation.getStackFrameText(CDebugModelPresentation.java:736)
+	at org.eclipse.cdt.debug.internal.ui.CDebugModelPresentation.getBaseText(CDebugModelPresentation.java:401)
+	at org.eclipse.cdt.debug.internal.ui.CDebugModelPresentation.getText(CDebugModelPresentation.java:367)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getLabel(DebugElementLabelProvider.java:35)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:212)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:157)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-04-06 10:18:49.820
+!MESSAGE An internal error occurred during: "Label Job".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.debug.internal.core.model.CStackFrame.getAddress(CStackFrame.java:610)
+	at org.eclipse.cdt.debug.internal.ui.CDebugModelPresentation.getStackFrameText(CDebugModelPresentation.java:736)
+	at org.eclipse.cdt.debug.internal.ui.CDebugModelPresentation.getBaseText(CDebugModelPresentation.java:401)
+	at org.eclipse.cdt.debug.internal.ui.CDebugModelPresentation.getText(CDebugModelPresentation.java:367)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getLabel(DebugElementLabelProvider.java:35)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:212)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:157)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-04-06 10:19:03.362
+!MESSAGE An internal error occurred during: "Label Job".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.debug.internal.core.model.CStackFrame.getAddress(CStackFrame.java:610)
+	at org.eclipse.cdt.debug.internal.ui.CDebugModelPresentation.getStackFrameText(CDebugModelPresentation.java:736)
+	at org.eclipse.cdt.debug.internal.ui.CDebugModelPresentation.getBaseText(CDebugModelPresentation.java:401)
+	at org.eclipse.cdt.debug.internal.ui.CDebugModelPresentation.getText(CDebugModelPresentation.java:367)
+	at org.eclipse.debug.internal.ui.LazyModelPresentation.getText(LazyModelPresentation.java:185)
+	at org.eclipse.debug.internal.ui.DelegatingModelPresentation.getText(DelegatingModelPresentation.java:158)
+	at org.eclipse.debug.internal.ui.model.elements.DebugElementLabelProvider.getLabel(DebugElementLabelProvider.java:35)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider.retrieveLabel(ElementLabelProvider.java:212)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelUpdater.run(ElementLabelProvider.java:157)
+	at org.eclipse.debug.internal.ui.model.elements.ElementLabelProvider$LabelJob.run(ElementLabelProvider.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 1 2017-04-06 11:06:51.256
+!MESSAGE Problems occurred refreshing resources
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2017-04-06 11:06:51.256
+!MESSAGE Problem finding next change, code: 995

@@ -20,7 +20,8 @@ module controller_interface(
 );
 `define TICKS_PER_MICRO 25 // clock frequecny in MHz = ticks per micro second
 
-
+assign PREADY = 1'b1;
+assign PSLVERR = 1'b0;
 
 ///////////////////////////////DECLARATIONS//////////////////////////
 //*********STATE MACHINE DECLARATIONS***************//

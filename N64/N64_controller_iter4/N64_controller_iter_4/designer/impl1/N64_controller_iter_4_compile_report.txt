@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Thu Apr 06 09:59:55 2017 ***************************************************************************
+                          Thu Apr 06 10:38:51 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
 File Name: N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller_iter_4.adb
 Design Name: N64_controller_iter_4  Design State: compile
-Last Saved: Thu Apr 06 09:56:46 2017
+Last Saved: Thu Apr 06 10:01:47 2017
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Thu Apr 06 09:59:48 2017:
+Source File(s) Imported on Thu Apr 06 10:38:44 2017:
         N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.edn
         N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.pdc
 

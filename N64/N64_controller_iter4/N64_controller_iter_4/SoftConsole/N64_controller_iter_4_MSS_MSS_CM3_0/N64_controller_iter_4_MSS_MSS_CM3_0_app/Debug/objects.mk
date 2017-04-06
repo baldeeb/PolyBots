@@ -2,6 +2,6 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-USER_OBJS := N:/eecs373/project/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o N:/eecs373/project/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+USER_OBJS := N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/SoftConsole/N64_controller_iter_4_MSS_MSS_CM3_0/N64_controller_iter_4_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
 
 LIBS := -lN64_controller_iter_4_MSS_MSS_CM3_0_hw_platform

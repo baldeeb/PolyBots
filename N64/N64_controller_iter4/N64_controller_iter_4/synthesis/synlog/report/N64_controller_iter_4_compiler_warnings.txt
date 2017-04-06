@@ -1,7 +1,5 @@
-@W: CG360 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":13:16:13:21|No assignment to wire PREADY
-@W: CG360 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":14:16:14:22|No assignment to wire PSLVERR
-@W: CL169 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":193:0:193:5|Pruning register temp_global_count[31:0] 
-@W: CL169 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":193:0:193:5|Pruning register temp 
+@W: CL169 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":194:0:194:5|Pruning register temp_global_count[31:0] 
+@W: CL169 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":194:0:194:5|Pruning register temp 
 @W: CG775 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Found Component CoreAPB3 in library COREAPB3_LIB
 @W: CG360 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":244:12:244:20|No assignment to wire IA_PRDATA
 @W: CL157 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits -- simulation mismatch possible.
@@ -70,9 +68,7 @@
 @W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":151:13:151:22|Input PSLVERRS13 is unused
 @W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":152:13:152:22|Input PSLVERRS14 is unused
 @W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":153:13:153:22|Input PSLVERRS15 is unused
-@W:"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":193:0:193:5|The read address covers a larger address space than the RAM depth. Access beyond the memory depth will be treated as a "don't-care"
-@W: CL157 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":13:16:13:21|*Output PREADY has undriven bits -- simulation mismatch possible.
-@W: CL157 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":14:16:14:22|*Output PSLVERR has undriven bits -- simulation mismatch possible.
+@W:"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":194:0:194:5|The read address covers a larger address space than the RAM depth. Access beyond the memory depth will be treated as a "don't-care"
 @W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":10:10:10:16|Input PRESERN is unused
 @W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":11:10:11:13|Input PSEL is unused
 @W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":12:10:12:16|Input PENABLE is unused

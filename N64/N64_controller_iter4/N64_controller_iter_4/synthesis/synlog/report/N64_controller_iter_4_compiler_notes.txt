@@ -13,7 +13,7 @@
 @N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
 @N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v":9:7:9:31|Synthesizing module N64_controller_iter_4_MSS
 @N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.v":9:7:9:27|Synthesizing module N64_controller_iter_4
-@N: CL177 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":273:0:273:5|Sharing sequential element LED_test.
-@N: CL134 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":193:0:193:5|Found RAM controller_data, depth=33, width=1
+@N: CL177 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":274:0:274:5|Sharing sequential element LED_test.
+@N: CL134 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":194:0:194:5|Found RAM controller_data, depth=33, width=1
 @N|Running in 64-bit mode
 

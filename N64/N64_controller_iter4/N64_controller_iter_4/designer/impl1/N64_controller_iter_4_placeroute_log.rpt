@@ -34,16 +34,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Thu Apr 06 10:00:10 2017
+Timing-driven Placer Started: Thu Apr 06 10:39:05 2017
 
-Placer Finished: Thu Apr 06 10:00:35 2017
-Total Placer CPU Time:     00:00:25
+Placer Finished: Thu Apr 06 10:39:29 2017
+Total Placer CPU Time:     00:00:24
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: N64_controller_iter_4           Started: Thu Apr 06 10:00:41 2017
+Design: N64_controller_iter_4           Started: Thu Apr 06 10:39:34 2017
 
  
 Iterative improvement...
@@ -51,9 +51,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: N64_controller_iter_4           
-Finished: Thu Apr 06 10:01:03 2017
-Total CPU Time:     00:00:20            Total Elapsed Time: 00:00:22
-Total Memory Usage: 186.7 Mbytes
+Finished: Thu Apr 06 10:39:57 2017
+Total CPU Time:     00:00:21            Total Elapsed Time: 00:00:23
+Total Memory Usage: 187.1 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
@@ -61,7 +61,7 @@ Finished loading the Timing data.
 TIMER: Max delay timing requirements have been met.
 TIMER: Min delay timing requirements have been met.
 
-The Layout command succeeded ( 00:01:02 )
+The Layout command succeeded ( 00:01:01 )
 Wrote status report to file: N64_controller_iter_4_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -70,7 +70,7 @@ Wrote globalnet report to file: N64_controller_iter_4_globalnet_report.txt
 The Report command succeeded ( 00:00:00 )
 Wrote globalusage report to file: N64_controller_iter_4_globalusage_report.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:01 )
 Wrote iobank report to file: N64_controller_iter_4_iobank_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -84,6 +84,6 @@ Design saved to file
 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controlle\
 r_iter_4.adb.
 
-The Execute Script command succeeded ( 00:01:09 )
+The Execute Script command succeeded ( 00:01:08 )
 Design closed.
 

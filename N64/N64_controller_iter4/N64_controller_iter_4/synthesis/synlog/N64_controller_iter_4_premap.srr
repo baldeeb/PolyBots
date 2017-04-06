@@ -31,14 +31,12 @@ FCLK        25.0 MHz      40.000        declared     clk_group_0
 ================================================================
 
 Finished Pre Mapping Phase.
-@W: MO111 :|Tristate driver CoreAPB3_0_APBmslave0_PREADY_t on net CoreAPB3_0_APBmslave0_PREADY has its enable tied to GND (module N64_controller_iter_4) 
-@W: MO111 :|Tristate driver CoreAPB3_0_APBmslave0_PSLVERR_t on net CoreAPB3_0_APBmslave0_PSLVERR has its enable tied to GND (module N64_controller_iter_4) 
 @N: BN225 |Writing default property annotation file N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap.
 Pre-mapping successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 50MB peak: 114MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Thu Apr 06 09:59:32 2017
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Apr 06 10:38:24 2017
 
 ###########################################################]
