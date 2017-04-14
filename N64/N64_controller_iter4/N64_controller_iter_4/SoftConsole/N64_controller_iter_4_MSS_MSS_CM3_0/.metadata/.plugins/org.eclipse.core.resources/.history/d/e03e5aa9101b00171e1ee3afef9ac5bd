@@ -1,0 +1,130 @@
+#include "drivers/mss_uart/mss_uart.h"
+#include "inttypes.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+
+#define CONTROLLER_DATA_REG ((uint32_t *) FPGA_FABRIC_BASE)
+
+#define max_axis_thres 127
+
+#define y_mask 0xFF000000
+#define	x_mask 0x00FF0000
+#define	up_mask 0x00000010
+#define down_mask 0x00000020
+#define	left_mask 0x00000040
+#define	right_mask 0x00000080
+
+int8_t change_endianness(int8_t old);
+uint8_t calc_speed_percent_stick(uint8_t abs_x, uint8_t abs_y);
+uint8_t* controller_data(uint32_t controller_data_local);
+
+int main(void)
+{
+	uint32_t controller_data; //holds all 32 bits of controller data
+
+
+	int8_t y_axis; //all 8 bits hold data about y_axis data from controller
+	int8_t x_axis; //all 8 bits hold data about x_axis data from controller
+	uint8_t up; //1 or 0
+	uint8_t down; //1 or 0
+	uint8_t left; //1 or 0
+	uint8_t right; //1 or 0
+
+	uint8_t speed_percent;
+
+	int relevant_data_bytes = 6;
+	uint8_t controller_buff[relevant_data_bytes];
+	uint8_t tx_buff[relevant_data_bytes];
+
+	MSS_UART_init(
+			&g_mss_uart1,
+			MSS_UART_57600_BAUD,
+			MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT
+	);
+
+	while( 1 )
+	{
+		controller_data = *CONTROLLER_DATA_REG;
+
+		y_axis = (int8_t)((controller_buff & y_mask) >> 24);
+		y_axis = change_endianness(y_axis);
+
+		x_axis = (int8_t)((controller_buff & x_mask) >> 16);
+		x_axis = change_endianness(x_axis);
+
+		up = (uint8_t)((controller_buff & up_mask) >> 4);
+		down = (uint8_t)((controller_buff & down_mask) >> 5);
+		left = (uint8_t)((controller_buff & left_mask) >> 6);
+		right =(uint8_t)((controller_buff & right_mask) >> 7);
+
+		speed_percent = (!up && !down && !left && !right ) ?
+				calc_speed_percent_stick(abs(x_axis), abs(y_axis)) :
+				100;
+
+		tx_buff[0] = y_axis;
+		tx_buff[1] = x_axis;
+		tx_buff[2] = up;
+		tx_buff[3] = down;
+		tx_buff[4] = left;
+		tx_buff[5] = right;
+
+		MSS_UART_polled_tx(&g_mss_uart1, tx_buff, sizeof(tx_buff));
+
+		//printf("Controller Data: %" PRIu32 "\n",controller_buff);
+
+	}
+
+	return 0;
+}
+
+
+int8_t change_endianness(int8_t old) {
+	int8_t new = 0;
+	int i;
+	for(i = 0; i < 8; i++) {
+		new = new + ((0b00000001 &(old>>(7-i)))<< i);
+	}
+	return new;
+}
+
+uint8_t calc_speed_percent_stick(uint8_t abs_x, uint8_t abs_y) {
+	uint8_t speed_percentage;
+	if(abs_x >= max_axis_thres && abs_y >= max_axis_thres) {
+		speed_percentage =  100;
+	}
+	else if(abs_x >= max_axis_thres) {
+		speed_percentage = (float)abs_y/max_axis_thres*100;
+		speed_percentage = (speed_percentage > 0) ? speed_percentage : 100;
+	}
+	else if(abs_y >= max_axis_thres) {
+		speed_percentage = (float)abs_x/max_axis_thres*100;
+		speed_percentage = (speed_percentage > 0) ? speed_percentage : 100;
+	}
+	else {
+		speed_percentage = (float)(abs_x + abs_y)/(2*max_axis_thres)*100;
+	}
+	return speed_percentage;
+}
+
+uint8_t* parse_controller_data(uint32_t controller_data_local) {
+	y_axis = (int8_t)((controller_data_local & y_mask) >> 24);
+	y_axis = change_endianness(y_axis);
+
+	x_axis = (int8_t)((controller_data_local & x_mask) >> 16);
+	x_axis = change_endianness(x_axis);
+
+	up = (uint8_t)((controller_data_local & up_mask) >> 4);
+	down = (uint8_t)((controller_data_local & down_mask) >> 5);
+	left = (uint8_t)((controller_data_local & left_mask) >> 6);
+	right =(uint8_t)((controller_data_local & right_mask) >> 7);
+
+	controller_buff[0] = y_axis;
+	controller_buff[1] = x_axis;
+	controller_buff[2] = up;
+	controller_buff[3] = down;
+	controller_buff[4] = left;
+	controller_buff[5] = right;
+
+	return controller_buff;
+}
