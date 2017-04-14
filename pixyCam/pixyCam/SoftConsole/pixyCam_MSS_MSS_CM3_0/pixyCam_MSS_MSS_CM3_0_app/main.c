@@ -3,19 +3,28 @@
 #include "drivers/mss_i2c/mss_i2c.h"
 #include "mss_timer.h"
 
+
+/********* Constants ********/
+#define TIMER_FREQ 100000000
+
 #define PIXY_START_WORD             	0xaa55
 #define PIXY_START_WORD_CC          	0xaa56
 #define PIXY_START_WORDX            	0x55aa
 #define PIXY_I2C_DEFAULT_ADDR           0x54
 
 #define PIXY_OBJECT_COUNT 3
-#define PIXY_BUFFER_SIZE 14
-#define PIXY_RECIEVE_BUFF_SIZE (PIXY_BUFFER_SIZE * PIXY_OBJECT_COUNT)+16
+#define PIXY_UNION_U8_SIZE 14
+#define PIXY_UNION_U16_SIZE PIXY_UNION_U8_SIZE/2
+#define PIXY_RECIEVE_BUFF_SIZE (PIXY_UNION_U8_SIZE * PIXY_OBJECT_COUNT)+16
 
-#define PIXY_READ_PERIOD 20000000
+#define PIXY_READ_PERIOD TIMER_FREQ / 50 //10000000
+/************************/
 
+
+/********* Data Structures ********/
 union pixy_data_union{
-	uint8_t u8[PIXY_BUFFER_SIZE];
+	uint8_t u8[PIXY_UNION_U8_SIZE];
+	uint16_t u16[PIXY_UNION_U16_SIZE];
 	struct{
 		uint16_t sync;
 		uint16_t crc;
@@ -24,7 +33,7 @@ union pixy_data_union{
 		uint16_t y;
 		uint16_t width;
 		uint16_t height;
-	}u16;
+	}o;
 };
 
 // used to invert endienness
@@ -32,49 +41,109 @@ union data_buffer_u{
 	uint8_t u8[PIXY_RECIEVE_BUFF_SIZE];
 	uint16_t u16[PIXY_RECIEVE_BUFF_SIZE/2];
 };
+/************************/
 
 
+/********* Globals********/
+union data_buffer_u receive_buf;
+int update_pixy_data_flag;
+union pixy_data_union pixy_data[PIXY_OBJECT_COUNT];
 
-static union data_buffer_u receive_buf;
+union pixy_data_union pixy_ideal_green;
+/************************/
 
 
 /* *
- * This function takes in the data from i2c
- * it switches the endienness of bytes and
- * accumulates then in an easy to read union
+ * removes the first uint8_t from the I2C recieve buffer.
+ * sometimes the camera sends a zero as a first nibble
  * */
-int process_pixy_obj(uint8_t *buff, union pixy_data_union * p_buff){
-	int i;
-
-	//flip byte endienness
-	for (i = 0; i < PIXY_BUFFER_SIZE; i+=1){
-		p_buff->u8[i] = buff[i];
+void shift_recieve_union(){
+	int i ;
+	for(i = 0; i < sizeof(receive_buf)-1; i ++){
+		receive_buf.u8[i] = receive_buf.u8[i+1];
 	}
-
-	if(p_buff->u16.sync != PIXY_START_WORD || p_buff->u16.sync != PIXY_START_WORD_CC){
-		printf("error with block sync bytes\n\r");
-		return 0;
-	}
-	return 1;
 }
 
-/*
+/* *
  * for testing
  * print pixy data
  * */
 void pixy_print(union pixy_data_union *p){
 	printf("\n\r\n\r");
-	printf("id: %" PRIu16"\n\r", p[0].u16.id);
-	printf("x: %" PRIu16"\n\r", p[0].u16.x);
-	printf("y: %" PRIu16"\n\r", p[0].u16.y);
-	printf("width: %" PRIu16"\n\r", p[0].u16.width);
-	printf("height: %" PRIu16"\n\r", p[0].u16.height);
+	printf("id: %" PRIu16"\n\r", p[0].o.id);
+	printf("x: %" PRIu16"\n\r", p[0].o.x);
+	printf("y: %" PRIu16"\n\r", p[0].o.y);
+	printf("width: %" PRIu16"\n\r", p[0].o.width);
+	printf("height: %" PRIu16"\n\r", p[0].o.height);
 }
 
-void pixy_read_multiple(uint8_t *r_buff, union pixy_data_union *p, int obj_count){
+void pixy_read_multiple(union data_buffer_u *r_buff){
+	int obj_index, buff_index;
 
-	if (process_pixy_obj(r_buff, &p[0])){
-		pixy_print(&p[0]);
+
+	if(receive_buf.u8[0] == 0){	shift_recieve_union();	}
+
+	//check if the start bits match expected
+	if(r_buff->u16[0] != PIXY_START_WORD || r_buff->u16[1] != PIXY_START_WORD){
+		//printf("Bad start bits in buffer...\n\r");
+		update_pixy_data_flag = 0;
+		return;
+	}
+
+	for (obj_index = 0; obj_index < PIXY_OBJECT_COUNT; obj_index++){
+		for(buff_index = 0 ; buff_index < PIXY_UNION_U16_SIZE ; buff_index++){
+			pixy_data[obj_index].u16[buff_index] = r_buff->u16[(obj_index*PIXY_UNION_U16_SIZE) + buff_index + 1];
+		}
+	}
+
+	// Temp testing
+//	for (obj_index = 0, buff_index = 1; obj_index < PIXY_OBJECT_COUNT; obj_index++){
+//		pixy_print(&pixy_union_arr[obj_index]);
+//	}
+
+	update_pixy_data_flag = 0;
+}//pixy_read_multiple()
+
+void process_pixy_i2c( void ){
+	switch(MSS_I2C_get_status(&g_mss_i2c1)){
+		case MSS_I2C_SUCCESS:
+			if (update_pixy_data_flag){
+				pixy_read_multiple(&receive_buf);
+			}
+			break;
+		case MSS_I2C_IN_PROGRESS:
+			break;
+		case MSS_I2C_FAILED:
+		case MSS_I2C_TIMED_OUT:
+		default:
+			printf("i2c transmission issues %x\n\r", MSS_I2C_get_status(&g_mss_i2c1));
+	}//switch
+}
+
+
+void init_ideal_pixy_dots( void ){
+	pixy_ideal_green.o.sync = 0;
+	pixy_ideal_green.o.crc = 0;
+
+	pixy_ideal_green.o.id = 2;
+
+	pixy_ideal_green.o.x = 260;
+	pixy_ideal_green.o.y = 67;
+
+	pixy_ideal_green.o.width = 25;
+	pixy_ideal_green.o.height = 24;
+}
+
+
+void pixy_x_err( unsigned int *mag, unsigned int *dir){
+	int err = pixy_ideal_green.o.x - pixy_data->o.x;
+
+	if(err < 0){
+		*mag = -err;
+		*dir = 1;
+	}else{
+		*dir = 0;
+		*mag = err;
 	}
 
 }
@@ -89,37 +158,31 @@ void start_hardware_cont_timer( void ){
 	MSS_TIM1_enable_irq();
 }
 
-
 /* *
  * hardware timer down counting at 100MHz
  * hardware timer down counting
  * */
 void Timer1_IRQHandler( void ){
-	MSS_I2C_read(&g_mss_i2c1, PIXY_I2C_DEFAULT_ADDR, receive_buf.u8, sizeof(receive_buf), MSS_I2C_RELEASE_BUS);
+	MSS_I2C_read(&g_mss_i2c1, PIXY_I2C_DEFAULT_ADDR, receive_buf.u8, PIXY_RECIEVE_BUFF_SIZE, MSS_I2C_RELEASE_BUS);
 	MSS_TIM1_clear_irq();
+	update_pixy_data_flag = 1;
 }
 
 
-int main(void)
-{
-	union pixy_data_union pixy_data[PIXY_OBJECT_COUNT];
+int main( void ){
+
+	//temp testing
+	unsigned int mag, dir;
 
 	MSS_I2C_init(&g_mss_i2c1 , PIXY_I2C_DEFAULT_ADDR, MSS_I2C_PCLK_DIV_256 );
 	start_hardware_cont_timer();
 
-	while(1){
-		switch(MSS_I2C_get_status(&g_mss_i2c1)){
-		case MSS_I2C_SUCCESS:
-			printf("%x%x",receive_buf.u16[0], receive_buf.u16[1]);
-			//pixy_read_multiple(receive_buf.u8, pixy_data, PIXY_RECIEVE_BUFF_SIZE);
-			break;
+	init_ideal_pixy_dots();
 
-		case MSS_I2C_IN_PROGRESS:
-		case MSS_I2C_FAILED:
-		case MSS_I2C_TIMED_OUT:
-		default:
-			printf("i2c transmission issues %x\n\r", MSS_I2C_get_status(&g_mss_i2c1));
-		}
+	while(1){
+		process_pixy_i2c();
+		pixy_x_err( &mag, &dir);
+		printf("%x, %x\n\r", mag, dir);
 	}
 }
 

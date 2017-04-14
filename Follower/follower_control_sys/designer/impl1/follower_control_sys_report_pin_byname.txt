@@ -1,0 +1,13 @@
+*****************************************************************
+Pin Report - Date: Thu Apr 06 16:33:18 2017 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.7 SP1.1
+Version: 11.7.1.14
+Design Name: follower_control_sys
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+*****************************************************************
+Port |Pin |Fixed |Function        |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+-----|----|------|----------------|--------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
+trig  F3   Yes    GFB2/IO68NDB5V0  LVTTL    12                 High  None           ---              No    35                No           No

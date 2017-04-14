@@ -107,9 +107,14 @@ Allocating common symbols
 Common symbol       size              file
 
 errno               0x4               c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+update_pixy_data_flag
+                    0x4               ./main.o
 g_mss_uart1         0x28              N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+pixy_ideal_green    0xe               ./main.o
 g_mss_i2c0          0x74              N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
 g_mss_uart0         0x28              N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+pixy_data           0x2a              ./main.o
+receive_buf         0x64              ./main.o
 g_mss_i2c1          0x74              N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
 
 Discarded input sections
@@ -121,12 +126,8 @@ Discarded input sections
  .text          0x00000000        0x0 ./main.o
  .data          0x00000000        0x0 ./main.o
  .bss           0x00000000        0x0 ./main.o
- .text.process_pixy_obj
-                0x00000000       0x68 ./main.o
  .text.pixy_print
                 0x00000000       0x78 ./main.o
- .text.pixy_read_multiple
-                0x00000000       0x28 ./main.o
  .text          0x00000000        0x0 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
  .data          0x00000000        0x0 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
  .bss           0x00000000        0x0 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
@@ -275,7 +276,7 @@ END GROUP
                 0x20010000                PROVIDE (_estack, __main_stack_start)
                 0x00000000                PROVIDE (__mirrored_nvm, 0x0)
 
-.text           0x20000000     0x98c0
+.text           0x20000000     0x9ac0
  CREATE_OBJECT_SYMBOLS
                 0x20000000                __text_load = LOADADDR (.text)
                 0x20000000                __text_start = .
@@ -450,277 +451,292 @@ END GROUP
                 0x20000610       0x20 ./main.o
  .text.MSS_TIM1_clear_irq
                 0x20000630       0x1c ./main.o
+ .text.shift_recieve_union
+                0x2000064c       0x44 ./main.o
+                0x2000064c                shift_recieve_union
+ .text.pixy_read_multiple
+                0x20000690       0xd0 ./main.o
+                0x20000690                pixy_read_multiple
+ .text.process_pixy_i2c
+                0x20000760       0x60 ./main.o
+                0x20000760                process_pixy_i2c
+ .text.init_ideal_pixy_dots
+                0x200007c0       0x6c ./main.o
+                0x200007c0                init_ideal_pixy_dots
+ .text.pixy_x_err
+                0x2000082c       0x5c ./main.o
+                0x2000082c                pixy_x_err
  .text.start_hardware_cont_timer
-                0x2000064c       0x24 ./main.o
-                0x2000064c                start_hardware_cont_timer
+                0x20000888       0x24 ./main.o
+                0x20000888                start_hardware_cont_timer
  .text.Timer1_IRQHandler
-                0x20000670       0x30 ./main.o
-                0x20000670                Timer1_IRQHandler
- .text.main     0x200006a0       0x78 ./main.o
-                0x200006a0                main
- .text          0x20000718      0x2c0 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20000718                _close
-                0x20000730                _execve
-                0x20000758                _exit
-                0x20000764                _fork
-                0x2000077c                _fstat
-                0x200007a0                _getpid
-                0x200007b0                _isatty
-                0x200007c8                _kill
-                0x200007ec                _link
-                0x20000810                _lseek
-                0x2000082c                _open
-                0x20000848                _read
-                0x20000864                _write_r
-                0x200008c0                _sbrk
-                0x20000954                _stat
-                0x20000978                _times
-                0x20000990                _unlink
-                0x200009b4                _wait
- .text          0x200009d8      0xee4 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20000a88                MSS_UART_init
-                0x20000c8c                MSS_UART_polled_tx
-                0x20000d70                MSS_UART_polled_tx_string
-                0x20000e40                MSS_UART_irq_tx
-                0x20000ef0                MSS_UART_tx_complete
-                0x20000f80                MSS_UART_get_rx
-                0x2000105c                MSS_UART_enable_irq
-                0x200010d8                MSS_UART_disable_irq
-                0x20001384                MSS_UART_set_rx_handler
-                0x2000142c                MSS_UART_set_loopback
-                0x2000149c                UART0_IRQHandler
-                0x200014c8                UART1_IRQHandler
-                0x200014f4                MSS_UART_set_rxstatus_handler
-                0x20001578                MSS_UART_set_tx_handler
-                0x2000160c                MSS_UART_set_modemstatus_handler
-                0x20001690                MSS_UART_fill_tx_fifo
-                0x20001764                MSS_UART_get_rx_status
-                0x200017e4                MSS_UART_get_modem_status
-                0x20001844                MSS_UART_get_tx_status
- .text          0x200018bc     0x1498 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x2000196c                MSS_I2C_init
-                0x20001ad8                MSS_I2C_write
-                0x20001bcc                MSS_I2C_read
-                0x20001cc0                MSS_I2C_write_read
-                0x20001df4                MSS_I2C_get_status
-                0x20001e30                MSS_I2C_wait_complete
-                0x20001e7c                MSS_I2C_system_tick
-                0x20001ed8                MSS_I2C_set_slave_tx_buffer
-                0x20001f30                MSS_I2C_set_slave_rx_buffer
-                0x20001f88                MSS_I2C_set_slave_mem_offset_length
-                0x20001fdc                MSS_I2C_register_write_handler
-                0x20002014                MSS_I2C_enable_slave
-                0x20002070                MSS_I2C_disable_slave
-                0x200029dc                MSS_I2C_smbus_init
-                0x20002a04                MSS_I2C_enable_smbus_irq
-                0x20002ae8                MSS_I2C_disable_smbus_irq
-                0x20002bac                MSS_I2C_suspend_smbus_slave
-                0x20002bcc                MSS_I2C_resume_smbus_slave
-                0x20002bec                MSS_I2C_reset_smbus
-                0x20002c0c                MSS_I2C_set_smbus_alert
-                0x20002c2c                MSS_I2C_clear_smbus_alert
-                0x20002c4c                MSS_I2C_set_gca
-                0x20002c6c                MSS_I2C_clear_gca
-                0x20002c8c                MSS_I2C_set_user_data
-                0x20002ca8                MSS_I2C_get_user_data
-                0x20002cfc                I2C0_IRQHandler
-                0x20002d28                I2C1_IRQHandler
- .text          0x20002d54      0x28c N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
-                0x20002d54                __get_PSP
-                0x20002d64                __set_PSP
-                0x20002d6c                __get_MSP
-                0x20002d7c                __set_MSP
-                0x20002d84                __get_BASEPRI
-                0x20002da4                __set_BASEPRI
-                0x20002dbc                __get_PRIMASK
-                0x20002ddc                __set_PRIMASK
-                0x20002df4                __get_FAULTMASK
-                0x20002e14                __set_FAULTMASK
-                0x20002e2c                __get_CONTROL
-                0x20002e4c                __set_CONTROL
-                0x20002e64                __REV
-                0x20002e88                __REV16
-                0x20002eac                __REVSH
-                0x20002ed0                __RBIT
-                0x20002ef4                __LDREXB
-                0x20002f18                __LDREXH
-                0x20002f3c                __LDREXW
-                0x20002f60                __STREXB
-                0x20002f8c                __STREXH
-                0x20002fb8                __STREXW
- .text          0x20002fe0      0x244 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20002fe0                SystemInit
-                0x20002fec                SystemCoreClockUpdate
- .text          0x20003224        0xc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
-                0x20003224                __errno
- .text          0x20003230       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
-                0x20003230                __libc_init_array
- .text          0x20003280       0xd4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
-                0x20003280                memset
- .text          0x20003354       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-printf.o)
-                0x20003354                printf
-                0x2000338c                _printf_r
- .text          0x200033b8     0x1940 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
-                0x200033d4                _vfprintf_r
-                0x20004cdc                vfprintf
- .text          0x20004cf8      0x104 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wsetup.o)
-                0x20004cf8                __swsetup_r
- *fill*         0x20004dfc        0x4 00
- .text          0x20004e00      0xfb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
-                0x20004f20                _dtoa_r
- .text          0x20005db8      0x178 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fflush.o)
-                0x20005db8                _fflush_r
-                0x20005f08                fflush
- .text          0x20005f30      0x1c8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
-                0x20005f30                __sfp_lock_acquire
-                0x20005f34                __sfp_lock_release
-                0x20005f38                __sinit_lock_acquire
-                0x20005f3c                __sinit_lock_release
-                0x20005f48                __fp_unlock_all
-                0x20005f60                __fp_lock_all
-                0x20005f78                _cleanup_r
-                0x20005f84                _cleanup
-                0x20005fe0                __sfmoreglue
-                0x20006010                __sfp
-                0x20006098                __sinit
- .text          0x200060f8      0x268 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
-                0x200060f8                _malloc_trim_r
-                0x200061a0                _free_r
- .text          0x20006360      0x334 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fvwrite.o)
-                0x20006360                __sfvwrite_r
- .text          0x20006694       0xa0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fwalk.o)
-                0x20006694                _fwalk_reent
-                0x200066e8                _fwalk
- .text          0x20006734       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
-                0x20006734                __locale_charset
-                0x20006740                _localeconv_r
-                0x20006748                localeconv
-                0x20006750                _setlocale_r
-                0x20006798                setlocale
- .text          0x200067a8       0xdc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-makebuf.o)
-                0x200067a8                __smakebuf_r
- .text          0x20006884       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
-                0x20006884                free
-                0x20006894                malloc
- .text          0x200068a4      0x5a4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x200068a4                _malloc_r
- .text          0x20006e48       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
-                0x20006e48                memchr
- .text          0x20006ebc      0x190 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
-                0x20006ebc                memcpy
- .text          0x2000704c       0xb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memmove.o)
-                0x2000704c                memmove
- .text          0x20007104        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
-                0x20007104                __malloc_lock
-                0x20007108                __malloc_unlock
- .text          0x2000710c      0x958 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
-                0x2000710c                __hi0bits
-                0x2000714c                __lo0bits
-                0x200071b0                __mcmp
-                0x200071f0                __ulp
-                0x2000723c                __b2d
-                0x200072e4                __ratio
-                0x20007344                _mprec_log10
-                0x2000737c                __copybits
-                0x200073cc                __any_on
-                0x20007424                _Bfree
-                0x2000745c                _Balloc
-                0x200074c8                __d2b
-                0x20007598                __mdiff
-                0x20007690                __lshift
-                0x2000774c                __multiply
-                0x20007880                __i2b
-                0x20007894                __multadd
-                0x2000791c                __pow5mult
-                0x200079c8                __s2b
- .text          0x20007a64      0x3b4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reallocr.o)
-                0x20007a64                _realloc_r
- .text          0x20007e18       0x24 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isinfd.o)
-                0x20007e18                __isinfd
- .text          0x20007e3c       0x1c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isnand.o)
-                0x20007e3c                __isnand
- .text          0x20007e58       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
-                0x20007e58                _sbrk_r
- .text          0x20007e80       0x90 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-stdio.o)
-                0x20007e80                __sclose
-                0x20007e88                __sseek
-                0x20007eb0                __swrite
-                0x20007eec                __sread
- .text          0x20007f10      0x1dc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
-                0x20007f10                strcmp
- .text          0x200080ec       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
-                0x200080ec                strlen
- .text          0x2000814c       0x5c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-callocr.o)
-                0x2000814c                _calloc_r
- .text          0x200081a8       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-closer.o)
-                0x200081a8                _close_r
- .text          0x200081d0       0xcc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fclose.o)
-                0x200081d0                _fclose_r
-                0x2000828c                fclose
- .text          0x2000829c       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fstatr.o)
-                0x2000829c                _fstat_r
- .text          0x200082c8       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-isattyr.o)
-                0x200082c8                _isatty_r
- .text          0x200082f0       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-lseekr.o)
-                0x200082f0                _lseek_r
- .text          0x2000831c       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-readr.o)
-                0x2000831c                _read_r
- .text          0x20008348      0x278 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivsi3.o)
-                0x20008348                __aeabi_uidiv
-                0x20008348                __udivsi3
-                0x200085a4                __aeabi_uidivmod
- .text          0x200085c0        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_dvmd_tls.o)
-                0x200085c0                __aeabi_idiv0
-                0x200085c0                __aeabi_ldiv0
- .text          0x200085c4      0x370 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
-                0x200085c4                __aeabi_drsub
-                0x200085cc                __aeabi_dsub
-                0x200085cc                __subdf3
-                0x200085d0                __aeabi_dadd
-                0x200085d0                __adddf3
-                0x20008848                __floatunsidf
-                0x20008848                __aeabi_ui2d
-                0x20008868                __floatsidf
-                0x20008868                __aeabi_i2d
-                0x2000888c                __aeabi_f2d
-                0x2000888c                __extendsfdf2
-                0x200088c8                __floatundidf
-                0x200088c8                __aeabi_ul2d
-                0x200088d8                __floatdidf
-                0x200088d8                __aeabi_l2d
- .text          0x20008934      0x424 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
-                0x20008934                __aeabi_dmul
-                0x20008934                __muldf3
-                0x20008b88                __divdf3
-                0x20008b88                __aeabi_ddiv
- .text          0x20008d58      0x110 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
-                0x20008d58                __gtdf2
-                0x20008d58                __gedf2
-                0x20008d60                __ltdf2
-                0x20008d60                __ledf2
-                0x20008d68                __nedf2
-                0x20008d68                __eqdf2
-                0x20008d68                __cmpdf2
-                0x20008de4                __aeabi_cdrcmple
-                0x20008df4                __aeabi_cdcmpeq
-                0x20008df4                __aeabi_cdcmple
-                0x20008e04                __aeabi_dcmpeq
-                0x20008e18                __aeabi_dcmplt
-                0x20008e2c                __aeabi_dcmple
-                0x20008e40                __aeabi_dcmpge
-                0x20008e54                __aeabi_dcmpgt
- .text          0x20008e68       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixdfsi.o)
-                0x20008e68                __aeabi_d2iz
-                0x20008e68                __fixdfsi
- .text          0x20008eb8       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_aeabi_uldivmod.o)
-                0x20008eb8                __aeabi_uldivmod
- .text          0x20008ee4       0x58 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(bpabi.o)
-                0x20008ee4                __gnu_uldivmod_helper
-                0x20008f10                __gnu_ldivmod_helper
- .text          0x20008f3c      0x364 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
-                0x20008f3c                __divdi3
- .text          0x200092a0      0x300 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
-                0x200092a0                __udivdi3
+                0x200008ac       0x40 ./main.o
+                0x200008ac                Timer1_IRQHandler
+ .text.main     0x200008ec       0x4c ./main.o
+                0x200008ec                main
+ .text          0x20000938      0x2c0 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20000938                _close
+                0x20000950                _execve
+                0x20000978                _exit
+                0x20000984                _fork
+                0x2000099c                _fstat
+                0x200009c0                _getpid
+                0x200009d0                _isatty
+                0x200009e8                _kill
+                0x20000a0c                _link
+                0x20000a30                _lseek
+                0x20000a4c                _open
+                0x20000a68                _read
+                0x20000a84                _write_r
+                0x20000ae0                _sbrk
+                0x20000b74                _stat
+                0x20000b98                _times
+                0x20000bb0                _unlink
+                0x20000bd4                _wait
+ .text          0x20000bf8      0xee4 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20000ca8                MSS_UART_init
+                0x20000eac                MSS_UART_polled_tx
+                0x20000f90                MSS_UART_polled_tx_string
+                0x20001060                MSS_UART_irq_tx
+                0x20001110                MSS_UART_tx_complete
+                0x200011a0                MSS_UART_get_rx
+                0x2000127c                MSS_UART_enable_irq
+                0x200012f8                MSS_UART_disable_irq
+                0x200015a4                MSS_UART_set_rx_handler
+                0x2000164c                MSS_UART_set_loopback
+                0x200016bc                UART0_IRQHandler
+                0x200016e8                UART1_IRQHandler
+                0x20001714                MSS_UART_set_rxstatus_handler
+                0x20001798                MSS_UART_set_tx_handler
+                0x2000182c                MSS_UART_set_modemstatus_handler
+                0x200018b0                MSS_UART_fill_tx_fifo
+                0x20001984                MSS_UART_get_rx_status
+                0x20001a04                MSS_UART_get_modem_status
+                0x20001a64                MSS_UART_get_tx_status
+ .text          0x20001adc     0x1498 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20001b8c                MSS_I2C_init
+                0x20001cf8                MSS_I2C_write
+                0x20001dec                MSS_I2C_read
+                0x20001ee0                MSS_I2C_write_read
+                0x20002014                MSS_I2C_get_status
+                0x20002050                MSS_I2C_wait_complete
+                0x2000209c                MSS_I2C_system_tick
+                0x200020f8                MSS_I2C_set_slave_tx_buffer
+                0x20002150                MSS_I2C_set_slave_rx_buffer
+                0x200021a8                MSS_I2C_set_slave_mem_offset_length
+                0x200021fc                MSS_I2C_register_write_handler
+                0x20002234                MSS_I2C_enable_slave
+                0x20002290                MSS_I2C_disable_slave
+                0x20002bfc                MSS_I2C_smbus_init
+                0x20002c24                MSS_I2C_enable_smbus_irq
+                0x20002d08                MSS_I2C_disable_smbus_irq
+                0x20002dcc                MSS_I2C_suspend_smbus_slave
+                0x20002dec                MSS_I2C_resume_smbus_slave
+                0x20002e0c                MSS_I2C_reset_smbus
+                0x20002e2c                MSS_I2C_set_smbus_alert
+                0x20002e4c                MSS_I2C_clear_smbus_alert
+                0x20002e6c                MSS_I2C_set_gca
+                0x20002e8c                MSS_I2C_clear_gca
+                0x20002eac                MSS_I2C_set_user_data
+                0x20002ec8                MSS_I2C_get_user_data
+                0x20002f1c                I2C0_IRQHandler
+                0x20002f48                I2C1_IRQHandler
+ .text          0x20002f74      0x28c N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+                0x20002f74                __get_PSP
+                0x20002f84                __set_PSP
+                0x20002f8c                __get_MSP
+                0x20002f9c                __set_MSP
+                0x20002fa4                __get_BASEPRI
+                0x20002fc4                __set_BASEPRI
+                0x20002fdc                __get_PRIMASK
+                0x20002ffc                __set_PRIMASK
+                0x20003014                __get_FAULTMASK
+                0x20003034                __set_FAULTMASK
+                0x2000304c                __get_CONTROL
+                0x2000306c                __set_CONTROL
+                0x20003084                __REV
+                0x200030a8                __REV16
+                0x200030cc                __REVSH
+                0x200030f0                __RBIT
+                0x20003114                __LDREXB
+                0x20003138                __LDREXH
+                0x2000315c                __LDREXW
+                0x20003180                __STREXB
+                0x200031ac                __STREXH
+                0x200031d8                __STREXW
+ .text          0x20003200      0x244 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20003200                SystemInit
+                0x2000320c                SystemCoreClockUpdate
+ .text          0x20003444        0xc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+                0x20003444                __errno
+ .text          0x20003450       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x20003450                __libc_init_array
+ .text          0x200034a0       0xd4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                0x200034a0                memset
+ .text          0x20003574       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-printf.o)
+                0x20003574                printf
+                0x200035ac                _printf_r
+ .text          0x200035d8     0x1940 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
+                0x200035f4                _vfprintf_r
+                0x20004efc                vfprintf
+ .text          0x20004f18      0x104 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wsetup.o)
+                0x20004f18                __swsetup_r
+ *fill*         0x2000501c        0x4 00
+ .text          0x20005020      0xfb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
+                0x20005140                _dtoa_r
+ .text          0x20005fd8      0x178 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fflush.o)
+                0x20005fd8                _fflush_r
+                0x20006128                fflush
+ .text          0x20006150      0x1c8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
+                0x20006150                __sfp_lock_acquire
+                0x20006154                __sfp_lock_release
+                0x20006158                __sinit_lock_acquire
+                0x2000615c                __sinit_lock_release
+                0x20006168                __fp_unlock_all
+                0x20006180                __fp_lock_all
+                0x20006198                _cleanup_r
+                0x200061a4                _cleanup
+                0x20006200                __sfmoreglue
+                0x20006230                __sfp
+                0x200062b8                __sinit
+ .text          0x20006318      0x268 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
+                0x20006318                _malloc_trim_r
+                0x200063c0                _free_r
+ .text          0x20006580      0x334 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fvwrite.o)
+                0x20006580                __sfvwrite_r
+ .text          0x200068b4       0xa0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fwalk.o)
+                0x200068b4                _fwalk_reent
+                0x20006908                _fwalk
+ .text          0x20006954       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+                0x20006954                __locale_charset
+                0x20006960                _localeconv_r
+                0x20006968                localeconv
+                0x20006970                _setlocale_r
+                0x200069b8                setlocale
+ .text          0x200069c8       0xdc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-makebuf.o)
+                0x200069c8                __smakebuf_r
+ .text          0x20006aa4       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
+                0x20006aa4                free
+                0x20006ab4                malloc
+ .text          0x20006ac4      0x5a4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x20006ac4                _malloc_r
+ .text          0x20007068       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+                0x20007068                memchr
+ .text          0x200070dc      0x190 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+                0x200070dc                memcpy
+ .text          0x2000726c       0xb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memmove.o)
+                0x2000726c                memmove
+ .text          0x20007324        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
+                0x20007324                __malloc_lock
+                0x20007328                __malloc_unlock
+ .text          0x2000732c      0x958 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
+                0x2000732c                __hi0bits
+                0x2000736c                __lo0bits
+                0x200073d0                __mcmp
+                0x20007410                __ulp
+                0x2000745c                __b2d
+                0x20007504                __ratio
+                0x20007564                _mprec_log10
+                0x2000759c                __copybits
+                0x200075ec                __any_on
+                0x20007644                _Bfree
+                0x2000767c                _Balloc
+                0x200076e8                __d2b
+                0x200077b8                __mdiff
+                0x200078b0                __lshift
+                0x2000796c                __multiply
+                0x20007aa0                __i2b
+                0x20007ab4                __multadd
+                0x20007b3c                __pow5mult
+                0x20007be8                __s2b
+ .text          0x20007c84      0x3b4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reallocr.o)
+                0x20007c84                _realloc_r
+ .text          0x20008038       0x24 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isinfd.o)
+                0x20008038                __isinfd
+ .text          0x2000805c       0x1c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isnand.o)
+                0x2000805c                __isnand
+ .text          0x20008078       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
+                0x20008078                _sbrk_r
+ .text          0x200080a0       0x90 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-stdio.o)
+                0x200080a0                __sclose
+                0x200080a8                __sseek
+                0x200080d0                __swrite
+                0x2000810c                __sread
+ .text          0x20008130      0x1dc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+                0x20008130                strcmp
+ .text          0x2000830c       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+                0x2000830c                strlen
+ .text          0x2000836c       0x5c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-callocr.o)
+                0x2000836c                _calloc_r
+ .text          0x200083c8       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-closer.o)
+                0x200083c8                _close_r
+ .text          0x200083f0       0xcc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fclose.o)
+                0x200083f0                _fclose_r
+                0x200084ac                fclose
+ .text          0x200084bc       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fstatr.o)
+                0x200084bc                _fstat_r
+ .text          0x200084e8       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-isattyr.o)
+                0x200084e8                _isatty_r
+ .text          0x20008510       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-lseekr.o)
+                0x20008510                _lseek_r
+ .text          0x2000853c       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-readr.o)
+                0x2000853c                _read_r
+ .text          0x20008568      0x278 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivsi3.o)
+                0x20008568                __aeabi_uidiv
+                0x20008568                __udivsi3
+                0x200087c4                __aeabi_uidivmod
+ .text          0x200087e0        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_dvmd_tls.o)
+                0x200087e0                __aeabi_idiv0
+                0x200087e0                __aeabi_ldiv0
+ .text          0x200087e4      0x370 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+                0x200087e4                __aeabi_drsub
+                0x200087ec                __aeabi_dsub
+                0x200087ec                __subdf3
+                0x200087f0                __aeabi_dadd
+                0x200087f0                __adddf3
+                0x20008a68                __floatunsidf
+                0x20008a68                __aeabi_ui2d
+                0x20008a88                __floatsidf
+                0x20008a88                __aeabi_i2d
+                0x20008aac                __aeabi_f2d
+                0x20008aac                __extendsfdf2
+                0x20008ae8                __floatundidf
+                0x20008ae8                __aeabi_ul2d
+                0x20008af8                __floatdidf
+                0x20008af8                __aeabi_l2d
+ .text          0x20008b54      0x424 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
+                0x20008b54                __aeabi_dmul
+                0x20008b54                __muldf3
+                0x20008da8                __divdf3
+                0x20008da8                __aeabi_ddiv
+ .text          0x20008f78      0x110 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
+                0x20008f78                __gtdf2
+                0x20008f78                __gedf2
+                0x20008f80                __ltdf2
+                0x20008f80                __ledf2
+                0x20008f88                __nedf2
+                0x20008f88                __eqdf2
+                0x20008f88                __cmpdf2
+                0x20009004                __aeabi_cdrcmple
+                0x20009014                __aeabi_cdcmpeq
+                0x20009014                __aeabi_cdcmple
+                0x20009024                __aeabi_dcmpeq
+                0x20009038                __aeabi_dcmplt
+                0x2000904c                __aeabi_dcmple
+                0x20009060                __aeabi_dcmpge
+                0x20009074                __aeabi_dcmpgt
+ .text          0x20009088       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixdfsi.o)
+                0x20009088                __aeabi_d2iz
+                0x20009088                __fixdfsi
+ .text          0x200090d8       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_aeabi_uldivmod.o)
+                0x200090d8                __aeabi_uldivmod
+ .text          0x20009104       0x58 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(bpabi.o)
+                0x20009104                __gnu_uldivmod_helper
+                0x20009130                __gnu_ldivmod_helper
+ .text          0x2000915c      0x364 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
+                0x2000915c                __divdi3
+ .text          0x200094c0      0x300 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
+                0x200094c0                __udivdi3
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -729,7 +745,7 @@ END GROUP
  .glue_7        0x00000000        0x0 linker stubs
  *(.vfp11_veneer)
  .vfp11_veneer  0x00000000        0x0 linker stubs
-                0x200095a0                . = ALIGN (0x4)
+                0x200097c0                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
@@ -739,144 +755,146 @@ END GROUP
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x200095a0       0x88 ./main.o
- .rodata        0x20009628       0x1c N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .rodata        0x20009644       0x10 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .rodata        0x20009654        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
-                0x20009654                _global_impure_ptr
+ .rodata        0x200097c0       0x6c ./main.o
+ .rodata        0x2000982c       0x1c N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .rodata        0x20009848       0x10 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .rodata        0x20009858        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x20009858                _global_impure_ptr
  .rodata.str1.4
-                0x20009658        0x2 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x2000985c        0x2 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
                                   0x4 (size before relaxing)
- *fill*         0x2000965a        0x2 00
- .rodata        0x2000965c       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
+ *fill*         0x2000985e        0x2 00
+ .rodata        0x20009860       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
  .rodata.str1.4
-                0x2000967c       0x42 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
+                0x20009880       0x42 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
                                  0x44 (size before relaxing)
- *fill*         0x200096be        0x2 00
+ *fill*         0x200098c2        0x2 00
  .rodata.str1.4
-                0x200096c0       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
+                0x200098c4       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
                                  0x14 (size before relaxing)
- .rodata        0x200096d0       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
-                0x200096d0                __sf_fake_stdin
-                0x200096f0                __sf_fake_stdout
-                0x20009710                __sf_fake_stderr
- .rodata        0x20009730       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .rodata        0x200098d4       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
+                0x200098d4                __sf_fake_stdin
+                0x200098f4                __sf_fake_stdout
+                0x20009914                __sf_fake_stderr
+ .rodata        0x20009934       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
  .rodata.str1.4
-                0x20009764       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+                0x20009968       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
                                  0x18 (size before relaxing)
- *fill*         0x20009774        0x4 00
- .rodata        0x20009778      0x128 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
-                0x20009778                __mprec_tens
-                0x20009850                __mprec_bigtens
-                0x20009878                __mprec_tinytens
+ .rodata        0x20009978      0x128 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
+                0x20009978                __mprec_tens
+                0x20009a50                __mprec_bigtens
+                0x20009a78                __mprec_tinytens
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
  *(.eh_frame_hdr)
  *(.eh_frame)
  *(.init)
- .init          0x200098a0        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x200098a0                _init
- .init          0x200098a4        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .init          0x20009aa0        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x20009aa0                _init
+ .init          0x20009aa4        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
  *(.fini)
- .fini          0x200098ac        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x200098ac                _fini
- .fini          0x200098b0        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
-                0x200098b8                PROVIDE (__preinit_array_start, .)
+ .fini          0x20009aac        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x20009aac                _fini
+ .fini          0x20009ab0        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x20009ab8                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x200098b8                PROVIDE (__preinit_array_end, .)
-                0x200098b8                PROVIDE (__init_array_start, .)
+                0x20009ab8                PROVIDE (__preinit_array_end, .)
+                0x20009ab8                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x200098b8        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
-                0x200098bc                PROVIDE (__init_array_end, .)
-                0x200098bc                PROVIDE (__fini_array_start, .)
+ .init_array    0x20009ab8        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+                0x20009abc                PROVIDE (__init_array_end, .)
+                0x20009abc                PROVIDE (__fini_array_start, .)
  *(.fini_array)
- .fini_array    0x200098bc        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .fini_array    0x20009abc        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(SORT(.fini_array.*))
-                0x200098c0                PROVIDE (__fini_array_end, .)
-                0x200098c0                __exidx_start = .
+                0x20009ac0                PROVIDE (__fini_array_end, .)
+                0x20009ac0                __exidx_start = .
 
-.v4_bx          0x200098c0        0x0
+.v4_bx          0x20009ac0        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.ARM.exidx      0x200098c0        0x8
+.ARM.exidx      0x20009ac0        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x200098c0        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
- .ARM.exidx     0x200098c8        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
+ .ARM.exidx     0x20009ac0        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
+ .ARM.exidx     0x20009ac8        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
                                   0x8 (size before relaxing)
-                0x200098c8                __exidx_end = .
-                0x200098c8                _etext = .
-                0x200098c8                PROVIDE (__text_end, .)
+                0x20009ac8                __exidx_end = .
+                0x20009ac8                _etext = .
+                0x20009ac8                PROVIDE (__text_end, .)
 
-.data           0x200098c8      0x520
-                0x200098c8                __data_load = LOADADDR (.data)
-                0x200098c8                _sidata = LOADADDR (.data)
-                0x200098c8                __data_start = .
-                0x200098c8                _sdata = .
+.data           0x20009ac8      0x520
+                0x20009ac8                __data_load = LOADADDR (.data)
+                0x20009ac8                _sidata = LOADADDR (.data)
+                0x20009ac8                __data_start = .
+                0x20009ac8                _sdata = .
  *(.jcr)
- .jcr           0x200098c8        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .jcr           0x200098c8        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .jcr           0x20009ac8        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .jcr           0x20009ac8        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
  *(.got.plt)
  *(.got)
  *(.shdata)
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x200098cc       0x18 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x200098cc                SystemFrequency
-                0x200098d0                SystemCoreClock
-                0x200098d4                g_FrequencyPCLK0
-                0x200098d8                g_FrequencyPCLK1
-                0x200098dc                g_FrequencyACE
-                0x200098e0                g_FrequencyFPGA
- .data          0x200098e4       0xf4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
-                0x200098e4                _impure_ptr
- .data          0x200099d8      0x410 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x200099d8                __malloc_av_
-                0x20009de0                __malloc_sbrk_base
-                0x20009de4                __malloc_trim_threshold
-                0x20009de8                . = ALIGN (0x4)
-                0x20009de8                _edata = .
+ .data          0x20009acc       0x18 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20009acc                SystemFrequency
+                0x20009ad0                SystemCoreClock
+                0x20009ad4                g_FrequencyPCLK0
+                0x20009ad8                g_FrequencyPCLK1
+                0x20009adc                g_FrequencyACE
+                0x20009ae0                g_FrequencyFPGA
+ .data          0x20009ae4       0xf4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x20009ae4                _impure_ptr
+ .data          0x20009bd8      0x410 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x20009bd8                __malloc_av_
+                0x20009fe0                __malloc_sbrk_base
+                0x20009fe4                __malloc_trim_threshold
+                0x20009fe8                . = ALIGN (0x4)
+                0x20009fe8                _edata = .
 
-.bss            0x20009de8      0x1e8
-                0x20009de8                __bss_start__ = .
-                0x20009de8                _sbss = .
+.bss            0x20009fe8      0x228
+                0x20009fe8                __bss_start__ = .
+                0x20009fe8                _sbss = .
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x20009de8        0x1 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- *fill*         0x20009de9        0x3 00
- .bss.receive_buf
-                0x20009dec       0x64 ./main.o
- .bss           0x20009e50        0xc N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20009e54                __env
- .bss           0x20009e5c       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x20009e5c                __malloc_top_pad
-                0x20009e60                __malloc_current_mallinfo
-                0x20009e88                __malloc_max_sbrked_mem
-                0x20009e8c                __malloc_max_total_mem
+ .bss           0x20009fe8        0x1 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ *fill*         0x20009fe9        0x3 00
+ .bss           0x20009fec        0xc N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20009ff0                __env
+ .bss           0x20009ff8       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x20009ff8                __malloc_top_pad
+                0x20009ffc                __malloc_current_mallinfo
+                0x2000a024                __malloc_max_sbrked_mem
+                0x2000a028                __malloc_max_total_mem
  *(COMMON)
- COMMON         0x20009e90       0x50 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20009e90                g_mss_uart1
-                0x20009eb8                g_mss_uart0
- COMMON         0x20009ee0       0xe8 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x20009ee0                g_mss_i2c0
-                0x20009f54                g_mss_i2c1
- COMMON         0x20009fc8        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
-                0x20009fc8                errno
-                0x20009fd0                . = ALIGN (0x8)
- *fill*         0x20009fcc        0x4 00
-                0x20009fd0                __bss_end__ = .
-                0x20009fd0                _end = .
-                0x20009fd0                __end = _end
-                0x20009fd0                _ebss = .
-                0x20009fd0                PROVIDE (end, .)
+ COMMON         0x2000a02c       0xa4 ./main.o
+                0x2000a02c                update_pixy_data_flag
+                0x2000a030                pixy_ideal_green
+                0x2000a040                pixy_data
+                0x2000a06c                receive_buf
+ COMMON         0x2000a0d0       0x50 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x2000a0d0                g_mss_uart1
+                0x2000a0f8                g_mss_uart0
+ COMMON         0x2000a120       0xe8 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x2000a120                g_mss_i2c0
+                0x2000a194                g_mss_i2c1
+ COMMON         0x2000a208        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+                0x2000a208                errno
+                0x2000a210                . = ALIGN (0x8)
+ *fill*         0x2000a20c        0x4 00
+                0x2000a210                __bss_end__ = .
+                0x2000a210                _end = .
+                0x2000a210                __end = _end
+                0x2000a210                _ebss = .
+                0x2000a210                PROVIDE (end, .)
 
-.stack          0x20009fd0     0x3000
-                0x20009fd0                . = ALIGN (0x4)
-                0x2000afd0                . = (. + PROCESS_STACK_SIZE)
- *fill*         0x20009fd0     0x1000 00
-                0x2000afd0                . = ALIGN (0x4)
-                0x2000cfd0                . = (. + MAIN_STACK_SIZE)
- *fill*         0x2000afd0     0x2000 00
-                0x2000cfd0                . = ALIGN (0x4)
+.stack          0x2000a210     0x3000
+                0x2000a210                . = ALIGN (0x4)
+                0x2000b210                . = (. + PROCESS_STACK_SIZE)
+ *fill*         0x2000a210     0x1000 00
+                0x2000b210                . = ALIGN (0x4)
+                0x2000d210                . = (. + MAIN_STACK_SIZE)
+ *fill*         0x2000b210     0x2000 00
+                0x2000d210                . = ALIGN (0x4)
 
 .stab
  *(.stab)
@@ -904,151 +922,151 @@ END GROUP
  .comment       0x000000ac       0x2b N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
  .comment       0x000000d7       0x2b N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_aranges  0x00000000      0x128
+.debug_aranges  0x00000000      0x140
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x88 ./main.o
+                0x00000000       0xa0 ./main.o
  .debug_aranges
-                0x00000088       0x20 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x000000a0       0x20 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .debug_aranges
-                0x000000a8       0x20 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x000000c0       0x20 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .debug_aranges
-                0x000000c8       0x20 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x000000e0       0x20 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .debug_aranges
-                0x000000e8       0x20 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+                0x00000100       0x20 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
  .debug_aranges
-                0x00000108       0x20 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000120       0x20 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_pubnames
-                0x00000000      0x889
+                0x00000000      0x916
  *(.debug_pubnames)
  .debug_pubnames
-                0x00000000       0x8a ./main.o
+                0x00000000      0x117 ./main.o
  .debug_pubnames
-                0x0000008a       0xeb N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x00000117       0xeb N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .debug_pubnames
-                0x00000175      0x21c N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x00000202      0x21c N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .debug_pubnames
-                0x00000391      0x2eb N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x0000041e      0x2eb N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .debug_pubnames
-                0x0000067c      0x159 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+                0x00000709      0x159 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
  .debug_pubnames
-                0x000007d5       0xb4 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000862       0xb4 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_info     0x00000000     0x5db0
+.debug_info     0x00000000     0x5e69
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x15c1 ./main.o
- .debug_info    0x000015c1     0x10ec N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_info    0x000026ad     0x15a0 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_info    0x00003c4d     0x16e3 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
- .debug_info    0x00005330      0x548 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
- .debug_info    0x00005878      0x538 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_info    0x00000000     0x167a ./main.o
+ .debug_info    0x0000167a     0x10ec N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_info    0x00002766     0x15a0 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_info    0x00003d06     0x16e3 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_info    0x000053e9      0x548 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_info    0x00005931      0x538 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_abbrev   0x00000000      0xa93
+.debug_abbrev   0x00000000      0xab9
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x24f ./main.o
- .debug_abbrev  0x0000024f      0x1f2 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_abbrev  0x00000441      0x243 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_abbrev  0x00000684      0x229 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
- .debug_abbrev  0x000008ad       0xd7 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
- .debug_abbrev  0x00000984      0x10f N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_abbrev  0x00000000      0x275 ./main.o
+ .debug_abbrev  0x00000275      0x1f2 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_abbrev  0x00000467      0x243 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_abbrev  0x000006aa      0x229 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_abbrev  0x000008d3       0xd7 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_abbrev  0x000009aa      0x10f N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_line     0x00000000     0x190e
+.debug_line     0x00000000     0x195c
  *(.debug_line)
- .debug_line    0x00000000      0x68a ./main.o
- .debug_line    0x0000068a      0x461 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_line    0x00000aeb      0x499 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_line    0x00000f84      0x590 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
- .debug_line    0x00001514      0x15f N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
- .debug_line    0x00001673      0x29b N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_line    0x00000000      0x6d8 ./main.o
+ .debug_line    0x000006d8      0x461 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_line    0x00000b39      0x499 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_line    0x00000fd2      0x590 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_line    0x00001562      0x15f N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_line    0x000016c1      0x29b N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_frame    0x00000000     0x196c
+.debug_frame    0x00000000     0x19b8
  *(.debug_frame)
- .debug_frame   0x00000000      0x1a8 ./main.o
- .debug_frame   0x000001a8      0x220 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_frame   0x000003c8      0x2e4 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_frame   0x000006ac      0x40c N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
- .debug_frame   0x00000ab8      0x248 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
- .debug_frame   0x00000d00       0x64 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .debug_frame   0x00000d64       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
- .debug_frame   0x00000d84       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
- .debug_frame   0x00000db0       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
- .debug_frame   0x00000dd8       0x5c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-printf.o)
- .debug_frame   0x00000e34       0x70 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
- .debug_frame   0x00000ea4       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wsetup.o)
- .debug_frame   0x00000ed0       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
- .debug_frame   0x00000f34       0x40 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fflush.o)
- .debug_frame   0x00000f74      0x11c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
- .debug_frame   0x00001090       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
- .debug_frame   0x000010e0       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fvwrite.o)
- .debug_frame   0x0000111c       0x54 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fwalk.o)
- .debug_frame   0x00001170       0x6c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
- .debug_frame   0x000011dc       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-makebuf.o)
- .debug_frame   0x00001210       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
- .debug_frame   0x00001240       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
- .debug_frame   0x0000127c       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
- .debug_frame   0x000012a4       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
- .debug_frame   0x000012d8       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memmove.o)
- .debug_frame   0x00001304       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
- .debug_frame   0x00001334      0x240 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
- .debug_frame   0x00001574       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reallocr.o)
- .debug_frame   0x000015b0       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isinfd.o)
- .debug_frame   0x000015d0       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isnand.o)
- .debug_frame   0x000015f0       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
- .debug_frame   0x0000161c       0x70 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-stdio.o)
- .debug_frame   0x0000168c       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
- .debug_frame   0x000016bc       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
- .debug_frame   0x000016dc       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-callocr.o)
- .debug_frame   0x00001708       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-closer.o)
- .debug_frame   0x00001734       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fclose.o)
- .debug_frame   0x00001770       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fstatr.o)
- .debug_frame   0x0000179c       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-isattyr.o)
- .debug_frame   0x000017c8       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-lseekr.o)
- .debug_frame   0x000017f4       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-readr.o)
- .debug_frame   0x00001820       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
- .debug_frame   0x00001884       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivsi3.o)
- .debug_frame   0x000018a4       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(bpabi.o)
- .debug_frame   0x000018f4       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
- .debug_frame   0x00001930       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
+ .debug_frame   0x00000000      0x1f4 ./main.o
+ .debug_frame   0x000001f4      0x220 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_frame   0x00000414      0x2e4 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_frame   0x000006f8      0x40c N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_frame   0x00000b04      0x248 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_frame   0x00000d4c       0x64 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_frame   0x00000db0       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+ .debug_frame   0x00000dd0       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .debug_frame   0x00000dfc       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .debug_frame   0x00000e24       0x5c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-printf.o)
+ .debug_frame   0x00000e80       0x70 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
+ .debug_frame   0x00000ef0       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wsetup.o)
+ .debug_frame   0x00000f1c       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
+ .debug_frame   0x00000f80       0x40 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fflush.o)
+ .debug_frame   0x00000fc0      0x11c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
+ .debug_frame   0x000010dc       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
+ .debug_frame   0x0000112c       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fvwrite.o)
+ .debug_frame   0x00001168       0x54 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fwalk.o)
+ .debug_frame   0x000011bc       0x6c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .debug_frame   0x00001228       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-makebuf.o)
+ .debug_frame   0x0000125c       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
+ .debug_frame   0x0000128c       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+ .debug_frame   0x000012c8       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .debug_frame   0x000012f0       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+ .debug_frame   0x00001324       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memmove.o)
+ .debug_frame   0x00001350       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
+ .debug_frame   0x00001380      0x240 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
+ .debug_frame   0x000015c0       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reallocr.o)
+ .debug_frame   0x000015fc       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isinfd.o)
+ .debug_frame   0x0000161c       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isnand.o)
+ .debug_frame   0x0000163c       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
+ .debug_frame   0x00001668       0x70 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-stdio.o)
+ .debug_frame   0x000016d8       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+ .debug_frame   0x00001708       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .debug_frame   0x00001728       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-callocr.o)
+ .debug_frame   0x00001754       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-closer.o)
+ .debug_frame   0x00001780       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fclose.o)
+ .debug_frame   0x000017bc       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fstatr.o)
+ .debug_frame   0x000017e8       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-isattyr.o)
+ .debug_frame   0x00001814       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-lseekr.o)
+ .debug_frame   0x00001840       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-readr.o)
+ .debug_frame   0x0000186c       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+ .debug_frame   0x000018d0       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivsi3.o)
+ .debug_frame   0x000018f0       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(bpabi.o)
+ .debug_frame   0x00001940       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
+ .debug_frame   0x0000197c       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
 
-.debug_str      0x00000000     0x2402
+.debug_str      0x00000000     0x2461
  *(.debug_str)
- .debug_str     0x00000000     0x1609 ./main.o
-                               0x16d4 (size before relaxing)
- .debug_str     0x00001609      0x48c N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_str     0x00000000     0x1668 ./main.o
+                               0x172e (size before relaxing)
+ .debug_str     0x00001668      0x48c N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
                                0x10ad (size before relaxing)
- .debug_str     0x00001a95      0x3a8 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_str     0x00001af4      0x3a8 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
                                0x14be (size before relaxing)
- .debug_str     0x00001e3d      0x38c N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_str     0x00001e9c      0x38c N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
                                0x175e (size before relaxing)
- .debug_str     0x000021c9      0x142 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_str     0x00002228      0x142 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
                                 0x274 (size before relaxing)
- .debug_str     0x0000230b       0xf7 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_str     0x0000236a       0xf7 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
                                 0x461 (size before relaxing)
 
-.debug_loc      0x00000000     0x1755
+.debug_loc      0x00000000     0x17e2
  *(.debug_loc)
- .debug_loc     0x00000000      0x2d2 ./main.o
- .debug_loc     0x000002d2      0x3c6 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_loc     0x00000698      0x510 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_loc     0x00000ba8      0x736 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
- .debug_loc     0x000012de      0x3de N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
- .debug_loc     0x000016bc       0x99 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_loc     0x00000000      0x35f ./main.o
+ .debug_loc     0x0000035f      0x3c6 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_loc     0x00000725      0x510 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_loc     0x00000c35      0x736 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_loc     0x0000136b      0x3de N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_loc     0x00001749       0x99 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_macinfo  0x00000000    0x2711b
+.debug_macinfo  0x00000000    0x27168
  *(.debug_macinfo)
  .debug_macinfo
-                0x00000000     0x8ef4 ./main.o
+                0x00000000     0x8f41 ./main.o
  .debug_macinfo
-                0x00008ef4     0x9965 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x00008f41     0x9965 N:/eecs373/project/pixyCam/pixyCam/SoftConsole/pixyCam_MSS_MSS_CM3_0/pixyCam_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .debug_macinfo
-                0x00012859     0x63e4 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x000128a6     0x63e4 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .debug_macinfo
-                0x00018c3d     0x7519 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x00018c8a     0x7519 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .debug_macinfo
-                0x00020156     0x152c N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+                0x000201a3     0x152c N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
  .debug_macinfo
-                0x00021682     0x5a99 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x000216cf     0x5a99 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_weaknames
  *(.debug_weaknames)
@@ -1190,6 +1208,6 @@ END GROUP
  *(.isr_vector)
 OUTPUT(pixyCam_MSS_MSS_CM3_0_app elf32-littlearm)
 
-.debug_ranges   0x00000000       0x98
- .debug_ranges  0x00000000       0x80 ./main.o
- .debug_ranges  0x00000080       0x18 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+.debug_ranges   0x00000000       0xb0
+ .debug_ranges  0x00000000       0x98 ./main.o
+ .debug_ranges  0x00000098       0x18 N:\eecs373\project\pixyCam\pixyCam\SoftConsole\pixyCam_MSS_MSS_CM3_0\pixyCam_MSS_MSS_CM3_0_hw_platform\Debug\libpixyCam_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)

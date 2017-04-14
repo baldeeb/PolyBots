@@ -1,0 +1,226 @@
+***************************************************************************
+                               Status Report
+                          Thu Apr 06 16:32:56 2017 ***************************************************************************
+
+Product: Designer
+Release: v11.7 SP1.1
+Version: 11.7.1.14
+File Name: N:\eecs373\project\Follower\follower_control_sys\designer\impl1\follower_control_sys.adb
+Design Name: follower_control_sys  Design State: compile
+Last Saved: Thu Apr 06 16:20:56 2017
+
+***** Device Data **************************************************
+
+Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
+Speed: STD  Voltage: 1.5
+
+Restrict JTAG Pins: YES
+Restrict Probe Pins: YES
+
+Junction Temperature Range:   COM
+Voltage Range:   COM
+
+***** Import Variables *********************************************
+
+Source File(s) Imported on Thu Apr 06 16:32:52 2017:
+        N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.edn
+
+
+***** CAE Variables ************************************************
+
+Back Annotation File: N/A
+
+
+***** Bitstream Variables ******************************************
+
+Bitstream File: N/A
+     Lock Mode: OFF
+
+
+***** Compile Variables ********************************************
+
+Netlist PIN properties overwrite existing properties: 0
+
+Compile Output:
+=====================================================================
+Parameters used to run compile:
+===============================
+
+Family      : SmartFusion
+Device      : A2F200M3F
+Package     : 484 FBGA
+Source      :
+N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.edn
+Format      : EDIF
+Topcell     : follower_control_sys
+Speed grade : STD
+Temp        : 0:25:85
+Voltage     : 1.58:1.50:1.42
+
+Keep Existing Physical Constraints : Yes
+Keep Existing Timing Constraints   : Yes
+
+pdc_abort_on_error                 : Yes
+pdc_eco_display_unmatched_objects  : No
+pdc_eco_max_warnings               : 10000
+
+demote_globals                     : No
+promote_globals                    : No
+localclock_max_shared_instances    : 12
+localclock_buffer_tree_max_fanout  : 12
+
+combine_register                   : No
+delete_buffer_tree                 : No
+
+report_high_fanout_nets_limit      : 10
+
+=====================================================================
+Compile starts ...
+
+Warning: CMP201: Net follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC_GLB drives no load.
+Warning: CMP201: Net follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC_GLC drives no load.
+Warning: CMP201: Net follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC_LOCK drives no load.
+Warning: CMP201: Net follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC_YB drives no load.
+Warning: CMP201: Net follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC_YC drives no load.
+Warning: Top level port MSS_RESET_N is not connected to any IO pad
+
+Netlist Optimization Report
+===========================
+
+Optimized macros:
+  - Dangling net drivers:   0
+  - Buffers:                0
+  - Inverters:              0
+  - Tieoff:                 0
+  - Logic combining:        4
+
+    Total macros optimized  4
+
+There were 0 error(s) and 6 warning(s) in this design.
+=====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
+
+=====================================================================
+Compile report:
+===============
+
+    Microcontroller Subsystem  Used:      0  Total:      1   (0.00%)
+    Fabric                     Used:    110  Total:   4608   (2.39%)
+    Fabric IO (W/ clocks)      Used:      1  Total:     94   (1.06%)
+    Fabric Differential IO     Used:      0  Total:     47   (0.00%)
+    Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
+    Dedicated MSS IO           Used:      0  Total:     43   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
+    MSS GLOBAL                 Used:      0  Total:      3   (0.00%)
+    On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
+    Main Crystal oscillator    Used:      0  Total:      1   (0.00%)
+    32 KHz Crystal oscillator  Used:      0  Total:      1   (0.00%)
+    RAM/FIFO                   Used:      0  Total:      8   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Global Information:
+
+    Type            | Used   | Total
+    ----------------|--------|--------------
+    Chip global     | 0      | 3  (0.00%)*
+    Quadrant global | 0      | 12 (0.00%)
+    MSS global      | 0      | 3  (0.00%)
+
+    (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
+        or Physical Design Constraints (PDC).
+        They may also be assigned to Quadrant globals automatically during Layout.
+
+Core Information:
+
+    Type    | Instances    | Core tiles
+    --------|--------------|-----------
+    COMB    | 87           | 87
+    SEQ     | 23           | 23
+
+I/O Function:
+
+    Type                                  | w/o register  | w/ register  | w/ DDR register
+    --------------------------------------|---------------|--------------|----------------
+    Input I/O                             | 0             | 0            | 0
+    Output I/O                            | 1             | 0            | 0
+    Bidirectional I/O                     | 0             | 0            | 0
+    Differential Input I/O Pairs          | 0             | 0            | 0
+    Differential Output I/O Pairs         | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVTTL                           | 3.30v | N/A   | 0     | 1      | 0
+
+I/O Placement:
+
+    Locked  :   1 ( 100.00% )
+    Placed  :   0
+    UnPlaced:   0
+
+Net information report:
+=======================
+
+The following nets have been assigned to a chip global resource:
+    Fanout  Type          Name
+    --------------------------
+    23      CLK_NET       Net   : FAB_CLK
+                          Driver: follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC
+                          Source: ESSENTIAL
+
+High fanout nets in the post compile netlist:
+    Fanout  Type          Name
+    --------------------------
+    13      INT_NET       Net   : follower_control_0/count[22]
+                          Driver: follower_control_0/count[22]
+    11      INT_NET       Net   : follower_control_0/un1_countlt22
+                          Driver: follower_control_0/count_RNISEPQ2[21]
+    8       INT_NET       Net   : follower_control_0/DWACT_FINC_E[0]
+                          Driver: follower_control_0/count_2_I_10
+    7       INT_NET       Net   : follower_control_0/DWACT_FINC_E[6]
+                          Driver: follower_control_0/count_2_I_30
+    6       INT_NET       Net   : follower_control_0/count[8]
+                          Driver: follower_control_0/count[8]
+    6       INT_NET       Net   : follower_control_0/count[9]
+                          Driver: follower_control_0/count[9]
+    6       INT_NET       Net   : follower_control_0/count[18]
+                          Driver: follower_control_0/count[18]
+    6       INT_NET       Net   : follower_control_0/count[3]
+                          Driver: follower_control_0/count[3]
+    6       INT_NET       Net   : follower_control_0/DWACT_FINC_E[7]
+                          Driver: follower_control_0/count_2_I_33
+    6       INT_NET       Net   : follower_control_0/count[15]
+                          Driver: follower_control_0/count[15]
+
+Nets that are candidates for clock assignment and the resulting fanout:
+    Fanout  Type          Name
+    --------------------------
+    13      INT_NET       Net   : follower_control_0/count[22]
+                          Driver: follower_control_0/count[22]
+    11      INT_NET       Net   : follower_control_0/un1_countlt22
+                          Driver: follower_control_0/count_RNISEPQ2[21]
+    8       INT_NET       Net   : follower_control_0/DWACT_FINC_E[0]
+                          Driver: follower_control_0/count_2_I_10
+    7       INT_NET       Net   : follower_control_0/DWACT_FINC_E[6]
+                          Driver: follower_control_0/count_2_I_30
+    6       INT_NET       Net   : follower_control_0/count[8]
+                          Driver: follower_control_0/count[8]
+    6       INT_NET       Net   : follower_control_0/count[9]
+                          Driver: follower_control_0/count[9]
+    6       INT_NET       Net   : follower_control_0/count[18]
+                          Driver: follower_control_0/count[18]
+    6       INT_NET       Net   : follower_control_0/count[3]
+                          Driver: follower_control_0/count[3]
+    6       INT_NET       Net   : follower_control_0/DWACT_FINC_E[7]
+                          Driver: follower_control_0/count_2_I_33
+    6       INT_NET       Net   : follower_control_0/count[15]
+                          Driver: follower_control_0/count[15]
+
+

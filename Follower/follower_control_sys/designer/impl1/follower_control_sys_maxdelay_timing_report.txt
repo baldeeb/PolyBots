@@ -1,0 +1,381 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.7 SP1.1
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
+Date: Thu Apr 06 16:33:25 2017
+
+
+Design: follower_control_sys
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               mss_ccc_gla1
+Period (ns):                9.215
+Frequency (MHz):            108.519
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      6.991
+Max Clock-To-Out (ns):      16.325
+
+Clock Domain:               follower_control_sys_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+                            Input to Output
+Min Delay (ns):             N/A
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain mss_ccc_gla1
+
+SET Register to Register
+
+Path 1
+  From:                        follower_control_0/count[9]:CLK
+  To:                          follower_control_0/count[10]:D
+  Delay (ns):                  8.696
+  Slack (ns):                  0.785
+  Arrival (ns):                13.965
+  Required (ns):               14.750
+  Setup (ns):                  0.490
+  Minimum Period (ns):         9.215
+
+Path 2
+  From:                        follower_control_0/count[9]:CLK
+  To:                          follower_control_0/count[16]:D
+  Delay (ns):                  8.635
+  Slack (ns):                  0.875
+  Arrival (ns):                13.904
+  Required (ns):               14.779
+  Setup (ns):                  0.490
+  Minimum Period (ns):         9.125
+
+Path 3
+  From:                        follower_control_0/count[7]:CLK
+  To:                          follower_control_0/count[10]:D
+  Delay (ns):                  8.542
+  Slack (ns):                  0.953
+  Arrival (ns):                13.797
+  Required (ns):               14.750
+  Setup (ns):                  0.490
+  Minimum Period (ns):         9.047
+
+Path 4
+  From:                        follower_control_0/count[9]:CLK
+  To:                          follower_control_0/count[22]:D
+  Delay (ns):                  8.512
+  Slack (ns):                  0.985
+  Arrival (ns):                13.781
+  Required (ns):               14.766
+  Setup (ns):                  0.490
+  Minimum Period (ns):         9.015
+
+Path 5
+  From:                        follower_control_0/count[9]:CLK
+  To:                          follower_control_0/count[0]:D
+  Delay (ns):                  8.510
+  Slack (ns):                  0.987
+  Arrival (ns):                13.779
+  Required (ns):               14.766
+  Setup (ns):                  0.490
+  Minimum Period (ns):         9.013
+
+
+Expanded Path 1
+  From: follower_control_0/count[9]:CLK
+  To: follower_control_0/count[10]:D
+  data required time                             14.750
+  data arrival time                          -   13.965
+  slack                                          0.785
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  4.630
+               +     0.000          net: follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  4.630                        follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  4.630                        follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.639          net: FAB_CLK
+  5.269                        follower_control_0/count[9]:CLK (r)
+               +     0.671          cell: ADLIB:DFN1
+  5.940                        follower_control_0/count[9]:Q (f)
+               +     0.884          net: follower_control_0/count[9]
+  6.824                        follower_control_0/count_RNI0GP41_0[7]:C (f)
+               +     0.642          cell: ADLIB:AO1
+  7.466                        follower_control_0/count_RNI0GP41_0[7]:Y (f)
+               +     0.322          net: follower_control_0/count_RNI0GP41_0[7]
+  7.788                        follower_control_0/count_RNIN98R1[11]:A (f)
+               +     0.850          cell: ADLIB:OA1A
+  8.638                        follower_control_0/count_RNIN98R1[11]:Y (r)
+               +     0.821          net: follower_control_0/un1_countlt17
+  9.459                        follower_control_0/count_RNILT7D2[18]:A (r)
+               +     0.819          cell: ADLIB:OA1B
+  10.278                       follower_control_0/count_RNILT7D2[18]:Y (r)
+               +     0.334          net: follower_control_0/un1_countlt20
+  10.612                       follower_control_0/count_RNISEPQ2[21]:A (r)
+               +     0.819          cell: ADLIB:OA1B
+  11.431                       follower_control_0/count_RNISEPQ2[21]:Y (r)
+               +     1.407          net: follower_control_0/un1_countlt22
+  12.838                       follower_control_0/count_RNO[10]:B (r)
+               +     0.821          cell: ADLIB:OA1A
+  13.659                       follower_control_0/count_RNO[10]:Y (r)
+               +     0.306          net: follower_control_0/count_3[10]
+  13.965                       follower_control_0/count[10]:D (r)
+                                    
+  13.965                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  14.630
+               +     0.000          net: follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  14.630                       follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  14.630                       follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.610          net: FAB_CLK
+  15.240                       follower_control_0/count[10]:CLK (r)
+               -     0.490          Library setup time: ADLIB:DFN1
+  14.750                       follower_control_0/count[10]:D
+                                    
+  14.750                       data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        follower_control_0/count[9]:CLK
+  To:                          trig
+  Delay (ns):                  11.056
+  Slack (ns):
+  Arrival (ns):                16.325
+  Required (ns):
+  Clock to Out (ns):           16.325
+
+Path 2
+  From:                        follower_control_0/count[7]:CLK
+  To:                          trig
+  Delay (ns):                  10.761
+  Slack (ns):
+  Arrival (ns):                16.016
+  Required (ns):
+  Clock to Out (ns):           16.016
+
+Path 3
+  From:                        follower_control_0/count[8]:CLK
+  To:                          trig
+  Delay (ns):                  10.736
+  Slack (ns):
+  Arrival (ns):                16.006
+  Required (ns):
+  Clock to Out (ns):           16.006
+
+Path 4
+  From:                        follower_control_0/count[6]:CLK
+  To:                          trig
+  Delay (ns):                  10.660
+  Slack (ns):
+  Arrival (ns):                15.915
+  Required (ns):
+  Clock to Out (ns):           15.915
+
+Path 5
+  From:                        follower_control_0/count[12]:CLK
+  To:                          trig
+  Delay (ns):                  10.430
+  Slack (ns):
+  Arrival (ns):                15.649
+  Required (ns):
+  Clock to Out (ns):           15.649
+
+
+Expanded Path 1
+  From: follower_control_0/count[9]:CLK
+  To: trig
+  data required time                             N/C
+  data arrival time                          -   16.325
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  4.630
+               +     0.000          net: follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  4.630                        follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  4.630                        follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.639          net: FAB_CLK
+  5.269                        follower_control_0/count[9]:CLK (r)
+               +     0.528          cell: ADLIB:DFN1
+  5.797                        follower_control_0/count[9]:Q (r)
+               +     1.517          net: follower_control_0/count[9]
+  7.314                        follower_control_0/count_RNI0GP41[7]:C (r)
+               +     0.683          cell: ADLIB:OR3C
+  7.997                        follower_control_0/count_RNI0GP41[7]:Y (f)
+               +     0.306          net: follower_control_0/triglto9_1
+  8.303                        follower_control_0/count_RNII1RL2[4]:C (f)
+               +     0.604          cell: ADLIB:OR3
+  8.907                        follower_control_0/count_RNII1RL2[4]:Y (f)
+               +     1.047          net: follower_control_0/triglt22
+  9.954                        follower_control_0/count_RNI8KSU2[20]:A (f)
+               +     0.622          cell: ADLIB:NOR3A
+  10.576                       follower_control_0/count_RNI8KSU2[20]:Y (f)
+               +     0.285          net: follower_control_0/triglto22_6
+  10.861                       follower_control_0/count_RNIQQBG4[20]:A (f)
+               +     0.422          cell: ADLIB:NOR3C
+  11.283                       follower_control_0/count_RNIQQBG4[20]:Y (f)
+               +     1.073          net: trig_c
+  12.356                       trig_pad/U0/U1:D (f)
+               +     0.600          cell: ADLIB:IOTRI_OB_EB
+  12.956                       trig_pad/U0/U1:DOUT (f)
+               +     0.000          net: trig_pad/U0/NET1
+  12.956                       trig_pad/U0/U0:D (f)
+               +     3.369          cell: ADLIB:IOPAD_TRI
+  16.325                       trig_pad/U0/U0:PAD (f)
+               +     0.000          net: trig
+  16.325                       trig (f)
+                                    
+  16.325                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla1
+               +     0.000          Clock source
+  N/C                          follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  N/C
+                                    
+  N/C                          trig (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain follower_control_sys_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

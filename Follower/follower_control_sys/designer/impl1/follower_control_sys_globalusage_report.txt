@@ -1,0 +1,21 @@
+********************************************************************
+                            Global Usage Report
+********************************************************************
+  
+Product: Designer
+Release: v11.7 SP1.1
+Version: 11.7.1.14
+Date: Thu Apr 06 16:33:17 2017
+Design Name: follower_control_sys  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
+Design State: Post-Layout
+
+The following nets have been routed to a chip global resource:
+
+    Fanout            Name
+    ----------------------
+    23                Net   : FAB_CLK
+                      Driver: follower_control_sys_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1
+
+
+
+

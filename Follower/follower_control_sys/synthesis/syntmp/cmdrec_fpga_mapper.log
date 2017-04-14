@@ -1,0 +1,16 @@
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  N:\eecs373\project\Follower\follower_control_sys\synthesis   -part A2F200M3F  -package FBGA484  -grade STD    -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile N:\eecs373\project\Follower\follower_control_sys\synthesis\synlog\report\follower_control_sys_fpga_mapper.xml  -top_level_module  follower_control_sys  -licensetype  synplifypro_actel  -flow mapping  -mp  1  -prjfile  N:\eecs373\project\Follower\follower_control_sys\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.edn   -freq 100.000   -tcl  N:\eecs373\project\Follower\follower_control_sys\component\work\follower_control_sys_MSS\mss_tshell_syn.sdc  N:\eecs373\project\Follower\follower_control_sys\synthesis\synwork\follower_control_sys_prem.srd  -sap  N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.sap  -otap  N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.tap  -omap  N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.map  -devicelib  C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v  -sap  N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.sap  -ologparam  N:\eecs373\project\Follower\follower_control_sys\synthesis\syntmp\follower_control_sys.plg  -osyn  N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.srm  -prjdir  N:\eecs373\project\Follower\follower_control_sys\synthesis\  -prjname  follower_control_sys_syn  -log  N:\eecs373\project\Follower\follower_control_sys\synthesis\synlog\follower_control_sys_fpga_mapper.srr 
+rc:1 success:1
+N:\eecs373\project\Follower\follower_control_sys\synthesis\scratchproject.prs|o|1491509937|2507
+N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.edn|o|1491510761|64946
+N:\eecs373\project\Follower\follower_control_sys\component\work\follower_control_sys_MSS\mss_tshell_syn.sdc|i|1491509371|220
+N:\eecs373\project\Follower\follower_control_sys\synthesis\synwork\follower_control_sys_prem.srd|i|1491510758|7679
+N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.sap|o|1491510758|1168
+N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.tap|o|0|0
+N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.map|o|1491510762|28
+C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v|i|1449239730|72817
+N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.sap|o|1491510758|1168
+N:\eecs373\project\Follower\follower_control_sys\synthesis\syntmp\follower_control_sys.plg|o|1491510762|703
+N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.srm|o|1491510761|64843
+N:\eecs373\project\Follower\follower_control_sys\synthesis\synlog\follower_control_sys_fpga_mapper.srr|o|1491510762|30125
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin\m_proasic.exe|i|1449756976|9590784
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\m_proasic.exe|i|1449758572|12124160

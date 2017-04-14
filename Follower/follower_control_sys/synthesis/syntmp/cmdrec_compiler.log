@@ -1,0 +1,13 @@
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\c_hdl.exe  -osyn  N:\eecs373\project\Follower\follower_control_sys\synthesis\synwork\follower_control_sys_comp.srs  -top  follower_control_sys  -hdllog  N:\eecs373\project\Follower\follower_control_sys\synthesis\synlog\follower_control_sys_compiler.srr  -encrypt  -mp  1  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I N:\eecs373\project\Follower\follower_control_sys\synthesis\  -I C:\Microsemi\Libero_SoC_v11.7\Synplify\lib   -v2001  -devicelib  C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  N:\eecs373\project\Follower\follower_control_sys\synthesis\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work N:\eecs373\project\Follower\follower_control_sys\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v -lib work N:\eecs373\project\Follower\follower_control_sys\component\work\follower_control_sys_MSS\mss_tshell.v -lib work N:\eecs373\project\Follower\follower_control_sys\component\work\follower_control_sys_MSS\MSS_CCC_0\follower_control_sys_MSS_tmp_MSS_CCC_0_MSS_CCC.v -lib work N:\eecs373\project\Follower\follower_control_sys\component\work\follower_control_sys_MSS\follower_control_sys_MSS.v -lib work N:\eecs373\project\Follower\follower_control_sys\hdl\follower_control.v -lib work N:\eecs373\project\Follower\follower_control_sys\component\work\follower_control_sys\follower_control_sys.v 
+rc:0 success:1
+N:\eecs373\project\Follower\follower_control_sys\synthesis\synwork\follower_control_sys_comp.srs|o|1491510754|8034
+N:\eecs373\project\Follower\follower_control_sys\synthesis\synlog\follower_control_sys_compiler.srr|o|1491510754|10319
+C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v|i|1449239730|72817
+N:\eecs373\project\Follower\follower_control_sys\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v|i|1471029396|11243
+N:\eecs373\project\Follower\follower_control_sys\component\work\follower_control_sys_MSS\mss_tshell.v|i|1491509371|12226
+N:\eecs373\project\Follower\follower_control_sys\component\work\follower_control_sys_MSS\MSS_CCC_0\follower_control_sys_MSS_tmp_MSS_CCC_0_MSS_CCC.v|i|1491509364|2902
+N:\eecs373\project\Follower\follower_control_sys\component\work\follower_control_sys_MSS\follower_control_sys_MSS.v|i|1491509373|16439
+N:\eecs373\project\Follower\follower_control_sys\hdl\follower_control.v|i|1491510733|540
+N:\eecs373\project\Follower\follower_control_sys\component\work\follower_control_sys\follower_control_sys.v|i|1491509656|1857
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin\c_hdl.exe|i|1449239722|1295872
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\c_hdl.exe|i|1449239724|1897472
