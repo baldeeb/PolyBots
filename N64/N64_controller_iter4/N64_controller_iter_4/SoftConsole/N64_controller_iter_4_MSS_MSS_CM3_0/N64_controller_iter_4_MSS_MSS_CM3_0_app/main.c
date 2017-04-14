@@ -1,12 +1,31 @@
-#include "drivers/mss_uart/mss_uart.h"
+//main.c
+//DETAILS
+//ACTIVITY
+//Today
+//
+//Melinda Kothbauer uploaded an item
+//1:03 AM
+//C
+//main.c
+//No recorded activity before April 13, 2017
+//Sort direction changed to descending.
+
 #include "inttypes.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+#include "drivers/mss_uart/mss_uart.h"
+#include "string.h"
 
 
 #define CONTROLLER_DATA_REG ((uint32_t *) FPGA_FABRIC_BASE)
 
 #define max_axis_thres 127
+#define zero_thres 20
+#define max_speed_percent 1
+#define min_duty_cycle .30
+#define mid_duty_cycle .60
+#define max_duty_cycle .90
 
 #define y_mask 0xFF000000
 #define	x_mask 0x00FF0000
@@ -16,39 +35,94 @@
 #define	right_mask 0x00000080
 
 int8_t change_endianness(int8_t old);
-uint8_t calc_speed_percent_stick(uint8_t abs_x, uint8_t abs_y);
-void parse_controller_data(uint32_t controller_data_local, uint8_t controller_buff[6]);
+float calc_speed_percent_stick(uint8_t abs_x, uint8_t abs_y);
+float calc_speed_percent_dpad(uint8_t up, uint8_t down, uint8_t left, uint8_t right);
+void parse_controller_data(uint32_t controller_data_local, uint8_t dpad_buff[4], int8_t axis_buff[2]);
+uint8_t calc_left_wheel_duty_cycle_stick(int8_t x_axis, int8_t y_axis, float speed_percentage);
+uint8_t calc_right_wheel_duty_cycle_stick(int8_t x_axis, int8_t y_axis, float speed_percentage);
+uint8_t calc_left_wheel_duty_cycle_dpad(uint8_t up, uint8_t down, uint8_t left, uint8_t right);
+uint8_t calc_right_wheel_duty_cycle_dpad(uint8_t up, uint8_t down, uint8_t left, uint8_t right);
+uint8_t calc_wheel_direction_stick(int8_t y_axis);
+uint8_t calc_wheel_direction_dpad(uint8_t up, uint8_t down, uint8_t left, uint8_t right);
 
 int main(void)
 {
 	uint32_t controller_data; //holds all 32 bits of controller data
 
-	uint8_t speed_percent;
+	float speed_percent;
 
-	int relevant_data_bytes = 6;
-	uint8_t controller_buff[relevant_data_bytes];
-	//uint8_t tx_buff[relevant_data_bytes];
+	uint8_t right_wheel_duty_cycle;
+	uint8_t left_wheel_duty_cycle;
+
+	uint8_t right_wheel_direction; //0 -> stopped, 1 -> forward, 2 -> backward
+	uint8_t left_wheel_direction; //0 -> stopped, 1 -> forward, 2 -> backward
+
+	int relevant_data_bytes = 8;
+	uint8_t dpad_buff[4];
+	int8_t axis_buff[2];
+	uint8_t mode = 1; //1 = N64 control
+
+	uint8_t sync_byte = 0xef;
+
+	uint8_t tx_buff[relevant_data_bytes];
+	int i = 0;
 
 	MSS_UART_init(
 			&g_mss_uart1,
-			MSS_UART_57600_BAUD,
+			MSS_UART_9600_BAUD,
 			MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT
 	);
 
 	while( 1 )
 	{
 		controller_data = *CONTROLLER_DATA_REG;
+		//printf("Controller Data: %" PRIu32 "\n\r",controller_data);
 
-		parse_controller_data(controller_data, controller_buff);
+		parse_controller_data(controller_data, dpad_buff, axis_buff); //fills in controller_buff with data from buttons/stick
 
-		speed_percent = (!controller_buff[2] && !controller_buff[3] && !controller_buff[4] && !controller_buff[5] ) ?
-				calc_speed_percent_stick(abs(controller_buff[1]), abs(controller_buff[0])) :
-				100;
+		uint8_t use_stick = !dpad_buff[0] && !dpad_buff[1] && !dpad_buff[2] && !dpad_buff[3];
 
-		MSS_UART_polled_tx(&g_mss_uart1, controller_buff, sizeof(controller_buff));
+		//calc speed percentage
+		//check if Dpad is pressed -> if no, use analog stick coordinates, otherwise 100% for dPad
+		speed_percent = (use_stick) ?
+				calc_speed_percent_stick(abs(axis_buff[1]), abs(axis_buff[0])) :
+				calc_speed_percent_dpad(dpad_buff[0], dpad_buff[1], dpad_buff[2], dpad_buff[3]);
 
-		//printf("Controller Data: %" PRIu32 "\n",controller_buff);
+		right_wheel_duty_cycle = (use_stick) ?
+				calc_right_wheel_duty_cycle_stick(axis_buff[1], axis_buff[0], speed_percent) :
+				calc_right_wheel_duty_cycle_dpad(dpad_buff[0], dpad_buff[1], dpad_buff[2], dpad_buff[3]);
+		left_wheel_duty_cycle = (use_stick) ?
+						calc_left_wheel_duty_cycle_stick(axis_buff[1], axis_buff[0], speed_percent) :
+						calc_left_wheel_duty_cycle_dpad(dpad_buff[0], dpad_buff[1], dpad_buff[2], dpad_buff[3]);
 
+		right_wheel_direction = (use_stick) ?
+				calc_wheel_direction_stick(axis_buff[0]) :
+				calc_wheel_direction_dpad(dpad_buff[0], dpad_buff[1], dpad_buff[2], dpad_buff[3]);
+		left_wheel_direction = (use_stick) ?
+				calc_wheel_direction_stick(axis_buff[0]) :
+				calc_wheel_direction_dpad(dpad_buff[0], dpad_buff[1], dpad_buff[2], dpad_buff[3]);
+
+
+		tx_buff[0] = sync_byte;
+		tx_buff[1] = right_wheel_duty_cycle;
+		tx_buff[2] = right_wheel_direction;
+		tx_buff[3] = left_wheel_duty_cycle;
+		tx_buff[4] = left_wheel_direction;
+		tx_buff[5] = mode;
+		tx_buff[6] = 128; //garbage
+		tx_buff[7] = 99; //garbage
+
+
+		MSS_UART_polled_tx(&g_mss_uart1, tx_buff, sizeof(tx_buff));
+
+		printf("tx_buff 0 = %d\r\n" , tx_buff[0]);
+		printf("tx_buff 1 = %d\r\n" , tx_buff[1]);
+		printf("tx_buff 2 = %d\r\n" , tx_buff[2]);
+		printf("tx_buff 3 = %d\r\n" , tx_buff[3]);
+		printf("tx_buff 4 = %d\r\n" , tx_buff[4]);
+		printf("tx_buff 5 = %d\r\n" , tx_buff[5]);
+		printf("tx_buff 6 = %d\r\n" , tx_buff[6]);
+		printf("tx_buff 7 = %d\r\n\n\n" , tx_buff[7]);
 	}
 
 	return 0;
@@ -64,26 +138,40 @@ int8_t change_endianness(int8_t old) {
 	return new;
 }
 
-uint8_t calc_speed_percent_stick(uint8_t abs_x, uint8_t abs_y) {
-	uint8_t speed_percentage;
+float calc_speed_percent_stick(uint8_t abs_x, uint8_t abs_y) {
+	float speed_percentage;
 	if(abs_x >= max_axis_thres && abs_y >= max_axis_thres) {
-		speed_percentage =  100;
+		speed_percentage =  max_speed_percent;
 	}
-	else if(abs_x >= max_axis_thres) {
-		speed_percentage = (float)abs_y/max_axis_thres*100;
-		speed_percentage = (speed_percentage > 0) ? speed_percentage : 100;
-	}
-	else if(abs_y >= max_axis_thres) {
-		speed_percentage = (float)abs_x/max_axis_thres*100;
-		speed_percentage = (speed_percentage > 0) ? speed_percentage : 100;
-	}
-	else {
-		speed_percentage = (float)(abs_x + abs_y)/(2*max_axis_thres)*100;
+	else{
+		if(abs_x >= max_axis_thres && abs_y < zero_thres) {
+
+			speed_percentage = (float)abs_y/max_axis_thres;
+			speed_percentage = (speed_percentage > 0) ? speed_percentage : max_speed_percent;
+		}
+		else if(abs_y >= max_axis_thres && abs_x < zero_thres) {
+			speed_percentage = (float)abs_x/max_axis_thres;
+			speed_percentage = (speed_percentage > 0) ? speed_percentage : max_speed_percent;
+		}
+		else {
+			speed_percentage = (float)(abs_x + abs_y)/(2*max_axis_thres);
+		}
 	}
 	return speed_percentage;
 }
 
-void parse_controller_data(uint32_t controller_data_local, uint8_t controller_buff[6]) {
+float calc_speed_percent_dpad(uint8_t up, uint8_t down, uint8_t left, uint8_t right) {
+	float speed_percentage;
+	if((up && !down) || (!up && down) || (right && !left) || (!right && left)) {
+		 speed_percentage = max_speed_percent;
+	}
+	else {
+		speed_percentage = 0.0;
+	}
+	return speed_percentage;
+}
+
+void parse_controller_data(uint32_t controller_data_local, uint8_t dpad_buff[4], int8_t axis_buff[2]) {
 
 	int8_t y_axis; //all 8 bits hold data about y_axis data from controller
 	int8_t x_axis; //all 8 bits hold data about x_axis data from controller
@@ -103,11 +191,130 @@ void parse_controller_data(uint32_t controller_data_local, uint8_t controller_bu
 	left = (uint8_t)((controller_data_local & left_mask) >> 6);
 	right =(uint8_t)((controller_data_local & right_mask) >> 7);
 
-	controller_buff[0] = y_axis;
-	controller_buff[1] = x_axis;
-	controller_buff[2] = up;
-	controller_buff[3] = down;
-	controller_buff[4] = left;
-	controller_buff[5] = right;
+	axis_buff[0] = y_axis;
+	axis_buff[1] = x_axis;
+	dpad_buff[0] = up;
+	dpad_buff[1] = down;
+	dpad_buff[2] = left;
+	dpad_buff[3] = right;
 
+}
+
+uint8_t calc_left_wheel_duty_cycle_stick(int8_t x_axis, int8_t y_axis, float speed_percentage) {
+	float duty_cycle;
+	if(x_axis > 0) {
+		duty_cycle = speed_percentage * abs(x_axis)/max_axis_thres;
+		duty_cycle = (duty_cycle > min_duty_cycle) ? duty_cycle : min_duty_cycle;
+	}
+	else if(x_axis <0) {
+		duty_cycle = min_duty_cycle;
+	}
+	else {
+		duty_cycle = (y_axis == 0) ? 0 : speed_percentage * max_duty_cycle;
+	}
+	uint8_t temp = (uint8_t) floor(duty_cycle *100);
+
+	return (uint8_t) floor(duty_cycle*100);
+}
+
+uint8_t calc_right_wheel_duty_cycle_stick(int8_t x_axis, int8_t y_axis, float speed_percentage) {
+	float duty_cycle;
+	if(x_axis < 0) {
+		duty_cycle = speed_percentage * abs(x_axis)/max_axis_thres;
+		duty_cycle = (duty_cycle > min_duty_cycle) ? duty_cycle : min_duty_cycle;
+	}
+	else if(x_axis > 0) {
+		duty_cycle = min_duty_cycle;
+	}
+	else {
+		duty_cycle = (y_axis == 0) ? 0 : speed_percentage * max_duty_cycle;
+	}
+	uint8_t temp = (uint8_t) floor(duty_cycle *100);
+	return (uint8_t) floor(duty_cycle*100);
+}
+
+uint8_t calc_left_wheel_duty_cycle_dpad(uint8_t up, uint8_t down, uint8_t left, uint8_t right){
+	float duty_cycle;
+	if((right && !left && !up && !down) || (right && !left && up && down)) { //net of right only
+		duty_cycle = max_duty_cycle;
+	}
+	else if((!right && left && !up && !down) || (!right && left && up && down)){ //net left only
+		duty_cycle = min_duty_cycle;
+	}
+	else if((!right && !left && up && !down) || (right && left && up && !down)){ //net up only
+		duty_cycle = max_duty_cycle;
+	}
+	else if((!right && !left && !up && down) || (right && left && !up && down)){ //net down only
+		duty_cycle = max_duty_cycle;
+	}
+	else if(down && right) { //down right
+		duty_cycle = mid_duty_cycle;
+	}
+	else if(down && left) { //down left
+		duty_cycle = min_duty_cycle;
+	}
+	else if(up && left) { //up left
+		duty_cycle = min_duty_cycle;
+	}
+	else if(up && right) { //up right
+		duty_cycle = mid_duty_cycle;
+	}
+	else {
+		duty_cycle = 0;
+	}
+	return (uint8_t) floor(duty_cycle*100);
+}
+
+uint8_t calc_right_wheel_duty_cycle_dpad(uint8_t up, uint8_t down, uint8_t left, uint8_t right) {
+	float duty_cycle;
+	if((right && !left && !up && !down) || (right && !left && up && down)) { //net of right only
+		duty_cycle = min_duty_cycle;
+	}
+	else if((!right && left && !up && !down) || (!right && left && up && down)){ //net left only
+		duty_cycle = max_duty_cycle;
+	}
+	else if((!right && !left && up && !down) || (right && left && up && !down)){ //net up only
+		duty_cycle = max_duty_cycle;
+	}
+	else if((!right && !left && !up && down) || (right && left && !up && down)){ //net down only
+		duty_cycle = max_duty_cycle;
+	}
+	else if(down && right) { //down right
+		duty_cycle = min_duty_cycle;
+	}
+	else if(down && left) { //down left
+		duty_cycle = mid_duty_cycle;
+	}
+	else if(up && left) { //up left
+		duty_cycle = mid_duty_cycle;
+	}
+	else if(up && right) { //up right
+		duty_cycle = min_duty_cycle;
+	}
+	else {
+		duty_cycle = 0;
+	}
+	return (uint8_t) floor(duty_cycle*100);
+}
+
+uint8_t calc_wheel_direction_stick(int8_t y_axis) {
+	if(y_axis > 0) {
+		return 1;
+	}
+	else if(y_axis < 0) {
+		return 2;
+	}
+	else {
+		return 0;
+	}
+}
+
+uint8_t calc_wheel_direction_dpad(uint8_t up, uint8_t down, uint8_t left, uint8_t right){
+	if((up && !down) || (left && !right && !down) || (right && !left)){
+		return 1;
+	}
+	else if ((down && !up)){
+		return 2;
+	}
+	else return 0;
 }
