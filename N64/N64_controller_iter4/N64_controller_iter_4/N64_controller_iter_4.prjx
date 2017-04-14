@@ -57,13 +57,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492179275"
+TIME="1492185535"
 SIZE="2736"
 PARENT="<project>\component\work\N64_controller_iter_4\N64_controller_iter_4.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1492180597"
+TIME="1492185535"
 SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -71,14 +71,14 @@ IS_INCLUDED="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
 STATE="utd"
-TIME="1474400004"
+TIME="1492185535"
 SIZE="912"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
 STATE="utd"
-TIME="1474400004"
+TIME="1492185535"
 SIZE="4636"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -86,7 +86,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
 STATE="utd"
-TIME="1474400004"
+TIME="1492185535"
 SIZE="9073"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -94,7 +94,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 STATE="utd"
-TIME="1474400004"
+TIME="1492185535"
 SIZE="25129"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -102,7 +102,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 STATE="utd"
-TIME="1474400004"
+TIME="1492185535"
 SIZE="36275"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -110,7 +110,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
 STATE="utd"
-TIME="1474400004"
+TIME="1492185535"
 SIZE="122456"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -118,7 +118,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v,hdl"
 STATE="utd"
-TIME="1474400005"
+TIME="1492185535"
 SIZE="29701"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -126,7 +126,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v,hdl"
 STATE="utd"
-TIME="1474400005"
+TIME="1492185535"
 SIZE="4465"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -134,7 +134,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v,hdl"
 STATE="utd"
-TIME="1474400005"
+TIME="1492185535"
 SIZE="5708"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -142,7 +142,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1474400004"
+TIME="1492185535"
 SIZE="23651"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -260,7 +260,7 @@ PARENT="<project>\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4
 ENDFILE
 VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491494008"
+TIME="1492185536"
 SIZE="2374"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
@@ -270,12 +270,12 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\N64_controller_iter_4\N64_controller_iter_4.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492179296"
+TIME="1492185536"
 SIZE="5288"
 ENDFILE
 VALUE "<project>\component\work\N64_controller_iter_4\N64_controller_iter_4.pdc,pdc"
 STATE="utd"
-TIME="1492180597"
+TIME="1492185536"
 SIZE="2056"
 PARENT="<project>\component\work\N64_controller_iter_4\N64_controller_iter_4.cxf"
 BEGIN_USE_CONSTRAINT
@@ -286,14 +286,14 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\N64_controller_iter_4\N64_controller_iter_4.v,hdl"
 STATE="utd"
-TIME="1492180597"
+TIME="1492185536"
 SIZE="15398"
 PARENT="<project>\component\work\N64_controller_iter_4\N64_controller_iter_4.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\N64_controller_iter_4_MSS\MSS_ACE_0\MSS_ACE_0.log,???"
 STATE="utd"
-TIME="1491494009"
+TIME="1492185536"
 SIZE="31587"
 PARENT="<project>\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.cxf"
 IS_READONLY="TRUE"
@@ -313,7 +313,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\N64_controller_iter_4_MSS\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1491494015"
+TIME="1492185536"
 SIZE="15875"
 PARENT="<project>\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.cxf"
 IS_READONLY="TRUE"
@@ -344,12 +344,12 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1491494023"
+TIME="1492185536"
 SIZE="13052"
 ENDFILE
 VALUE "<project>\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.pdc,pdc"
 STATE="utd"
-TIME="1491494002"
+TIME="1492185536"
 SIZE="1548"
 PARENT="<project>\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -360,20 +360,15 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v,hdl"
 STATE="utd"
-TIME="1491494021"
+TIME="1492185536"
 SIZE="19649"
 PARENT="<project>\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\N64_controller_iter_4.adb,adb"
-STATE="utd"
+STATE="ood"
 TIME="1491494664"
 SIZE="1521664"
-ENDFILE
-VALUE "<project>\designer\impl1\N64_controller_iter_4.fdb,fdb"
-STATE="utd"
-TIME="1491494663"
-SIZE="76756"
 ENDFILE
 VALUE "<project>\designer\impl1\N64_controller_iter_4.ide_des,ide_des"
 STATE="utd"
@@ -386,7 +381,7 @@ TIME="1491494536"
 SIZE="40821"
 ENDFILE
 VALUE "<project>\designer\impl1\N64_controller_iter_4_fp\N64_controller_iter_4.pdb,pdb"
-STATE="utd"
+STATE="ood"
 TIME="1492180598"
 SIZE="82278"
 ENDFILE
@@ -400,24 +395,9 @@ STATE="utd"
 TIME="1492180598"
 SIZE="82278"
 ENDFILE
-VALUE "<project>\designer\impl1\N64_controller_iter_4_placeroute_log.rpt,log"
-STATE="utd"
-TIME="1491494621"
-SIZE="2838"
-ENDFILE
-VALUE "<project>\designer\impl1\N64_controller_iter_4_prgdata_log.rpt,log"
-STATE="utd"
-TIME="1491494664"
-SIZE="857"
-ENDFILE
-VALUE "<project>\designer\impl1\N64_controller_iter_4_verifytiming_log.rpt,log"
-STATE="utd"
-TIME="1491494639"
-SIZE="1325"
-ENDFILE
 VALUE "<project>\hdl\controller_interface.v,hdl"
 STATE="utd"
-TIME="1491489289"
+TIME="1492185539"
 SIZE="10535"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
@@ -457,7 +437,7 @@ SIZE="670"
 PARENT="<project>\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\N64_controller_iter_4.edn,syn_edn"
-STATE="utd"
+STATE="ood"
 TIME="1491494509"
 SIZE="1020476"
 ENDFILE
@@ -467,7 +447,7 @@ TIME="1491494509"
 SIZE="278"
 ENDFILE
 VALUE "<project>\synthesis\N64_controller_iter_4_sdc.sdc,syn_sdc"
-STATE="utd"
+STATE="ood"
 TIME="1491494509"
 SIZE="570"
 ENDFILE
@@ -488,23 +468,17 @@ VALUE "<project>\component\work\N64_controller_iter_4\N64_controller_iter_4.pdc,
 ENDLIST
 LIST SynthesisConstraints
 VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
-ENDLIST
-LIST ProjectState5.1
-LIST Impl1
-LiberoState=Post_Layout
-ideDESIGNER(<project>\designer\impl1\N64_controller_iter_4.adb,adb)=StateSuccess
-ideSYNTHESIS(<project>\synthesis\N64_controller_iter_4.edn,syn_edn)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
-LIST PinReports
-VALUE "<project>\designer\impl1\N64_controller_iter_4_report_pin_byname.txt,log"
-VALUE "<project>\designer\impl1\N64_controller_iter_4_report_pin_bynumber.txt,log"
+VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
+VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
+VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
+VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
+VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
+VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
+VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
+VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
+VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
+VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
+VALUE "<project>\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc,sdc"
 ENDLIST
 ENDLIST
 LIST "N64_controller_iter_4_MSS::work"
@@ -690,19 +664,6 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
-LIST "N64_controller_iter_4::work"
-LIST Impl1
-LiberoState=Post_Layout
-ideDESIGNER(<project>\designer\impl1\N64_controller_iter_4.adb,adb)=StateSuccess
-ideSYNTHESIS(<project>\synthesis\N64_controller_iter_4.edn,syn_edn)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 LIST "CoreAPB3::COREAPB3_LIB"
 LIST Impl1
 ideSTIMULUS=StateSuccess
@@ -727,8 +688,13 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Compile:N64_controller_iter_4_compile_log.rpt
+SmartDesign;N64_controller_iter_4_MSS;0
+HDL;hdl\controller_interface.v;0
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;N64_controller_iter_4;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
@@ -791,8 +757,8 @@ LIST "MSSINT::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FA
 ENDLIST
 LIST "N64_controller_iter_4::work","component\work\N64_controller_iter_4\N64_controller_iter_4.v","TRUE","FALSE"
 SUBBLOCK "N64_controller_iter_4_MSS::work","component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v","TRUE","FALSE"
-SUBBLOCK "controller_interface::work","hdl\controller_interface.v","FALSE","FALSE"
 SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v","FALSE","FALSE"
+SUBBLOCK "controller_interface::work","hdl\controller_interface.v","FALSE","FALSE"
 ENDLIST
 LIST "N64_controller_iter_4_MSS::work","component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v","TRUE","FALSE"
 SUBBLOCK "INBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"

@@ -1,0 +1,753 @@
+<html><body><samp><pre>
+<!@TC:1491873239>
+#Build: Synplify Pro J-2015.03M-SP1-2, Build 266R, Dec 14 2015
+#install: C:\Microsemi\Libero_SoC_v11.7\Synplify
+#OS: Windows 8 6.2
+#Hostname: EECS373-07
+
+#Implementation: synthesis
+
+<a name=compilerReport1></a>Synopsys HDL Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015</a>
+@N: : <!@TM:1491873241> | Running in 64-bit mode 
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+<a name=compilerReport2></a>Synopsys Verilog Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015</a>
+@N: : <!@TM:1491873241> | Running in 64-bit mode 
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v"
+@I::"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\hypermods.v"
+@I::"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\umr_capim.v"
+@I::"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\scemi_objects.v"
+@I::"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\scemi_pipes.svh"
+@I::"N:\Project\NewProject-4-10\motorCONTROL\hdl\m_control.v"
+@I::"N:\Project\NewProject-4-10\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v"
+@I::"N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell.v"
+@I::"N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
+@I::"N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\motorCONTROL_MSS.v"
+@I::"N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v"
+@I::"N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v"
+@I::"N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v"
+@I::"N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL\motorCONTROL.v"
+Verilog syntax check successful!
+File N:\Project\NewProject-4-10\motorCONTROL\hdl\m_control.v changed - recompiling
+File N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell.v changed - recompiling
+File N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
+File N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\motorCONTROL_MSS.v changed - recompiling
+File N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL\motorCONTROL.v changed - recompiling
+Selecting top level module motorCONTROL
+<font color=#A52A2A>@W:<a href="@W:CG775:@XP_HELP">CG775</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:13:0:13:8:@W:CG775:@XP_MSG">coreapb3.v(13)</a><!@TM:1491873241> | Found Component CoreAPB3 in library COREAPB3_LIB</font>
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v:13:0:13:7:@N:CG364:@XP_MSG">coreapb3_muxptob3.v(13)</a><!@TM:1491873241> | Synthesizing module CAPB3II
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:13:0:13:8:@N:CG364:@XP_MSG">coreapb3.v(13)</a><!@TM:1491873241> | Synthesizing module CoreAPB3
+
+	APB_DWIDTH=6'b100000
+	IADDR_OPTION=32'b00000000000000000000000000000000
+	APBSLOT0ENABLE=1'b1
+	APBSLOT1ENABLE=1'b0
+	APBSLOT2ENABLE=1'b0
+	APBSLOT3ENABLE=1'b0
+	APBSLOT4ENABLE=1'b0
+	APBSLOT5ENABLE=1'b0
+	APBSLOT6ENABLE=1'b0
+	APBSLOT7ENABLE=1'b0
+	APBSLOT8ENABLE=1'b0
+	APBSLOT9ENABLE=1'b0
+	APBSLOT10ENABLE=1'b0
+	APBSLOT11ENABLE=1'b0
+	APBSLOT12ENABLE=1'b0
+	APBSLOT13ENABLE=1'b0
+	APBSLOT14ENABLE=1'b0
+	APBSLOT15ENABLE=1'b0
+	SC_0=1'b0
+	SC_1=1'b0
+	SC_2=1'b0
+	SC_3=1'b0
+	SC_4=1'b0
+	SC_5=1'b0
+	SC_6=1'b0
+	SC_7=1'b0
+	SC_8=1'b0
+	SC_9=1'b0
+	SC_10=1'b0
+	SC_11=1'b0
+	SC_12=1'b0
+	SC_13=1'b0
+	SC_14=1'b0
+	SC_15=1'b0
+	MADDR_BITS=6'b001100
+	UPR_NIBBLE_POSN=4'b0010
+	FAMILY=32'b00000000000000000000000000010010
+	SYNC_RESET=32'b00000000000000000000000000000000
+	CAPB3OOl=32'b00000000000000000000000000000000
+	CAPB3IOl=32'b00000000000000000000000000000001
+	CAPB3lOl=32'b00000000000000000000000000000010
+	CAPB3OIl=32'b00000000000000000000000000000011
+	CAPB3IIl=32'b00000000000000000000000000000100
+	CAPB3lIl=32'b00000000000000000000000000000101
+	CAPB3Oll=32'b00000000000000000000000000000110
+	CAPB3Ill=32'b00000000000000000000000000000111
+	CAPB3lll=32'b00000000000000000000000000001000
+	CAPB3O0l=32'b00000000000000000000000000001001
+	CAPB3I0l=32'b00000000000000000000000000001010
+	CAPB3l0l=32'b00000000000000000000000000001011
+	CAPB3O1l=32'b00000000000000000000000000001100
+	CAPB3I1l=32'b00000000000000000000000000001101
+	CAPB3l1l=32'b00000000000000000000000000001110
+	CAPB3OO0=32'b00000000000000000000000000001111
+	CAPB3IO0=32'b00000000000000000000000000010000
+	CAPB3lO0=32'b00000000000000000000000000010001
+	CAPB3OI0=16'b0000000000000001
+	CAPB3II0=16'b0000000000000000
+	CAPB3lI0=16'b0000000000000000
+	CAPB3Ol0=16'b0000000000000000
+	CAPB3Il0=16'b0000000000000000
+	CAPB3ll0=16'b0000000000000000
+	CAPB3O00=16'b0000000000000000
+	CAPB3I00=16'b0000000000000000
+	CAPB3l00=16'b0000000000000000
+	CAPB3O10=16'b0000000000000000
+	CAPB3I10=16'b0000000000000000
+	CAPB3l10=16'b0000000000000000
+	CAPB3OO1=16'b0000000000000000
+	CAPB3IO1=16'b0000000000000000
+	CAPB3lO1=16'b0000000000000000
+	CAPB3OI1=16'b0000000000000000
+	CAPB3II1=16'b0000000000000000
+	CAPB3lI1=16'b0000000000000000
+   Generated name = CoreAPB3_Z1
+
+<font color=#A52A2A>@W:<a href="@W:CG360:@XP_HELP">CG360</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:1495:0:1495:9:@W:CG360:@XP_MSG">coreapb3.v(1495)</a><!@TM:1491873241> | No assignment to wire CAPB3IlOI</font>
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\hdl\m_control.v:2:7:2:16:@N:CG364:@XP_MSG">m_control.v(2)</a><!@TM:1491873241> | Synthesizing module m_control
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell.v:1:7:1:14:@N:CG364:@XP_MSG">mss_tshell.v(1)</a><!@TM:1491873241> | Synthesizing module MSS_APB
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v:151:7:151:14:@N:CG364:@XP_MSG">mss_comps.v(151)</a><!@TM:1491873241> | Synthesizing module MSS_CCC
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v:2620:7:2620:12:@N:CG364:@XP_MSG">smartfusion.v(2620)</a><!@TM:1491873241> | Synthesizing module RCOSC
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v:1141:7:1141:10:@N:CG364:@XP_MSG">smartfusion.v(1141)</a><!@TM:1491873241> | Synthesizing module GND
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v:1868:7:1868:10:@N:CG364:@XP_MSG">smartfusion.v(1868)</a><!@TM:1491873241> | Synthesizing module VCC
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:5:7:5:45:@N:CG364:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(5)</a><!@TM:1491873241> | Synthesizing module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v:67:7:67:16:@N:CG364:@XP_MSG">mss_comps.v(67)</a><!@TM:1491873241> | Synthesizing module BIBUF_MSS
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v:23:7:23:16:@N:CG364:@XP_MSG">mss_comps.v(23)</a><!@TM:1491873241> | Synthesizing module INBUF_MSS
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v:37:7:37:17:@N:CG364:@XP_MSG">mss_comps.v(37)</a><!@TM:1491873241> | Synthesizing module OUTBUF_MSS
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\motorCONTROL_MSS.v:9:7:9:23:@N:CG364:@XP_MSG">motorCONTROL_MSS.v(9)</a><!@TM:1491873241> | Synthesizing module motorCONTROL_MSS
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL\motorCONTROL.v:9:7:9:19:@N:CG364:@XP_MSG">motorCONTROL.v(9)</a><!@TM:1491873241> | Synthesizing module motorCONTROL
+
+<font color=#A52A2A>@W:<a href="@W:CL157:@XP_HELP">CL157</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:62:7:62:19:@W:CL157:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(62)</a><!@TM:1491873241> | *Output RCOSC_CLKOUT has undriven bits -- simulation mismatch possible.</font>
+<font color=#A52A2A>@W:<a href="@W:CL157:@XP_HELP">CL157</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:63:7:63:21:@W:CL157:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(63)</a><!@TM:1491873241> | *Output MAINXIN_CLKOUT has undriven bits -- simulation mismatch possible.</font>
+<font color=#A52A2A>@W:<a href="@W:CL157:@XP_HELP">CL157</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:64:7:64:19:@W:CL157:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(64)</a><!@TM:1491873241> | *Output LPXIN_CLKOUT has undriven bits -- simulation mismatch possible.</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:36:7:36:11:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(36)</a><!@TM:1491873241> | Input CLKA is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:37:7:37:15:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(37)</a><!@TM:1491873241> | Input CLKA_PAD is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:38:7:38:16:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(38)</a><!@TM:1491873241> | Input CLKA_PADP is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:39:7:39:16:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(39)</a><!@TM:1491873241> | Input CLKA_PADN is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:40:7:40:11:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(40)</a><!@TM:1491873241> | Input CLKB is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:41:7:41:15:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(41)</a><!@TM:1491873241> | Input CLKB_PAD is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:42:7:42:16:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(42)</a><!@TM:1491873241> | Input CLKB_PADP is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:43:7:43:16:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(43)</a><!@TM:1491873241> | Input CLKB_PADN is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:44:7:44:11:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(44)</a><!@TM:1491873241> | Input CLKC is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:45:7:45:15:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(45)</a><!@TM:1491873241> | Input CLKC_PAD is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:46:7:46:16:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(46)</a><!@TM:1491873241> | Input CLKC_PADP is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:47:7:47:16:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(47)</a><!@TM:1491873241> | Input CLKC_PADN is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:48:7:48:14:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(48)</a><!@TM:1491873241> | Input MAINXIN is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:49:7:49:12:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(49)</a><!@TM:1491873241> | Input LPXIN is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v:50:7:50:14:@W:CL159:@XP_MSG">motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v(50)</a><!@TM:1491873241> | Input MAC_CLK is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL189:@XP_HELP">CL189</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\hdl\m_control.v:35:4:35:10:@W:CL189:@XP_MSG">m_control.v(35)</a><!@TM:1491873241> | Register bit PRDATA[25] is always 0, optimizing ...</font>
+<font color=#A52A2A>@W:<a href="@W:CL189:@XP_HELP">CL189</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\hdl\m_control.v:35:4:35:10:@W:CL189:@XP_MSG">m_control.v(35)</a><!@TM:1491873241> | Register bit PRDATA[26] is always 0, optimizing ...</font>
+<font color=#A52A2A>@W:<a href="@W:CL189:@XP_HELP">CL189</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\hdl\m_control.v:35:4:35:10:@W:CL189:@XP_MSG">m_control.v(35)</a><!@TM:1491873241> | Register bit PRDATA[27] is always 0, optimizing ...</font>
+<font color=#A52A2A>@W:<a href="@W:CL189:@XP_HELP">CL189</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\hdl\m_control.v:35:4:35:10:@W:CL189:@XP_MSG">m_control.v(35)</a><!@TM:1491873241> | Register bit PRDATA[28] is always 0, optimizing ...</font>
+<font color=#A52A2A>@W:<a href="@W:CL189:@XP_HELP">CL189</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\hdl\m_control.v:35:4:35:10:@W:CL189:@XP_MSG">m_control.v(35)</a><!@TM:1491873241> | Register bit PRDATA[29] is always 0, optimizing ...</font>
+<font color=#A52A2A>@W:<a href="@W:CL189:@XP_HELP">CL189</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\hdl\m_control.v:35:4:35:10:@W:CL189:@XP_MSG">m_control.v(35)</a><!@TM:1491873241> | Register bit PRDATA[30] is always 0, optimizing ...</font>
+<font color=#A52A2A>@W:<a href="@W:CL189:@XP_HELP">CL189</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\hdl\m_control.v:35:4:35:10:@W:CL189:@XP_MSG">m_control.v(35)</a><!@TM:1491873241> | Register bit PRDATA[31] is always 0, optimizing ...</font>
+<font color=#A52A2A>@W:<a href="@W:CL279:@XP_HELP">CL279</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\hdl\m_control.v:35:4:35:10:@W:CL279:@XP_MSG">m_control.v(35)</a><!@TM:1491873241> | Pruning register bits 31 to 25 of PRDATA[31:0] </font>
+
+<font color=#A52A2A>@W:<a href="@W:CL246:@XP_HELP">CL246</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\hdl\m_control.v:11:17:11:22:@W:CL246:@XP_MSG">m_control.v(11)</a><!@TM:1491873241> | Input port bits 31 to 8 of PADDR[31:0] are unused</font>
+
+<font color=#A52A2A>@W:<a href="@W:CL246:@XP_HELP">CL246</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\hdl\m_control.v:12:22:12:28:@W:CL246:@XP_MSG">m_control.v(12)</a><!@TM:1491873241> | Input port bits 31 to 19 of PWDATA[31:0] are unused</font>
+
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:396:0:396:5:@W:CL159:@XP_MSG">coreapb3.v(396)</a><!@TM:1491873241> | Input IADDR is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:398:0:398:7:@W:CL159:@XP_MSG">coreapb3.v(398)</a><!@TM:1491873241> | Input PRESETN is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:400:0:400:4:@W:CL159:@XP_MSG">coreapb3.v(400)</a><!@TM:1491873241> | Input PCLK is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:521:0:521:8:@W:CL159:@XP_MSG">coreapb3.v(521)</a><!@TM:1491873241> | Input PRDATAS1 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:528:0:528:8:@W:CL159:@XP_MSG">coreapb3.v(528)</a><!@TM:1491873241> | Input PRDATAS2 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:535:0:535:8:@W:CL159:@XP_MSG">coreapb3.v(535)</a><!@TM:1491873241> | Input PRDATAS3 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:542:0:542:8:@W:CL159:@XP_MSG">coreapb3.v(542)</a><!@TM:1491873241> | Input PRDATAS4 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:549:0:549:8:@W:CL159:@XP_MSG">coreapb3.v(549)</a><!@TM:1491873241> | Input PRDATAS5 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:556:0:556:8:@W:CL159:@XP_MSG">coreapb3.v(556)</a><!@TM:1491873241> | Input PRDATAS6 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:563:0:563:8:@W:CL159:@XP_MSG">coreapb3.v(563)</a><!@TM:1491873241> | Input PRDATAS7 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:570:0:570:8:@W:CL159:@XP_MSG">coreapb3.v(570)</a><!@TM:1491873241> | Input PRDATAS8 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:577:0:577:8:@W:CL159:@XP_MSG">coreapb3.v(577)</a><!@TM:1491873241> | Input PRDATAS9 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:584:0:584:9:@W:CL159:@XP_MSG">coreapb3.v(584)</a><!@TM:1491873241> | Input PRDATAS10 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:591:0:591:9:@W:CL159:@XP_MSG">coreapb3.v(591)</a><!@TM:1491873241> | Input PRDATAS11 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:598:0:598:9:@W:CL159:@XP_MSG">coreapb3.v(598)</a><!@TM:1491873241> | Input PRDATAS12 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:605:0:605:9:@W:CL159:@XP_MSG">coreapb3.v(605)</a><!@TM:1491873241> | Input PRDATAS13 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:612:0:612:9:@W:CL159:@XP_MSG">coreapb3.v(612)</a><!@TM:1491873241> | Input PRDATAS14 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:619:0:619:9:@W:CL159:@XP_MSG">coreapb3.v(619)</a><!@TM:1491873241> | Input PRDATAS15 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:630:0:630:8:@W:CL159:@XP_MSG">coreapb3.v(630)</a><!@TM:1491873241> | Input PREADYS1 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:632:0:632:8:@W:CL159:@XP_MSG">coreapb3.v(632)</a><!@TM:1491873241> | Input PREADYS2 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:634:0:634:8:@W:CL159:@XP_MSG">coreapb3.v(634)</a><!@TM:1491873241> | Input PREADYS3 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:636:0:636:8:@W:CL159:@XP_MSG">coreapb3.v(636)</a><!@TM:1491873241> | Input PREADYS4 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:638:0:638:8:@W:CL159:@XP_MSG">coreapb3.v(638)</a><!@TM:1491873241> | Input PREADYS5 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:640:0:640:8:@W:CL159:@XP_MSG">coreapb3.v(640)</a><!@TM:1491873241> | Input PREADYS6 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:642:0:642:8:@W:CL159:@XP_MSG">coreapb3.v(642)</a><!@TM:1491873241> | Input PREADYS7 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:644:0:644:8:@W:CL159:@XP_MSG">coreapb3.v(644)</a><!@TM:1491873241> | Input PREADYS8 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:646:0:646:8:@W:CL159:@XP_MSG">coreapb3.v(646)</a><!@TM:1491873241> | Input PREADYS9 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:648:0:648:9:@W:CL159:@XP_MSG">coreapb3.v(648)</a><!@TM:1491873241> | Input PREADYS10 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:650:0:650:9:@W:CL159:@XP_MSG">coreapb3.v(650)</a><!@TM:1491873241> | Input PREADYS11 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:652:0:652:9:@W:CL159:@XP_MSG">coreapb3.v(652)</a><!@TM:1491873241> | Input PREADYS12 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:654:0:654:9:@W:CL159:@XP_MSG">coreapb3.v(654)</a><!@TM:1491873241> | Input PREADYS13 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:656:0:656:9:@W:CL159:@XP_MSG">coreapb3.v(656)</a><!@TM:1491873241> | Input PREADYS14 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:658:0:658:9:@W:CL159:@XP_MSG">coreapb3.v(658)</a><!@TM:1491873241> | Input PREADYS15 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:664:0:664:9:@W:CL159:@XP_MSG">coreapb3.v(664)</a><!@TM:1491873241> | Input PSLVERRS1 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:666:0:666:9:@W:CL159:@XP_MSG">coreapb3.v(666)</a><!@TM:1491873241> | Input PSLVERRS2 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:668:0:668:9:@W:CL159:@XP_MSG">coreapb3.v(668)</a><!@TM:1491873241> | Input PSLVERRS3 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:670:0:670:9:@W:CL159:@XP_MSG">coreapb3.v(670)</a><!@TM:1491873241> | Input PSLVERRS4 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:672:0:672:9:@W:CL159:@XP_MSG">coreapb3.v(672)</a><!@TM:1491873241> | Input PSLVERRS5 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:674:0:674:9:@W:CL159:@XP_MSG">coreapb3.v(674)</a><!@TM:1491873241> | Input PSLVERRS6 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:676:0:676:9:@W:CL159:@XP_MSG">coreapb3.v(676)</a><!@TM:1491873241> | Input PSLVERRS7 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:678:0:678:9:@W:CL159:@XP_MSG">coreapb3.v(678)</a><!@TM:1491873241> | Input PSLVERRS8 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:680:0:680:9:@W:CL159:@XP_MSG">coreapb3.v(680)</a><!@TM:1491873241> | Input PSLVERRS9 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:682:0:682:10:@W:CL159:@XP_MSG">coreapb3.v(682)</a><!@TM:1491873241> | Input PSLVERRS10 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:684:0:684:10:@W:CL159:@XP_MSG">coreapb3.v(684)</a><!@TM:1491873241> | Input PSLVERRS11 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:686:0:686:10:@W:CL159:@XP_MSG">coreapb3.v(686)</a><!@TM:1491873241> | Input PSLVERRS12 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:688:0:688:10:@W:CL159:@XP_MSG">coreapb3.v(688)</a><!@TM:1491873241> | Input PSLVERRS13 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:690:0:690:10:@W:CL159:@XP_MSG">coreapb3.v(690)</a><!@TM:1491873241> | Input PSLVERRS14 is unused</font>
+<font color=#A52A2A>@W:<a href="@W:CL159:@XP_HELP">CL159</a> : <a href="N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v:692:0:692:10:@W:CL159:@XP_MSG">coreapb3.v(692)</a><!@TM:1491873241> | Input PSLVERRS15 is unused</font>
+
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 78MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Apr 10 21:14:01 2017
+
+###########################################################]
+<a name=compilerReport3></a>Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015</a>
+@N: : <!@TM:1491873241> | Running in 64-bit mode 
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Apr 10 21:14:01 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Mon Apr 10 21:14:01 2017
+
+###########################################################]
+<a name=compilerReport4></a>Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015</a>
+@N: : <!@TM:1491873243> | Running in 64-bit mode 
+File N:\Project\NewProject-4-10\motorCONTROL\synthesis\synwork\motorCONTROL_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Apr 10 21:14:03 2017
+
+###########################################################]
+Pre-mapping Report
+
+<a name=mapperReport5></a>Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1659R, Built Dec 10 2015 09:42:41</a>
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-SP1-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+Reading constraint file: N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc
+Linked File: <a href="N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL_scck.rpt:@XP_FILE">motorCONTROL_scck.rpt</a>
+Printing clock  summary report in "N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL_scck.rpt" file 
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1491873245> | Running in 64-bit mode. 
+@N:<a href="@N:MF667:@XP_HELP">MF667</a> : <!@TM:1491873245> | Clock conversion disabled  
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+
+<a name=mapperReport6></a>@S |Clock Summary</a>
+*****************
+
+Start       Requested     Requested     Clock        Clock      
+Clock       Frequency     Period        Type         Group      
+----------------------------------------------------------------
+FAB_CLK     25.0 MHz      40.000        declared     clk_group_0
+FCLK        25.0 MHz      40.000        declared     clk_group_0
+================================================================
+
+Finished Pre Mapping Phase.
+@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1491873245> | Writing default property annotation file N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL.sap. 
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 113MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Apr 10 21:14:05 2017
+
+###########################################################]
+Map & Optimize Report
+
+<a name=mapperReport7></a>Synopsys Microsemi Technology Mapper, Version mapact, Build 1659R, Built Dec 10 2015 09:42:41</a>
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-SP1-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1491873250> | Running in 64-bit mode. 
+@N:<a href="@N:MF667:@XP_HELP">MF667</a> : <!@TM:1491873250> | Clock conversion disabled  
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+<font color=#A52A2A>@W:<a href="@W:MO111:@XP_HELP">MO111</a> : <a href="n:\project\newproject-4-10\motorcontrol\component\work\motorcontrol_mss\mss_ccc_0\motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v:64:7:64:19:@W:MO111:@XP_MSG">motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v(64)</a><!@TM:1491873250> | Tristate driver LPXIN_CLKOUT on net LPXIN_CLKOUT has its enable tied to GND (module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC) </font>
+<font color=#A52A2A>@W:<a href="@W:MO111:@XP_HELP">MO111</a> : <a href="n:\project\newproject-4-10\motorcontrol\component\work\motorcontrol_mss\mss_ccc_0\motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v:63:7:63:21:@W:MO111:@XP_MSG">motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v(63)</a><!@TM:1491873250> | Tristate driver MAINXIN_CLKOUT on net MAINXIN_CLKOUT has its enable tied to GND (module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC) </font>
+<font color=#A52A2A>@W:<a href="@W:MO111:@XP_HELP">MO111</a> : <a href="n:\project\newproject-4-10\motorcontrol\component\work\motorcontrol_mss\mss_ccc_0\motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v:62:7:62:19:@W:MO111:@XP_MSG">motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v(62)</a><!@TM:1491873250> | Tristate driver RCOSC_CLKOUT on net RCOSC_CLKOUT has its enable tied to GND (module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC) </font>
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+@N:<a href="@N:MF179:@XP_HELP">MF179</a> : <a href="n:\project\newproject-4-10\motorcontrol\hdl\m_control.v:89:12:89:35:@N:MF179:@XP_MSG">m_control.v(89)</a><!@TM:1491873250> | Found 19 bit by 19 bit '<' comparator, 'pwmLeft4'
+@N:<a href="@N:MF179:@XP_HELP">MF179</a> : <a href="n:\project\newproject-4-10\motorcontrol\hdl\m_control.v:94:12:94:36:@N:MF179:@XP_MSG">m_control.v(94)</a><!@TM:1491873250> | Found 19 bit by 19 bit '<' comparator, 'pwmRight6'
+@N:<a href="@N:MF238:@XP_HELP">MF238</a> : <a href="n:\project\newproject-4-10\motorcontrol\hdl\m_control.v:82:21:82:31:@N:MF238:@XP_MSG">m_control.v(82)</a><!@TM:1491873250> | Found 19-bit incrementor, 'un3_count_1[18:0]'
+@N:<a href="@N:MF238:@XP_HELP">MF238</a> : <a href="n:\project\newproject-4-10\motorcontrol\hdl\m_control.v:87:23:87:35:@N:MF238:@XP_MSG">m_control.v(87)</a><!@TM:1491873250> | Found 25-bit incrementor, 'un3_counter_1[24:0]'
+
+Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name                          Fanout, notes
+-----------------------------------------------------------------
+motorCONTROL_MSS_0.MSS_ADLIB_INST / MSSPADDR[2]     47           
+motorCONTROL_MSS_0.MSS_ADLIB_INST / MSSPADDR[3]     36           
+motorCONTROL_MSS_0.MSS_ADLIB_INST / M2FRESETn       41           
+CoreAPB3_0.CAPB3l0OI[0] / Y                         27           
+m_control_0.un1_pulseWidthLeft10_1_i_a2 / Y         25           
+=================================================================
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+Replicating Combinational Instance m_control_0.un1_pulseWidthLeft10_1_i_a2, fanout 25 segments 2
+Replicating Combinational Instance CoreAPB3_0.CAPB3l0OI[0], fanout 28 segments 2
+Buffering motorCONTROL_MSS_0_M2F_RESET_N, fanout 41 segments 2
+Buffering CoreAPB3_0_APBmslave0_PADDR[3], fanout 36 segments 2
+Buffering CoreAPB3_0_APBmslave0_PADDR[2], fanout 47 segments 2
+
+Added 3 Buffers
+Added 2 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 2 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
+
+
+
+<a name=clockReport8></a>#### START OF CLOCK OPTIMIZATION REPORT #####[</a>
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 113 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+====================================== Non-Gated/Non-Generated Clocks =======================================
+Clock Tree ID     Driving Element        Drive Element Type                Fanout     Sample Instance        
+-------------------------------------------------------------------------------------------------------------
+<a href="@|S:motorCONTROL_MSS_0@|E:m_control_0.counter[24]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001  @XP_NAMES_BY_PROP">ClockId0001 </a>       motorCONTROL_MSS_0     clock definition on hierarchy     113        m_control_0.counter[24]
+=============================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 113MB)
+
+Writing Analyst data base N:\Project\NewProject-4-10\motorCONTROL\synthesis\synwork\motorCONTROL_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+Writing EDIF Netlist and constraint files
+J-2015.03M-SP1-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+Found clock FCLK with period 40.00ns 
+Found clock FAB_CLK with period 40.00ns 
+
+
+<a name=timingReport9></a>@S |##### START OF TIMING REPORT #####[</a>
+# Timing Report written on Mon Apr 10 21:14:10 2017
+#
+
+
+Top view:               motorCONTROL
+Library name:           smartfusion
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    25.0 MHz
+Wire load mode:         top
+Wire load model:        smartfusion
+Paths requested:        5
+Constraint File(s):    N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc
+                       
+@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1491873250> | Timing report estimates place and route data. Please look at the place and route timing report for final timing. 
+
+@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1491873250> | Clock constraints cover only FF-to-FF paths associated with the clock. 
+
+
+
+<a name=performanceSummary10></a>Performance Summary </a>
+*******************
+
+
+Worst slack in design: 5.106
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock          
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group          
+------------------------------------------------------------------------------------------------------------------
+FAB_CLK            25.0 MHz      105.1 MHz     40.000        9.515         30.485     declared     clk_group_0    
+FCLK               25.0 MHz      NA            40.000        NA            NA         declared     clk_group_0    
+System             100.0 MHz     204.3 MHz     10.000        4.894         5.106      system       system_clkgroup
+==================================================================================================================
+@N:<a href="@N:MT582:@XP_HELP">MT582</a> : <!@TM:1491873250> | Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack 
+
+
+
+
+
+<a name=clockRelationships11></a>Clock Relationships</a>
+*******************
+
+Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------
+System    System   |  10.000      5.106   |  No paths    -      |  No paths    -      |  No paths    -    
+System    FAB_CLK  |  40.000      28.634  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   System   |  40.000      38.106  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   FAB_CLK  |  40.000      30.485  |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+<a name=interfaceInfo12></a>Interface Information </a>
+*********************
+
+No IO constraint found
+
+
+
+====================================
+<a name=clockReport13></a>Detailed Report for Clock: FAB_CLK</a>
+====================================
+
+
+
+<a name=startingSlack14></a>Starting Points with Worst Slack</a>
+********************************
+
+                            Starting                                       Arrival           
+Instance                    Reference     Type     Pin     Net             Time        Slack 
+                            Clock                                                            
+---------------------------------------------------------------------------------------------
+m_control_0.counter[1]      FAB_CLK       DFN1     Q       counter[1]      0.737       30.485
+m_control_0.counter[21]     FAB_CLK       DFN1     Q       counter[21]     0.737       30.494
+m_control_0.count[2]        FAB_CLK       DFN1     Q       count[2]        0.737       30.500
+m_control_0.count[1]        FAB_CLK       DFN1     Q       count[1]        0.737       30.506
+m_control_0.counter[0]      FAB_CLK       DFN1     Q       counter[0]      0.737       30.514
+m_control_0.counter[2]      FAB_CLK       DFN1     Q       counter[2]      0.737       30.553
+m_control_0.count[6]        FAB_CLK       DFN1     Q       count[6]        0.737       30.633
+m_control_0.count[0]        FAB_CLK       DFN1     Q       count[0]        0.580       30.652
+m_control_0.counter[4]      FAB_CLK       DFN1     Q       counter[4]      0.737       30.660
+m_control_0.counter[3]      FAB_CLK       DFN1     Q       counter[3]      0.737       30.700
+=============================================================================================
+
+
+<a name=endingSlack15></a>Ending Points with Worst Slack</a>
+******************************
+
+                            Starting                                         Required           
+Instance                    Reference     Type     Pin     Net               Time         Slack 
+                            Clock                                                               
+------------------------------------------------------------------------------------------------
+m_control_0.counter[12]     FAB_CLK       DFN1     D       counter_3[12]     39.461       30.485
+m_control_0.counter[6]      FAB_CLK       DFN1     D       counter_3[6]      39.461       30.494
+m_control_0.counter[11]     FAB_CLK       DFN1     D       counter_3[11]     39.461       30.494
+m_control_0.counter[13]     FAB_CLK       DFN1     D       counter_3[13]     39.461       30.494
+m_control_0.counter[14]     FAB_CLK       DFN1     D       counter_3[14]     39.461       30.494
+m_control_0.counter[16]     FAB_CLK       DFN1     D       counter_3[16]     39.461       30.494
+m_control_0.counter[18]     FAB_CLK       DFN1     D       counter_3[18]     39.461       30.494
+m_control_0.counter[19]     FAB_CLK       DFN1     D       counter_3[19]     39.461       30.494
+m_control_0.counter[20]     FAB_CLK       DFN1     D       counter_3[20]     39.461       30.494
+m_control_0.counter[21]     FAB_CLK       DFN1     D       counter_3[21]     39.461       30.494
+================================================================================================
+
+
+
+<a name=worstPaths16></a>Worst Path Information</a>
+<a href="N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL.srr:srsfN:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL.srs:fp:38609:40337:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      40.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         39.461
+
+    - Propagation time:                      8.976
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 30.485
+
+    Number of logic level(s):                5
+    Starting point:                          m_control_0.counter[1] / Q
+    Ending point:                            m_control_0.counter[12] / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                               Pin      Pin               Arrival     No. of    
+Name                               Type      Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------
+m_control_0.counter[1]             DFN1      Q        Out     0.737     0.737       -         
+counter[1]                         Net       -        -       1.526     -           7         
+m_control_0.un3_counter_1.I_10     AND3      B        In      -         2.263       -         
+m_control_0.un3_counter_1.I_10     AND3      Y        Out     0.607     2.869       -         
+DWACT_FINC_E_0[0]                  Net       -        -       1.639     -           8         
+m_control_0.un3_counter_1.I_30     AND3      A        In      -         4.508       -         
+m_control_0.un3_counter_1.I_30     AND3      Y        Out     0.464     4.972       -         
+DWACT_FINC_E_0[6]                  Net       -        -       1.526     -           7         
+m_control_0.un3_counter_1.I_34     NOR2B     B        In      -         6.498       -         
+m_control_0.un3_counter_1.I_34     NOR2B     Y        Out     0.627     7.126       -         
+N_14                               Net       -        -       0.322     -           1         
+m_control_0.un3_counter_1.I_35     XOR2      A        In      -         7.447       -         
+m_control_0.un3_counter_1.I_35     XOR2      Y        Out     0.488     7.936       -         
+I_35                               Net       -        -       0.322     -           1         
+m_control_0.counter_RNO[12]        AOI1B     C        In      -         8.257       -         
+m_control_0.counter_RNO[12]        AOI1B     Y        Out     0.398     8.655       -         
+counter_3[12]                      Net       -        -       0.322     -           1         
+m_control_0.counter[12]            DFN1      D        In      -         8.976       -         
+==============================================================================================
+Total path delay (propagation time + setup) of 9.515 is 3.860(40.6%) logic and 5.655(59.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+<a name=clockReport17></a>Detailed Report for Clock: System</a>
+====================================
+
+
+
+<a name=startingSlack18></a>Starting Points with Worst Slack</a>
+********************************
+
+                                      Starting                                                                                   Arrival           
+Instance                              Reference     Type        Pin              Net                                             Time        Slack 
+                                      Clock                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------------------
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[8]      0.000       5.106 
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          motorCONTROL_MSS_0_MSS_MASTER_APB_PSELx         0.000       5.106 
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[11]     motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[11]     0.000       5.120 
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[10]     0.000       5.271 
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[9]      0.000       5.388 
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLK           MSS_ADLIB_INST_EMCCLK                           0.000       9.678 
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     M2FRESETn        motorCONTROL_MSS_0_M2F_RESET_N                  0.000       28.634
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[0]      CoreAPB3_0_APBmslave0_PADDR[0]                  0.000       30.998
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[1]      CoreAPB3_0_APBmslave0_PADDR[1]                  0.000       31.039
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[7]      CoreAPB3_0_APBmslave0_PADDR[7]                  0.000       31.053
+===================================================================================================================================================
+
+
+<a name=endingSlack19></a>Ending Points with Worst Slack</a>
+******************************
+
+                                      Starting                                                                                   Required          
+Instance                              Reference     Type        Pin              Net                                             Time         Slack
+                                      Clock                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------------------
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[0]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[0]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[1]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[1]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[2]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[2]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[3]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[3]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[4]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[4]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[5]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[5]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[6]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[6]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[7]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[7]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[8]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[8]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[9]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[9]     10.000       5.106
+===================================================================================================================================================
+
+
+
+<a name=worstPaths20></a>Worst Path Information</a>
+<a href="N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL.srr:srsfN:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL.srs:fp:46706:48158:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         10.000
+
+    - Propagation time:                      4.894
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     5.106
+
+    Number of logic level(s):                3
+    Starting point:                          motorCONTROL_MSS_0.MSS_ADLIB_INST / MSSPADDR[8]
+    Ending point:                            motorCONTROL_MSS_0.MSS_ADLIB_INST / MSSPRDATA[11]
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                               Pin               Pin               Arrival     No. of    
+Name                                             Type        Name              Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------
+motorCONTROL_MSS_0.MSS_ADLIB_INST                MSS_APB     MSSPADDR[8]       Out     0.000     0.000       -         
+motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[8]       Net         -                 -       0.322     -           1         
+CoreAPB3_0.CAPB3l0OI_2[0]                        NOR3A       C                 In      -         0.322       -         
+CoreAPB3_0.CAPB3l0OI_2[0]                        NOR3A       Y                 Out     0.641     0.963       -         
+CAPB3l0OI_2[0]                                   Net         -                 -       0.386     -           2         
+CoreAPB3_0.CAPB3l0OI[0]                          NOR2B       A                 In      -         1.349       -         
+CoreAPB3_0.CAPB3l0OI[0]                          NOR2B       Y                 Out     0.514     1.863       -         
+CoreAPB3_0_APBmslave0_PSELx                      Net         -                 -       2.082     -           14        
+CoreAPB3_0.CAPB3IIII.PRDATA_11                   NOR2B       B                 In      -         3.945       -         
+CoreAPB3_0.CAPB3IIII.PRDATA_11                   NOR2B       Y                 Out     0.627     4.572       -         
+motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[11]     Net         -                 -       0.322     -           1         
+motorCONTROL_MSS_0.MSS_ADLIB_INST                MSS_APB     MSSPRDATA[11]     In      -         4.894       -         
+=======================================================================================================================
+Total path delay (propagation time + setup) of 4.894 is 1.783(36.4%) logic and 3.111(63.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+--------------------------------------------------------------------------------
+Target Part: A2F200M3F_FBGA484_STD
+<a name=cellReport21></a>Report for cell motorCONTROL.verilog</a>
+  Core Cell usage:
+              cell count     area count*area
+              AND2    19      1.0       19.0
+             AND2A     2      1.0        2.0
+              AND3    68      1.0       68.0
+               AO1    13      1.0       13.0
+              AO1B     1      1.0        1.0
+              AO1C    18      1.0       18.0
+              AOI1     2      1.0        2.0
+             AOI1A     6      1.0        6.0
+             AOI1B    19      1.0       19.0
+              BUFF     3      1.0        3.0
+               GND     6      0.0        0.0
+           MSS_APB     1      0.0        0.0
+           MSS_CCC     1      0.0        0.0
+               MX2    71      1.0       71.0
+              NOR2     8      1.0        8.0
+             NOR2A    21      1.0       21.0
+             NOR2B    89      1.0       89.0
+              NOR3     1      1.0        1.0
+             NOR3A     5      1.0        5.0
+             NOR3B    15      1.0       15.0
+             NOR3C    14      1.0       14.0
+               OA1     6      1.0        6.0
+              OA1A    12      1.0       12.0
+              OR2A    30      1.0       30.0
+             RCOSC     1      0.0        0.0
+               VCC     6      0.0        0.0
+               XA1     1      1.0        1.0
+             XNOR2    36      1.0       36.0
+              XOR2    42      1.0       42.0
+
+
+              DFN1    84      1.0       84.0
+            DFN1E1    29      1.0       29.0
+                   -----          ----------
+             TOTAL   630               615.0
+
+
+  IO Cell usage:
+              cell count
+         BIBUF_MSS     8
+             INBUF     2
+         INBUF_MSS     3
+            OUTBUF     6
+        OUTBUF_MSS     2
+                   -----
+             TOTAL    21
+
+
+Core Cells         : 615 of 4608 (13%)
+IO Cells           : 21
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 49MB peak: 113MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:01s cputime
+# Mon Apr 10 21:14:10 2017
+
+###########################################################]
+
+</pre></samp></body></html>
