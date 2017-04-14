@@ -1,5 +1,5 @@
 #===========================================================
-# Created by Actel SmartDesign Tue Apr 04 16:48:15 2017
+# Created by Actel SmartDesign Thu Apr 06 11:53:31 2017
 # 
 # 
 # Warning:  Do not modify this file, it may lead to unexpected 
@@ -64,7 +64,7 @@ procedure init;
   write w SYSREG 0x24 0x4;
   write w SYSREG 0x28 0x0;
   write w SYSREG 0x2c 0x0;
-  write w SYSREG 0x30 0x1dff8;
+  write w SYSREG 0x30 0x8dff8;
   write w SYSREG 0x34 0x0;
   write w SYSREG 0x38 0x32000000;
   write w SYSREG 0x3c 0x0;
