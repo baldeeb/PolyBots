@@ -42,7 +42,7 @@ uint8_t calc_left_wheel_duty_cycle_stick(int8_t x_axis, int8_t y_axis, float spe
 uint8_t calc_right_wheel_duty_cycle_stick(int8_t x_axis, int8_t y_axis, float speed_percentage);
 uint8_t calc_left_wheel_duty_cycle_dpad(uint8_t up, uint8_t down, uint8_t left, uint8_t right);
 uint8_t calc_right_wheel_duty_cycle_dpad(uint8_t up, uint8_t down, uint8_t left, uint8_t right);
-uint8_t calc_wheel_direction_stick(int8_t y_axis);
+uint8_t calc_wheel_direction_stick(int8_t y_axis, int8_t x_axis);
 uint8_t calc_wheel_direction_dpad(uint8_t up, uint8_t down, uint8_t left, uint8_t right);
 
 int main(void)
@@ -96,10 +96,10 @@ int main(void)
 						calc_left_wheel_duty_cycle_dpad(dpad_buff[0], dpad_buff[1], dpad_buff[2], dpad_buff[3]);
 
 		right_wheel_direction = (use_stick) ?
-				calc_wheel_direction_stick(axis_buff[0]) :
+				calc_wheel_direction_stick(axis_buff[0], axis_buff[1]) :
 				calc_wheel_direction_dpad(dpad_buff[0], dpad_buff[1], dpad_buff[2], dpad_buff[3]);
 		left_wheel_direction = (use_stick) ?
-				calc_wheel_direction_stick(axis_buff[0]) :
+				calc_wheel_direction_stick(axis_buff[0], axis_buff[1]) :
 				calc_wheel_direction_dpad(dpad_buff[0], dpad_buff[1], dpad_buff[2], dpad_buff[3]);
 
 
@@ -207,7 +207,11 @@ uint8_t calc_left_wheel_duty_cycle_stick(int8_t x_axis, int8_t y_axis, float spe
 		duty_cycle = (duty_cycle > min_duty_cycle) ? duty_cycle : min_duty_cycle;
 	}
 	else if(x_axis <0) {
-		duty_cycle = min_duty_cycle;
+		if(y_axis > 0) {
+			duty_cycle = mid_duty_cycle;
+		}else {
+			duty_cycle = min_duty_cycle;
+		}
 	}
 	else {
 		duty_cycle = (y_axis == 0) ? 0 : speed_percentage * max_duty_cycle;
@@ -224,7 +228,11 @@ uint8_t calc_right_wheel_duty_cycle_stick(int8_t x_axis, int8_t y_axis, float sp
 		duty_cycle = (duty_cycle > min_duty_cycle) ? duty_cycle : min_duty_cycle;
 	}
 	else if(x_axis > 0) {
-		duty_cycle = min_duty_cycle;
+		if(y_axis > 0) {
+			duty_cycle = mid_duty_cycle;
+		}else {
+			duty_cycle = min_duty_cycle;
+		}
 	}
 	else {
 		duty_cycle = (y_axis == 0) ? 0 : speed_percentage * max_duty_cycle;
@@ -297,14 +305,17 @@ uint8_t calc_right_wheel_duty_cycle_dpad(uint8_t up, uint8_t down, uint8_t left,
 	return (uint8_t) floor(duty_cycle*100);
 }
 
-uint8_t calc_wheel_direction_stick(int8_t y_axis) {
+uint8_t calc_wheel_direction_stick(int8_t y_axis, int8_t x_axis) {
 	if(y_axis > 0) {
 		return 1;
 	}
 	else if(y_axis < 0) {
 		return 2;
 	}
-	else {
+	else if(x_axis > 0 || x_axis < 0){
+		return 1;
+	}
+	else{
 		return 0;
 	}
 }
