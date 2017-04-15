@@ -1,0 +1,69 @@
+#OPTIONS:"|-layerid|0|-orig_srs|N:\\eecs373\\PolyBots\\TouchScreen\\touch_screen\\synthesis\\synwork\\touch_screen_comp.srs|-top|touch_screen|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|N:\\eecs373\\PolyBots\\TouchScreen\\touch_screen\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\bin64\\c_ver.exe":1449239726
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\proasic\\smartfusion.v":1449239730
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\hypermods.v":1449239734
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\umr_capim.v":1449239734
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\scemi_objects.v":1449239734
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\scemi_pipes.svh":1449239734
+#CUR:"N:\\eecs373\\PolyBots\\TouchScreen\\touch_screen\\hdl\\spi_pin.v":1492289642
+#CUR:"N:\\eecs373\\PolyBots\\TouchScreen\\touch_screen\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1471029396
+#CUR:"N:\\eecs373\\PolyBots\\TouchScreen\\touch_screen\\component\\work\\touch_screen_MSS\\mss_tshell.v":1492276356
+#CUR:"N:\\eecs373\\PolyBots\\TouchScreen\\touch_screen\\component\\work\\touch_screen_MSS\\MSS_CCC_0\\touch_screen_MSS_tmp_MSS_CCC_0_MSS_CCC.v":1492276351
+#CUR:"N:\\eecs373\\PolyBots\\TouchScreen\\touch_screen\\component\\work\\touch_screen_MSS\\touch_screen_MSS.v":1492276359
+#CUR:"N:\\eecs373\\PolyBots\\TouchScreen\\touch_screen\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3_muxptob3.v":1474400005
+#CUR:"N:\\eecs373\\PolyBots\\TouchScreen\\touch_screen\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3_iaddr_reg.v":1474400005
+#CUR:"N:\\eecs373\\PolyBots\\TouchScreen\\touch_screen\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3.v":1474400005
+#CUR:"N:\\eecs373\\PolyBots\\TouchScreen\\touch_screen\\component\\work\\touch_screen\\touch_screen.v":1492286684
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"N:\eecs373\PolyBots\TouchScreen\touch_screen\hdl\spi_pin.v" verilog
+1			"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
+2			"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen_MSS\mss_tshell.v" verilog
+3			"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen_MSS\MSS_CCC_0\touch_screen_MSS_tmp_MSS_CCC_0_MSS_CCC.v" verilog
+4			"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen_MSS\touch_screen_MSS.v" verilog
+5			"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v" verilog
+6			"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v" verilog
+7			"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v" verilog
+8			"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen\touch_screen.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 1
+4 2 3 1
+5 -1
+6 -1
+7 5 6
+8 7 0 4
+#Dependency Lists(Users Of)
+0 8
+1 3 4
+2 4
+3 4
+4 8
+5 7
+6 7
+7 8
+8 -1
+#Design Unit to File Association
+module work spi_pin 0
+module work MSS_XTLOSC 1
+module work MSS_LPXTLOSC 1
+module work INBUF_MSS 1
+module work OUTBUF_MSS 1
+module work TRIBUFF_MSS 1
+module work BIBUF_MSS 1
+module work BIBUF_OPEND_MSS 1
+module work INBUF_MCCC 1
+module work INBUF_LVPECL_MCCC 1
+module work INBUF_LVDS_MCCC 1
+module work MSSINT 1
+module work MSS_CCC 1
+module work MSS_ALL 1
+module work MSS_APB 2
+module work touch_screen_MSS_tmp_MSS_CCC_0_MSS_CCC 3
+module work touch_screen_MSS 4
+module work touch_screen 8
+module COREAPB3_LIB COREAPB3_MUXPTOB3 5
+module COREAPB3_LIB coreapb3_iaddr_reg 6
+module COREAPB3_LIB CoreAPB3 7

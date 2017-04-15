@@ -1,0 +1,19 @@
+*****************************************************************
+Pin Report - Date: Sat Apr 15 16:54:57 2017 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.7 SP1.1
+Version: 11.7.1.14
+Design Name: touch_screen
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+*****************************************************************
+Port      |Pin  |Fixed |Function          |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+----------|-----|------|------------------|--------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
+CD         J20   Yes    GCA1/IO28PDB1V0    LVTTL    12                 High  None           ---              No    35                No           No
+I2C_1_SCL  U20   Yes    I2C_1_SCL/GPIO_31  LVTTL    8                  High  None           No               No    35                No           Yes
+I2C_1_SDA  V22   Yes    I2C_1_SDA/GPIO_30  LVTTL    8                  High  None           No               No    35                No           Yes
+SPI_1_CLK  AA22  Yes    SPI_1_CLK/GPIO_26  LVTTL    8                  High  None           No               No    35                No           Yes
+SPI_1_DI   V19   Yes    SPI_1_DI/GPIO_25   LVTTL    ---                ---   None           No               ---   ---               No           Yes
+SPI_1_DO   T17   Yes    SPI_1_DO/GPIO_24   LVTTL    8                  High  None           ---              No    35                No           Yes
+SPI_1_SS   W21   Yes    SPI_1_SS/GPIO_27   LVTTL    8                  High  None           No               No    35                No           Yes

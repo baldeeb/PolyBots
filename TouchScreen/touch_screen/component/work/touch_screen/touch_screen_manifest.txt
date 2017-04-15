@@ -1,12 +1,15 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
 
-Date      :  Fri Apr 14 19:02:45 2017
+Date      :  Sat Apr 15 16:05:13 2017
 Project   :  N:\eecs373\PolyBots\TouchScreen\touch_screen
 Component :  touch_screen
 Family    :  SmartFusion
 
 
 HDL source files for all Synthesis and Simulation tools:
+    N:/eecs373/PolyBots/TouchScreen/touch_screen/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v
+    N:/eecs373/PolyBots/TouchScreen/touch_screen/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v
+    N:/eecs373/PolyBots/TouchScreen/touch_screen/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v
     N:/eecs373/PolyBots/TouchScreen/touch_screen/component/work/touch_screen/touch_screen.v
 
 Stimulus files for all Simulation tools:

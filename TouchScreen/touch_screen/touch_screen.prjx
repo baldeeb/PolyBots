@@ -1,6 +1,7 @@
 KEY LIBERO "11.7"
 KEY CAPTURE "11.7.1.14"
-KEY DEFAULT_IMPORT_LOC ""
+KEY DEFAULT_IMPORT_LOC "C:\Libero_projects\test_fabric2\hdl"
+KEY DEFAULT_OPEN_LOC ""
 KEY ProjectID "0"
 KEY HDLTechnology "VERILOG"
 KEY VERILOGMODE "VERILOG2001"
@@ -12,10 +13,15 @@ KEY VendorTechnology_Package "fg484"
 KEY VendorTechnology_Speed "STD"
 KEY VendorTechnology_DieVoltage "1.5"
 KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE ""
 KEY VendorTechnology_IO_DEFT_STD "LVTTL"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY ""
+KEY VendorTechnology_RAD_EXPOSURE ""
 KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
 KEY VendorTechnology_RESTRICTPROBEPINS "1"
 KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE ""
 KEY VendorTechnology_TARGETDEVICESFORMIGRATION "IP4X3M1"
 KEY VendorTechnology_TEMPR "COM"
 KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
@@ -145,6 +151,16 @@ TIME="1492210939"
 SIZE="254"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
+VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1492210947"
+SIZE="2201"
+ENDFILE
+VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1492208213"
+SIZE="413"
+ENDFILE
 VALUE "<project>\component\work\touch_screen\touch_screen.cxf,actgen_cxf"
 STATE="utd"
 TIME="1492210965"
@@ -225,8 +241,8 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_screen.ide_des,ide_des"
 STATE="utd"
-TIME="1492208036"
-SIZE="208"
+TIME="1492210947"
+SIZE="311"
 ENDFILE
 VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
 STATE="utd"
@@ -401,17 +417,29 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Project Summary:touch_screen.log
 StartPage;StartPage;0
-SmartDesign;touch_screen;0
-SmartDesign;touch_screen_MSS;0
-ACTIVEVIEW;touch_screen
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "BIBUF_OPEND_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
+SUBBLOCK "HAL::work","","FALSE","FALSE"
+SUBBLOCK "MSS_GPIO_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_I2C_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_IAP_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_NVM_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_PDMA_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_RTC_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_SPI_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_Timer_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion_CMSIS_PAL::work","","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_IO::work","component\work\DESIGN_IO\DESIGN_IO.cxf","TRUE","FALSE"
+ENDLIST
+LIST "HAL::work","","FALSE","FALSE"
 ENDLIST
 LIST "INBUF_LVDS_MCCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST
@@ -427,13 +455,31 @@ LIST "MSS_APB::work","component\work\touch_screen_MSS\mss_tshell.v","FALSE","FAL
 ENDLIST
 LIST "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST
+LIST "MSS_GPIO_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_I2C_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_IAP_Driver::work","","FALSE","FALSE"
+ENDLIST
 LIST "MSS_LPXTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_NVM_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_PDMA_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_RTC_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_SPI_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_Timer_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "MSS_XTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "MSSINT::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "OUTBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion_CMSIS_PAL::work","","FALSE","FALSE"
 ENDLIST
 LIST "touch_screen::work","component\work\touch_screen\touch_screen.v","TRUE","FALSE"
 SUBBLOCK "touch_screen_MSS::work","component\work\touch_screen_MSS\touch_screen_MSS.v","TRUE","FALSE"

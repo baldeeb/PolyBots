@@ -1,0 +1,32 @@
+********************************************************************
+                            Global Net Report
+********************************************************************
+  
+Product: Designer
+Release: v11.7 SP1.1
+Version: 11.7.1.14
+Date: Sat Apr 15 16:54:56 2017
+Design Name: touch_screen  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
+
+
+Automatic Global Net Placement Result:
+Status: Global net placement completed successfully
+
+
+Global Nets Information:
+
+        |-----------------------------------------------------|
+        |Global Nets         |Loads                           |
+        |-----------------------------------------------------|
+        |Name                |Core      |IO        |RAM       |
+        |-----------------------------------------------------|
+        |FAB_CLK             |        1 |        0 |        0 |
+        |-----------------------------------------------------|
+
+Summary of Global Net Placement:
+
+        |------------------------------------------------------------------------|
+        |Global Net          |Assignment          |Violation                     |
+        |------------------------------------------------------------------------|
+        |FAB_CLK             |MIDDLE_LEFT         |                              |
+        |------------------------------------------------------------------------|

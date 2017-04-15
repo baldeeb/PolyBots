@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>touch_screen</design>
+	<target_edif>N:\eecs373\PolyBots\TouchScreen\touch_screen\synthesis\touch_screen.edn</target_edif>
+</SynplifyOutput>

@@ -12,7 +12,7 @@
   Written by Limor Fried/Ladyada for Adafruit Industries.
   MIT license, all text above must be included in any redistribution
  ****************************************************/
-
+#include "drivers/mss_spi/drivers/mss_spi/mss_spi.h"
 #include "Adafruit_ILI9341.h"
 #ifndef ARDUINO_STM32_FEATHER
   #include "pins_arduino.h"
@@ -44,7 +44,7 @@
 #define SPI_DC_HIGH()           digitalWrite(_dc, HIGH)
 #define SPI_DC_LOW()            digitalWrite(_dc, LOW)
 #define SPI_CS_HIGH()           digitalWrite(_cs, HIGH)
-#define SPI_CS_LOW()            digitalWrite(_cs, LOW)
+#define SPI_CS_LOW()            MSS_SPI_clear_slave_select(this_spi, slave_0)
 #endif
 
 /*
@@ -159,7 +159,7 @@ static inline uint8_t _avr_spi_read(void) {
 #define SPI_DEFAULT_FREQ         24000000
 #endif
 
-#define SPI_BEGIN()             if(_sclk < 0){SPI_OBJECT.begin();}
+#define SPI_BEGIN()             if(_sclk < 0){MSS_SPI_init(&g_mss_spi1);}
 #define SPI_BEGIN_TRANSACTION() if(_sclk < 0){HSPI_BEGIN_TRANSACTION();}
 #define SPI_END_TRANSACTION()   if(_sclk < 0){HSPI_END_TRANSACTION();}
 #define SPI_WRITE16(s)          if(_sclk < 0){HSPI_WRITE16(s);}else{SSPI_WRITE16(s);}
@@ -463,7 +463,6 @@ void Adafruit_ILI9341::spiWrite(uint8_t b) {
         SSPI_SCK_HIGH();
     }
 }
-
 
 /*
  * Transaction API

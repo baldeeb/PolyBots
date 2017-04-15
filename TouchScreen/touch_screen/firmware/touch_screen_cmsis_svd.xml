@@ -2,7 +2,7 @@
 <device>
   <name>touch_screen</name>
   <version>1.0</version>
-  <description>CMSIS description for touch_screen.  Created by Microsemi SmartDesign on Fri Apr 14 19:02:29 2017</description>
+  <description>CMSIS description for touch_screen.  Created by Microsemi SmartDesign on Sat Apr 15 16:04:48 2017</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>
@@ -1849,6 +1849,10 @@
     <peripheral>
       <name>ENVM_ARRAY</name>
       <baseAddress>0x60000000</baseAddress>
+    </peripheral>
+    <peripheral>
+      <name>spi_pin_0</name>
+      <baseAddress>0x40000000</baseAddress>
     </peripheral>
     <peripheral>
       <name>FPGA_FABRIC_BACKDOOR</name>

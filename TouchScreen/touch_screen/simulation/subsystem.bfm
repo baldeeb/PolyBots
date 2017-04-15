@@ -1,5 +1,5 @@
 #===========================================================
-# Created by Microsemi SmartDesign Fri Apr 14 19:02:26 2017
+# Created by Microsemi SmartDesign Sat Apr 15 16:04:44 2017
 #
 # Syntax: 
 # ------- 
@@ -17,3 +17,4 @@
 # Define name and base address of each resource.
 #-----------------------------------------------------------
 
+memmap spi_pin_0 0x40000000;
