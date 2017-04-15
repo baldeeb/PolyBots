@@ -1,0 +1,16 @@
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  N:\eecs373\project\FollowerBot\FollowerBot\synthesis   -part A2F200M3F  -package FBGA484  -grade STD    -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile N:\eecs373\project\FollowerBot\FollowerBot\synthesis\synlog\report\motorCONTROL_fpga_mapper.xml  -top_level_module  motorCONTROL  -licensetype  synplifypro_actel  -flow mapping  -mp  1  -prjfile  N:\eecs373\project\FollowerBot\FollowerBot\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  N:\eecs373\project\FollowerBot\FollowerBot\synthesis\motorCONTROL.edn   -freq 100.000   -tcl  N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc  N:\eecs373\project\FollowerBot\FollowerBot\synthesis\synwork\motorCONTROL_prem.srd  -sap  N:\eecs373\project\FollowerBot\FollowerBot\synthesis\motorCONTROL.sap  -otap  N:\eecs373\project\FollowerBot\FollowerBot\synthesis\motorCONTROL.tap  -omap  N:\eecs373\project\FollowerBot\FollowerBot\synthesis\motorCONTROL.map  -devicelib  C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v  -sap  N:\eecs373\project\FollowerBot\FollowerBot\synthesis\motorCONTROL.sap  -ologparam  N:\eecs373\project\FollowerBot\FollowerBot\synthesis\syntmp\motorCONTROL.plg  -osyn  N:\eecs373\project\FollowerBot\FollowerBot\synthesis\motorCONTROL.srm  -prjdir  N:\eecs373\project\FollowerBot\FollowerBot\synthesis\  -prjname  motorCONTROL_syn  -log  N:\eecs373\project\FollowerBot\FollowerBot\synthesis\synlog\motorCONTROL_fpga_mapper.srr 
+rc:1 success:1
+N:\eecs373\project\FollowerBot\FollowerBot\synthesis\scratchproject.prs|o|1492210086|2865
+N:\eecs373\project\FollowerBot\FollowerBot\synthesis\motorCONTROL.edn|o|1492223852|449308
+N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc|i|1492209120|202
+N:\eecs373\project\FollowerBot\FollowerBot\synthesis\synwork\motorCONTROL_prem.srd|i|1492223846|45196
+N:\eecs373\project\FollowerBot\FollowerBot\synthesis\motorCONTROL.sap|o|1492223846|2629
+N:\eecs373\project\FollowerBot\FollowerBot\synthesis\motorCONTROL.tap|o|0|0
+N:\eecs373\project\FollowerBot\FollowerBot\synthesis\motorCONTROL.map|o|1492223852|28
+C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v|i|1449239730|72817
+N:\eecs373\project\FollowerBot\FollowerBot\synthesis\motorCONTROL.sap|o|1492223846|2629
+N:\eecs373\project\FollowerBot\FollowerBot\synthesis\syntmp\motorCONTROL.plg|o|1492223852|1659
+N:\eecs373\project\FollowerBot\FollowerBot\synthesis\motorCONTROL.srm|o|1492223851|72617
+N:\eecs373\project\FollowerBot\FollowerBot\synthesis\synlog\motorCONTROL_fpga_mapper.srr|o|1492223852|26985
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin\m_proasic.exe|i|1449756976|9590784
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\m_proasic.exe|i|1449758572|12124160

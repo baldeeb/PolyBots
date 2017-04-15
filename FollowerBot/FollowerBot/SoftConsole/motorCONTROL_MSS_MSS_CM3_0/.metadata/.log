@@ -1,0 +1,71 @@
+!SESSION 2017-04-14 22:36:11.432 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -import N:\eecs373\project\FollowerBot\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\projects\motorCONTROL_MSS_MSS_CM3_0_hw_platform
+Command-line arguments:  -os win32 -ws win32 -arch x86 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data N:/eecs373/project/FollowerBot/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0 -import N:\eecs373\project\FollowerBot\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\projects\motorCONTROL_MSS_MSS_CM3_0_hw_platform
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-04-14 22:36:15.635
+!MESSAGE Indexed 'motorCONTROL_MSS_MSS_CM3_0_hw_platform' (12 sources, 51 headers) in 1.55 sec: 3,216 declarations; 6,955 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.01%)
+!SESSION 2017-04-14 22:36:17.260 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -import N:\eecs373\project\FollowerBot\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\projects\motorCONTROL_MSS_MSS_CM3_0_app
+Command-line arguments:  -os win32 -ws win32 -arch x86 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data N:/eecs373/project/FollowerBot/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0 -import N:\eecs373\project\FollowerBot\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\projects\motorCONTROL_MSS_MSS_CM3_0_app
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-14 22:36:18.463
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-04-14 22:36:21.542
+!MESSAGE Indexed 'motorCONTROL_MSS_MSS_CM3_0_app' (1 sources, 8 headers) in 0.31 sec: 1 declarations; 0 references; 3 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2017-04-14 22:40:32.828 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data N:/eecs373/project/FollowerBot/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-14 22:40:34.234
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-14 22:57:32.659
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-14 22:58:51.215
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-14 23:02:10.388
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-14 23:03:10.986
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-14 23:11:07.365
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-14 23:38:58.701
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-14 23:41:22.594
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-14 23:45:44.465
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-14 23:46:22.061
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-14 23:49:35.675
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-14 23:52:08.635
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-14 23:54:24.305
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 00:10:10.596
+!MESSAGE Inferior terminated
