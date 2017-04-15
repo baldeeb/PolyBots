@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<SynplifyOutput>
-	<result>Success</result>
-	<design>follower_control_sys</design>
-	<target_edif>N:\eecs373\project\Follower\follower_control_sys\synthesis\follower_control_sys.edn</target_edif>
-</SynplifyOutput>

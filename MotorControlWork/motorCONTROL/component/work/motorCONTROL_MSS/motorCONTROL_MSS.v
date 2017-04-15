@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Apr 10 21:12:51 2017
+// Created by SmartDesign Fri Apr 14 18:32:02 2017
 // Version: v11.7 SP1 11.7.1.14
 //////////////////////////////////////////////////////////////////////
 
@@ -32,7 +32,9 @@ module motorCONTROL_MSS(
     GPIO_4_BI,
     GPIO_5_BI,
     GPIO_6_BI,
-    GPIO_7_BI
+    GPIO_7_BI,
+    I2C_1_SCL,
+    I2C_1_SDA
 );
 
 //--------------------------------------------------------------------
@@ -67,6 +69,8 @@ inout         GPIO_4_BI;
 inout         GPIO_5_BI;
 inout         GPIO_6_BI;
 inout         GPIO_7_BI;
+inout         I2C_1_SCL;
+inout         I2C_1_SDA;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
@@ -78,6 +82,8 @@ wire          GPIO_4_BI;
 wire          GPIO_5_BI;
 wire          GPIO_6_BI;
 wire          GPIO_7_BI;
+wire          I2C_1_SCL;
+wire          I2C_1_SDA;
 wire          MSS_ADLIB_INST_EMCCLK;
 wire          MSS_ADLIB_INST_FCLK;
 wire          MSS_ADLIB_INST_MACCLK;
@@ -108,6 +114,10 @@ wire          MSS_GPIO_0_GPIO_6_BI_Y;
 wire   [7:7]  MSS_GPIO_0_GPIO_7_BI_D;
 wire   [7:7]  MSS_GPIO_0_GPIO_7_BI_E;
 wire          MSS_GPIO_0_GPIO_7_BI_Y;
+wire          MSS_I2C_1_SCL_E;
+wire          MSS_I2C_1_SCL_Y;
+wire          MSS_I2C_1_SDA_E;
+wire          MSS_I2C_1_SDA_Y;
 wire          MSS_RESET_0_MSS_RESET_N_Y;
 wire          MSS_RESET_N;
 wire          MSS_UART_0_RXD_Y;
@@ -285,8 +295,8 @@ MSS_ADLIB_INST(
         .SPI1CLKI       ( GND_net ), // tied to 1'b0 from definition
         .SPI1SSI        ( GND_net ), // tied to 1'b0 from definition
         .UART1RXD       ( MSS_UART_1_RXD_Y ),
-        .I2C1SDAI       ( GND_net ), // tied to 1'b0 from definition
-        .I2C1SCLI       ( GND_net ), // tied to 1'b0 from definition
+        .I2C1SDAI       ( MSS_I2C_1_SDA_Y ),
+        .I2C1SCLI       ( MSS_I2C_1_SCL_Y ),
         .MACRXD         ( MACRXD_const_net_0 ), // tied to 2'h0 from definition
         .MACCRSDV       ( GND_net ), // tied to 1'b0 from definition
         .MACRXER        ( GND_net ), // tied to 1'b0 from definition
@@ -410,8 +420,8 @@ MSS_ADLIB_INST(
         .SPI1MODE       (  ),
         .SPI1SSO        (  ),
         .UART1TXD       ( MSS_UART_1_TXD_D ),
-        .I2C1SDAO       (  ),
-        .I2C1SCLO       (  ),
+        .I2C1SDAO       ( MSS_I2C_1_SDA_E ),
+        .I2C1SCLO       ( MSS_I2C_1_SCL_E ),
         .MACTXD         (  ),
         .MACTXEN        (  ),
         .MACMDO         (  ),
@@ -578,6 +588,32 @@ MSS_GPIO_0_GPIO_7_BI(
         .Y   ( MSS_GPIO_0_GPIO_7_BI_Y ),
         // Inouts
         .PAD ( GPIO_7_BI ) 
+        );
+
+//--------BIBUF_OPEND_MSS
+BIBUF_OPEND_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "U20" ) )
+MSS_I2C_1_SCL(
+        // Inputs
+        .E   ( MSS_I2C_1_SCL_E ),
+        // Outputs
+        .Y   ( MSS_I2C_1_SCL_Y ),
+        // Inouts
+        .PAD ( I2C_1_SCL ) 
+        );
+
+//--------BIBUF_OPEND_MSS
+BIBUF_OPEND_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "V22" ) )
+MSS_I2C_1_SDA(
+        // Inputs
+        .E   ( MSS_I2C_1_SDA_E ),
+        // Outputs
+        .Y   ( MSS_I2C_1_SDA_Y ),
+        // Inouts
+        .PAD ( I2C_1_SDA ) 
         );
 
 //--------INBUF_MSS

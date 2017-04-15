@@ -69,3 +69,57 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -data N:/eecs373/project/
 
 !ENTRY org.eclipse.debug.core 4 125 2017-04-15 00:10:10.596
 !MESSAGE Inferior terminated
+!SESSION 2017-04-15 12:17:13.873 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data N:/eecs373/project/FollowerBot/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 12:44:04.643
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 12:48:22.451
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 12:57:01.544
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 13:01:17.959
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 13:06:42.177
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 13:15:52.692
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 13:24:00.941
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 13:28:32.666
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 13:31:19.812
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 13:31:19.812
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 13:32:49.210
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 13:32:49.210
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 13:39:32.102
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 13:39:32.117
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 13:49:06.094
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-15 13:49:06.094
+!MESSAGE {R,T}xThread terminated

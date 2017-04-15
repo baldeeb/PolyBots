@@ -1,17 +1,17 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
 
-Date      :  Fri Apr 14 12:06:26 2017
-Project   :  N:\eecs373\PolyBots\MotorControlWork\motorCONTROL
+Date      :  Fri Apr 14 18:32:47 2017
+Project   :  N:\eecs373\project\MotorControlWork\motorCONTROL
 Component :  motorCONTROL
 Family    :  SmartFusion
 
 
 HDL source files for all Synthesis and Simulation tools:
-    N:/eecs373/PolyBots/MotorControlWork/motorCONTROL/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v
-    N:/eecs373/PolyBots/MotorControlWork/motorCONTROL/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v
-    N:/eecs373/PolyBots/MotorControlWork/motorCONTROL/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v
-    N:/eecs373/PolyBots/MotorControlWork/motorCONTROL/component/work/motorCONTROL/motorCONTROL.v
+    N:/eecs373/project/MotorControlWork/motorCONTROL/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v
+    N:/eecs373/project/MotorControlWork/motorCONTROL/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v
+    N:/eecs373/project/MotorControlWork/motorCONTROL/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v
+    N:/eecs373/project/MotorControlWork/motorCONTROL/component/work/motorCONTROL/motorCONTROL.v
 
 Stimulus files for all Simulation tools:
-    N:/eecs373/PolyBots/MotorControlWork/motorCONTROL/component/work/motorCONTROL/subsystem.bfm
+    N:/eecs373/project/MotorControlWork/motorCONTROL/component/work/motorCONTROL/subsystem.bfm
 

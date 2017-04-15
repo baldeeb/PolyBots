@@ -16,9 +16,9 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
-@W: MO111 :"n:\project\newproject-4-10\motorcontrol\component\work\motorcontrol_mss\mss_ccc_0\motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT on net LPXIN_CLKOUT has its enable tied to GND (module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC) 
-@W: MO111 :"n:\project\newproject-4-10\motorcontrol\component\work\motorcontrol_mss\mss_ccc_0\motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT on net MAINXIN_CLKOUT has its enable tied to GND (module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC) 
-@W: MO111 :"n:\project\newproject-4-10\motorcontrol\component\work\motorcontrol_mss\mss_ccc_0\motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT on net RCOSC_CLKOUT has its enable tied to GND (module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"n:\eecs373\project\motorcontrolwork\motorcontrol\component\work\motorcontrol_mss\mss_ccc_0\motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT on net LPXIN_CLKOUT has its enable tied to GND (module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"n:\eecs373\project\motorcontrolwork\motorcontrol\component\work\motorcontrol_mss\mss_ccc_0\motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT on net MAINXIN_CLKOUT has its enable tied to GND (module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"n:\eecs373\project\motorcontrolwork\motorcontrol\component\work\motorcontrol_mss\mss_ccc_0\motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT on net RCOSC_CLKOUT has its enable tied to GND (module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC) 
 
 Available hyper_sources - for debug and ip models
 	None Found
@@ -26,33 +26,33 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
-@N: MF179 :"n:\project\newproject-4-10\motorcontrol\hdl\m_control.v":89:12:89:34|Found 19 bit by 19 bit '<' comparator, 'pwmLeft4'
-@N: MF179 :"n:\project\newproject-4-10\motorcontrol\hdl\m_control.v":94:12:94:35|Found 19 bit by 19 bit '<' comparator, 'pwmRight6'
-@N: MF238 :"n:\project\newproject-4-10\motorcontrol\hdl\m_control.v":82:21:82:30|Found 19-bit incrementor, 'un3_count_1[18:0]'
-@N: MF238 :"n:\project\newproject-4-10\motorcontrol\hdl\m_control.v":87:23:87:34|Found 25-bit incrementor, 'un3_counter_1[24:0]'
+@N: MF179 :"n:\eecs373\project\motorcontrolwork\motorcontrol\hdl\m_control.v":89:12:89:34|Found 19 bit by 19 bit '<' comparator, 'pwmLeft4'
+@N: MF179 :"n:\eecs373\project\motorcontrolwork\motorcontrol\hdl\m_control.v":94:12:94:35|Found 19 bit by 19 bit '<' comparator, 'pwmRight6'
+@N: MF238 :"n:\eecs373\project\motorcontrolwork\motorcontrol\hdl\m_control.v":82:21:82:30|Found 19-bit incrementor, 'un3_count_1[18:0]'
+@N: MF238 :"n:\eecs373\project\motorcontrolwork\motorcontrol\hdl\m_control.v":87:23:87:34|Found 25-bit incrementor, 'un3_counter_1[24:0]'
 
-Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
-
-
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+Finished factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 112MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 112MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+Finished preparing to map (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
 
 
 High Fanout Net Report
@@ -68,7 +68,7 @@ m_control_0.un1_pulseWidthLeft10_1_i_a2 / Y         25
 =================================================================
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
 
 Replicating Combinational Instance m_control_0.un1_pulseWidthLeft10_1_i_a2, fanout 25 segments 2
 Replicating Combinational Instance CoreAPB3_0.CAPB3l0OI[0], fanout 28 segments 2
@@ -81,7 +81,7 @@ Added 2 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 2 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
 
 
 
@@ -102,26 +102,26 @@ Clock Tree ID     Driving Element        Drive Element Type                Fanou
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 113MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
 
-Writing Analyst data base N:\Project\NewProject-4-10\motorCONTROL\synthesis\synwork\motorCONTROL_m.srm
+Writing Analyst data base N:\eecs373\project\MotorControlWork\motorCONTROL\synthesis\synwork\motorCONTROL_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
 
 Writing EDIF Netlist and constraint files
 J-2015.03M-SP1-2
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 114MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+Start final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 114MB)
 
 Found clock FCLK with period 40.00ns 
 Found clock FAB_CLK with period 40.00ns 
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Apr 10 21:14:10 2017
+# Timing Report written on Fri Apr 14 18:34:15 2017
 #
 
 
@@ -132,7 +132,7 @@ Requested Frequency:    25.0 MHz
 Wire load mode:         top
 Wire load model:        smartfusion
 Paths requested:        5
-Constraint File(s):    N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc
+Constraint File(s):    N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc
                        
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 
@@ -371,10 +371,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 ##### END OF TIMING REPORT #####]
 
 
-Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 114MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+Finished timing report (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 114MB)
 
 --------------------------------------------------------------------------------
 Target Part: A2F200M3F_FBGA484_STD
@@ -421,25 +421,26 @@ Report for cell motorCONTROL.verilog
   IO Cell usage:
               cell count
          BIBUF_MSS     8
+   BIBUF_OPEND_MSS     2
              INBUF     2
          INBUF_MSS     3
             OUTBUF     6
         OUTBUF_MSS     2
                    -----
-             TOTAL    21
+             TOTAL    23
 
 
 Core Cells         : 615 of 4608 (13%)
-IO Cells           : 21
+IO Cells           : 23
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 49MB peak: 113MB)
+At Mapper Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:01s; Memory used current: 49MB peak: 114MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:01s cputime
-# Mon Apr 10 21:14:10 2017
+Process took 0h:00m:07s realtime, 0h:00m:01s cputime
+# Fri Apr 14 18:34:16 2017
 
 ###########################################################]

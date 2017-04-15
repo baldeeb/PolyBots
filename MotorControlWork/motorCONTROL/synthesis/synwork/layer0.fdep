@@ -1,30 +1,30 @@
-#OPTIONS:"|-layerid|0|-orig_srs|N:\\Project\\NewProject-4-10\\motorCONTROL\\synthesis\\synwork\\motorCONTROL_comp.srs|-top|motorCONTROL|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|N:\\Project\\NewProject-4-10\\motorCONTROL\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|N:\\eecs373\\project\\MotorControlWork\\motorCONTROL\\synthesis\\synwork\\motorCONTROL_comp.srs|-top|motorCONTROL|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|N:\\eecs373\\project\\MotorControlWork\\motorCONTROL\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\bin64\\c_ver.exe":1449239726
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\proasic\\smartfusion.v":1449239730
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\hypermods.v":1449239734
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\umr_capim.v":1449239734
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\scemi_objects.v":1449239734
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\scemi_pipes.svh":1449239734
-#CUR:"N:\\Project\\NewProject-4-10\\motorCONTROL\\hdl\\m_control.v":1491873113
-#CUR:"N:\\Project\\NewProject-4-10\\motorCONTROL\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1471029396
-#CUR:"N:\\Project\\NewProject-4-10\\motorCONTROL\\component\\work\\motorCONTROL_MSS\\mss_tshell.v":1491873170
-#CUR:"N:\\Project\\NewProject-4-10\\motorCONTROL\\component\\work\\motorCONTROL_MSS\\MSS_CCC_0\\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":1491873163
-#CUR:"N:\\Project\\NewProject-4-10\\motorCONTROL\\component\\work\\motorCONTROL_MSS\\motorCONTROL_MSS.v":1491873172
-#CUR:"N:\\Project\\NewProject-4-10\\motorCONTROL\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3_muxptob3.v":1474487922
-#CUR:"N:\\Project\\NewProject-4-10\\motorCONTROL\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3_iaddr_reg.v":1474487922
-#CUR:"N:\\Project\\NewProject-4-10\\motorCONTROL\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3.v":1474487922
-#CUR:"N:\\Project\\NewProject-4-10\\motorCONTROL\\component\\work\\motorCONTROL\\motorCONTROL.v":1491873193
+#CUR:"N:\\eecs373\\project\\MotorControlWork\\motorCONTROL\\hdl\\m_control.v":1492207029
+#CUR:"N:\\eecs373\\project\\MotorControlWork\\motorCONTROL\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1471029396
+#CUR:"N:\\eecs373\\project\\MotorControlWork\\motorCONTROL\\component\\work\\motorCONTROL_MSS\\mss_tshell.v":1492209120
+#CUR:"N:\\eecs373\\project\\MotorControlWork\\motorCONTROL\\component\\work\\motorCONTROL_MSS\\MSS_CCC_0\\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":1492209111
+#CUR:"N:\\eecs373\\project\\MotorControlWork\\motorCONTROL\\component\\work\\motorCONTROL_MSS\\motorCONTROL_MSS.v":1492209124
+#CUR:"N:\\eecs373\\project\\MotorControlWork\\motorCONTROL\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3_muxptob3.v":1474400508
+#CUR:"N:\\eecs373\\project\\MotorControlWork\\motorCONTROL\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3_iaddr_reg.v":1474400508
+#CUR:"N:\\eecs373\\project\\MotorControlWork\\motorCONTROL\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3.v":1474400508
+#CUR:"N:\\eecs373\\project\\MotorControlWork\\motorCONTROL\\component\\work\\motorCONTROL\\motorCONTROL.v":1492209137
 #numinternalfiles:5
 #defaultlanguage:verilog
-0			"N:\Project\NewProject-4-10\motorCONTROL\hdl\m_control.v" verilog
-1			"N:\Project\NewProject-4-10\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
-2			"N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell.v" verilog
-3			"N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v" verilog
-4			"N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\motorCONTROL_MSS.v" verilog
-5			"N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" verilog
-6			"N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" verilog
-7			"N:\Project\NewProject-4-10\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" verilog
-8			"N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL\motorCONTROL.v" verilog
+0			"N:\eecs373\project\MotorControlWork\motorCONTROL\hdl\m_control.v" verilog
+1			"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
+2			"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell.v" verilog
+3			"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v" verilog
+4			"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\motorCONTROL_MSS.v" verilog
+5			"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" verilog
+6			"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" verilog
+7			"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" verilog
+8			"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1

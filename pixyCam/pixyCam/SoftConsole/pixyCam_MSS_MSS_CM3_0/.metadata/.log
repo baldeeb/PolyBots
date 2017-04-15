@@ -2547,3 +2547,6 @@ org.eclipse.cdt.debug.mi.core.MIException: The program is not being run.
 
 !ENTRY org.eclipse.debug.core 4 125 2017-04-14 17:12:11.055
 !MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2017-04-14 18:39:46.429
+!MESSAGE {R,T}xThread terminated

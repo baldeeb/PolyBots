@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Apr 14 12:05:52 2017
+// Created by SmartDesign Fri Apr 14 18:32:16 2017
 // Version: v11.7 SP1 11.7.1.14
 //////////////////////////////////////////////////////////////////////
 
@@ -26,7 +26,9 @@ module motorCONTROL(
     GPIO_4_BI,
     GPIO_5_BI,
     GPIO_6_BI,
-    GPIO_7_BI
+    GPIO_7_BI,
+    I2C_1_SCL,
+    I2C_1_SDA
 );
 
 //--------------------------------------------------------------------
@@ -55,6 +57,8 @@ inout        GPIO_4_BI;
 inout        GPIO_5_BI;
 inout        GPIO_6_BI;
 inout        GPIO_7_BI;
+inout        I2C_1_SCL;
+inout        I2C_1_SDA;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
@@ -75,6 +79,8 @@ wire          GPIO_4_BI;
 wire          GPIO_5_BI;
 wire          GPIO_6_BI;
 wire          GPIO_7_BI;
+wire          I2C_1_SCL;
+wire          I2C_1_SDA;
 wire   [3:0]  inputsAB_net_0;
 wire          motorCONTROL_MSS_0_FAB_CLK;
 wire          motorCONTROL_MSS_0_M2F_RESET_N;
@@ -122,10 +128,10 @@ wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
-wire   [19:0] motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR;
 wire   [31:20]motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR_0;
+wire   [19:0] motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -345,7 +351,9 @@ motorCONTROL_MSS motorCONTROL_MSS_0(
         .GPIO_3_BI   ( GPIO_3_BI ),
         .GPIO_2_BI   ( GPIO_2_BI ),
         .GPIO_1_BI   ( GPIO_1_BI ),
-        .GPIO_0_BI   ( GPIO_0_BI ) 
+        .GPIO_0_BI   ( GPIO_0_BI ),
+        .I2C_1_SCL   ( I2C_1_SCL ),
+        .I2C_1_SDA   ( I2C_1_SDA ) 
         );
 
 

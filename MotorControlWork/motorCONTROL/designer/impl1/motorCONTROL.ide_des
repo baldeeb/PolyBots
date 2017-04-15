@@ -1,4 +1,4 @@
-KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_TOOL "Designer"
 KEY IDE_DES_FAMILY "SmartFusion"
 KEY IDE_DES_DIE "IP4X3M1"
 KEY IDE_DES_PACKAGE "fg484"
@@ -20,10 +20,10 @@ KEY IDE_DES_BLOCK_PUBLISH "FALSE"
 KEY IDE_DES_BA_EXPORTED "FALSE"
 KEY IDE_DES_INTERACTIVE "FALSE"
 KEY IDE_DES_ERROR_FOUND "FALSE"
-KEY IDE_DES_ADB_PATH "N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL.adb"
+KEY IDE_DES_ADB_PATH "N:\eecs373\project\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL.adb"
 LIST SOURCE_FILES
-VALUE "N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.edn;edn"
-VALUE "N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc;pdc"
+VALUE "N:\eecs373\project\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.edn;edn"
+VALUE "N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST

@@ -1,13 +1,13 @@
 # Synopsys Constraint Checker(syntax only), version mapact, Build 1659R, built Dec 10 2015
 # Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
 
-# Written on Mon Apr 10 21:14:04 2017
+# Written on Fri Apr 14 18:34:05 2017
 
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "motorCONTROL"
-Constraint File(s):      "N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc"
+Constraint File(s):      "N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc"
 
 #Run constraint checker to find more issues with constraints.
 #########################################################################

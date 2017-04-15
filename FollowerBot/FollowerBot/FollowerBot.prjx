@@ -360,8 +360,8 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL.adb,adb"
 STATE="utd"
-TIME="1492210195"
-SIZE="715776"
+TIME="1492223943"
+SIZE="716288"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL.fdb,fdb"
 STATE="utd"
@@ -370,28 +370,28 @@ SIZE="52484"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL.ide_des,ide_des"
 STATE="utd"
-TIME="1492210196"
+TIME="1492223943"
 SIZE="1091"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_compile_log.rpt,log"
 STATE="utd"
-TIME="1492210120"
+TIME="1492223875"
 SIZE="32323"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_fp\motorCONTROL.pdb,pdb"
 STATE="utd"
-TIME="1492210226"
-SIZE="58032"
+TIME="1492224322"
+SIZE="58027"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_fp\motorCONTROL.pro,pro"
 STATE="utd"
-TIME="1492210272"
+TIME="1492224368"
 SIZE="2435"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_fp\projectData\motorCONTROL.pdb,pdb"
 STATE="utd"
-TIME="1492210270"
-SIZE="58032"
+TIME="1492224366"
+SIZE="58027"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_placeroute_log.rpt,log"
 STATE="utd"
@@ -451,22 +451,22 @@ PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL.edn,syn_edn"
 STATE="utd"
-TIME="1492210099"
+TIME="1492223852"
 SIZE="449308"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL.so,so"
 STATE="utd"
-TIME="1492210099"
+TIME="1492223852"
 SIZE="236"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1492210099"
+TIME="1492223852"
 SIZE="552"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL_syn.prj,prj"
 STATE="utd"
-TIME="1492210100"
+TIME="1492223853"
 SIZE="2773"
 ENDFILE
 ENDLIST
@@ -652,8 +652,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.7\\\Synplify\\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile

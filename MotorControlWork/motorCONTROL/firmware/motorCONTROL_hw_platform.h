@@ -2,7 +2,7 @@
 #define motorCONTROL_HW_PLATFORM_H_
 /*****************************************************************************
 *
-*Created by Microsemi SmartDesign  Fri Apr 14 12:05:57 2017
+*Created by Microsemi SmartDesign  Fri Apr 14 18:32:22 2017
 *
 *Memory map specification for peripherals in motorCONTROL
 */

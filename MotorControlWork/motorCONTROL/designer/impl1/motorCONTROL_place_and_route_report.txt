@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Apr 10 21:15:06 2017 ***************************************************************************
+                          Fri Apr 14 18:35:19 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
-File Name: N:\Project\NewProject-4-10\motorCONTROL\designer\impl1\motorCONTROL.adb
+File Name: N:\eecs373\project\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL.adb
 Design Name: motorCONTROL  Design State: layout
-Last Saved: Mon Apr 10 21:14:31 2017
+Last Saved: Fri Apr 14 18:34:40 2017
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Apr 10 21:14:21 2017:
-        N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL.edn
-        N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
+Source File(s) Imported on Fri Apr 14 18:34:29 2017:
+        N:\eecs373\project\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.edn
+        N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,9 +50,9 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL.edn
+Source      : N:\eecs373\project\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.edn
 
-N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
+N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
 Format      : EDIF
 Topcell     : motorCONTROL
 Speed grade : STD
@@ -104,8 +104,6 @@ Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_SPI1DO drives no load.
 Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_SPI1DOE drives no load.
 Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_SPI1CLKO drives no load.
 Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_SPI1MODE drives no load.
-Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_I2C1SDAO drives no load.
-Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_I2C1SCLO drives no load.
 Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_MACTXEN drives no load.
 Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_MACMDO drives no load.
 Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_MACMDEN drives no load.
@@ -395,7 +393,7 @@ Optimized macros:
 
     Total macros optimized  15
 
-There were 0 error(s) and 282 warning(s) in this design.
+There were 0 error(s) and 280 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -419,7 +417,7 @@ Compile report:
     Fabric IO (W/ clocks)      Used:      8  Total:     94   (8.51%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:     13  Total:     43   (30.23%)
+    Dedicated MSS IO           Used:     15  Total:     43   (34.88%)
     GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -553,16 +551,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Apr 10 21:14:40 2017
+Timing-driven Placer Started: Fri Apr 14 18:34:49 2017
 
-Placer Finished: Mon Apr 10 21:14:46 2017
-Total Placer CPU Time:     00:00:06
+Placer Finished: Fri Apr 14 18:34:56 2017
+Total Placer CPU Time:     00:00:07
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: motorCONTROL                    Started: Mon Apr 10 21:14:50 2017
+Design: motorCONTROL                    Started: Fri Apr 14 18:35:01 2017
 
  
 Iterative improvement...
@@ -570,9 +568,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: motorCONTROL                    
-Finished: Mon Apr 10 21:15:02 2017
-Total CPU Time:     00:00:11            Total Elapsed Time: 00:00:12
-Total Memory Usage: 172.1 Mbytes
+Finished: Fri Apr 14 18:35:15 2017
+Total CPU Time:     00:00:13            Total Elapsed Time: 00:00:14
+Total Memory Usage: 172.3 Mbytes
                         o - o - o - o - o - o
 
 

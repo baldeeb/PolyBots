@@ -17,6 +17,7 @@ Report for cell motorCONTROL_MSS.netlist
                                           Cell usage:
                                cell       count     area    count*area
                           BIBUF_MSS         8       0.0        0.0
+                    BIBUF_OPEND_MSS         2       0.0        0.0
                                BUFF         3       1.0        3.0
                                 GND         1       0.0        0.0
                           INBUF_MSS         3       0.0        0.0
@@ -25,7 +26,7 @@ Report for cell motorCONTROL_MSS.netlist
                                 VCC         1       0.0        0.0
           motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
                             
-                         TOTAL             20                  3.0
+                         TOTAL             22                  3.0
 ----------------------------------------------------------------------
 Report for cell motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.netlist
      Instance path:  motorCONTROL_MSS_0.MSS_CCC_0

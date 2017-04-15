@@ -4,19 +4,19 @@ Product Version J-2015.03M-SP1-2
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
-Reading constraint file: N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc
-@L: N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL_scck.rpt 
-Printing clock  summary report in "N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL_scck.rpt" file 
+Reading constraint file: N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc
+@L: N:\eecs373\project\MotorControlWork\motorCONTROL\synthesis\motorCONTROL_scck.rpt 
+Printing clock  summary report in "N:\eecs373\project\MotorControlWork\motorCONTROL\synthesis\motorCONTROL_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled 
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 106MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 105MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 106MB)
 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
 
 
 
@@ -31,12 +31,12 @@ FCLK        25.0 MHz      40.000        declared     clk_group_0
 ================================================================
 
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL.sap.
+@N: BN225 |Writing default property annotation file N:\eecs373\project\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.sap.
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 113MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 114MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Apr 10 21:14:05 2017
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Fri Apr 14 18:34:08 2017
 
 ###########################################################]

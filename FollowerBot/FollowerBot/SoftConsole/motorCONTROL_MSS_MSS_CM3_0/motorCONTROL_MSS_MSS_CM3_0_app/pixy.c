@@ -35,23 +35,31 @@ void pixy_print(union pixy_data_union *p){
  * used to properly assign the data read into the i2c buffer to
  * the globally accessible pixy-data data structure
  * */
-void pixy_read_multiple(union data_buffer_u *r_buff){
+void pixy_read_multiple( void ){
 	int obj_index, buff_index;
+	int i;
 
-
-	if(receive_buf.u8[0] == 0){	shift_recieve_union();	}
 
 	//check if the start bits match expected
-	if(r_buff->u16[0] != PIXY_START_WORD || r_buff->u16[1] != PIXY_START_WORD){
+	for(i=0; i < PIXY_RECIEVE_BUFF_SIZE / 2; i++){
+		if (receive_buf.u16[i] != 0){
+			break;
+		}
+	}
+
+	if(receive_buf.u8[0] == 0){	shift_recieve_union(); }
+
+	if((receive_buf.u16[0] != PIXY_START_WORD || receive_buf.u16[1] != PIXY_START_WORD) && i < PIXY_RECIEVE_BUFF_SIZE / 2){
 		//printf("Bad start bits in buffer...\n\r");
-		update_pixy_data_flag = 0;
+		//bad data read from successful read
 		return;
 	}
 
 	for (obj_index = 0; obj_index < PIXY_OBJECT_COUNT; obj_index++){
 		for(buff_index = 0 ; buff_index < PIXY_UNION_U16_SIZE ; buff_index++){
-			pixy_data[obj_index].u16[buff_index] = r_buff->u16[(obj_index*PIXY_UNION_U16_SIZE) + buff_index + 1];
+			pixy_data[obj_index].u16[buff_index] = receive_buf.u16[(obj_index*PIXY_UNION_U16_SIZE) + buff_index + 1];
 		}
+//		printf("id: %x\n\r",pixy_data[obj_index].o.id );
 	}
 
 	update_pixy_data_flag = 0;
@@ -65,7 +73,7 @@ void process_pixy_i2c( void ){
 	switch(MSS_I2C_get_status(&g_mss_i2c1)){
 		case MSS_I2C_SUCCESS:
 			if (update_pixy_data_flag){
-				pixy_read_multiple(&receive_buf);
+				pixy_read_multiple();
 			}
 			break;
 		case MSS_I2C_IN_PROGRESS:
@@ -99,14 +107,23 @@ void init_ideal_pixy_dots( void ){
  * bot's x-coordinate offset
  * */
 int pixy_x_err( unsigned int *mag, unsigned int *dir){
+	int obj_index;
 
-	if(pixy_data[1].o.id != 2){
+	//look for desired object
+	for (obj_index = 0; obj_index < PIXY_OBJECT_COUNT; obj_index++){
+		if (pixy_data[obj_index].o.id == 2){
+			break;
+		}
+	}
+	printf("obj_index: %x\n\r",obj_index);
+	//return if no object was found
+	if(obj_index == PIXY_OBJECT_COUNT){
 		*mag = 0;
 		*dir = 0;
 		return 1;
 	}
 
-	int err = pixy_ideal_green.o.x - pixy_data[0].o.x;
+	int err = pixy_ideal_green.o.x - pixy_data[obj_index].o.x;
 
 	if(err < -5){
 		*mag = -err;

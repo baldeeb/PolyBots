@@ -6,7 +6,7 @@ The file contains the job information from compiler to be displayed as part of t
 
 <job_run_status name="compiler"> 
   <report_link name="Detailed report">
-    <data>N:\Project\NewProject-4-10\motorCONTROL\synthesis\synlog\motorCONTROL_compiler.srr</data>
+    <data>N:\eecs373\project\MotorControlWork\motorCONTROL\synthesis\synlog\motorCONTROL_compiler.srr</data>
     <title>Synopsys HDL Compiler</title>
   </report_link> 
   <job_status>
@@ -14,28 +14,28 @@ The file contains the job information from compiler to be displayed as part of t
   </job_status>
 <job_info> 
 			<info name="Notes">
-  <data>17</data>
-  <report_link name="more"><data>N:\Project\NewProject-4-10\motorCONTROL\synthesis\synlog\report\motorCONTROL_compiler_notes.txt</data></report_link>
+  <data>18</data>
+  <report_link name="more"><data>N:\eecs373\project\MotorControlWork\motorCONTROL\synthesis\synlog\report\motorCONTROL_compiler_notes.txt</data></report_link>
   </info>
 			<info name="Warnings">
   <data>78</data>
-  <report_link name="more"><data>N:\Project\NewProject-4-10\motorCONTROL\synthesis\synlog\report\motorCONTROL_compiler_warnings.txt</data></report_link>
+  <report_link name="more"><data>N:\eecs373\project\MotorControlWork\motorCONTROL\synthesis\synlog\report\motorCONTROL_compiler_warnings.txt</data></report_link>
   </info>
 			<info name="Errors">
   <data>0</data>
-  <report_link name="more"><data>N:\Project\NewProject-4-10\motorCONTROL\synthesis\synlog\report\motorCONTROL_compiler_errors.txt</data></report_link>
+  <report_link name="more"><data>N:\eecs373\project\MotorControlWork\motorCONTROL\synthesis\synlog\report\motorCONTROL_compiler_errors.txt</data></report_link>
   </info>
 			<info name="CPU Time">
   <data>-</data>
   </info>
 			<info name="Real Time">
-  <data>0h:00m:02s</data>
+  <data>0h:00m:04s</data>
   </info>
 			<info name="Peak Memory">
   <data>-</data>
   </info>
 			<info name="Date &amp;Time">
-  <data type="timestamp">1491873241</data>
+  <data type="timestamp">1492209243</data>
   </info>
 			</job_info>
 </job_run_status>

@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Mon Apr 10 21:15:07 2017 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Fri Apr 14 18:35:20 2017 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
@@ -20,6 +20,8 @@ GPIO_4_BI    AA1  Yes    GPIO_4/IO43RSB4V0   LVTTL    8                  High  N
 GPIO_5_BI    U2   Yes    GPIO_5/IO42RSB4V0   LVTTL    8                  High  None           No               No    35                No           Yes
 GPIO_6_BI    V2   Yes    GPIO_6/IO41RSB4V0   LVTTL    8                  High  None           No               No    35                No           Yes
 GPIO_7_BI    W2   Yes    GPIO_7/IO40RSB4V0   LVTTL    8                  High  None           No               No    35                No           Yes
+I2C_1_SCL    U20  Yes    I2C_1_SCL/GPIO_31   LVTTL    8                  High  None           No               No    35                No           Yes
+I2C_1_SDA    V22  Yes    I2C_1_SDA/GPIO_30   LVTTL    8                  High  None           No               No    35                No           Yes
 inputsAB[0]  G4   Yes    GFC1/IO66PPB5V0     LVTTL    12                 High  None           ---              No    35                No           No
 inputsAB[1]  H5   Yes    GFC0/IO66NPB5V0     LVTTL    12                 High  None           ---              No    35                No           No
 inputsAB[2]  H6   Yes    GFA1/IO64PDB5V0     LVTTL    12                 High  None           ---              No    35                No           No

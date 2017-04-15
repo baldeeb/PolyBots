@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="9" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
-<window height="768" width="1024" x="52" y="52">
+<window height="768" maximized="true" width="1024" x="181" y="-18">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout locked="0">
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="185" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="130" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="com.actel.softconsole.externaltools.firmwarecatalog.ActionSet" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="com.actel.softconsole.externaltools.mssconfigurator.ActionSet" itemType="typeToolBarContribution" x="38" y="22"/>
@@ -32,14 +32,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="N:/eecs373/PolyBots/MotorControlWork/motorCONTROL/SoftConsole/motorCONTROL_MSS_MSS_CM3_0/motorCONTROL_MSS_MSS_CM3_0_app/main.c" title="main.c" tooltip="motorCONTROL_MSS_MSS_CM3_0_app/main.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="N:/eecs373/project/MotorControlWork/motorCONTROL/SoftConsole/motorCONTROL_MSS_MSS_CM3_0/motorCONTROL_MSS_MSS_CM3_0_app/main.c" title="main.c" tooltip="motorCONTROL_MSS_MSS_CM3_0_app/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/motorCONTROL_MSS_MSS_CM3_0_app/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12110" selectionTopPixel="7526"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2153" selectionTopPixel="3519"/>
 </editor>
 </editors>
 <views>
@@ -180,8 +179,11 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/motorCONTROL_MSS_MSS_CM3_0_app/main.c"/>
 </editors>
 <item historyLabel="Welcome" index="0"/>
-<item active="true" historyLabel="main.c" index="1">
+<item historyLabel="main.c" index="1">
 <position info="not_deleted" x="0" y="12110"/>
+</item>
+<item active="true" historyLabel="main.c" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

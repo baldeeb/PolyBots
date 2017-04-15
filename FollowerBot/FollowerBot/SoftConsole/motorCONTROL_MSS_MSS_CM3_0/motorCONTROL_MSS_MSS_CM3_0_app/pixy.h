@@ -78,7 +78,7 @@ void pixy_print(union pixy_data_union *p);
  * used to properly assign the data read into the i2c buffer to
  * the globally accessible pixy-data data structure
  * */
-void pixy_read_multiple(union data_buffer_u *r_buff);
+void pixy_read_multiple( void );
 
 /* *
  * update the global union holding the pixy data

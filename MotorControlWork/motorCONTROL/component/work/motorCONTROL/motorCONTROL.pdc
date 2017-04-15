@@ -3,7 +3,7 @@
 
 # Version: v11.7 SP1 11.7.1.14
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Fri Apr 14 12:05:49 2017 
+# Date generated: Fri Apr 14 18:32:12 2017 
 
 
 # 
@@ -13,6 +13,8 @@
 define_group -name UART_1
 
 define_group -name UART_0
+
+define_group -name I2C_1_PADs
 
 
 # 
@@ -36,77 +38,24 @@ define_group -name UART_0
 # Dedicated Peripheral I/O Settings
 # 
 
+# User Group I2C_1_PADs
+
+set_io I2C_1_SCL            \
+    -GROUP_NAME I2C_1_PADs  \
+    -DIRECTION INOUT
+
+
+set_io I2C_1_SDA            \
+    -GROUP_NAME I2C_1_PADs  \
+    -DIRECTION INOUT
+
+
 
 # 
 # Unlocked I/O settings
 # The I/Os in this section are unplaced or placed but are not locked
 # the other listed attributes have been applied
 # 
-
-set_io GPIO_0_BI      \
-    -iostd LVTTL      \
-    -DIRECTION INOUT
-
-
-set_io GPIO_1_BI      \
-    -iostd LVTTL      \
-    -DIRECTION INOUT
-
-
-set_io GPIO_2_BI      \
-    -iostd LVTTL      \
-    -DIRECTION INOUT
-
-
-set_io GPIO_3_BI      \
-    -iostd LVTTL      \
-    -DIRECTION INOUT
-
-
-set_io GPIO_4_BI      \
-    -iostd LVTTL      \
-    -DIRECTION INOUT
-
-
-set_io GPIO_5_BI      \
-    -iostd LVTTL      \
-    -DIRECTION INOUT
-
-
-set_io GPIO_6_BI      \
-    -iostd LVTTL      \
-    -DIRECTION INOUT
-
-
-set_io GPIO_7_BI      \
-    -iostd LVTTL      \
-    -DIRECTION INOUT
-
-
-set_io MSS_RESET_N    \
-    -iostd LVTTL      \
-    -DIRECTION INPUT
-
-
-set_io UART_0_RXD     \
-    -iostd LVTTL      \
-    -DIRECTION INPUT
-
-
-set_io UART_0_TXD      \
-    -iostd LVTTL       \
-    -DIRECTION OUTPUT
-
-
-set_io UART_1_RXD     \
-    -iostd LVTTL      \
-    -DIRECTION INPUT
-
-
-set_io UART_1_TXD      \
-    -iostd LVTTL       \
-    -DIRECTION OUTPUT
-
 
 
 #
@@ -131,3 +80,5 @@ set_io UART_1_TXD      \
 # set_io UART_0_TXD -iostd LVTTL -DIRECTION OUTPUT 
 # set_io UART_1_RXD -iostd LVTTL -DIRECTION INPUT 
 # set_io UART_1_TXD -iostd LVTTL -DIRECTION OUTPUT 
+# set_io I2C_1_SCL -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 
+# set_io I2C_1_SDA -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 

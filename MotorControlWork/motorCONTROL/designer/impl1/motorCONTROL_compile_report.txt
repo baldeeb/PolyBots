@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Apr 10 21:14:29 2017 ***************************************************************************
+                          Fri Apr 14 18:34:38 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
-File Name: N:\Project\NewProject-4-10\motorCONTROL\designer\impl1\motorCONTROL.adb
+File Name: N:\eecs373\project\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL.adb
 Design Name: motorCONTROL  Design State: compile
-Last Saved: Mon Apr 10 18:25:40 2017
+Last Saved: Fri Apr 14 17:57:08 2017
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Apr 10 21:14:21 2017:
-        N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL.edn
-        N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
+Source File(s) Imported on Fri Apr 14 18:34:29 2017:
+        N:\eecs373\project\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.edn
+        N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,9 +50,9 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL.edn
+Source      : N:\eecs373\project\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.edn
 
-N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
+N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
 Format      : EDIF
 Topcell     : motorCONTROL
 Speed grade : STD
@@ -104,8 +104,6 @@ Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_SPI1DO drives no load.
 Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_SPI1DOE drives no load.
 Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_SPI1CLKO drives no load.
 Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_SPI1MODE drives no load.
-Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_I2C1SDAO drives no load.
-Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_I2C1SCLO drives no load.
 Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_MACTXEN drives no load.
 Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_MACMDO drives no load.
 Warning: CMP201: Net motorCONTROL_MSS_0/MSS_ADLIB_INST_MACMDEN drives no load.
@@ -395,7 +393,7 @@ Optimized macros:
 
     Total macros optimized  15
 
-There were 0 error(s) and 282 warning(s) in this design.
+There were 0 error(s) and 280 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -419,7 +417,7 @@ Compile report:
     Fabric IO (W/ clocks)      Used:      8  Total:     94   (8.51%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:     13  Total:     43   (30.23%)
+    Dedicated MSS IO           Used:     15  Total:     43   (34.88%)
     GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)

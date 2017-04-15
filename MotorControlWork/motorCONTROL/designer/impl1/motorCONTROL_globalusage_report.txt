@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
-Date: Mon Apr 10 21:15:06 2017
+Date: Fri Apr 14 18:35:19 2017
 Design Name: motorCONTROL  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
 Design State: Post-Layout
 

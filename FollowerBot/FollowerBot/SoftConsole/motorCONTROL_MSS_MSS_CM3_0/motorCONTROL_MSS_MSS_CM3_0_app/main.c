@@ -86,21 +86,6 @@ int main()
 	int begin = 1;
 
 
-	uint32_t counter = 0;
-	uint32_t gpio_inputs = 0;
-	uint32_t count[8] = {0};
-	int max = 0;
-	int max_index = 0;
-
-	MSS_GPIO_init();
-	MSS_GPIO_config(MSS_GPIO_0, MSS_GPIO_INOUT_MODE);
-	MSS_GPIO_config(MSS_GPIO_1, MSS_GPIO_INOUT_MODE);
-	MSS_GPIO_config(MSS_GPIO_2, MSS_GPIO_INOUT_MODE);
-	MSS_GPIO_config(MSS_GPIO_3, MSS_GPIO_INOUT_MODE);
-	MSS_GPIO_config(MSS_GPIO_4, MSS_GPIO_INOUT_MODE);
-	MSS_GPIO_config(MSS_GPIO_5, MSS_GPIO_INOUT_MODE);
-	MSS_GPIO_config(MSS_GPIO_6, MSS_GPIO_INOUT_MODE);
-	MSS_GPIO_config(MSS_GPIO_7, MSS_GPIO_INOUT_MODE);
 
 	MSS_UART_init(&g_mss_uart1, MSS_UART_9600_BAUD, MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT);
 	MSS_UART_set_rx_handler( &g_mss_uart1, uart1_rx_handler, MSS_UART_FIFO_EIGHT_BYTES );
@@ -139,7 +124,7 @@ int main()
 			pixy_motor_dir =pixy_dir;
 		}
 
-		printf("%x\n\r", pixy_motor_pwm);
+//		printf("%x\n\r", pixy_motor_pwm);
 
 
 

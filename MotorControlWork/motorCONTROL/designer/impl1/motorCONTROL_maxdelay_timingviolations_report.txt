@@ -2,7 +2,7 @@ Timing Violation Report Max Delay Analysis
 
 SmartTime Version v11.7 SP1.1
 Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
-Date: Mon Apr 10 21:15:16 2017
+Date: Fri Apr 14 18:35:29 2017
 
 
 Design: motorCONTROL
@@ -22,169 +22,89 @@ Scenario for Timing Analysis: Primary
 
 Path 1
   From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthLeft[8]:D
-  Delay (ns):                  11.589
-  Slack (ns):                  -0.838
-  Arrival (ns):                15.144
-  Required (ns):               14.306
+  To:                          m_control_0/pulseWidthRight[1]:D
+  Delay (ns):                  11.136
+  Slack (ns):                  -0.395
+  Arrival (ns):                14.691
+  Required (ns):               14.296
 
 Path 2
   From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthLeft[10]:D
-  Delay (ns):                  11.498
-  Slack (ns):                  -0.758
-  Arrival (ns):                15.053
-  Required (ns):               14.295
+  To:                          m_control_0/pulseWidthLeft[14]:D
+  Delay (ns):                  10.905
+  Slack (ns):                  -0.213
+  Arrival (ns):                14.460
+  Required (ns):               14.247
 
 Path 3
   From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthLeft[11]:D
-  Delay (ns):                  11.489
-  Slack (ns):                  -0.749
-  Arrival (ns):                15.044
-  Required (ns):               14.295
+  To:                          m_control_0/pulseWidthLeft[18]:D
+  Delay (ns):                  10.933
+  Slack (ns):                  -0.194
+  Arrival (ns):                14.488
+  Required (ns):               14.294
 
 Path 4
   From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthLeft[7]:D
-  Delay (ns):                  11.489
-  Slack (ns):                  -0.749
-  Arrival (ns):                15.044
-  Required (ns):               14.295
+  To:                          m_control_0/pulseWidthRight[14]:D
+  Delay (ns):                  10.912
+  Slack (ns):                  -0.171
+  Arrival (ns):                14.467
+  Required (ns):               14.296
 
 Path 5
   From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthLeft[9]:D
-  Delay (ns):                  11.485
-  Slack (ns):                  -0.745
-  Arrival (ns):                15.040
-  Required (ns):               14.295
+  To:                          m_control_0/pulseWidthLeft[11]:D
+  Delay (ns):                  10.875
+  Slack (ns):                  -0.124
+  Arrival (ns):                14.430
+  Required (ns):               14.306
 
 Path 6
   From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthLeft[14]:D
-  Delay (ns):                  11.358
-  Slack (ns):                  -0.624
-  Arrival (ns):                14.913
-  Required (ns):               14.289
+  To:                          m_control_0/pulseWidthLeft[17]:D
+  Delay (ns):                  10.875
+  Slack (ns):                  -0.124
+  Arrival (ns):                14.430
+  Required (ns):               14.306
 
 Path 7
   From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthLeft[15]:D
-  Delay (ns):                  11.188
-  Slack (ns):                  -0.492
-  Arrival (ns):                14.743
-  Required (ns):               14.251
+  To:                          m_control_0/pulseWidthLeft[3]:D
+  Delay (ns):                  10.875
+  Slack (ns):                  -0.124
+  Arrival (ns):                14.430
+  Required (ns):               14.306
 
 Path 8
   From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthRight[15]:D
-  Delay (ns):                  11.089
-  Slack (ns):                  -0.355
-  Arrival (ns):                14.644
-  Required (ns):               14.289
+  To:                          m_control_0/pulseWidthLeft[9]:D
+  Delay (ns):                  10.831
+  Slack (ns):                  -0.068
+  Arrival (ns):                14.386
+  Required (ns):               14.318
 
 Path 9
   From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthLeft[3]:D
-  Delay (ns):                  10.979
-  Slack (ns):                  -0.274
-  Arrival (ns):                14.534
-  Required (ns):               14.260
+  To:                          m_control_0/pulseWidthLeft[5]:D
+  Delay (ns):                  10.755
+  Slack (ns):                  -0.021
+  Arrival (ns):                14.310
+  Required (ns):               14.289
 
 Path 10
   From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthRight[13]:D
-  Delay (ns):                  11.043
-  Slack (ns):                  -0.271
-  Arrival (ns):                14.598
-  Required (ns):               14.327
+  To:                          m_control_0/pulseWidthLeft[4]:D
+  Delay (ns):                  10.745
+  Slack (ns):                  -0.011
+  Arrival (ns):                14.300
+  Required (ns):               14.289
 
 Path 11
   From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthRight[7]:D
-  Delay (ns):                  11.043
-  Slack (ns):                  -0.271
-  Arrival (ns):                14.598
-  Required (ns):               14.327
-
-Path 12
-  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthRight[11]:D
-  Delay (ns):                  11.041
-  Slack (ns):                  -0.269
-  Arrival (ns):                14.596
-  Required (ns):               14.327
-
-Path 13
-  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthRight[5]:D
-  Delay (ns):                  11.041
-  Slack (ns):                  -0.269
-  Arrival (ns):                14.596
-  Required (ns):               14.327
-
-Path 14
-  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthRight[0]:D
-  Delay (ns):                  11.041
-  Slack (ns):                  -0.269
-  Arrival (ns):                14.596
-  Required (ns):               14.327
-
-Path 15
-  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthLeft[4]:D
-  Delay (ns):                  10.960
-  Slack (ns):                  -0.257
-  Arrival (ns):                14.515
-  Required (ns):               14.258
-
-Path 16
-  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthRight[10]:D
-  Delay (ns):                  10.854
-  Slack (ns):                  -0.146
-  Arrival (ns):                14.409
-  Required (ns):               14.263
-
-Path 17
-  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthRight[12]:D
-  Delay (ns):                  10.852
-  Slack (ns):                  -0.144
-  Arrival (ns):                14.407
-  Required (ns):               14.263
-
-Path 18
-  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthRight[3]:D
-  Delay (ns):                  10.835
-  Slack (ns):                  -0.137
-  Arrival (ns):                14.390
-  Required (ns):               14.253
-
-Path 19
-  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthLeft[5]:D
-  Delay (ns):                  10.827
-  Slack (ns):                  -0.135
-  Arrival (ns):                14.382
-  Required (ns):               14.247
-
-Path 20
-  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthLeft[2]:D
-  Delay (ns):                  10.759
-  Slack (ns):                  -0.056
-  Arrival (ns):                14.314
-  Required (ns):               14.258
-
-Path 21
-  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          m_control_0/pulseWidthLeft[13]:D
-  Delay (ns):                  10.769
-  Slack (ns):                  -0.035
-  Arrival (ns):                14.324
+  To:                          m_control_0/pulseWidthLeft[1]:D
+  Delay (ns):                  10.745
+  Slack (ns):                  -0.011
+  Arrival (ns):                14.300
   Required (ns):               14.289
 
