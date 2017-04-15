@@ -1,0 +1,9 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "N:\eecs373\PolyBots\TouchScreen\touch_screen\designer\impl1\touch_screen.adb"
+LIST SOURCE_FILES
+VALUE "N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen\touch_screen.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+ENDLIST
+LIST VCD_FILES
+ENDLIST
