@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Apr 14 22:35:52 2017
+// Created by SmartDesign Sat Apr 15 17:03:25 2017
 // Version: v11.7 SP1 11.7.1.14
 //////////////////////////////////////////////////////////////////////
 
@@ -8,9 +8,12 @@
 // motorCONTROL
 module motorCONTROL(
     // Inputs
+    ADCDirectInput_0,
+    ADCDirectInput_1,
     MSS_RESET_N,
     UART_0_RXD,
     UART_1_RXD,
+    VAREF1,
     encoder,
     // Outputs
     UART_0_TXD,
@@ -34,9 +37,12 @@ module motorCONTROL(
 //--------------------------------------------------------------------
 // Input
 //--------------------------------------------------------------------
+input        ADCDirectInput_0;
+input        ADCDirectInput_1;
 input        MSS_RESET_N;
 input        UART_0_RXD;
 input        UART_1_RXD;
+input        VAREF1;
 input  [1:0] encoder;
 //--------------------------------------------------------------------
 // Output
@@ -62,6 +68,8 @@ inout        I2C_1_SDA;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
+wire          ADCDirectInput_0;
+wire          ADCDirectInput_1;
 wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
 wire          CoreAPB3_0_APBmslave0_PENABLE;
 wire   [31:0] CoreAPB3_0_APBmslave0_PRDATA;
@@ -98,6 +106,7 @@ wire          UART_0_RXD;
 wire          UART_0_TXD_net_0;
 wire          UART_1_RXD;
 wire          UART_1_TXD_net_0;
+wire          VAREF1;
 wire          UART_1_TXD_net_1;
 wire          UART_0_TXD_net_1;
 wire          pwmRight_net_1;
@@ -327,33 +336,36 @@ m_control m_control_0(
 //--------motorCONTROL_MSS
 motorCONTROL_MSS motorCONTROL_MSS_0(
         // Inputs
-        .UART_0_RXD  ( UART_0_RXD ),
-        .UART_1_RXD  ( UART_1_RXD ),
-        .MSS_RESET_N ( MSS_RESET_N ),
-        .MSSPREADY   ( motorCONTROL_MSS_0_MSS_MASTER_APB_PREADY ),
-        .MSSPSLVERR  ( motorCONTROL_MSS_0_MSS_MASTER_APB_PSLVERR ),
-        .MSSPRDATA   ( motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA ),
+        .UART_0_RXD       ( UART_0_RXD ),
+        .UART_1_RXD       ( UART_1_RXD ),
+        .MSS_RESET_N      ( MSS_RESET_N ),
+        .MSSPREADY        ( motorCONTROL_MSS_0_MSS_MASTER_APB_PREADY ),
+        .MSSPSLVERR       ( motorCONTROL_MSS_0_MSS_MASTER_APB_PSLVERR ),
+        .MSSPRDATA        ( motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA ),
+        .ADCDirectInput_0 ( ADCDirectInput_0 ),
+        .ADCDirectInput_1 ( ADCDirectInput_1 ),
+        .VAREF1           ( VAREF1 ),
         // Outputs
-        .UART_0_TXD  ( UART_0_TXD_net_0 ),
-        .UART_1_TXD  ( UART_1_TXD_net_0 ),
-        .MSSPSEL     ( motorCONTROL_MSS_0_MSS_MASTER_APB_PSELx ),
-        .MSSPENABLE  ( motorCONTROL_MSS_0_MSS_MASTER_APB_PENABLE ),
-        .MSSPWRITE   ( motorCONTROL_MSS_0_MSS_MASTER_APB_PWRITE ),
-        .M2F_RESET_N ( motorCONTROL_MSS_0_M2F_RESET_N ),
-        .FAB_CLK     ( motorCONTROL_MSS_0_FAB_CLK ),
-        .MSSPADDR    ( motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR ),
-        .MSSPWDATA   ( motorCONTROL_MSS_0_MSS_MASTER_APB_PWDATA ),
+        .UART_0_TXD       ( UART_0_TXD_net_0 ),
+        .UART_1_TXD       ( UART_1_TXD_net_0 ),
+        .MSSPSEL          ( motorCONTROL_MSS_0_MSS_MASTER_APB_PSELx ),
+        .MSSPENABLE       ( motorCONTROL_MSS_0_MSS_MASTER_APB_PENABLE ),
+        .MSSPWRITE        ( motorCONTROL_MSS_0_MSS_MASTER_APB_PWRITE ),
+        .M2F_RESET_N      ( motorCONTROL_MSS_0_M2F_RESET_N ),
+        .FAB_CLK          ( motorCONTROL_MSS_0_FAB_CLK ),
+        .MSSPADDR         ( motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR ),
+        .MSSPWDATA        ( motorCONTROL_MSS_0_MSS_MASTER_APB_PWDATA ),
         // Inouts
-        .GPIO_7_BI   ( GPIO_7_BI ),
-        .GPIO_6_BI   ( GPIO_6_BI ),
-        .GPIO_5_BI   ( GPIO_5_BI ),
-        .GPIO_4_BI   ( GPIO_4_BI ),
-        .GPIO_3_BI   ( GPIO_3_BI ),
-        .GPIO_2_BI   ( GPIO_2_BI ),
-        .GPIO_1_BI   ( GPIO_1_BI ),
-        .GPIO_0_BI   ( GPIO_0_BI ),
-        .I2C_1_SCL   ( I2C_1_SCL ),
-        .I2C_1_SDA   ( I2C_1_SDA ) 
+        .GPIO_7_BI        ( GPIO_7_BI ),
+        .GPIO_6_BI        ( GPIO_6_BI ),
+        .GPIO_5_BI        ( GPIO_5_BI ),
+        .GPIO_4_BI        ( GPIO_4_BI ),
+        .GPIO_3_BI        ( GPIO_3_BI ),
+        .GPIO_2_BI        ( GPIO_2_BI ),
+        .GPIO_1_BI        ( GPIO_1_BI ),
+        .GPIO_0_BI        ( GPIO_0_BI ),
+        .I2C_1_SCL        ( I2C_1_SCL ),
+        .I2C_1_SDA        ( I2C_1_SDA ) 
         );
 
 

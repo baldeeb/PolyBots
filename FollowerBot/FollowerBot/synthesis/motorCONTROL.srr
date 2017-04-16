@@ -1,7 +1,7 @@
 #Build: Synplify Pro J-2015.03M-SP1-2, Build 266R, Dec 14 2015
 #install: C:\Microsemi\Libero_SoC_v11.7\Synplify
 #OS: Windows 8 6.2
-#Hostname: EECS373-12
+#Hostname: EECS373-06
 
 #Implementation: synthesis
 
@@ -28,6 +28,10 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"N:\eecs373\project\FollowerBot\FollowerBot\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v"
 @I::"N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL\motorCONTROL.v"
 Verilog syntax check successful!
+File N:\eecs373\project\FollowerBot\FollowerBot\hdl\m_control.v changed - recompiling
+File N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL_MSS\mss_tshell.v changed - recompiling
+File N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
+File N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL_MSS\motorCONTROL_MSS.v changed - recompiling
 File N:\eecs373\project\FollowerBot\FollowerBot\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v changed - recompiling
 File N:\eecs373\project\FollowerBot\FollowerBot\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v changed - recompiling
 File N:\eecs373\project\FollowerBot\FollowerBot\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v changed - recompiling
@@ -117,6 +121,8 @@ Selecting top level module motorCONTROL
 @W: CG360 :"N:\eecs373\project\FollowerBot\FollowerBot\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":1495:0:1495:8|No assignment to wire CAPB3IlOI
 
 @N: CG364 :"N:\eecs373\project\FollowerBot\FollowerBot\hdl\m_control.v":2:7:2:15|Synthesizing module m_control
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v":2663:7:2663:13|Synthesizing module INBUF_A
 
 @N: CG364 :"N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL_MSS\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB
 
@@ -225,7 +231,7 @@ Selecting top level module motorCONTROL
 At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 78MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Fri Apr 14 22:37:21 2017
+# Sat Apr 15 17:28:07 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
@@ -234,15 +240,15 @@ Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Apr 14 22:37:21 2017
+# Sat Apr 15 17:28:08 2017
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Fri Apr 14 22:37:21 2017
+Process took 0h:00m:03s realtime, 0h:00m:01s cputime
+# Sat Apr 15 17:28:08 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
@@ -252,7 +258,7 @@ File N:\eecs373\project\FollowerBot\FollowerBot\synthesis\synwork\motorCONTROL_c
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Apr 14 22:37:23 2017
+# Sat Apr 15 17:28:10 2017
 
 ###########################################################]
 Pre-mapping Report
@@ -295,8 +301,8 @@ Pre-mapping successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 114MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Fri Apr 14 22:37:26 2017
+Process took 0h:00m:04s realtime, 0h:00m:01s cputime
+# Sat Apr 15 17:28:15 2017
 
 ###########################################################]
 Map & Optimize Report
@@ -317,7 +323,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
 
 @W: MO111 :"n:\eecs373\project\followerbot\followerbot\component\work\motorcontrol_mss\mss_ccc_0\motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT on net LPXIN_CLKOUT has its enable tied to GND (module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC) 
 @W: MO111 :"n:\eecs373\project\followerbot\followerbot\component\work\motorcontrol_mss\mss_ccc_0\motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT on net MAINXIN_CLKOUT has its enable tied to GND (module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC) 
@@ -327,23 +333,23 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 112MB)
 
 @N: MF179 :"n:\eecs373\project\followerbot\followerbot\hdl\m_control.v":89:12:89:34|Found 19 bit by 19 bit '<' comparator, 'pwmLeft4'
 @N: MF179 :"n:\eecs373\project\followerbot\followerbot\hdl\m_control.v":94:12:94:35|Found 19 bit by 19 bit '<' comparator, 'pwmRight6'
 @N: MF238 :"n:\eecs373\project\followerbot\followerbot\hdl\m_control.v":82:21:82:30|Found 19-bit incrementor, 'un3_count_1[18:0]'
 @N: MF238 :"n:\eecs373\project\followerbot\followerbot\hdl\m_control.v":87:23:87:34|Found 25-bit incrementor, 'un3_counter_1[24:0]'
 
-Finished factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 112MB)
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 112MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 112MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
 
 
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
@@ -409,7 +415,7 @@ Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01
 
 Writing Analyst data base N:\eecs373\project\FollowerBot\FollowerBot\synthesis\synwork\motorCONTROL_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
 
 Writing EDIF Netlist and constraint files
 J-2015.03M-SP1-2
@@ -424,7 +430,7 @@ Found clock FAB_CLK with period 40.00ns
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Fri Apr 14 22:37:32 2017
+# Timing Report written on Sat Apr 15 17:28:21 2017
 #
 
 
@@ -590,21 +596,21 @@ Detailed Report for Clock: System
 Starting Points with Worst Slack
 ********************************
 
-                                      Starting                                                                                   Arrival           
-Instance                              Reference     Type        Pin              Net                                             Time        Slack 
-                                      Clock                                                                                                        
----------------------------------------------------------------------------------------------------------------------------------------------------
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[8]      0.000       5.106 
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          motorCONTROL_MSS_0_MSS_MASTER_APB_PSELx         0.000       5.106 
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[11]     motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[11]     0.000       5.120 
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[10]     0.000       5.271 
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[9]      0.000       5.388 
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLK           MSS_ADLIB_INST_EMCCLK                           0.000       9.678 
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     M2FRESETn        motorCONTROL_MSS_0_M2F_RESET_N                  0.000       28.634
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[0]      CoreAPB3_0_APBmslave0_PADDR[0]                  0.000       30.998
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[1]      CoreAPB3_0_APBmslave0_PADDR[1]                  0.000       31.039
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[7]      CoreAPB3_0_APBmslave0_PADDR[7]                  0.000       31.053
-===================================================================================================================================================
+                                        Starting                                                                                   Arrival           
+Instance                                Reference     Type        Pin              Net                                             Time        Slack 
+                                        Clock                                                                                                        
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[8]      motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[8]      0.000       5.106 
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPSEL          motorCONTROL_MSS_0_MSS_MASTER_APB_PSELx         0.000       5.106 
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[11]     motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[11]     0.000       5.120 
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[10]     motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[10]     0.000       5.271 
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[9]      motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[9]      0.000       5.388 
+motorCONTROL_MSS_0.MSS_ACE_0_ADC5       System        INBUF_A     Y                MSS_ACE_0_ADC5_Y                                0.000       9.678 
+motorCONTROL_MSS_0.MSS_ACE_0_ADC6       System        INBUF_A     Y                MSS_ACE_0_ADC6_Y                                0.000       9.678 
+motorCONTROL_MSS_0.MSS_ACE_0_VAREF1     System        INBUF_A     Y                MSS_ACE_0_VAREF1_Y                              0.000       9.678 
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     EMCCLK           MSS_ADLIB_INST_EMCCLK                           0.000       9.678 
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     M2FRESETn        motorCONTROL_MSS_0_M2F_RESET_N                  0.000       28.634
+=====================================================================================================================================================
 
 
 Ending Points with Worst Slack
@@ -726,15 +732,16 @@ Report for cell motorCONTROL.verilog
          BIBUF_MSS     8
    BIBUF_OPEND_MSS     2
              INBUF     2
+           INBUF_A     3
          INBUF_MSS     3
             OUTBUF     6
         OUTBUF_MSS     2
                    -----
-             TOTAL    23
+             TOTAL    26
 
 
 Core Cells         : 615 of 4608 (13%)
-IO Cells           : 23
+IO Cells           : 26
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
@@ -743,7 +750,7 @@ Mapper successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 49MB peak: 114MB)
 
-Process took 0h:00m:06s realtime, 0h:00m:01s cputime
-# Fri Apr 14 22:37:32 2017
+Process took 0h:00m:05s realtime, 0h:00m:01s cputime
+# Sat Apr 15 17:28:21 2017
 
 ###########################################################]

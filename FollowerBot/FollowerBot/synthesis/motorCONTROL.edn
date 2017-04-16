@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2017 4 14 22 37 31)
+      (timeStamp 2017 4 15 17 28 21)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "J-2015.03M-SP1-2, mapper mapact, Build 1659R"))
      )
@@ -590,6 +590,19 @@
            (port Y (direction OUTPUT)
            (property function (string "PAD"))
  )
+           (port PAD (direction INPUT)
+           (property is_pad (string "true"))
+ )
+         )
+       )
+    )
+    (cell INBUF_A (cellType GENERIC)
+      (property pad_cell (string "true"))
+      (property dont_use (integer 1))
+      (property dont_touch (string "true"))
+       (view prim (viewType NETLIST)
+         (interface
+           (port Y (direction OUTPUT))
            (port PAD (direction INPUT)
            (property is_pad (string "true"))
  )
@@ -1595,6 +1608,9 @@
            (port motorCONTROL_MSS_0_MSS_MASTER_APB_PSELx (direction OUTPUT))
            (port CoreAPB3_0_APBmslave0_PENABLE (direction OUTPUT))
            (port CoreAPB3_0_APBmslave0_PWRITE (direction OUTPUT))
+           (port VAREF1 (direction INPUT))
+           (port ADCDirectInput_1 (direction INPUT))
+           (port ADCDirectInput_0 (direction INPUT))
          )
          (contents
           (instance MSS_ADLIB_INST_RNICP06_1 (viewRef prim (cellRef BUFF (libraryRef smartfusion)))
@@ -1684,6 +1700,15 @@
            (property ACT_DIE (string "IP4X3M1"))
            (property ACT_FCLK (integer 100000000))
            (property ACT_PKG (string "fg484"))
+          )
+          (instance MSS_ACE_0_VAREF1 (viewRef prim (cellRef INBUF_A (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+          )
+          (instance MSS_ACE_0_ADC6 (viewRef prim (cellRef INBUF_A (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+          )
+          (instance MSS_ACE_0_ADC5 (viewRef prim (cellRef INBUF_A (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
           )
           (instance MSS_CCC_0 (viewRef netlist (cellRef motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC))
           )
@@ -2061,7 +2086,6 @@
            (portRef LVTTL10EN (instanceRef MSS_ADLIB_INST))
            (portRef ABPS11 (instanceRef MSS_ADLIB_INST))
            (portRef LVTTL8EN (instanceRef MSS_ADLIB_INST))
-           (portRef VAREF1 (instanceRef MSS_ADLIB_INST))
            (portRef ABPS3 (instanceRef MSS_ADLIB_INST))
            (portRef LVTTL0EN (instanceRef MSS_ADLIB_INST))
            (portRef LVTTL11EN (instanceRef MSS_ADLIB_INST))
@@ -2083,7 +2107,6 @@
            (portRef ABPS7 (instanceRef MSS_ADLIB_INST))
            (portRef GNDTM2 (instanceRef MSS_ADLIB_INST))
            (portRef LVTTL4EN (instanceRef MSS_ADLIB_INST))
-           (portRef ADC5 (instanceRef MSS_ADLIB_INST))
            (portRef CM0 (instanceRef MSS_ADLIB_INST))
            (portRef GNDTM1 (instanceRef MSS_ADLIB_INST))
            (portRef ADC8 (instanceRef MSS_ADLIB_INST))
@@ -2105,7 +2128,6 @@
            (portRef ADC2 (instanceRef MSS_ADLIB_INST))
            (portRef TM5 (instanceRef MSS_ADLIB_INST))
            (portRef TM3 (instanceRef MSS_ADLIB_INST))
-           (portRef ADC6 (instanceRef MSS_ADLIB_INST))
            (portRef CM3 (instanceRef MSS_ADLIB_INST))
            (portRef CM5 (instanceRef MSS_ADLIB_INST))
            (portRef FABACETRIG (instanceRef MSS_ADLIB_INST))
@@ -2304,6 +2326,18 @@
           ))
           (net MSS_ADLIB_INST_LVTTL11 (joined
            (portRef LVTTL11 (instanceRef MSS_ADLIB_INST))
+          ))
+          (net MSS_ACE_0_ADC6_Y (joined
+           (portRef Y (instanceRef MSS_ACE_0_ADC6))
+           (portRef ADC6 (instanceRef MSS_ADLIB_INST))
+          ))
+          (net MSS_ACE_0_ADC5_Y (joined
+           (portRef Y (instanceRef MSS_ACE_0_ADC5))
+           (portRef ADC5 (instanceRef MSS_ADLIB_INST))
+          ))
+          (net MSS_ACE_0_VAREF1_Y (joined
+           (portRef Y (instanceRef MSS_ACE_0_VAREF1))
+           (portRef VAREF1 (instanceRef MSS_ADLIB_INST))
           ))
           (net MSS_ADLIB_INST_CMP0 (joined
            (portRef CMP0 (instanceRef MSS_ADLIB_INST))
@@ -3201,6 +3235,18 @@
           (net (rename motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA_24 "motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[24]") (joined
            (portRef (member motorcontrol_mss_0_mss_master_apb_prdata 0))
            (portRef (member mssprdata 7) (instanceRef MSS_ADLIB_INST))
+          ))
+          (net VAREF1 (joined
+           (portRef VAREF1)
+           (portRef PAD (instanceRef MSS_ACE_0_VAREF1))
+          ))
+          (net ADCDirectInput_1 (joined
+           (portRef ADCDirectInput_1)
+           (portRef PAD (instanceRef MSS_ACE_0_ADC6))
+          ))
+          (net ADCDirectInput_0 (joined
+           (portRef ADCDirectInput_0)
+           (portRef PAD (instanceRef MSS_ACE_0_ADC5))
           ))
          )
         (property orig_inst_of (string "motorCONTROL_MSS"))
@@ -7807,9 +7853,12 @@
     (cell motorCONTROL (cellType GENERIC)
        (view verilog (viewType NETLIST)
          (interface
+           (port ADCDirectInput_0 (direction INPUT))
+           (port ADCDirectInput_1 (direction INPUT))
            (port MSS_RESET_N (direction INPUT))
            (port UART_0_RXD (direction INPUT))
            (port UART_1_RXD (direction INPUT))
+           (port VAREF1 (direction INPUT))
            (port (array (rename encoder "encoder[1:0]") 2) (direction INPUT))
            (port UART_0_TXD (direction OUTPUT))
            (port UART_1_TXD (direction OUTPUT))
@@ -7889,6 +7938,14 @@
           )
           (instance VCC_i (viewRef prim (cellRef VCC (libraryRef smartfusion)))          )
           (instance GND_i (viewRef prim (cellRef GND (libraryRef smartfusion)))          )
+          (net ADCDirectInput_0 (joined
+           (portRef ADCDirectInput_0)
+           (portRef ADCDirectInput_0 (instanceRef motorCONTROL_MSS_0))
+          ))
+          (net ADCDirectInput_1 (joined
+           (portRef ADCDirectInput_1)
+           (portRef ADCDirectInput_1 (instanceRef motorCONTROL_MSS_0))
+          ))
           (net MSS_RESET_N (joined
            (portRef MSS_RESET_N)
            (portRef MSS_RESET_N (instanceRef motorCONTROL_MSS_0))
@@ -7900,6 +7957,10 @@
           (net UART_1_RXD (joined
            (portRef UART_1_RXD)
            (portRef UART_1_RXD (instanceRef motorCONTROL_MSS_0))
+          ))
+          (net VAREF1 (joined
+           (portRef VAREF1)
+           (portRef VAREF1 (instanceRef motorCONTROL_MSS_0))
           ))
           (net UART_0_TXD (joined
            (portRef UART_0_TXD (instanceRef motorCONTROL_MSS_0))

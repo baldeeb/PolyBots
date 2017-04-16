@@ -2,7 +2,7 @@
 <device>
   <name>motorCONTROL</name>
   <version>1.0</version>
-  <description>CMSIS description for motorCONTROL.  Created by Microsemi SmartDesign on Fri Apr 14 22:35:58 2017</description>
+  <description>CMSIS description for motorCONTROL.  Created by Microsemi SmartDesign on Sat Apr 15 17:03:31 2017</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>
@@ -1857,6 +1857,10 @@
     <peripheral>
       <name>FPGA_FABRIC_BACKDOOR</name>
       <baseAddress>0x40040000</baseAddress>
+    </peripheral>
+    <peripheral>
+      <name>ACE</name>
+      <baseAddress>0x40000000</baseAddress>
     </peripheral>
     <peripheral>
       <name>FROM</name>

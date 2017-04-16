@@ -21,6 +21,10 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"N:\eecs373\project\FollowerBot\FollowerBot\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v"
 @I::"N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL\motorCONTROL.v"
 Verilog syntax check successful!
+File N:\eecs373\project\FollowerBot\FollowerBot\hdl\m_control.v changed - recompiling
+File N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL_MSS\mss_tshell.v changed - recompiling
+File N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
+File N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL_MSS\motorCONTROL_MSS.v changed - recompiling
 File N:\eecs373\project\FollowerBot\FollowerBot\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v changed - recompiling
 File N:\eecs373\project\FollowerBot\FollowerBot\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v changed - recompiling
 File N:\eecs373\project\FollowerBot\FollowerBot\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v changed - recompiling
@@ -110,6 +114,8 @@ Selecting top level module motorCONTROL
 @W: CG360 :"N:\eecs373\project\FollowerBot\FollowerBot\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":1495:0:1495:8|No assignment to wire CAPB3IlOI
 
 @N: CG364 :"N:\eecs373\project\FollowerBot\FollowerBot\hdl\m_control.v":2:7:2:15|Synthesizing module m_control
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v":2663:7:2663:13|Synthesizing module INBUF_A
 
 @N: CG364 :"N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL_MSS\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB
 
@@ -218,7 +224,7 @@ Selecting top level module motorCONTROL
 At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 78MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Fri Apr 14 22:37:21 2017
+# Sat Apr 15 17:28:07 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
@@ -227,14 +233,14 @@ Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Apr 14 22:37:21 2017
+# Sat Apr 15 17:28:08 2017
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Fri Apr 14 22:37:21 2017
+Process took 0h:00m:03s realtime, 0h:00m:01s cputime
+# Sat Apr 15 17:28:08 2017
 
 ###########################################################]

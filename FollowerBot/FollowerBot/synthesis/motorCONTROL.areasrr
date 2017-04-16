@@ -20,13 +20,14 @@ Report for cell motorCONTROL_MSS.netlist
                     BIBUF_OPEND_MSS         2       0.0        0.0
                                BUFF         3       1.0        3.0
                                 GND         1       0.0        0.0
+                            INBUF_A         3       0.0        0.0
                           INBUF_MSS         3       0.0        0.0
                             MSS_APB         1       0.0        0.0
                          OUTBUF_MSS         2       0.0        0.0
                                 VCC         1       0.0        0.0
           motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
                             
-                         TOTAL             22                  3.0
+                         TOTAL             25                  3.0
 ----------------------------------------------------------------------
 Report for cell motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.netlist
      Instance path:  motorCONTROL_MSS_0.MSS_CCC_0

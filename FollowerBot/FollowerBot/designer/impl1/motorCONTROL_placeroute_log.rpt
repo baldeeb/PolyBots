@@ -33,16 +33,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Fri Apr 14 22:38:03 2017
+Timing-driven Placer Started: Sat Apr 15 17:28:52 2017
 
-Placer Finished: Fri Apr 14 22:38:10 2017
-Total Placer CPU Time:     00:00:07
+Placer Finished: Sat Apr 15 17:29:00 2017
+Total Placer CPU Time:     00:00:08
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: motorCONTROL                    Started: Fri Apr 14 22:38:13 2017
+Design: motorCONTROL                    Started: Sat Apr 15 17:29:04 2017
 
  
 Iterative improvement...
@@ -50,9 +50,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: motorCONTROL                    
-Finished: Fri Apr 14 22:38:26 2017
-Total CPU Time:     00:00:12            Total Elapsed Time: 00:00:13
-Total Memory Usage: 171.8 Mbytes
+Finished: Sat Apr 15 17:29:22 2017
+Total CPU Time:     00:00:16            Total Elapsed Time: 00:00:18
+Total Memory Usage: 172.2 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
@@ -60,7 +60,7 @@ Finished loading the Timing data.
 TIMER: Max delay timing requirements have NOT been met.
 TIMER: Min delay timing requirements have been met.
 
-The Layout command succeeded ( 00:00:30 )
+The Layout command succeeded ( 00:00:37 )
 Wrote status report to file: motorCONTROL_place_and_route_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -81,6 +81,6 @@ Wrote pin report to file: motorCONTROL_report_pin_bynumber.txt
 The Report command succeeded ( 00:00:01 )
 Design saved to file N:\eecs373\project\FollowerBot\FollowerBot\designer\impl1\motorCONTROL.adb.
 
-The Execute Script command succeeded ( 00:00:34 )
+The Execute Script command succeeded ( 00:00:43 )
 Design closed.
 

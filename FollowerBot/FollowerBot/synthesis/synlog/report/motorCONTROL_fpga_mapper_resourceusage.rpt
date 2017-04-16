@@ -44,15 +44,16 @@ Report for cell motorCONTROL.verilog
          BIBUF_MSS     8
    BIBUF_OPEND_MSS     2
              INBUF     2
+           INBUF_A     3
          INBUF_MSS     3
             OUTBUF     6
         OUTBUF_MSS     2
                    -----
-             TOTAL    23
+             TOTAL    26
 
 
 Core Cells         : 615 of 4608 (13%)
-IO Cells           : 23
+IO Cells           : 26
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

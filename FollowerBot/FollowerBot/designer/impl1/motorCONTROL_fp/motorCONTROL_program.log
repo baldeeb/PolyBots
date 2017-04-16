@@ -6,7 +6,9 @@ Software Version: 11.7.1.14
 PDB file
 'N:\eecs373\project\FollowerBot\FollowerBot\designer\impl1\motorCONTROL_fp\motorCONTROL.pdb' has
 been loaded successfully.
-DESIGN : motorCONTROL;  CHECKSUM : A397;  PDB_VERSION : 1.9
+DESIGN : motorCONTROL;  CHECKSUM : 8193;  PDB_VERSION : 1.9
+Driver : 3.0.0 build 1
+programmer '79978' : FlashPro3
 Warning: The programmer with id '80216' in the project file cannot be detected and connected.
 Opened
 'N:\eecs373\project\FollowerBot\FollowerBot\designer\impl1\motorCONTROL_fp\motorCONTROL.pro'
@@ -22,13 +24,29 @@ Info: Adding FPGA Array data from file
 PDB file
 'N:\eecs373\project\FollowerBot\FollowerBot\designer\impl1\motorCONTROL_fp\motorCONTROL.pdb' has
 been loaded successfully.
-DESIGN : motorCONTROL;  CHECKSUM : A397;  PDB_VERSION : 1.9
+DESIGN : motorCONTROL;  CHECKSUM : 8193;  PDB_VERSION : 1.9
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
-Error: No programmers found. Please check the programmer connection to the computer and ensure
-       the drivers are properly installed.
-Error: Failed to run Action.
-Error: The command 'run_selected_actions' failed.
-Error: Failure when executing Tcl script. [ Line 15 ]
-Error: The Execute Script command failed.
+programmer '79978' : Scan Chain...
+Warning: programmer '79978' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '79978' : Scan Chain PASSED.
+programmer '79978' : Executing action PROGRAM
+programmer '79978' : EXPORT FSN[48] = 014b3e60a488
+programmer '79978' : Erase ...
+programmer '79978' : Completed erase
+programmer '79978' : EXPORT CHECKSUM: [16] = 8193
+programmer '79978' : Programming FPGA Array
+programmer '79978' : Verifying FPGA Array
+programmer '79978' :         Verifying FPGA Array -- pass
+programmer '79978' : Program System Init and Boot Clients...
+programmer '79978' : Verify System Init and Boot Clients...
+programmer '79978' : Finished: Sun Apr 16 03:27:45 2017 (Elapsed time 00:00:37)
+programmer '79978' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
 Project closed.

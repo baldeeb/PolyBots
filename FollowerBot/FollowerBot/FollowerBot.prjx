@@ -57,13 +57,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492223751"
+TIME="1492290204"
 SIZE="2769"
 PARENT="<project>\component\work\motorCONTROL\motorCONTROL.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1492223751"
+TIME="1492290204"
 SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -71,14 +71,14 @@ IS_INCLUDED="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
 STATE="utd"
-TIME="1481078041"
+TIME="1474391964"
 SIZE="912"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
 STATE="utd"
-TIME="1486073012"
+TIME="1474391964"
 SIZE="4636"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -86,7 +86,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
 STATE="utd"
-TIME="1486073012"
+TIME="1474391964"
 SIZE="9073"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -94,7 +94,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 STATE="utd"
-TIME="1486073012"
+TIME="1474391964"
 SIZE="25129"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -102,7 +102,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 STATE="utd"
-TIME="1486073012"
+TIME="1474391964"
 SIZE="36275"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -110,7 +110,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
 STATE="utd"
-TIME="1486073012"
+TIME="1474391964"
 SIZE="122456"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -118,7 +118,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v,hdl"
 STATE="utd"
-TIME="1486073013"
+TIME="1474391964"
 SIZE="32806"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -126,7 +126,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v,hdl"
 STATE="utd"
-TIME="1486073013"
+TIME="1474391964"
 SIZE="3556"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -134,7 +134,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v,hdl"
 STATE="utd"
-TIME="1486073013"
+TIME="1474391964"
 SIZE="6765"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -142,7 +142,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1486073012"
+TIME="1474391964"
 SIZE="23651"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -152,7 +152,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209122"
+TIME="1492290181"
 SIZE="945"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
@@ -168,115 +168,121 @@ END_USE_CONSTRAINT
 USE_FOR_ANY_TOOL="FALSE"
 IS_READONLY="TRUE"
 ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ACE\2.2.100\MSS_ACE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1492290167"
+SIZE="252"
+PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
+ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209111"
+TIME="1492290168"
 SIZE="252"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209111"
+TIME="1492290168"
 SIZE="252"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.200\MSS_COM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209111"
+TIME="1492290169"
 SIZE="252"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209111"
+TIME="1492290169"
 SIZE="252"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.3.200\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209118"
+TIME="1492290176"
 SIZE="253"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIC\1.0.101\MSS_FIC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209118"
+TIME="1492290176"
 SIZE="252"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209118"
+TIME="1492290176"
 SIZE="252"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209119"
+TIME="1492290176"
 SIZE="253"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_I2C\1.0.101\MSS_I2C.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209119"
+TIME="1492290176"
 SIZE="252"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209119"
+TIME="1492290176"
 SIZE="253"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209119"
+TIME="1492290176"
 SIZE="254"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209119"
+TIME="1492290176"
 SIZE="252"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209119"
+TIME="1492290177"
 SIZE="254"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UART\1.0.101\MSS_UART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209119"
+TIME="1492290177"
 SIZE="253"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209119"
+TIME="1492290177"
 SIZE="254"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209139"
-SIZE="2374"
+TIME="1492290165"
+SIZE="2543"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492207028"
+TIME="1492283763"
 SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL\motorCONTROL.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492223794"
-SIZE="8003"
+TIME="1492290232"
+SIZE="8720"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL\motorCONTROL.pdc,pdc"
 STATE="utd"
-TIME="1492223749"
-SIZE="2977"
+TIME="1492290202"
+SIZE="2043"
 PARENT="<project>\component\work\motorCONTROL\motorCONTROL.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -286,20 +292,20 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL\motorCONTROL.v,hdl"
 STATE="utd"
-TIME="1492223752"
-SIZE="15559"
+TIME="1492290205"
+SIZE="16055"
 PARENT="<project>\component\work\motorCONTROL\motorCONTROL.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209126"
-SIZE="15738"
+TIME="1492290186"
+SIZE="16657"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.pdc,pdc"
 STATE="utd"
-TIME="1492209106"
-SIZE="1044"
+TIME="1492290152"
+SIZE="1288"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -309,34 +315,41 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.v,hdl"
 STATE="utd"
-TIME="1492209124"
-SIZE="26260"
+TIME="1492290183"
+SIZE="27032"
+PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\motorCONTROL_MSS\MSS_ACE_0\MSS_ACE_0.log,???"
+STATE="utd"
+TIME="1492290167"
+SIZE="31587"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209111"
+TIME="1492290168"
 SIZE="499"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
 STATE="utd"
-TIME="1492209111"
+TIME="1492290168"
 SIZE="2894"
 PARENT="<project>\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL_MSS\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1492209118"
-SIZE="16219"
+TIME="1492290176"
+SIZE="17641"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL_MSS\mss_tshell.v,hdl"
 STATE="utd"
-TIME="1492209120"
+TIME="1492290178"
 SIZE="12227"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -348,7 +361,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc,sdc"
 STATE="utd"
-TIME="1492209120"
+TIME="1492290178"
 SIZE="202"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -360,62 +373,62 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL.adb,adb"
 STATE="utd"
-TIME="1492223943"
+TIME="1492283764"
 SIZE="716288"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL.fdb,fdb"
 STATE="utd"
-TIME="1492223942"
-SIZE="52484"
+TIME="1492291806"
+SIZE="53436"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL.ide_des,ide_des"
 STATE="utd"
-TIME="1492223943"
+TIME="1492283764"
 SIZE="1091"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_compile_log.rpt,log"
 STATE="utd"
-TIME="1492223875"
+TIME="1492283764"
 SIZE="32323"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_fp\motorCONTROL.pdb,pdb"
 STATE="utd"
-TIME="1492224322"
-SIZE="58027"
+TIME="1492283764"
+SIZE="58030"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_fp\motorCONTROL.pro,pro"
 STATE="utd"
-TIME="1492224368"
+TIME="1492283764"
 SIZE="2435"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_fp\projectData\motorCONTROL.pdb,pdb"
 STATE="utd"
-TIME="1492224366"
+TIME="1492283764"
 SIZE="58027"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1492223912"
+TIME="1492291769"
 SIZE="2699"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1492223943"
+TIME="1492291808"
 SIZE="705"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1492223919"
+TIME="1492291779"
 SIZE="1198"
 ENDFILE
 VALUE "<project>\hdl\m_control.v,hdl"
 STATE="utd"
-TIME="1492207029"
+TIME="1492283766"
 SIZE="2811"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
-TIME="1481078041"
+TIME="1474391964"
 SIZE="1229"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
@@ -427,46 +440,46 @@ PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
 STATE="utd"
-TIME="1492207029"
+TIME="1492283766"
 SIZE="8016"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1492223752"
+TIME="1492290205"
 SIZE="634"
 PARENT="<project>\component\work\motorCONTROL\motorCONTROL.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1492209112"
-SIZE="5497"
+TIME="1492290170"
+SIZE="10396"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\user.bfm,sim"
 STATE="utd"
-TIME="1492207029"
+TIME="1492283766"
 SIZE="670"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL.edn,syn_edn"
 STATE="utd"
-TIME="1492223852"
+TIME="1492283766"
 SIZE="449308"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL.so,so"
 STATE="utd"
-TIME="1492223852"
+TIME="1492283766"
 SIZE="236"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1492223852"
+TIME="1492283766"
 SIZE="552"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL_syn.prj,prj"
 STATE="utd"
-TIME="1492223853"
+TIME="1492283766"
 SIZE="2773"
 ENDFILE
 ENDLIST
@@ -536,17 +549,6 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
-ENDLIST
-LIST ProjectState5.1
-LIST Impl1
-ideSTIMULUS=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -652,8 +654,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.7\\\Synplify\\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -699,17 +701,6 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
-LIST "CoreAPB3::COREAPB3_LIB"
-LIST Impl1
-ideSTIMULUS=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -737,6 +728,7 @@ LIST "BIBUF_OPEND_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_com
 ENDLIST
 LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
 SUBBLOCK "HAL::work","","FALSE","FALSE"
+SUBBLOCK "MSS_ACE_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_GPIO_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_I2C_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_IAP_Driver::work","","FALSE","FALSE"
@@ -776,6 +768,8 @@ SUBBLOCK "motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC::work","component\work\motorCON
 ENDLIST
 LIST "motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC::work","component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v","FALSE","FALSE"
 SUBBLOCK "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_ACE_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "MSS_ALL::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST

@@ -84,6 +84,8 @@ Selecting top level module motorCONTROL
 
 @N: CG364 :"N:\eecs373\project\FollowerBot\FollowerBot\hdl\m_control.v":2:7:2:15|Synthesizing module m_control
 
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v":2663:7:2663:13|Synthesizing module INBUF_A
+
 @N: CG364 :"N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL_MSS\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB
 
 @N: CG364 :"N:\eecs373\project\FollowerBot\FollowerBot\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC

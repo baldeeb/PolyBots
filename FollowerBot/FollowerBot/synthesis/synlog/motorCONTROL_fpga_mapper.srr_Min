@@ -1,7 +1,7 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Fri Apr 14 22:37:32 2017
+# Timing Report written on Sat Apr 15 17:28:21 2017
 #
 
 
@@ -149,17 +149,20 @@ Detailed Report for Clock: System
 Starting Points with Worst Slack
 ********************************
 
-                                      Starting                                                                                   Arrival          
-Instance                              Reference     Type        Pin              Net                                             Time        Slack
-                                      Clock                                                                                                       
---------------------------------------------------------------------------------------------------------------------------------------------------
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLK           MSS_ADLIB_INST_EMCCLK                           0.000       0.225
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[9]      0.000       3.671
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[10]     0.000       3.717
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          motorCONTROL_MSS_0_MSS_MASTER_APB_PSELx         0.000       3.846
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[11]     motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[11]     0.000       3.857
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[8]      0.000       3.898
-==================================================================================================================================================
+                                        Starting                                                                                   Arrival          
+Instance                                Reference     Type        Pin              Net                                             Time        Slack
+                                        Clock                                                                                                       
+----------------------------------------------------------------------------------------------------------------------------------------------------
+motorCONTROL_MSS_0.MSS_ACE_0_ADC5       System        INBUF_A     Y                MSS_ACE_0_ADC5_Y                                0.000       0.225
+motorCONTROL_MSS_0.MSS_ACE_0_ADC6       System        INBUF_A     Y                MSS_ACE_0_ADC6_Y                                0.000       0.225
+motorCONTROL_MSS_0.MSS_ACE_0_VAREF1     System        INBUF_A     Y                MSS_ACE_0_VAREF1_Y                              0.000       0.225
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     EMCCLK           MSS_ADLIB_INST_EMCCLK                           0.000       0.225
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[9]      motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[9]      0.000       3.671
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[10]     motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[10]     0.000       3.717
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPSEL          motorCONTROL_MSS_0_MSS_MASTER_APB_PSELx         0.000       3.846
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[11]     motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[11]     0.000       3.857
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[8]      motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[8]      0.000       3.898
+====================================================================================================================================================
 
 
 Ending Points with Worst Slack
@@ -169,16 +172,16 @@ Ending Points with Worst Slack
 Instance                              Reference     Type        Pin              Net                                             Time         Slack
                                       Clock                                                                                                        
 ---------------------------------------------------------------------------------------------------------------------------------------------------
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     ADC5             MSS_ACE_0_ADC5_Y                                0.000        0.225
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     ADC6             MSS_ACE_0_ADC6_Y                                0.000        0.225
 motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLKRTN        MSS_ADLIB_INST_EMCCLK                           0.000        0.225
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     VAREF1           MSS_ACE_0_VAREF1_Y                              0.000        0.225
 motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[0]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[0]     0.000        3.671
 motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[1]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[1]     0.000        3.671
 motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[2]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[2]     0.000        3.671
 motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[3]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[3]     0.000        3.671
 motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[4]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[4]     0.000        3.671
 motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[5]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[5]     0.000        3.671
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[6]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[6]     0.000        3.671
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[7]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[7]     0.000        3.671
-motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[8]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[8]     0.000        3.671
 ===================================================================================================================================================
 
 
@@ -198,18 +201,18 @@ Path information for path number 1:
     = Slack (critical) :                     0.225
 
     Number of logic level(s):                0
-    Starting point:                          motorCONTROL_MSS_0.MSS_ADLIB_INST / EMCCLK
-    Ending point:                            motorCONTROL_MSS_0.MSS_ADLIB_INST / EMCCLKRTN
+    Starting point:                          motorCONTROL_MSS_0.MSS_ACE_0_ADC5 / Y
+    Ending point:                            motorCONTROL_MSS_0.MSS_ADLIB_INST / ADC5
     The start point is clocked by            System [rising]
     The end   point is clocked by            System [rising]
 
-Instance / Net                                    Pin           Pin               Arrival     No. of    
-Name                                  Type        Name          Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------
-motorCONTROL_MSS_0.MSS_ADLIB_INST     MSS_APB     EMCCLK        Out     0.000     0.000       -         
-MSS_ADLIB_INST_EMCCLK                 Net         -             -       0.225     -           1         
-motorCONTROL_MSS_0.MSS_ADLIB_INST     MSS_APB     EMCCLKRTN     In      -         0.225       -         
-========================================================================================================
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                  Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+motorCONTROL_MSS_0.MSS_ACE_0_ADC5     INBUF_A     Y        Out     0.000     0.000       -         
+MSS_ACE_0_ADC5_Y                      Net         -        -       0.225     -           1         
+motorCONTROL_MSS_0.MSS_ADLIB_INST     MSS_APB     ADC5     In      -         0.225       -         
+===================================================================================================
 
 
 

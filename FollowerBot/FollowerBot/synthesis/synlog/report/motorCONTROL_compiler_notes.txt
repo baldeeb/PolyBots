@@ -3,6 +3,7 @@
 @N: CG364 :"N:\eecs373\project\FollowerBot\FollowerBot\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:6|Synthesizing module CAPB3II
 @N: CG364 :"N:\eecs373\project\FollowerBot\FollowerBot\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3
 @N: CG364 :"N:\eecs373\project\FollowerBot\FollowerBot\hdl\m_control.v":2:7:2:15|Synthesizing module m_control
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v":2663:7:2663:13|Synthesizing module INBUF_A
 @N: CG364 :"N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL_MSS\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB
 @N: CG364 :"N:\eecs373\project\FollowerBot\FollowerBot\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC
 @N: CG364 :"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v":2620:7:2620:11|Synthesizing module RCOSC

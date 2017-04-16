@@ -7,13 +7,13 @@ Info: The design N:/eecs373/project/FollowerBot/FollowerBot/designer/impl1/motor
 Opened an existing Libero design
 N:/eecs373/project/FollowerBot/FollowerBot/designer/impl1/motorCONTROL.adb.
 
-The Export-map command succeeded ( 00:00:13 )
-CHECKSUM: A397
+The Export-map command succeeded ( 00:00:14 )
+CHECKSUM: 8193
 Wrote to the file: N:\eecs373\project\FollowerBot\FollowerBot\designer\impl1\motorCONTROL.fdb
 
-The Export command succeeded ( 00:00:17 )
+The Export command succeeded ( 00:00:18 )
 Design saved to file N:/eecs373/project/FollowerBot/FollowerBot/designer/impl1/motorCONTROL.adb.
 
-The Execute Script command succeeded ( 00:00:20 )
+The Execute Script command succeeded ( 00:00:23 )
 Design closed.
 

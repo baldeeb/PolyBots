@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Apr 14 18:32:02 2017
+// Created by SmartDesign Sat Apr 15 17:03:01 2017
 // Version: v11.7 SP1 11.7.1.14
 //////////////////////////////////////////////////////////////////////
 
@@ -8,12 +8,15 @@
 // motorCONTROL_MSS
 module motorCONTROL_MSS(
     // Inputs
+    ADCDirectInput_0,
+    ADCDirectInput_1,
     MSSPRDATA,
     MSSPREADY,
     MSSPSLVERR,
     MSS_RESET_N,
     UART_0_RXD,
     UART_1_RXD,
+    VAREF1,
     // Outputs
     FAB_CLK,
     M2F_RESET_N,
@@ -40,12 +43,15 @@ module motorCONTROL_MSS(
 //--------------------------------------------------------------------
 // Input
 //--------------------------------------------------------------------
+input         ADCDirectInput_0;
+input         ADCDirectInput_1;
 input  [31:0] MSSPRDATA;
 input         MSSPREADY;
 input         MSSPSLVERR;
 input         MSS_RESET_N;
 input         UART_0_RXD;
 input         UART_1_RXD;
+input         VAREF1;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
@@ -74,6 +80,8 @@ inout         I2C_1_SDA;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
+wire          ADCDirectInput_0;
+wire          ADCDirectInput_1;
 wire          GPIO_0_BI;
 wire          GPIO_1_BI;
 wire          GPIO_2_BI;
@@ -84,6 +92,9 @@ wire          GPIO_6_BI;
 wire          GPIO_7_BI;
 wire          I2C_1_SCL;
 wire          I2C_1_SDA;
+wire          MSS_ACE_0_ADC5_Y;
+wire          MSS_ACE_0_ADC6_Y;
+wire          MSS_ACE_0_VAREF1_Y;
 wire          MSS_ADLIB_INST_EMCCLK;
 wire          MSS_ADLIB_INST_FCLK;
 wire          MSS_ADLIB_INST_MACCLK;
@@ -137,6 +148,7 @@ wire          UART_0_RXD;
 wire          UART_0_TXD_net_0;
 wire          UART_1_RXD;
 wire          UART_1_TXD_net_0;
+wire          VAREF1;
 wire          net_72_PSELx_net_0;
 wire          net_72_PENABLE_net_0;
 wire          net_72_PWRITE_net_0;
@@ -218,6 +230,30 @@ assign GPI_net_0 = { 24'h000000 , MSS_GPIO_0_GPIO_7_BI_Y , MSS_GPIO_0_GPIO_6_BI_
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
+//--------INBUF_A
+INBUF_A MSS_ACE_0_ADC5(
+        // Inputs
+        .PAD ( ADCDirectInput_0 ),
+        // Outputs
+        .Y   ( MSS_ACE_0_ADC5_Y ) 
+        );
+
+//--------INBUF_A
+INBUF_A MSS_ACE_0_ADC6(
+        // Inputs
+        .PAD ( ADCDirectInput_1 ),
+        // Outputs
+        .Y   ( MSS_ACE_0_ADC6_Y ) 
+        );
+
+//--------INBUF_A
+INBUF_A MSS_ACE_0_VAREF1(
+        // Inputs
+        .PAD ( VAREF1 ),
+        // Outputs
+        .Y   ( MSS_ACE_0_VAREF1_Y ) 
+        );
+
 //--------MSS_APB
 MSS_APB #( 
         .ACT_CONFIG ( 256 ),
@@ -308,8 +344,8 @@ MSS_ADLIB_INST(
         .ADC2           ( GND_net ), // tied to 1'b0 from definition
         .ADC3           ( GND_net ), // tied to 1'b0 from definition
         .ADC4           ( GND_net ), // tied to 1'b0 from definition
-        .ADC5           ( GND_net ), // tied to 1'b0 from definition
-        .ADC6           ( GND_net ), // tied to 1'b0 from definition
+        .ADC5           ( MSS_ACE_0_ADC5_Y ),
+        .ADC6           ( MSS_ACE_0_ADC6_Y ),
         .ADC7           ( GND_net ), // tied to 1'b0 from definition
         .ADC8           ( GND_net ), // tied to 1'b0 from definition
         .ADC9           ( GND_net ), // tied to 1'b0 from definition
@@ -343,7 +379,7 @@ MSS_ADLIB_INST(
         .GNDTM1         ( GND_net ), // tied to 1'b0 from definition
         .GNDTM2         ( GND_net ), // tied to 1'b0 from definition
         .VAREF0         ( GND_net ), // tied to 1'b0 from definition
-        .VAREF1         ( GND_net ), // tied to 1'b0 from definition
+        .VAREF1         ( MSS_ACE_0_VAREF1_Y ),
         .VAREF2         ( GND_net ), // tied to 1'b0 from definition
         .GNDVAREF       ( GND_net ), // tied to 1'b0 from definition
         .PUn            ( GND_net ), // tied to 1'b0 from definition

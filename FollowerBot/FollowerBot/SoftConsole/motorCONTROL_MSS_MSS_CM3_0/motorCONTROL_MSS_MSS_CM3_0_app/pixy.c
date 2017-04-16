@@ -115,7 +115,7 @@ int pixy_x_err( unsigned int *mag, unsigned int *dir){
 			break;
 		}
 	}
-	printf("obj_index: %x\n\r",obj_index);
+//	printf("obj_index: %x\n\r",obj_index);
 	//return if no object was found
 	if(obj_index == PIXY_OBJECT_COUNT){
 		*mag = 0;
