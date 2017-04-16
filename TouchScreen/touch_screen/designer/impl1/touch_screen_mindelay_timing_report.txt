@@ -2,7 +2,7 @@ Timing Report Min Delay Analysis
 
 SmartTime Version v11.7 SP1.1
 Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
-Date: Sat Apr 15 16:55:04 2017
+Date: Sat Apr 15 23:42:13 2017
 
 
 Design: touch_screen
@@ -70,8 +70,8 @@ Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
 External Setup (ns):        N/A
 External Hold (ns):         N/A
-Min Clock-To-Out (ns):      N/A
-Max Clock-To-Out (ns):      N/A
+Min Clock-To-Out (ns):      8.023
+Max Clock-To-Out (ns):      16.177
 
 Clock Domain:               touch_screen_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
 Period (ns):                N/A
@@ -558,7 +558,59 @@ END SET External Hold
 
 SET Clock to Output
 
-No Path
+Path 1
+  From:                        touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          SPI_1_FAB_SS_0[1]
+  Delay (ns):                  5.466
+  Slack (ns):
+  Arrival (ns):                8.023
+  Required (ns):
+  Clock to Out (ns):           8.023
+
+
+Expanded Path 1
+  From: touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To: SPI_1_FAB_SS_0[1]
+  data arrival time                              8.023
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla0
+               +     0.000          Clock source
+  0.000                        touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     2.248          Clock generation
+  2.248
+               +     0.309          net: touch_screen_MSS_0/GLA0
+  2.557                        touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               +     2.382          cell: ADLIB:MSS_APB_IP
+  4.939                        touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:SPI1SSO[1] (r)
+               +     0.000          net: touch_screen_MSS_0/MSS_ADLIB_INST/SPI1SSO[1]INT_NET
+  4.939                        touch_screen_MSS_0/MSS_ADLIB_INST/U_9:PIN1INT (r)
+               +     0.042          cell: ADLIB:MSS_IF
+  4.981                        touch_screen_MSS_0/MSS_ADLIB_INST/U_9:PIN1 (r)
+               +     1.675          net: SPI_1_FAB_SS_0_c[1]
+  6.656                        SPI_1_FAB_SS_0_pad[1]/U0/U1:D (r)
+               +     0.279          cell: ADLIB:IOTRI_OB_EB
+  6.935                        SPI_1_FAB_SS_0_pad[1]/U0/U1:DOUT (r)
+               +     0.000          net: SPI_1_FAB_SS_0_pad[1]/U0/NET1
+  6.935                        SPI_1_FAB_SS_0_pad[1]/U0/U0:D (r)
+               +     1.088          cell: ADLIB:IOPAD_TRI
+  8.023                        SPI_1_FAB_SS_0_pad[1]/U0/U0:PAD (r)
+               +     0.000          net: SPI_1_FAB_SS_0[1]
+  8.023                        SPI_1_FAB_SS_0[1] (r)
+                                    
+  8.023                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla0
+               +     0.000          Clock source
+  N/C                          touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     2.248          Clock generation
+  N/C
+                                    
+  N/C                          SPI_1_FAB_SS_0[1] (r)
+
 
 END SET Clock to Output
 

@@ -21,15 +21,16 @@ Report for cell touch_screen.verilog
               cell count
          BIBUF_MSS     2
    BIBUF_OPEND_MSS     2
-         INBUF_MSS     1
-            OUTBUF     1
+         INBUF_MSS     2
+            OUTBUF     2
+        OUTBUF_MSS     1
        TRIBUFF_MSS     1
                    -----
-             TOTAL     7
+             TOTAL    10
 
 
 Core Cells         : 4 of 4608 (0%)
-IO Cells           : 7
+IO Cells           : 10
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

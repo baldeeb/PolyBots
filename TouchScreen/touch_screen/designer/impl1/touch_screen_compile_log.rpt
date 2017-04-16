@@ -12,12 +12,12 @@ Opened an existing Libero design touch_screen.adb.
 'IDE_DESIGNERVIEW_ROOTDIR' set to 'N:\eecs373\PolyBots\TouchScreen\touch_screen\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 1.0 seconds
+ Netlist Reading Time = 0.0 seconds
 Imported the files:
    N:\eecs373\PolyBots\TouchScreen\touch_screen\synthesis\touch_screen.edn
    N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen\touch_screen.pdc
 
-The Import command succeeded ( 00:00:04 )
+The Import command succeeded ( 00:00:05 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -73,7 +73,6 @@ Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0DO drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0DOE drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0CLKO drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0MODE drives no load.
-Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_UART0TXD drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_I2C0SDAO drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_I2C0SCLO drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_UART1TXD drives no load.
@@ -249,7 +248,6 @@ Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0SSO[4] drives no load
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0SSO[5] drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0SSO[6] drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0SSO[7] drives no load.
-Warning: CMP201: Net touch_screen_MSS_0/SPI1SSO_net_0[1] drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/SPI1SSO_net_0[2] drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/SPI1SSO_net_0[3] drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/SPI1SSO_net_0[4] drives no load.
@@ -440,7 +438,7 @@ Optimized macros:
 
     Total macros optimized  0
 
-There were 0 error(s) and 323 warning(s) in this design.
+There were 0 error(s) and 321 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -461,10 +459,10 @@ Compile report:
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
     Fabric                     Used:      4  Total:   4608   (0.09%)
-    Fabric IO (W/ clocks)      Used:      1  Total:     94   (1.06%)
+    Fabric IO (W/ clocks)      Used:      2  Total:     94   (2.13%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:      6  Total:     43   (13.95%)
+    Dedicated MSS IO           Used:      8  Total:     43   (18.60%)
     GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -497,7 +495,7 @@ I/O Function:
     Type                                  | w/o register  | w/ register  | w/ DDR register
     --------------------------------------|---------------|--------------|----------------
     Input I/O                             | 0             | 0            | 0
-    Output I/O                            | 1             | 0            | 0
+    Output I/O                            | 2             | 0            | 0
     Bidirectional I/O                     | 0             | 0            | 0
     Differential Input I/O Pairs          | 0             | 0            | 0
     Differential Output I/O Pairs         | 0             | 0            | 0
@@ -508,13 +506,15 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 0     | 1      | 0
+    LVTTL                           | 3.30v | N/A   | 0     | 2      | 0
 
 I/O Placement:
 
-    Locked  :   1 ( 100.00% )
+    Locked  :   1 ( 50.00% )
     Placed  :   0
-    UnPlaced:   0
+    UnPlaced:   1 ( 50.00% )
+
+Warning: Only some I/Os are locked
 
 Net information report:
 =======================
@@ -541,6 +541,8 @@ High fanout nets in the post compile netlist:
                           Driver: touch_screen_MSS_0/MSS_ADLIB_INST
     1       INT_NET       Net   : touch_screen_MSS_0_M2F_RESET_N
                           Driver: touch_screen_MSS_0/MSS_ADLIB_INST
+    1       INT_NET       Net   : SPI_1_FAB_SS_0_c[1]
+                          Driver: touch_screen_MSS_0/MSS_ADLIB_INST
     1       INT_NET       Net   : spi_pin_0/CD_write
                           Driver: spi_pin_0/CD_RNO_1
     1       INT_NET       Net   : spi_pin_0/CD_RNO
@@ -563,6 +565,8 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: touch_screen_MSS_0/MSS_ADLIB_INST
     1       INT_NET       Net   : touch_screen_MSS_0_M2F_RESET_N
                           Driver: touch_screen_MSS_0/MSS_ADLIB_INST
+    1       INT_NET       Net   : SPI_1_FAB_SS_0_c[1]
+                          Driver: touch_screen_MSS_0/MSS_ADLIB_INST
     1       INT_NET       Net   : spi_pin_0/CD_write
                           Driver: spi_pin_0/CD_RNO_1
     1       INT_NET       Net   : spi_pin_0/CD_RNO
@@ -583,6 +587,6 @@ The Report command succeeded ( 00:00:01 )
 Design saved to file
 N:\eecs373\PolyBots\TouchScreen\touch_screen\designer\impl1\touch_screen.adb.
 
-The Execute Script command succeeded ( 00:00:10 )
+The Execute Script command succeeded ( 00:00:12 )
 Design closed.
 

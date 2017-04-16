@@ -11,29 +11,29 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
   3 .stack        00003000  20000c68  20000c68  00008b58  2**0
                   ALLOC
-  4 .comment      000000d7  00000000  00000000  00008b58  2**0
+  4 .comment      0000012d  00000000  00000000  00008b58  2**0
                   CONTENTS, READONLY
-  5 .debug_aranges 00000220  00000000  00000000  00008c2f  2**0
+  5 .debug_aranges 00000378  00000000  00000000  00008c85  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_pubnames 0000043f  00000000  00000000  00008e4f  2**0
+  6 .debug_pubnames 00000734  00000000  00000000  00008ffd  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_info   00002b11  00000000  00000000  0000928e  2**0
+  7 .debug_info   00004442  00000000  00000000  00009731  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_abbrev 0000062b  00000000  00000000  0000bd9f  2**0
+  8 .debug_abbrev 000008ab  00000000  00000000  0000db73  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_line   00001589  00000000  00000000  0000c3ca  2**0
+  9 .debug_line   00001dc1  00000000  00000000  0000e41e  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_frame  00000750  00000000  00000000  0000d954  2**2
+ 10 .debug_frame  00000c14  00000000  00000000  000101e0  2**2
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_str    0000198f  00000000  00000000  0000e0a4  2**0
+ 11 .debug_str    00001d58  00000000  00000000  00010df4  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_loc    00000b11  00000000  00000000  0000fa33  2**0
+ 12 .debug_loc    00001396  00000000  00000000  00012b4c  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_macinfo 0001d3e2  00000000  00000000  00010544  2**0
+ 13 .debug_macinfo 00022542  00000000  00000000  00013ee2  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .ARM.attributes 00000025  00000000  00000000  0002d926  2**0
+ 14 .ARM.attributes 00000025  00000000  00000000  00036424  2**0
                   CONTENTS, READONLY
- 15 .debug_ranges 000001f8  00000000  00000000  0002d94b  2**0
+ 15 .debug_ranges 00000360  00000000  00000000  00036449  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:

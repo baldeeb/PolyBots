@@ -52,6 +52,8 @@
 <listOptionValue builtIn="false" value="&quot;N:\eecs373\PolyBots\TouchScreen\Adafruit_GFX&quot;"/>
 <listOptionValue builtIn="false" value="&quot;N:\eecs373\PolyBots\TouchScreen\Adafruit_ILI9341&quot;"/>
 <listOptionValue builtIn="false" value="&quot;N:\eecs373\PolyBots\TouchScreen\freetype_2_7_1&quot;"/>
+<listOptionValue builtIn="false" value="&quot;N:\eecs373\PolyBots\TouchScreen\Adafruit_GFX\fontconvert&quot;"/>
+<listOptionValue builtIn="false" value="&quot;N:\eecs373\PolyBots\TouchScreen\Adafruit_GFX\Fonts&quot;"/>
 </option>
 <option id="gnu.c.compiler.option.optimization.flags.224943415" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" value="-ffunction-sections -fdata-sections" valueType="string"/>
 <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.916892465" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>

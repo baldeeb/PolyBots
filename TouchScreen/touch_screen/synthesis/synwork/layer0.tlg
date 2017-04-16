@@ -105,6 +105,8 @@ Selecting top level module touch_screen
 
 @N: CG364 :"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":51:7:51:17|Synthesizing module TRIBUFF_MSS
 
+@N: CG364 :"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
+
 @N: CG364 :"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen_MSS\touch_screen_MSS.v":9:7:9:22|Synthesizing module touch_screen_MSS
 
 @N: CG364 :"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen\touch_screen.v":9:7:9:18|Synthesizing module touch_screen

@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2017 4 15 16 54 18)
+      (timeStamp 2017 4 15 23 37 57)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "J-2015.03M-SP1-2, mapper mapact, Build 1659R"))
      )
@@ -324,6 +324,22 @@
          )
        )
     )
+    (cell OUTBUF_MSS (cellType GENERIC)
+      (property ACT_CONFIG (integer 0))
+      (property ACT_PIN (string ""))
+      (property preferred (string "true"))
+      (property pad_cell (string "true"))
+      (property dont_touch (string "false"))
+       (view prim (viewType NETLIST)
+         (interface
+           (port PAD (direction OUTPUT)
+           (property function (string "D"))
+           (property is_pad (string "true"))
+ )
+           (port D (direction INPUT))
+         )
+       )
+    )
     (cell INBUF_MSS (cellType GENERIC)
       (property ACT_CONFIG (integer 0))
       (property ACT_PIN (string ""))
@@ -607,8 +623,11 @@
     (cell touch_screen_MSS (cellType GENERIC)
        (view netlist (viewType NETLIST)
          (interface
+           (port (array (rename spi_1_fab_ss_0_c "SPI_1_FAB_SS_0_c[1:1]") 1) (direction OUTPUT))
            (port (array (rename coreapb3_0_apbmslave0_paddr "CoreAPB3_0_APBmslave0_PADDR[2:2]") 1) (direction OUTPUT))
            (port (array (rename coreapb3_0_apbmslave0_pwdata "CoreAPB3_0_APBmslave0_PWDATA[0:0]") 1) (direction OUTPUT))
+           (port UART_0_TXD (direction OUTPUT))
+           (port UART_0_RXD (direction INPUT))
            (port SPI_1_SS (direction INOUT))
            (port SPI_1_DO (direction OUTPUT))
            (port SPI_1_DI (direction INPUT))
@@ -621,6 +640,16 @@
            (port CoreAPB3_0_APBmslave0_PWRITE (direction OUTPUT))
          )
          (contents
+          (instance MSS_UART_0_TXD (viewRef prim (cellRef OUTBUF_MSS (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "Y22"))
+          )
+          (instance MSS_UART_0_RXD (viewRef prim (cellRef INBUF_MSS (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "U18"))
+          )
           (instance MSS_SPI_1_SS (viewRef prim (cellRef BIBUF_MSS (libraryRef smartfusion)))
            (property is_instantiated (integer 1))
            (property ACT_CONFIG (integer 0))
@@ -661,6 +690,22 @@
           )
           (instance VCC_i (viewRef prim (cellRef VCC (libraryRef smartfusion)))          )
           (instance GND_i (viewRef prim (cellRef GND (libraryRef smartfusion)))          )
+          (net UART_0_TXD (joined
+           (portRef PAD (instanceRef MSS_UART_0_TXD))
+           (portRef UART_0_TXD)
+          ))
+          (net MSS_UART_0_TXD_D (joined
+           (portRef UART0TXD (instanceRef MSS_ADLIB_INST))
+           (portRef D (instanceRef MSS_UART_0_TXD))
+          ))
+          (net MSS_UART_0_RXD_Y (joined
+           (portRef Y (instanceRef MSS_UART_0_RXD))
+           (portRef UART0RXD (instanceRef MSS_ADLIB_INST))
+          ))
+          (net UART_0_RXD (joined
+           (portRef UART_0_RXD)
+           (portRef PAD (instanceRef MSS_UART_0_RXD))
+          ))
           (net SPI_1_SS (joined
            (portRef PAD (instanceRef MSS_SPI_1_SS))
            (portRef SPI_1_SS)
@@ -986,7 +1031,6 @@
            (portRef UART1RXD (instanceRef MSS_ADLIB_INST))
            (portRef I2C0SCLI (instanceRef MSS_ADLIB_INST))
            (portRef I2C0SDAI (instanceRef MSS_ADLIB_INST))
-           (portRef UART0RXD (instanceRef MSS_ADLIB_INST))
            (portRef SPI0SSI (instanceRef MSS_ADLIB_INST))
            (portRef SPI0CLKI (instanceRef MSS_ADLIB_INST))
            (portRef SPI0DI (instanceRef MSS_ADLIB_INST))
@@ -1068,9 +1112,6 @@
           ))
           (net MSS_ADLIB_INST_SPI0MODE (joined
            (portRef SPI0MODE (instanceRef MSS_ADLIB_INST))
-          ))
-          (net MSS_ADLIB_INST_UART0TXD (joined
-           (portRef UART0TXD (instanceRef MSS_ADLIB_INST))
           ))
           (net MSS_ADLIB_INST_I2C0SDAO (joined
            (portRef I2C0SDAO (instanceRef MSS_ADLIB_INST))
@@ -1605,8 +1646,9 @@
           (net (rename MSS_ADLIB_INST_SPI0SSO_7 "MSS_ADLIB_INST_SPI0SSO[7]") (joined
            (portRef (member spi0sso 0) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename SPI1SSO_net_0_1 "SPI1SSO_net_0[1]") (joined
+          (net (rename SPI_1_FAB_SS_0_c_1 "SPI_1_FAB_SS_0_c[1]") (joined
            (portRef (member spi1sso 6) (instanceRef MSS_ADLIB_INST))
+           (portRef (member spi_1_fab_ss_0_c 0))
           ))
           (net (rename SPI1SSO_net_0_2 "SPI1SSO_net_0[2]") (joined
            (portRef (member spi1sso 5) (instanceRef MSS_ADLIB_INST))
@@ -2060,14 +2102,19 @@
        (view verilog (viewType NETLIST)
          (interface
            (port SPI_1_DI (direction INPUT))
+           (port UART_0_RXD (direction INPUT))
            (port CD (direction OUTPUT))
            (port SPI_1_DO (direction OUTPUT))
+           (port (array (rename spi_1_fab_ss_0 "SPI_1_FAB_SS_0[1:1]") 1) (direction OUTPUT))
+           (port UART_0_TXD (direction OUTPUT))
            (port I2C_1_SCL (direction INOUT))
            (port I2C_1_SDA (direction INOUT))
            (port SPI_1_CLK (direction INOUT))
            (port SPI_1_SS (direction INOUT))
          )
          (contents
+          (instance (rename SPI_1_FAB_SS_0_pad_1 "SPI_1_FAB_SS_0_pad[1]") (viewRef prim (cellRef OUTBUF (libraryRef smartfusion)))
+          )
           (instance CD_pad (viewRef prim (cellRef OUTBUF (libraryRef smartfusion)))
           )
           (instance spi_pin_0 (viewRef netlist (cellRef spi_pin))
@@ -2080,9 +2127,17 @@
            (portRef SPI_1_DI)
            (portRef SPI_1_DI (instanceRef touch_screen_MSS_0))
           ))
+          (net UART_0_RXD (joined
+           (portRef UART_0_RXD)
+           (portRef UART_0_RXD (instanceRef touch_screen_MSS_0))
+          ))
           (net SPI_1_DO (joined
            (portRef SPI_1_DO (instanceRef touch_screen_MSS_0))
            (portRef SPI_1_DO)
+          ))
+          (net UART_0_TXD (joined
+           (portRef UART_0_TXD (instanceRef touch_screen_MSS_0))
+           (portRef UART_0_TXD)
           ))
           (net I2C_1_SCL (joined
            (portRef I2C_1_SCL (instanceRef touch_screen_MSS_0))
@@ -2137,6 +2192,14 @@
           (net CD (joined
            (portRef PAD (instanceRef CD_pad))
            (portRef CD)
+          ))
+          (net (rename SPI_1_FAB_SS_0_c_1 "SPI_1_FAB_SS_0_c[1]") (joined
+           (portRef (member spi_1_fab_ss_0_c 0) (instanceRef touch_screen_MSS_0))
+           (portRef D (instanceRef SPI_1_FAB_SS_0_pad_1))
+          ))
+          (net (rename SPI_1_FAB_SS_0_1 "SPI_1_FAB_SS_0[1]") (joined
+           (portRef PAD (instanceRef SPI_1_FAB_SS_0_pad_1))
+           (portRef (member spi_1_fab_ss_0 0))
           ))
          )
         (property orig_inst_of (string "touch_screen"))

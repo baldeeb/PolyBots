@@ -3,7 +3,7 @@
 
 # Version: v11.7 SP1 11.7.1.14
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Sat Apr 15 13:12:28 2017 
+# Date generated: Sat Apr 15 23:35:32 2017 
 
 
 # 
@@ -11,6 +11,8 @@
 # 
 
 define_group -name I2C_1_PADs
+
+define_group -name UART_0_PADs
 
 
 # 
@@ -44,6 +46,18 @@ set_io I2C_1_SCL            \
 set_io I2C_1_SDA            \
     -GROUP_NAME I2C_1_PADs  \
     -DIRECTION INOUT
+
+
+# User Group UART_0_PADs
+
+set_io UART_0_RXD            \
+    -GROUP_NAME UART_0_PADs  \
+    -DIRECTION INPUT
+
+
+set_io UART_0_TXD            \
+    -GROUP_NAME UART_0_PADs  \
+    -DIRECTION OUTPUT
 
 
 

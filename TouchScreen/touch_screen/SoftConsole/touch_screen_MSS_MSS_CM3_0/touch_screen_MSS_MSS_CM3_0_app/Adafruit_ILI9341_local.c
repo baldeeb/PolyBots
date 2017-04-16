@@ -28,8 +28,11 @@
 
 #include "drivers/mss_spi/drivers/mss_spi/mss_spi.h"
 #include "Adafruit_ILI9341_local.h"
+#include "GFX/Adafruit_GFX_local.h"
 
 #include <time.h>
+
+static uint8_t g_rx_frame = 0;
 
 void delay(int milliseconds) {
 	long pause;
@@ -51,6 +54,7 @@ uint32_t * CD_REG = (uint32_t*)(FPGA_FABRIC_BASE + 4);
 #define MADCTL_BGR 0x08
 #define MADCTL_MH  0x04
 
+
 // Pass 8-bit (each) R,G,B, get back 16-bit packed color
 uint16_t color565(uint8_t r, uint8_t g, uint8_t b) {
     return ((r & 0xF8) << 8) | ((g & 0xFC) << 3) | ((b & 0xF8) >> 3);
@@ -64,6 +68,25 @@ void spiWrite(uint8_t msg) {
 	MSS_SPI_transfer_frame(&g_mss_spi1, msg);
 }
 
+uint8_t spiRead() {
+	return g_rx_frame;
+}
+
+void rx_handler( uint32_t rx_frame ) {
+	g_rx_frame = rx_frame;
+}
+
+void SPI_WRITE16(uint16_t y){ spiWrite((y >> 8)&0x0011); spiWrite(y&0x0011);}
+void SPI_WRITE32(uint16_t xa){ spiWrite((xa >> 24) & 0x00000011); spiWrite((xa >> 16)&0x00000011); spiWrite((xa >> 8)&0x00000011); spiWrite(xa&0x00000011);}
+
+void SPI_WRITE_PIXELS(uint8_t*colors, uint8_t len) {
+	uint32_t i;
+	for( i=0; i<(len * 2); i+=2){
+		spiWrite(((uint8_t*)((uint8_t*)colors))[i+1]);
+		spiWrite(((uint8_t*)((uint8_t*)colors))[i]);
+	}
+}
+
 void writeCommand(uint8_t cmd) {
 	*CD_REG = 0;
 	spiWrite(cmd);
@@ -71,6 +94,7 @@ void writeCommand(uint8_t cmd) {
 }
 
 void begin(uint8_t frame_size) {
+	MSS_SPI_init( &g_mss_spi1 );
 	MSS_SPI_configure_master_mode
 	(
 	    &g_mss_spi1,
@@ -79,6 +103,16 @@ void begin(uint8_t frame_size) {
 	    MSS_SPI_PCLK_DIV_256,
 	    frame_size
 	);
+
+
+	  MSS_SPI_configure_slave_mode
+		(
+			&g_mss_spi1,
+			MSS_SPI_MODE2,
+			MSS_SPI_PCLK_DIV_64,
+			frame_size
+		);
+	  MSS_SPI_set_frame_rx_handler( &g_mss_spi1, rx_handler );
 
     startWrite();
 
@@ -195,4 +229,186 @@ void begin(uint8_t frame_size) {
     delay(120);
 }
 
+void setRotation(struct Print * print, uint8_t m) {
+    print->rotation = m % 4; // can't be higher than 3
+    switch (print->rotation) {
+        case 0:
+            m = (MADCTL_MX | MADCTL_BGR);
+            print->width  = ILI9341_TFTWIDTH;
+            print->height = ILI9341_TFTHEIGHT;
+            break;
+        case 1:
+            m = (MADCTL_MV | MADCTL_BGR);
+            print->width  = ILI9341_TFTHEIGHT;
+            print->height = ILI9341_TFTWIDTH;
+            break;
+        case 2:
+            m = (MADCTL_MY | MADCTL_BGR);
+            print->width  = ILI9341_TFTWIDTH;
+            print->height = ILI9341_TFTHEIGHT;
+            break;
+        case 3:
+            m = (MADCTL_MX | MADCTL_MY | MADCTL_MV | MADCTL_BGR);
+            print->width  = ILI9341_TFTHEIGHT;
+            print->height = ILI9341_TFTWIDTH;
+            break;
+    }
+
+    startWrite();
+    writeCommand(ILI9341_MADCTL);
+    spiWrite(m);
+}
+
+void invertDisplay(boolean i) {
+    startWrite();
+    writeCommand(i ? ILI9341_INVON : ILI9341_INVOFF);
+}
+
+void scrollTo(uint16_t y) {
+    startWrite();
+    writeCommand(ILI9341_VSCRSADD);
+    spiWrite((y>>8) & 0x0011);
+    spiWrite(y & 0x0011);
+}
+void setAddrWindow(uint16_t x, uint16_t y, uint16_t w, uint16_t h) {
+    uint32_t xa = ((uint32_t)x << 16) | (x+w-1);
+    uint32_t ya = ((uint32_t)y << 16) | (y+h-1);
+    writeCommand(ILI9341_CASET); // Column addr set
+    SPI_WRITE32(xa);
+    writeCommand(ILI9341_PASET); // Row addr set
+    SPI_WRITE32(ya);
+    writeCommand(ILI9341_RAMWR); // write to RAM
+}
+
+void pushColor(uint16_t color) {
+  startWrite();
+  SPI_WRITE16(color);
+  endWrite();
+}
+
+
+void writePixel(uint16_t color){
+    SPI_WRITE16(color);
+}
+
+void writePixels(uint16_t * colors, uint32_t len){
+    SPI_WRITE_PIXELS((uint8_t*)colors , len * 2);
+}
+
+
+void writePixelCoordinates(struct Print * print, int16_t x, int16_t y, uint16_t color) {
+    if((x < 0) ||(x >= print->width) || (y < 0) || (y >= print->height)) return;
+    setAddrWindow(x,y,1,1);
+    writePixel(color);
+
+void writeColor(struct Print * print, uint16_t color, uint32_t len){
+	uint32_t t;
+	uint8_t hi = color >> 8, lo = color;
+	for ( t=len; t; t--){
+		spiWrite(hi);
+		spiWrite(lo);
+	}
+
+}
+}
+
+void writeFillRect(struct Print * print,int16_t x, int16_t y, int16_t w, int16_t h, uint16_t color){
+    if((x >= print->width) || (y >= print->height)) return;
+    int16_t x2 = x + w - 1, y2 = y + h - 1;
+    if((x2 < 0) || (y2 < 0)) return;
+
+    // Clip left/top
+    if(x < 0) {
+        x = 0;
+        w = x2 + 1;
+    }
+    if(y < 0) {
+        y = 0;
+        h = y2 + 1;
+    }
+
+    // Clip right/bottom
+    if(x2 >= print->width)  w = print->width  - x;
+    if(y2 >= print->height) h = print->height - y;
+
+    int32_t len = (int32_t)w * h;
+    setAddrWindow(x, y, w, h);
+    writeColor(print, color, len);
+}
+
+void writeFastVLine(struct Print * print,int16_t x, int16_t y, int16_t h, uint16_t color){
+    writeFillRect(print, x, y, 1, h, color);
+}
+
+void writeFastHLine(struct Print * print,int16_t x, int16_t y, int16_t w, uint16_t color){
+    writeFillRect(print, x, y, w, 1, color);
+}
+
+uint8_t readcommand8(uint8_t c, uint8_t index) {
+
+    startWrite();
+    writeCommand(0xD9);  // woo sekret command?
+    spiWrite(0x10 + index);
+    writeCommand(c);
+    uint8_t r = spiRead();
+    return r;
+}
+
+void drawPixel(struct Print * print, int16_t x, int16_t y, uint16_t color){
+    startWrite();
+    writePixelCoordinates(print, x, y, color);
+}
+
+void drawFastVLine(struct Print * print,int16_t x, int16_t y,
+        int16_t h, uint16_t color) {
+    startWrite();
+    writeFastVLine(print, x, y, h, color);
+}
+
+void drawFastHLine(struct Print * print,int16_t x, int16_t y,
+        int16_t w, uint16_t color) {
+    startWrite();
+    writeFastHLine(print, x, y, w, color);
+}
+
+void fillRect(struct Print * print, int16_t x, int16_t y, int16_t w, int16_t h,
+        uint16_t color) {
+    startWrite();
+    writeFillRect(print, x,y,w,h,color);
+}
+
+// This code was ported/adapted from https://github.com/PaulStoffregen/ILI9341_t3
+// by Marc MERLIN. See examples/pictureEmbed to use this.
+void drawBitmap(struct Print * print, int16_t x, int16_t y, int16_t w, int16_t h,
+  const uint16_t *pcolors) {
+
+    int16_t x2, y2; // Lower-right coord
+    if(( x             >= print->width ) ||      // Off-edge right
+       ( y             >= print->height) ||      // " top
+       ((x2 = (x+w-1)) <  0      ) ||      // " left
+       ((y2 = (y+h-1)) <  0)     ) return; // " bottom
+
+    int16_t bx1=0, by1=0, // Clipped top-left within bitmap
+            saveW=w;      // Save original bitmap width value
+    if(x < 0) { // Clip left
+        w  +=  x;
+        bx1 = -x;
+        x   =  0;
+    }
+    if(y < 0) { // Clip top
+        h  +=  y;
+        by1 = -y;
+        y   =  0;
+    }
+    if(x2 >= print->width ) w = print->width  - x; // Clip right
+    if(y2 >= print->height) h = print->height - y; // Clip bottom
+
+    pcolors += by1 * saveW + bx1; // Offset bitmap ptr to clipped top-left
+    startWrite();
+    setAddrWindow(x, y, w, h); // Clipped area
+    while(h--) { // For each (clipped) scanline...
+      writePixels((uint16_t*)pcolors, w); // Push one (clipped) row
+      pcolors += saveW; // Advance pointer by one full (unclipped) line
+    }
+}
 

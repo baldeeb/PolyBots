@@ -28,7 +28,9 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v"
 @I::"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen\touch_screen.v"
 Verilog syntax check successful!
-File N:\eecs373\PolyBots\TouchScreen\touch_screen\hdl\spi_pin.v changed - recompiling
+File N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen_MSS\mss_tshell.v changed - recompiling
+File N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen_MSS\MSS_CCC_0\touch_screen_MSS_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
+File N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen_MSS\touch_screen_MSS.v changed - recompiling
 File N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen\touch_screen.v changed - recompiling
 Selecting top level module touch_screen
 @W: CG775 :"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Found Component CoreAPB3 in library COREAPB3_LIB
@@ -137,6 +139,8 @@ Selecting top level module touch_screen
 
 @N: CG364 :"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":51:7:51:17|Synthesizing module TRIBUFF_MSS
 
+@N: CG364 :"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
+
 @N: CG364 :"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen_MSS\touch_screen_MSS.v":9:7:9:22|Synthesizing module touch_screen_MSS
 
 @N: CG364 :"N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen\touch_screen.v":9:7:9:18|Synthesizing module touch_screen
@@ -219,7 +223,7 @@ Selecting top level module touch_screen
 At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 77MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Apr 15 16:54:12 2017
+# Sat Apr 15 23:37:50 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
@@ -228,7 +232,7 @@ Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Apr 15 16:54:12 2017
+# Sat Apr 15 23:37:50 2017
 
 ###########################################################]
 @END
@@ -236,7 +240,7 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Apr 15 16:54:13 2017
+# Sat Apr 15 23:37:50 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
@@ -246,7 +250,7 @@ File N:\eecs373\PolyBots\TouchScreen\touch_screen\synthesis\synwork\touch_screen
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Apr 15 16:54:14 2017
+# Sat Apr 15 23:37:52 2017
 
 ###########################################################]
 Pre-mapping Report
@@ -290,7 +294,7 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 49MB peak: 114MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Apr 15 16:54:16 2017
+# Sat Apr 15 23:37:54 2017
 
 ###########################################################]
 Map & Optimize Report
@@ -389,15 +393,15 @@ J-2015.03M-SP1-2
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 112MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
-@W: MT246 :"n:\eecs373\polybots\touchscreen\touch_screen\component\work\touch_screen_mss\touch_screen_mss.v":466:0:466:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"n:\eecs373\polybots\touchscreen\touch_screen\component\work\touch_screen_mss\touch_screen_mss.v":484:0:484:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 Found clock FCLK with period 10.00ns 
 Found clock FAB_CLK with period 10.00ns 
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Sat Apr 15 16:54:18 2017
+# Timing Report written on Sat Apr 15 23:37:57 2017
 #
 
 
@@ -610,7 +614,7 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 ##### END OF TIMING REPORT #####]
 
 
-Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
 Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
@@ -639,15 +643,16 @@ Report for cell touch_screen.verilog
               cell count
          BIBUF_MSS     2
    BIBUF_OPEND_MSS     2
-         INBUF_MSS     1
-            OUTBUF     1
+         INBUF_MSS     2
+            OUTBUF     2
+        OUTBUF_MSS     1
        TRIBUFF_MSS     1
                    -----
-             TOTAL     7
+             TOTAL    10
 
 
 Core Cells         : 4 of 4608 (0%)
-IO Cells           : 7
+IO Cells           : 10
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
@@ -657,6 +662,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 112MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Sat Apr 15 16:54:19 2017
+# Sat Apr 15 23:37:57 2017
 
 ###########################################################]

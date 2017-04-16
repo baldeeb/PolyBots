@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Sat Apr 15 16:54:56 2017 ***************************************************************************
+                          Sat Apr 15 23:42:04 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
 File Name: N:\eecs373\PolyBots\TouchScreen\touch_screen\designer\impl1\touch_screen.adb
 Design Name: touch_screen  Design State: layout
-Last Saved: Sat Apr 15 16:54:39 2017
+Last Saved: Sat Apr 15 23:40:17 2017
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Sat Apr 15 16:54:30 2017:
+Source File(s) Imported on Sat Apr 15 23:38:08 2017:
         N:\eecs373\PolyBots\TouchScreen\touch_screen\synthesis\touch_screen.edn
         N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\touch_screen\touch_screen.pdc
 
@@ -98,7 +98,6 @@ Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0DO drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0DOE drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0CLKO drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0MODE drives no load.
-Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_UART0TXD drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_I2C0SDAO drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_I2C0SCLO drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_UART1TXD drives no load.
@@ -274,7 +273,6 @@ Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0SSO[4] drives no load
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0SSO[5] drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0SSO[6] drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/MSS_ADLIB_INST_SPI0SSO[7] drives no load.
-Warning: CMP201: Net touch_screen_MSS_0/SPI1SSO_net_0[1] drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/SPI1SSO_net_0[2] drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/SPI1SSO_net_0[3] drives no load.
 Warning: CMP201: Net touch_screen_MSS_0/SPI1SSO_net_0[4] drives no load.
@@ -465,7 +463,7 @@ Optimized macros:
 
     Total macros optimized  0
 
-There were 0 error(s) and 323 warning(s) in this design.
+There were 0 error(s) and 321 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -486,10 +484,10 @@ Compile report:
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
     Fabric                     Used:      4  Total:   4608   (0.09%)
-    Fabric IO (W/ clocks)      Used:      1  Total:     94   (1.06%)
+    Fabric IO (W/ clocks)      Used:      2  Total:     94   (2.13%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:      6  Total:     43   (13.95%)
+    Dedicated MSS IO           Used:      8  Total:     43   (18.60%)
     GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -522,7 +520,7 @@ I/O Function:
     Type                                  | w/o register  | w/ register  | w/ DDR register
     --------------------------------------|---------------|--------------|----------------
     Input I/O                             | 0             | 0            | 0
-    Output I/O                            | 1             | 0            | 0
+    Output I/O                            | 2             | 0            | 0
     Bidirectional I/O                     | 0             | 0            | 0
     Differential Input I/O Pairs          | 0             | 0            | 0
     Differential Output I/O Pairs         | 0             | 0            | 0
@@ -533,13 +531,15 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 0     | 1      | 0
+    LVTTL                           | 3.30v | N/A   | 0     | 2      | 0
 
 I/O Placement:
 
-    Locked  :   1 ( 100.00% )
+    Locked  :   1 ( 50.00% )
     Placed  :   0
-    UnPlaced:   0
+    UnPlaced:   1 ( 50.00% )
+
+Warning: Only some I/Os are locked
 
 Net information report:
 =======================
@@ -566,6 +566,8 @@ High fanout nets in the post compile netlist:
                           Driver: touch_screen_MSS_0/MSS_ADLIB_INST
     1       INT_NET       Net   : touch_screen_MSS_0_M2F_RESET_N
                           Driver: touch_screen_MSS_0/MSS_ADLIB_INST
+    1       INT_NET       Net   : SPI_1_FAB_SS_0_c[1]
+                          Driver: touch_screen_MSS_0/MSS_ADLIB_INST
     1       INT_NET       Net   : spi_pin_0/CD_write
                           Driver: spi_pin_0/CD_RNO_1
     1       INT_NET       Net   : spi_pin_0/CD_RNO
@@ -587,6 +589,8 @@ Nets that are candidates for clock assignment and the resulting fanout:
     1       INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[0]
                           Driver: touch_screen_MSS_0/MSS_ADLIB_INST
     1       INT_NET       Net   : touch_screen_MSS_0_M2F_RESET_N
+                          Driver: touch_screen_MSS_0/MSS_ADLIB_INST
+    1       INT_NET       Net   : SPI_1_FAB_SS_0_c[1]
                           Driver: touch_screen_MSS_0/MSS_ADLIB_INST
     1       INT_NET       Net   : spi_pin_0/CD_write
                           Driver: spi_pin_0/CD_RNO_1
@@ -619,16 +623,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Sat Apr 15 16:54:45 2017
+Timing-driven Placer Started: Sat Apr 15 23:41:53 2017
 
-Placer Finished: Sat Apr 15 16:54:46 2017
+Placer Finished: Sat Apr 15 23:41:54 2017
 Total Placer CPU Time:     00:00:01
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: touch_screen                    Started: Sat Apr 15 16:54:49 2017
+Design: touch_screen                    Started: Sat Apr 15 23:41:57 2017
 
  
 Iterative improvement...
@@ -636,9 +640,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: touch_screen                    
-Finished: Sat Apr 15 16:54:52 2017
-Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:03
-Total Memory Usage: 163.1 Mbytes
+Finished: Sat Apr 15 23:42:01 2017
+Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:04
+Total Memory Usage: 162.9 Mbytes
                         o - o - o - o - o - o
 
 

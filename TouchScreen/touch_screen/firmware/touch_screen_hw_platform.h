@@ -2,7 +2,7 @@
 #define touch_screen_HW_PLATFORM_H_
 /*****************************************************************************
 *
-*Created by Microsemi SmartDesign  Sat Apr 15 16:04:48 2017
+*Created by Microsemi SmartDesign  Sat Apr 15 23:35:57 2017
 *
 *Memory map specification for peripherals in touch_screen
 */

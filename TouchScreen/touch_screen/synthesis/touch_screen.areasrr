@@ -3,12 +3,12 @@ Report for cell touch_screen.verilog
                                           Cell usage:
                                cell       count     area    count*area
                                 GND         1       0.0        0.0
-                             OUTBUF         1       0.0        0.0
+                             OUTBUF         2       0.0        0.0
                                 VCC         1       0.0        0.0
                             spi_pin         1       4.0        4.0
                    touch_screen_MSS         1       0.0        0.0
                             
-                         TOTAL              5                  4.0
+                         TOTAL              6                  4.0
 ----------------------------------------------------------------------
 Report for cell touch_screen_MSS.netlist
      Instance path:  touch_screen_MSS_0
@@ -17,13 +17,14 @@ Report for cell touch_screen_MSS.netlist
                           BIBUF_MSS         2       0.0        0.0
                     BIBUF_OPEND_MSS         2       0.0        0.0
                                 GND         1       0.0        0.0
-                          INBUF_MSS         1       0.0        0.0
+                          INBUF_MSS         2       0.0        0.0
                             MSS_APB         1       0.0        0.0
+                         OUTBUF_MSS         1       0.0        0.0
                         TRIBUFF_MSS         1       0.0        0.0
                                 VCC         1       0.0        0.0
           touch_screen_MSS_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
                             
-                         TOTAL             10                  0.0
+                         TOTAL             12                  0.0
 ----------------------------------------------------------------------
 Report for cell touch_screen_MSS_tmp_MSS_CCC_0_MSS_CCC.netlist
      Instance path:  touch_screen_MSS_0.MSS_CCC_0

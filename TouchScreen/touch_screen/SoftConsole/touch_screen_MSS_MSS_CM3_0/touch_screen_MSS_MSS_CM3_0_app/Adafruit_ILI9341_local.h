@@ -1,6 +1,9 @@
 #ifndef ADAFRUIT_ILI9341_H_
 #define ADAFRUIT_ILI9341_H_
 #include <inttypes.h>
+#include "GFX/Adafruit_GFX_local.h"
+
+
 
 #define ILI9341_TFTWIDTH   240
 #define ILI9341_TFTHEIGHT  320
@@ -91,7 +94,29 @@ void spiWrite(uint8_t msg);
 void writeCommand(uint8_t cmd);
 void begin(uint8_t frame_size);
 void delay(int milliseconds);
-
+void scrollTo(uint16_t y);
+void invertDisplay(boolean i);
+void setRotation(struct Print * print, uint8_t m);
+void SPI_WRITE16(uint16_t y);
+void SPI_WRITE32(uint16_t xa);
+void setAddrWindow(uint16_t x, uint16_t y, uint16_t w, uint16_t h);
+void writePixel(uint16_t color);
+void writePixels(uint16_t * colors, uint32_t len);
+void writePixelCoordinates(struct Print * print, int16_t x, int16_t y, uint16_t color);
+void writeColor(struct Print * print, uint16_t color, uint32_t len);
+void writeFillRect(struct Print * print,int16_t x, int16_t y, int16_t w, int16_t h, uint16_t color);
+void writeFastVLine(struct Print * print,int16_t x, int16_t y, int16_t h, uint16_t color);
+void writeFastHLine(struct Print * print,int16_t x, int16_t y, int16_t w, uint16_t color);
+void drawPixel(struct Print * print, int16_t x, int16_t y, uint16_t color);
+void drawFastVLine(struct Print * print,int16_t x, int16_t y,
+        int16_t h, uint16_t color);
+void drawFastHLine(struct Print * print,int16_t x, int16_t y,
+        int16_t w, uint16_t color);
+void fillRect(struct Print * print, int16_t x, int16_t y, int16_t w, int16_t h,
+        uint16_t color);
+void drawBitmap(struct Print * print, int16_t x, int16_t y, int16_t w, int16_t h,
+  const uint16_t *pcolors);
+uint8_t readcommand8(uint8_t c, uint8_t index);
 
 
 #endif /* ADAFRUIT_ILI9341_H_ */

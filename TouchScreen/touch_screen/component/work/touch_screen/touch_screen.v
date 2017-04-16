@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Sat Apr 15 16:04:44 2017
+// Created by SmartDesign Sat Apr 15 23:35:53 2017
 // Version: v11.7 SP1 11.7.1.14
 //////////////////////////////////////////////////////////////////////
 
@@ -9,9 +9,12 @@
 module touch_screen(
     // Inputs
     SPI_1_DI,
+    UART_0_RXD,
     // Outputs
     CD,
     SPI_1_DO,
+    SPI_1_FAB_SS_0,
+    UART_0_TXD,
     // Inouts
     I2C_1_SCL,
     I2C_1_SDA,
@@ -22,19 +25,22 @@ module touch_screen(
 //--------------------------------------------------------------------
 // Input
 //--------------------------------------------------------------------
-input  SPI_1_DI;
+input        SPI_1_DI;
+input        UART_0_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
-output CD;
-output SPI_1_DO;
+output       CD;
+output       SPI_1_DO;
+output [1:1] SPI_1_FAB_SS_0;
+output       UART_0_TXD;
 //--------------------------------------------------------------------
 // Inout
 //--------------------------------------------------------------------
-inout  I2C_1_SCL;
-inout  I2C_1_SDA;
-inout  SPI_1_CLK;
-inout  SPI_1_SS;
+inout        I2C_1_SCL;
+inout        I2C_1_SDA;
+inout        SPI_1_CLK;
+inout        SPI_1_SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
@@ -52,6 +58,7 @@ wire          I2C_1_SDA;
 wire          SPI_1_CLK;
 wire          SPI_1_DI;
 wire          SPI_1_DO_net_0;
+wire   [1:1]  SPI_1_FAB_SS_0_net_0;
 wire          SPI_1_SS;
 wire          touch_screen_MSS_0_FAB_CLK;
 wire          touch_screen_MSS_0_M2F_RESET_N;
@@ -62,8 +69,12 @@ wire          touch_screen_MSS_0_MSS_MASTER_APB_PSELx;
 wire          touch_screen_MSS_0_MSS_MASTER_APB_PSLVERR;
 wire   [31:0] touch_screen_MSS_0_MSS_MASTER_APB_PWDATA;
 wire          touch_screen_MSS_0_MSS_MASTER_APB_PWRITE;
+wire          UART_0_RXD;
+wire          UART_0_TXD_0;
 wire          SPI_1_DO_net_1;
 wire          CD_net_1;
+wire          UART_0_TXD_0_net_0;
+wire   [1:1]  SPI_1_FAB_SS_0_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -89,10 +100,10 @@ wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
-wire   [19:0] touch_screen_MSS_0_MSS_MASTER_APB_PADDR;
 wire   [31:20]touch_screen_MSS_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] touch_screen_MSS_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] touch_screen_MSS_0_MSS_MASTER_APB_PADDR_0;
+wire   [19:0] touch_screen_MSS_0_MSS_MASTER_APB_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -118,10 +129,14 @@ assign PRDATAS16_const_net_0 = 32'h00000000;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
-assign SPI_1_DO_net_1 = SPI_1_DO_net_0;
-assign SPI_1_DO       = SPI_1_DO_net_1;
-assign CD_net_1       = CD_net_0;
-assign CD             = CD_net_1;
+assign SPI_1_DO_net_1          = SPI_1_DO_net_0;
+assign SPI_1_DO                = SPI_1_DO_net_1;
+assign CD_net_1                = CD_net_0;
+assign CD                      = CD_net_1;
+assign UART_0_TXD_0_net_0      = UART_0_TXD_0;
+assign UART_0_TXD              = UART_0_TXD_0_net_0;
+assign SPI_1_FAB_SS_0_net_1[1] = SPI_1_FAB_SS_0_net_0[1];
+assign SPI_1_FAB_SS_0[1:1]     = SPI_1_FAB_SS_0_net_1[1];
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -279,24 +294,27 @@ spi_pin spi_pin_0(
 //--------touch_screen_MSS
 touch_screen_MSS touch_screen_MSS_0(
         // Inputs
-        .SPI_1_DI    ( SPI_1_DI ),
-        .MSSPRDATA   ( touch_screen_MSS_0_MSS_MASTER_APB_PRDATA ),
-        .MSSPREADY   ( touch_screen_MSS_0_MSS_MASTER_APB_PREADY ),
-        .MSSPSLVERR  ( touch_screen_MSS_0_MSS_MASTER_APB_PSLVERR ),
+        .SPI_1_DI     ( SPI_1_DI ),
+        .MSSPRDATA    ( touch_screen_MSS_0_MSS_MASTER_APB_PRDATA ),
+        .MSSPREADY    ( touch_screen_MSS_0_MSS_MASTER_APB_PREADY ),
+        .MSSPSLVERR   ( touch_screen_MSS_0_MSS_MASTER_APB_PSLVERR ),
+        .UART_0_RXD   ( UART_0_RXD ),
         // Outputs
-        .SPI_1_DO    ( SPI_1_DO_net_0 ),
-        .FAB_CLK     ( touch_screen_MSS_0_FAB_CLK ),
-        .M2F_RESET_N ( touch_screen_MSS_0_M2F_RESET_N ),
-        .MSSPADDR    ( touch_screen_MSS_0_MSS_MASTER_APB_PADDR ),
-        .MSSPSEL     ( touch_screen_MSS_0_MSS_MASTER_APB_PSELx ),
-        .MSSPENABLE  ( touch_screen_MSS_0_MSS_MASTER_APB_PENABLE ),
-        .MSSPWRITE   ( touch_screen_MSS_0_MSS_MASTER_APB_PWRITE ),
-        .MSSPWDATA   ( touch_screen_MSS_0_MSS_MASTER_APB_PWDATA ),
+        .SPI_1_DO     ( SPI_1_DO_net_0 ),
+        .FAB_CLK      ( touch_screen_MSS_0_FAB_CLK ),
+        .M2F_RESET_N  ( touch_screen_MSS_0_M2F_RESET_N ),
+        .MSSPADDR     ( touch_screen_MSS_0_MSS_MASTER_APB_PADDR ),
+        .MSSPSEL      ( touch_screen_MSS_0_MSS_MASTER_APB_PSELx ),
+        .MSSPENABLE   ( touch_screen_MSS_0_MSS_MASTER_APB_PENABLE ),
+        .MSSPWRITE    ( touch_screen_MSS_0_MSS_MASTER_APB_PWRITE ),
+        .MSSPWDATA    ( touch_screen_MSS_0_MSS_MASTER_APB_PWDATA ),
+        .UART_0_TXD   ( UART_0_TXD_0 ),
+        .SPI_1_FAB_SS ( SPI_1_FAB_SS_0_net_0 ),
         // Inouts
-        .SPI_1_CLK   ( SPI_1_CLK ),
-        .SPI_1_SS    ( SPI_1_SS ),
-        .I2C_1_SCL   ( I2C_1_SCL ),
-        .I2C_1_SDA   ( I2C_1_SDA ) 
+        .SPI_1_CLK    ( SPI_1_CLK ),
+        .SPI_1_SS     ( SPI_1_SS ),
+        .I2C_1_SCL    ( I2C_1_SCL ),
+        .I2C_1_SDA    ( I2C_1_SDA ) 
         );
 
 

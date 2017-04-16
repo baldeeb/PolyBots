@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>N:/eecs373/PolyBots/TouchScreen/touch_screen/component/work/touch_screen</location>
-    <state>GENERATED ( Sat Apr 15 16:05:05 2017 )</state>
+    <state>GENERATED ( Sat Apr 15 23:36:07 2017 )</state>
     <swide-toolchain>SoftConsole workspace generated to N:\eecs373\PolyBots\TouchScreen\touch_screen\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -34,19 +34,19 @@
     <file>N:\eecs373\PolyBots\TouchScreen\touch_screen\component\work\N:/eecs373/PolyBots/TouchScreen/touch_screen/component/work/touch_screen_MSS/MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
+    <port-name>I2C_1_SCL</port-name>
+    <direction>INOUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>SPI_1_DI</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
     <port-name>I2C_1_SDA</port-name>
-    <direction>INOUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>SPI_1_SS</port-name>
-    <direction>INOUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>SPI_1_CLK</port-name>
     <direction>INOUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -58,20 +58,38 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
+    <port-name>SPI_1_SS</port-name>
+    <direction>INOUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>UART_0_TXD</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>UART_0_RXD</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
     <port-name>CD</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>I2C_1_SCL</port-name>
+    <port-name>SPI_1_CLK</port-name>
     <direction>INOUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>SPI_1_DI</port-name>
-    <direction>IN</direction>
+    <port-name>SPI_1_FAB_SS_0[1]</port-name>
+    <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -472,6 +490,18 @@ This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
 
 This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
     <core-name>MSS_Timer_Driver_0</core-name>
+  </firmware_core>
+  <firmware_core type="FirmWareModule">
+    <core-exttype>IP</core-exttype>
+    <core-type>FirmWareModule</core-type>
+    <core-vendor>Actel</core-vendor>
+    <core-lib>Firmware</core-lib>
+    <core-intname>MSS_UART_Driver</core-intname>
+    <core-ver>2.4.101</core-ver>
+    <core-desc>SmartFusion microcontroller subsystem (MSS) UART bare metal software driver.
+
+This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
+    <core-name>MSS_UART_Driver_0</core-name>
   </firmware_core>
   <firmware_core type="FirmWareModule">
     <core-exttype>IP</core-exttype>
@@ -7778,6 +7808,331 @@ These files are required by the SmartFusion bare metal peripheral drivers to bui
                 <field>
                   <name>ch7BufBTransferCount</name>
                   <bitNumber>15:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+            </addressBlock>
+          </memoryMap>
+        </slave>
+        <slave>
+          <name>UART_0</name>
+          <fullPinName>
+          </fullPinName>
+          <remapAddress>0x40000000</remapAddress>
+          <fullAddressSpace>0x40000000 - 0x40000FFF</fullAddressSpace>
+          <range>0x1000</range>
+          <memoryMap>
+            <name>RegisterMap</name>
+            <addressBlock>
+              <baseAddress>0x0</baseAddress>
+              <range format="long">0x1000</range>
+              <width format="long" id="width">32</width>
+              <register>
+                <name>RECEIVE_BUFFER</name>
+                <addressOffset>0x0</addressOffset>
+                <absoluteAddress>0x40000000</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>RBR</name>
+                  <bitNumber>7:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>DIVISOR_LATCH_MSB</name>
+                <addressOffset>0x4</addressOffset>
+                <absoluteAddress>0x40000004</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>DMR</name>
+                  <bitNumber>7:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>INTERRUPT_IDENTIFICATION</name>
+                <addressOffset>0x8</addressOffset>
+                <absoluteAddress>0x40000008</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>MODE</name>
+                  <bitNumber>7:6</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RESERVED</name>
+                  <bitNumber>5:4</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>IIR</name>
+                  <bitNumber>3:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>LINE_CONTROL</name>
+                <addressOffset>0xC</addressOffset>
+                <absoluteAddress>0x4000000C</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>DLAB</name>
+                  <bitNumber>7</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>SB</name>
+                  <bitNumber>6</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>SP</name>
+                  <bitNumber>5</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>EPS</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>PEN</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>STB</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>WLS</name>
+                  <bitNumber>1:0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>MODEM_CONTROL</name>
+                <addressOffset>0x10</addressOffset>
+                <absoluteAddress>0x40000010</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>RESERVED</name>
+                  <bitNumber>7:5</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>LOOP</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>OUT2</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>OUT1</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RTS</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>DTR</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>LINE_STATUS</name>
+                <addressOffset>0x14</addressOffset>
+                <absoluteAddress>0x40000014</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>FIER</name>
+                  <bitNumber>7</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TEMT</name>
+                  <bitNumber>6</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>THRE</name>
+                  <bitNumber>5</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>BI</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>FE</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>PE</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>OE</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>DR</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>MODEM_STATUS</name>
+                <addressOffset>0x18</addressOffset>
+                <absoluteAddress>0x40000018</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>DCD</name>
+                  <bitNumber>7</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>RI</name>
+                  <bitNumber>6</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>DSR</name>
+                  <bitNumber>5</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>CTS</name>
+                  <bitNumber>4</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>DDCD</name>
+                  <bitNumber>3</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>TERI</name>
+                  <bitNumber>2</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>DDSR</name>
+                  <bitNumber>1</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+                <field>
+                  <name>DCTS</name>
+                  <bitNumber>0</bitNumber>
+                  <access>R/W</access>
+                  <description>
+                  </description>
+                </field>
+              </register>
+              <register>
+                <name>SCRATCH</name>
+                <addressOffset>0x1C</addressOffset>
+                <absoluteAddress>0x4000001C</absoluteAddress>
+                <size>8</size>
+                <access>R/W</access>
+                <resetValue>0x0</resetValue>
+                <field>
+                  <name>SCR</name>
+                  <bitNumber>7:0</bitNumber>
                   <access>R/W</access>
                   <description>
                   </description>
