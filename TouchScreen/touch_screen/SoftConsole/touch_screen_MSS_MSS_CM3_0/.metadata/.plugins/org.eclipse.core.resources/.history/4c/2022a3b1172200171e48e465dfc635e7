@@ -1,8 +1,0 @@
-#include "Adafruit_GFX/Adafruit_GFX.h"
-
-int main()
-{
-	while( 1 )
-	{
-	}
-}
