@@ -16,10 +16,10 @@
     </SerializationOption>
     <programmer status="enable" type="FlashPro3" revision="UndefRev" connection="usb2.0">
         <name>
-            79403
+            80216
         </name>
         <id>
-            79403
+            80216
         </id>
     </programmer>
     <configuration>

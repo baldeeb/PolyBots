@@ -366,8 +366,8 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_screen.adb,adb"
 STATE="utd"
-TIME="1492314154"
-SIZE="298496"
+TIME="1492381099"
+SIZE="299520"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_screen.fdb,fdb"
 STATE="ood"
@@ -376,28 +376,28 @@ SIZE="33094"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_screen.ide_des,ide_des"
 STATE="utd"
-TIME="1492314154"
-SIZE="1097"
+TIME="1492381099"
+SIZE="1109"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_screen_compile_log.rpt,log"
 STATE="utd"
-TIME="1492313899"
-SIZE="36715"
+TIME="1492369887"
+SIZE="36691"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_screen_fp\projectData\touch_screen.pdb,pdb"
 STATE="utd"
-TIME="1492357749"
-SIZE="38587"
+TIME="1492381170"
+SIZE="38598"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_screen_fp\touch_screen.pdb,pdb"
 STATE="utd"
-TIME="1492357708"
-SIZE="38587"
+TIME="1492381130"
+SIZE="38598"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_screen_fp\touch_screen.pro,pro"
 STATE="utd"
-TIME="1492357750"
-SIZE="2441"
+TIME="1492381171"
+SIZE="2453"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_screen_placeroute_log.rpt,log"
 STATE="utd"
@@ -457,23 +457,23 @@ PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\touch_screen.edn,syn_edn"
 STATE="utd"
-TIME="1492313877"
-SIZE="112902"
+TIME="1492369866"
+SIZE="112901"
 ENDFILE
 VALUE "<project>\synthesis\touch_screen.so,so"
 STATE="utd"
-TIME="1492313877"
-SIZE="238"
+TIME="1492369866"
+SIZE="242"
 ENDFILE
 VALUE "<project>\synthesis\touch_screen_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1492313877"
+TIME="1492369866"
 SIZE="550"
 ENDFILE
 VALUE "<project>\synthesis\touch_screen_syn.prj,prj"
 STATE="utd"
-TIME="1492313878"
-SIZE="2760"
+TIME="1492369867"
+SIZE="2804"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -655,8 +655,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.7\\\Synplify\\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -726,13 +726,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Compile:touch_screen_compile_log.rpt
 StartPage;StartPage;0
-SmartDesign;touch_screen;0
-SmartDesign;touch_screen_MSS;0
-HDL;hdl\spi_pin.v;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"

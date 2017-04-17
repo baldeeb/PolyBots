@@ -2,6 +2,7 @@
 #include "Adafruit_ILI9341_local.h"
 #include "drivers/mss_uart/mss_uart.h"
 #include "drivers/mss_spi/drivers/mss_spi/mss_spi.h"
+#include "Adafruit_FT6206.h"
 
 void setup(struct Print * print);
 void testText(struct Print * print);
@@ -19,6 +20,9 @@ void testFilledRoundRects(struct Print * print);
 #define BOXSIZE 100
 
 struct Print * print;
+
+struct Adafruit_FT6206 * ts;
+
 #define min(a,b) (((a)<(b))?(a):(b))
 
 int main()
@@ -26,6 +30,10 @@ int main()
 	print = (struct Print *) malloc(sizeof(struct Print));
 	print->HEIGHT = ILI9341_TFTHEIGHT;
 	print->WIDTH = ILI9341_TFTWIDTH;
+
+	ts = (struct Adafruit_FT6206 *) malloc(sizeof(struct Adafruit_FT6206));
+
+
 
 	MSS_SPI_init( &g_mss_spi1 );
 	MSS_SPI_configure_master_mode
@@ -45,31 +53,41 @@ int main()
 		    MSS_SPI_BLOCK_TRANSFER_FRAME_SIZE
 		);
 
-//	  MSS_SPI_configure_slave_mode
-//		(
-//			&g_mss_spi1,
-//			MSS_SPI_MODE0,
-//			MSS_SPI_PCLK_DIV_256,
-//			MSS_SPI_BLOCK_TRANSFER_FRAME_SIZE
-//		);
-//	  MSS_SPI_set_frame_rx_handler( &g_mss_spi1, rx_handler );
-//
 	setup(print);
-	//	begin(print);
+	fillScreen(print, ILI9341_BLUE);
+			setRotation(print, 1);
 
-	while( 1 )
-	{
+	ts_begin(ts, FT6206_DEFAULT_THRESSHOLD);
+
+	while(1) {
+		struct TS_Point * p;
+		p = (struct TS_Point *) malloc(sizeof(struct TS_Point));
+		p = getPoint(ts);
+
+		//p->x = map(p->x, 0, 240, 240, 0);
+		//p->y = map(p->y, 0, 320, 320, 0);
+		int y =  p->x;
+		int x = p->y;
+
+		printf("y: %i\n\r", y);
+		printf("x:%i\n\r", x);
+
+		free(p);
+	}
+
+//	while( 1 )
+//	{
 		//printf("fill screen black\n\r");
 		//fillScreen(print, ILI9341_BLACK);
-
 
 //		uint8_t cmd = 0x11;
 //		spiWrite(cmd);
 //		delay(100);
 
-	}
+//	}
 
 	free(print);
+	free(ts);
 	return 0;
 }
 
@@ -307,8 +325,8 @@ void setup(struct Print * print) {
 //  printf("Rectangles (outline)     \n\r");
 //  testRects(print, ILI9341_GREEN);
 ////
-  printf("Rectangles (filled)      \n\r");
-  testFilledRects(print, ILI9341_YELLOW, ILI9341_MAGENTA);
+//  printf("Rectangles (filled)      \n\r");
+//  testFilledRects(print, ILI9341_YELLOW, ILI9341_MAGENTA);
 
 //  printf("Circles (filled)         \n\r");
 //  testFilledCircles(print, 10, ILI9341_MAGENTA);

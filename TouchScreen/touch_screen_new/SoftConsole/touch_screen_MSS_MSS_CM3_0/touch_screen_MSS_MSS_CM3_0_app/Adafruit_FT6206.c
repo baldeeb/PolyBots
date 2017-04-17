@@ -1,0 +1,179 @@
+/*
+ * Adafruit_FT6206.c
+ *
+ *  Created on: Apr 17, 2017
+ *      Author: mkothbau
+ */
+
+
+/***************************************************
+  This is a library for the Adafruit Capacitive Touch Screens
+
+  ----> http://www.adafruit.com/products/1947
+
+  Check out the links above for our tutorials and wiring diagrams
+  This chipset uses I2C to communicate
+
+  Adafruit invests time and resources providing this open source code,
+  please support Adafruit and open-source hardware by purchasing
+  products from Adafruit!
+
+  Written by Limor Fried/Ladyada for Adafruit Industries.
+  MIT license, all text above must be included in any redistribution
+ ****************************************************/
+
+
+#include "drivers/mss_i2c/mss_i2c.h"
+#include "Adafruit_FT6206.h"
+
+/**************************************************************************/
+/*!
+    @brief  Instantiates a new FT6206 class
+*/
+/**************************************************************************/
+// I2C, no address adjustments or pins
+
+/**************************************************************************/
+/*!
+    @brief  Setups the HW
+*/
+/**************************************************************************/
+bool ts_begin(struct Adafruit_FT6206 * ts, uint8_t thresh) {
+	  //Wire.begin();
+		//dont init i2c here because we must call init each time a different address is used!
+
+	  // change threshhold to be higher/lower
+	   writeRegister8(FT6206_REG_THRESHHOLD, thresh);
+  return true;
+}
+
+bool touched(struct Adafruit_FT6206 * ts) {
+
+  uint8_t n = readRegister8(FT6206_REG_NUMTOUCHES);
+  if ((n == 1) || (n == 2)) return true;
+  return false;
+}
+
+/*****************************/
+
+void readData(struct Adafruit_FT6206 * ts, uint16_t *x, uint16_t *y) {
+
+	  uint8_t i2cdat[16];
+	//  Wire.beginTransmission(FT6206_ADDR);
+	//  Wire.write((byte)0);
+	//  Wire.endTransmission();
+	//  Wire.beginTransmission(FT6206_ADDR);
+	//  Wire.requestFrom((byte)FT6206_ADDR, (byte)32);
+	//  for (uint8_t i=0; i<16; i++)
+	//    i2cdat[i] = Wire.read();
+	//  Wire.endTransmission();
+	//
+	//
+
+	  MSS_I2C_init(&g_mss_i2c1, FT6206_ADDR, MSS_I2C_PCLK_DIV_256 );
+	  MSS_I2C_write_read( &g_mss_i2c1, FT6206_ADDR, (uint8_t) 0,
+	                              sizeof(uint8_t), i2cdat, sizeof(i2cdat),
+	                              MSS_I2C_RELEASE_BUS );
+	  MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
+	  ts->touches = i2cdat[0x02];
+
+	  //Serial.println(touches);
+	  if (ts->touches > 2) {
+		  ts->touches = 0;
+	    *x = *y = 0;
+	  }
+	  if (ts->touches == 0) {
+	    *x = *y = 0;
+	    return;
+	  }
+
+	  uint8_t i;
+	    for ( i=0; i<2; i++) {
+	      ts->touchX[i] = i2cdat[0x03 + i*6] & 0x0F;
+	      ts->touchX[i] <<= 8;
+	      ts->touchX[i] |= i2cdat[0x04 + i*6];
+	      ts->touchY[i] = i2cdat[0x05 + i*6] & 0x0F;
+	      ts->touchY[i] <<= 8;
+	      ts->touchY[i] |= i2cdat[0x06 + i*6];
+	      ts->touchID[i] = i2cdat[0x05 + i*6] >> 4;
+	    }
+	    /*
+	    Serial.println();
+	    for (uint8_t i=0; i<touches; i++) {
+	      Serial.print("ID #"); Serial.print(touchID[i]); Serial.print("\t("); Serial.print(touchX[i]);
+	      Serial.print(", "); Serial.print(touchY[i]);
+	      Serial.print (") ");
+	    }
+	    Serial.println();
+	    */
+	    *x = ts->touchX[0]; *y = ts->touchY[0];
+}
+
+struct TS_Point* getPoint(struct Adafruit_FT6206 * ts) {
+  uint16_t x, y;
+  uint8_t z = 1;
+  readData(ts, &x, &y);
+  struct TS_Point * pt_to_return;
+  pt_to_return = (struct TS_Point *) malloc(sizeof(struct TS_Point));
+  pt_to_return->x = x;
+  pt_to_return->y = y;
+  pt_to_return->z = z;
+  return pt_to_return;
+}
+
+
+uint8_t readRegister8(uint8_t reg) {
+	 uint8_t x ;
+	   // use i2c
+	//    Wire.beginTransmission(FT6206_ADDR);
+	//    Wire.write((byte)reg);
+	//    Wire.endTransmission();
+	//    Wire.beginTransmission(FT6206_ADDR);
+	//    Wire.requestFrom((byte)FT6206_ADDR, (byte)1);
+	//    x = Wire.read();
+	//    Wire.endTransmission();
+
+	  MSS_I2C_init(&g_mss_i2c1, FT6206_ADDR, MSS_I2C_PCLK_DIV_256 );
+	  MSS_I2C_write_read(    &g_mss_i2c1, FT6206_ADDR, &reg,
+              sizeof(reg), &x, sizeof(x),
+              MSS_I2C_RELEASE_BUS);
+	  MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
+
+	  //  Serial.print("$"); Serial.print(reg, HEX);
+	  //  Serial.print(": 0x"); Serial.println(x, HEX);
+
+	  return x;
+}
+
+void writeRegister8(uint8_t reg, uint8_t val) {
+	// use i2c
+	//    Wire.beginTransmission(FT6206_ADDR);
+	//    Wire.write((byte)reg);
+	//    Wire.write((byte)val);
+	//    Wire.endTransmission();
+
+		MSS_I2C_init(&g_mss_i2c1, FT6206_ADDR, MSS_I2C_PCLK_DIV_256 );
+
+		MSS_I2C_write
+				(
+					&g_mss_i2c1,
+					FT6206_ADDR, //target address
+					&reg,
+					sizeof(reg),
+					MSS_I2C_RELEASE_BUS
+				);
+		MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
+
+		MSS_I2C_write
+					(
+						&g_mss_i2c1,
+						FT6206_ADDR, //target address
+						&val,
+						sizeof(val),
+						MSS_I2C_RELEASE_BUS
+					);
+			MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
+}
+
+/****************/
+

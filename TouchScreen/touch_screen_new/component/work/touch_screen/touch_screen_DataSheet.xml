@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>N:/eecs373/PolyBots/TouchScreen/touch_screen_new/component/work/touch_screen</location>
-    <state>GENERATED ( Sun Apr 16 15:10:38 2017 )</state>
+    <state>GENERATED ( Mon Apr 17 15:43:56 2017 )</state>
     <swide-toolchain>SoftConsole workspace generated to N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -31,7 +31,7 @@
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>N:\eecs373\PolyBots\TouchScreen\touch_screen_new\component\work\N:/eecs373/PolyBots/TouchScreen/touch_screen_new/component/work/touch_screen_MSS/MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>N:\eecs373\PolyBots\TouchScreen\touch_screen_new\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
     <port-name>I2C_1_SCL</port-name>

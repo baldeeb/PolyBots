@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <session version="1.0">
-<refactoring comment="Delete resource &apos;touch_screen_MSS_MSS_CM3_0_app/main.c&apos;" deleteContents="false" description="Delete resource &apos;touch_screen_MSS_MSS_CM3_0_app/main.c&apos;" element1="/touch_screen_MSS_MSS_CM3_0_app/main.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1492357932050"/>
+<refactoring comment="Delete resource &apos;touch_screen_MSS_MSS_CM3_0_app/main.c&apos;" deleteContents="false" description="Delete resource &apos;touch_screen_MSS_MSS_CM3_0_app/main.c&apos;" element1="/touch_screen_MSS_MSS_CM3_0_app/main.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1492458282011"/>
 </session>
