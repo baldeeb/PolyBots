@@ -15,7 +15,7 @@ struct Print {
    int16_t
     WIDTH, HEIGHT;   // This is the 'raw' display w/h - never changes
   int16_t
-    width, height, // Display w/h as modified by current rotation
+    widthe, heighte, // Display w/h as modified by current rotation
     cursor_x, cursor_y;
   uint16_t
     textcolor, textbgcolor;

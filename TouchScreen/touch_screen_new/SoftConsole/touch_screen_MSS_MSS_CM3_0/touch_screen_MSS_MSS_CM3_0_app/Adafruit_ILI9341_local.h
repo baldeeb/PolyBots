@@ -101,7 +101,7 @@ void scrollTo(uint16_t y);
 void invertDisplay(boolean i);
 void setRotation(struct Print * print, uint8_t m);
 void SPI_WRITE16(uint16_t y);
-void SPI_WRITE32(uint16_t xa);
+void SPI_WRITE32(uint32_t xa);
 void SPI_WRITE_PIXELS(uint8_t*colors, uint8_t len);
 void setAddrWindow(uint16_t x, uint16_t y, uint16_t w, uint16_t h);
 void writePixel(uint16_t color);

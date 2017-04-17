@@ -82,8 +82,12 @@ void rx_handler( uint32_t rx_frame ) {
 	g_rx_frame = rx_frame;
 }
 
-void SPI_WRITE16(uint16_t y){ spiWrite((y >> 8)&0x00FF); spiWrite(y&0x00FF);}
-void SPI_WRITE32(uint16_t xa){ spiWrite((xa >> 24) & 0x000000FF); spiWrite((xa >> 16)&0x000000FF); spiWrite((xa >> 8)&0x000000FF); spiWrite(xa&0x000000FF);}
+#define SPI_WRITE16(s)         spiWrite((s) >> 8); spiWrite(s)
+#define SPI_WRITE32(l)         spiWrite((l) >> 24); spiWrite((l) >> 16); spiWrite((l) >> 8); spiWrite(l)
+//#define SPI_WRITE_PIXELS(c,l)  for(uint32_t i=0; i<(l); i+=2){ spiWrite(((uint8_t*)(c))[i+1]); spiWrite(((uint8_t*)(c))[i]); }
+
+//void SPI_WRITE16(uint16_t y){ spiWrite((y >> 8)); spiWrite(y);}
+//void SPI_WRITE32(uint32_t xa){ spiWrite((xa >> 24)); spiWrite((xa >> 16)); spiWrite((xa >> 8)); spiWrite(xa);}
 
 void SPI_WRITE_PIXELS(uint8_t*colors, uint8_t len) {
 	uint32_t i;
@@ -214,8 +218,8 @@ void begin(struct Print * print) {
     writeCommand(ILI9341_DISPON);    //Display on
     delay(120);
 
-    print->width = ILI9341_TFTWIDTH;
-    print->height = ILI9341_TFTHEIGHT;
+    print->widthe = ILI9341_TFTWIDTH;
+    print->heighte = ILI9341_TFTHEIGHT;
 }
 
 void setRotation(struct Print * print, uint8_t m) {
@@ -223,23 +227,23 @@ void setRotation(struct Print * print, uint8_t m) {
     switch (print->rotation) {
         case 0:
             m = (MADCTL_MX | MADCTL_BGR);
-            print->width  = ILI9341_TFTWIDTH;
-            print->height = ILI9341_TFTHEIGHT;
+            print->widthe  = ILI9341_TFTWIDTH;
+            print->heighte = ILI9341_TFTHEIGHT;
             break;
         case 1:
             m = (MADCTL_MV | MADCTL_BGR);
-            print->width  = ILI9341_TFTHEIGHT;
-            print->height = ILI9341_TFTWIDTH;
+            print->widthe  = ILI9341_TFTHEIGHT;
+            print->heighte = ILI9341_TFTWIDTH;
             break;
         case 2:
             m = (MADCTL_MY | MADCTL_BGR);
-            print->width  = ILI9341_TFTWIDTH;
-            print->height = ILI9341_TFTHEIGHT;
+            print->widthe  = ILI9341_TFTWIDTH;
+            print->heighte = ILI9341_TFTHEIGHT;
             break;
         case 3:
             m = (MADCTL_MX | MADCTL_MY | MADCTL_MV | MADCTL_BGR);
-            print->width  = ILI9341_TFTHEIGHT;
-            print->height = ILI9341_TFTWIDTH;
+            print->widthe  = ILI9341_TFTHEIGHT;
+            print->heighte = ILI9341_TFTWIDTH;
             break;
     }
 
@@ -260,9 +264,19 @@ void setAddrWindow(uint16_t x, uint16_t y, uint16_t w, uint16_t h) {
     uint32_t xa = ((uint32_t)x << 16) | (x+w-1);
     uint32_t ya = ((uint32_t)y << 16) | (y+h-1);
     writeCommand(ILI9341_CASET); // Column addr set
-    SPI_WRITE32(xa);
+    //SPI_WRITE32(xa);
+    spiWrite((xa) >> 24);
+    spiWrite((xa) >> 16);
+    spiWrite((xa) >> 8);
+    spiWrite(xa);
+
     writeCommand(ILI9341_PASET); // Row addr set
-    SPI_WRITE32(ya);
+    //SPI_WRITE32(ya);
+    spiWrite((ya) >> 24);
+    spiWrite((ya) >> 16);
+    spiWrite((ya) >> 8);
+    spiWrite(ya);
+
     writeCommand(ILI9341_RAMWR); // write to RAM
 }
 
@@ -276,12 +290,12 @@ void writePixel(uint16_t color){
 }
 
 void writePixels(uint16_t * colors, uint32_t len){
-    SPI_WRITE_PIXELS((uint8_t*)colors , len * 2);
+	 SPI_WRITE_PIXELS((uint8_t*)colors , len * 2);
 }
 
 
 void writePixelCoordinates(struct Print * print, int16_t x, int16_t y, uint16_t color) {
-    if((x < 0) ||(x >= print->width) || (y < 0) || (y >= print->height)) return;
+    if((x < 0) ||(x >= print->widthe) || (y < 0) || (y >= print->heighte)) return;
     setAddrWindow(x,y,1,1);
     writePixel(color);
 }
@@ -296,7 +310,7 @@ void writeColor(struct Print * print, uint16_t color, uint32_t len){
 }
 
 void writeFillRect(struct Print * print,int16_t x, int16_t y, int16_t w, int16_t h, uint16_t color){
-    if((x >= print->width) || (y >= print->height)) return;
+    if((x >= print->widthe) || (y >= print->heighte)) return;
     int16_t x2 = x + w - 1, y2 = y + h - 1;
     if((x2 < 0) || (y2 < 0)) return;
 
@@ -311,11 +325,12 @@ void writeFillRect(struct Print * print,int16_t x, int16_t y, int16_t w, int16_t
     }
 
     // Clip right/bottom
-    if(x2 >= print->width)  w = print->width  - x;
-    if(y2 >= print->height) h = print->height - y;
+    if(x2 >= print->widthe)  w = print->widthe  - x;
+    if(y2 >= print->heighte) h = print->heighte - y;
 
     int32_t len = (int32_t)w * h;
     setAddrWindow(x, y, w, h);
+
     writeColor(print, color, len);
 }
 
@@ -361,13 +376,13 @@ void drawBitmap(struct Print * print, int16_t x, int16_t y, int16_t w, int16_t h
   const uint16_t *pcolors) {
 
     int16_t x2, y2; // Lower-right coord
-    if(( x             >= print->width ) ||      // Off-edge right
-       ( y             >= print->height) ||      // " top
+    if(( x             >= print->widthe ) ||      // Off-edge right
+       ( y             >= print->heighte) ||      // " top
        ((x2 = (x+w-1)) <  0      ) ||      // " left
        ((y2 = (y+h-1)) <  0)     ) return; // " bottom
 
     int16_t bx1=0, by1=0, // Clipped top-left within bitmap
-            saveW=w;      // Save original bitmap width value
+            saveW=w;      // Save original bitmap widthe value
     if(x < 0) { // Clip left
         w  +=  x;
         bx1 = -x;
@@ -378,8 +393,8 @@ void drawBitmap(struct Print * print, int16_t x, int16_t y, int16_t w, int16_t h
         by1 = -y;
         y   =  0;
     }
-    if(x2 >= print->width ) w = print->width  - x; // Clip right
-    if(y2 >= print->height) h = print->height - y; // Clip bottom
+    if(x2 >= print->widthe ) w = print->widthe  - x; // Clip right
+    if(y2 >= print->heighte) h = print->heighte - y; // Clip bottom
 
     pcolors += by1 * saveW + bx1; // Offset bitmap ptr to clipped top-left
     setAddrWindow(x, y, w, h); // Clipped area

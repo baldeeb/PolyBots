@@ -4,6 +4,7 @@
 #include "drivers/mss_spi/drivers/mss_spi/mss_spi.h"
 
 void setup(struct Print * print);
+void testText(struct Print * print);
 void testLines(struct Print * print, uint16_t color);
 void testFastLines(struct Print * print, uint16_t color1, uint16_t color2);
 void testRects(struct Print * print, uint16_t color);
@@ -14,6 +15,8 @@ void testTriangles(struct Print * print);
 void testFilledTriangles(struct Print * print);
 void testRoundRects(struct Print * print);
 void testFilledRoundRects(struct Print * print);
+
+#define BOXSIZE 100
 
 struct Print * print;
 #define min(a,b) (((a)<(b))?(a):(b))
@@ -42,22 +45,24 @@ int main()
 		    MSS_SPI_BLOCK_TRANSFER_FRAME_SIZE
 		);
 
-	  MSS_SPI_configure_slave_mode
-		(
-			&g_mss_spi1,
-			MSS_SPI_MODE0,
-			MSS_SPI_PCLK_DIV_256,
-			MSS_SPI_BLOCK_TRANSFER_FRAME_SIZE
-		);
+//	  MSS_SPI_configure_slave_mode
+//		(
+//			&g_mss_spi1,
+//			MSS_SPI_MODE0,
+//			MSS_SPI_PCLK_DIV_256,
+//			MSS_SPI_BLOCK_TRANSFER_FRAME_SIZE
+//		);
 //	  MSS_SPI_set_frame_rx_handler( &g_mss_spi1, rx_handler );
 //
 	setup(print);
+	//	begin(print);
 
 	while( 1 )
 	{
 		//printf("fill screen black\n\r");
-		//begin(print);
 		//fillScreen(print, ILI9341_BLACK);
+
+
 //		uint8_t cmd = 0x11;
 //		spiWrite(cmd);
 //		delay(100);
@@ -75,30 +80,30 @@ void testFillScreen(struct Print * print) {
   fillScreen(print, ILI9341_BLUE);
   fillScreen(print, ILI9341_BLACK);
 }
-
-//void testText() {
-//  fillScreen(ILI9341_BLACK);
-//  setCursor(0, 0);
-//  setTextColor(ILI9341_WHITE);  setTextSize(1);
-//  println("Hello World!");
-//  setTextColor(ILI9341_YELLOW); setTextSize(2);
-//  println(1234.56);
-//  setTextColor(ILI9341_RED);    setTextSize(3);
-//  println(0xDEADBEEF, HEX);
-//  println();
-//  setTextColor(ILI9341_GREEN);
-//  setTextSize(5);
-//  println("Groop");
-//  setTextSize(2);
-//  println("I implore thee,");
-//  setTextSize(1);
-//  println("my foonting turlingdromes.");
-//  println("And hooptiously drangle me");
-//  println("with crinkly bindlewurdles,");
-//  println("Or I will rend thee");
-//  println("in the gobberwarts");
-//  println("with my blurglecruncheon,");
-//  println("see if I don't!");
+//
+//void testText(struct Print * print) {
+//	fillScreen(print, ILI9341_BLACK);
+//	setCursor(print, 0, 0);
+//	setTextColor(print, ILI9341_WHITE);  setTextSize(print, 1);
+//	println("Hello World!");
+//	setTextColor(print, ILI9341_YELLOW); setTextSize(print, 2);
+//	println(1234.56);
+//	setTextColor(print, ILI9341_RED);    setTextSize(print, 3);
+//	println(0xDEADBEEF);
+//	println();
+//	setTextColor(print, ILI9341_GREEN);
+//	setTextSize(print, 5);
+//	println("Groop");
+//	setTextSize(print, 2);
+//	println("I implore thee,");
+//	setTextSize(print, 1);
+//	println("my foonting turlingdromes.");
+//	println("And hooptiously drangle me");
+//	println("with crinkly bindlewurdles,");
+//	println("Or I will rend thee");
+//	println("in the gobberwarts");
+//	println("with my blurglecruncheon,");
+//	println("see if I don't!");
 //}
 
 void testLines(struct Print * print, uint16_t color) {
@@ -275,55 +280,55 @@ void setup(struct Print * print) {
   begin(print);
 
   // read diagnostics (optional but can help debug problems)
-  uint8_t x = readcommand8(ILI9341_RDMODE, 0);
-  printf("Display Power Mode: %d\n\r", x);
-  x = readcommand8(ILI9341_RDMADCTL, 0);
-  printf("MADCTL Mode: %d\n\r", x);
-  x = readcommand8(ILI9341_RDPIXFMT, 0);
-  printf("Pixel Format: %d\n\r", x);
-  x = readcommand8(ILI9341_RDIMGFMT, 0);
-  printf("Image Format: %d\n\r", x);
-  x = readcommand8(ILI9341_RDSELFDIAG, 0);
-  printf("Self Diagnostic: %d\n\r", x);
+//  uint8_t x = readcommand8(ILI9341_RDMODE, 0);
+//  printf("Display Power Mode: %d\n\r", x);
+//  x = readcommand8(ILI9341_RDMADCTL, 0);
+//  printf("MADCTL Mode: %d\n\r", x);
+//  x = readcommand8(ILI9341_RDPIXFMT, 0);
+//  printf("Pixel Format: %d\n\r", x);
+//  x = readcommand8(ILI9341_RDIMGFMT, 0);
+//  printf("Image Format: %d\n\r", x);
+//  x = readcommand8(ILI9341_RDSELFDIAG, 0);
+//  printf("Self Diagnostic: %d\n\r", x);
 
-  printf("Screen fill              \n\r");
-  testFillScreen(print);
+//  printf("Screen fill              \n\r");
+//  testFillScreen(print);
 
-//  Serial.print(F("Text                     "));
-//  Serial.println(testText());
+//  printf("Text                     \n\r");
+//  testText(print);
 //  delay(3000);
-
-  printf("Lines                    \n\r");
-  testLines(print,ILI9341_CYAN);
-
-  printf("Horiz/Vert Lines         \n\r");
-  testFastLines(print, ILI9341_RED, ILI9341_BLUE);
-
-  printf("Rectangles (outline)     \n\r");
-  testRects(print, ILI9341_GREEN);
-
+//
+//  printf("Lines                    \n\r");
+//  testLines(print,ILI9341_CYAN);
+//
+//  printf("Horiz/Vert Lines         \n\r");
+//  testFastLines(print, ILI9341_RED, ILI9341_BLUE);
+////
+//  printf("Rectangles (outline)     \n\r");
+//  testRects(print, ILI9341_GREEN);
+////
   printf("Rectangles (filled)      \n\r");
   testFilledRects(print, ILI9341_YELLOW, ILI9341_MAGENTA);
 
-  printf("Circles (filled)         \n\r");
-  testFilledCircles(print, 10, ILI9341_MAGENTA);
+//  printf("Circles (filled)         \n\r");
+//  testFilledCircles(print, 10, ILI9341_MAGENTA);
+//
+//  printf("Circles (outline)        \n\r");
+//  testCircles(print, 10, ILI9341_WHITE);
+//
+//  printf("Triangles (outline)      \n\r");
+//  testTriangles(print);
+//
+//  printf("Triangles (filled)       \n\r");
+//  testFilledTriangles(print);
+//
+//  printf("Rounded rects (outline)  \n\r");
+//  testRoundRects(print);
+//
+//  printf("Rounded rects (filled)   \n\r");
+//  testFilledRoundRects(print);
 
-  printf("Circles (outline)        \n\r");
-  testCircles(print, 10, ILI9341_WHITE);
-
-  printf("Triangles (outline)      \n\r");
-  testTriangles(print);
-
-  printf("Triangles (filled)       \n\r");
-  testFilledTriangles(print);
-
-  printf("Rounded rects (outline)  \n\r");
-  testRoundRects(print);
-
-  printf("Rounded rects (filled)   \n\r");
-  testFilledRoundRects(print);
-
-  printf("Done!");
+  printf("Done!\n\r");
 
 }
 

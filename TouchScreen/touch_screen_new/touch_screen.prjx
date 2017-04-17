@@ -57,13 +57,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313753"
+TIME="1492369823"
 SIZE="2736"
 PARENT="<project>\component\work\touch_screen\touch_screen.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1492313753"
+TIME="1492369823"
 SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -152,7 +152,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313745"
+TIME="1492369816"
 SIZE="945"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
@@ -170,97 +170,97 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313736"
+TIME="1492369807"
 SIZE="252"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313736"
+TIME="1492369807"
 SIZE="252"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.200\MSS_COM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313736"
+TIME="1492369807"
 SIZE="252"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313736"
+TIME="1492369807"
 SIZE="252"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.3.200\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313741"
+TIME="1492369813"
 SIZE="253"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIC\1.0.101\MSS_FIC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313741"
+TIME="1492369813"
 SIZE="252"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313741"
+TIME="1492369813"
 SIZE="252"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313742"
+TIME="1492369813"
 SIZE="253"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_I2C\1.0.101\MSS_I2C.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313742"
+TIME="1492369813"
 SIZE="252"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313742"
+TIME="1492369813"
 SIZE="253"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313742"
+TIME="1492369813"
 SIZE="254"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313742"
+TIME="1492369813"
 SIZE="252"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_SPI\1.0.102\MSS_SPI.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313742"
+TIME="1492369813"
 SIZE="252"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313742"
+TIME="1492369813"
 SIZE="254"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UART\1.0.101\MSS_UART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313742"
+TIME="1492369813"
 SIZE="253"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313742"
+TIME="1492369813"
 SIZE="254"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
@@ -276,13 +276,13 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\touch_screen\touch_screen.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313776"
+TIME="1492369847"
 SIZE="6196"
 ENDFILE
 VALUE "<project>\component\work\touch_screen\touch_screen.pdc,pdc"
 STATE="utd"
-TIME="1492313751"
-SIZE="2550"
+TIME="1492369821"
+SIZE="1997"
 PARENT="<project>\component\work\touch_screen\touch_screen.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -292,34 +292,34 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\touch_screen\touch_screen.v,hdl"
 STATE="utd"
-TIME="1492313753"
+TIME="1492369824"
 SIZE="14544"
 PARENT="<project>\component\work\touch_screen\touch_screen.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\touch_screen_MSS\MSS_CCC_0\touch_screen_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313736"
+TIME="1492369807"
 SIZE="499"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\touch_screen_MSS\MSS_CCC_0\touch_screen_MSS_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
 STATE="utd"
-TIME="1492313736"
+TIME="1492369807"
 SIZE="2894"
 PARENT="<project>\component\work\touch_screen_MSS\MSS_CCC_0\touch_screen_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\touch_screen_MSS\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1492313741"
+TIME="1492369813"
 SIZE="15875"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\touch_screen_MSS\mss_tshell.v,hdl"
 STATE="utd"
-TIME="1492313742"
+TIME="1492369814"
 SIZE="12226"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -331,7 +331,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\touch_screen_MSS\mss_tshell_syn.sdc,sdc"
 STATE="utd"
-TIME="1492313742"
+TIME="1492369814"
 SIZE="204"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -343,13 +343,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492313749"
+TIME="1492369819"
 SIZE="14595"
 ENDFILE
 VALUE "<project>\component\work\touch_screen_MSS\touch_screen_MSS.pdc,pdc"
 STATE="utd"
-TIME="1492313732"
-SIZE="1531"
+TIME="1492369804"
+SIZE="1785"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -359,7 +359,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\touch_screen_MSS\touch_screen_MSS.v,hdl"
 STATE="utd"
-TIME="1492313746"
+TIME="1492369817"
 SIZE="21731"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 IS_READONLY="TRUE"
@@ -370,9 +370,9 @@ TIME="1492314154"
 SIZE="298496"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_screen.fdb,fdb"
-STATE="utd"
-TIME="1492314153"
-SIZE="33088"
+STATE="ood"
+TIME="1492381098"
+SIZE="33094"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_screen.ide_des,ide_des"
 STATE="utd"
@@ -401,18 +401,18 @@ SIZE="2441"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_screen_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1492314127"
-SIZE="2700"
+TIME="1492381073"
+SIZE="2708"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_screen_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1492314154"
-SIZE="714"
+TIME="1492381099"
+SIZE="738"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_screen_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1492314133"
-SIZE="1203"
+TIME="1492381080"
+SIZE="1211"
 ENDFILE
 VALUE "<project>\hdl\spi_pin.v,hdl"
 STATE="utd"
@@ -439,13 +439,13 @@ PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1492313753"
+TIME="1492369824"
 SIZE="632"
 PARENT="<project>\component\work\touch_screen\touch_screen.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1492313736"
+TIME="1492369808"
 SIZE="5460"
 PARENT="<project>\component\work\touch_screen_MSS\touch_screen_MSS.cxf"
 ENDFILE
@@ -655,8 +655,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.7\\\Synplify\\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -726,8 +726,13 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Compile:touch_screen_compile_log.rpt
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;touch_screen;0
+SmartDesign;touch_screen_MSS;0
+HDL;hdl\spi_pin.v;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"

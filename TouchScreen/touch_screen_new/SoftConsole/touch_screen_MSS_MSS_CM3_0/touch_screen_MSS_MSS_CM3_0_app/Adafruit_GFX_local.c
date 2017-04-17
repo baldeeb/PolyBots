@@ -151,9 +151,9 @@ void writeLine(struct Print * print, int16_t x0, int16_t y0, int16_t x1, int16_t
 //
 //}
 
-void startWriteGFX(void){
-    // Overwrite in subclasses if startWrite is defined!
-}
+//void startWriteGFX(void){
+//    // Overwrite in subclasses if startWrite is defined!
+//}
 
 //void endWrite(){
 //    // Overwrite in subclasses if startWrite is defined!
@@ -180,7 +180,7 @@ void startWriteGFX(void){
 
 void fillScreen(struct Print * print, uint16_t color) {
     // Update in subclasses if desired!
-    fillRect(print, 0, 0, print->width, print->height, color);
+    fillRect(print, 0, 0, print->widthe, print->heighte, color);
 }
 
 void drawLine(struct Print * print, int16_t x0, int16_t y0, int16_t x1, int16_t y1,
@@ -492,8 +492,8 @@ void drawChar(struct Print * print, int16_t x, int16_t y, unsigned char c,
 	int8_t j, i;
     if(!print->gfxFont) { // 'Classic' built-in font
 
-        if((x >= print->width)            || // Clip right
-                (y >= print->height)           || // Clip bottom
+        if((x >= print->widthe)            || // Clip right
+                (y >= print->heighte)           || // Clip bottom
                 ((x + 6 * size - 1) < 0) || // Clip left
                 ((y + 8 * size - 1) < 0))   // Clip top
             return;
@@ -587,7 +587,7 @@ void write(struct Print * print,uint8_t c) {
         } else if(c == '\r') {
             // skip em
         } else {
-            if(print->wrap && ((print->cursor_x + print->textsize * 6) >= print->width)) { // Heading off edge?
+            if(print->wrap && ((print->cursor_x + print->textsize * 6) >= print->widthe)) { // Heading off edge?
                 print->cursor_x  = 0;            // Reset x to zero
                 print->cursor_y += print->textsize * 8; // Advance y one line
             }
@@ -610,7 +610,7 @@ void write(struct Print * print,uint8_t c) {
                         h     = pgm_read_byte(&glyph->height);
                 if((w > 0) && (h > 0)) { // Is there an associated bitmap?
                     int16_t xo = (int8_t)pgm_read_byte(&glyph->xOffset); // sic
-                    if(print->wrap && ((print->cursor_x + print->textsize * (xo + w)) >= print->width)) {
+                    if(print->wrap && ((print->cursor_x + print->textsize * (xo + w)) >= print->widthe)) {
                         // Drawing character would go off right edge; wrap to new line
                         print->cursor_x  = 0;
                         print->cursor_y += (int16_t)print->textsize *
@@ -666,13 +666,13 @@ uint8_t getRotation(struct Print * print)  {
 //    switch(print->rotation) {
 //        case 0:
 //        case 2:
-//            print->width  = print->WIDTH;
-//            print->height = print->HEIGHT;
+//            print->widthe  = print->WIDTH;
+//            print->heighte = print->HEIGHT;
 //            break;
 //        case 1:
 //        case 3:
-//            print->width  = print->HEIGHT;
-//            print->height = print->WIDTH;
+//            print->widthe  = print->HEIGHT;
+//            print->heighte = print->WIDTH;
 //            break;
 //    }
 //}
@@ -719,7 +719,7 @@ void getTextBounds(struct Print * print, char *str, int16_t x, int16_t y,
                 last  = pgm_read_byte(&print->gfxFont->last),
                 gw, gh, xa;
         int8_t    xo, yo;
-        int16_t   minx = print->width, miny = print->height, maxx = -1, maxy = -1,
+        int16_t   minx = print->widthe, miny = print->heighte, maxx = -1, maxy = -1,
                 gx1, gy1, gx2, gy2, ts = (int16_t)print->textsize,
                 ya = ts * (uint8_t)pgm_read_byte(&print->gfxFont->yAdvance);
 
@@ -734,7 +734,7 @@ void getTextBounds(struct Print * print, char *str, int16_t x, int16_t y,
                         xa    = pgm_read_byte(&glyph->xAdvance);
                         xo    = pgm_read_byte(&glyph->xOffset);
                         yo    = pgm_read_byte(&glyph->yOffset);
-                        if(print->wrap && ((x + (((int16_t)xo + gw) * ts)) >= print->width)) {
+                        if(print->wrap && ((x + (((int16_t)xo + gw) * ts)) >= print->widthe)) {
                             // Line wrap
                             x  = 0;  // Reset x to 0
                             y += ya; // Advance y by 1 line
@@ -768,7 +768,7 @@ void getTextBounds(struct Print * print, char *str, int16_t x, int16_t y,
         while((c = *str++)) {
             if(c != '\n') { // Not a newline
                 if(c != '\r') { // Not a carriage return, is normal char
-                    if( print->wrap && ((x +  print->textsize * 6) >=  print->width)) {
+                    if( print->wrap && ((x +  print->textsize * 6) >=  print->widthe)) {
                         x  = 0;            // Reset x to 0
                         y +=  print->textsize * 8; // Advance y by 1 line
                         if(lineWidth > maxWidth) maxWidth = lineWidth; // Save widest line
@@ -785,7 +785,7 @@ void getTextBounds(struct Print * print, char *str, int16_t x, int16_t y,
             }
         }
         // End of string
-        if(lineWidth) y +=  print->textsize * 8; // Add height of last (or only) line
+        if(lineWidth) y +=  print->textsize * 8; // Add heighte of last (or only) line
         if(lineWidth > maxWidth) maxWidth = lineWidth; // Is the last or only line the widest?
         *w = maxWidth - 1;               // Don't include last interchar x gap
         *h = y - *y1;
@@ -796,11 +796,11 @@ void getTextBounds(struct Print * print, char *str, int16_t x, int16_t y,
 
 // Return the size of the display (per current rotation)
 int16_t width(struct Print* print)  {
-    return print->width;
+    return print->widthe;
 }
 
 int16_t height(struct Print* print)  {
-    return print->height;
+    return print->heighte;
 }
 
 //void invertDisplay(int i) {
