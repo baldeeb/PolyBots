@@ -1,0 +1,102 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include <stdlib.h>
+#include "drivers/mss_uart/mss_uart.h"
+#include "drivers/mss_gpio/mss_gpio.h"
+#include "pixy.h"
+#include "IRcontrol.h"
+#include "followProcessing.h"
+
+int * MOTOR_INPUTS = (int*) 0x40050004;
+int * LEFT_MOTOR = (int*) 0x40050008;
+int * RIGHT_MOTOR = (int*) 0x4005000C;
+int * ENCODERS = (int*) 0x40050010;
+
+const int PERIOD = 400000;
+const int MAX_PWM = 400000;
+/*const double Kp = 0.5;
+const double Ki = 0.05;
+const double Kd = 10.0;*/
+const double Kp = 0.1;
+const double Ki = 0.0001;
+const double Kd = 4.5;
+
+const int buff_size = 8;
+
+int right_wheel_direction = 0;
+int left_wheel_direction = 0;
+int mode = 1;
+float left_duty_cycle = 0;
+float right_duty_cycle = 0;
+float prev_right_duty_cycle = 0;
+float prev_left_duty_cycle = 0;
+
+/*void process_rx_data(uint8_t rx_buff[buff_size], uint8_t rx_size)
+{
+	prev_right_duty_cycle = right_duty_cycle;
+	prev_left_duty_cycle = left_duty_cycle;
+
+	right_duty_cycle = rx_buff[1];
+	right_wheel_direction = rx_buff[2];
+	left_duty_cycle = rx_buff[3];
+	left_wheel_direction = rx_buff[4];
+	mode = rx_buff[5];
+}*/
+
+void uart1_rx_handler( mss_uart_instance_t * this_uart )
+{
+	uint8_t rx_buff[8] = {0xFF,0xFF, 0xFF,0xFF,0xFF,0xFF,0xFF,0xFF};
+	uint8_t rx_size = MSS_UART_get_rx( this_uart, rx_buff, sizeof(rx_buff) );
+	//process_rx_data(rx_buff, rx_size );
+
+	prev_right_duty_cycle = right_duty_cycle;
+	prev_left_duty_cycle = left_duty_cycle;
+
+	right_duty_cycle = rx_buff[1];
+	right_wheel_direction = rx_buff[2];
+	left_duty_cycle = rx_buff[3];
+	left_wheel_direction = rx_buff[4];
+	mode = rx_buff[5];
+}
+
+
+int main()
+{
+
+	MSS_UART_init(&g_mss_uart1, MSS_UART_9600_BAUD, MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT);
+	MSS_UART_set_rx_handler( &g_mss_uart1, uart1_rx_handler, MSS_UART_FIFO_EIGHT_BYTES );
+
+	//pixy init functions
+	MSS_I2C_init(&g_mss_i2c1 , PIXY_I2C_DEFAULT_ADDR, MSS_I2C_PCLK_DIV_256 );
+	start_hardware_cont_timer();
+	init_ideal_pixy_dots();
+
+	//init IR sensors
+	init_ir_control();
+
+
+	while( 1 )	{
+		ir_sample();
+		process_pixy_i2c();
+		ir_read();
+
+		switch(motor_dir){
+		case 1:
+			*MOTOR_INPUTS = 0xa;
+			break;
+		case 2:
+			*MOTOR_INPUTS = 0x5;
+			break;
+		case 0:
+		default:
+			*MOTOR_INPUTS = 0x0;
+			break;
+		}
+
+		//printf("l: %x, r: %x\n\r", pixy_lmotor_pwm, pixy_rmotor_pwm);
+
+		*RIGHT_MOTOR = rmotor_pwm;//speed 0 - 500000
+		*LEFT_MOTOR = lmotor_pwm;//speed 0 - 500000
+
+	}
+}

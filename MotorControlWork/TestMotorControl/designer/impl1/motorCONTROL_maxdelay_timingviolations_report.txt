@@ -1,0 +1,110 @@
+Timing Violation Report Max Delay Analysis
+
+SmartTime Version v11.7 SP1.1
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
+Date: Sun Apr 16 21:30:42 2017
+
+
+Design: motorCONTROL
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+Path 1
+  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          m_control_0/pulseWidthRight[1]:D
+  Delay (ns):                  11.136
+  Slack (ns):                  -0.395
+  Arrival (ns):                14.691
+  Required (ns):               14.296
+
+Path 2
+  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          m_control_0/pulseWidthLeft[14]:D
+  Delay (ns):                  10.905
+  Slack (ns):                  -0.213
+  Arrival (ns):                14.460
+  Required (ns):               14.247
+
+Path 3
+  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          m_control_0/pulseWidthLeft[18]:D
+  Delay (ns):                  10.933
+  Slack (ns):                  -0.194
+  Arrival (ns):                14.488
+  Required (ns):               14.294
+
+Path 4
+  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          m_control_0/pulseWidthRight[14]:D
+  Delay (ns):                  10.912
+  Slack (ns):                  -0.171
+  Arrival (ns):                14.467
+  Required (ns):               14.296
+
+Path 5
+  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          m_control_0/pulseWidthLeft[11]:D
+  Delay (ns):                  10.875
+  Slack (ns):                  -0.124
+  Arrival (ns):                14.430
+  Required (ns):               14.306
+
+Path 6
+  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          m_control_0/pulseWidthLeft[17]:D
+  Delay (ns):                  10.875
+  Slack (ns):                  -0.124
+  Arrival (ns):                14.430
+  Required (ns):               14.306
+
+Path 7
+  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          m_control_0/pulseWidthLeft[3]:D
+  Delay (ns):                  10.875
+  Slack (ns):                  -0.124
+  Arrival (ns):                14.430
+  Required (ns):               14.306
+
+Path 8
+  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          m_control_0/pulseWidthLeft[9]:D
+  Delay (ns):                  10.831
+  Slack (ns):                  -0.068
+  Arrival (ns):                14.386
+  Required (ns):               14.318
+
+Path 9
+  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          m_control_0/pulseWidthLeft[5]:D
+  Delay (ns):                  10.755
+  Slack (ns):                  -0.021
+  Arrival (ns):                14.310
+  Required (ns):               14.289
+
+Path 10
+  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          m_control_0/pulseWidthLeft[4]:D
+  Delay (ns):                  10.745
+  Slack (ns):                  -0.011
+  Arrival (ns):                14.300
+  Required (ns):               14.289
+
+Path 11
+  From:                        motorCONTROL_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          m_control_0/pulseWidthLeft[1]:D
+  Delay (ns):                  10.745
+  Slack (ns):                  -0.011
+  Arrival (ns):                14.300
+  Required (ns):               14.289
+

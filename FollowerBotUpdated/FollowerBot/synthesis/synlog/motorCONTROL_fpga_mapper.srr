@@ -1,0 +1,447 @@
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1659R, Built Dec 10 2015 09:42:41
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-SP1-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+@W: MO111 :"n:\eecs373\project\followerbot\followerbot\component\work\motorcontrol_mss\mss_ccc_0\motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT on net LPXIN_CLKOUT has its enable tied to GND (module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"n:\eecs373\project\followerbot\followerbot\component\work\motorcontrol_mss\mss_ccc_0\motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT on net MAINXIN_CLKOUT has its enable tied to GND (module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"n:\eecs373\project\followerbot\followerbot\component\work\motorcontrol_mss\mss_ccc_0\motorcontrol_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT on net RCOSC_CLKOUT has its enable tied to GND (module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 112MB)
+
+@N: MF179 :"n:\eecs373\project\followerbot\followerbot\hdl\m_control.v":89:12:89:34|Found 19 bit by 19 bit '<' comparator, 'pwmLeft4'
+@N: MF179 :"n:\eecs373\project\followerbot\followerbot\hdl\m_control.v":94:12:94:35|Found 19 bit by 19 bit '<' comparator, 'pwmRight6'
+@N: MF238 :"n:\eecs373\project\followerbot\followerbot\hdl\m_control.v":82:21:82:30|Found 19-bit incrementor, 'un3_count_1[18:0]'
+@N: MF238 :"n:\eecs373\project\followerbot\followerbot\hdl\m_control.v":87:23:87:34|Found 25-bit incrementor, 'un3_counter_1[24:0]'
+
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 112MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name                          Fanout, notes
+-----------------------------------------------------------------
+motorCONTROL_MSS_0.MSS_ADLIB_INST / MSSPADDR[2]     47           
+motorCONTROL_MSS_0.MSS_ADLIB_INST / MSSPADDR[3]     36           
+motorCONTROL_MSS_0.MSS_ADLIB_INST / M2FRESETn       41           
+CoreAPB3_0.CAPB3l0OI[0] / Y                         27           
+m_control_0.un1_pulseWidthLeft10_1_i_a2 / Y         25           
+=================================================================
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+Replicating Combinational Instance m_control_0.un1_pulseWidthLeft10_1_i_a2, fanout 25 segments 2
+Replicating Combinational Instance CoreAPB3_0.CAPB3l0OI[0], fanout 28 segments 2
+Buffering motorCONTROL_MSS_0_M2F_RESET_N, fanout 41 segments 2
+Buffering CoreAPB3_0_APBmslave0_PADDR[3], fanout 36 segments 2
+Buffering CoreAPB3_0_APBmslave0_PADDR[2], fanout 47 segments 2
+
+Added 3 Buffers
+Added 2 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 2 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 113MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 113 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+====================================== Non-Gated/Non-Generated Clocks =======================================
+Clock Tree ID     Driving Element        Drive Element Type                Fanout     Sample Instance        
+-------------------------------------------------------------------------------------------------------------
+@K:CKID0001       motorCONTROL_MSS_0     clock definition on hierarchy     113        m_control_0.counter[24]
+=============================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+Writing Analyst data base N:\eecs373\project\FollowerBot\FollowerBot\synthesis\synwork\motorCONTROL_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 113MB)
+
+Writing EDIF Netlist and constraint files
+J-2015.03M-SP1-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 114MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 114MB)
+
+Found clock FCLK with period 40.00ns 
+Found clock FAB_CLK with period 40.00ns 
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Apr 15 17:28:21 2017
+#
+
+
+Top view:               motorCONTROL
+Library name:           smartfusion
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    25.0 MHz
+Wire load mode:         top
+Wire load model:        smartfusion
+Paths requested:        5
+Constraint File(s):    N:\eecs373\project\FollowerBot\FollowerBot\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc
+                       
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 5.106
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock          
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group          
+------------------------------------------------------------------------------------------------------------------
+FAB_CLK            25.0 MHz      105.1 MHz     40.000        9.515         30.485     declared     clk_group_0    
+FCLK               25.0 MHz      NA            40.000        NA            NA         declared     clk_group_0    
+System             100.0 MHz     204.3 MHz     10.000        4.894         5.106      system       system_clkgroup
+==================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------
+System    System   |  10.000      5.106   |  No paths    -      |  No paths    -      |  No paths    -    
+System    FAB_CLK  |  40.000      28.634  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   System   |  40.000      38.106  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   FAB_CLK  |  40.000      30.485  |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: FAB_CLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                            Starting                                       Arrival           
+Instance                    Reference     Type     Pin     Net             Time        Slack 
+                            Clock                                                            
+---------------------------------------------------------------------------------------------
+m_control_0.counter[1]      FAB_CLK       DFN1     Q       counter[1]      0.737       30.485
+m_control_0.counter[21]     FAB_CLK       DFN1     Q       counter[21]     0.737       30.494
+m_control_0.count[2]        FAB_CLK       DFN1     Q       count[2]        0.737       30.500
+m_control_0.count[1]        FAB_CLK       DFN1     Q       count[1]        0.737       30.506
+m_control_0.counter[0]      FAB_CLK       DFN1     Q       counter[0]      0.737       30.514
+m_control_0.counter[2]      FAB_CLK       DFN1     Q       counter[2]      0.737       30.553
+m_control_0.count[6]        FAB_CLK       DFN1     Q       count[6]        0.737       30.633
+m_control_0.count[0]        FAB_CLK       DFN1     Q       count[0]        0.580       30.652
+m_control_0.counter[4]      FAB_CLK       DFN1     Q       counter[4]      0.737       30.660
+m_control_0.counter[3]      FAB_CLK       DFN1     Q       counter[3]      0.737       30.700
+=============================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                            Starting                                         Required           
+Instance                    Reference     Type     Pin     Net               Time         Slack 
+                            Clock                                                               
+------------------------------------------------------------------------------------------------
+m_control_0.counter[12]     FAB_CLK       DFN1     D       counter_3[12]     39.461       30.485
+m_control_0.counter[6]      FAB_CLK       DFN1     D       counter_3[6]      39.461       30.494
+m_control_0.counter[11]     FAB_CLK       DFN1     D       counter_3[11]     39.461       30.494
+m_control_0.counter[13]     FAB_CLK       DFN1     D       counter_3[13]     39.461       30.494
+m_control_0.counter[14]     FAB_CLK       DFN1     D       counter_3[14]     39.461       30.494
+m_control_0.counter[16]     FAB_CLK       DFN1     D       counter_3[16]     39.461       30.494
+m_control_0.counter[18]     FAB_CLK       DFN1     D       counter_3[18]     39.461       30.494
+m_control_0.counter[19]     FAB_CLK       DFN1     D       counter_3[19]     39.461       30.494
+m_control_0.counter[20]     FAB_CLK       DFN1     D       counter_3[20]     39.461       30.494
+m_control_0.counter[21]     FAB_CLK       DFN1     D       counter_3[21]     39.461       30.494
+================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      40.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         39.461
+
+    - Propagation time:                      8.976
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 30.485
+
+    Number of logic level(s):                5
+    Starting point:                          m_control_0.counter[1] / Q
+    Ending point:                            m_control_0.counter[12] / D
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
+
+Instance / Net                               Pin      Pin               Arrival     No. of    
+Name                               Type      Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------
+m_control_0.counter[1]             DFN1      Q        Out     0.737     0.737       -         
+counter[1]                         Net       -        -       1.526     -           7         
+m_control_0.un3_counter_1.I_10     AND3      B        In      -         2.263       -         
+m_control_0.un3_counter_1.I_10     AND3      Y        Out     0.607     2.869       -         
+DWACT_FINC_E_0[0]                  Net       -        -       1.639     -           8         
+m_control_0.un3_counter_1.I_30     AND3      A        In      -         4.508       -         
+m_control_0.un3_counter_1.I_30     AND3      Y        Out     0.464     4.972       -         
+DWACT_FINC_E_0[6]                  Net       -        -       1.526     -           7         
+m_control_0.un3_counter_1.I_34     NOR2B     B        In      -         6.498       -         
+m_control_0.un3_counter_1.I_34     NOR2B     Y        Out     0.627     7.126       -         
+N_14                               Net       -        -       0.322     -           1         
+m_control_0.un3_counter_1.I_35     XOR2      A        In      -         7.447       -         
+m_control_0.un3_counter_1.I_35     XOR2      Y        Out     0.488     7.936       -         
+I_35                               Net       -        -       0.322     -           1         
+m_control_0.counter_RNO[12]        AOI1B     C        In      -         8.257       -         
+m_control_0.counter_RNO[12]        AOI1B     Y        Out     0.398     8.655       -         
+counter_3[12]                      Net       -        -       0.322     -           1         
+m_control_0.counter[12]            DFN1      D        In      -         8.976       -         
+==============================================================================================
+Total path delay (propagation time + setup) of 9.515 is 3.860(40.6%) logic and 5.655(59.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                        Starting                                                                                   Arrival           
+Instance                                Reference     Type        Pin              Net                                             Time        Slack 
+                                        Clock                                                                                                        
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[8]      motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[8]      0.000       5.106 
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPSEL          motorCONTROL_MSS_0_MSS_MASTER_APB_PSELx         0.000       5.106 
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[11]     motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[11]     0.000       5.120 
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[10]     motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[10]     0.000       5.271 
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     MSSPADDR[9]      motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[9]      0.000       5.388 
+motorCONTROL_MSS_0.MSS_ACE_0_ADC5       System        INBUF_A     Y                MSS_ACE_0_ADC5_Y                                0.000       9.678 
+motorCONTROL_MSS_0.MSS_ACE_0_ADC6       System        INBUF_A     Y                MSS_ACE_0_ADC6_Y                                0.000       9.678 
+motorCONTROL_MSS_0.MSS_ACE_0_VAREF1     System        INBUF_A     Y                MSS_ACE_0_VAREF1_Y                              0.000       9.678 
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     EMCCLK           MSS_ADLIB_INST_EMCCLK                           0.000       9.678 
+motorCONTROL_MSS_0.MSS_ADLIB_INST       System        MSS_APB     M2FRESETn        motorCONTROL_MSS_0_M2F_RESET_N                  0.000       28.634
+=====================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                      Starting                                                                                   Required          
+Instance                              Reference     Type        Pin              Net                                             Time         Slack
+                                      Clock                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------------------
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[0]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[0]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[1]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[1]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[2]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[2]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[3]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[3]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[4]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[4]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[5]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[5]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[6]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[6]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[7]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[7]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[8]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[8]     10.000       5.106
+motorCONTROL_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[9]     motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[9]     10.000       5.106
+===================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         10.000
+
+    - Propagation time:                      4.894
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (critical) :                     5.106
+
+    Number of logic level(s):                3
+    Starting point:                          motorCONTROL_MSS_0.MSS_ADLIB_INST / MSSPADDR[8]
+    Ending point:                            motorCONTROL_MSS_0.MSS_ADLIB_INST / MSSPRDATA[11]
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                               Pin               Pin               Arrival     No. of    
+Name                                             Type        Name              Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------
+motorCONTROL_MSS_0.MSS_ADLIB_INST                MSS_APB     MSSPADDR[8]       Out     0.000     0.000       -         
+motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR[8]       Net         -                 -       0.322     -           1         
+CoreAPB3_0.CAPB3l0OI_2[0]                        NOR3A       C                 In      -         0.322       -         
+CoreAPB3_0.CAPB3l0OI_2[0]                        NOR3A       Y                 Out     0.641     0.963       -         
+CAPB3l0OI_2[0]                                   Net         -                 -       0.386     -           2         
+CoreAPB3_0.CAPB3l0OI[0]                          NOR2B       A                 In      -         1.349       -         
+CoreAPB3_0.CAPB3l0OI[0]                          NOR2B       Y                 Out     0.514     1.863       -         
+CoreAPB3_0_APBmslave0_PSELx                      Net         -                 -       2.082     -           14        
+CoreAPB3_0.CAPB3IIII.PRDATA_11                   NOR2B       B                 In      -         3.945       -         
+CoreAPB3_0.CAPB3IIII.PRDATA_11                   NOR2B       Y                 Out     0.627     4.572       -         
+motorCONTROL_MSS_0_MSS_MASTER_APB_PRDATA[11]     Net         -                 -       0.322     -           1         
+motorCONTROL_MSS_0.MSS_ADLIB_INST                MSS_APB     MSSPRDATA[11]     In      -         4.894       -         
+=======================================================================================================================
+Total path delay (propagation time + setup) of 4.894 is 1.783(36.4%) logic and 3.111(63.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 114MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 112MB peak: 114MB)
+
+--------------------------------------------------------------------------------
+Target Part: A2F200M3F_FBGA484_STD
+Report for cell motorCONTROL.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2    19      1.0       19.0
+             AND2A     2      1.0        2.0
+              AND3    68      1.0       68.0
+               AO1    13      1.0       13.0
+              AO1B     1      1.0        1.0
+              AO1C    18      1.0       18.0
+              AOI1     2      1.0        2.0
+             AOI1A     6      1.0        6.0
+             AOI1B    19      1.0       19.0
+              BUFF     3      1.0        3.0
+               GND     6      0.0        0.0
+           MSS_APB     1      0.0        0.0
+           MSS_CCC     1      0.0        0.0
+               MX2    71      1.0       71.0
+              NOR2     8      1.0        8.0
+             NOR2A    21      1.0       21.0
+             NOR2B    89      1.0       89.0
+              NOR3     1      1.0        1.0
+             NOR3A     5      1.0        5.0
+             NOR3B    15      1.0       15.0
+             NOR3C    14      1.0       14.0
+               OA1     6      1.0        6.0
+              OA1A    12      1.0       12.0
+              OR2A    30      1.0       30.0
+             RCOSC     1      0.0        0.0
+               VCC     6      0.0        0.0
+               XA1     1      1.0        1.0
+             XNOR2    36      1.0       36.0
+              XOR2    42      1.0       42.0
+
+
+              DFN1    84      1.0       84.0
+            DFN1E1    29      1.0       29.0
+                   -----          ----------
+             TOTAL   630               615.0
+
+
+  IO Cell usage:
+              cell count
+         BIBUF_MSS     8
+   BIBUF_OPEND_MSS     2
+             INBUF     2
+           INBUF_A     3
+         INBUF_MSS     3
+            OUTBUF     6
+        OUTBUF_MSS     2
+                   -----
+             TOTAL    26
+
+
+Core Cells         : 615 of 4608 (13%)
+IO Cells           : 26
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:01s; Memory used current: 49MB peak: 114MB)
+
+Process took 0h:00m:05s realtime, 0h:00m:01s cputime
+# Sat Apr 15 17:28:21 2017
+
+###########################################################]

@@ -63,7 +63,7 @@ PARENT="<project>\component\work\motorCONTROL\motorCONTROL.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1492209135"
+TIME="1492283769"
 SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -218,7 +218,7 @@ PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_I2C\1.0.101\MSS_I2C.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209119"
+TIME="1492283769"
 SIZE="252"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
@@ -260,7 +260,7 @@ PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209139"
+TIME="1492283769"
 SIZE="2374"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
@@ -270,12 +270,12 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL\motorCONTROL.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209167"
+TIME="1492283769"
 SIZE="8003"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL\motorCONTROL.pdc,pdc"
 STATE="utd"
-TIME="1492209133"
+TIME="1492283769"
 SIZE="1895"
 PARENT="<project>\component\work\motorCONTROL\motorCONTROL.cxf"
 BEGIN_USE_CONSTRAINT
@@ -286,19 +286,19 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL\motorCONTROL.v,hdl"
 STATE="utd"
-TIME="1492209137"
+TIME="1492283769"
 SIZE="15559"
 PARENT="<project>\component\work\motorCONTROL\motorCONTROL.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492209126"
+TIME="1492283770"
 SIZE="15738"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.pdc,pdc"
 STATE="utd"
-TIME="1492209106"
+TIME="1492283770"
 SIZE="1044"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -309,7 +309,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.v,hdl"
 STATE="utd"
-TIME="1492209124"
+TIME="1492283770"
 SIZE="26260"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 IS_READONLY="TRUE"
@@ -329,7 +329,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\motorCONTROL_MSS\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1492209118"
+TIME="1492283770"
 SIZE="16219"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 IS_READONLY="TRUE"
@@ -360,52 +360,52 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL.adb,adb"
 STATE="ood"
-TIME="1492209357"
+TIME="1492283770"
 SIZE="720896"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL.fdb,fdb"
 STATE="ood"
-TIME="1492209356"
+TIME="1492283770"
 SIZE="52493"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL.ide_des,ide_des"
 STATE="utd"
-TIME="1492209357"
+TIME="1492283770"
 SIZE="1109"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_compile_log.rpt,log"
 STATE="utd"
-TIME="1492209280"
+TIME="1492283770"
 SIZE="32360"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_fp\motorCONTROL.pdb,pdb"
 STATE="ood"
-TIME="1492209386"
+TIME="1492283770"
 SIZE="58037"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_fp\motorCONTROL.pro,pro"
 STATE="utd"
-TIME="1492209431"
+TIME="1492283770"
 SIZE="2453"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_fp\projectData\motorCONTROL.pdb,pdb"
 STATE="utd"
-TIME="1492209430"
+TIME="1492283771"
 SIZE="58037"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1492209322"
+TIME="1492283771"
 SIZE="2712"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1492209357"
+TIME="1492283771"
 SIZE="738"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1492209330"
+TIME="1492283771"
 SIZE="1211"
 ENDFILE
 VALUE "<project>\hdl\m_control.v,hdl"
@@ -433,13 +433,13 @@ PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1492209137"
+TIME="1492283772"
 SIZE="634"
 PARENT="<project>\component\work\motorCONTROL\motorCONTROL.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1492209112"
+TIME="1492283772"
 SIZE="5497"
 PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
@@ -451,12 +451,12 @@ PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL.edn,syn_edn"
 STATE="ood"
-TIME="1492209255"
+TIME="1492283772"
 SIZE="449308"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL.so,so"
 STATE="utd"
-TIME="1492209255"
+TIME="1492283772"
 SIZE="242"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL_sdc.sdc,syn_sdc"
@@ -466,7 +466,7 @@ SIZE="552"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL_syn.prj,prj"
 STATE="utd"
-TIME="1492209256"
+TIME="1492283772"
 SIZE="2839"
 ENDFILE
 ENDLIST
@@ -481,10 +481,6 @@ VALUE "<project>\component\work\motorCONTROL\motorCONTROL.pdc,pdc"
 ENDLIST
 LIST SynthesisConstraints
 VALUE "<project>\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc,sdc"
-ENDLIST
-LIST PinReports
-VALUE "<project>\designer\impl1\motorCONTROL_report_pin_byname.txt,log"
-VALUE "<project>\designer\impl1\motorCONTROL_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 LIST "motorCONTROL_MSS::work"
