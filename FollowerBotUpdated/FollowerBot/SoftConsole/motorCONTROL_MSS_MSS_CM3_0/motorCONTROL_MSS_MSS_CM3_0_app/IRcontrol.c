@@ -39,6 +39,8 @@ void ir_sample( void ){
 	adc_data_f = ACE_get_ppe_sample(adc_handler_f) / IR_DIVIDER;
 	adc_data_b = ACE_get_ppe_sample(adc_handler_b) / IR_DIVIDER;
 
+//	printf("front: %i\r\n", adc_data_f);
+//	printf("back: %i\r\n", adc_data_b);
 	ir_front_sum -= ir_front_samples[sample_index];
 	ir_back_sum -= ir_back_samples[sample_index];
 
@@ -69,40 +71,32 @@ void ir_update_error( void ){
 	}
 
 	//turning right, dir = 2
-	if((ir_front_ave > ir_back_ave) && ((ir_front_ave - ir_back_ave) > IR_TOLERANCE))
-	{
+	if((ir_front_ave - ir_back_ave) > IR_TOLERANCE){
 		ir_dir = 2;
 		temp_error = ir_front_ave - ir_back_ave;
-		ir_error_sum -= ir_error_samples[ir_error_index];
-		ir_error_samples[ir_error_index] = temp_error;
-		ir_error_sum += temp_error;
-		ir_error = ir_error_sum / IR_ERROR_SAMPLE_COUNT;
-		++ir_error_index;
-		if(ir_error_index == IR_ERROR_SAMPLE_COUNT)
-		{
-			ir_error_index = 0;
-		}
-
-		return;
 	}
 	//turning left, dir = 1
-	else if((ir_front_ave < ir_back_ave) && ((ir_back_ave - ir_front_ave) > IR_TOLERANCE))
-	{
+	else if((ir_back_ave - ir_front_ave) > IR_TOLERANCE){
 		ir_dir = 1;
 		temp_error = ir_back_ave - ir_front_ave;
-		ir_error_sum -= ir_error_samples[ir_error_index];
-		ir_error_samples[ir_error_index] = temp_error;
-		ir_error_sum += temp_error;
-		ir_error = ir_error_sum / IR_ERROR_SAMPLE_COUNT;
-		++ir_error_index;
-		if(ir_error_index == IR_ERROR_SAMPLE_COUNT)
-		{
-			ir_error_index = 0;
-		}
-		return;
 	}
+	else {
+		ir_dir = 0;
+		temp_error = ir_back_ave - ir_front_ave;
+		temp_error *= temp_error > 0 ? 1 : -1;
+	}
+
+	ir_error_sum -= ir_error_samples[ir_error_index];
+	ir_error_samples[ir_error_index] = temp_error;
+	ir_error_sum += temp_error;
+
+	ir_error = ir_error_sum / (IR_ERROR_SAMPLE_COUNT * IR_ERROR_DIVIDER);
+	//ir_error *= ir_error;
+
+	++ir_error_index;
+	if(ir_error_index == IR_ERROR_SAMPLE_COUNT)	{ ir_error_index = 0; }
+
 	//return 0 if it's not turning
-	ir_dir = 0;
 	return;
 }
 

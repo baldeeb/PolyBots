@@ -332,7 +332,7 @@ END GROUP
                 0x20010000                PROVIDE (_estack, __main_stack_start)
                 0x00000000                PROVIDE (__mirrored_nvm, 0x0)
 
-.text           0x20000000     0xac08
+.text           0x20000000     0xab48
  CREATE_OBJECT_SYMBOLS
                 0x20000000                __text_load = LOADADDR (.text)
                 0x20000000                __text_start = .
@@ -466,437 +466,437 @@ END GROUP
                 0x2000054c      0x180 ./IRcontrol.o
                 0x2000054c                ir_sample
  .text.ir_update_error
-                0x200006cc      0x2ec ./IRcontrol.o
+                0x200006cc      0x224 ./IRcontrol.o
                 0x200006cc                ir_update_error
  .text.NVIC_EnableIRQ
-                0x200009b8       0x38 ./main.o
+                0x200008f0       0x38 ./main.o
  .text.NVIC_DisableIRQ
-                0x200009f0       0x3c ./main.o
+                0x20000928       0x3c ./main.o
  .text.NVIC_ClearPendingIRQ
-                0x20000a2c       0x3c ./main.o
+                0x20000964       0x3c ./main.o
  .text.MSS_TIM1_init
-                0x20000a68       0x84 ./main.o
+                0x200009a0       0x84 ./main.o
  .text.MSS_TIM1_start
-                0x20000aec       0x1c ./main.o
+                0x20000a24       0x1c ./main.o
  .text.MSS_TIM1_load_background
-                0x20000b08       0x20 ./main.o
+                0x20000a40       0x20 ./main.o
  .text.MSS_TIM1_enable_irq
-                0x20000b28       0x20 ./main.o
+                0x20000a60       0x20 ./main.o
  .text.MSS_TIM1_clear_irq
-                0x20000b48       0x1c ./main.o
+                0x20000a80       0x1c ./main.o
  .text.init_motor_commends
-                0x20000b64       0x34 ./main.o
-                0x20000b64                init_motor_commends
+                0x20000a9c       0x34 ./main.o
+                0x20000a9c                init_motor_commends
  .text.get_motor_command
-                0x20000b98      0x518 ./main.o
-                0x20000b98                get_motor_command
+                0x20000ad0      0x588 ./main.o
+                0x20000ad0                get_motor_command
  .text.start_hardware_cont_timer
-                0x200010b0       0x24 ./main.o
-                0x200010b0                start_hardware_cont_timer
+                0x20001058       0x24 ./main.o
+                0x20001058                start_hardware_cont_timer
  .text.Timer1_IRQHandler
-                0x200010d4       0x4c ./main.o
-                0x200010d4                Timer1_IRQHandler
+                0x2000107c       0x4c ./main.o
+                0x2000107c                Timer1_IRQHandler
  .text.uart1_rx_handler
-                0x20001120       0xb4 ./main.o
-                0x20001120                uart1_rx_handler
- .text.main     0x200011d4      0x110 ./main.o
-                0x200011d4                main
+                0x200010c8       0xb4 ./main.o
+                0x200010c8                uart1_rx_handler
+ .text.main     0x2000117c      0x10c ./main.o
+                0x2000117c                main
  .text.shift_recieve_union
-                0x200012e4       0x44 ./pixy.o
-                0x200012e4                shift_recieve_union
+                0x20001288       0x44 ./pixy.o
+                0x20001288                shift_recieve_union
  .text.pixy_read_multiple
-                0x20001328      0x130 ./pixy.o
-                0x20001328                pixy_read_multiple
+                0x200012cc      0x104 ./pixy.o
+                0x200012cc                pixy_read_multiple
  .text.process_pixy_i2c
-                0x20001458       0x58 ./pixy.o
-                0x20001458                process_pixy_i2c
+                0x200013d0       0x58 ./pixy.o
+                0x200013d0                process_pixy_i2c
  .text.init_ideal_pixy_dots
-                0x200014b0       0x6c ./pixy.o
-                0x200014b0                init_ideal_pixy_dots
+                0x20001428       0x6c ./pixy.o
+                0x20001428                init_ideal_pixy_dots
  .text.pixy_x_err
-                0x2000151c      0x10c ./pixy.o
-                0x2000151c                pixy_x_err
- .text          0x20001628      0x178 N:/eecs373/project/FollowerBotUpdated/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0/motorCONTROL_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20001628                _close
-                0x20001630                _exit
-                0x20001634                _fstat
-                0x20001640                _getpid
-                0x20001648                _isatty
-                0x20001650                _lseek
-                0x20001658                _open
-                0x20001660                _read
-                0x20001668                _stat
-                0x20001674                _times
-                0x2000167c                _wait
-                0x20001690                _unlink
-                0x200016a4                _link
-                0x200016b8                _kill
-                0x200016cc                _fork
-                0x200016e0                _execve
-                0x200016f4                _write_r
-                0x2000173c                _sbrk
- .text          0x200017a0      0x9c8 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x200017a0                MSS_UART_polled_tx
-                0x2000184c                MSS_UART_polled_tx_string
-                0x200018dc                MSS_UART_irq_tx
-                0x20001974                MSS_UART_tx_complete
-                0x200019b0                MSS_UART_get_rx
-                0x20001a4c                MSS_UART_enable_irq
-                0x20001ab4                MSS_UART_disable_irq
-                0x20001c2c                MSS_UART_set_rx_handler
-                0x20001cd0                MSS_UART_set_loopback
-                0x20001d08                UART0_IRQHandler
-                0x20001d38                UART1_IRQHandler
-                0x20001d68                MSS_UART_set_rxstatus_handler
-                0x20001de8                MSS_UART_set_tx_handler
-                0x20001e70                MSS_UART_set_modemstatus_handler
-                0x20001ef0                MSS_UART_fill_tx_fifo
-                0x20001f84                MSS_UART_get_rx_status
-                0x20001fbc                MSS_UART_get_modem_status
-                0x20001fe4                MSS_UART_get_tx_status
-                0x20002018                MSS_UART_init
- .text          0x20002168      0xd88 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x20002168                MSS_I2C_get_status
-                0x20002188                MSS_I2C_wait_complete
-                0x200021b0                MSS_I2C_system_tick
-                0x200021d8                MSS_I2C_set_slave_mem_offset_length
-                0x20002204                MSS_I2C_register_write_handler
-                0x200027c8                MSS_I2C_smbus_init
-                0x200027d8                MSS_I2C_enable_smbus_irq
-                0x2000288c                MSS_I2C_disable_smbus_irq
-                0x20002934                MSS_I2C_suspend_smbus_slave
-                0x20002940                MSS_I2C_resume_smbus_slave
-                0x2000294c                MSS_I2C_reset_smbus
-                0x20002958                MSS_I2C_set_smbus_alert
-                0x20002964                MSS_I2C_clear_smbus_alert
-                0x20002970                MSS_I2C_set_gca
-                0x2000297c                MSS_I2C_clear_gca
-                0x20002988                MSS_I2C_set_user_data
-                0x2000298c                MSS_I2C_get_user_data
-                0x20002990                I2C0_IRQHandler
-                0x200029c0                I2C1_IRQHandler
-                0x20002a0c                MSS_I2C_disable_slave
-                0x20002a40                MSS_I2C_enable_slave
-                0x20002a90                MSS_I2C_set_slave_rx_buffer
-                0x20002ac8                MSS_I2C_set_slave_tx_buffer
-                0x20002b00                MSS_I2C_write_read
-                0x20002c18                MSS_I2C_read
-                0x20002cf8                MSS_I2C_write
-                0x20002dd4                MSS_I2C_init
- .text          0x20002ef0      0x5c8 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_ace.o)
-                0x20002ef0                ACE_start_adc
-                0x20002f00                ACE_get_adc_result
-                0x20002f2c                ACE_configure_sdd
-                0x20002ff0                ACE_enable_sdd
-                0x20003010                ACE_disable_sdd
-                0x20003030                ACE_set_sdd_value
-                0x20003054                ACE_set_sdd_value_sync
-                0x200030d0                ACE_set_comp_reference
-                0x2000316c                ACE_set_comp_hysteresis
-                0x200031f4                ACE_enable_comp
-                0x20003264                ACE_disable_comp
-                0x200032d4                ACE_enable_comp_rise_irq
-                0x200032f8                ACE_disable_comp_rise_irq
-                0x2000332c                ACE_clear_comp_rise_irq
-                0x20003360                ACE_enable_comp_fall_irq
-                0x20003384                ACE_disable_comp_fall_irq
-                0x200033b4                ACE_clear_comp_fall_irq
-                0x200033e4                ACE_get_comp_status
-                0x200033f0                ACE_get_channel_count
-                0x200033f8                ACE_get_first_channel
-                0x20003400                ACE_get_next_channel
-                0x20003410                ACE_get_input_channel_handle
-                0x20003440                ACE_get_ppe_sample
-                0x2000346c                ACE_get_channel_handle
-                0x200034ac                ACE_init
- .text          0x200034b8       0xa4 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
-                0x200034b8                __get_PSP
-                0x200034c0                __set_PSP
-                0x200034c8                __get_MSP
-                0x200034d0                __set_MSP
-                0x200034d8                __get_BASEPRI
-                0x200034e0                __set_BASEPRI
-                0x200034e8                __get_PRIMASK
-                0x200034f0                __set_PRIMASK
-                0x200034f8                __get_FAULTMASK
-                0x20003500                __set_FAULTMASK
-                0x20003508                __get_CONTROL
-                0x20003510                __set_CONTROL
-                0x20003518                __REV
-                0x2000351c                __REV16
-                0x20003520                __REVSH
-                0x20003524                __RBIT
-                0x2000352c                __LDREXB
-                0x20003534                __LDREXH
-                0x2000353c                __LDREXW
-                0x20003544                __STREXB
-                0x2000354c                __STREXH
-                0x20003554                __STREXW
- .text          0x2000355c      0x10c N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x2000355c                SystemInit
-                0x20003560                SystemCoreClockUpdate
- .text          0x20003668      0x5e4 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_convert.o)
-                0x20003668                ACE_get_channel_type
-                0x20003680                ACE_convert_adc_input_to_mV
-                0x200036b0                ace_init_convert
-                0x200037a8                ACE_convert_to_mV
-                0x20003864                ACE_convert_to_mA
-                0x200038cc                ACE_convert_to_uA
-                0x20003934                ACE_convert_to_Kelvin
-                0x20003954                ACE_convert_to_Celsius
-                0x20003968                ACE_convert_to_Fahrenheit
-                0x20003990                ACE_get_channel_name
-                0x200039a8                ACE_convert_mV_to_adc_value
-                0x20003a30                ACE_convert_from_mV
-                0x20003ad0                ACE_convert_from_mA
-                0x20003b48                ACE_convert_from_uA
-                0x20003bc0                ACE_convert_from_Kelvin
-                0x20003bec                ACE_convert_from_Celsius
-                0x20003c0c                ACE_convert_from_Fahrenheit
-                0x20003c3c                ACE_translate_pdma_value
- .text          0x20003c4c      0x488 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_flags.o)
-                0x20003c4c                ace_init_flags
-                0x20003c50                ACE_is_hysteresis_flag
-                0x20003c58                ACE_is_under_flag
-                0x20003c60                ACE_set_flag_threshold
-                0x20003c64                ACE_set_flag_assertion
-                0x20003c68                ACE_set_flag_deassertion
-                0x20003c6c                ACE_set_flag_hysteresis
-                0x20003c70                ACE_set_channel_hysteresis
-                0x20003c74                ACE_get_flag_handle
-                0x20003c7c                ACE_get_flag_status
-                0x20003c84                ACE_get_flag_name
-                0x20003c8c                ACE_get_flag_channel
-                0x20003c94                ACE_get_channel_flag_count
-                0x20003c9c                ACE_get_channel_first_flag
-                0x20003ca4                ACE_get_channel_next_flag
-                0x20003cac                ACE_enable_channel_flags_irq
-                0x20003cb0                ACE_disable_channel_flags_irq
-                0x20003cb4                ACE_clear_channel_flags_irq
-                0x20003cb8                ACE_enable_flag_irq
-                0x20003cbc                ACE_disable_flag_irq
-                0x20003cc0                ACE_clear_flag_irq
-                0x20003cc4                ACE_register_flag_isr
-                0x20003cc8                ACE_register_channel_flags_isr
-                0x20003ccc                ACE_register_global_flags_isr
-                0x20003cd4                ACE_PPE_Flag0_IRQHandler
-                0x20003cf4                ACE_PPE_Flag1_IRQHandler
-                0x20003d14                ACE_PPE_Flag2_IRQHandler
-                0x20003d34                ACE_PPE_Flag3_IRQHandler
-                0x20003d54                ACE_PPE_Flag4_IRQHandler
-                0x20003d74                ACE_PPE_Flag5_IRQHandler
-                0x20003d94                ACE_PPE_Flag6_IRQHandler
-                0x20003db4                ACE_PPE_Flag7_IRQHandler
-                0x20003dd4                ACE_PPE_Flag8_IRQHandler
-                0x20003df4                ACE_PPE_Flag9_IRQHandler
-                0x20003e14                ACE_PPE_Flag10_IRQHandler
-                0x20003e34                ACE_PPE_Flag11_IRQHandler
-                0x20003e54                ACE_PPE_Flag12_IRQHandler
-                0x20003e74                ACE_PPE_Flag13_IRQHandler
-                0x20003e94                ACE_PPE_Flag14_IRQHandler
-                0x20003eb4                ACE_PPE_Flag15_IRQHandler
-                0x20003ed4                ACE_PPE_Flag16_IRQHandler
-                0x20003ef4                ACE_PPE_Flag17_IRQHandler
-                0x20003f14                ACE_PPE_Flag18_IRQHandler
-                0x20003f34                ACE_PPE_Flag19_IRQHandler
-                0x20003f54                ACE_PPE_Flag20_IRQHandler
-                0x20003f74                ACE_PPE_Flag21_IRQHandler
-                0x20003f94                ACE_PPE_Flag22_IRQHandler
-                0x20003fb4                ACE_PPE_Flag23_IRQHandler
-                0x20003fd4                ACE_PPE_Flag24_IRQHandler
-                0x20003ff4                ACE_PPE_Flag25_IRQHandler
-                0x20004014                ACE_PPE_Flag26_IRQHandler
-                0x20004034                ACE_PPE_Flag27_IRQHandler
-                0x20004054                ACE_PPE_Flag28_IRQHandler
-                0x20004074                ACE_PPE_Flag29_IRQHandler
-                0x20004094                ACE_PPE_Flag30_IRQHandler
-                0x200040b4                ACE_PPE_Flag31_IRQHandler
- .text          0x200040d4      0x370 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
-                0x200040d4                __aeabi_drsub
-                0x200040dc                __aeabi_dsub
-                0x200040dc                __subdf3
-                0x200040e0                __aeabi_dadd
-                0x200040e0                __adddf3
-                0x20004358                __floatunsidf
-                0x20004358                __aeabi_ui2d
-                0x20004378                __floatsidf
-                0x20004378                __aeabi_i2d
-                0x2000439c                __aeabi_f2d
-                0x2000439c                __extendsfdf2
-                0x200043d8                __floatundidf
-                0x200043d8                __aeabi_ul2d
-                0x200043e8                __floatdidf
-                0x200043e8                __aeabi_l2d
- .text          0x20004444      0x424 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
-                0x20004444                __aeabi_dmul
-                0x20004444                __muldf3
-                0x20004698                __divdf3
-                0x20004698                __aeabi_ddiv
- .text          0x20004868       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixdfsi.o)
-                0x20004868                __aeabi_d2iz
-                0x20004868                __fixdfsi
- .text          0x200048b8      0x21c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubsf3.o)
-                0x200048b8                __aeabi_frsub
-                0x200048c0                __subsf3
-                0x200048c0                __aeabi_fsub
-                0x200048c4                __aeabi_fadd
-                0x200048c4                __addsf3
-                0x20004a24                __aeabi_ui2f
-                0x20004a24                __floatunsisf
-                0x20004a2c                __aeabi_i2f
-                0x20004a2c                __floatsisf
-                0x20004a48                __aeabi_ul2f
-                0x20004a48                __floatundisf
-                0x20004a58                __aeabi_l2f
-                0x20004a58                __floatdisf
- .text          0x20004ad4        0xc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
-                0x20004ad4                __errno
- .text          0x20004ae0       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
-                0x20004ae0                __libc_init_array
- .text          0x20004b30       0xd4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
-                0x20004b30                memset
- .text          0x20004c04       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-printf.o)
-                0x20004c04                printf
-                0x20004c3c                _printf_r
- .text          0x20004c68       0xa8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
-                0x20004c68                strncmp
- .text          0x20004d10     0x1940 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
-                0x20004d2c                _vfprintf_r
-                0x20006634                vfprintf
- .text          0x20006650      0x104 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wsetup.o)
-                0x20006650                __swsetup_r
- *fill*         0x20006754        0x4 00
- .text          0x20006758      0xfb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
-                0x20006878                _dtoa_r
- .text          0x20007710      0x178 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fflush.o)
-                0x20007710                _fflush_r
-                0x20007860                fflush
- .text          0x20007888      0x1c8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
-                0x20007888                __sfp_lock_acquire
-                0x2000788c                __sfp_lock_release
-                0x20007890                __sinit_lock_acquire
-                0x20007894                __sinit_lock_release
-                0x200078a0                __fp_unlock_all
-                0x200078b8                __fp_lock_all
-                0x200078d0                _cleanup_r
-                0x200078dc                _cleanup
-                0x20007938                __sfmoreglue
-                0x20007968                __sfp
-                0x200079f0                __sinit
- .text          0x20007a50      0x268 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
-                0x20007a50                _malloc_trim_r
-                0x20007af8                _free_r
- .text          0x20007cb8      0x334 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fvwrite.o)
-                0x20007cb8                __sfvwrite_r
- .text          0x20007fec       0xa0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fwalk.o)
-                0x20007fec                _fwalk_reent
-                0x20008040                _fwalk
- .text          0x2000808c       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
-                0x2000808c                __locale_charset
-                0x20008098                _localeconv_r
-                0x200080a0                localeconv
-                0x200080a8                _setlocale_r
-                0x200080f0                setlocale
- .text          0x20008100       0xdc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-makebuf.o)
-                0x20008100                __smakebuf_r
- .text          0x200081dc       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
-                0x200081dc                free
-                0x200081ec                malloc
- .text          0x200081fc      0x5a4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x200081fc                _malloc_r
- .text          0x200087a0       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
-                0x200087a0                memchr
- .text          0x20008814      0x190 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
-                0x20008814                memcpy
- .text          0x200089a4       0xb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memmove.o)
-                0x200089a4                memmove
- .text          0x20008a5c        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
-                0x20008a5c                __malloc_lock
-                0x20008a60                __malloc_unlock
- .text          0x20008a64      0x958 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
-                0x20008a64                __hi0bits
-                0x20008aa4                __lo0bits
-                0x20008b08                __mcmp
-                0x20008b48                __ulp
-                0x20008b94                __b2d
-                0x20008c3c                __ratio
-                0x20008c9c                _mprec_log10
-                0x20008cd4                __copybits
-                0x20008d24                __any_on
-                0x20008d7c                _Bfree
-                0x20008db4                _Balloc
-                0x20008e20                __d2b
-                0x20008ef0                __mdiff
-                0x20008fe8                __lshift
-                0x200090a4                __multiply
-                0x200091d8                __i2b
-                0x200091ec                __multadd
-                0x20009274                __pow5mult
-                0x20009320                __s2b
- .text          0x200093bc      0x3b4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reallocr.o)
-                0x200093bc                _realloc_r
- .text          0x20009770       0x24 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isinfd.o)
-                0x20009770                __isinfd
- .text          0x20009794       0x1c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isnand.o)
-                0x20009794                __isnand
- .text          0x200097b0       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
-                0x200097b0                _sbrk_r
- .text          0x200097d8       0x90 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-stdio.o)
-                0x200097d8                __sclose
-                0x200097e0                __sseek
-                0x20009808                __swrite
-                0x20009844                __sread
- .text          0x20009868      0x1dc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
-                0x20009868                strcmp
- .text          0x20009a44       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
-                0x20009a44                strlen
- .text          0x20009aa4       0x5c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-callocr.o)
-                0x20009aa4                _calloc_r
- .text          0x20009b00       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-closer.o)
-                0x20009b00                _close_r
- .text          0x20009b28       0xcc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fclose.o)
-                0x20009b28                _fclose_r
-                0x20009be4                fclose
- .text          0x20009bf4       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fstatr.o)
-                0x20009bf4                _fstat_r
- .text          0x20009c20       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-isattyr.o)
-                0x20009c20                _isatty_r
- .text          0x20009c48       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-lseekr.o)
-                0x20009c48                _lseek_r
- .text          0x20009c74       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-readr.o)
-                0x20009c74                _read_r
- .text          0x20009ca0      0x278 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivsi3.o)
-                0x20009ca0                __aeabi_uidiv
-                0x20009ca0                __udivsi3
-                0x20009efc                __aeabi_uidivmod
- .text          0x20009f18        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_dvmd_tls.o)
-                0x20009f18                __aeabi_idiv0
-                0x20009f18                __aeabi_ldiv0
- .text          0x20009f1c      0x110 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
-                0x20009f1c                __gtdf2
-                0x20009f1c                __gedf2
-                0x20009f24                __ltdf2
-                0x20009f24                __ledf2
-                0x20009f2c                __nedf2
-                0x20009f2c                __eqdf2
-                0x20009f2c                __cmpdf2
-                0x20009fa8                __aeabi_cdrcmple
-                0x20009fb8                __aeabi_cdcmpeq
-                0x20009fb8                __aeabi_cdcmple
-                0x20009fc8                __aeabi_dcmpeq
-                0x20009fdc                __aeabi_dcmplt
-                0x20009ff0                __aeabi_dcmple
-                0x2000a004                __aeabi_dcmpge
-                0x2000a018                __aeabi_dcmpgt
- .text          0x2000a02c       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_aeabi_uldivmod.o)
-                0x2000a02c                __aeabi_uldivmod
- .text          0x2000a058       0x58 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(bpabi.o)
-                0x2000a058                __gnu_uldivmod_helper
-                0x2000a084                __gnu_ldivmod_helper
- .text          0x2000a0b0      0x364 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
-                0x2000a0b0                __divdi3
- .text          0x2000a414      0x300 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
-                0x2000a414                __udivdi3
+                0x20001494       0xfc ./pixy.o
+                0x20001494                pixy_x_err
+ .text          0x20001590      0x178 N:/eecs373/project/FollowerBotUpdated/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0/motorCONTROL_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20001590                _close
+                0x20001598                _exit
+                0x2000159c                _fstat
+                0x200015a8                _getpid
+                0x200015b0                _isatty
+                0x200015b8                _lseek
+                0x200015c0                _open
+                0x200015c8                _read
+                0x200015d0                _stat
+                0x200015dc                _times
+                0x200015e4                _wait
+                0x200015f8                _unlink
+                0x2000160c                _link
+                0x20001620                _kill
+                0x20001634                _fork
+                0x20001648                _execve
+                0x2000165c                _write_r
+                0x200016a4                _sbrk
+ .text          0x20001708      0x9c8 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20001708                MSS_UART_polled_tx
+                0x200017b4                MSS_UART_polled_tx_string
+                0x20001844                MSS_UART_irq_tx
+                0x200018dc                MSS_UART_tx_complete
+                0x20001918                MSS_UART_get_rx
+                0x200019b4                MSS_UART_enable_irq
+                0x20001a1c                MSS_UART_disable_irq
+                0x20001b94                MSS_UART_set_rx_handler
+                0x20001c38                MSS_UART_set_loopback
+                0x20001c70                UART0_IRQHandler
+                0x20001ca0                UART1_IRQHandler
+                0x20001cd0                MSS_UART_set_rxstatus_handler
+                0x20001d50                MSS_UART_set_tx_handler
+                0x20001dd8                MSS_UART_set_modemstatus_handler
+                0x20001e58                MSS_UART_fill_tx_fifo
+                0x20001eec                MSS_UART_get_rx_status
+                0x20001f24                MSS_UART_get_modem_status
+                0x20001f4c                MSS_UART_get_tx_status
+                0x20001f80                MSS_UART_init
+ .text          0x200020d0      0xd88 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x200020d0                MSS_I2C_get_status
+                0x200020f0                MSS_I2C_wait_complete
+                0x20002118                MSS_I2C_system_tick
+                0x20002140                MSS_I2C_set_slave_mem_offset_length
+                0x2000216c                MSS_I2C_register_write_handler
+                0x20002730                MSS_I2C_smbus_init
+                0x20002740                MSS_I2C_enable_smbus_irq
+                0x200027f4                MSS_I2C_disable_smbus_irq
+                0x2000289c                MSS_I2C_suspend_smbus_slave
+                0x200028a8                MSS_I2C_resume_smbus_slave
+                0x200028b4                MSS_I2C_reset_smbus
+                0x200028c0                MSS_I2C_set_smbus_alert
+                0x200028cc                MSS_I2C_clear_smbus_alert
+                0x200028d8                MSS_I2C_set_gca
+                0x200028e4                MSS_I2C_clear_gca
+                0x200028f0                MSS_I2C_set_user_data
+                0x200028f4                MSS_I2C_get_user_data
+                0x200028f8                I2C0_IRQHandler
+                0x20002928                I2C1_IRQHandler
+                0x20002974                MSS_I2C_disable_slave
+                0x200029a8                MSS_I2C_enable_slave
+                0x200029f8                MSS_I2C_set_slave_rx_buffer
+                0x20002a30                MSS_I2C_set_slave_tx_buffer
+                0x20002a68                MSS_I2C_write_read
+                0x20002b80                MSS_I2C_read
+                0x20002c60                MSS_I2C_write
+                0x20002d3c                MSS_I2C_init
+ .text          0x20002e58      0x5c8 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_ace.o)
+                0x20002e58                ACE_start_adc
+                0x20002e68                ACE_get_adc_result
+                0x20002e94                ACE_configure_sdd
+                0x20002f58                ACE_enable_sdd
+                0x20002f78                ACE_disable_sdd
+                0x20002f98                ACE_set_sdd_value
+                0x20002fbc                ACE_set_sdd_value_sync
+                0x20003038                ACE_set_comp_reference
+                0x200030d4                ACE_set_comp_hysteresis
+                0x2000315c                ACE_enable_comp
+                0x200031cc                ACE_disable_comp
+                0x2000323c                ACE_enable_comp_rise_irq
+                0x20003260                ACE_disable_comp_rise_irq
+                0x20003294                ACE_clear_comp_rise_irq
+                0x200032c8                ACE_enable_comp_fall_irq
+                0x200032ec                ACE_disable_comp_fall_irq
+                0x2000331c                ACE_clear_comp_fall_irq
+                0x2000334c                ACE_get_comp_status
+                0x20003358                ACE_get_channel_count
+                0x20003360                ACE_get_first_channel
+                0x20003368                ACE_get_next_channel
+                0x20003378                ACE_get_input_channel_handle
+                0x200033a8                ACE_get_ppe_sample
+                0x200033d4                ACE_get_channel_handle
+                0x20003414                ACE_init
+ .text          0x20003420       0xa4 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+                0x20003420                __get_PSP
+                0x20003428                __set_PSP
+                0x20003430                __get_MSP
+                0x20003438                __set_MSP
+                0x20003440                __get_BASEPRI
+                0x20003448                __set_BASEPRI
+                0x20003450                __get_PRIMASK
+                0x20003458                __set_PRIMASK
+                0x20003460                __get_FAULTMASK
+                0x20003468                __set_FAULTMASK
+                0x20003470                __get_CONTROL
+                0x20003478                __set_CONTROL
+                0x20003480                __REV
+                0x20003484                __REV16
+                0x20003488                __REVSH
+                0x2000348c                __RBIT
+                0x20003494                __LDREXB
+                0x2000349c                __LDREXH
+                0x200034a4                __LDREXW
+                0x200034ac                __STREXB
+                0x200034b4                __STREXH
+                0x200034bc                __STREXW
+ .text          0x200034c4      0x10c N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x200034c4                SystemInit
+                0x200034c8                SystemCoreClockUpdate
+ .text          0x200035d0      0x5e4 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_convert.o)
+                0x200035d0                ACE_get_channel_type
+                0x200035e8                ACE_convert_adc_input_to_mV
+                0x20003618                ace_init_convert
+                0x20003710                ACE_convert_to_mV
+                0x200037cc                ACE_convert_to_mA
+                0x20003834                ACE_convert_to_uA
+                0x2000389c                ACE_convert_to_Kelvin
+                0x200038bc                ACE_convert_to_Celsius
+                0x200038d0                ACE_convert_to_Fahrenheit
+                0x200038f8                ACE_get_channel_name
+                0x20003910                ACE_convert_mV_to_adc_value
+                0x20003998                ACE_convert_from_mV
+                0x20003a38                ACE_convert_from_mA
+                0x20003ab0                ACE_convert_from_uA
+                0x20003b28                ACE_convert_from_Kelvin
+                0x20003b54                ACE_convert_from_Celsius
+                0x20003b74                ACE_convert_from_Fahrenheit
+                0x20003ba4                ACE_translate_pdma_value
+ .text          0x20003bb4      0x488 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20003bb4                ace_init_flags
+                0x20003bb8                ACE_is_hysteresis_flag
+                0x20003bc0                ACE_is_under_flag
+                0x20003bc8                ACE_set_flag_threshold
+                0x20003bcc                ACE_set_flag_assertion
+                0x20003bd0                ACE_set_flag_deassertion
+                0x20003bd4                ACE_set_flag_hysteresis
+                0x20003bd8                ACE_set_channel_hysteresis
+                0x20003bdc                ACE_get_flag_handle
+                0x20003be4                ACE_get_flag_status
+                0x20003bec                ACE_get_flag_name
+                0x20003bf4                ACE_get_flag_channel
+                0x20003bfc                ACE_get_channel_flag_count
+                0x20003c04                ACE_get_channel_first_flag
+                0x20003c0c                ACE_get_channel_next_flag
+                0x20003c14                ACE_enable_channel_flags_irq
+                0x20003c18                ACE_disable_channel_flags_irq
+                0x20003c1c                ACE_clear_channel_flags_irq
+                0x20003c20                ACE_enable_flag_irq
+                0x20003c24                ACE_disable_flag_irq
+                0x20003c28                ACE_clear_flag_irq
+                0x20003c2c                ACE_register_flag_isr
+                0x20003c30                ACE_register_channel_flags_isr
+                0x20003c34                ACE_register_global_flags_isr
+                0x20003c3c                ACE_PPE_Flag0_IRQHandler
+                0x20003c5c                ACE_PPE_Flag1_IRQHandler
+                0x20003c7c                ACE_PPE_Flag2_IRQHandler
+                0x20003c9c                ACE_PPE_Flag3_IRQHandler
+                0x20003cbc                ACE_PPE_Flag4_IRQHandler
+                0x20003cdc                ACE_PPE_Flag5_IRQHandler
+                0x20003cfc                ACE_PPE_Flag6_IRQHandler
+                0x20003d1c                ACE_PPE_Flag7_IRQHandler
+                0x20003d3c                ACE_PPE_Flag8_IRQHandler
+                0x20003d5c                ACE_PPE_Flag9_IRQHandler
+                0x20003d7c                ACE_PPE_Flag10_IRQHandler
+                0x20003d9c                ACE_PPE_Flag11_IRQHandler
+                0x20003dbc                ACE_PPE_Flag12_IRQHandler
+                0x20003ddc                ACE_PPE_Flag13_IRQHandler
+                0x20003dfc                ACE_PPE_Flag14_IRQHandler
+                0x20003e1c                ACE_PPE_Flag15_IRQHandler
+                0x20003e3c                ACE_PPE_Flag16_IRQHandler
+                0x20003e5c                ACE_PPE_Flag17_IRQHandler
+                0x20003e7c                ACE_PPE_Flag18_IRQHandler
+                0x20003e9c                ACE_PPE_Flag19_IRQHandler
+                0x20003ebc                ACE_PPE_Flag20_IRQHandler
+                0x20003edc                ACE_PPE_Flag21_IRQHandler
+                0x20003efc                ACE_PPE_Flag22_IRQHandler
+                0x20003f1c                ACE_PPE_Flag23_IRQHandler
+                0x20003f3c                ACE_PPE_Flag24_IRQHandler
+                0x20003f5c                ACE_PPE_Flag25_IRQHandler
+                0x20003f7c                ACE_PPE_Flag26_IRQHandler
+                0x20003f9c                ACE_PPE_Flag27_IRQHandler
+                0x20003fbc                ACE_PPE_Flag28_IRQHandler
+                0x20003fdc                ACE_PPE_Flag29_IRQHandler
+                0x20003ffc                ACE_PPE_Flag30_IRQHandler
+                0x2000401c                ACE_PPE_Flag31_IRQHandler
+ .text          0x2000403c      0x370 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+                0x2000403c                __aeabi_drsub
+                0x20004044                __aeabi_dsub
+                0x20004044                __subdf3
+                0x20004048                __aeabi_dadd
+                0x20004048                __adddf3
+                0x200042c0                __floatunsidf
+                0x200042c0                __aeabi_ui2d
+                0x200042e0                __floatsidf
+                0x200042e0                __aeabi_i2d
+                0x20004304                __aeabi_f2d
+                0x20004304                __extendsfdf2
+                0x20004340                __floatundidf
+                0x20004340                __aeabi_ul2d
+                0x20004350                __floatdidf
+                0x20004350                __aeabi_l2d
+ .text          0x200043ac      0x424 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
+                0x200043ac                __aeabi_dmul
+                0x200043ac                __muldf3
+                0x20004600                __divdf3
+                0x20004600                __aeabi_ddiv
+ .text          0x200047d0       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixdfsi.o)
+                0x200047d0                __aeabi_d2iz
+                0x200047d0                __fixdfsi
+ .text          0x20004820      0x21c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubsf3.o)
+                0x20004820                __aeabi_frsub
+                0x20004828                __subsf3
+                0x20004828                __aeabi_fsub
+                0x2000482c                __aeabi_fadd
+                0x2000482c                __addsf3
+                0x2000498c                __aeabi_ui2f
+                0x2000498c                __floatunsisf
+                0x20004994                __aeabi_i2f
+                0x20004994                __floatsisf
+                0x200049b0                __aeabi_ul2f
+                0x200049b0                __floatundisf
+                0x200049c0                __aeabi_l2f
+                0x200049c0                __floatdisf
+ .text          0x20004a3c        0xc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+                0x20004a3c                __errno
+ .text          0x20004a48       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x20004a48                __libc_init_array
+ .text          0x20004a98       0xd4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                0x20004a98                memset
+ .text          0x20004b6c       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-printf.o)
+                0x20004b6c                printf
+                0x20004ba4                _printf_r
+ .text          0x20004bd0       0xa8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+                0x20004bd0                strncmp
+ .text          0x20004c78     0x1940 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
+                0x20004c94                _vfprintf_r
+                0x2000659c                vfprintf
+ .text          0x200065b8      0x104 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wsetup.o)
+                0x200065b8                __swsetup_r
+ *fill*         0x200066bc        0x4 00
+ .text          0x200066c0      0xfb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
+                0x200067e0                _dtoa_r
+ .text          0x20007678      0x178 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fflush.o)
+                0x20007678                _fflush_r
+                0x200077c8                fflush
+ .text          0x200077f0      0x1c8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
+                0x200077f0                __sfp_lock_acquire
+                0x200077f4                __sfp_lock_release
+                0x200077f8                __sinit_lock_acquire
+                0x200077fc                __sinit_lock_release
+                0x20007808                __fp_unlock_all
+                0x20007820                __fp_lock_all
+                0x20007838                _cleanup_r
+                0x20007844                _cleanup
+                0x200078a0                __sfmoreglue
+                0x200078d0                __sfp
+                0x20007958                __sinit
+ .text          0x200079b8      0x268 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
+                0x200079b8                _malloc_trim_r
+                0x20007a60                _free_r
+ .text          0x20007c20      0x334 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fvwrite.o)
+                0x20007c20                __sfvwrite_r
+ .text          0x20007f54       0xa0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fwalk.o)
+                0x20007f54                _fwalk_reent
+                0x20007fa8                _fwalk
+ .text          0x20007ff4       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+                0x20007ff4                __locale_charset
+                0x20008000                _localeconv_r
+                0x20008008                localeconv
+                0x20008010                _setlocale_r
+                0x20008058                setlocale
+ .text          0x20008068       0xdc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-makebuf.o)
+                0x20008068                __smakebuf_r
+ .text          0x20008144       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
+                0x20008144                free
+                0x20008154                malloc
+ .text          0x20008164      0x5a4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x20008164                _malloc_r
+ .text          0x20008708       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+                0x20008708                memchr
+ .text          0x2000877c      0x190 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+                0x2000877c                memcpy
+ .text          0x2000890c       0xb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memmove.o)
+                0x2000890c                memmove
+ .text          0x200089c4        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
+                0x200089c4                __malloc_lock
+                0x200089c8                __malloc_unlock
+ .text          0x200089cc      0x958 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
+                0x200089cc                __hi0bits
+                0x20008a0c                __lo0bits
+                0x20008a70                __mcmp
+                0x20008ab0                __ulp
+                0x20008afc                __b2d
+                0x20008ba4                __ratio
+                0x20008c04                _mprec_log10
+                0x20008c3c                __copybits
+                0x20008c8c                __any_on
+                0x20008ce4                _Bfree
+                0x20008d1c                _Balloc
+                0x20008d88                __d2b
+                0x20008e58                __mdiff
+                0x20008f50                __lshift
+                0x2000900c                __multiply
+                0x20009140                __i2b
+                0x20009154                __multadd
+                0x200091dc                __pow5mult
+                0x20009288                __s2b
+ .text          0x20009324      0x3b4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reallocr.o)
+                0x20009324                _realloc_r
+ .text          0x200096d8       0x24 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isinfd.o)
+                0x200096d8                __isinfd
+ .text          0x200096fc       0x1c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isnand.o)
+                0x200096fc                __isnand
+ .text          0x20009718       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
+                0x20009718                _sbrk_r
+ .text          0x20009740       0x90 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-stdio.o)
+                0x20009740                __sclose
+                0x20009748                __sseek
+                0x20009770                __swrite
+                0x200097ac                __sread
+ .text          0x200097d0      0x1dc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+                0x200097d0                strcmp
+ .text          0x200099ac       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+                0x200099ac                strlen
+ .text          0x20009a0c       0x5c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-callocr.o)
+                0x20009a0c                _calloc_r
+ .text          0x20009a68       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-closer.o)
+                0x20009a68                _close_r
+ .text          0x20009a90       0xcc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fclose.o)
+                0x20009a90                _fclose_r
+                0x20009b4c                fclose
+ .text          0x20009b5c       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fstatr.o)
+                0x20009b5c                _fstat_r
+ .text          0x20009b88       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-isattyr.o)
+                0x20009b88                _isatty_r
+ .text          0x20009bb0       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-lseekr.o)
+                0x20009bb0                _lseek_r
+ .text          0x20009bdc       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-readr.o)
+                0x20009bdc                _read_r
+ .text          0x20009c08      0x278 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivsi3.o)
+                0x20009c08                __aeabi_uidiv
+                0x20009c08                __udivsi3
+                0x20009e64                __aeabi_uidivmod
+ .text          0x20009e80        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_dvmd_tls.o)
+                0x20009e80                __aeabi_idiv0
+                0x20009e80                __aeabi_ldiv0
+ .text          0x20009e84      0x110 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
+                0x20009e84                __gtdf2
+                0x20009e84                __gedf2
+                0x20009e8c                __ltdf2
+                0x20009e8c                __ledf2
+                0x20009e94                __nedf2
+                0x20009e94                __eqdf2
+                0x20009e94                __cmpdf2
+                0x20009f10                __aeabi_cdrcmple
+                0x20009f20                __aeabi_cdcmpeq
+                0x20009f20                __aeabi_cdcmple
+                0x20009f30                __aeabi_dcmpeq
+                0x20009f44                __aeabi_dcmplt
+                0x20009f58                __aeabi_dcmple
+                0x20009f6c                __aeabi_dcmpge
+                0x20009f80                __aeabi_dcmpgt
+ .text          0x20009f94       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_aeabi_uldivmod.o)
+                0x20009f94                __aeabi_uldivmod
+ .text          0x20009fc0       0x58 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(bpabi.o)
+                0x20009fc0                __gnu_uldivmod_helper
+                0x20009fec                __gnu_ldivmod_helper
+ .text          0x2000a018      0x364 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
+                0x2000a018                __divdi3
+ .text          0x2000a37c      0x300 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
+                0x2000a37c                __udivdi3
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -905,7 +905,7 @@ END GROUP
  .glue_7        0x00000000        0x0 linker stubs
  *(.vfp11_veneer)
  .vfp11_veneer  0x00000000        0x0 linker stubs
-                0x2000a714                . = ALIGN (0x4)
+                0x2000a67c                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
@@ -915,219 +915,218 @@ END GROUP
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x2000a714       0x28 ./IRcontrol.o
- .rodata.C.35.4816
-                0x2000a73c        0x8 ./main.o
- .rodata        0x2000a744       0x84 ./pixy.o
+ .rodata        0x2000a67c       0x28 ./IRcontrol.o
+ .rodata.C.39.4824
+                0x2000a6a4        0x8 ./main.o
+ .rodata        0x2000a6ac       0x60 ./pixy.o
  .rodata.str1.4
-                0x2000a7c8       0x1a N:/eecs373/project/FollowerBotUpdated/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0/motorCONTROL_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x2000a70c       0x1a N:/eecs373/project/FollowerBotUpdated/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0/motorCONTROL_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
                                  0x1c (size before relaxing)
- *fill*         0x2000a7e2        0x2 00
- .rodata        0x2000a7e4       0x4c N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_ace.o)
-                0x2000a824                comp_id_2_scb_lut
- .rodata        0x2000a830       0x10 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .rodata        0x2000a840       0x90 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_config.o)
-                0x2000a840                g_ace_current_resistors
-                0x2000a848                g_ace_external_varef_used
-                0x2000a84c                g_ace_channel_0_name
-                0x2000a860                g_ace_channel_1_name
-                0x2000a874                g_ace_ppe_transforms_desc_table
-                0x2000a884                g_ace_sse_proc_0_name
-                0x2000a890                g_ace_sse_proc_0_sequence
-                0x2000a898                g_ace_sse_proc_1_name
-                0x2000a8a4                g_ace_sse_proc_1_sequence
- .rodata        0x2000a8d0       0xcc N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_convert.o)
- .rodata        0x2000a99c        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
-                0x2000a99c                _global_impure_ptr
+ *fill*         0x2000a726        0x2 00
+ .rodata        0x2000a728       0x4c N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_ace.o)
+                0x2000a768                comp_id_2_scb_lut
+ .rodata        0x2000a774       0x10 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .rodata        0x2000a784       0x90 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_config.o)
+                0x2000a784                g_ace_current_resistors
+                0x2000a78c                g_ace_external_varef_used
+                0x2000a790                g_ace_channel_0_name
+                0x2000a7a4                g_ace_channel_1_name
+                0x2000a7b8                g_ace_ppe_transforms_desc_table
+                0x2000a7c8                g_ace_sse_proc_0_name
+                0x2000a7d4                g_ace_sse_proc_0_sequence
+                0x2000a7dc                g_ace_sse_proc_1_name
+                0x2000a7e8                g_ace_sse_proc_1_sequence
+ .rodata        0x2000a814       0xcc N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .rodata        0x2000a8e0        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x2000a8e0                _global_impure_ptr
  .rodata.str1.4
-                0x2000a9a0        0x2 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x2000a8e4        0x2 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
                                   0x4 (size before relaxing)
- *fill*         0x2000a9a2        0x2 00
- .rodata        0x2000a9a4       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
+ *fill*         0x2000a8e6        0x2 00
+ .rodata        0x2000a8e8       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
  .rodata.str1.4
-                0x2000a9c4       0x42 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
+                0x2000a908       0x42 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
                                  0x44 (size before relaxing)
- *fill*         0x2000aa06        0x2 00
+ *fill*         0x2000a94a        0x2 00
  .rodata.str1.4
-                0x2000aa08       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
+                0x2000a94c       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
                                  0x14 (size before relaxing)
- .rodata        0x2000aa18       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
-                0x2000aa18                __sf_fake_stdin
-                0x2000aa38                __sf_fake_stdout
-                0x2000aa58                __sf_fake_stderr
- .rodata        0x2000aa78       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .rodata        0x2000a95c       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
+                0x2000a95c                __sf_fake_stdin
+                0x2000a97c                __sf_fake_stdout
+                0x2000a99c                __sf_fake_stderr
+ .rodata        0x2000a9bc       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
  .rodata.str1.4
-                0x2000aaac       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+                0x2000a9f0       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
                                  0x18 (size before relaxing)
- *fill*         0x2000aabc        0x4 00
- .rodata        0x2000aac0      0x128 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
-                0x2000aac0                __mprec_tens
-                0x2000ab98                __mprec_bigtens
-                0x2000abc0                __mprec_tinytens
+ .rodata        0x2000aa00      0x128 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
+                0x2000aa00                __mprec_tens
+                0x2000aad8                __mprec_bigtens
+                0x2000ab00                __mprec_tinytens
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
  *(.eh_frame_hdr)
  *(.eh_frame)
  *(.init)
- .init          0x2000abe8        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x2000abe8                _init
- .init          0x2000abec        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .init          0x2000ab28        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x2000ab28                _init
+ .init          0x2000ab2c        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
  *(.fini)
- .fini          0x2000abf4        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x2000abf4                _fini
- .fini          0x2000abf8        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
-                0x2000ac00                PROVIDE (__preinit_array_start, .)
+ .fini          0x2000ab34        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x2000ab34                _fini
+ .fini          0x2000ab38        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x2000ab40                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x2000ac00                PROVIDE (__preinit_array_end, .)
-                0x2000ac00                PROVIDE (__init_array_start, .)
+                0x2000ab40                PROVIDE (__preinit_array_end, .)
+                0x2000ab40                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x2000ac00        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
-                0x2000ac04                PROVIDE (__init_array_end, .)
-                0x2000ac04                PROVIDE (__fini_array_start, .)
+ .init_array    0x2000ab40        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+                0x2000ab44                PROVIDE (__init_array_end, .)
+                0x2000ab44                PROVIDE (__fini_array_start, .)
  *(.fini_array)
- .fini_array    0x2000ac04        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .fini_array    0x2000ab44        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(SORT(.fini_array.*))
-                0x2000ac08                PROVIDE (__fini_array_end, .)
-                0x2000ac08                __exidx_start = .
+                0x2000ab48                PROVIDE (__fini_array_end, .)
+                0x2000ab48                __exidx_start = .
 
-.v4_bx          0x2000ac08        0x0
+.v4_bx          0x2000ab48        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.ARM.exidx      0x2000ac08        0x8
+.ARM.exidx      0x2000ab48        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x2000ac08        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
- .ARM.exidx     0x2000ac10        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
+ .ARM.exidx     0x2000ab48        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
+ .ARM.exidx     0x2000ab50        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
                                   0x8 (size before relaxing)
-                0x2000ac10                __exidx_end = .
-                0x2000ac10                _etext = .
-                0x2000ac10                PROVIDE (__text_end, .)
+                0x2000ab50                __exidx_end = .
+                0x2000ab50                _etext = .
+                0x2000ab50                PROVIDE (__text_end, .)
 
-.data           0x2000ac10      0x580
-                0x2000ac10                __data_load = LOADADDR (.data)
-                0x2000ac10                _sidata = LOADADDR (.data)
-                0x2000ac10                __data_start = .
-                0x2000ac10                _sdata = .
+.data           0x2000ab50      0x580
+                0x2000ab50                __data_load = LOADADDR (.data)
+                0x2000ab50                _sidata = LOADADDR (.data)
+                0x2000ab50                __data_start = .
+                0x2000ab50                _sdata = .
  *(.jcr)
- .jcr           0x2000ac10        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .jcr           0x2000ac10        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .jcr           0x2000ab50        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .jcr           0x2000ab50        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
  *(.got.plt)
  *(.got)
  *(.shdata)
  *(.data .data.* .gnu.linkonce.d.*)
  .data.MOTOR_INPUTS
-                0x2000ac14        0x4 ./main.o
-                0x2000ac14                MOTOR_INPUTS
+                0x2000ab54        0x4 ./main.o
+                0x2000ab54                MOTOR_INPUTS
  .data.LEFT_MOTOR
-                0x2000ac18        0x4 ./main.o
-                0x2000ac18                LEFT_MOTOR
+                0x2000ab58        0x4 ./main.o
+                0x2000ab58                LEFT_MOTOR
  .data.RIGHT_MOTOR
-                0x2000ac1c        0x4 ./main.o
-                0x2000ac1c                RIGHT_MOTOR
- .data.mode     0x2000ac20        0x4 ./main.o
-                0x2000ac20                mode
- .data          0x2000ac24       0x18 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x2000ac24                SystemCoreClock
-                0x2000ac28                g_FrequencyPCLK0
-                0x2000ac2c                g_FrequencyPCLK1
-                0x2000ac30                g_FrequencyACE
-                0x2000ac34                g_FrequencyFPGA
-                0x2000ac38                SystemFrequency
- .data          0x2000ac3c       0x50 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_config.o)
-                0x2000ac3c                g_ace_adc_config
-                0x2000ac44                g_ace_channel_desc_table
-                0x2000ac64                g_sse_sequences_desc_table
- .data          0x2000ac8c       0xf4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
-                0x2000ac8c                _impure_ptr
- .data          0x2000ad80      0x410 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x2000ad80                __malloc_av_
-                0x2000b188                __malloc_sbrk_base
-                0x2000b18c                __malloc_trim_threshold
-                0x2000b190                . = ALIGN (0x4)
-                0x2000b190                _edata = .
+                0x2000ab5c        0x4 ./main.o
+                0x2000ab5c                RIGHT_MOTOR
+ .data.mode     0x2000ab60        0x4 ./main.o
+                0x2000ab60                mode
+ .data          0x2000ab64       0x18 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x2000ab64                SystemCoreClock
+                0x2000ab68                g_FrequencyPCLK0
+                0x2000ab6c                g_FrequencyPCLK1
+                0x2000ab70                g_FrequencyACE
+                0x2000ab74                g_FrequencyFPGA
+                0x2000ab78                SystemFrequency
+ .data          0x2000ab7c       0x50 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_config.o)
+                0x2000ab7c                g_ace_adc_config
+                0x2000ab84                g_ace_channel_desc_table
+                0x2000aba4                g_sse_sequences_desc_table
+ .data          0x2000abcc       0xf4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x2000abcc                _impure_ptr
+ .data          0x2000acc0      0x410 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x2000acc0                __malloc_av_
+                0x2000b0c8                __malloc_sbrk_base
+                0x2000b0cc                __malloc_trim_threshold
+                0x2000b0d0                . = ALIGN (0x4)
+                0x2000b0d0                _edata = .
 
-.bss            0x2000b190      0x2f0
-                0x2000b190                __bss_start__ = .
-                0x2000b190                _sbss = .
+.bss            0x2000b0d0      0x2f0
+                0x2000b0d0                __bss_start__ = .
+                0x2000b0d0                _sbss = .
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x2000b190        0x1 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- *fill*         0x2000b191        0x3 00
+ .bss           0x2000b0d0        0x1 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ *fill*         0x2000b0d1        0x3 00
  .bss.right_wheel_direction
-                0x2000b194        0x4 ./main.o
-                0x2000b194                right_wheel_direction
+                0x2000b0d4        0x4 ./main.o
+                0x2000b0d4                right_wheel_direction
  .bss.left_wheel_direction
-                0x2000b198        0x4 ./main.o
-                0x2000b198                left_wheel_direction
+                0x2000b0d8        0x4 ./main.o
+                0x2000b0d8                left_wheel_direction
  .bss.left_duty_cycle
-                0x2000b19c        0x4 ./main.o
-                0x2000b19c                left_duty_cycle
+                0x2000b0dc        0x4 ./main.o
+                0x2000b0dc                left_duty_cycle
  .bss.right_duty_cycle
-                0x2000b1a0        0x4 ./main.o
-                0x2000b1a0                right_duty_cycle
+                0x2000b0e0        0x4 ./main.o
+                0x2000b0e0                right_duty_cycle
  .bss.prev_right_duty_cycle
-                0x2000b1a4        0x4 ./main.o
-                0x2000b1a4                prev_right_duty_cycle
+                0x2000b0e4        0x4 ./main.o
+                0x2000b0e4                prev_right_duty_cycle
  .bss.prev_left_duty_cycle
-                0x2000b1a8        0x4 ./main.o
-                0x2000b1a8                prev_left_duty_cycle
- .bss           0x2000b1ac        0xc N:/eecs373/project/FollowerBotUpdated/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0/motorCONTROL_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x2000b1b4                __env
- .bss           0x2000b1b8       0x10 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_convert.o)
- .bss           0x2000b1c8       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x2000b1c8                __malloc_top_pad
-                0x2000b1cc                __malloc_current_mallinfo
-                0x2000b1f4                __malloc_max_sbrked_mem
-                0x2000b1f8                __malloc_max_total_mem
+                0x2000b0e8        0x4 ./main.o
+                0x2000b0e8                prev_left_duty_cycle
+ .bss           0x2000b0ec        0xc N:/eecs373/project/FollowerBotUpdated/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0/motorCONTROL_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x2000b0f4                __env
+ .bss           0x2000b0f8       0x10 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .bss           0x2000b108       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x2000b108                __malloc_top_pad
+                0x2000b10c                __malloc_current_mallinfo
+                0x2000b134                __malloc_max_sbrked_mem
+                0x2000b138                __malloc_max_total_mem
  *(COMMON)
- COMMON         0x2000b1fc       0x90 ./IRcontrol.o
-                0x2000b1fc                ir_error
-                0x2000b200                ir_front_ave
-                0x2000b204                ir_error_samples
-                0x2000b218                sample_index
-                0x2000b21c                ir_back_ave
-                0x2000b220                ir_front_sum
-                0x2000b224                adc_handler_f
-                0x2000b228                ir_back_samples
-                0x2000b250                adc_handler_b
-                0x2000b254                ir_error_sum
-                0x2000b258                ir_error_index
-                0x2000b25c                ir_dir
-                0x2000b260                ir_front_samples
-                0x2000b288                ir_back_sum
- COMMON         0x2000b28c       0xb4 ./main.o
-                0x2000b28c                update_pixy_data_flag
-                0x2000b290                update_flag
-                0x2000b294                lmotor_pwm
-                0x2000b298                rmotor_pwm
-                0x2000b29c                pixy_ideal_green
-                0x2000b2ac                pixy_data
-                0x2000b2d8                receive_buf
-                0x2000b33c                motor_dir
- COMMON         0x2000b340       0x50 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x2000b340                g_mss_uart1
-                0x2000b368                g_mss_uart0
- COMMON         0x2000b390       0xe8 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x2000b390                g_mss_i2c0
-                0x2000b404                g_mss_i2c1
- COMMON         0x2000b478        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
-                0x2000b478                errno
-                0x2000b480                . = ALIGN (0x8)
- *fill*         0x2000b47c        0x4 00
-                0x2000b480                __bss_end__ = .
-                0x2000b480                _end = .
-                0x2000b480                __end = _end
-                0x2000b480                _ebss = .
-                0x2000b480                PROVIDE (end, .)
+ COMMON         0x2000b13c       0x90 ./IRcontrol.o
+                0x2000b13c                ir_error
+                0x2000b140                ir_front_ave
+                0x2000b144                ir_error_samples
+                0x2000b158                sample_index
+                0x2000b15c                ir_back_ave
+                0x2000b160                ir_front_sum
+                0x2000b164                adc_handler_f
+                0x2000b168                ir_back_samples
+                0x2000b190                adc_handler_b
+                0x2000b194                ir_error_sum
+                0x2000b198                ir_error_index
+                0x2000b19c                ir_dir
+                0x2000b1a0                ir_front_samples
+                0x2000b1c8                ir_back_sum
+ COMMON         0x2000b1cc       0xb4 ./main.o
+                0x2000b1cc                update_pixy_data_flag
+                0x2000b1d0                update_flag
+                0x2000b1d4                lmotor_pwm
+                0x2000b1d8                rmotor_pwm
+                0x2000b1dc                pixy_ideal_green
+                0x2000b1ec                pixy_data
+                0x2000b218                receive_buf
+                0x2000b27c                motor_dir
+ COMMON         0x2000b280       0x50 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x2000b280                g_mss_uart1
+                0x2000b2a8                g_mss_uart0
+ COMMON         0x2000b2d0       0xe8 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x2000b2d0                g_mss_i2c0
+                0x2000b344                g_mss_i2c1
+ COMMON         0x2000b3b8        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+                0x2000b3b8                errno
+                0x2000b3c0                . = ALIGN (0x8)
+ *fill*         0x2000b3bc        0x4 00
+                0x2000b3c0                __bss_end__ = .
+                0x2000b3c0                _end = .
+                0x2000b3c0                __end = _end
+                0x2000b3c0                _ebss = .
+                0x2000b3c0                PROVIDE (end, .)
 
-.stack          0x2000b480     0x3000
-                0x2000b480                . = ALIGN (0x4)
-                0x2000c480                . = (. + PROCESS_STACK_SIZE)
- *fill*         0x2000b480     0x1000 00
-                0x2000c480                . = ALIGN (0x4)
-                0x2000e480                . = (. + MAIN_STACK_SIZE)
- *fill*         0x2000c480     0x2000 00
-                0x2000e480                . = ALIGN (0x4)
+.stack          0x2000b3c0     0x3000
+                0x2000b3c0                . = ALIGN (0x4)
+                0x2000c3c0                . = (. + PROCESS_STACK_SIZE)
+ *fill*         0x2000b3c0     0x1000 00
+                0x2000c3c0                . = ALIGN (0x4)
+                0x2000e3c0                . = (. + MAIN_STACK_SIZE)
+ *fill*         0x2000c3c0     0x2000 00
+                0x2000e3c0                . = ALIGN (0x4)
 
 .stab
  *(.stab)
@@ -1244,75 +1243,75 @@ END GROUP
  .debug_abbrev  0x00001318      0x1e3 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_convert.o)
  .debug_abbrev  0x000014fb      0x1c2 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_flags.o)
 
-.debug_line     0x00000000     0x38fb
+.debug_line     0x00000000     0x38f1
  *(.debug_line)
- .debug_line    0x00000000      0x2b4 ./IRcontrol.o
- .debug_line    0x000002b4      0xb99 ./main.o
- .debug_line    0x00000e4d      0x671 ./pixy.o
- .debug_line    0x000014be      0x464 N:/eecs373/project/FollowerBotUpdated/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0/motorCONTROL_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_line    0x00001922      0x519 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_line    0x00001e3b      0x64a N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
- .debug_line    0x00002485      0x4d4 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_ace.o)
- .debug_line    0x00002959      0x13f N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
- .debug_line    0x00002a98      0x291 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .debug_line    0x00002d29      0x1bd N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_config.o)
- .debug_line    0x00002ee6      0x3e8 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_convert.o)
- .debug_line    0x000032ce      0x62d N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .debug_line    0x00000000      0x2a2 ./IRcontrol.o
+ .debug_line    0x000002a2      0xba4 ./main.o
+ .debug_line    0x00000e46      0x66e ./pixy.o
+ .debug_line    0x000014b4      0x464 N:/eecs373/project/FollowerBotUpdated/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0/motorCONTROL_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_line    0x00001918      0x519 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_line    0x00001e31      0x64a N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_line    0x0000247b      0x4d4 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .debug_line    0x0000294f      0x13f N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_line    0x00002a8e      0x291 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_line    0x00002d1f      0x1bd N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .debug_line    0x00002edc      0x3e8 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .debug_line    0x000032c4      0x62d N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_flags.o)
 
-.debug_frame    0x00000000     0x1f90
+.debug_frame    0x00000000     0x1f8c
  *(.debug_frame)
  .debug_frame   0x00000000       0x6c ./IRcontrol.o
  .debug_frame   0x0000006c      0x1a4 ./main.o
- .debug_frame   0x00000210       0xc0 ./pixy.o
- .debug_frame   0x000002d0      0x174 N:/eecs373/project/FollowerBotUpdated/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0/motorCONTROL_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_frame   0x00000444      0x1f0 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_frame   0x00000634      0x2bc N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
- .debug_frame   0x000008f0      0x1fc N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_ace.o)
- .debug_frame   0x00000aec      0x170 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
- .debug_frame   0x00000c5c       0x3c N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .debug_frame   0x00000c98      0x1a8 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_convert.o)
- .debug_frame   0x00000e40      0x520 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_flags.o)
- .debug_frame   0x00001360       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
- .debug_frame   0x00001380       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
- .debug_frame   0x000013ac       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
- .debug_frame   0x000013d4       0x5c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-printf.o)
- .debug_frame   0x00001430       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
- .debug_frame   0x00001458       0x70 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
- .debug_frame   0x000014c8       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wsetup.o)
- .debug_frame   0x000014f4       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
- .debug_frame   0x00001558       0x40 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fflush.o)
- .debug_frame   0x00001598      0x11c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
- .debug_frame   0x000016b4       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
- .debug_frame   0x00001704       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fvwrite.o)
- .debug_frame   0x00001740       0x54 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fwalk.o)
- .debug_frame   0x00001794       0x6c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
- .debug_frame   0x00001800       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-makebuf.o)
- .debug_frame   0x00001834       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
- .debug_frame   0x00001864       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
- .debug_frame   0x000018a0       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
- .debug_frame   0x000018c8       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
- .debug_frame   0x000018fc       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memmove.o)
- .debug_frame   0x00001928       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
- .debug_frame   0x00001958      0x240 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
- .debug_frame   0x00001b98       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reallocr.o)
- .debug_frame   0x00001bd4       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isinfd.o)
- .debug_frame   0x00001bf4       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isnand.o)
- .debug_frame   0x00001c14       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
- .debug_frame   0x00001c40       0x70 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-stdio.o)
- .debug_frame   0x00001cb0       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
- .debug_frame   0x00001ce0       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
- .debug_frame   0x00001d00       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-callocr.o)
- .debug_frame   0x00001d2c       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-closer.o)
- .debug_frame   0x00001d58       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fclose.o)
- .debug_frame   0x00001d94       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fstatr.o)
- .debug_frame   0x00001dc0       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-isattyr.o)
- .debug_frame   0x00001dec       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-lseekr.o)
- .debug_frame   0x00001e18       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-readr.o)
- .debug_frame   0x00001e44       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
- .debug_frame   0x00001ea8       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivsi3.o)
- .debug_frame   0x00001ec8       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(bpabi.o)
- .debug_frame   0x00001f18       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
- .debug_frame   0x00001f54       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
+ .debug_frame   0x00000210       0xbc ./pixy.o
+ .debug_frame   0x000002cc      0x174 N:/eecs373/project/FollowerBotUpdated/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0/motorCONTROL_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_frame   0x00000440      0x1f0 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_frame   0x00000630      0x2bc N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_frame   0x000008ec      0x1fc N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .debug_frame   0x00000ae8      0x170 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_frame   0x00000c58       0x3c N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_frame   0x00000c94      0x1a8 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .debug_frame   0x00000e3c      0x520 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .debug_frame   0x0000135c       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+ .debug_frame   0x0000137c       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .debug_frame   0x000013a8       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .debug_frame   0x000013d0       0x5c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-printf.o)
+ .debug_frame   0x0000142c       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+ .debug_frame   0x00001454       0x70 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
+ .debug_frame   0x000014c4       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wsetup.o)
+ .debug_frame   0x000014f0       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
+ .debug_frame   0x00001554       0x40 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fflush.o)
+ .debug_frame   0x00001594      0x11c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
+ .debug_frame   0x000016b0       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
+ .debug_frame   0x00001700       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fvwrite.o)
+ .debug_frame   0x0000173c       0x54 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fwalk.o)
+ .debug_frame   0x00001790       0x6c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .debug_frame   0x000017fc       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-makebuf.o)
+ .debug_frame   0x00001830       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
+ .debug_frame   0x00001860       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+ .debug_frame   0x0000189c       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+ .debug_frame   0x000018c4       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+ .debug_frame   0x000018f8       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memmove.o)
+ .debug_frame   0x00001924       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
+ .debug_frame   0x00001954      0x240 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
+ .debug_frame   0x00001b94       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reallocr.o)
+ .debug_frame   0x00001bd0       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isinfd.o)
+ .debug_frame   0x00001bf0       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isnand.o)
+ .debug_frame   0x00001c10       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
+ .debug_frame   0x00001c3c       0x70 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-stdio.o)
+ .debug_frame   0x00001cac       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+ .debug_frame   0x00001cdc       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+ .debug_frame   0x00001cfc       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-callocr.o)
+ .debug_frame   0x00001d28       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-closer.o)
+ .debug_frame   0x00001d54       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fclose.o)
+ .debug_frame   0x00001d90       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fstatr.o)
+ .debug_frame   0x00001dbc       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-isattyr.o)
+ .debug_frame   0x00001de8       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-lseekr.o)
+ .debug_frame   0x00001e14       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-readr.o)
+ .debug_frame   0x00001e40       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+ .debug_frame   0x00001ea4       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00001ec4       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(bpabi.o)
+ .debug_frame   0x00001f14       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
+ .debug_frame   0x00001f50       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
 
 .debug_str      0x00000000     0x42e7
  *(.debug_str)
@@ -1355,32 +1354,32 @@ END GROUP
  .debug_loc     0x00001fde      0x788 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_convert.o)
  .debug_loc     0x00002766      0x48b N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_flags.o)
 
-.debug_macinfo  0x00000000    0x48fbf
+.debug_macinfo  0x00000000    0x49012
  *(.debug_macinfo)
  .debug_macinfo
-                0x00000000     0x1841 ./IRcontrol.o
+                0x00000000     0x1843 ./IRcontrol.o
  .debug_macinfo
-                0x00001841     0xa12f ./main.o
+                0x00001843     0xa165 ./main.o
  .debug_macinfo
-                0x0000b970     0x8f50 ./pixy.o
+                0x0000b9a8     0x8f6b ./pixy.o
  .debug_macinfo
-                0x000148c0     0x9964 N:/eecs373/project/FollowerBotUpdated/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0/motorCONTROL_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x00014913     0x9964 N:/eecs373/project/FollowerBotUpdated/FollowerBot/SoftConsole/motorCONTROL_MSS_MSS_CM3_0/motorCONTROL_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .debug_macinfo
-                0x0001e224     0x63e3 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x0001e277     0x63e3 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .debug_macinfo
-                0x00024607     0x7518 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x0002465a     0x7518 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .debug_macinfo
-                0x0002bb1f     0x77f7 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_ace.o)
+                0x0002bb72     0x77f7 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(mss_ace.o)
  .debug_macinfo
-                0x00033316     0x152b N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+                0x00033369     0x152b N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
  .debug_macinfo
-                0x00034841     0x5a98 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00034894     0x5a98 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .debug_macinfo
-                0x0003a2d9     0x18e3 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_config.o)
+                0x0003a32c     0x18e3 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_config.o)
  .debug_macinfo
-                0x0003bbbc     0x5b95 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_convert.o)
+                0x0003bc0f     0x5b95 N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_convert.o)
  .debug_macinfo
-                0x00041751     0x786e N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x000417a4     0x786e N:\eecs373\project\FollowerBotUpdated\FollowerBot\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\motorCONTROL_MSS_MSS_CM3_0_hw_platform\Debug\libmotorCONTROL_MSS_MSS_CM3_0_hw_platform.a(ace_flags.o)
 
 .debug_weaknames
  *(.debug_weaknames)

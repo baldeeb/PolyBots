@@ -59,10 +59,15 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart )
 	mode = rx_buff[5];
 }
 
+
+#define IR_PWM_CONTRIBUTION 0.15
+#define PIXY_PWM_CONTRIBUTION 0.04
+#define LEFT_MOTOR_CORRECTION 0.9
 void get_motor_command(int * rpwm, int * lpwm, int * dir){
 
-	/*
+	int ir_dir = 0, ir_value = 0;
 	unsigned int pixy_mag, pixy_dir;
+	int pixy_pwm = 0 ;
 
 	//return if data is none existant
 	if(!pixy_x_err( &pixy_mag, &pixy_dir)){ return; }
@@ -71,59 +76,71 @@ void get_motor_command(int * rpwm, int * lpwm, int * dir){
 	pixy_mag /= 3; // scale error
 	if(pixy_mag > 10)pixy_mag = 10;
 
-	rpwm[0] = 500000*0.1*pixy_mag;
-	lpwm[0] = rpwm[0];
+	pixy_pwm = 500000 * PIXY_PWM_CONTRIBUTION * pixy_mag;
 	dir[0] = pixy_dir;
 
-	//switch on the intended direction
-	switch (right_wheel_direction){
-		case 1: //forward
-			//respond more to when the leader is leading
-			//and less for when it is lagging
-			break;
-		case 2: //backward
-			break;
-		case 0: //halt - no direction
-		default:
+//	printf("pwm: %x    dir: %x\n\r", pixy_pwm, pixy_dir);
 
-			break;
-	}
-	*/
-	*dir = 2;
-	int ir_dir = 0, ir_value = 0;
+//	//switch on the intended direction
+//	switch (right_wheel_direction){
+//		case 1: //forward
+//			//respond more to when the leader is leading
+//			//and less for when it is lagging
+//			break;
+//		case 2: //backward
+//			break;
+//		case 0: //halt - no direction
+//		default:
+//
+//			break;
+//	}
+
 
 	ir_value = ir_read(&ir_dir);
 
-	int temp = 350000;
-//	printf("ir_value: %x\n\r", ir_value);
 
-	//if turning left
-	if(ir_dir == 1)
-	{
-		*rpwm =*rpwm + ir_value * IR_CORRECTION;
-		*rpwm = temp + (temp * 0.3 * ir_value);
-		*lpwm = temp - (temp * 0.3 * ir_value);
+	if(pixy_dir == 1){
+		//if turning left
+		if(ir_dir == 1)	{
+			*lpwm = LEFT_MOTOR_CORRECTION * (pixy_pwm + (pixy_pwm * IR_PWM_CONTRIBUTION * ir_value));
+			*rpwm = pixy_pwm  - (pixy_pwm * IR_PWM_CONTRIBUTION * ir_value);
+		}
+		//if turning right
+		else if(ir_dir == 2) {
+			*rpwm = pixy_pwm + (pixy_pwm * IR_PWM_CONTRIBUTION * ir_value);
+			*lpwm = LEFT_MOTOR_CORRECTION * (pixy_pwm - (pixy_pwm * IR_PWM_CONTRIBUTION * ir_value));
+		}
+		else{
+			*rpwm = pixy_pwm;//temp;
+			*lpwm = LEFT_MOTOR_CORRECTION * pixy_pwm;//temp;
+		}
+	}
+	else if(pixy_dir == 2){
+		//if turning left
+		if(ir_dir == 1)	{
+			*lpwm = LEFT_MOTOR_CORRECTION * (pixy_pwm - (pixy_pwm * IR_PWM_CONTRIBUTION * ir_value));
+			*rpwm = pixy_pwm + (pixy_pwm * IR_PWM_CONTRIBUTION * ir_value);
+		}
+		//if turning right
+		else if(ir_dir == 2) {
+			*rpwm = pixy_pwm - (pixy_pwm * IR_PWM_CONTRIBUTION * ir_value);
+			*lpwm = LEFT_MOTOR_CORRECTION * (pixy_pwm + (pixy_pwm * IR_PWM_CONTRIBUTION * ir_value)) ;
+		}
+		else{
+			*rpwm = pixy_pwm;//temp;
+			*lpwm = LEFT_MOTOR_CORRECTION * pixy_pwm;//temp;
+		}
+	}
+	else { // no direction, don't move
+		*lpwm = 0;
+		*rpwm  = 0;
+	}
 
-//		*rpwm = 300000;
-//		*lpwm = 0;
-	}
-	//if turning right
-	else if(ir_dir == 2)
-	{
-		*lpwm = *lpwm + ir_value * IR_CORRECTION;
-		*lpwm = temp + (temp * 0.3 * ir_value);
-		*rpwm = temp - (temp * 0.3 * ir_value) ;
-//
-//		*lpwm = 300000;
-//		*rpwm = 0;
-	}
-	else{
-		*lpwm = 0;//temp;
-		*rpwm = 0;//temp;
-	}
 
 	if (*rpwm > 500000){*rpwm = 500000;}
+	else if(*rpwm < 0 ){*rpwm = 0;}
 	if (*lpwm > 500000){*lpwm = 500000;}
+	else if(*lpwm < 0 ){*lpwm = 0;}
 
 
 }
@@ -131,30 +148,30 @@ void get_motor_command(int * rpwm, int * lpwm, int * dir){
 
 int main()
 {
-	int prev_left_encoder_val = 0;
-	int prev_right_encoder_val = 0;
-	int left_wheel_tot = 0;
-	int right_wheel_tot = 0;
-
-	int left_encoder_val = 0;
-	int right_encoder_val = 0;
-	int left_rotating = 0;
-	int right_rotating = 0;
-
-	float previous_error = 0;
-	float current_error = 0;
-	float total_error = 0;
-
-	float correction_duty = 0.0;
-
-	float percent_diff = 0.0;
-
-	int reset_value = 1000;
-
-	int LEFT_PWM = 0;
-	int RIGHT_PWM = 0;
-
-	int begin = 1;
+//	int prev_left_encoder_val = 0;
+//	int prev_right_encoder_val = 0;
+//	int left_wheel_tot = 0;
+//	int right_wheel_tot = 0;
+//
+//	int left_encoder_val = 0;
+//	int right_encoder_val = 0;
+//	int left_rotating = 0;
+//	int right_rotating = 0;
+//
+//	float previous_error = 0;
+//	float current_error = 0;
+//	float total_error = 0;
+//
+//	float correction_duty = 0.0;
+//
+//	float percent_diff = 0.0;
+//
+//	int reset_value = 1000;
+//
+//	int LEFT_PWM = 0;
+//	int RIGHT_PWM = 0;
+//
+//	int begin = 1;
 
 
 
@@ -164,9 +181,9 @@ int main()
 
 	//pixy variables
 	//unsigned int pixy_mag, pixy_dir;
-	int pixy_rmotor_pwm = 0;
-	int pixy_lmotor_pwm = 0;
-	int pixy_motor_dir = 0;
+	int rmotor_pwm = 0;
+	int lmotor_pwm = 0;
+	int motor_dir = 0;
 
 	//pixy init functions
 	MSS_I2C_init(&g_mss_i2c1 , PIXY_I2C_DEFAULT_ADDR, MSS_I2C_PCLK_DIV_256 );
@@ -196,8 +213,8 @@ int main()
 				right_duty_cycle = 0.0;*/
 
 
-//		process_pixy_i2c();
-		get_motor_command(&pixy_rmotor_pwm, &pixy_lmotor_pwm, &pixy_motor_dir);
+		process_pixy_i2c();
+		get_motor_command(&rmotor_pwm, &lmotor_pwm, &motor_dir);
 
 //		printf("%x\n\r", pixy_lmotor_pwm);
 
@@ -206,7 +223,7 @@ int main()
 		// pixy cam bypass controller
 
 					//direction 0x5->forward  | 0xa->backward | 0x0->none
-					switch(pixy_motor_dir){
+					switch(motor_dir){
 					case 1:
 						*MOTOR_INPUTS = 0xa;
 						break;
@@ -221,8 +238,8 @@ int main()
 
 					//printf("l: %x, r: %x\n\r", pixy_lmotor_pwm, pixy_rmotor_pwm);
 
-					*RIGHT_MOTOR = pixy_rmotor_pwm;//speed 0 - 500000
-					*LEFT_MOTOR = pixy_lmotor_pwm;//speed 0 - 500000
+					*RIGHT_MOTOR = rmotor_pwm;//speed 0 - 500000
+					*LEFT_MOTOR = lmotor_pwm;//speed 0 - 500000
 
 					//For testing, bypasses other instructions
 		//			*MOTOR_INPUTS = 0xa;

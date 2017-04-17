@@ -14,7 +14,7 @@
 #define IR_DIVIDER 100
 #define IR_CORRECTION  20
 
-#define IR_TOLERANCE (250 / IR_DIVIDER)
+#define IR_TOLERANCE (200 / IR_DIVIDER)//(250 / IR_DIVIDER)
 #define IR_LOWER_LIMIT (1500 / IR_DIVIDER)
 
 //the number of averaged values

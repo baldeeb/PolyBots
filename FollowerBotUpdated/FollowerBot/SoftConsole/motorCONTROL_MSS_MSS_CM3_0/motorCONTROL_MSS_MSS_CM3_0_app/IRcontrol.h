@@ -12,14 +12,14 @@
 #include "drivers/mss_ace/mss_ace.h"
 
 #define IR_DIVIDER 100
-#define IR_CORRECTION  20
+#define IR_ERROR_DIVIDER 1 // currently not in use
 
-#define IR_TOLERANCE (200 / IR_DIVIDER)//(250 / IR_DIVIDER)
+#define IR_TOLERANCE (200 / IR_DIVIDER)//
 #define IR_LOWER_LIMIT (1500 / IR_DIVIDER)
 
 //the number of averaged values
-#define IR_SAMPLE_COUNT 10
-#define IR_ERROR_SAMPLE_COUNT  5
+#define IR_SAMPLE_COUNT 10 //NUMBER OF SAMPLED READS
+#define IR_ERROR_SAMPLE_COUNT  5 //NUMBER OF SAMPLED ERROR VALUES
 
 //#define IDEAL_RIGHT_IR
 //#define IDEAL_LEFT_IR

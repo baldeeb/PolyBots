@@ -43,8 +43,8 @@ void ir_process_data( void ){
 	adc_data_f = ACE_get_ppe_sample(adc_handler_f) / IR_DIVIDER;
 	adc_data_b = ACE_get_ppe_sample(adc_handler_b) / IR_DIVIDER;
 
-	printf("adc_data_f: %i\r\n", adc_data_f);
-	printf("adc_data_b: %i\r\n\n", adc_data_b);
+//	printf("adc_data_f: %i\r\n", adc_data_f);
+//	printf("adc_data_b: %i\r\n\n", adc_data_b);
 
 	ir_front_sum -= ir_front_samples[sample_index];
 	ir_back_sum -= ir_back_samples[sample_index];

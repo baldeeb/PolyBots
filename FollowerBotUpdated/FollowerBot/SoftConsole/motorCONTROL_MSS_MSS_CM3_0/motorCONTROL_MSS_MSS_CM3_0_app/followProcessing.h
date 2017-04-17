@@ -21,9 +21,10 @@ int update_flag;
 #define PERIOD 400000
 #define MAX_PWM 400000
 
-#define IR_PWM_CONTRIBUTION 0.15
-#define PIXY_PWM_CONTRIBUTION  MAX_PWM*0.04
-#define LEFT_MOTOR_CORRECTION 0.9
+#define IR_PWM_CONTRIBUTION 0.25
+#define PIXY_PWM_CONTRIBUTION  MAX_PWM*0.03
+#define LEFT_MOTOR_CORRECTION 1//0.95
+#define RIGHT_MOTOR_CORRECTION 1//1.05
 
 
 void init_motor_commends( void ){
@@ -39,6 +40,7 @@ void get_motor_command(int * rpwm, int * lpwm, int * dir){
 	int pixy_pwm = 0 ;
 
 	//return if data is none existant
+	ir_update_error();
 	if(!pixy_x_err( &pixy_mag, &pixy_dir)){ return; }
 
 	pixy_pwm = PIXY_PWM_CONTRIBUTION * pixy_mag;
@@ -47,17 +49,18 @@ void get_motor_command(int * rpwm, int * lpwm, int * dir){
 	if(pixy_dir == 1){
 		//if turning left
 		if(ir_dir == 1)	{
-			*lpwm = LEFT_MOTOR_CORRECTION * (pixy_pwm + (pixy_pwm * IR_PWM_CONTRIBUTION * ir_error));
+			*lpwm = pixy_pwm + (pixy_pwm * IR_PWM_CONTRIBUTION * ir_error);
 			*rpwm = pixy_pwm  - (pixy_pwm * IR_PWM_CONTRIBUTION * ir_error);
+			//*rpwm = pixy_pwm  - (IR_PWM_CONTRIBUTION * ir_error);
 		}
 		//if turning right
 		else if(ir_dir == 2) {
 			*rpwm = pixy_pwm + (pixy_pwm * IR_PWM_CONTRIBUTION * ir_error);
-			*lpwm = LEFT_MOTOR_CORRECTION * (pixy_pwm - (pixy_pwm * IR_PWM_CONTRIBUTION * ir_error));
+			*lpwm = pixy_pwm - (pixy_pwm * IR_PWM_CONTRIBUTION * ir_error);
 		}
 		else{
 			*rpwm = pixy_pwm;//temp;
-			*lpwm = LEFT_MOTOR_CORRECTION * pixy_pwm;//temp;
+			*lpwm = pixy_pwm;//temp;
 		}
 	}
 	else if(pixy_dir == 2){
@@ -77,10 +80,23 @@ void get_motor_command(int * rpwm, int * lpwm, int * dir){
 		}
 	}
 	else { // no direction, don't move
-		*lpwm = 0;
-		*rpwm  = 0;
-	}
+		if(ir_dir == 1)	{
+			*lpwm = 0;
+			*rpwm  = ir_error * IR_PWM_CONTRIBUTION * MAX_PWM;
+		}
+		else if(ir_dir == 2) {
+			*lpwm = ir_error * IR_PWM_CONTRIBUTION * MAX_PWM;
+			*rpwm  = 0;
+		}
+		else{
+			*lpwm = 0;
+			*rpwm  = 0;
+		}
 
+		//todo: remove!
+		*lpwm = 0; // temp
+		*rpwm  = 0;// temp
+	}
 
 	if (*rpwm > 500000){*rpwm = 500000;}
 	else if(*rpwm < 0 ){*rpwm = 0;}

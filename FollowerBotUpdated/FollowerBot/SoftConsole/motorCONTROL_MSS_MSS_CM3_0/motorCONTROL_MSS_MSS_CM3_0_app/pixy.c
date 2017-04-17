@@ -39,7 +39,6 @@ void pixy_read_multiple( void ){
 	int obj_index, buff_index;
 	int i;
 
-
 	//check if the start bits match expected
 	for(i=0; i < PIXY_RECIEVE_BUFF_SIZE / 2; i++){
 		if (receive_buf.u16[i] != 0){
@@ -50,7 +49,6 @@ void pixy_read_multiple( void ){
 	if(receive_buf.u8[0] == 0){	shift_recieve_union(); }
 
 	if((receive_buf.u16[0] != PIXY_START_WORD || receive_buf.u16[1] != PIXY_START_WORD) && i < PIXY_RECIEVE_BUFF_SIZE / 2){
-		//printf("Bad start bits in buffer...\n\r");
 		//bad data read from successful read
 		return;
 	}
@@ -59,9 +57,7 @@ void pixy_read_multiple( void ){
 		for(buff_index = 0 ; buff_index < PIXY_UNION_U16_SIZE ; buff_index++){
 			pixy_data[obj_index].u16[buff_index] = receive_buf.u16[(obj_index*PIXY_UNION_U16_SIZE) + buff_index + 1];
 		}
-		printf("id: %x\n\r",pixy_data[obj_index].o.id );
 	}
-
 	update_pixy_data_flag = 0;
 }
 
@@ -141,8 +137,8 @@ int pixy_x_err( unsigned int *mag, unsigned int *dir){
 	}
 
 	//printf("%x, %x\n\r", pixy_mag, pixy_dir);
-	*mag /= 5; // scale error
-	printf("pixy magnitude: %x\n\r", *mag);
+	*mag /= PIXY_MAGNITUDE_DIVIDER; // scale error
+//	printf("pixy magnitude: %x\n\r", *mag);
 //	if(*mag > 10)*mag = 10;
 
 	return 1;

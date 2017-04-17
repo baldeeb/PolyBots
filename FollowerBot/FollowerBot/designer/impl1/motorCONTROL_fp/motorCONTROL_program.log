@@ -9,7 +9,6 @@ been loaded successfully.
 DESIGN : motorCONTROL;  CHECKSUM : 8193;  PDB_VERSION : 1.9
 Driver : 3.0.0 build 1
 programmer '79978' : FlashPro3
-Warning: The programmer with id '80216' in the project file cannot be detected and connected.
 Opened
 'N:\eecs373\project\FollowerBot\FollowerBot\designer\impl1\motorCONTROL_fp\motorCONTROL.pro'
 The 'open_project' command succeeded.
@@ -41,7 +40,7 @@ programmer '79978' : Verifying FPGA Array
 programmer '79978' :         Verifying FPGA Array -- pass
 programmer '79978' : Program System Init and Boot Clients...
 programmer '79978' : Verify System Init and Boot Clients...
-programmer '79978' : Finished: Sun Apr 16 03:27:45 2017 (Elapsed time 00:00:37)
+programmer '79978' : Finished: Sun Apr 16 23:54:23 2017 (Elapsed time 00:00:39)
 programmer '79978' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o

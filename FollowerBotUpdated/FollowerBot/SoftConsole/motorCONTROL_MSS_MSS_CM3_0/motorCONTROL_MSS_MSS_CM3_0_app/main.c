@@ -81,7 +81,6 @@ int main()
 
 		process_pixy_i2c();
 		if(update_flag){
-			ir_update_error();
 			get_motor_command(&rmotor_pwm, &lmotor_pwm, &motor_dir);
 			update_flag = 0;
 		}

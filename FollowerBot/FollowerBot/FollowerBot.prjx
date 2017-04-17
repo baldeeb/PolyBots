@@ -373,8 +373,8 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL.adb,adb"
 STATE="utd"
-TIME="1492283764"
-SIZE="716288"
+TIME="1492291808"
+SIZE="721920"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL.fdb,fdb"
 STATE="utd"
@@ -383,28 +383,28 @@ SIZE="53436"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL.ide_des,ide_des"
 STATE="utd"
-TIME="1492283764"
+TIME="1492291808"
 SIZE="1091"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_compile_log.rpt,log"
 STATE="utd"
-TIME="1492283764"
+TIME="1492291721"
 SIZE="32323"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_fp\motorCONTROL.pdb,pdb"
 STATE="utd"
-TIME="1492283764"
-SIZE="58030"
+TIME="1492401221"
+SIZE="59286"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_fp\motorCONTROL.pro,pro"
 STATE="utd"
-TIME="1492283764"
+TIME="1492401267"
 SIZE="2435"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_fp\projectData\motorCONTROL.pdb,pdb"
 STATE="utd"
-TIME="1492283764"
-SIZE="58027"
+TIME="1492401265"
+SIZE="59286"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_placeroute_log.rpt,log"
 STATE="utd"
@@ -464,22 +464,22 @@ PARENT="<project>\component\work\motorCONTROL_MSS\motorCONTROL_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL.edn,syn_edn"
 STATE="utd"
-TIME="1492283766"
-SIZE="449308"
+TIME="1492291701"
+SIZE="451696"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL.so,so"
 STATE="utd"
-TIME="1492283766"
+TIME="1492291701"
 SIZE="236"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1492283766"
+TIME="1492291701"
 SIZE="552"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL_syn.prj,prj"
 STATE="utd"
-TIME="1492283766"
+TIME="1492291702"
 SIZE="2773"
 ENDFILE
 ENDLIST
@@ -549,6 +549,17 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -641,10 +652,10 @@ ENDLIST
 LIST PhySynthesisOptions
 ENDLIST
 LIST Profiles
-NAME="SoftConsole v3.3"
+NAME="SoftConsole"
 FUNCTION="SoftwareIDE"
 TOOL="SoftConsole"
-LOCATION="C:\Program Files (x86)\Microsemi\SoftConsole v3.3\Eclipse\eclipse.exe"
+LOCATION="eclipse.exe"
 PARAM=""
 BATCH=0
 LICENSE=""
@@ -654,8 +665,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.7\\\Synplify\\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -693,6 +704,17 @@ LIST Impl1
 LiberoState=Post_Layout
 ideSYNTHESIS(<project>\synthesis\motorCONTROL.edn,syn_edn)=StateSuccess
 ideDESIGNER(<project>\designer\impl1\motorCONTROL.adb,adb)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
+LIST Impl1
+ideSTIMULUS=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
