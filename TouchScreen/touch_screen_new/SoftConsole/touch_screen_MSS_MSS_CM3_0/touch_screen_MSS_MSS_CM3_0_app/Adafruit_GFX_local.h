@@ -104,7 +104,7 @@ struct Print {
          int16_t *x1, int16_t *y1, uint16_t *w, uint16_t *h);
 
 
-     void   write(struct Print * print,uint8_t);
+     void   write(struct Print * print,uint8_t c);
 
 
 //***************ADAFRUIT_GFX CLASS*********///

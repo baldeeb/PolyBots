@@ -328,7 +328,7 @@ void MSS_I2C_write_read
 {
     ASSERT((this_i2c == &g_mss_i2c0) || (this_i2c == &g_mss_i2c1));
     ASSERT(offset_size > 0u);
-    ASSERT(addr_offset != (const uint8_t *)0);
+    //ASSERT(addr_offset != (const uint8_t *)0);
     ASSERT(read_size > 0u);
     ASSERT(read_buffer != (uint8_t *)0);
 
