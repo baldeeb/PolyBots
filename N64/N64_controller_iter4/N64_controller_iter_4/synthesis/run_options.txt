@@ -1,17 +1,20 @@
 #--  Synopsys, Inc.
 #--  Version J-2015.03M-SP1-2
-#--  Project file N:\eecs373\project\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\run_options.txt
-#--  Written on Tue Apr 04 17:18:51 2017
+#--  Project file N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\run_options.txt
+#--  Written on Thu Apr 06 12:01:35 2017
 
 
 #project files
-add_file -verilog "N:/eecs373/project/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
-add_file -verilog "N:/eecs373/project/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/mss_tshell.v"
-add_file -verilog "N:/eecs373/project/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/MSS_CCC_0/N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
-add_file -verilog "N:/eecs373/project/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/N64_controller_iter_4_MSS.v"
-add_file -verilog "N:/eecs373/project/N64/N64_controller_iter4/N64_controller_iter_4/hdl/controller_interface.v"
-add_file -verilog "N:/eecs373/project/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4/N64_controller_iter_4.v"
-add_file -constraint "N:/eecs373/project/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/mss_tshell_syn.sdc"
+add_file -verilog "N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
+add_file -verilog "N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/mss_tshell.v"
+add_file -verilog "N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/MSS_CCC_0/N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
+add_file -verilog "N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/N64_controller_iter_4_MSS.v"
+add_file -verilog "N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/hdl/controller_interface.v"
+add_file -verilog -lib COREAPB3_LIB "N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v"
+add_file -verilog -lib COREAPB3_LIB "N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v"
+add_file -verilog -lib COREAPB3_LIB "N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v"
+add_file -verilog "N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4/N64_controller_iter_4.v"
+add_file -constraint "N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/mss_tshell_syn.sdc"
 
 
 

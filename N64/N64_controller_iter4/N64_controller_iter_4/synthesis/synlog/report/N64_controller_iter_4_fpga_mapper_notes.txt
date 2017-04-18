@@ -1,18 +1,18 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled 
-@N: MF707 :"n:\eecs373\project\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":178:0:178:5|Insert external logic with either syn_ramstyle=rw_check attribute or enable 'Read Write Check on RAM' option to resolve read/write conflict for controller_data_tile[8:0] (view:work.controller_interface(verilog)).
-@N: MF238 :"n:\eecs373\project\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":71:20:71:36|Found 32-bit incrementor, 'global_count_1[31:0]'
-@N: MF179 :"n:\eecs373\project\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":126:28:126:57|Found 32 bit by 32 bit '<' comparator, 'data_line_went_high6'
-@N: MF179 :"n:\eecs373\project\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":143:15:143:51|Found 32 bit by 32 bit '<' comparator, 'un1_finish_read_bit_count'
-@N: MF179 :"n:\eecs373\project\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":210:32:210:60|Found 32 bit by 32 bit '<' comparator, 'request_data8'
-@N: MF179 :"n:\eecs373\project\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":212:38:212:67|Found 32 bit by 32 bit '<' comparator, 'un1_global_count'
+@N: MF707 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":194:0:194:5|Insert external logic with either syn_ramstyle=rw_check attribute or enable 'Read Write Check on RAM' option to resolve read/write conflict for controller_data_tile[8:0] (view:work.controller_interface_0s_1s_2s_3s_4s_5s_6s_7s(verilog)).
+@N: MF238 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":84:20:84:36|Found 32-bit incrementor, 'global_count_1[31:0]'
+@N: MF179 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":142:28:142:57|Found 32 bit by 32 bit '<' comparator, 'data_line_went_high6'
+@N: MF179 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":159:15:159:51|Found 32 bit by 32 bit '<' comparator, 'un1_finish_read_bit_count'
+@N: MF179 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":226:32:226:60|Found 32 bit by 32 bit '<' comparator, 'request_data8'
+@N: MF179 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":228:38:228:67|Found 32 bit by 32 bit '<' comparator, 'un1_global_count'
 @N: MF794 |RAM controller_data[2] required 1 registers during mapping 
 @N: MF794 |RAM controller_data[2] required 2 registers during mapping 
 @N: MF794 |RAM controller_data[2] required 3 registers during mapping 
 @N: MF794 |RAM controller_data[2] required 4 registers during mapping 
-@N: FP130 |Promoting Net controller_interface_0.state[0] on CLKINT  I_45 
-@N: FP130 |Promoting Net controller_interface_0.m2_0 on CLKINT  I_46 
-@N: FP130 |Promoting Net controller_interface_0.un6_data_line on CLKINT  I_47 
+@N: FP130 |Promoting Net controller_interface_0.global_count6 on CLKINT  I_41 
+@N: FP130 |Promoting Net controller_interface_0.un21_data_line on CLKINT  I_42 
+@N: FP130 |Promoting Net controller_interface_0.un1_data_line_1 on CLKINT  I_43 
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 @N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack

@@ -1,0 +1,237 @@
+Synopsys HDL Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v"
+@I::"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\hypermods.v"
+@I::"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\umr_capim.v"
+@I::"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\scemi_objects.v"
+@I::"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\scemi_pipes.svh"
+@I::"N:\eecs373\project\MotorControlWork\motorCONTROL\hdl\m_control.v"
+@I::"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v"
+@I::"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell.v"
+@I::"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
+@I::"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\motorCONTROL_MSS.v"
+@I::"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v"
+@I::"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v"
+@I::"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v"
+@I::"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.v"
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module motorCONTROL
+@W: CG775 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
+@N: CG364 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:6|Synthesizing module CAPB3II
+
+@N: CG364 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3
+
+	APB_DWIDTH=6'b100000
+	IADDR_OPTION=32'b00000000000000000000000000000000
+	APBSLOT0ENABLE=1'b1
+	APBSLOT1ENABLE=1'b0
+	APBSLOT2ENABLE=1'b0
+	APBSLOT3ENABLE=1'b0
+	APBSLOT4ENABLE=1'b0
+	APBSLOT5ENABLE=1'b0
+	APBSLOT6ENABLE=1'b0
+	APBSLOT7ENABLE=1'b0
+	APBSLOT8ENABLE=1'b0
+	APBSLOT9ENABLE=1'b0
+	APBSLOT10ENABLE=1'b0
+	APBSLOT11ENABLE=1'b0
+	APBSLOT12ENABLE=1'b0
+	APBSLOT13ENABLE=1'b0
+	APBSLOT14ENABLE=1'b0
+	APBSLOT15ENABLE=1'b0
+	SC_0=1'b0
+	SC_1=1'b0
+	SC_2=1'b0
+	SC_3=1'b0
+	SC_4=1'b0
+	SC_5=1'b0
+	SC_6=1'b0
+	SC_7=1'b0
+	SC_8=1'b0
+	SC_9=1'b0
+	SC_10=1'b0
+	SC_11=1'b0
+	SC_12=1'b0
+	SC_13=1'b0
+	SC_14=1'b0
+	SC_15=1'b0
+	MADDR_BITS=6'b001100
+	UPR_NIBBLE_POSN=4'b0010
+	FAMILY=32'b00000000000000000000000000010010
+	SYNC_RESET=32'b00000000000000000000000000000000
+	CAPB3OOl=32'b00000000000000000000000000000000
+	CAPB3IOl=32'b00000000000000000000000000000001
+	CAPB3lOl=32'b00000000000000000000000000000010
+	CAPB3OIl=32'b00000000000000000000000000000011
+	CAPB3IIl=32'b00000000000000000000000000000100
+	CAPB3lIl=32'b00000000000000000000000000000101
+	CAPB3Oll=32'b00000000000000000000000000000110
+	CAPB3Ill=32'b00000000000000000000000000000111
+	CAPB3lll=32'b00000000000000000000000000001000
+	CAPB3O0l=32'b00000000000000000000000000001001
+	CAPB3I0l=32'b00000000000000000000000000001010
+	CAPB3l0l=32'b00000000000000000000000000001011
+	CAPB3O1l=32'b00000000000000000000000000001100
+	CAPB3I1l=32'b00000000000000000000000000001101
+	CAPB3l1l=32'b00000000000000000000000000001110
+	CAPB3OO0=32'b00000000000000000000000000001111
+	CAPB3IO0=32'b00000000000000000000000000010000
+	CAPB3lO0=32'b00000000000000000000000000010001
+	CAPB3OI0=16'b0000000000000001
+	CAPB3II0=16'b0000000000000000
+	CAPB3lI0=16'b0000000000000000
+	CAPB3Ol0=16'b0000000000000000
+	CAPB3Il0=16'b0000000000000000
+	CAPB3ll0=16'b0000000000000000
+	CAPB3O00=16'b0000000000000000
+	CAPB3I00=16'b0000000000000000
+	CAPB3l00=16'b0000000000000000
+	CAPB3O10=16'b0000000000000000
+	CAPB3I10=16'b0000000000000000
+	CAPB3l10=16'b0000000000000000
+	CAPB3OO1=16'b0000000000000000
+	CAPB3IO1=16'b0000000000000000
+	CAPB3lO1=16'b0000000000000000
+	CAPB3OI1=16'b0000000000000000
+	CAPB3II1=16'b0000000000000000
+	CAPB3lI1=16'b0000000000000000
+   Generated name = CoreAPB3_Z1
+
+@W: CG360 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":1495:0:1495:8|No assignment to wire CAPB3IlOI
+
+@N: CG364 :"N:\eecs373\project\MotorControlWork\motorCONTROL\hdl\m_control.v":2:7:2:15|Synthesizing module m_control
+
+@N: CG364 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB
+
+@N: CG364 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v":2620:7:2620:11|Synthesizing module RCOSC
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v":1141:7:1141:9|Synthesizing module GND
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v":1868:7:1868:9|Synthesizing module VCC
+
+@N: CG364 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:44|Synthesizing module motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC
+
+@N: CG364 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":67:7:67:15|Synthesizing module BIBUF_MSS
+
+@N: CG364 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":85:7:85:21|Synthesizing module BIBUF_OPEND_MSS
+
+@N: CG364 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS
+
+@N: CG364 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
+
+@N: CG364 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\motorCONTROL_MSS.v":9:7:9:22|Synthesizing module motorCONTROL_MSS
+
+@N: CG364 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.v":9:7:9:18|Synthesizing module motorCONTROL
+
+@W: CL157 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL157 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL157 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused
+@W: CL189 :"N:\eecs373\project\MotorControlWork\motorCONTROL\hdl\m_control.v":35:4:35:9|Register bit PRDATA[25] is always 0, optimizing ...
+@W: CL189 :"N:\eecs373\project\MotorControlWork\motorCONTROL\hdl\m_control.v":35:4:35:9|Register bit PRDATA[26] is always 0, optimizing ...
+@W: CL189 :"N:\eecs373\project\MotorControlWork\motorCONTROL\hdl\m_control.v":35:4:35:9|Register bit PRDATA[27] is always 0, optimizing ...
+@W: CL189 :"N:\eecs373\project\MotorControlWork\motorCONTROL\hdl\m_control.v":35:4:35:9|Register bit PRDATA[28] is always 0, optimizing ...
+@W: CL189 :"N:\eecs373\project\MotorControlWork\motorCONTROL\hdl\m_control.v":35:4:35:9|Register bit PRDATA[29] is always 0, optimizing ...
+@W: CL189 :"N:\eecs373\project\MotorControlWork\motorCONTROL\hdl\m_control.v":35:4:35:9|Register bit PRDATA[30] is always 0, optimizing ...
+@W: CL189 :"N:\eecs373\project\MotorControlWork\motorCONTROL\hdl\m_control.v":35:4:35:9|Register bit PRDATA[31] is always 0, optimizing ...
+@W: CL279 :"N:\eecs373\project\MotorControlWork\motorCONTROL\hdl\m_control.v":35:4:35:9|Pruning register bits 31 to 25 of PRDATA[31:0] 
+
+@W: CL246 :"N:\eecs373\project\MotorControlWork\motorCONTROL\hdl\m_control.v":11:17:11:21|Input port bits 31 to 8 of PADDR[31:0] are unused
+
+@W: CL246 :"N:\eecs373\project\MotorControlWork\motorCONTROL\hdl\m_control.v":12:22:12:27|Input port bits 31 to 19 of PWDATA[31:0] are unused
+
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":396:0:396:4|Input IADDR is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":398:0:398:6|Input PRESETN is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":400:0:400:3|Input PCLK is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":521:0:521:7|Input PRDATAS1 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":528:0:528:7|Input PRDATAS2 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":535:0:535:7|Input PRDATAS3 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":542:0:542:7|Input PRDATAS4 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":549:0:549:7|Input PRDATAS5 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":556:0:556:7|Input PRDATAS6 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":563:0:563:7|Input PRDATAS7 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":570:0:570:7|Input PRDATAS8 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":577:0:577:7|Input PRDATAS9 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":584:0:584:8|Input PRDATAS10 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":591:0:591:8|Input PRDATAS11 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":598:0:598:8|Input PRDATAS12 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":605:0:605:8|Input PRDATAS13 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":612:0:612:8|Input PRDATAS14 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":619:0:619:8|Input PRDATAS15 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":630:0:630:7|Input PREADYS1 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":632:0:632:7|Input PREADYS2 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":634:0:634:7|Input PREADYS3 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":636:0:636:7|Input PREADYS4 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":638:0:638:7|Input PREADYS5 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":640:0:640:7|Input PREADYS6 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":642:0:642:7|Input PREADYS7 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":644:0:644:7|Input PREADYS8 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":646:0:646:7|Input PREADYS9 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":648:0:648:8|Input PREADYS10 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":650:0:650:8|Input PREADYS11 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":652:0:652:8|Input PREADYS12 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":654:0:654:8|Input PREADYS13 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":656:0:656:8|Input PREADYS14 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":658:0:658:8|Input PREADYS15 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":664:0:664:8|Input PSLVERRS1 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":666:0:666:8|Input PSLVERRS2 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":668:0:668:8|Input PSLVERRS3 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":670:0:670:8|Input PSLVERRS4 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":672:0:672:8|Input PSLVERRS5 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:8|Input PSLVERRS6 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":676:0:676:8|Input PSLVERRS7 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":678:0:678:8|Input PSLVERRS8 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":680:0:680:8|Input PSLVERRS9 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":682:0:682:9|Input PSLVERRS10 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":684:0:684:9|Input PSLVERRS11 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":686:0:686:9|Input PSLVERRS12 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":688:0:688:9|Input PSLVERRS13 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":690:0:690:9|Input PSLVERRS14 is unused
+@W: CL159 :"N:\eecs373\project\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":692:0:692:9|Input PSLVERRS15 is unused
+
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 78MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Fri Apr 14 18:34:02 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Apr 14 18:34:02 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:01s cputime
+# Fri Apr 14 18:34:02 2017
+
+###########################################################]

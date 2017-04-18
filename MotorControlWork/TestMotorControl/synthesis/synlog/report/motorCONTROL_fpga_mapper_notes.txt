@@ -1,0 +1,12 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+@N: MF179 :"n:\eecs373\project\motorcontrolwork\testmotorcontrol\hdl\m_control.v":89:12:89:34|Found 19 bit by 19 bit '<' comparator, 'pwmLeft4'
+@N: MF179 :"n:\eecs373\project\motorcontrolwork\testmotorcontrol\hdl\m_control.v":94:12:94:35|Found 19 bit by 19 bit '<' comparator, 'pwmRight6'
+@N: MF238 :"n:\eecs373\project\motorcontrolwork\testmotorcontrol\hdl\m_control.v":82:21:82:30|Found 19-bit incrementor, 'un3_count_1[18:0]'
+@N: MF238 :"n:\eecs373\project\motorcontrolwork\testmotorcontrol\hdl\m_control.v":87:23:87:34|Found 25-bit incrementor, 'un3_counter_1[24:0]'
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack

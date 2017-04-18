@@ -1,0 +1,12 @@
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\c_hdl.exe  -osyn  N:\eecs373\project\pixyCam\pixyCam\synthesis\synwork\pixyCam_comp.srs  -top  pixyCam  -hdllog  N:\eecs373\project\pixyCam\pixyCam\synthesis\synlog\pixyCam_compiler.srr  -encrypt  -mp  1  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I N:\eecs373\project\pixyCam\pixyCam\synthesis\  -I C:\Microsemi\Libero_SoC_v11.7\Synplify\lib   -v2001  -devicelib  C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  N:\eecs373\project\pixyCam\pixyCam\synthesis\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work N:\eecs373\project\pixyCam\pixyCam\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v -lib work N:\eecs373\project\pixyCam\pixyCam\component\work\pixyCam_MSS\mss_tshell.v -lib work N:\eecs373\project\pixyCam\pixyCam\component\work\pixyCam_MSS\MSS_CCC_0\pixyCam_MSS_tmp_MSS_CCC_0_MSS_CCC.v -lib work N:\eecs373\project\pixyCam\pixyCam\component\work\pixyCam_MSS\pixyCam_MSS.v -lib work N:\eecs373\project\pixyCam\pixyCam\component\work\pixyCam\pixyCam.v 
+rc:0 success:1
+N:\eecs373\project\pixyCam\pixyCam\synthesis\synwork\pixyCam_comp.srs|o|1492057546|27574
+N:\eecs373\project\pixyCam\pixyCam\synthesis\synlog\pixyCam_compiler.srr|o|1492057546|7900
+C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v|i|1449239730|72817
+N:\eecs373\project\pixyCam\pixyCam\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v|i|1471029396|11243
+N:\eecs373\project\pixyCam\pixyCam\component\work\pixyCam_MSS\mss_tshell.v|i|1492057465|12226
+N:\eecs373\project\pixyCam\pixyCam\component\work\pixyCam_MSS\MSS_CCC_0\pixyCam_MSS_tmp_MSS_CCC_0_MSS_CCC.v|i|1492057459|2911
+N:\eecs373\project\pixyCam\pixyCam\component\work\pixyCam_MSS\pixyCam_MSS.v|i|1492057467|20697
+N:\eecs373\project\pixyCam\pixyCam\component\work\pixyCam\pixyCam.v|i|1492057497|2826
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin\c_hdl.exe|i|1449239722|1295872
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\c_hdl.exe|i|1449239724|1897472

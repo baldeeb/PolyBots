@@ -1,5 +1,5 @@
 #===========================================================
-# Created by Microsemi SmartDesign Tue Apr 04 16:48:29 2017
+# Created by Microsemi SmartDesign Thu Apr 06 11:53:51 2017
 #
 # Syntax: 
 # ------- 
@@ -17,3 +17,4 @@
 # Define name and base address of each resource.
 #-----------------------------------------------------------
 
+memmap controller_interface_0 0x40050000;

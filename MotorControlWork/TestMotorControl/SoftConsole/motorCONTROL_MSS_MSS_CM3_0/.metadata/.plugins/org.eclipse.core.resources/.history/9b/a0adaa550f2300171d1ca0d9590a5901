@@ -1,0 +1,23 @@
+/*
+ * encoders.c
+ *
+ *  Created on: Apr 16, 2017
+ *      Author: baldeeb
+ */
+
+#include "main.h"
+
+
+void get_encoder_vals(int * right, int * left){
+
+	if(*ENCODERS == 1 || *ENCODERS == 3)
+		*left = 1;
+	else
+		*left = 0;
+
+	if(*ENCODERS == 2 || *ENCODERS == 3)
+		*right = 1;
+	else
+		*right = 0;
+
+}

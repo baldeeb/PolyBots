@@ -1,0 +1,21 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
+
+Date      :  Thu Apr 13 00:24:29 2017
+Project   :  N:\eecs373\project\pixyCam\pixyCam
+Component :  pixyCam_MSS
+Family    :  SmartFusion
+
+
+HDL source files for all Synthesis and Simulation tools:
+    N:/eecs373/project/pixyCam/pixyCam/component/work/pixyCam_MSS/MSS_CCC_0/pixyCam_MSS_tmp_MSS_CCC_0_MSS_CCC.v
+    N:/eecs373/project/pixyCam/pixyCam/component/work/pixyCam_MSS/pixyCam_MSS.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    N:/eecs373/project/pixyCam/pixyCam/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v
+    N:/eecs373/project/pixyCam/pixyCam/component/work/pixyCam_MSS/mss_tshell.v
+
+Stimulus files for all Simulation tools:
+    N:/eecs373/project/pixyCam/pixyCam/component/Actel/SmartFusionMSS/MSS/2.5.200/CompileDssBfm.tcl
+    N:/eecs373/project/pixyCam/pixyCam/component/Actel/SmartFusionMSS/MSS/2.5.200/bfmtovec.exe
+    N:/eecs373/project/pixyCam/pixyCam/component/work/pixyCam_MSS/MSS_ENVM_0/test.bfm
+
