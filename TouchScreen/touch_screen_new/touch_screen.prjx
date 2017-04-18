@@ -57,13 +57,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492369823"
+TIME="1492458211"
 SIZE="2736"
 PARENT="<project>\component\work\touch_screen\touch_screen.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1492369823"
+TIME="1492458211"
 SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -276,13 +276,13 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\touch_screen\touch_screen.cxf,actgen_cxf"
 STATE="utd"
-TIME="1492369847"
+TIME="1492458246"
 SIZE="6196"
 ENDFILE
 VALUE "<project>\component\work\touch_screen\touch_screen.pdc,pdc"
 STATE="utd"
-TIME="1492369821"
-SIZE="1997"
+TIME="1492458209"
+SIZE="2251"
 PARENT="<project>\component\work\touch_screen\touch_screen.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -292,7 +292,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\touch_screen\touch_screen.v,hdl"
 STATE="utd"
-TIME="1492369824"
+TIME="1492458212"
 SIZE="14544"
 PARENT="<project>\component\work\touch_screen\touch_screen.cxf"
 IS_READONLY="TRUE"
@@ -439,7 +439,7 @@ PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1492369824"
+TIME="1492458212"
 SIZE="632"
 PARENT="<project>\component\work\touch_screen\touch_screen.cxf"
 ENDFILE
@@ -490,8 +490,7 @@ VALUE "<project>\component\work\touch_screen_MSS\mss_tshell_syn.sdc,sdc"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
-LiberoState=Post_Layout
-ideDESIGNER(<project>\designer\impl1\touch_screen.adb,adb)=StateSuccess
+LiberoState=Post_Synthesis
 ideSYNTHESIS(<project>\synthesis\touch_screen.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
@@ -500,10 +499,6 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
-ENDLIST
-LIST PinReports
-VALUE "<project>\designer\impl1\touch_screen_report_pin_byname.txt,log"
-VALUE "<project>\designer\impl1\touch_screen_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 LIST "touch_screen_MSS::work"
@@ -691,8 +686,7 @@ ENDLIST
 LIST ProjectState5.1
 LIST "touch_screen::work"
 LIST Impl1
-LiberoState=Post_Layout
-ideDESIGNER(<project>\designer\impl1\touch_screen.adb,adb)=StateSuccess
+LiberoState=Post_Synthesis
 ideSYNTHESIS(<project>\synthesis\touch_screen.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
@@ -726,8 +720,13 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Program Device:touch_screen_program.log
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;touch_screen;0
+SmartDesign;touch_screen_MSS;0
+HDL;hdl\spi_pin.v;0
+ACTIVEVIEW;touch_screen
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
