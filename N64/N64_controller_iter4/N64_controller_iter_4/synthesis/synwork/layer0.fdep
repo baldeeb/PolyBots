@@ -1,30 +1,30 @@
-#OPTIONS:"|-layerid|0|-orig_srs|N:\\eecs373\\PolyBots\\N64\\N64_controller_iter4\\N64_controller_iter_4\\synthesis\\synwork\\N64_controller_iter_4_comp.srs|-top|N64_controller_iter_4|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|N:\\eecs373\\PolyBots\\N64\\N64_controller_iter4\\N64_controller_iter_4\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|N:\\Project\\GIT\\N64\\N64_controller_iter4\\N64_controller_iter_4\\synthesis\\synwork\\N64_controller_iter_4_comp.srs|-top|N64_controller_iter_4|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|N:\\Project\\GIT\\N64\\N64_controller_iter4\\N64_controller_iter_4\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\bin64\\c_ver.exe":1449239726
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\proasic\\smartfusion.v":1449239730
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\hypermods.v":1449239734
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\umr_capim.v":1449239734
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\scemi_objects.v":1449239734
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\scemi_pipes.svh":1449239734
-#CUR:"N:\\eecs373\\PolyBots\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1471029396
-#CUR:"N:\\eecs373\\PolyBots\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\work\\N64_controller_iter_4_MSS\\mss_tshell.v":1491494017
-#CUR:"N:\\eecs373\\PolyBots\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\work\\N64_controller_iter_4_MSS\\MSS_CCC_0\\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":1491494010
-#CUR:"N:\\eecs373\\PolyBots\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\work\\N64_controller_iter_4_MSS\\N64_controller_iter_4_MSS.v":1491494021
-#CUR:"N:\\eecs373\\PolyBots\\N64\\N64_controller_iter4\\N64_controller_iter_4\\hdl\\controller_interface.v":1491489289
-#CUR:"N:\\eecs373\\PolyBots\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3_muxptob3.v":1474400476
-#CUR:"N:\\eecs373\\PolyBots\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3_iaddr_reg.v":1474400476
-#CUR:"N:\\eecs373\\PolyBots\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core\\coreapb3.v":1474400476
-#CUR:"N:\\eecs373\\PolyBots\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\work\\N64_controller_iter_4\\N64_controller_iter_4.v":1491494031
+#CUR:"N:\\Project\\GIT\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1471029396
+#CUR:"N:\\Project\\GIT\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\work\\N64_controller_iter_4_MSS\\mss_tshell.v":1492500483
+#CUR:"N:\\Project\\GIT\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\work\\N64_controller_iter_4_MSS\\MSS_CCC_0\\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":1492500478
+#CUR:"N:\\Project\\GIT\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\work\\N64_controller_iter_4_MSS\\N64_controller_iter_4_MSS.v":1492500486
+#CUR:"N:\\Project\\GIT\\N64\\N64_controller_iter4\\N64_controller_iter_4\\hdl\\con_int.v":1492500322
+#CUR:"N:\\Project\\GIT\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3_muxptob3.v":1475032237
+#CUR:"N:\\Project\\GIT\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3_iaddr_reg.v":1475032237
+#CUR:"N:\\Project\\GIT\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3.v":1475032237
+#CUR:"N:\\Project\\GIT\\N64\\N64_controller_iter4\\N64_controller_iter_4\\component\\work\\N64_controller_iter_4\\N64_controller_iter_4.v":1492500599
 #numinternalfiles:5
 #defaultlanguage:verilog
-0			"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
-1			"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell.v" verilog
-2			"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v" verilog
-3			"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v" verilog
-4			"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v" verilog
-5			"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v" verilog
-6			"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v" verilog
-7			"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v" verilog
-8			"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.v" verilog
+0			"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
+1			"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell.v" verilog
+2			"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v" verilog
+3			"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v" verilog
+4			"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v" verilog
+5			"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" verilog
+6			"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" verilog
+7			"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" verilog
+8			"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1
@@ -62,8 +62,8 @@ module work MSS_ALL 0
 module work MSS_APB 1
 module work N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC 2
 module work N64_controller_iter_4_MSS 3
-module work controller_interface 4
+module work con_int 4
 module work N64_controller_iter_4 8
-module COREAPB3_LIB COREAPB3_MUXPTOB3 5
-module COREAPB3_LIB coreapb3_iaddr_reg 6
+module COREAPB3_LIB CAPB3II 5
+module COREAPB3_LIB CAPB3O 6
 module COREAPB3_LIB CoreAPB3 7

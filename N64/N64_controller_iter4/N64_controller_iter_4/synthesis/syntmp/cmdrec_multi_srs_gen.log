@@ -1,7 +1,7 @@
-C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\syn_nfilter.exe  -link  -top  N64_controller_iter_4  -multisrs  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_comp.srs  -osyn  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_mult.srs  -log  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\N64_controller_iter_4_multi_srs_gen.srr 
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\syn_nfilter.exe  -link  -top  N64_controller_iter_4  -multisrs  N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_comp.srs  -osyn  N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_mult.srs  -log  N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\N64_controller_iter_4_multi_srs_gen.srr 
 rc:0 success:1
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_comp.srs|i|1491494498|49795
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_mult.srs|o|1491494500|12324
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\N64_controller_iter_4_multi_srs_gen.srr|o|1491494500|521
+N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_comp.srs|i|1492500652|49631
+N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_mult.srs|o|1492500654|12211
+N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\N64_controller_iter_4_multi_srs_gen.srr|o|1492500654|521
 C:\Microsemi\Libero_SoC_v11.7\Synplify\bin\syn_nfilter.exe|i|1449239724|3007488
 C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\syn_nfilter.exe|i|1449239726|3974144

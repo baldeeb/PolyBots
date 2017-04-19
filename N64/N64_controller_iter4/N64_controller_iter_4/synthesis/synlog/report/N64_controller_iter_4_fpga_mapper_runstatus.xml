@@ -5,7 +5,7 @@ The file contains the job information from mapper to be displayed as part of the
 *******************************************************************************************-->
 <job_run_status name="Mapper">
 <report_link name="Detailed report">
-<data>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\N64_controller_iter_4_fpga_mapper.srr</data>
+<data>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\N64_controller_iter_4_fpga_mapper.srr</data>
 <title>Synopsys Microsemi Technology Mapper</title>
 </report_link>
 <job_status>
@@ -15,19 +15,19 @@ The file contains the job information from mapper to be displayed as part of the
 <info name="Notes">
 <data>21</data>
 <report_link name="more">
-<data>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\report\N64_controller_iter_4_fpga_mapper_notes.txt</data>
+<data>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\report\N64_controller_iter_4_fpga_mapper_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
 <data>4</data>
 <report_link name="more">
-<data>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\report\N64_controller_iter_4_fpga_mapper_warnings.txt</data>
+<data>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\report\N64_controller_iter_4_fpga_mapper_warnings.txt</data>
 </report_link>
 </info>
 <info name="Errors">
 <data>0</data>
 <report_link name="more">
-<data>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\report\N64_controller_iter_4_fpga_mapper_errors.txt</data>
+<data>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\report\N64_controller_iter_4_fpga_mapper_errors.txt</data>
 </report_link>
 </info>
 <info name="CPU Time">
@@ -37,10 +37,10 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:10s</data>
 </info>
 <info name="Peak Memory">
-<data>124MB</data>
+<data>123MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1491494513</data>
+<data type="timestamp">1492500667</data>
 </info>
 </job_info>
 </job_run_status>

@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Thu Apr 06 12:02:14 2017 ***************************************************************************
+                          Tue Apr 18 03:31:26 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
-File Name: N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller_iter_4.adb
+File Name: N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller_iter_4.adb
 Design Name: N64_controller_iter_4  Design State: compile
-Last Saved: Thu Apr 06 10:40:41 2017
+Last Saved: Fri Apr 14 15:06:40 2017
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Thu Apr 06 12:02:06 2017:
-        N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.edn
-        N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.pdc
+Source File(s) Imported on Tue Apr 18 03:31:17 2017:
+        N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.edn
+        N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.pdc
 
 
 ***** CAE Variables ************************************************
@@ -51,11 +51,11 @@ Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
 Source      :
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_ite\
-r_4.edn
+N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.e\
+dn
 
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controlle\
-r_iter_4\N64_controller_iter_4.pdc
+N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_ite\
+r_4\N64_controller_iter_4.pdc
 Format      : EDIF
 Topcell     : N64_controller_iter_4
 Speed grade : STD
@@ -82,23 +82,23 @@ report_high_fanout_nets_limit      : 10
 =====================================================================
 Compile starts ...
 
-Warning: CMP201: Net controller_interface_0/I_1_RD1 drives no load.
-Warning: CMP201: Net controller_interface_0/I_1_RD2 drives no load.
-Warning: CMP201: Net controller_interface_0/I_1_RD3 drives no load.
-Warning: CMP201: Net controller_interface_0/I_1_RD4 drives no load.
-Warning: CMP201: Net controller_interface_0/I_1_RD5 drives no load.
-Warning: CMP201: Net controller_interface_0/I_1_RD6 drives no load.
-Warning: CMP201: Net controller_interface_0/I_1_RD7 drives no load.
-Warning: CMP201: Net controller_interface_0/I_1_RD8 drives no load.
-Warning: CMP201: Net controller_interface_0/DOUT_SIG[9] drives no load.
-Warning: CMP201: Net controller_interface_0/DOUT_SIG[10] drives no load.
-Warning: CMP201: Net controller_interface_0/DOUT_SIG[11] drives no load.
-Warning: CMP201: Net controller_interface_0/DOUT_SIG[12] drives no load.
-Warning: CMP201: Net controller_interface_0/DOUT_SIG[13] drives no load.
-Warning: CMP201: Net controller_interface_0/DOUT_SIG[14] drives no load.
-Warning: CMP201: Net controller_interface_0/DOUT_SIG[15] drives no load.
-Warning: CMP201: Net controller_interface_0/DOUT_SIG[16] drives no load.
-Warning: CMP201: Net controller_interface_0/DOUT_SIG[17] drives no load.
+Warning: CMP201: Net con_int_0/I_1_RD1 drives no load.
+Warning: CMP201: Net con_int_0/I_1_RD2 drives no load.
+Warning: CMP201: Net con_int_0/I_1_RD3 drives no load.
+Warning: CMP201: Net con_int_0/I_1_RD4 drives no load.
+Warning: CMP201: Net con_int_0/I_1_RD5 drives no load.
+Warning: CMP201: Net con_int_0/I_1_RD6 drives no load.
+Warning: CMP201: Net con_int_0/I_1_RD7 drives no load.
+Warning: CMP201: Net con_int_0/I_1_RD8 drives no load.
+Warning: CMP201: Net con_int_0/DOUT_SIG[9] drives no load.
+Warning: CMP201: Net con_int_0/DOUT_SIG[10] drives no load.
+Warning: CMP201: Net con_int_0/DOUT_SIG[11] drives no load.
+Warning: CMP201: Net con_int_0/DOUT_SIG[12] drives no load.
+Warning: CMP201: Net con_int_0/DOUT_SIG[13] drives no load.
+Warning: CMP201: Net con_int_0/DOUT_SIG[14] drives no load.
+Warning: CMP201: Net con_int_0/DOUT_SIG[15] drives no load.
+Warning: CMP201: Net con_int_0/DOUT_SIG[16] drives no load.
+Warning: CMP201: Net con_int_0/DOUT_SIG[17] drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_EMCRWn drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_EMCDBOE drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_CALIBOUT drives no load.
@@ -436,9 +436,9 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              1
   - Tieoff:                 0
-  - Logic combining:        135
+  - Logic combining:        132
 
-    Total macros optimized  136
+    Total macros optimized  133
 
 There were 0 error(s) and 345 warning(s) in this design.
 =====================================================================
@@ -460,7 +460,7 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:   1685  Total:   4608   (36.57%)
+    Fabric                     Used:   1675  Total:   4608   (36.35%)
     Fabric IO (W/ clocks)      Used:      7  Total:     94   (7.45%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
@@ -489,7 +489,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 1319         | 1319
+    COMB    | 1309         | 1309
     SEQ     | 366          | 366
 
 I/O Function:
@@ -525,62 +525,62 @@ The following nets have been assigned to a chip global resource:
     369     CLK_NET       Net   : FAB_CLK
                           Driver: N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC
                           Source: ESSENTIAL
-    100     INT_NET       Net   : controller_interface_0/global_count6
-                          Driver: controller_interface_0/state_RNIH7DT_3[1]/U_CLKSRC
+    100     INT_NET       Net   : con_int_0/global_count6
+                          Driver: con_int_0/state_RNI2RT7_6[1]/U_CLKSRC
                           Source: NETLIST
-    68      INT_NET       Net   : controller_interface_0/un21_data_line
-                          Driver: controller_interface_0/state_RNIH7DT_3[2]/U_CLKSRC
+    68      INT_NET       Net   : con_int_0/state_RNI2RT7_7[1]
+                          Driver: con_int_0/state_RNI2RT7_7[1]/U_CLKSRC
                           Source: NETLIST
-    64      INT_NET       Net   : controller_interface_0/un1_data_line_1
-                          Driver: controller_interface_0/state_RNI2FQQ1_1[1]/U_CLKSRC
+    64      INT_NET       Net   : con_int_0/state_RNI4MRF_1[1]
+                          Driver: con_int_0/state_RNI4MRF_1[1]/U_CLKSRC
                           Source: NETLIST
 
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : controller_interface_0/global_count[2]
-                          Driver: controller_interface_0/global_count[2]
-    24      INT_NET       Net   : controller_interface_0/global_count[19]
-                          Driver: controller_interface_0/global_count[19]
-    24      INT_NET       Net   : controller_interface_0/global_count[5]
-                          Driver: controller_interface_0/global_count[5]
-    23      INT_NET       Net   : controller_interface_0/global_count[31]
-                          Driver: controller_interface_0/global_count[31]
-    23      INT_NET       Net   : controller_interface_0/global_count[4]
-                          Driver: controller_interface_0/global_count[4]
-    22      INT_NET       Net   : controller_interface_0/global_count[10]
-                          Driver: controller_interface_0/global_count[10]
-    21      INT_NET       Net   : controller_interface_0/global_count[0]
-                          Driver: controller_interface_0/global_count[0]
-    20      INT_NET       Net   : controller_interface_0/state_0[2]
-                          Driver: controller_interface_0/state_0[2]
-    20      INT_NET       Net   : controller_interface_0/state[2]
-                          Driver: controller_interface_0/state[2]
-    19      INT_NET       Net   : controller_interface_0/N64_bits_received_0[3]
-                          Driver: controller_interface_0/N64_bits_received_0[3]
+    24      INT_NET       Net   : con_int_0/global_count[2]
+                          Driver: con_int_0/global_count[2]
+    24      INT_NET       Net   : con_int_0/global_count[19]
+                          Driver: con_int_0/global_count[19]
+    24      INT_NET       Net   : con_int_0/global_count[5]
+                          Driver: con_int_0/global_count[5]
+    23      INT_NET       Net   : con_int_0/global_count[31]
+                          Driver: con_int_0/global_count[31]
+    23      INT_NET       Net   : con_int_0/global_count[4]
+                          Driver: con_int_0/global_count[4]
+    22      INT_NET       Net   : con_int_0/global_count[10]
+                          Driver: con_int_0/global_count[10]
+    21      INT_NET       Net   : con_int_0/global_count[0]
+                          Driver: con_int_0/global_count[0]
+    20      INT_NET       Net   : con_int_0/state_0[2]
+                          Driver: con_int_0/state_0[2]
+    20      INT_NET       Net   : con_int_0/state[2]
+                          Driver: con_int_0/state[2]
+    19      INT_NET       Net   : con_int_0/N64_bits_received_0[3]
+                          Driver: con_int_0/N64_bits_received_0[3]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    25      INT_NET       Net   : controller_interface_0/global_count[2]
-                          Driver: controller_interface_0/global_count[2]
-    24      INT_NET       Net   : controller_interface_0/global_count[19]
-                          Driver: controller_interface_0/global_count[19]
-    24      INT_NET       Net   : controller_interface_0/global_count[5]
-                          Driver: controller_interface_0/global_count[5]
-    23      INT_NET       Net   : controller_interface_0/global_count[31]
-                          Driver: controller_interface_0/global_count[31]
-    23      INT_NET       Net   : controller_interface_0/global_count[4]
-                          Driver: controller_interface_0/global_count[4]
-    22      INT_NET       Net   : controller_interface_0/global_count[10]
-                          Driver: controller_interface_0/global_count[10]
-    21      INT_NET       Net   : controller_interface_0/global_count[0]
-                          Driver: controller_interface_0/global_count[0]
-    20      INT_NET       Net   : controller_interface_0/state_0[2]
-                          Driver: controller_interface_0/state_0[2]
-    20      INT_NET       Net   : controller_interface_0/state[2]
-                          Driver: controller_interface_0/state[2]
-    19      INT_NET       Net   : controller_interface_0/N64_bits_received_0[3]
-                          Driver: controller_interface_0/N64_bits_received_0[3]
+    25      INT_NET       Net   : con_int_0/global_count[2]
+                          Driver: con_int_0/global_count[2]
+    24      INT_NET       Net   : con_int_0/global_count[19]
+                          Driver: con_int_0/global_count[19]
+    24      INT_NET       Net   : con_int_0/global_count[5]
+                          Driver: con_int_0/global_count[5]
+    23      INT_NET       Net   : con_int_0/global_count[31]
+                          Driver: con_int_0/global_count[31]
+    23      INT_NET       Net   : con_int_0/global_count[4]
+                          Driver: con_int_0/global_count[4]
+    22      INT_NET       Net   : con_int_0/global_count[10]
+                          Driver: con_int_0/global_count[10]
+    21      INT_NET       Net   : con_int_0/global_count[0]
+                          Driver: con_int_0/global_count[0]
+    20      INT_NET       Net   : con_int_0/state_0[2]
+                          Driver: con_int_0/state_0[2]
+    20      INT_NET       Net   : con_int_0/state[2]
+                          Driver: con_int_0/state[2]
+    19      INT_NET       Net   : con_int_0/N64_bits_received_0[3]
+                          Driver: con_int_0/N64_bits_received_0[3]
 
 

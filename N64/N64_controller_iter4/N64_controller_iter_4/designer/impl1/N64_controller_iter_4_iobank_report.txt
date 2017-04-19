@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
-Date: Thu Apr 06 12:03:34 2017
+Date: Tue Apr 18 03:33:37 2017
 Design Name: N64_controller_iter_4  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
 
 

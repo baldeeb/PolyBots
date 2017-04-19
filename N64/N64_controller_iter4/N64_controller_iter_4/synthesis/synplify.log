@@ -3,8 +3,8 @@ sourcing C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\message_override.tcl
 
 Starting:    C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_SoC_v11.7\Synplify
-Hostname:    EECS373-08
-Date:        Thu Apr 06 12:01:35 2017
+Hostname:    EECS373-11
+Date:        Tue Apr 18 03:30:50 2017
 Version:     J-2015.03M-SP1-2
 
 Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log N64_controller_iter_4_syn.tcl
@@ -18,17 +18,20 @@ License Option: actel_oem
 Running in Vendor Mode
 
 
-Warning: File already exists in project: "N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
-Warning: File already exists in project: "N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
-Warning: File already exists in project: "N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
-Warning: File already exists in project: "N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
-Warning: File already exists in project: "N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
-Warning: File already exists in project: "N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
-Warning: File already exists in project: "N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
-Warning: File already exists in project: "N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
+Warning: File already exists in project: "N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
+Warning: File already exists in project: "N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
+Warning: File already exists in project: "N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
+Warning: File already exists in project: "N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
+Warning: File already exists in project: "N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
+Warning: File already exists in project: "N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
+Warning: File already exists in project: "N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
+Warning: File already exists in project: "N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
+Warning: File already exists in project: "N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
+Warning: File already exists in project: "N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
+Warning: File already exists in project: "N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc"
 auto_infer_blackbox is not supported in current product.
 
-log file: "N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.srr"
+log file: "N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.srr"
 
 Running: synthesis in foreground
 
@@ -45,33 +48,33 @@ Running: compile_flow (Compile Process) on N64_controller_iter_4_syn|synthesis
 
 Running: compiler (Compile Input) on N64_controller_iter_4_syn|synthesis
 
-Copied N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_comp.srs to N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.srs
+Copied N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_comp.srs to N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.srs
 
 
 compiler Completed
 Return Code: 0
-Run Time:0h:00m:05s
+Run Time:0h:00m:04s
 
 
 Running: multi_srs_gen (Multi-srs Generator) on N64_controller_iter_4_syn|synthesis
 
-Copied N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_comp.srs to N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_s.srs
+Copied N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_comp.srs to N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_s.srs
 
 
 multi_srs_gen Completed
 Return Code: 0
 Run Time:0h:00m:00s
 
-Copied N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_mult.srs to N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.srs
+Copied N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_mult.srs to N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.srs
 
 Complete: Compile Process on N64_controller_iter_4_syn|synthesis
 
 
 Running: premap (Pre-mapping) on N64_controller_iter_4_syn|synthesis
 
-Copied N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap to N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_s.sap
+Copied N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap to N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_s.sap
 
-Copied N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.fse to N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_s.fse
+Copied N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.fse to N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_s.fse
 
 
 premap Completed
@@ -86,7 +89,7 @@ Running: map (Map) on N64_controller_iter_4_syn|synthesis
 
 Running: fpga_mapper (Map & Optimize) on N64_controller_iter_4_syn|synthesis
 
-Copied N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_m.srm to N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.srm
+Copied N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_m.srm to N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.srm
 
 
 fpga_mapper Completed with warnings

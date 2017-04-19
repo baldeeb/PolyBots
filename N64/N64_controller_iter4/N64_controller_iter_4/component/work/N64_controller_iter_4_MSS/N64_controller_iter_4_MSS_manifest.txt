@@ -1,22 +1,22 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
 
-Date      :  Thu Apr 06 11:53:42 2017
-Project   :  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4
+Date      :  Tue Apr 18 03:28:07 2017
+Project   :  N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4
 Component :  N64_controller_iter_4_MSS
 Family    :  SmartFusion
 
 
 HDL source files for all Synthesis and Simulation tools:
-    N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/MSS_CCC_0/N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v
-    N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/N64_controller_iter_4_MSS.v
+    N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/MSS_CCC_0/N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v
+    N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/N64_controller_iter_4_MSS.v
 
 HDL source files for Synopsys SynplifyPro Synthesis tool:
-    N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v
-    N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/mss_tshell.v
-    N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/mss_tshell_syn.sdc
+    N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v
+    N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/mss_tshell.v
+    N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/mss_tshell_syn.sdc
 
 Stimulus files for all Simulation tools:
-    N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/SmartFusionMSS/MSS/2.5.200/CompileDssBfm.tcl
-    N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/SmartFusionMSS/MSS/2.5.200/bfmtovec.exe
-    N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/MSS_ENVM_0/test.bfm
+    N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/SmartFusionMSS/MSS/2.5.200/CompileDssBfm.tcl
+    N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/SmartFusionMSS/MSS/2.5.200/bfmtovec.exe
+    N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/MSS_ENVM_0/test.bfm
 

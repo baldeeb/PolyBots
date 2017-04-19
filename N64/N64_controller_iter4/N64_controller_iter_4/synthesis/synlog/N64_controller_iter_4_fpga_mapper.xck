@@ -1,2 +1,2 @@
-CKID0001:@|S:N64_controller_iter_4_MSS_0@|E:controller_interface_0.N64_bits_sent_incremented@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
-CKID0002:@|S:N64_controller_iter_4_MSS_0.MSS_CCC_0.FAB_CLK_keep@|E:controller_interface_0.controller_data_tile.I_1@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0001:@|S:N64_controller_iter_4_MSS_0@|E:con_int_0.N64_bits_sent_incremented@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:N64_controller_iter_4_MSS_0.MSS_CCC_0.FAB_CLK_keep@|E:con_int_0.controller_data_tile.I_1@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

@@ -2,7 +2,7 @@
 <device>
   <name>N64_controller_iter_4</name>
   <version>1.0</version>
-  <description>CMSIS description for N64_controller_iter_4.  Created by Microsemi SmartDesign on Thu Apr 06 11:53:55 2017</description>
+  <description>CMSIS description for N64_controller_iter_4.  Created by Microsemi SmartDesign on Tue Apr 18 03:30:03 2017</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>
@@ -1851,7 +1851,7 @@
       <baseAddress>0x60000000</baseAddress>
     </peripheral>
     <peripheral>
-      <name>controller_interface_0</name>
+      <name>con_int_0</name>
       <baseAddress>0x40050000</baseAddress>
     </peripheral>
     <peripheral>

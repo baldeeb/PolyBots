@@ -1,17 +1,17 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
 
-Date      :  Thu Apr 06 11:54:15 2017
-Project   :  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4
+Date      :  Tue Apr 18 03:30:17 2017
+Project   :  N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4
 Component :  N64_controller_iter_4
 Family    :  SmartFusion
 
 
 HDL source files for all Synthesis and Simulation tools:
-    N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v
-    N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v
-    N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v
-    N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4/N64_controller_iter_4.v
+    N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v
+    N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v
+    N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v
+    N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4/N64_controller_iter_4.v
 
 Stimulus files for all Simulation tools:
-    N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4/subsystem.bfm
+    N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4/subsystem.bfm
 

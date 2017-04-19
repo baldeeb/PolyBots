@@ -4,9 +4,9 @@ Product Version J-2015.03M-SP1-2
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
-Reading constraint file: N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc
-@L: N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4_scck.rpt 
-Printing clock  summary report in "N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4_scck.rpt" file 
+Reading constraint file: N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc
+@L: N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4_scck.rpt 
+Printing clock  summary report in "N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled 
 
@@ -31,12 +31,12 @@ FCLK        25.0 MHz      40.000        declared     clk_group_0
 ================================================================
 
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap.
+@N: BN225 |Writing default property annotation file N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap.
 Pre-mapping successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 50MB peak: 114MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Apr 06 12:01:42 2017
+# Tue Apr 18 03:30:55 2017
 
 ###########################################################]

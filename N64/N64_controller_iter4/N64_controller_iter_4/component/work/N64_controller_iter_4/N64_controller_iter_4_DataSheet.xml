@@ -11,34 +11,29 @@
     <hdl-type>Verilog</hdl-type>
     <project-description>
     </project-description>
-    <location>N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4</location>
-    <state>GENERATED ( Thu Apr 06 11:54:05 2017 )</state>
-    <swide-toolchain>SoftConsole workspace generated to N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole</swide-toolchain>
+    <location>N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4</location>
+    <state>GENERATED ( Tue Apr 18 03:30:11 2017 )</state>
+    <swide-toolchain>SoftConsole workspace generated to N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
-    <file>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v</file>
-    <file>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v</file>
-    <file>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v</file>
-    <file>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
-    <file>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.v</file>
-    <file>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
-    <file>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell.v</file>
-    <file>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v</file>
-    <file>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v</file>
+    <file>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v</file>
+    <file>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v</file>
+    <file>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v</file>
+    <file>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
+    <file>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.v</file>
+    <file>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
+    <file>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell.v</file>
+    <file>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v</file>
+    <file>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v</file>
+    <file>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v</file>
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS/MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
-  <io>
-    <port-name>monitor_sig[2]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
   <io>
     <port-name>MSS_RESET_N</port-name>
     <direction>IN</direction>
@@ -46,7 +41,7 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>UART_0_TXD</port-name>
+    <port-name>LED_test[0]</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -58,37 +53,13 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>monitor_sig[0]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>sigout</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>monitor_sig[1]</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>UART_1_RXD</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
     <port-name>data_line</port-name>
     <direction>INOUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>LED_test[0]</port-name>
+    <port-name>monitor_sig[1]</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -100,13 +71,43 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
+    <port-name>sigout</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
     <port-name>UART_1_TXD</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
+  <io>
+    <port-name>monitor_sig[0]</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>UART_0_TXD</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>UART_1_RXD</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>monitor_sig[2]</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
   <core>
-    <core-name>controller_interface_0</core-name>
+    <core-name>con_int_0</core-name>
   </core>
   <core type="SpiritModule">
     <core-exttype>IP</core-exttype>
@@ -385,7 +386,7 @@ There is one APB3 Master interface.
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>HierSpiritDesign</core-exttype>
-    <core-location>N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS</core-location>
+    <core-location>N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/component/work/N64_controller_iter_4_MSS</core-location>
     <core-name>N64_controller_iter_4_MSS_0</core-name>
   </core>
   <firmware_core type="FirmWareModule">
@@ -2426,8 +2427,8 @@ These files are required by the SmartFusion bare metal peripheral drivers to bui
           <range>0x80000</range>
         </slave>
         <slave>
-          <name>controller_interface_0</name>
-          <fullPinName>controller_interface_0:BIF_1</fullPinName>
+          <name>con_int_0</name>
+          <fullPinName>con_int_0:BIF_1</fullPinName>
           <remapAddress>0x40050000</remapAddress>
           <fullAddressSpace>0x40050000 - 0x400500FF</fullAddressSpace>
           <range>0x00000100</range>

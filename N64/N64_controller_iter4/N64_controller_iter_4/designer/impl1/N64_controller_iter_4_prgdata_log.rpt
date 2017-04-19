@@ -3,23 +3,26 @@ Version: 11.7.1.14
 Release: v11.7 SP1.1
 
 Info: The design
-      N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/designer/impl1/N64_con\
-      troller_iter_4.adb was last modified by software version 11.7.1.14.
+      N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/designer/impl1/N64_controll\
+      er_iter_4.adb was last modified by software version 11.7.1.14.
 Opened an existing Libero design
-N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/designer/impl1/N64_controlle\
-r_iter_4.adb.
+N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/designer/impl1/N64_controller_ite\
+r_4.adb.
+Warning: Overwriting the existing file:
+         N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/designer/impl1/N64_contr\
+         oller_iter_4.fdb.
 
-The Export-map command succeeded ( 00:00:13 )
-CHECKSUM: 5314
+The Export-map command succeeded ( 00:00:12 )
+CHECKSUM: 4DD9
 Wrote to the file:
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controlle\
-r_iter_4.fdb
+N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller_ite\
+r_4.fdb
 
 The Export command succeeded ( 00:00:18 )
 Design saved to file
-N:/eecs373/PolyBots/N64/N64_controller_iter4/N64_controller_iter_4/designer/impl1/N64_controlle\
-r_iter_4.adb.
+N:/Project/GIT/N64/N64_controller_iter4/N64_controller_iter_4/designer/impl1/N64_controller_ite\
+r_4.adb.
 
-The Execute Script command succeeded ( 00:00:21 )
+The Execute Script command succeeded ( 00:00:20 )
 Design closed.
 

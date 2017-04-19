@@ -5,7 +5,7 @@ Report for cell N64_controller_iter_4.verilog
               AND2    86      1.0       86.0
              AND2A    12      1.0       12.0
               AND3    99      1.0       99.0
-               AO1    26      1.0       26.0
+               AO1    27      1.0       27.0
               AO1A     4      1.0        4.0
               AO1B     1      1.0        1.0
               AO1C    61      1.0       61.0
@@ -14,7 +14,7 @@ Report for cell N64_controller_iter_4.verilog
                AX1     7      1.0        7.0
               AX1A     2      1.0        2.0
               AX1B     1      1.0        1.0
-              AX1C    46      1.0       46.0
+              AX1C    47      1.0       47.0
               AX1D     1      1.0        1.0
               AX1E     2      1.0        2.0
             CLKINT     3      0.0        0.0
@@ -26,30 +26,29 @@ Report for cell N64_controller_iter_4.verilog
               MX2A     2      1.0        2.0
               MX2B     4      1.0        4.0
               MX2C     6      1.0        6.0
-              NOR2    34      1.0       34.0
-             NOR2A   155      1.0      155.0
-             NOR2B    82      1.0       82.0
-              NOR3     5      1.0        5.0
-             NOR3A    36      1.0       36.0
-             NOR3B    24      1.0       24.0
-             NOR3C   108      1.0      108.0
+              NOR2    28      1.0       28.0
+             NOR2A   146      1.0      146.0
+             NOR2B    69      1.0       69.0
+              NOR3     8      1.0        8.0
+             NOR3A    41      1.0       41.0
+             NOR3B    30      1.0       30.0
+             NOR3C   109      1.0      109.0
                OA1    22      1.0       22.0
               OA1A    41      1.0       41.0
               OA1B     1      1.0        1.0
-              OA1C     2      1.0        2.0
-              OAI1     1      1.0        1.0
-               OR2     5      1.0        5.0
+              OA1C     1      1.0        1.0
+              OAI1     2      1.0        2.0
+               OR2     4      1.0        4.0
               OR2A   100      1.0      100.0
-              OR2B     2      1.0        2.0
+              OR2B     3      1.0        3.0
                OR3    14      1.0       14.0
-              OR3B     1      1.0        1.0
               OR3C     4      1.0        4.0
              RCOSC     1      0.0        0.0
                VCC     6      0.0        0.0
               XA1C    11      1.0       11.0
              XNOR2   166      1.0      166.0
                XO1    11      1.0       11.0
-              XOR2   191      1.0      191.0
+              XOR2   190      1.0      190.0
 
 
               DFN0     2      1.0        2.0
@@ -58,7 +57,7 @@ Report for cell N64_controller_iter_4.verilog
             DFN1E1   195      1.0      195.0
          RAM512X18     1      0.0        0.0
                    -----          ----------
-             TOTAL  1840              1821.0
+             TOTAL  1827              1808.0
 
 
   IO Cell usage:
@@ -71,7 +70,7 @@ Report for cell N64_controller_iter_4.verilog
              TOTAL    12
 
 
-Core Cells         : 1821 of 4608 (40%)
+Core Cells         : 1808 of 4608 (39%)
 IO Cells           : 12
 
   RAM/ROM Usage Summary

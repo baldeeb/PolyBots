@@ -1,6 +1,6 @@
 <project name="N64_controller_iter_4" version="1.1">
     <ProjectDirectory>
-        N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller_iter_4_fp
+        N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller_iter_4_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,17 +9,17 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller_iter_4_fp\N64_controller_iter_4.log
+        N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller_iter_4_fp\N64_controller_iter_4.log
     </LogFile>
     <SerializationOption>
         Skip
     </SerializationOption>
     <programmer status="enable" type="FlashPro3" revision="UndefRev" connection="usb2.0">
         <name>
-            79419
+            78999
         </name>
         <id>
-            79419
+            78999
         </id>
     </programmer>
     <configuration>
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller_iter_4_fp\N64_controller_iter_4.pdb
+                N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller_iter_4_fp\N64_controller_iter_4.pdb
             </filename>
             <local>
                 projectData\N64_controller_iter_4.pdb

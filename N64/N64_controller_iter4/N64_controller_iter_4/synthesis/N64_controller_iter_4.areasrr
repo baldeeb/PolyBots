@@ -8,9 +8,9 @@ Report for cell N64_controller_iter_4.verilog
           N64_controller_iter_4_MSS         1       1.0        1.0
                              OUTBUF         6       0.0        0.0
                                 VCC         1       0.0        0.0
-          controller_interface_0s_1s_2s_3s_4s_5s_6s_7s         1    1784.0     1784.0
+          con_int_0s_1s_2s_3s_4s_5s_6s_7s         1    1771.0     1771.0
                             
-                         TOTAL             12               1821.0
+                         TOTAL             12               1808.0
 ----------------------------------------------------------------------
 Report for cell N64_controller_iter_4_MSS.netlist
      Instance path:  N64_controller_iter_4_MSS_0
@@ -41,7 +41,7 @@ Report for cell CoreAPB3_Z1.netlist
      Instance path:  CoreAPB3_0
                                           Cell usage:
                                cell       count     area    count*area
-                  COREAPB3_MUXPTOB3         1      32.0       32.0
+                            CAPB3II         1      32.0       32.0
                                 GND         1       0.0        0.0
                                NOR2         2       1.0        2.0
                               NOR3A         2       1.0        2.0
@@ -49,8 +49,8 @@ Report for cell CoreAPB3_Z1.netlist
                             
                          TOTAL              7                 36.0
 ----------------------------------------------------------------------
-Report for cell COREAPB3_MUXPTOB3.netlist
-     Instance path:  CoreAPB3_0.u_mux_p_to_b3
+Report for cell CAPB3II.netlist
+     Instance path:  CoreAPB3_0.CAPB3IIII
                                           Cell usage:
                                cell       count     area    count*area
                                 GND         1       0.0        0.0
@@ -59,14 +59,14 @@ Report for cell COREAPB3_MUXPTOB3.netlist
                             
                          TOTAL             34                 32.0
 ----------------------------------------------------------------------
-Report for cell controller_interface_0s_1s_2s_3s_4s_5s_6s_7s.netlist
-     Instance path:  controller_interface_0
+Report for cell con_int_0s_1s_2s_3s_4s_5s_6s_7s.netlist
+     Instance path:  con_int_0
                                           Cell usage:
                                cell       count     area    count*area
                                AND2        86       1.0       86.0
                               AND2A        12       1.0       12.0
                                AND3        99       1.0       99.0
-                                AO1        26       1.0       26.0
+                                AO1        27       1.0       27.0
                                AO1A         4       1.0        4.0
                                AO1B         1       1.0        1.0
                                AO1C        61       1.0       61.0
@@ -75,7 +75,7 @@ Report for cell controller_interface_0s_1s_2s_3s_4s_5s_6s_7s.netlist
                                 AX1         7       1.0        7.0
                                AX1A         2       1.0        2.0
                                AX1B         1       1.0        1.0
-                               AX1C        46       1.0       46.0
+                               AX1C        47       1.0       47.0
                                AX1D         1       1.0        1.0
                                AX1E         2       1.0        2.0
                              CLKINT         3       0.0        0.0
@@ -89,29 +89,28 @@ Report for cell controller_interface_0s_1s_2s_3s_4s_5s_6s_7s.netlist
                                MX2A         2       1.0        2.0
                                MX2B         4       1.0        4.0
                                MX2C         6       1.0        6.0
-                               NOR2        32       1.0       32.0
-                              NOR2A       155       1.0      155.0
-                              NOR2B        82       1.0       82.0
-                               NOR3         5       1.0        5.0
-                              NOR3A        34       1.0       34.0
-                              NOR3B        24       1.0       24.0
-                              NOR3C        76       1.0       76.0
+                               NOR2        26       1.0       26.0
+                              NOR2A       146       1.0      146.0
+                              NOR2B        69       1.0       69.0
+                               NOR3         8       1.0        8.0
+                              NOR3A        39       1.0       39.0
+                              NOR3B        30       1.0       30.0
+                              NOR3C        77       1.0       77.0
                                 OA1        22       1.0       22.0
                                OA1A        41       1.0       41.0
                                OA1B         1       1.0        1.0
-                               OA1C         2       1.0        2.0
-                               OAI1         1       1.0        1.0
-                                OR2         5       1.0        5.0
+                               OA1C         1       1.0        1.0
+                               OAI1         2       1.0        2.0
+                                OR2         4       1.0        4.0
                                OR2A       100       1.0      100.0
-                               OR2B         2       1.0        2.0
+                               OR2B         3       1.0        3.0
                                 OR3        14       1.0       14.0
-                               OR3B         1       1.0        1.0
                                OR3C         4       1.0        4.0
                           RAM512X18         1       0.0        0.0
                                 VCC         1       0.0        0.0
                                XA1C        11       1.0       11.0
                               XNOR2       166       1.0      166.0
                                 XO1        11       1.0       11.0
-                               XOR2       191       1.0      191.0
+                               XOR2       190       1.0      190.0
                             
-                         TOTAL           1790               1784.0
+                         TOTAL           1777               1771.0

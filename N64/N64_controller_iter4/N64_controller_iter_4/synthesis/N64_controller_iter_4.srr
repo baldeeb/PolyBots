@@ -1,7 +1,7 @@
 #Build: Synplify Pro J-2015.03M-SP1-2, Build 266R, Dec 14 2015
 #install: C:\Microsemi\Libero_SoC_v11.7\Synplify
 #OS: Windows 8 6.2
-#Hostname: EECS373-08
+#Hostname: EECS373-11
 
 #Implementation: synthesis
 
@@ -18,22 +18,19 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\umr_capim.v"
 @I::"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\scemi_objects.v"
 @I::"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\scemi_pipes.svh"
-@I::"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v"
-@I::"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell.v"
-@I::"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
-@I::"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v"
-@I::"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v"
-@I::"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v"
-@I::"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v"
-@I::"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v"
-@I::"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.v"
+@I::"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v"
+@I::"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell.v"
+@I::"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
+@I::"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v"
+@I::"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v"
+@I::"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v"
+@I::"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v"
+@I::"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v"
+@I::"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.v"
 Verilog syntax check successful!
-File N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell.v changed - recompiling
-File N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
-File N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v changed - recompiling
-File N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.v changed - recompiling
+Options changed - recompiling
 Selecting top level module N64_controller_iter_4
-@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":2:7:2:26|Synthesizing module controller_interface
+@N: CG364 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v":2:7:2:13|Synthesizing module con_int
 
 	IDLE=32'b00000000000000000000000000000000
 	INIT_BIT_SEND=32'b00000000000000000000000000000001
@@ -43,16 +40,16 @@ Selecting top level module N64_controller_iter_4
 	RECEIVE_BIT=32'b00000000000000000000000000000101
 	UPDATE_N64_BIT_RECEIVED_COUNT=32'b00000000000000000000000000000110
 	WAITE=32'b00000000000000000000000000000111
-   Generated name = controller_interface_0s_1s_2s_3s_4s_5s_6s_7s
+   Generated name = con_int_0s_1s_2s_3s_4s_5s_6s_7s
 
-@W: CL169 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":194:0:194:5|Pruning register temp_global_count[31:0] 
+@W: CL169 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v":194:0:194:5|Pruning register temp_global_count[31:0] 
 
-@W: CL169 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":194:0:194:5|Pruning register temp 
+@W: CL169 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v":194:0:194:5|Pruning register temp 
 
-@W: CG775 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Found Component CoreAPB3 in library COREAPB3_LIB
-@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v":30:7:30:23|Synthesizing module COREAPB3_MUXPTOB3
+@W: CG775 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
+@N: CG364 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:6|Synthesizing module CAPB3II
 
-@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Synthesizing module CoreAPB3
+@N: CG364 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3
 
 	APB_DWIDTH=6'b100000
 	IADDR_OPTION=32'b00000000000000000000000000000000
@@ -92,49 +89,49 @@ Selecting top level module N64_controller_iter_4
 	UPR_NIBBLE_POSN=4'b0010
 	FAMILY=32'b00000000000000000000000000010010
 	SYNC_RESET=32'b00000000000000000000000000000000
-	IADDR_NOTINUSE=32'b00000000000000000000000000000000
-	IADDR_EXTERNAL=32'b00000000000000000000000000000001
-	IADDR_SLOT0=32'b00000000000000000000000000000010
-	IADDR_SLOT1=32'b00000000000000000000000000000011
-	IADDR_SLOT2=32'b00000000000000000000000000000100
-	IADDR_SLOT3=32'b00000000000000000000000000000101
-	IADDR_SLOT4=32'b00000000000000000000000000000110
-	IADDR_SLOT5=32'b00000000000000000000000000000111
-	IADDR_SLOT6=32'b00000000000000000000000000001000
-	IADDR_SLOT7=32'b00000000000000000000000000001001
-	IADDR_SLOT8=32'b00000000000000000000000000001010
-	IADDR_SLOT9=32'b00000000000000000000000000001011
-	IADDR_SLOT10=32'b00000000000000000000000000001100
-	IADDR_SLOT11=32'b00000000000000000000000000001101
-	IADDR_SLOT12=32'b00000000000000000000000000001110
-	IADDR_SLOT13=32'b00000000000000000000000000001111
-	IADDR_SLOT14=32'b00000000000000000000000000010000
-	IADDR_SLOT15=32'b00000000000000000000000000010001
-	SL0=16'b0000000000000001
-	SL1=16'b0000000000000000
-	SL2=16'b0000000000000000
-	SL3=16'b0000000000000000
-	SL4=16'b0000000000000000
-	SL5=16'b0000000000000000
-	SL6=16'b0000000000000000
-	SL7=16'b0000000000000000
-	SL8=16'b0000000000000000
-	SL9=16'b0000000000000000
-	SL10=16'b0000000000000000
-	SL11=16'b0000000000000000
-	SL12=16'b0000000000000000
-	SL13=16'b0000000000000000
-	SL14=16'b0000000000000000
-	SL15=16'b0000000000000000
-	SC=16'b0000000000000000
-	SC_qual=16'b0000000000000000
+	CAPB3OOl=32'b00000000000000000000000000000000
+	CAPB3IOl=32'b00000000000000000000000000000001
+	CAPB3lOl=32'b00000000000000000000000000000010
+	CAPB3OIl=32'b00000000000000000000000000000011
+	CAPB3IIl=32'b00000000000000000000000000000100
+	CAPB3lIl=32'b00000000000000000000000000000101
+	CAPB3Oll=32'b00000000000000000000000000000110
+	CAPB3Ill=32'b00000000000000000000000000000111
+	CAPB3lll=32'b00000000000000000000000000001000
+	CAPB3O0l=32'b00000000000000000000000000001001
+	CAPB3I0l=32'b00000000000000000000000000001010
+	CAPB3l0l=32'b00000000000000000000000000001011
+	CAPB3O1l=32'b00000000000000000000000000001100
+	CAPB3I1l=32'b00000000000000000000000000001101
+	CAPB3l1l=32'b00000000000000000000000000001110
+	CAPB3OO0=32'b00000000000000000000000000001111
+	CAPB3IO0=32'b00000000000000000000000000010000
+	CAPB3lO0=32'b00000000000000000000000000010001
+	CAPB3OI0=16'b0000000000000001
+	CAPB3II0=16'b0000000000000000
+	CAPB3lI0=16'b0000000000000000
+	CAPB3Ol0=16'b0000000000000000
+	CAPB3Il0=16'b0000000000000000
+	CAPB3ll0=16'b0000000000000000
+	CAPB3O00=16'b0000000000000000
+	CAPB3I00=16'b0000000000000000
+	CAPB3l00=16'b0000000000000000
+	CAPB3O10=16'b0000000000000000
+	CAPB3I10=16'b0000000000000000
+	CAPB3l10=16'b0000000000000000
+	CAPB3OO1=16'b0000000000000000
+	CAPB3IO1=16'b0000000000000000
+	CAPB3lO1=16'b0000000000000000
+	CAPB3OI1=16'b0000000000000000
+	CAPB3II1=16'b0000000000000000
+	CAPB3lI1=16'b0000000000000000
    Generated name = CoreAPB3_Z1
 
-@W: CG360 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":244:12:244:20|No assignment to wire IA_PRDATA
+@W: CG360 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":1495:0:1495:8|No assignment to wire CAPB3IlOI
 
-@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB
+@N: CG364 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB
 
-@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC
+@N: CG364 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC
 
 @N: CG364 :"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v":2620:7:2620:11|Synthesizing module RCOSC
 
@@ -142,96 +139,96 @@ Selecting top level module N64_controller_iter_4
 
 @N: CG364 :"C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v":1868:7:1868:9|Synthesizing module VCC
 
-@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:53|Synthesizing module N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC
+@N: CG364 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:53|Synthesizing module N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC
 
-@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS
+@N: CG364 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS
 
-@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
+@N: CG364 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
 
-@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v":9:7:9:31|Synthesizing module N64_controller_iter_4_MSS
+@N: CG364 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v":9:7:9:31|Synthesizing module N64_controller_iter_4_MSS
 
-@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.v":9:7:9:27|Synthesizing module N64_controller_iter_4
+@N: CG364 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4\N64_controller_iter_4.v":9:7:9:27|Synthesizing module N64_controller_iter_4
 
-@W: CL157 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits -- simulation mismatch possible.
-@W: CL157 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits -- simulation mismatch possible.
-@W: CL157 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits -- simulation mismatch possible.
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":72:36:72:40|Input IADDR is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":73:13:73:19|Input PRESETN is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":74:13:74:16|Input PCLK is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":105:18:105:25|Input PRDATAS1 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":106:18:106:25|Input PRDATAS2 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":107:18:107:25|Input PRDATAS3 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":108:18:108:25|Input PRDATAS4 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":109:18:109:25|Input PRDATAS5 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":110:18:110:25|Input PRDATAS6 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":111:18:111:25|Input PRDATAS7 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":112:18:112:25|Input PRDATAS8 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":113:18:113:25|Input PRDATAS9 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":114:18:114:26|Input PRDATAS10 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":115:18:115:26|Input PRDATAS11 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":116:18:116:26|Input PRDATAS12 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":117:18:117:26|Input PRDATAS13 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":118:18:118:26|Input PRDATAS14 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":119:18:119:26|Input PRDATAS15 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":122:13:122:20|Input PREADYS1 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":123:13:123:20|Input PREADYS2 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":124:13:124:20|Input PREADYS3 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":125:13:125:20|Input PREADYS4 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":126:13:126:20|Input PREADYS5 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":127:13:127:20|Input PREADYS6 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":128:13:128:20|Input PREADYS7 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":129:13:129:20|Input PREADYS8 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":130:13:130:20|Input PREADYS9 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":131:13:131:21|Input PREADYS10 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":132:13:132:21|Input PREADYS11 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":133:13:133:21|Input PREADYS12 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":134:13:134:21|Input PREADYS13 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":135:13:135:21|Input PREADYS14 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":136:13:136:21|Input PREADYS15 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":139:13:139:21|Input PSLVERRS1 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":140:13:140:21|Input PSLVERRS2 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":141:13:141:21|Input PSLVERRS3 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":142:13:142:21|Input PSLVERRS4 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":143:13:143:21|Input PSLVERRS5 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":144:13:144:21|Input PSLVERRS6 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":145:13:145:21|Input PSLVERRS7 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":146:13:146:21|Input PSLVERRS8 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":147:13:147:21|Input PSLVERRS9 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":148:13:148:22|Input PSLVERRS10 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":149:13:149:22|Input PSLVERRS11 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":150:13:150:22|Input PSLVERRS12 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":151:13:151:22|Input PSLVERRS13 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":152:13:152:22|Input PSLVERRS14 is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":153:13:153:22|Input PSLVERRS15 is unused
-@N: CL177 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":274:0:274:5|Sharing sequential element LED_test.
-@N: CL134 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":194:0:194:5|Found RAM controller_data, depth=33, width=1
-@W:"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":194:0:194:5|The read address covers a larger address space than the RAM depth. Access beyond the memory depth will be treated as a "don't-care"
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":10:10:10:16|Input PRESERN is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":11:10:11:13|Input PSEL is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":12:10:12:16|Input PENABLE is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":15:10:15:15|Input PWRITE is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":16:17:16:21|Input PADDR is unused
-@W: CL159 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":17:22:17:27|Input PWDATA is unused
+@W: CL157 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL157 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL157 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits -- simulation mismatch possible.
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":396:0:396:4|Input IADDR is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":398:0:398:6|Input PRESETN is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":400:0:400:3|Input PCLK is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":521:0:521:7|Input PRDATAS1 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":528:0:528:7|Input PRDATAS2 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":535:0:535:7|Input PRDATAS3 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":542:0:542:7|Input PRDATAS4 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":549:0:549:7|Input PRDATAS5 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":556:0:556:7|Input PRDATAS6 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":563:0:563:7|Input PRDATAS7 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":570:0:570:7|Input PRDATAS8 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":577:0:577:7|Input PRDATAS9 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":584:0:584:8|Input PRDATAS10 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":591:0:591:8|Input PRDATAS11 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":598:0:598:8|Input PRDATAS12 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":605:0:605:8|Input PRDATAS13 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":612:0:612:8|Input PRDATAS14 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":619:0:619:8|Input PRDATAS15 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":630:0:630:7|Input PREADYS1 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":632:0:632:7|Input PREADYS2 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":634:0:634:7|Input PREADYS3 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":636:0:636:7|Input PREADYS4 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":638:0:638:7|Input PREADYS5 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":640:0:640:7|Input PREADYS6 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":642:0:642:7|Input PREADYS7 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":644:0:644:7|Input PREADYS8 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":646:0:646:7|Input PREADYS9 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":648:0:648:8|Input PREADYS10 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":650:0:650:8|Input PREADYS11 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":652:0:652:8|Input PREADYS12 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":654:0:654:8|Input PREADYS13 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":656:0:656:8|Input PREADYS14 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":658:0:658:8|Input PREADYS15 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":664:0:664:8|Input PSLVERRS1 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":666:0:666:8|Input PSLVERRS2 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":668:0:668:8|Input PSLVERRS3 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":670:0:670:8|Input PSLVERRS4 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":672:0:672:8|Input PSLVERRS5 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:8|Input PSLVERRS6 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":676:0:676:8|Input PSLVERRS7 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":678:0:678:8|Input PSLVERRS8 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":680:0:680:8|Input PSLVERRS9 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":682:0:682:9|Input PSLVERRS10 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":684:0:684:9|Input PSLVERRS11 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":686:0:686:9|Input PSLVERRS12 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":688:0:688:9|Input PSLVERRS13 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":690:0:690:9|Input PSLVERRS14 is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":692:0:692:9|Input PSLVERRS15 is unused
+@N: CL177 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v":274:0:274:5|Sharing sequential element LED_test.
+@N: CL134 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v":194:0:194:5|Found RAM controller_data, depth=33, width=1
+@W:"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v":194:0:194:5|The read address covers a larger address space than the RAM depth. Access beyond the memory depth will be treated as a "don't-care"
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v":10:10:10:16|Input PRESERN is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v":11:10:11:13|Input PSEL is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v":12:10:12:16|Input PENABLE is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v":15:10:15:15|Input PWRITE is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v":16:17:16:21|Input PADDR is unused
+@W: CL159 :"N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\hdl\con_int.v":17:22:17:27|Input PWDATA is unused
 
-At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 79MB peak: 81MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 79MB peak: 81MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Thu Apr 06 12:01:38 2017
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Apr 18 03:30:52 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
@@ -240,15 +237,15 @@ Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Apr 06 12:01:38 2017
+# Tue Apr 18 03:30:52 2017
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Thu Apr 06 12:01:38 2017
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Apr 18 03:30:52 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
@@ -258,7 +255,7 @@ File N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesi
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Apr 06 12:01:40 2017
+# Tue Apr 18 03:30:54 2017
 
 ###########################################################]
 Pre-mapping Report
@@ -269,9 +266,9 @@ Product Version J-2015.03M-SP1-2
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
-Reading constraint file: N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc
-@L: N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4_scck.rpt 
-Printing clock  summary report in "N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4_scck.rpt" file 
+Reading constraint file: N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc
+@L: N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4_scck.rpt 
+Printing clock  summary report in "N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled 
 
@@ -296,13 +293,13 @@ FCLK        25.0 MHz      40.000        declared     clk_group_0
 ================================================================
 
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap.
+@N: BN225 |Writing default property annotation file N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap.
 Pre-mapping successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 50MB peak: 114MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Apr 06 12:01:42 2017
+# Tue Apr 18 03:30:55 2017
 
 ###########################################################]
 Map & Optimize Report
@@ -316,155 +313,155 @@ Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:0
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled 
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
-@W: MO111 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\component\work\n64_controller_iter_4_mss\mss_ccc_0\n64_controller_iter_4_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT on net LPXIN_CLKOUT has its enable tied to GND (module N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC) 
-@W: MO111 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\component\work\n64_controller_iter_4_mss\mss_ccc_0\n64_controller_iter_4_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT on net MAINXIN_CLKOUT has its enable tied to GND (module N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC) 
-@W: MO111 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\component\work\n64_controller_iter_4_mss\mss_ccc_0\n64_controller_iter_4_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT on net RCOSC_CLKOUT has its enable tied to GND (module N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"n:\project\git\n64\n64_controller_iter4\n64_controller_iter_4\component\work\n64_controller_iter_4_mss\mss_ccc_0\n64_controller_iter_4_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT on net LPXIN_CLKOUT has its enable tied to GND (module N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"n:\project\git\n64\n64_controller_iter4\n64_controller_iter_4\component\work\n64_controller_iter_4_mss\mss_ccc_0\n64_controller_iter_4_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT on net MAINXIN_CLKOUT has its enable tied to GND (module N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC) 
+@W: MO111 :"n:\project\git\n64\n64_controller_iter4\n64_controller_iter_4\component\work\n64_controller_iter_4_mss\mss_ccc_0\n64_controller_iter_4_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT on net RCOSC_CLKOUT has its enable tied to GND (module N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC) 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
 
 
  Ram Decomposition Statistics for controller_data[2]
 
  RAM 512x9 : 0
  RAM 512x9 : 0
-@W: FX107 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":194:0:194:5|No read/write conflict check. Possible simulation mismatch!
-@N: MF707 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":194:0:194:5|Insert external logic with either syn_ramstyle=rw_check attribute or enable 'Read Write Check on RAM' option to resolve read/write conflict for controller_data_tile[8:0] (view:work.controller_interface_0s_1s_2s_3s_4s_5s_6s_7s(verilog)).
-@N: MF238 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":84:20:84:36|Found 32-bit incrementor, 'global_count_1[31:0]'
-@N: MF179 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":142:28:142:57|Found 32 bit by 32 bit '<' comparator, 'data_line_went_high6'
-@N: MF179 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":159:15:159:51|Found 32 bit by 32 bit '<' comparator, 'un1_finish_read_bit_count'
-@N: MF179 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":226:32:226:60|Found 32 bit by 32 bit '<' comparator, 'request_data8'
-@N: MF179 :"n:\eecs373\polybots\n64\n64_controller_iter4\n64_controller_iter_4\hdl\controller_interface.v":228:38:228:67|Found 32 bit by 32 bit '<' comparator, 'un1_global_count'
+@W: FX107 :"n:\project\git\n64\n64_controller_iter4\n64_controller_iter_4\hdl\con_int.v":194:0:194:5|No read/write conflict check. Possible simulation mismatch!
+@N: MF707 :"n:\project\git\n64\n64_controller_iter4\n64_controller_iter_4\hdl\con_int.v":194:0:194:5|Insert external logic with either syn_ramstyle=rw_check attribute or enable 'Read Write Check on RAM' option to resolve read/write conflict for controller_data_tile[8:0] (view:work.con_int_0s_1s_2s_3s_4s_5s_6s_7s(verilog)).
+@N: MF238 :"n:\project\git\n64\n64_controller_iter4\n64_controller_iter_4\hdl\con_int.v":84:20:84:36|Found 32-bit incrementor, 'global_count_1[31:0]'
+@N: MF179 :"n:\project\git\n64\n64_controller_iter4\n64_controller_iter_4\hdl\con_int.v":142:28:142:57|Found 32 bit by 32 bit '<' comparator, 'data_line_went_high6'
+@N: MF179 :"n:\project\git\n64\n64_controller_iter4\n64_controller_iter_4\hdl\con_int.v":159:15:159:51|Found 32 bit by 32 bit '<' comparator, 'un1_finish_read_bit_count'
+@N: MF179 :"n:\project\git\n64\n64_controller_iter4\n64_controller_iter_4\hdl\con_int.v":226:32:226:60|Found 32 bit by 32 bit '<' comparator, 'request_data8'
+@N: MF179 :"n:\project\git\n64\n64_controller_iter4\n64_controller_iter_4\hdl\con_int.v":228:38:228:67|Found 32 bit by 32 bit '<' comparator, 'un1_global_count'
 @N: MF794 |RAM controller_data[2] required 1 registers during mapping 
 
-Finished factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 119MB peak: 119MB)
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 119MB peak: 119MB)
 
 @N: MF794 |RAM controller_data[2] required 2 registers during mapping 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 118MB peak: 120MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 118MB peak: 120MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 121MB peak: 122MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 122MB peak: 123MB)
 
 @N: MF794 |RAM controller_data[2] required 3 registers during mapping 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 122MB peak: 122MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 123MB peak: 123MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 122MB peak: 122MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 123MB peak: 123MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 121MB peak: 122MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 122MB peak: 123MB)
 
 @N: MF794 |RAM controller_data[2] required 4 registers during mapping 
 
-Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 121MB peak: 122MB)
+Finished preparing to map (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:02s; Memory used current: 122MB peak: 123MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 121MB peak: 124MB)
+Finished technology mapping (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:02s; Memory used current: 121MB peak: 123MB)
 
 
 High Fanout Net Report
 **********************
 
-Driver Instance / Pin Name                              Fanout, notes
----------------------------------------------------------------------
-controller_interface_0.state[2] / Q                     40           
-controller_interface_0.N64_bits_received[3] / Q         37           
-controller_interface_0.N64_bits_received[4] / Q         38           
-controller_interface_0.global_count[1] / Q              25           
-controller_interface_0.sync_data_line[1] / Q            36           
-controller_interface_0.global_count[3] / Q              26           
-controller_interface_0.global_count[6] / Q              27           
-controller_interface_0.global_count[7] / Q              28           
-controller_interface_0.global_count[8] / Q              27           
-controller_interface_0.global_count[9] / Q              29           
-controller_interface_0.global_count[11] / Q             27           
-controller_interface_0.global_count[12] / Q             27           
-controller_interface_0.global_count[13] / Q             28           
-controller_interface_0.global_count[14] / Q             25           
-controller_interface_0.global_count[15] / Q             29           
-controller_interface_0.global_count[16] / Q             30           
-controller_interface_0.global_count[17] / Q             30           
-controller_interface_0.global_count[18] / Q             31           
-controller_interface_0.global_count[20] / Q             25           
-controller_interface_0.global_count[21] / Q             29           
-controller_interface_0.global_count[22] / Q             26           
-controller_interface_0.global_count[23] / Q             27           
-controller_interface_0.global_count[24] / Q             27           
-controller_interface_0.global_count[25] / Q             32           
-controller_interface_0.global_count[26] / Q             29           
-controller_interface_0.global_count[27] / Q             29           
-controller_interface_0.global_count[28] / Q             30           
-controller_interface_0.global_count[29] / Q             29           
-controller_interface_0.global_count[30] / Q             28           
-controller_interface_0.un21_data_line / Y               68           
-controller_interface_0.un1_data_line_1 / Y              64           
-controller_interface_0.set_low_count8lto31_0_a2 / Y     31           
-controller_interface_0.global_count6_0_a3 / Y           100          
-controller_interface_0.controller_data_0_sqmuxa / Y     33           
-CoreAPB3_0.iPSELS_1[0] / Y                              32           
-CoreAPB3_0.iPSELS_2[0] / Y                              32           
-=====================================================================
+Driver Instance / Pin Name                 Fanout, notes
+--------------------------------------------------------
+con_int_0.un21_data_line / Y               68           
+con_int_0.un1_data_line_1 / Y              64           
+con_int_0.state[2] / Q                     40           
+con_int_0.N64_bits_received[3] / Q         37           
+con_int_0.N64_bits_received[4] / Q         38           
+con_int_0.global_count[1] / Q              25           
+con_int_0.sync_data_line[1] / Q            36           
+con_int_0.global_count[3] / Q              26           
+con_int_0.global_count[6] / Q              27           
+con_int_0.global_count[7] / Q              28           
+con_int_0.global_count[8] / Q              27           
+con_int_0.global_count[9] / Q              29           
+con_int_0.global_count[11] / Q             27           
+con_int_0.global_count[12] / Q             27           
+con_int_0.global_count[13] / Q             28           
+con_int_0.global_count[14] / Q             25           
+con_int_0.global_count[15] / Q             29           
+con_int_0.global_count[16] / Q             30           
+con_int_0.global_count[17] / Q             31           
+con_int_0.global_count[18] / Q             31           
+con_int_0.global_count[20] / Q             25           
+con_int_0.global_count[21] / Q             29           
+con_int_0.global_count[22] / Q             26           
+con_int_0.global_count[23] / Q             27           
+con_int_0.global_count[24] / Q             27           
+con_int_0.global_count[25] / Q             32           
+con_int_0.global_count[26] / Q             29           
+con_int_0.global_count[27] / Q             29           
+con_int_0.global_count[28] / Q             30           
+con_int_0.global_count[29] / Q             30           
+con_int_0.global_count[30] / Q             28           
+con_int_0.controller_data_0_sqmuxa / Y     33           
+con_int_0.global_count6_0_a3 / Y           100          
+con_int_0.set_low_count8lto31_0_a2 / Y     31           
+CoreAPB3_0.CAPB3l0OI_1[0] / Y              32           
+CoreAPB3_0.CAPB3l0OI_2[0] / Y              32           
+========================================================
 
-@N: FP130 |Promoting Net controller_interface_0.global_count6 on CLKINT  I_41 
-@N: FP130 |Promoting Net controller_interface_0.un21_data_line on CLKINT  I_42 
-@N: FP130 |Promoting Net controller_interface_0.un1_data_line_1 on CLKINT  I_43 
+@N: FP130 |Promoting Net con_int_0.global_count6 on CLKINT  I_49 
+@N: FP130 |Promoting Net con_int_0.un21_data_line on CLKINT  I_50 
+@N: FP130 |Promoting Net con_int_0.un1_data_line_1 on CLKINT  I_51 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 121MB peak: 124MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:02s; Memory used current: 121MB peak: 123MB)
 
-Replicating Combinational Instance CoreAPB3_0.iPSELS_2[0], fanout 32 segments 2
-Replicating Combinational Instance CoreAPB3_0.iPSELS_1[0], fanout 32 segments 2
-Replicating Combinational Instance controller_interface_0.controller_data_0_sqmuxa, fanout 33 segments 2
-Replicating Combinational Instance controller_interface_0.set_low_count8lto31_0_a2, fanout 31 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[30], fanout 28 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[29], fanout 29 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[28], fanout 30 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[27], fanout 29 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[26], fanout 29 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[25], fanout 32 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[24], fanout 27 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[23], fanout 27 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[22], fanout 26 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[21], fanout 29 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[20], fanout 25 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[18], fanout 31 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[17], fanout 30 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[16], fanout 30 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[15], fanout 29 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[14], fanout 25 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[13], fanout 28 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[12], fanout 27 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[11], fanout 27 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[9], fanout 29 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[8], fanout 27 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[7], fanout 28 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[6], fanout 27 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[3], fanout 26 segments 2
-Replicating Sequential Instance controller_interface_0.sync_data_line[1], fanout 36 segments 2
-Replicating Sequential Instance controller_interface_0.global_count[1], fanout 25 segments 2
-Replicating Sequential Instance controller_interface_0.N64_bits_received[4], fanout 38 segments 2
-Replicating Sequential Instance controller_interface_0.N64_bits_received[3], fanout 37 segments 2
-Replicating Sequential Instance controller_interface_0.state[2], fanout 40 segments 2
+Replicating Combinational Instance CoreAPB3_0.CAPB3l0OI_2[0], fanout 32 segments 2
+Replicating Combinational Instance CoreAPB3_0.CAPB3l0OI_1[0], fanout 32 segments 2
+Replicating Combinational Instance con_int_0.set_low_count8lto31_0_a2, fanout 31 segments 2
+Replicating Combinational Instance con_int_0.controller_data_0_sqmuxa, fanout 33 segments 2
+Replicating Sequential Instance con_int_0.global_count[30], fanout 28 segments 2
+Replicating Sequential Instance con_int_0.global_count[29], fanout 30 segments 2
+Replicating Sequential Instance con_int_0.global_count[28], fanout 30 segments 2
+Replicating Sequential Instance con_int_0.global_count[27], fanout 29 segments 2
+Replicating Sequential Instance con_int_0.global_count[26], fanout 29 segments 2
+Replicating Sequential Instance con_int_0.global_count[25], fanout 32 segments 2
+Replicating Sequential Instance con_int_0.global_count[24], fanout 27 segments 2
+Replicating Sequential Instance con_int_0.global_count[23], fanout 27 segments 2
+Replicating Sequential Instance con_int_0.global_count[22], fanout 26 segments 2
+Replicating Sequential Instance con_int_0.global_count[21], fanout 29 segments 2
+Replicating Sequential Instance con_int_0.global_count[20], fanout 25 segments 2
+Replicating Sequential Instance con_int_0.global_count[18], fanout 31 segments 2
+Replicating Sequential Instance con_int_0.global_count[17], fanout 31 segments 2
+Replicating Sequential Instance con_int_0.global_count[16], fanout 30 segments 2
+Replicating Sequential Instance con_int_0.global_count[15], fanout 29 segments 2
+Replicating Sequential Instance con_int_0.global_count[14], fanout 25 segments 2
+Replicating Sequential Instance con_int_0.global_count[13], fanout 28 segments 2
+Replicating Sequential Instance con_int_0.global_count[12], fanout 27 segments 2
+Replicating Sequential Instance con_int_0.global_count[11], fanout 27 segments 2
+Replicating Sequential Instance con_int_0.global_count[9], fanout 29 segments 2
+Replicating Sequential Instance con_int_0.global_count[8], fanout 27 segments 2
+Replicating Sequential Instance con_int_0.global_count[7], fanout 28 segments 2
+Replicating Sequential Instance con_int_0.global_count[6], fanout 27 segments 2
+Replicating Sequential Instance con_int_0.global_count[3], fanout 26 segments 2
+Replicating Sequential Instance con_int_0.sync_data_line[1], fanout 36 segments 2
+Replicating Sequential Instance con_int_0.global_count[1], fanout 25 segments 2
+Replicating Sequential Instance con_int_0.N64_bits_received[4], fanout 38 segments 2
+Replicating Sequential Instance con_int_0.N64_bits_received[3], fanout 37 segments 2
+Replicating Sequential Instance con_int_0.state[2], fanout 40 segments 2
 
 Added 0 Buffers
 Added 33 Cells via replication
 	Added 29 Sequential Cells via replication
 	Added 4 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 122MB peak: 124MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:02s; Memory used current: 121MB peak: 123MB)
 
 
 
@@ -475,37 +472,37 @@ Clock optimization not enabled
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-=================================================================== Non-Gated/Non-Generated Clocks ===================================================================
-Clock Tree ID     Driving Element                                        Drive Element Type                Fanout     Sample Instance                                 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       N64_controller_iter_4_MSS_0                            clock definition on hierarchy     367        controller_interface_0.N64_bits_sent_incremented
-@K:CKID0002       N64_controller_iter_4_MSS_0.MSS_CCC_0.FAB_CLK_keep     clock definition on keepbuf       1          controller_interface_0.controller_data_tile.I_1 
-======================================================================================================================================================================
+============================================================ Non-Gated/Non-Generated Clocks =============================================================
+Clock Tree ID     Driving Element                                        Drive Element Type                Fanout     Sample Instance                    
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       N64_controller_iter_4_MSS_0                            clock definition on hierarchy     367        con_int_0.N64_bits_sent_incremented
+@K:CKID0002       N64_controller_iter_4_MSS_0.MSS_CCC_0.FAB_CLK_keep     clock definition on keepbuf       1          con_int_0.controller_data_tile.I_1 
+=========================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 118MB peak: 124MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:02s; Memory used current: 117MB peak: 123MB)
 
-Writing Analyst data base N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_m.srm
+Writing Analyst data base N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 119MB peak: 124MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:02s; Memory used current: 119MB peak: 123MB)
 
 Writing EDIF Netlist and constraint files
 J-2015.03M-SP1-2
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:03s; Memory used current: 121MB peak: 124MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:03s; Memory used current: 120MB peak: 123MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:03s; Memory used current: 119MB peak: 124MB)
+Start final timing analysis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:03s; Memory used current: 119MB peak: 123MB)
 
 Found clock FCLK with period 40.00ns 
 Found clock FAB_CLK with period 40.00ns 
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Thu Apr 06 12:01:50 2017
+# Timing Report written on Tue Apr 18 03:31:06 2017
 #
 
 
@@ -516,7 +513,7 @@ Requested Frequency:    25.0 MHz
 Wire load mode:         top
 Wire load model:        smartfusion
 Paths requested:        5
-Constraint File(s):    N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc
+Constraint File(s):    N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc
                        
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 
@@ -552,7 +549,7 @@ Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  s
 ----------------------------------------------------------------------------------------------------------
 System    System   |  10.000      5.780   |  No paths    -      |  No paths    -      |  No paths    -    
 FAB_CLK   System   |  40.000      37.494  |  No paths    -      |  No paths    -      |  No paths    -    
-FAB_CLK   FAB_CLK  |  40.000      13.450  |  No paths    -      |  20.000      6.557  |  No paths    -    
+FAB_CLK   FAB_CLK  |  40.000      14.177  |  No paths    -      |  20.000      6.557  |  No paths    -    
 ==========================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -575,41 +572,41 @@ Detailed Report for Clock: FAB_CLK
 Starting Points with Worst Slack
 ********************************
 
-                                                         Starting                                                         Arrival           
-Instance                                                 Reference     Type     Pin     Net                               Time        Slack 
-                                                         Clock                                                                              
---------------------------------------------------------------------------------------------------------------------------------------------
-controller_interface_0.state[2]                          FAB_CLK       DFN1     Q       state[2]                          0.737       6.557 
-controller_interface_0.state[1]                          FAB_CLK       DFN1     Q       state[1]                          0.737       7.452 
-controller_interface_0.state[0]                          FAB_CLK       DFN1     Q       state[0]                          0.580       7.675 
-controller_interface_0.N64_bits_received[0]              FAB_CLK       DFN1     Q       N64_bits_received[0]              0.737       10.030
-controller_interface_0.N64_bits_received[1]              FAB_CLK       DFN1     Q       N64_bits_received[1]              0.737       10.727
-controller_interface_0.N64_bits_received_incremented     FAB_CLK       DFN1     Q       N64_bits_received_incremented     0.580       10.953
-controller_interface_0.N64_bits_received[3]              FAB_CLK       DFN1     Q       N64_bits_received[3]              0.737       10.963
-controller_interface_0.N64_bits_received[2]              FAB_CLK       DFN1     Q       N64_bits_received[2]              0.737       11.670
-controller_interface_0.global_count[2]                   FAB_CLK       DFN1     Q       global_count[2]                   0.580       13.450
-controller_interface_0.N64_bits_received[4]              FAB_CLK       DFN1     Q       N64_bits_received[4]              0.737       13.565
-============================================================================================================================================
+                                            Starting                                                         Arrival           
+Instance                                    Reference     Type     Pin     Net                               Time        Slack 
+                                            Clock                                                                              
+-------------------------------------------------------------------------------------------------------------------------------
+con_int_0.state_0[2]                        FAB_CLK       DFN1     Q       state_0[2]                        0.737       6.557 
+con_int_0.state[1]                          FAB_CLK       DFN1     Q       state[1]                          0.737       7.237 
+con_int_0.state[0]                          FAB_CLK       DFN1     Q       state[0]                          0.580       7.605 
+con_int_0.N64_bits_received[0]              FAB_CLK       DFN1     Q       N64_bits_received[0]              0.737       9.985 
+con_int_0.N64_bits_received[1]              FAB_CLK       DFN1     Q       N64_bits_received[1]              0.737       10.727
+con_int_0.N64_bits_received_incremented     FAB_CLK       DFN1     Q       N64_bits_received_incremented     0.580       10.953
+con_int_0.N64_bits_received[3]              FAB_CLK       DFN1     Q       N64_bits_received[3]              0.737       10.963
+con_int_0.N64_bits_received[2]              FAB_CLK       DFN1     Q       N64_bits_received[2]              0.737       11.670
+con_int_0.N64_bits_received[4]              FAB_CLK       DFN1     Q       N64_bits_received[4]              0.737       13.565
+con_int_0.global_count[2]                   FAB_CLK       DFN1     Q       global_count[2]                   0.580       14.177
+===============================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                                    Starting                                                          Required           
-Instance                                            Reference     Type          Pin        Net                        Time         Slack 
-                                                    Clock                                                                                
------------------------------------------------------------------------------------------------------------------------------------------
-controller_interface_0.controller_data_tile.I_1     FAB_CLK       RAM512X18     RADDR5     N64_bits_received_4[5]     19.718       6.557 
-controller_interface_0.controller_data_tile.I_1     FAB_CLK       RAM512X18     RADDR4     N64_bits_received_4[4]     19.718       6.973 
-controller_interface_0.controller_data_tile.I_1     FAB_CLK       RAM512X18     RADDR3     N64_bits_received_4[3]     19.718       7.835 
-controller_interface_0.controller_data_tile.I_1     FAB_CLK       RAM512X18     RADDR2     N64_bits_received_4[2]     19.718       9.091 
-controller_interface_0.controller_data_tile.I_1     FAB_CLK       RAM512X18     RADDR1     N64_bits_received_4[1]     19.718       10.412
-controller_interface_0.controller_data_tile.I_1     FAB_CLK       RAM512X18     RADDR0     N64_bits_received_4[0]     19.718       11.425
-controller_interface_0.read_bit_count[31]           FAB_CLK       DFN1E1        D          N_70_0                     39.461       13.450
-controller_interface_0.set_low_count[31]            FAB_CLK       DFN1E1        D          N_1090                     39.461       13.450
-controller_interface_0.read_bit_count[30]           FAB_CLK       DFN1E1        D          N_1099                     39.461       13.932
-controller_interface_0.set_low_count[30]            FAB_CLK       DFN1E1        D          N_1091                     39.461       13.932
-=========================================================================================================================================
+                                       Starting                                                          Required           
+Instance                               Reference     Type          Pin        Net                        Time         Slack 
+                                       Clock                                                                                
+----------------------------------------------------------------------------------------------------------------------------
+con_int_0.controller_data_tile.I_1     FAB_CLK       RAM512X18     RADDR5     N64_bits_received_4[5]     19.718       6.557 
+con_int_0.controller_data_tile.I_1     FAB_CLK       RAM512X18     RADDR4     N64_bits_received_4[4]     19.718       6.973 
+con_int_0.controller_data_tile.I_1     FAB_CLK       RAM512X18     RADDR3     N64_bits_received_4[3]     19.718       7.835 
+con_int_0.controller_data_tile.I_1     FAB_CLK       RAM512X18     RADDR2     N64_bits_received_4[2]     19.718       9.091 
+con_int_0.controller_data_tile.I_1     FAB_CLK       RAM512X18     RADDR1     N64_bits_received_4[1]     19.718       10.412
+con_int_0.controller_data_tile.I_1     FAB_CLK       RAM512X18     RADDR0     N64_bits_received_4[0]     19.718       11.425
+con_int_0.set_low_count[31]            FAB_CLK       DFN1E1        D          set_low_count_RNO[31]      39.461       14.177
+con_int_0.read_bit_count[31]           FAB_CLK       DFN1E1        D          N_70                       39.461       14.650
+con_int_0.set_low_count[30]            FAB_CLK       DFN1E1        D          set_low_count_RNO[30]      39.461       15.089
+con_int_0.read_bit_count[30]           FAB_CLK       DFN1E1        D          read_bit_count_RNO[30]     39.461       15.114
+============================================================================================================================
 
 
 
@@ -628,42 +625,42 @@ Path information for path number 1:
     = Slack (non-critical) :                 6.557
 
     Number of logic level(s):                8
-    Starting point:                          controller_interface_0.state[2] / Q
-    Ending point:                            controller_interface_0.controller_data_tile.I_1 / RADDR5
+    Starting point:                          con_int_0.state_0[2] / Q
+    Ending point:                            con_int_0.controller_data_tile.I_1 / RADDR5
     The start point is clocked by            FAB_CLK [rising] on pin CLK
     The end   point is clocked by            FAB_CLK [falling] on pin RCLK
 
-Instance / Net                                                                  Pin        Pin               Arrival     No. of    
-Name                                                              Type          Name       Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------------------------------------
-controller_interface_0.state[2]                                   DFN1          Q          Out     0.737     0.737       -         
-state[2]                                                          Net           -          -       2.353     -           20        
-controller_interface_0.state_RNIH7DT[1]                           NOR3B         B          In      -         3.090       -         
-controller_interface_0.state_RNIH7DT[1]                           NOR3B         Y          Out     0.607     3.697       -         
-un1_state_5                                                       Net           -          -       1.423     -           6         
-controller_interface_0.N64_bits_received_incremented_RNIU5LC1     NOR2A         A          In      -         5.120       -         
-controller_interface_0.N64_bits_received_incremented_RNIU5LC1     NOR2A         Y          Out     0.627     5.747       -         
-N64_bits_received_incremented_0_sqmuxa                            Net           -          -       0.386     -           2         
-controller_interface_0.un1_N64_bits_received_1.I_1                AND2          B          In      -         6.133       -         
-controller_interface_0.un1_N64_bits_received_1.I_1                AND2          Y          Out     0.627     6.761       -         
-DWACT_ADD_CI_0_TMP_0[0]                                           Net           -          -       0.386     -           2         
-controller_interface_0.un1_N64_bits_received_1.I_135              NOR2B         A          In      -         7.146       -         
-controller_interface_0.un1_N64_bits_received_1.I_135              NOR2B         Y          Out     0.514     7.661       -         
-DWACT_ADD_CI_0_g_array_1_0[0]                                     Net           -          -       0.806     -           3         
-controller_interface_0.un1_N64_bits_received_1.I_184              NOR2B         A          In      -         8.467       -         
-controller_interface_0.un1_N64_bits_received_1.I_184              NOR2B         Y          Out     0.514     8.982       -         
-DWACT_ADD_CI_0_g_array_2_0[0]                                     Net           -          -       1.184     -           4         
-controller_interface_0.un1_N64_bits_received_1.I_137              NOR2B         A          In      -         10.165      -         
-controller_interface_0.un1_N64_bits_received_1.I_137              NOR2B         Y          Out     0.514     10.680      -         
-DWACT_ADD_CI_0_g_array_12_1_0[0]                                  Net           -          -       0.322     -           1         
-controller_interface_0.un1_N64_bits_received_1.I_101              XOR2          B          In      -         11.001      -         
-controller_interface_0.un1_N64_bits_received_1.I_101              XOR2          Y          Out     0.937     11.938      -         
-I_101                                                             Net           -          -       0.322     -           1         
-controller_interface_0.state_RNIE83I2[1]                          NOR2A         A          In      -         12.259      -         
-controller_interface_0.state_RNIE83I2[1]                          NOR2A         Y          Out     0.516     12.775      -         
-N64_bits_received_4[5]                                            Net           -          -       0.386     -           2         
-controller_interface_0.controller_data_tile.I_1                   RAM512X18     RADDR5     In      -         13.161      -         
-===================================================================================================================================
+Instance / Net                                                    Pin        Pin               Arrival     No. of    
+Name                                                Type          Name       Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------
+con_int_0.state_0[2]                                DFN1          Q          Out     0.737     0.737       -         
+state_0[2]                                          Net           -          -       2.353     -           20        
+con_int_0.state_RNI2RT7_0[1]                        NOR3B         B          In      -         3.090       -         
+con_int_0.state_RNI2RT7_0[1]                        NOR3B         Y          Out     0.607     3.697       -         
+state_RNI2RT7_0[1]                                  Net           -          -       1.423     -           6         
+con_int_0.N64_bits_received_incremented_RNI533C     NOR2A         A          In      -         5.120       -         
+con_int_0.N64_bits_received_incremented_RNI533C     NOR2A         Y          Out     0.627     5.747       -         
+N64_bits_received_incremented_0_sqmuxa              Net           -          -       0.386     -           2         
+con_int_0.un1_N64_bits_received_1.I_1               AND2          B          In      -         6.133       -         
+con_int_0.un1_N64_bits_received_1.I_1               AND2          Y          Out     0.627     6.761       -         
+DWACT_ADD_CI_0_TMP_0[0]                             Net           -          -       0.386     -           2         
+con_int_0.un1_N64_bits_received_1.I_135             NOR2B         A          In      -         7.146       -         
+con_int_0.un1_N64_bits_received_1.I_135             NOR2B         Y          Out     0.514     7.661       -         
+DWACT_ADD_CI_0_g_array_1_0[0]                       Net           -          -       0.806     -           3         
+con_int_0.un1_N64_bits_received_1.I_184             NOR2B         A          In      -         8.467       -         
+con_int_0.un1_N64_bits_received_1.I_184             NOR2B         Y          Out     0.514     8.982       -         
+DWACT_ADD_CI_0_g_array_2_0[0]                       Net           -          -       1.184     -           4         
+con_int_0.un1_N64_bits_received_1.I_137             NOR2B         A          In      -         10.165      -         
+con_int_0.un1_N64_bits_received_1.I_137             NOR2B         Y          Out     0.514     10.680      -         
+DWACT_ADD_CI_0_g_array_12_1_0[0]                    Net           -          -       0.322     -           1         
+con_int_0.un1_N64_bits_received_1.I_101             XOR2          B          In      -         11.001      -         
+con_int_0.un1_N64_bits_received_1.I_101             XOR2          Y          Out     0.937     11.938      -         
+I_101                                               Net           -          -       0.322     -           1         
+con_int_0.state_RNIAFQE1[1]                         NOR2A         A          In      -         12.259      -         
+con_int_0.state_RNIAFQE1[1]                         NOR2A         Y          Out     0.516     12.775      -         
+N64_bits_received_4[5]                              Net           -          -       0.386     -           2         
+con_int_0.controller_data_tile.I_1                  RAM512X18     RADDR5     In      -         13.161      -         
+=====================================================================================================================
 Total path delay (propagation time + setup) of 13.443 is 5.876(43.7%) logic and 7.567(56.3%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
@@ -731,23 +728,23 @@ Path information for path number 1:
 
     Number of logic level(s):                2
     Starting point:                          N64_controller_iter_4_MSS_0.MSS_ADLIB_INST / MSSPADDR[11]
-    Ending point:                            N64_controller_iter_4_MSS_0.MSS_ADLIB_INST / MSSPRDATA[0]
+    Ending point:                            N64_controller_iter_4_MSS_0.MSS_ADLIB_INST / MSSPRDATA[16]
     The start point is clocked by            System [rising]
     The end   point is clocked by            System [rising]
 
-Instance / Net                                                       Pin              Pin               Arrival     No. of    
-Name                                                     Type        Name             Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------------------
-N64_controller_iter_4_MSS_0.MSS_ADLIB_INST               MSS_APB     MSSPADDR[11]     Out     0.000     0.000       -         
-N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PADDR[11]     Net         -                -       0.386     -           2         
-CoreAPB3_0.iPSELS_2[0]                                   NOR3A       C                In      -         0.386       -         
-CoreAPB3_0.iPSELS_2[0]                                   NOR3A       Y                Out     0.716     1.102       -         
-iPSELS_2[0]                                              Net         -                -       2.172     -           16        
-CoreAPB3_0.u_mux_p_to_b3.PRDATA_0                        NOR3C       B                In      -         3.274       -         
-CoreAPB3_0.u_mux_p_to_b3.PRDATA_0                        NOR3C       Y                Out     0.624     3.898       -         
-N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[0]     Net         -                -       0.322     -           1         
-N64_controller_iter_4_MSS_0.MSS_ADLIB_INST               MSS_APB     MSSPRDATA[0]     In      -         4.220       -         
-==============================================================================================================================
+Instance / Net                                                        Pin               Pin               Arrival     No. of    
+Name                                                      Type        Name              Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------
+N64_controller_iter_4_MSS_0.MSS_ADLIB_INST                MSS_APB     MSSPADDR[11]      Out     0.000     0.000       -         
+N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PADDR[11]      Net         -                 -       0.386     -           2         
+CoreAPB3_0.CAPB3l0OI_2[0]                                 NOR3A       C                 In      -         0.386       -         
+CoreAPB3_0.CAPB3l0OI_2[0]                                 NOR3A       Y                 Out     0.716     1.102       -         
+CAPB3l0OI_2[0]                                            Net         -                 -       2.172     -           16        
+CoreAPB3_0.CAPB3IIII.PRDATA_16                            NOR3C       B                 In      -         3.274       -         
+CoreAPB3_0.CAPB3IIII.PRDATA_16                            NOR3C       Y                 Out     0.624     3.898       -         
+N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[16]     Net         -                 -       0.322     -           1         
+N64_controller_iter_4_MSS_0.MSS_ADLIB_INST                MSS_APB     MSSPRDATA[16]     In      -         4.220       -         
+================================================================================================================================
 Total path delay (propagation time + setup) of 4.220 is 1.340(31.8%) logic and 2.880(68.2%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
@@ -756,10 +753,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 ##### END OF TIMING REPORT #####]
 
 
-Finished final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:03s; Memory used current: 120MB peak: 124MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:03s; Memory used current: 119MB peak: 123MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:03s; Memory used current: 120MB peak: 124MB)
+Finished timing report (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:03s; Memory used current: 119MB peak: 123MB)
 
 --------------------------------------------------------------------------------
 Target Part: A2F200M3F_FBGA484_STD
@@ -769,7 +766,7 @@ Report for cell N64_controller_iter_4.verilog
               AND2    86      1.0       86.0
              AND2A    12      1.0       12.0
               AND3    99      1.0       99.0
-               AO1    26      1.0       26.0
+               AO1    27      1.0       27.0
               AO1A     4      1.0        4.0
               AO1B     1      1.0        1.0
               AO1C    61      1.0       61.0
@@ -778,7 +775,7 @@ Report for cell N64_controller_iter_4.verilog
                AX1     7      1.0        7.0
               AX1A     2      1.0        2.0
               AX1B     1      1.0        1.0
-              AX1C    46      1.0       46.0
+              AX1C    47      1.0       47.0
               AX1D     1      1.0        1.0
               AX1E     2      1.0        2.0
             CLKINT     3      0.0        0.0
@@ -790,30 +787,29 @@ Report for cell N64_controller_iter_4.verilog
               MX2A     2      1.0        2.0
               MX2B     4      1.0        4.0
               MX2C     6      1.0        6.0
-              NOR2    34      1.0       34.0
-             NOR2A   155      1.0      155.0
-             NOR2B    82      1.0       82.0
-              NOR3     5      1.0        5.0
-             NOR3A    36      1.0       36.0
-             NOR3B    24      1.0       24.0
-             NOR3C   108      1.0      108.0
+              NOR2    28      1.0       28.0
+             NOR2A   146      1.0      146.0
+             NOR2B    69      1.0       69.0
+              NOR3     8      1.0        8.0
+             NOR3A    41      1.0       41.0
+             NOR3B    30      1.0       30.0
+             NOR3C   109      1.0      109.0
                OA1    22      1.0       22.0
               OA1A    41      1.0       41.0
               OA1B     1      1.0        1.0
-              OA1C     2      1.0        2.0
-              OAI1     1      1.0        1.0
-               OR2     5      1.0        5.0
+              OA1C     1      1.0        1.0
+              OAI1     2      1.0        2.0
+               OR2     4      1.0        4.0
               OR2A   100      1.0      100.0
-              OR2B     2      1.0        2.0
+              OR2B     3      1.0        3.0
                OR3    14      1.0       14.0
-              OR3B     1      1.0        1.0
               OR3C     4      1.0        4.0
              RCOSC     1      0.0        0.0
                VCC     6      0.0        0.0
               XA1C    11      1.0       11.0
              XNOR2   166      1.0      166.0
                XO1    11      1.0       11.0
-              XOR2   191      1.0      191.0
+              XOR2   190      1.0      190.0
 
 
               DFN0     2      1.0        2.0
@@ -822,7 +818,7 @@ Report for cell N64_controller_iter_4.verilog
             DFN1E1   195      1.0      195.0
          RAM512X18     1      0.0        0.0
                    -----          ----------
-             TOTAL  1840              1821.0
+             TOTAL  1827              1808.0
 
 
   IO Cell usage:
@@ -835,7 +831,7 @@ Report for cell N64_controller_iter_4.verilog
              TOTAL    12
 
 
-Core Cells         : 1821 of 4608 (40%)
+Core Cells         : 1808 of 4608 (39%)
 IO Cells           : 12
 
   RAM/ROM Usage Summary
@@ -843,9 +839,9 @@ Block Rams : 1 of 8 (12%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:03s; Memory used current: 51MB peak: 124MB)
+At Mapper Exit (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:03s; Memory used current: 51MB peak: 123MB)
 
 Process took 0h:00m:10s realtime, 0h:00m:03s cputime
-# Thu Apr 06 12:01:53 2017
+# Tue Apr 18 03:31:07 2017
 
 ###########################################################]

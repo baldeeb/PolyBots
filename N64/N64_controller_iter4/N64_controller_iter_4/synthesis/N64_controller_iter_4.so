@@ -2,5 +2,5 @@
 <SynplifyOutput>
 	<result>Success</result>
 	<design>N64_controller_iter_4</design>
-	<target_edif>N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.edn</target_edif>
+	<target_edif>N:\Project\GIT\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.edn</target_edif>
 </SynplifyOutput>
