@@ -1,0 +1,47 @@
+#OPTIONS:"|-layerid|0|-orig_srs|N:\\eecs373\\project\\pixyCam\\pixyCam\\synthesis\\synwork\\pixyCam_comp.srs|-top|pixyCam|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|N:\\eecs373\\project\\pixyCam\\pixyCam\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\bin64\\c_ver.exe":1449239726
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\proasic\\smartfusion.v":1449239730
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\hypermods.v":1449239734
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\umr_capim.v":1449239734
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\scemi_objects.v":1449239734
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.7\\Synplify\\lib\\vlog\\scemi_pipes.svh":1449239734
+#CUR:"N:\\eecs373\\project\\pixyCam\\pixyCam\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1471029396
+#CUR:"N:\\eecs373\\project\\pixyCam\\pixyCam\\component\\work\\pixyCam_MSS\\mss_tshell.v":1492057465
+#CUR:"N:\\eecs373\\project\\pixyCam\\pixyCam\\component\\work\\pixyCam_MSS\\MSS_CCC_0\\pixyCam_MSS_tmp_MSS_CCC_0_MSS_CCC.v":1492057459
+#CUR:"N:\\eecs373\\project\\pixyCam\\pixyCam\\component\\work\\pixyCam_MSS\\pixyCam_MSS.v":1492057467
+#CUR:"N:\\eecs373\\project\\pixyCam\\pixyCam\\component\\work\\pixyCam\\pixyCam.v":1492057497
+0			"N:\eecs373\project\pixyCam\pixyCam\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
+1			"N:\eecs373\project\pixyCam\pixyCam\component\work\pixyCam_MSS\mss_tshell.v" verilog
+2			"N:\eecs373\project\pixyCam\pixyCam\component\work\pixyCam_MSS\MSS_CCC_0\pixyCam_MSS_tmp_MSS_CCC_0_MSS_CCC.v" verilog
+3			"N:\eecs373\project\pixyCam\pixyCam\component\work\pixyCam_MSS\pixyCam_MSS.v" verilog
+4			"N:\eecs373\project\pixyCam\pixyCam\component\work\pixyCam\pixyCam.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 0
+3 0 2 1
+4 3
+#Dependency Lists(Users Of)
+0 3 2
+1 3
+2 3
+3 4
+4 -1
+#Design Unit to File Association
+module work pixyCam 4
+module work pixyCam_MSS 3
+module work pixyCam_MSS_tmp_MSS_CCC_0_MSS_CCC 2
+module work MSS_APB 1
+module work MSS_ALL 0
+module work MSS_CCC 0
+module work MSSINT 0
+module work INBUF_LVDS_MCCC 0
+module work INBUF_LVPECL_MCCC 0
+module work INBUF_MCCC 0
+module work BIBUF_OPEND_MSS 0
+module work BIBUF_MSS 0
+module work TRIBUFF_MSS 0
+module work OUTBUF_MSS 0
+module work INBUF_MSS 0
+module work MSS_LPXTLOSC 0
+module work MSS_XTLOSC 0

@@ -1,0 +1,37 @@
+!SESSION 2017-04-16 21:27:34.894 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -import N:\eecs373\project\MotorControlWork\TestMotorControl\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\projects\motorCONTROL_MSS_MSS_CM3_0_hw_platform
+Command-line arguments:  -os win32 -ws win32 -arch x86 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data N:/eecs373/project/MotorControlWork/TestMotorControl/SoftConsole/motorCONTROL_MSS_MSS_CM3_0 -import N:\eecs373\project\MotorControlWork\TestMotorControl\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\projects\motorCONTROL_MSS_MSS_CM3_0_hw_platform
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-04-16 21:27:40.181
+!MESSAGE Indexed 'motorCONTROL_MSS_MSS_CM3_0_hw_platform' (12 sources, 51 headers) in 1.94 sec: 3,216 declarations; 6,955 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.01%)
+!SESSION 2017-04-16 21:27:41.520 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -import N:\eecs373\project\MotorControlWork\TestMotorControl\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\projects\motorCONTROL_MSS_MSS_CM3_0_app
+Command-line arguments:  -os win32 -ws win32 -arch x86 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data N:/eecs373/project/MotorControlWork/TestMotorControl/SoftConsole/motorCONTROL_MSS_MSS_CM3_0 -import N:\eecs373\project\MotorControlWork\TestMotorControl\SoftConsole\motorCONTROL_MSS_MSS_CM3_0\projects\motorCONTROL_MSS_MSS_CM3_0_app
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-16 21:27:42.827
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-04-16 21:27:45.038
+!MESSAGE Indexed 'motorCONTROL_MSS_MSS_CM3_0_app' (1 sources, 8 headers) in 0.43 sec: 1 declarations; 0 references; 3 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2017-04-16 21:32:34.804 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data N:/eecs373/project/MotorControlWork/TestMotorControl/SoftConsole/motorCONTROL_MSS_MSS_CM3_0
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-04-16 21:32:36.231
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 4 1 2017-04-16 23:43:59.641
+!MESSAGE Problems occurred refreshing resources
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2017-04-16 23:43:59.641
+!MESSAGE Problem finding next change, code: 995

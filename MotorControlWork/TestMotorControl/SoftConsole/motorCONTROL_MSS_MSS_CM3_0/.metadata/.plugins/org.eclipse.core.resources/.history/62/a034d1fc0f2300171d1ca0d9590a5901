@@ -1,0 +1,38 @@
+/*
+ * encoders.h
+ *
+ *  Created on: Apr 16, 2017
+ *      Author: baldeeb
+ */
+
+#ifndef ENCODERS_H_
+#define ENCODERS_H_
+
+
+#include "main.h"
+
+int prev_left_encoder_val = 0;
+int prev_right_encoder_val = 0;
+int left_wheel_tot = 0;
+int right_wheel_tot = 0;
+
+int left_encoder_val = 0;
+int right_encoder_val = 0;
+int left_rotating = 0;
+int right_rotating = 0;
+
+void get_encoder_vals(int * right, int * left){
+
+	if(*ENCODERS == 1 || *ENCODERS == 3)
+		*left = 1;
+	else
+		*left = 0;
+
+	if(*ENCODERS == 2 || *ENCODERS == 3)
+		*right = 1;
+	else
+		*right = 0;
+
+}
+
+#endif /* ENCODERS_H_ */

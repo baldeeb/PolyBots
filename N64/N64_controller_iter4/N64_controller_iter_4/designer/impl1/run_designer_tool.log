@@ -3,22 +3,22 @@ Version: 11.7.1.14
 Release: v11.7 SP1.1
 
 'IDE_DESIGNERVIEW_ROOTDIR' set to
-'N:\eecs373\project\N64\N64_controller_iter4\N64_controller_iter_4\designer'
+'N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer'
 Info: The design N64_controller_iter_4.adb was last modified by software version 11.7.1.14.
 Opened an existing Libero design N64_controller_iter_4.adb.
 
-The Execute Script command succeeded ( 00:00:29 )
+The Execute Script command succeeded ( 00:00:28 )
 Design saved to file
-N:\eecs373\project\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller\
-_iter_4.adb.
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controlle\
+r_iter_4.adb.
 Wrote pin report to file:
-N:\eecs373\project\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller\
-_iter_4_report_pin_byname.txt
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controlle\
+r_iter_4_report_pin_byname.txt
 
 The Report command succeeded ( 00:00:01 )
 Wrote pin report to file:
-N:\eecs373\project\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controller\
-_iter_4_report_pin_bynumber.txt
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controlle\
+r_iter_4_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
 

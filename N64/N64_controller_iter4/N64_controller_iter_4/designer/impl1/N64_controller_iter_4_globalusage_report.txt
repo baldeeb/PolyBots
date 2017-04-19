@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
-Date: Tue Apr 04 17:20:27 2017
+Date: Mon Apr 17 23:26:37 2017
 Design Name: N64_controller_iter_4  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
 Design State: Post-Layout
 
@@ -13,14 +13,14 @@ The following nets have been routed to a chip global resource:
 
     Fanout            Name
     ----------------------
-    339               Net   : FAB_CLK
+    369               Net   : FAB_CLK
                       Driver: N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE2
-    148               Net   : controller_interface_0/state[0]
-                      Driver: controller_interface_0/state_RNIQMP9[0]/U_CLKSRC/U_GL
-    65                Net   : controller_interface_0/un6_data_line
-                      Driver: controller_interface_0/state_RNIH7DT_7[1]/U_CLKSRC/U_GL
-    98                Net   : controller_interface_0/m2_0
-                      Driver: controller_interface_0/state_RNINGJJ_2[1]/U_CLKSRC/U_GL
+    111               Net   : controller_interface_0/state[2]
+                      Driver: controller_interface_0/state_RNISOP9[2]/U_CLKSRC/U_GL
+    66                Net   : controller_interface_0/un6_data_line
+                      Driver: controller_interface_0/state_RNI0SCO_2[1]/U_CLKSRC/U_GL
+    100               Net   : controller_interface_0/global_count7_1
+                      Driver: controller_interface_0/state_RNILEJJ_1[1]/U_CLKSRC/U_GL
 
 
 

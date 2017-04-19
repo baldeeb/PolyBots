@@ -1,0 +1,705 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.7 SP1.1
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
+Date: Sun Apr 16 18:18:00 2017
+
+
+Design: touch_screen
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               mss_aclk
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_fabric_interface_clock
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_pclk1
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_ccc_gla1
+Period (ns):                3.262
+Frequency (MHz):            306.560
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      6.665
+Max Clock-To-Out (ns):      12.276
+
+Clock Domain:               mss_ccc_gla0
+Period (ns):                12.500
+Frequency (MHz):            80.000
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      8.023
+Max Clock-To-Out (ns):      16.177
+
+Clock Domain:               touch_screen_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+                            Input to Output
+Min Delay (ns):             N/A
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain mss_aclk
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_fabric_interface_clock
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_pclk1
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla1
+
+SET Register to Register
+
+Path 1
+  From:                        spi_pin_0/CD:CLK
+  To:                          spi_pin_0/CD:D
+  Delay (ns):                  2.772
+  Slack (ns):                  6.738
+  Arrival (ns):                7.995
+  Required (ns):               14.733
+  Setup (ns):                  0.490
+  Minimum Period (ns):         3.262
+
+
+Expanded Path 1
+  From: spi_pin_0/CD:CLK
+  To: spi_pin_0/CD:D
+  data required time                             14.733
+  data arrival time                          -   7.995
+  slack                                          6.738
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  4.630
+               +     0.000          net: touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  4.630                        touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  4.630                        touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.593          net: FAB_CLK
+  5.223                        spi_pin_0/CD:CLK (r)
+               +     0.671          cell: ADLIB:DFN1
+  5.894                        spi_pin_0/CD:Q (f)
+               +     0.348          net: CD_c
+  6.242                        spi_pin_0/CD_RNO_0:A (f)
+               +     0.563          cell: ADLIB:MX2
+  6.805                        spi_pin_0/CD_RNO_0:Y (f)
+               +     0.296          net: spi_pin_0/CD_RNO_0
+  7.101                        spi_pin_0/CD_RNO:B (f)
+               +     0.588          cell: ADLIB:OR2A
+  7.689                        spi_pin_0/CD_RNO:Y (f)
+               +     0.306          net: spi_pin_0/CD_RNO
+  7.995                        spi_pin_0/CD:D (f)
+                                    
+  7.995                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  14.630
+               +     0.000          net: touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  14.630                       touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  14.630                       touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.593          net: FAB_CLK
+  15.223                       spi_pin_0/CD:CLK (r)
+               -     0.490          Library setup time: ADLIB:DFN1
+  14.733                       spi_pin_0/CD:D
+                                    
+  14.733                       data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        spi_pin_0/CD:CLK
+  To:                          CD
+  Delay (ns):                  7.053
+  Slack (ns):
+  Arrival (ns):                12.276
+  Required (ns):
+  Clock to Out (ns):           12.276
+
+
+Expanded Path 1
+  From: spi_pin_0/CD:CLK
+  To: CD
+  data required time                             N/C
+  data arrival time                          -   12.276
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  4.630
+               +     0.000          net: touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  4.630                        touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  4.630                        touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.593          net: FAB_CLK
+  5.223                        spi_pin_0/CD:CLK (r)
+               +     0.671          cell: ADLIB:DFN1
+  5.894                        spi_pin_0/CD:Q (f)
+               +     2.601          net: CD_c
+  8.495                        CD_pad/U0/U1:D (f)
+               +     0.530          cell: ADLIB:IOTRI_OB_EB
+  9.025                        CD_pad/U0/U1:DOUT (f)
+               +     0.000          net: CD_pad/U0/NET1
+  9.025                        CD_pad/U0/U0:D (f)
+               +     3.251          cell: ADLIB:IOPAD_TRI
+  12.276                       CD_pad/U0/U0:PAD (f)
+               +     0.000          net: CD
+  12.276                       CD (f)
+                                    
+  12.276                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla1
+               +     0.000          Clock source
+  N/C                          touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  N/C
+                                    
+  N/C                          CD (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET mss_fabric_interface_clock to mss_ccc_gla1
+
+Path 1
+  From:                        touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          spi_pin_0/CD:D
+  Delay (ns):                  7.642
+  Slack (ns):                  3.536
+  Arrival (ns):                11.197
+  Required (ns):               14.733
+  Setup (ns):                  0.490
+
+
+Expanded Path 1
+  From: touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To: spi_pin_0/CD:D
+  data required time                             14.733
+  data arrival time                          -   11.197
+  slack                                          3.536
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_fabric_interface_clock
+               +     0.000          Clock source
+  0.000                        touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:GLB (r)
+               +     3.555          Clock generation
+  3.555
+               +     3.840          cell: ADLIB:MSS_APB_IP
+  7.395                        touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPADDR[2] (r)
+               +     0.124          net: touch_screen_MSS_0/MSS_ADLIB_INST/MSSPADDR[2]INT_NET
+  7.519                        touch_screen_MSS_0/MSS_ADLIB_INST/U_30:PIN3INT (r)
+               +     0.086          cell: ADLIB:MSS_IF
+  7.605                        touch_screen_MSS_0/MSS_ADLIB_INST/U_30:PIN3 (r)
+               +     1.117          net: CoreAPB3_0_APBmslave0_PADDR[2]
+  8.722                        spi_pin_0/CD_RNO_1:C (r)
+               +     0.606          cell: ADLIB:NOR3C
+  9.328                        spi_pin_0/CD_RNO_1:Y (r)
+               +     0.340          net: spi_pin_0/CD_write
+  9.668                        spi_pin_0/CD_RNO_0:S (r)
+               +     0.339          cell: ADLIB:MX2
+  10.007                       spi_pin_0/CD_RNO_0:Y (f)
+               +     0.296          net: spi_pin_0/CD_RNO_0
+  10.303                       spi_pin_0/CD_RNO:B (f)
+               +     0.588          cell: ADLIB:OR2A
+  10.891                       spi_pin_0/CD_RNO:Y (f)
+               +     0.306          net: spi_pin_0/CD_RNO
+  11.197                       spi_pin_0/CD:D (f)
+                                    
+  11.197                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  14.630
+               +     0.000          net: touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  14.630                       touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  14.630                       touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.593          net: FAB_CLK
+  15.223                       spi_pin_0/CD:CLK (r)
+               -     0.490          Library setup time: ADLIB:DFN1
+  14.733                       spi_pin_0/CD:D
+                                    
+  14.733                       data required time
+
+
+END SET mss_fabric_interface_clock to mss_ccc_gla1
+
+----------------------------------------------------
+
+SET mss_ccc_gla0 to mss_ccc_gla1
+
+Path 1
+  From:                        touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          spi_pin_0/CD:D
+  Delay (ns):                  5.717
+  Slack (ns):                  5.461
+  Arrival (ns):                9.272
+  Required (ns):               14.733
+  Setup (ns):                  0.490
+
+
+Expanded Path 1
+  From: touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To: spi_pin_0/CD:D
+  data required time                             14.733
+  data arrival time                          -   9.272
+  slack                                          5.461
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla0
+               +     0.000          Clock source
+  0.000                        touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     2.925          Clock generation
+  2.925
+               +     0.630          net: touch_screen_MSS_0/GLA0
+  3.555                        touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               +     3.632          cell: ADLIB:MSS_APB_IP
+  7.187                        touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:M2FRESETn (r)
+               +     0.122          net: touch_screen_MSS_0/MSS_ADLIB_INST/M2FRESETnINT_NET
+  7.309                        touch_screen_MSS_0/MSS_ADLIB_INST/U_46:PIN2INT (r)
+               +     0.095          cell: ADLIB:MSS_IF
+  7.404                        touch_screen_MSS_0/MSS_ADLIB_INST/U_46:PIN2 (r)
+               +     1.073          net: touch_screen_MSS_0_M2F_RESET_N
+  8.477                        spi_pin_0/CD_RNO:A (r)
+               +     0.489          cell: ADLIB:OR2A
+  8.966                        spi_pin_0/CD_RNO:Y (f)
+               +     0.306          net: spi_pin_0/CD_RNO
+  9.272                        spi_pin_0/CD:D (f)
+                                    
+  9.272                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  14.630
+               +     0.000          net: touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  14.630                       touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  14.630                       touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.593          net: FAB_CLK
+  15.223                       spi_pin_0/CD:CLK (r)
+               -     0.490          Library setup time: ADLIB:DFN1
+  14.733                       spi_pin_0/CD:D
+                                    
+  14.733                       data required time
+
+
+END SET mss_ccc_gla0 to mss_ccc_gla1
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla0
+
+Info: The maximum frequency of this clock domain is limited by the period of pin touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          SPI_1_FAB_SS_0[1]
+  Delay (ns):                  12.622
+  Slack (ns):
+  Arrival (ns):                16.177
+  Required (ns):
+  Clock to Out (ns):           16.177
+
+
+Expanded Path 1
+  From: touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To: SPI_1_FAB_SS_0[1]
+  data required time                             N/C
+  data arrival time                          -   16.177
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla0
+               +     0.000          Clock source
+  0.000                        touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     2.925          Clock generation
+  2.925
+               +     0.630          net: touch_screen_MSS_0/GLA0
+  3.555                        touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               +     5.407          cell: ADLIB:MSS_APB_IP
+  8.962                        touch_screen_MSS_0/MSS_ADLIB_INST/U_CORE:SPI1SSO[1] (f)
+               +     0.000          net: touch_screen_MSS_0/MSS_ADLIB_INST/SPI1SSO[1]INT_NET
+  8.962                        touch_screen_MSS_0/MSS_ADLIB_INST/U_9:PIN1INT (f)
+               +     0.088          cell: ADLIB:MSS_IF
+  9.050                        touch_screen_MSS_0/MSS_ADLIB_INST/U_9:PIN1 (f)
+               +     3.276          net: SPI_1_FAB_SS_0_c[1]
+  12.326                       SPI_1_FAB_SS_0_pad[1]/U0/U1:D (f)
+               +     0.600          cell: ADLIB:IOTRI_OB_EB
+  12.926                       SPI_1_FAB_SS_0_pad[1]/U0/U1:DOUT (f)
+               +     0.000          net: SPI_1_FAB_SS_0_pad[1]/U0/NET1
+  12.926                       SPI_1_FAB_SS_0_pad[1]/U0/U0:D (f)
+               +     3.251          cell: ADLIB:IOPAD_TRI
+  16.177                       SPI_1_FAB_SS_0_pad[1]/U0/U0:PAD (f)
+               +     0.000          net: SPI_1_FAB_SS_0[1]
+  16.177                       SPI_1_FAB_SS_0[1] (f)
+                                    
+  16.177                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla0
+               +     0.000          Clock source
+  N/C                          touch_screen_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     2.925          Clock generation
+  N/C
+                                    
+  N/C                          SPI_1_FAB_SS_0[1] (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain touch_screen_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

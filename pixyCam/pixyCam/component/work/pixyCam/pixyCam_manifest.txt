@@ -1,0 +1,14 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
+
+Date      :  Thu Apr 13 00:25:18 2017
+Project   :  N:\eecs373\project\pixyCam\pixyCam
+Component :  pixyCam
+Family    :  SmartFusion
+
+
+HDL source files for all Synthesis and Simulation tools:
+    N:/eecs373/project/pixyCam/pixyCam/component/work/pixyCam/pixyCam.v
+
+Stimulus files for all Simulation tools:
+    N:/eecs373/project/pixyCam/pixyCam/component/work/pixyCam/subsystem.bfm
+

@@ -1,0 +1,105 @@
+/*
+ * pixy.h
+ *
+ *  Created on: Apr 14, 2017
+ *      Author: baldeeb
+ */
+
+#ifndef PIXY_H_
+#define PIXY_H_
+
+#include <stdio.h>
+#include <inttypes.h>
+#include "drivers/mss_i2c/mss_i2c.h"
+#include "mss_timer.h"
+
+
+/********* Constants ********/
+#define TIMER_FREQ 100000000
+
+#define PIXY_READ_PERIOD TIMER_FREQ / 50 //10000000
+#define PIXY_START_WORD             	0xaa55
+#define PIXY_START_WORD_CC          	0xaa56
+#define PIXY_START_WORDX            	0x55aa
+#define PIXY_I2C_DEFAULT_ADDR           0x54
+
+#define PIXY_OBJECT_COUNT 3
+#define PIXY_UNION_U8_SIZE 14
+#define PIXY_UNION_U16_SIZE PIXY_UNION_U8_SIZE/2
+#define PIXY_RECIEVE_BUFF_SIZE (PIXY_UNION_U8_SIZE * PIXY_OBJECT_COUNT)+16
+
+/************************/
+
+
+/********* Data Structures ********/
+union pixy_data_union{
+	uint8_t u8[PIXY_UNION_U8_SIZE];
+	uint16_t u16[PIXY_UNION_U16_SIZE];
+	struct{
+		uint16_t sync;
+		uint16_t crc;
+		uint16_t id;
+		uint16_t x;
+		uint16_t y;
+		uint16_t width;
+		uint16_t height;
+	}o;
+};
+
+// used to invert endienness
+union data_buffer_u{
+	uint8_t u8[PIXY_RECIEVE_BUFF_SIZE];
+	uint16_t u16[PIXY_RECIEVE_BUFF_SIZE/2];
+};
+/************************/
+
+
+/********* Globals********/
+union data_buffer_u receive_buf;
+int update_pixy_data_flag;
+union pixy_data_union pixy_data[PIXY_OBJECT_COUNT];
+
+union pixy_data_union pixy_ideal_green;
+/************************/
+
+/* *
+ * removes the first uint8_t from the I2C recieve buffer.
+ * sometimes the camera sends a zero as a first nibble
+ * */
+void shift_recieve_union();
+
+/* *
+ * for testing
+ * print pixy data
+ * */
+void pixy_print(union pixy_data_union *p);
+
+/* *
+ * used to properly assign the data read into the i2c buffer to
+ * the globally accessible pixy-data data structure
+ * */
+void pixy_read_multiple( void );
+
+/* *
+ * update the global union holding the pixy data
+ * */
+void process_pixy_i2c( void );
+
+
+/* *
+ * The desired follower bot's relative x-coordinate
+ * */
+void init_ideal_pixy_dots( void );
+
+/* *
+ * returns the magnitude and direction of the follower
+ * bot's x-coordinate offset
+ * returns 0 if no valid data available
+ * returns 1 if the data is valid
+ * */
+int pixy_x_err( unsigned int *mag, unsigned int *dir);
+
+
+
+
+#endif /* PIXY_H_ */

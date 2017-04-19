@@ -1,0 +1,23 @@
+*****************************************************************
+Pin Report - Date: Thu Apr 13 00:26:31 2017 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.7 SP1.1
+Version: 11.7.1.14
+Design Name: pixyCam
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+*****************************************************************
+Port        |Pin  |Fixed |Function           |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+------------|-----|------|-------------------|--------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
+I2C_1_SCL    U20   Yes    I2C_1_SCL/GPIO_31   LVTTL    8                  High  None           No               No    35                No           Yes
+I2C_1_SDA    V22   Yes    I2C_1_SDA/GPIO_30   LVTTL    8                  High  None           No               No    35                No           Yes
+MSS_RESET_N  R1    Yes    MSS_RESET_N         LVTTL    ---                ---   None           No               ---   ---               No           Yes
+SPI_1_CLK    AA22  Yes    SPI_1_CLK/GPIO_26   LVTTL    8                  High  None           No               No    35                No           Yes
+SPI_1_DI     V19   Yes    SPI_1_DI/GPIO_25    LVTTL    ---                ---   None           No               ---   ---               No           Yes
+SPI_1_DO     T17   Yes    SPI_1_DO/GPIO_24    LVTTL    8                  High  None           ---              No    35                No           Yes
+SPI_1_SS     W21   Yes    SPI_1_SS/GPIO_27    LVTTL    8                  High  None           No               No    35                No           Yes
+UART_0_RXD   U18   Yes    UART_0_RXD/GPIO_21  LVTTL    ---                ---   None           No               ---   ---               No           Yes
+UART_0_TXD   Y22   Yes    UART_0_TXD/GPIO_20  LVTTL    8                  High  None           ---              No    35                No           Yes
+UART_1_RXD   W22   Yes    UART_1_RXD/GPIO_29  LVTTL    ---                ---   None           No               ---   ---               No           Yes
+UART_1_TXD   V20   Yes    UART_1_TXD/GPIO_28  LVTTL    8                  High  None           ---              No    35                No           Yes

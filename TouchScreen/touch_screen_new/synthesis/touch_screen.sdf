@@ -1,0 +1,24 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "touch_screen")
+(DATE "123")
+(VENDOR "ProASIC3")
+(PROGRAM "Synplify")
+(VERSION "mapact, Build 1659R")
+(DIVIDER /)
+(VOLTAGE 2.500000:2.500000:2.500000)
+(PROCESS "TYPICAL")
+(TEMPERATURE 70.000000:70.000000:70.000000)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "touch_screen")
+  (INSTANCE)
+  (TIMINGCHECK
+
+    (PATHCONSTRAINT spi_pin_0/CD/CLK  spi_pin_0/CD/Q  spi_pin_0/CD_RNO_0/A  spi_pin_0/CD_RNO_0/Y  spi_pin_0/CD_RNO/B  spi_pin_0/CD_RNO/Y  spi_pin_0/CD/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT spi_pin_0/CD/CLK  spi_pin_0/CD/Q  CD_pad/D  CD_pad/PAD  	(10.0:10.0:10.0) )
+
+  )
+)
+)

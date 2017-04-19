@@ -1,0 +1,17 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP1.1 (Version 11.7.1.14)
+
+Date      :  Sun Apr 16 21:29:06 2017
+Project   :  N:\eecs373\project\MotorControlWork\TestMotorControl
+Component :  motorCONTROL
+Family    :  SmartFusion
+
+
+HDL source files for all Synthesis and Simulation tools:
+    N:/eecs373/project/MotorControlWork/TestMotorControl/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v
+    N:/eecs373/project/MotorControlWork/TestMotorControl/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v
+    N:/eecs373/project/MotorControlWork/TestMotorControl/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v
+    N:/eecs373/project/MotorControlWork/TestMotorControl/component/work/motorCONTROL/motorCONTROL.v
+
+Stimulus files for all Simulation tools:
+    N:/eecs373/project/MotorControlWork/TestMotorControl/component/work/motorCONTROL/subsystem.bfm
+

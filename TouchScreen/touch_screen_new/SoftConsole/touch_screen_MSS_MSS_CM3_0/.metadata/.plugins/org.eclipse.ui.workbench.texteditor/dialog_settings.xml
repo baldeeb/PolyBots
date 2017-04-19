@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="257" key="DIALOG_WIDTH"/>
+		<item value="213" key="DIALOG_Y_ORIGIN"/>
+		<item value="381" key="DIALOG_HEIGHT"/>
+		<item value="1582" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="ILI9341_DARKGREY" key="selection"/>
+		<list key="findhistory">
+			<item value="ILI9341_WHITE"/>
+			<item value="&#x09;drawChar(print, N64BUTTON_X +(N64BUTTON_W/5) , N64BUTTON_Y + (N64BUTTON_H/5), &apos;L&apos;, ILI9341_WHITE,ILI9341_WHITE, 4 );"/>
+			<item value="&#x09;drawChar(print, N64BUTTON_X +(N64BUTTON_W/4) , N64BUTTON_Y + (N64BUTTON_H/4), &apos;L&apos;, ILI9341_WHITE,ILI9341_WHITE, 4 );"/>
+			<item value="REDBUTTON"/>
+			<item value="GREENBUTTON"/>
+			<item value="REDBUTTOn"/>
+			<item value="RecordOn"/>
+			<item value="offset"/>
+		</list>
+		<list key="replacehistory">
+			<item value="ILI9341_DARKGREY"/>
+			<item value="LINEBUTTON"/>
+			<item value="N64BUTTOn"/>
+			<item value="N64BUTTON"/>
+			<item value="MovementOn"/>
+			<item value="REDBUTTON"/>
+			<item value=""/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>motorCONTROL</design>
+	<target_edif>N:\eecs373\project\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.edn</target_edif>
+</SynplifyOutput>

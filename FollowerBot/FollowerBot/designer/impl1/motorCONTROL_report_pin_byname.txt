@@ -1,0 +1,38 @@
+*****************************************************************
+Pin Report - Date: Sat Apr 15 17:29:27 2017 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.7 SP1.1
+Version: 11.7.1.14
+Design Name: motorCONTROL
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+*****************************************************************
+Port             |Pin  |Fixed |Function           |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+-----------------|-----|------|-------------------|--------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
+ADCDirectInput_0  V12   Yes    ADC5                LVTTL    ---                Low   ---            ---              ---   ---               No           No
+ADCDirectInput_1  V11   Yes    ADC6                LVTTL    ---                Low   ---            ---              ---   ---               No           No
+encoder[0]        E3    Yes    GFA2/IO68PDB5V0     LVTTL    ---                ---   None           No               ---   ---               No           No
+encoder[1]        F3    Yes    GFB2/IO68NDB5V0     LVTTL    ---                ---   None           No               ---   ---               No           No
+GPIO_0_BI         V1    Yes    GPIO_0/IO47RSB4V0   LVTTL    8                  High  None           No               No    35                No           Yes
+GPIO_1_BI         R3    Yes    GPIO_1/IO46RSB4V0   LVTTL    8                  High  None           No               No    35                No           Yes
+GPIO_2_BI         W1    Yes    GPIO_2/IO45RSB4V0   LVTTL    8                  High  None           No               No    35                No           Yes
+GPIO_3_BI         Y1    Yes    GPIO_3/IO44RSB4V0   LVTTL    8                  High  None           No               No    35                No           Yes
+GPIO_4_BI         AA1   Yes    GPIO_4/IO43RSB4V0   LVTTL    8                  High  None           No               No    35                No           Yes
+GPIO_5_BI         U2    Yes    GPIO_5/IO42RSB4V0   LVTTL    8                  High  None           No               No    35                No           Yes
+GPIO_6_BI         V2    Yes    GPIO_6/IO41RSB4V0   LVTTL    8                  High  None           No               No    35                No           Yes
+GPIO_7_BI         W2    Yes    GPIO_7/IO40RSB4V0   LVTTL    8                  High  None           No               No    35                No           Yes
+I2C_1_SCL         U20   Yes    I2C_1_SCL/GPIO_31   LVTTL    8                  High  None           No               No    35                No           Yes
+I2C_1_SDA         V22   Yes    I2C_1_SDA/GPIO_30   LVTTL    8                  High  None           No               No    35                No           Yes
+inputsAB[0]       G4    Yes    GFC1/IO66PPB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+inputsAB[1]       H5    Yes    GFC0/IO66NPB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+inputsAB[2]       H6    Yes    GFA1/IO64PDB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+inputsAB[3]       J6    Yes    GFA0/IO64NDB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+MSS_RESET_N       R1    Yes    MSS_RESET_N         LVTTL    ---                ---   None           No               ---   ---               No           Yes
+pwmLeft           J19   Yes    GCA0/IO28NDB1V0     LVTTL    12                 High  None           ---              No    35                No           No
+pwmRight          J20   Yes    GCA1/IO28PDB1V0     LVTTL    12                 High  None           ---              No    35                No           No
+UART_0_RXD        U18   Yes    UART_0_RXD/GPIO_21  LVTTL    ---                ---   None           No               ---   ---               No           Yes
+UART_0_TXD        Y22   Yes    UART_0_TXD/GPIO_20  LVTTL    8                  High  None           ---              No    35                No           Yes
+UART_1_RXD        W22   Yes    UART_1_RXD/GPIO_29  LVTTL    ---                ---   None           No               ---   ---               No           Yes
+UART_1_TXD        V20   Yes    UART_1_TXD/GPIO_28  LVTTL    8                  High  None           ---              No    35                No           Yes
+VAREF1            AB11  Yes    VAREF1              LVTTL    ---                Low   ---            ---              ---   ---               No           No

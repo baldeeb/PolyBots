@@ -1,0 +1,58 @@
+FlashPro
+Version: 11.7.1.14
+Release: v11.7 SP1.1
+
+Software Version: 11.7.1.14
+Warning: Unable to find file:
+         'N:\eecs373\project\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL_fp\motor\
+         CONTROL.pdb'.
+Warning: Using local backup copy:
+         'N:\eecs373\project\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL_fp\proje\
+         ctData\motorCONTROL.pdb'.
+Error: Error reading PDB.
+Driver : 3.0.0 build 1
+programmer '80216' : FlashPro3
+Warning: The programmer with id '78999' in the project file cannot be detected and connected.
+Opened
+'N:\eecs373\project\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL_fp\motorCONTROL.p\
+ro'
+The 'open_project' command succeeded.
+The 'set_programming_file' command succeeded.
+The 'set_device_type' command succeeded.
+The 'set_device_package' command succeeded.
+Info: Adding Flash Memory data from file
+      N:\eecs373\project\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_ENVM\
+      _0\MSS_ENVM_0.efc.
+Info: Adding FPGA Array data from file
+      N:\eecs373\project\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL.fdb.
+PDB file
+'N:\eecs373\project\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL_fp\motorCONTROL.p\
+db' has been loaded successfully.
+DESIGN : motorCONTROL;  CHECKSUM : A397;  PDB_VERSION : 1.9
+The 'update_programming_file' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer '80216' : Scan Chain...
+Warning: programmer '80216' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '80216' : Scan Chain PASSED.
+programmer '80216' : Executing action PROGRAM
+programmer '80216' : EXPORT FSN[48] = 014b3e605078
+programmer '80216' : Erase ...
+programmer '80216' : Completed erase
+programmer '80216' : EXPORT CHECKSUM: [16] = a397
+programmer '80216' : Programming FPGA Array
+programmer '80216' : Verifying FPGA Array
+programmer '80216' :         Verifying FPGA Array -- pass
+programmer '80216' : Program System Init and Boot Clients...
+programmer '80216' : Verify System Init and Boot Clients...
+programmer '80216' : Finished: Fri Apr 14 18:37:07 2017 (Elapsed time 00:00:38)
+programmer '80216' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+creating folder:
+N:\eecs373\project\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL_fp\projectData
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
