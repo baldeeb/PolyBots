@@ -16,6 +16,7 @@
 #include <math.h>
 #include "drivers/mss_uart/mss_uart.h"
 #include "string.h"
+#include "drivers/mss_gpio/mss_gpio.h"
 
 
 #define CONTROLLER_DATA_REG ((uint32_t *) FPGA_FABRIC_BASE)
@@ -45,6 +46,234 @@ uint8_t calc_right_wheel_duty_cycle_dpad(uint8_t up, uint8_t down, uint8_t left,
 uint8_t calc_wheel_direction_stick(int8_t y_axis, int8_t x_axis);
 uint8_t calc_wheel_direction_dpad(uint8_t up, uint8_t down, uint8_t left, uint8_t right);
 
+#include "Adafruit_GFX_local.h"
+#include "Adafruit_ILI9341_local.h"
+#include "drivers/mss_uart/mss_uart.h"
+#include "drivers/mss_spi/drivers/mss_spi/mss_spi.h"
+#include "Adafruit_FT6206.h"
+
+#define BOXSIZE 100
+
+#define FRAME_X 180
+#define FRAME_Y 120
+#define FRAME_W 140
+#define FRAME_H 120
+
+#define REDBUTTON_X FRAME_X
+#define REDBUTTON_Y FRAME_Y
+#define REDBUTTON_W (FRAME_W)
+#define REDBUTTON_H FRAME_H
+
+#define GREENBUTTON_X (REDBUTTON_X )
+#define GREENBUTTON_Y REDBUTTON_Y - REDBUTTON_H
+#define GREENBUTTON_W REDBUTTON_W
+#define GREENBUTTON_H REDBUTTON_H
+
+#define LINEBUTTON_X FRAME_X - FRAME_W - 30
+#define LINEBUTTON_Y FRAME_Y
+#define LINEBUTTON_W FRAME_W
+#define LINEBUTTON_H FRAME_H
+
+#define N64BUTTON_X LINEBUTTON_X
+#define N64BUTTON_Y LINEBUTTON_Y - LINEBUTTON_H
+#define N64BUTTON_W LINEBUTTON_W
+#define N64BUTTON_H LINEBUTTON_H
+
+struct Print * print;
+
+struct Adafruit_FT6206 * ts;
+
+boolean MovementOn = false;
+boolean N64ControlOn = false;
+
+#define min(a,b) (((a)<(b))?(a):(b))
+
+long map(long x, long in_min, long in_max, long out_min, long out_max)
+{
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+void drawFrame(struct Print * print)
+{
+  drawRect(print, FRAME_X, FRAME_Y, FRAME_W, FRAME_H, ILI9341_BLACK);
+}
+
+void redBtn(struct Print * print)
+{
+	//fillRoundRect(print, REDBUTTON_X, REDBUTTON_Y, REDBUTTON_W, REDBUTTON_H, REDBUTTON_W/8, ILI9341_RED);
+	//fillRoundRect(print, GREENBUTTON_X, GREENBUTTON_Y, GREENBUTTON_W, GREENBUTTON_H, GREENBUTTON_W/8, ILI9341_GREEN);
+  drawChar(print, GREENBUTTON_X+(GREENBUTTON_W/3) , GREENBUTTON_Y + (GREENBUTTON_H/2.5), 'O', ILI9341_WHITE,ILI9341_WHITE, 4 );
+  drawChar(print, GREENBUTTON_X +(GREENBUTTON_W/3) + 25 , GREENBUTTON_Y + (GREENBUTTON_H/2.5), 'N', ILI9341_WHITE,ILI9341_WHITE, 4 );
+
+  drawChar(print, REDBUTTON_X + REDBUTTON_W/4, REDBUTTON_Y + (REDBUTTON_H/2.5), 'O', ILI9341_DARKGREY,ILI9341_RED, 4);
+  drawChar(print, REDBUTTON_X + REDBUTTON_W/4 + 25 , REDBUTTON_Y + (REDBUTTON_H/2.5), 'F', ILI9341_DARKGREY,ILI9341_RED, 4);
+  drawChar(print, REDBUTTON_X + REDBUTTON_W/4 + 50 , REDBUTTON_Y + (REDBUTTON_H/2.5), 'F', ILI9341_DARKGREY,ILI9341_RED, 4);
+  MovementOn = false;
+}
+
+void greenBtn(struct Print * print)
+{
+	//fillRoundRect(print, GREENBUTTON_X, GREENBUTTON_Y, GREENBUTTON_W, GREENBUTTON_H, GREENBUTTON_W/8, ILI9341_GREEN);
+	  drawChar(print, GREENBUTTON_X+(GREENBUTTON_W/3) , GREENBUTTON_Y + (GREENBUTTON_H/2.5), 'O', ILI9341_DARKGREY,ILI9341_GREEN, 4 );
+	  drawChar(print, GREENBUTTON_X +(GREENBUTTON_W/3) + 25 , GREENBUTTON_Y + (GREENBUTTON_H/2.5), 'N', ILI9341_DARKGREY,ILI9341_GREEN, 4 );
+	//fillRoundRect(print, REDBUTTON_X, REDBUTTON_Y, REDBUTTON_W, REDBUTTON_H,REDBUTTON_W/8, ILI9341_RED);
+  drawChar(print, REDBUTTON_X + REDBUTTON_W/4, REDBUTTON_Y + (REDBUTTON_H/2.5), 'O', ILI9341_WHITE,ILI9341_WHITE, 4);
+  drawChar(print, REDBUTTON_X + REDBUTTON_W/4 + 25 , REDBUTTON_Y + (REDBUTTON_H/2.5), 'F', ILI9341_WHITE,ILI9341_WHITE, 4);
+  drawChar(print, REDBUTTON_X + REDBUTTON_W/4 + 50 , REDBUTTON_Y + (REDBUTTON_H/2.5), 'F', ILI9341_WHITE,ILI9341_WHITE, 4);
+
+
+
+  MovementOn = true;
+}
+
+
+void linebutton(struct Print * print)
+{
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/5) , N64BUTTON_Y + (N64BUTTON_H/5), 'L', ILI9341_WHITE,ILI9341_WHITE, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/5) + 25 , N64BUTTON_Y + (N64BUTTON_H/5), 'I', ILI9341_WHITE,ILI9341_WHITE, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/5) + 50 , N64BUTTON_Y + (N64BUTTON_H/5), 'N', ILI9341_WHITE,ILI9341_WHITE, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/5) + 75 , N64BUTTON_Y + (N64BUTTON_H/5), 'E', ILI9341_WHITE,ILI9341_WHITE, 4 );
+
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/10) , N64BUTTON_Y + (N64BUTTON_H*3/5), 'F', ILI9341_WHITE,ILI9341_WHITE, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/10) + 25 , N64BUTTON_Y + (N64BUTTON_H*3/5), 'O', ILI9341_WHITE,ILI9341_WHITE, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/10) + 50 , N64BUTTON_Y + (N64BUTTON_H*3/5), 'L', ILI9341_WHITE,ILI9341_WHITE, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/10) + 75 , N64BUTTON_Y + (N64BUTTON_H*3/5), 'L', ILI9341_WHITE,ILI9341_WHITE, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/10) + 100 , N64BUTTON_Y + (N64BUTTON_H*3/5), 'O', ILI9341_WHITE,ILI9341_WHITE, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/10) + 125 , N64BUTTON_Y + (N64BUTTON_H*3/5), 'W', ILI9341_WHITE,ILI9341_WHITE, 4 );
+
+	drawChar(print, LINEBUTTON_X + LINEBUTTON_W/4, LINEBUTTON_Y + (LINEBUTTON_H/2.5), 'N', ILI9341_DARKGREY,ILI9341_DARKGREY, 4);
+	drawChar(print, LINEBUTTON_X + LINEBUTTON_W/4 + 25 , LINEBUTTON_Y + (LINEBUTTON_H/2.5), '6', ILI9341_DARKGREY,ILI9341_DARKGREY, 4);
+	drawChar(print, LINEBUTTON_X + LINEBUTTON_W/4 + 50 , LINEBUTTON_Y + (LINEBUTTON_H/2.5), '4', ILI9341_DARKGREY,ILI9341_DARKGREY, 4);
+
+	N64ControlOn = false;
+	}
+
+void n64button(struct Print * print)
+{
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/5) , N64BUTTON_Y + (N64BUTTON_H/5), 'L', ILI9341_DARKGREY,ILI9341_DARKGREY, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/5) + 25 , N64BUTTON_Y + (N64BUTTON_H/5), 'I', ILI9341_DARKGREY,ILI9341_DARKGREY, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/5) + 50 , N64BUTTON_Y + (N64BUTTON_H/5), 'N', ILI9341_DARKGREY,ILI9341_DARKGREY, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/5) + 75 , N64BUTTON_Y + (N64BUTTON_H/5), 'E', ILI9341_DARKGREY,ILI9341_DARKGREY, 4 );
+
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/10) , N64BUTTON_Y + (N64BUTTON_H*3/5), 'F', ILI9341_DARKGREY,ILI9341_DARKGREY, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/10) + 25 , N64BUTTON_Y + (N64BUTTON_H*3/5), 'O', ILI9341_DARKGREY,ILI9341_DARKGREY, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/10) + 50 , N64BUTTON_Y + (N64BUTTON_H*3/5), 'L', ILI9341_DARKGREY,ILI9341_DARKGREY, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/10) + 75 , N64BUTTON_Y + (N64BUTTON_H*3/5), 'L', ILI9341_DARKGREY,ILI9341_DARKGREY, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/10) + 100 , N64BUTTON_Y + (N64BUTTON_H*3/5), 'O', ILI9341_DARKGREY,ILI9341_DARKGREY, 4 );
+	drawChar(print, N64BUTTON_X +(N64BUTTON_W/10) + 125 , N64BUTTON_Y + (N64BUTTON_H*3/5), 'W', ILI9341_DARKGREY,ILI9341_DARKGREY, 4 );
+
+	drawChar(print, LINEBUTTON_X + LINEBUTTON_W/4, LINEBUTTON_Y + (LINEBUTTON_H/2.5), 'N', ILI9341_WHITE,ILI9341_WHITE, 4);
+	drawChar(print, LINEBUTTON_X + LINEBUTTON_W/4 + 25 , LINEBUTTON_Y + (LINEBUTTON_H/2.5), '6', ILI9341_WHITE,ILI9341_WHITE, 4);
+	drawChar(print, LINEBUTTON_X + LINEBUTTON_W/4 + 50 , LINEBUTTON_Y + (LINEBUTTON_H/2.5), '4', ILI9341_WHITE,ILI9341_WHITE, 4);
+
+	N64ControlOn = true;
+}
+void start_stop_buttons(struct Adafruit_FT6206 * ts) {
+	if (touched(ts)){
+		struct TS_Point * p;
+		p = (struct TS_Point *) malloc(sizeof(struct TS_Point));
+		p = getPoint(ts);
+
+		p->x = map(p->x, 0, 240, 240, 0);
+		p->y = map(p->y, 0, 320, 320, 0);
+//			int y =  height(print) - p->x;;
+//			int x = p->y;
+		int y = height(print) - p->x;
+		int x = p->y;
+
+		if (MovementOn)
+			{
+			  if((x > REDBUTTON_X) && (x < (REDBUTTON_X + REDBUTTON_W))) {
+				if ((y > REDBUTTON_Y) && (y <= (REDBUTTON_Y + REDBUTTON_H))) {
+					printf("RED BUTTON HIT\n\r");
+				  redBtn(print);
+				}
+			  }
+			}
+			else //Record is off (MovementOn == false)
+			{
+			  if((x > GREENBUTTON_X) && (x < (GREENBUTTON_X + GREENBUTTON_W))) {
+				if ((y > GREENBUTTON_Y) && (y <= (GREENBUTTON_Y + GREENBUTTON_H))) {
+					printf("GREEN BUTTON HIT\n\r");
+				  greenBtn(print);
+				}
+			  }
+			}
+		free(p);
+	}
+
+}
+
+void mode_buttons(struct Adafruit_FT6206 * ts) {
+	if (touched(ts)){
+		struct TS_Point * p;
+		//p = (struct TS_Point *) malloc(sizeof(struct TS_Point));
+		p = getPoint(ts);
+
+		p->x = map(p->x, 0, 240, 240, 0);
+		p->y = map(p->y, 0, 320, 320, 0);
+//			int y =  height(print) - p->x;;
+//			int x = p->y;
+		int y = height(print) - p->x;
+		int x = p->y;
+
+		if (N64ControlOn)
+			{
+			  if((x > LINEBUTTON_X) && (x < (LINEBUTTON_X + LINEBUTTON_W))) {
+				if ((y > LINEBUTTON_Y) && (y <= (LINEBUTTON_Y + LINEBUTTON_H))) {
+					printf("LINE BUTTON HIT\n\r");
+				  linebutton(print);
+				}
+			  }
+			}
+			else //Record is off (MovementOn == false)
+			{
+			  if((x > N64BUTTON_X) && (x < (N64BUTTON_X + N64BUTTON_W))) {
+				if ((y > N64BUTTON_Y) && (y <= (N64BUTTON_Y + N64BUTTON_H))) {
+					printf("N64 BUTTON HIT\n\r");
+				  n64button(print);
+				}
+			  }
+			}
+		free(p);
+	}
+}
+
+void config_spi(void) {
+	MSS_SPI_init( &g_mss_spi1 );
+		MSS_SPI_configure_master_mode
+		(
+		    &g_mss_spi1,
+		    MSS_SPI_SLAVE_0,
+		    MSS_SPI_MODE0,
+		    MSS_SPI_PCLK_DIV_8,
+		    MSS_SPI_BLOCK_TRANSFER_FRAME_SIZE
+		);
+		MSS_SPI_configure_master_mode
+			(
+			    &g_mss_spi1,
+			    MSS_SPI_SLAVE_1,
+			    MSS_SPI_MODE0,
+			    MSS_SPI_PCLK_DIV_8,
+			    MSS_SPI_BLOCK_TRANSFER_FRAME_SIZE
+			);
+
+}
+
+void setup_screen(struct Print * print, struct Adafruit_FT6206 * ts) {
+	begin(print);
+	ts_begin(ts, FT6206_DEFAULT_THRESSHOLD);
+	fillScreen(print, ILI9341_BLACK);
+	setRotation(print, 1);
+
+	fillRoundRect(print, GREENBUTTON_X, GREENBUTTON_Y, GREENBUTTON_W, GREENBUTTON_H, GREENBUTTON_W/8, ILI9341_GREEN);
+	fillRoundRect(print, REDBUTTON_X, REDBUTTON_Y, REDBUTTON_W, REDBUTTON_H,REDBUTTON_W/8, ILI9341_RED);
+	//fillRoundRect(print, N64BUTTON_X, N64BUTTON_Y, N64BUTTON_W, N64BUTTON_H,N64BUTTON_W/8, ILI9341_BLUE);
+	//fillRoundRect(print, LINEBUTTON_X, LINEBUTTON_Y, LINEBUTTON_W, LINEBUTTON_H,LINEBUTTON_W/8, ILI9341_MAGENTA);
+	redBtn(print);
+	n64button(print);
+}
+
 int main(void)
 {
 	uint32_t controller_data; //holds all 32 bits of controller data
@@ -65,13 +294,24 @@ int main(void)
 	uint8_t sync_byte = 0xef;
 
 	uint8_t tx_buff[relevant_data_bytes];
-	int i = 0;
 
 	MSS_UART_init(
 			&g_mss_uart1,
 			MSS_UART_9600_BAUD,
 			MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT
 	);
+
+	print = (struct Print *) malloc(sizeof(struct Print));
+	print->HEIGHT = ILI9341_TFTHEIGHT;
+	print->WIDTH = ILI9341_TFTWIDTH;
+
+	ts = (struct Adafruit_FT6206 *) malloc(sizeof(struct Adafruit_FT6206));
+
+	config_spi();
+	setup_screen(print, ts);
+
+	MSS_GPIO_init();
+	MSS_GPIO_config( MSS_GPIO_0, MSS_GPIO_OUTPUT_MODE);
 
 	while( 1 )
 	{
@@ -102,29 +342,61 @@ int main(void)
 				calc_wheel_direction_stick(axis_buff[0], axis_buff[1]) :
 				calc_wheel_direction_dpad(dpad_buff[0], dpad_buff[1], dpad_buff[2], dpad_buff[3]);
 
+		start_stop_buttons(ts);
+		uint8_t startStop = MovementOn ? 1:0; //1 -> on (go), 0 -> off (stop)
+		mode_buttons(ts);
+		uint8_t mode = !N64ControlOn ? 1: 0; //1->N64, 0 -> line following
+
 
 		tx_buff[0] = sync_byte;
-		tx_buff[1] = right_wheel_duty_cycle;
-		tx_buff[2] = right_wheel_direction;
-		tx_buff[3] = left_wheel_duty_cycle;
-		tx_buff[4] = left_wheel_direction;
-		tx_buff[5] = mode;
+		tx_buff[1] = startStop ? right_wheel_duty_cycle : 0;
+		if(startStop){
+			if(mode==1){
+				tx_buff[2] = right_wheel_direction;
+			}
+			else if (mode ==0){
+				tx_buff[2] = 1;
+			}
+		}
+		else{
+			tx_buff[2] = 0;
+		}
+		//tx_buff[2] = startStop ? ((mode) ? right_wheel_direction:1) : 0;
+		tx_buff[3] = startStop ? left_wheel_duty_cycle : 0;
+		if(startStop){
+			if(mode==1){
+				tx_buff[4] = right_wheel_direction;
+			}
+			else if (mode ==0){
+				tx_buff[4] = 1;
+			}
+		}
+		else{
+			tx_buff[4] = 0;
+		}
+		//tx_buff[4] = startStop ? ((mode)? left_wheel_direction:1) : 0;
+		tx_buff[5] = startStop ? mode : 1;
 		tx_buff[6] = 128; //garbage
 		tx_buff[7] = 99; //garbage
+
+//		tx_buff[0] = sync_byte;
+//				tx_buff[1] = right_wheel_duty_cycle;//startStop ? right_wheel_duty_cycle : 0;
+//				tx_buff[2] = right_wheel_direction;//startStop ? ((mode) ? right_wheel_direction:1) : 0;
+//				tx_buff[3] = left_wheel_duty_cycle;//startStop ? left_wheel_duty_cycle : 0;
+//				tx_buff[4] = left_wheel_direction;//startStop ? ((mode)? left_wheel_direction:1) : 0;
+//				tx_buff[5] = 1;//startStop ? mode : 1;
+//				tx_buff[6] = 128; //garbage
+//				tx_buff[7] = 99; //garbage
+
+
+		printf("%d\n\r", tx_buff[2]);
 
 
 		MSS_UART_polled_tx(&g_mss_uart1, tx_buff, sizeof(tx_buff));
 
-		printf("tx_buff 0 = %d\r\n" , tx_buff[0]);
-		printf("tx_buff 1 = %d\r\n" , tx_buff[1]);
-		printf("tx_buff 2 = %d\r\n" , tx_buff[2]);
-		printf("tx_buff 3 = %d\r\n" , tx_buff[3]);
-		printf("tx_buff 4 = %d\r\n" , tx_buff[4]);
-		printf("tx_buff 5 = %d\r\n" , tx_buff[5]);
-		printf("tx_buff 6 = %d\r\n" , tx_buff[6]);
-		printf("tx_buff 7 = %d\r\n\n\n" , tx_buff[7]);
 	}
-
+	free(print);
+	free(ts);
 	return 0;
 }
 
@@ -216,7 +488,6 @@ uint8_t calc_left_wheel_duty_cycle_stick(int8_t x_axis, int8_t y_axis, float spe
 	else {
 		duty_cycle = (y_axis == 0) ? 0 : speed_percentage * max_duty_cycle;
 	}
-	uint8_t temp = (uint8_t) floor(duty_cycle *100);
 
 	return (uint8_t) floor(duty_cycle*100);
 }
@@ -237,7 +508,6 @@ uint8_t calc_right_wheel_duty_cycle_stick(int8_t x_axis, int8_t y_axis, float sp
 	else {
 		duty_cycle = (y_axis == 0) ? 0 : speed_percentage * max_duty_cycle;
 	}
-	uint8_t temp = (uint8_t) floor(duty_cycle *100);
 	return (uint8_t) floor(duty_cycle*100);
 }
 

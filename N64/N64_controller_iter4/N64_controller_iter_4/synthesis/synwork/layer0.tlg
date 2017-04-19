@@ -1,16 +1,6 @@
 Selecting top level module N64_controller_iter_4
 @N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":2:7:2:26|Synthesizing module controller_interface
 
-	IDLE=32'b00000000000000000000000000000000
-	INIT_BIT_SEND=32'b00000000000000000000000000000001
-	SEND_N64_BIT=32'b00000000000000000000000000000010
-	UPDATE_N64_BIT_COUNT=32'b00000000000000000000000000000011
-	INIT_BIT_RECEIVE=32'b00000000000000000000000000000100
-	RECEIVE_BIT=32'b00000000000000000000000000000101
-	UPDATE_N64_BIT_RECEIVED_COUNT=32'b00000000000000000000000000000110
-	WAITE=32'b00000000000000000000000000000111
-   Generated name = controller_interface_0s_1s_2s_3s_4s_5s_6s_7s
-
 @W: CL169 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":194:0:194:5|Pruning register temp_global_count[31:0] 
 
 @W: CL169 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\hdl\controller_interface.v":194:0:194:5|Pruning register temp 
@@ -110,9 +100,15 @@ Selecting top level module N64_controller_iter_4
 
 @N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\MSS_CCC_0\N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:53|Synthesizing module N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC
 
+@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
+
+@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":85:7:85:21|Synthesizing module BIBUF_OPEND_MSS
+
 @N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS
 
-@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
+@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":67:7:67:15|Synthesizing module BIBUF_MSS
+
+@N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":51:7:51:17|Synthesizing module TRIBUFF_MSS
 
 @N: CG364 :"N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\N64_controller_iter_4_MSS.v":9:7:9:31|Synthesizing module N64_controller_iter_4_MSS
 

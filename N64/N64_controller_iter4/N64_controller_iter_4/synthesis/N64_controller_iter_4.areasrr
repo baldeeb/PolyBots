@@ -6,24 +6,27 @@ Report for cell N64_controller_iter_4.verilog
                         CoreAPB3_Z1         1      36.0       36.0
                                 GND         1       0.0        0.0
           N64_controller_iter_4_MSS         1       1.0        1.0
-                             OUTBUF         6       0.0        0.0
+                             OUTBUF         7       0.0        0.0
                                 VCC         1       0.0        0.0
-          controller_interface_0s_1s_2s_3s_4s_5s_6s_7s         1    1784.0     1784.0
+               controller_interface         1    1780.0     1780.0
                             
-                         TOTAL             12               1821.0
+                         TOTAL             13               1817.0
 ----------------------------------------------------------------------
 Report for cell N64_controller_iter_4_MSS.netlist
      Instance path:  N64_controller_iter_4_MSS_0
                                           Cell usage:
                                cell       count     area    count*area
+                          BIBUF_MSS         2       0.0        0.0
+                    BIBUF_OPEND_MSS         2       0.0        0.0
                                 GND         1       0.0        0.0
-                          INBUF_MSS         3       0.0        0.0
+                          INBUF_MSS         4       0.0        0.0
                             MSS_APB         1       0.0        0.0
           N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC         1       1.0        1.0
-                         OUTBUF_MSS         2       0.0        0.0
+                         OUTBUF_MSS         3       0.0        0.0
+                        TRIBUFF_MSS         1       0.0        0.0
                                 VCC         1       0.0        0.0
                             
-                         TOTAL              9                  1.0
+                         TOTAL             16                  1.0
 ----------------------------------------------------------------------
 Report for cell N64_controller_iter_4_MSS_tmp_MSS_CCC_0_MSS_CCC.netlist
      Instance path:  N64_controller_iter_4_MSS_0.MSS_CCC_0
@@ -59,7 +62,7 @@ Report for cell COREAPB3_MUXPTOB3.netlist
                             
                          TOTAL             34                 32.0
 ----------------------------------------------------------------------
-Report for cell controller_interface_0s_1s_2s_3s_4s_5s_6s_7s.netlist
+Report for cell controller_interface.netlist
      Instance path:  controller_interface_0
                                           Cell usage:
                                cell       count     area    count*area
@@ -69,14 +72,13 @@ Report for cell controller_interface_0s_1s_2s_3s_4s_5s_6s_7s.netlist
                                 AO1        26       1.0       26.0
                                AO1A         4       1.0        4.0
                                AO1B         1       1.0        1.0
-                               AO1C        61       1.0       61.0
+                               AO1C        62       1.0       62.0
                               AOI1A        20       1.0       20.0
                               AOI1B         1       1.0        1.0
                                 AX1         7       1.0        7.0
-                               AX1A         2       1.0        2.0
+                               AX1A         3       1.0        3.0
                                AX1B         1       1.0        1.0
                                AX1C        46       1.0       46.0
-                               AX1D         1       1.0        1.0
                                AX1E         2       1.0        2.0
                              CLKINT         3       0.0        0.0
                                DFN0         2       1.0        2.0
@@ -86,32 +88,32 @@ Report for cell controller_interface_0s_1s_2s_3s_4s_5s_6s_7s.netlist
                                 GND         1       0.0        0.0
                                 INV         4       1.0        4.0
                                 MX2        53       1.0       53.0
-                               MX2A         2       1.0        2.0
-                               MX2B         4       1.0        4.0
-                               MX2C         6       1.0        6.0
-                               NOR2        32       1.0       32.0
-                              NOR2A       155       1.0      155.0
-                              NOR2B        82       1.0       82.0
+                               MX2A         1       1.0        1.0
+                               MX2B         3       1.0        3.0
+                               MX2C         5       1.0        5.0
+                               NOR2        31       1.0       31.0
+                              NOR2A        43       1.0       43.0
+                              NOR2B        84       1.0       84.0
                                NOR3         5       1.0        5.0
-                              NOR3A        34       1.0       34.0
-                              NOR3B        24       1.0       24.0
-                              NOR3C        76       1.0       76.0
+                              NOR3A        37       1.0       37.0
+                              NOR3B        28       1.0       28.0
+                              NOR3C        77       1.0       77.0
                                 OA1        22       1.0       22.0
-                               OA1A        41       1.0       41.0
+                               OA1A       138       1.0      138.0
                                OA1B         1       1.0        1.0
-                               OA1C         2       1.0        2.0
-                               OAI1         1       1.0        1.0
-                                OR2         5       1.0        5.0
-                               OR2A       100       1.0      100.0
-                               OR2B         2       1.0        2.0
-                                OR3        14       1.0       14.0
-                               OR3B         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                               OAI1         2       1.0        2.0
+                                OR2         3       1.0        3.0
+                               OR2A       102       1.0      102.0
+                               OR2B         3       1.0        3.0
+                                OR3        13       1.0       13.0
                                OR3C         4       1.0        4.0
                           RAM512X18         1       0.0        0.0
                                 VCC         1       0.0        0.0
+                               XA1B         3       1.0        3.0
                                XA1C        11       1.0       11.0
-                              XNOR2       166       1.0      166.0
+                              XNOR2       165       1.0      165.0
                                 XO1        11       1.0       11.0
-                               XOR2       191       1.0      191.0
+                               XOR2       192       1.0      192.0
                             
-                         TOTAL           1790               1784.0
+                         TOTAL           1786               1780.0

@@ -1,16 +1,16 @@
 C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis   -part A2F200M3F  -package FBGA484  -grade STD    -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\report\N64_controller_iter_4_fpga_mapper.xml  -top_level_module  N64_controller_iter_4  -licensetype  synplifypro_actel  -flow mapping  -mp  1  -prjfile  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.edn   -freq 100.000   -tcl  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_prem.srd  -sap  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap  -otap  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.tap  -omap  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.map  -devicelib  C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v  -sap  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap  -ologparam  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\syntmp\N64_controller_iter_4.plg  -osyn  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.srm  -prjdir  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\  -prjname  N64_controller_iter_4_syn  -log  N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\N64_controller_iter_4_fpga_mapper.srr 
 rc:1 success:1
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\scratchproject.prs|o|1491486968|3245
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.edn|o|1491494509|1020476
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc|i|1491494017|220
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_prem.srd|i|1491494502|50745
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap|o|1491494502|12922
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\scratchproject.prs|o|1492480175|3245
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.edn|o|1492485898|1030524
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controller_iter_4_MSS\mss_tshell_syn.sdc|i|1492485810|220
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synwork\N64_controller_iter_4_prem.srd|i|1492485889|55876
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap|o|1492485889|12927
 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.tap|o|0|0
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.map|o|1491494513|28
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.map|o|1492485899|28
 C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v|i|1449239730|72817
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap|o|1491494502|12922
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\syntmp\N64_controller_iter_4.plg|o|1491494513|1660
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.srm|o|1491494508|72761
-N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\N64_controller_iter_4_fpga_mapper.srr|o|1491494513|38011
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.sap|o|1492485889|12927
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\syntmp\N64_controller_iter_4.plg|o|1492485899|1660
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\N64_controller_iter_4.srm|o|1492485897|72759
+N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\synthesis\synlog\N64_controller_iter_4_fpga_mapper.srr|o|1492485899|39648
 C:\Microsemi\Libero_SoC_v11.7\Synplify\bin\m_proasic.exe|i|1449756976|9590784
 C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\m_proasic.exe|i|1449758572|12124160

@@ -1,7 +1,7 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Thu Apr 06 12:01:50 2017
+# Timing Report written on Mon Apr 17 23:24:59 2017
 #
 
 
@@ -28,7 +28,7 @@ Worst slack in design: 0.225
                    Requested     Estimated     Requested     Estimated               Clock        Clock          
 Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group          
 -----------------------------------------------------------------------------------------------------------------
-FAB_CLK            25.0 MHz      37.2 MHz      40.000        26.886        6.557     declared     clk_group_0    
+FAB_CLK            25.0 MHz      34.8 MHz      40.000        28.756        5.622     declared     clk_group_0    
 FCLK               25.0 MHz      NA            40.000        NA            NA        declared     clk_group_0    
 System             100.0 MHz     237.0 MHz     10.000        4.220         5.780     system       system_clkgroup
 =================================================================================================================
@@ -153,6 +153,8 @@ Instance                                       Reference     Type        Pin    
                                                Clock                                                                                                                
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLK           MSS_ADLIB_INST_EMCCLK                                    0.000       0.225
+N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     SPI1DO           MSS_SPI_1_DO_D                                           0.000       0.225
+N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     SPI1DOE          MSS_SPI_1_DO_E                                           0.000       0.225
 N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PADDR[9]      0.000       2.843
 N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PADDR[10]     0.000       2.982
 N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PADDR[8]      0.000       2.994
@@ -164,21 +166,21 @@ N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL
 Ending Points with Worst Slack
 ******************************
 
-                                               Starting                                                                                            Required          
-Instance                                       Reference     Type        Pin              Net                                                      Time         Slack
-                                               Clock                                                                                                                 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLKRTN        MSS_ADLIB_INST_EMCCLK                                    0.000        0.225
-N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[0]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[0]     0.000        2.843
-N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[1]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[1]     0.000        2.843
-N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[2]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[2]     0.000        2.843
-N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[3]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[3]     0.000        2.843
-N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[4]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[4]     0.000        2.843
-N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[5]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[5]     0.000        2.843
-N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[6]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[6]     0.000        2.843
-N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[7]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[7]     0.000        2.843
-N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPRDATA[8]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[8]     0.000        2.843
-=====================================================================================================================================================================
+                                               Starting                                                                                                Required          
+Instance                                       Reference     Type            Pin              Net                                                      Time         Slack
+                                               Clock                                                                                                                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB         EMCCLKRTN        MSS_ADLIB_INST_EMCCLK                                    0.000        0.225
+N64_controller_iter_4_MSS_0.MSS_SPI_1_DO       System        TRIBUFF_MSS     D                MSS_SPI_1_DO_D                                           0.000        0.225
+N64_controller_iter_4_MSS_0.MSS_SPI_1_DO       System        TRIBUFF_MSS     E                MSS_SPI_1_DO_E                                           0.000        0.225
+N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[0]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[0]     0.000        2.843
+N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[1]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[1]     0.000        2.843
+N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[2]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[2]     0.000        2.843
+N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[3]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[3]     0.000        2.843
+N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[4]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[4]     0.000        2.843
+N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[5]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[5]     0.000        2.843
+N64_controller_iter_4_MSS_0.MSS_ADLIB_INST     System        MSS_APB         MSSPRDATA[6]     N64_controller_iter_4_MSS_0_MSS_MASTER_APB_PRDATA[6]     0.000        2.843
+=========================================================================================================================================================================
 
 
 

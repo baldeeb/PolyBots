@@ -22,7 +22,7 @@ r_4.edn
 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\component\work\N64_controlle\
 r_iter_4\N64_controller_iter_4.pdc
 
-The Import command succeeded ( 00:00:04 )
+The Import command succeeded ( 00:00:10 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -101,12 +101,6 @@ Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI0CLKO drives 
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI0MODE drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_I2C0SDAO drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_I2C0SCLO drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1DO drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1DOE drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1CLKO drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1MODE drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_I2C1SDAO drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_I2C1SCLO drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_MACTXEN drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_MACMDO drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_MACMDEN drives no load.
@@ -232,38 +226,37 @@ Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPOE[28] drives 
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPOE[29] drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPOE[30] drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPOE[31] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[0] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[1] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[2] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[3] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[4] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[5] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[6] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[7] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[8] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[9] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[10] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[11] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[12] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[13] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[14] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[15] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[16] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[17] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[18] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[19] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[20] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[21] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[22] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[23] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[24] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[25] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[26] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[27] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[28] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[29] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[30] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_GPO[31] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[1] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[2] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[3] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[4] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[5] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[6] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[7] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[8] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[9] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[10] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[11] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[12] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[13] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[14] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[15] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[16] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[17] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[18] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[19] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[20] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[21] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[22] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[23] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[24] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[25] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[26] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[27] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[28] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[29] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[30] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/GPO_net_0[31] drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_MSSINT[0] drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_MSSINT[1] drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_MSSINT[2] drives no load.
@@ -280,14 +273,12 @@ Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI0SSO[4] drive
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI0SSO[5] drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI0SSO[6] drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI0SSO[7] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1SSO[0] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1SSO[1] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1SSO[2] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1SSO[3] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1SSO[4] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1SSO[5] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1SSO[6] drives no load.
-Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_SPI1SSO[7] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/SPI1SSO_net_0[2] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/SPI1SSO_net_0[3] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/SPI1SSO_net_0[4] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/SPI1SSO_net_0[5] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/SPI1SSO_net_0[6] drives no load.
+Warning: CMP201: Net N64_controller_iter_4_MSS_0/SPI1SSO_net_0[7] drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_MACTXD[0] drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_MACTXD[1] drives no load.
 Warning: CMP201: Net N64_controller_iter_4_MSS_0/MSS_ADLIB_INST_ACEFLAGS[0] drives no load.
@@ -416,11 +407,11 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              1
   - Tieoff:                 0
-  - Logic combining:        135
+  - Logic combining:        75
 
-    Total macros optimized  136
+    Total macros optimized  76
 
-There were 0 error(s) and 345 warning(s) in this design.
+There were 0 error(s) and 336 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -440,11 +431,11 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:   1685  Total:   4608   (36.57%)
-    Fabric IO (W/ clocks)      Used:      7  Total:     94   (7.45%)
+    Fabric                     Used:   1741  Total:   4608   (37.78%)
+    Fabric IO (W/ clocks)      Used:      8  Total:     94   (8.51%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:      5  Total:     43   (11.63%)
+    Dedicated MSS IO           Used:     12  Total:     43   (27.91%)
     GLOBAL (Chip+Quadrant)     Used:      3  Total:     15   (20.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -469,7 +460,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 1319         | 1319
+    COMB    | 1375         | 1375
     SEQ     | 366          | 366
 
 I/O Function:
@@ -477,7 +468,7 @@ I/O Function:
     Type                                  | w/o register  | w/ register  | w/ DDR register
     --------------------------------------|---------------|--------------|----------------
     Input I/O                             | 0             | 0            | 0
-    Output I/O                            | 6             | 0            | 0
+    Output I/O                            | 7             | 0            | 0
     Bidirectional I/O                     | 1             | 0            | 0
     Differential Input I/O Pairs          | 0             | 0            | 0
     Differential Output I/O Pairs         | 0             | 0            | 0
@@ -488,11 +479,11 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 0     | 6      | 1
+    LVTTL                           | 3.30v | N/A   | 0     | 7      | 1
 
 I/O Placement:
 
-    Locked  :   7 ( 100.00% )
+    Locked  :   8 ( 100.00% )
     Placed  :   0
     UnPlaced:   0
 
@@ -505,14 +496,14 @@ The following nets have been assigned to a chip global resource:
     369     CLK_NET       Net   : FAB_CLK
                           Driver: N64_controller_iter_4_MSS_0/MSS_CCC_0/I_MSSCCC
                           Source: ESSENTIAL
-    100     INT_NET       Net   : controller_interface_0/global_count6
-                          Driver: controller_interface_0/state_RNIH7DT_3[1]/U_CLKSRC
+    111     INT_NET       Net   : controller_interface_0/state[2]
+                          Driver: controller_interface_0/state_RNISOP9[2]/U_CLKSRC
                           Source: NETLIST
-    68      INT_NET       Net   : controller_interface_0/un21_data_line
-                          Driver: controller_interface_0/state_RNIH7DT_3[2]/U_CLKSRC
+    100     INT_NET       Net   : controller_interface_0/global_count7_1
+                          Driver: controller_interface_0/state_RNILEJJ_1[1]/U_CLKSRC
                           Source: NETLIST
-    64      INT_NET       Net   : controller_interface_0/un1_data_line_1
-                          Driver: controller_interface_0/state_RNI2FQQ1_1[1]/U_CLKSRC
+    66      INT_NET       Net   : controller_interface_0/un6_data_line
+                          Driver: controller_interface_0/state_RNI0SCO_2[1]/U_CLKSRC
                           Source: NETLIST
 
 High fanout nets in the post compile netlist:
@@ -528,16 +519,16 @@ High fanout nets in the post compile netlist:
                           Driver: controller_interface_0/global_count[31]
     23      INT_NET       Net   : controller_interface_0/global_count[4]
                           Driver: controller_interface_0/global_count[4]
+    22      INT_NET       Net   : controller_interface_0/state_0[0]
+                          Driver: controller_interface_0/state_0[0]
+    22      INT_NET       Net   : controller_interface_0/un1_state_5_1
+                          Driver: controller_interface_0/state_RNI0SCO[1]
+    22      INT_NET       Net   : controller_interface_0/un1_state_5_0
+                          Driver: controller_interface_0/state_RNI0SCO_0[1]
+    22      INT_NET       Net   : controller_interface_0/state[0]
+                          Driver: controller_interface_0/state[0]
     22      INT_NET       Net   : controller_interface_0/global_count[10]
                           Driver: controller_interface_0/global_count[10]
-    21      INT_NET       Net   : controller_interface_0/global_count[0]
-                          Driver: controller_interface_0/global_count[0]
-    20      INT_NET       Net   : controller_interface_0/state_0[2]
-                          Driver: controller_interface_0/state_0[2]
-    20      INT_NET       Net   : controller_interface_0/state[2]
-                          Driver: controller_interface_0/state[2]
-    19      INT_NET       Net   : controller_interface_0/N64_bits_received_0[3]
-                          Driver: controller_interface_0/N64_bits_received_0[3]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
@@ -552,24 +543,24 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: controller_interface_0/global_count[31]
     23      INT_NET       Net   : controller_interface_0/global_count[4]
                           Driver: controller_interface_0/global_count[4]
+    22      INT_NET       Net   : controller_interface_0/state_0[0]
+                          Driver: controller_interface_0/state_0[0]
+    22      INT_NET       Net   : controller_interface_0/un1_state_5_1
+                          Driver: controller_interface_0/state_RNI0SCO[1]
+    22      INT_NET       Net   : controller_interface_0/un1_state_5_0
+                          Driver: controller_interface_0/state_RNI0SCO_0[1]
+    22      INT_NET       Net   : controller_interface_0/state[0]
+                          Driver: controller_interface_0/state[0]
     22      INT_NET       Net   : controller_interface_0/global_count[10]
                           Driver: controller_interface_0/global_count[10]
-    21      INT_NET       Net   : controller_interface_0/global_count[0]
-                          Driver: controller_interface_0/global_count[0]
-    20      INT_NET       Net   : controller_interface_0/state_0[2]
-                          Driver: controller_interface_0/state_0[2]
-    20      INT_NET       Net   : controller_interface_0/state[2]
-                          Driver: controller_interface_0/state[2]
-    19      INT_NET       Net   : controller_interface_0/N64_bits_received_0[3]
-                          Driver: controller_interface_0/N64_bits_received_0[3]
 
-The Compile command succeeded ( 00:00:03 )
+The Compile command succeeded ( 00:00:04 )
 Wrote status report to file: N64_controller_iter_4_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: N64_controller_iter_4_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:01 )
 Wrote pin report to file: N64_controller_iter_4_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
@@ -577,6 +568,6 @@ Design saved to file
 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controlle\
 r_iter_4.adb.
 
-The Execute Script command succeeded ( 00:00:12 )
+The Execute Script command succeeded ( 00:00:20 )
 Design closed.
 

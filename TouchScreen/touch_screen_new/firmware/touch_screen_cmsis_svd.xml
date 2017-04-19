@@ -2,7 +2,7 @@
 <device>
   <name>touch_screen</name>
   <version>1.0</version>
-  <description>CMSIS description for touch_screen.  Created by Microsemi SmartDesign on Mon Apr 17 15:43:37 2017</description>
+  <description>CMSIS description for touch_screen.  Created by Microsemi SmartDesign on Tue Apr 18 04:11:34 2017</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>

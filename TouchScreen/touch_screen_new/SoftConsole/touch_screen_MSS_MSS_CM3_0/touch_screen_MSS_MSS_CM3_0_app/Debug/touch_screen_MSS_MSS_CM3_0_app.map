@@ -530,7 +530,7 @@ END GROUP
                 0x20010000                PROVIDE (_estack, __main_stack_start)
                 0x00000000                PROVIDE (__mirrored_nvm, 0x0)
 
-.text           0x20000000     0xade8
+.text           0x20000000     0xae08
  CREATE_OBJECT_SYMBOLS
                 0x20000000                __text_load = LOADADDR (.text)
                 0x20000000                __text_start = .
@@ -694,389 +694,389 @@ END GROUP
  .text.touched  0x200004c8       0x34 ./Adafruit_FT6206.o
                 0x200004c8                touched
  .text.readData
-                0x200004fc      0x234 ./Adafruit_FT6206.o
+                0x200004fc      0x23c ./Adafruit_FT6206.o
                 0x200004fc                readData
  .text.getPoint
-                0x20000730       0x50 ./Adafruit_FT6206.o
-                0x20000730                getPoint
+                0x20000738       0x50 ./Adafruit_FT6206.o
+                0x20000738                getPoint
  .text.readRegister8
-                0x20000780       0x68 ./Adafruit_FT6206.o
-                0x20000780                readRegister8
+                0x20000788       0x68 ./Adafruit_FT6206.o
+                0x20000788                readRegister8
  .text.writeRegister8
-                0x200007e8       0x8c ./Adafruit_FT6206.o
-                0x200007e8                writeRegister8
+                0x200007f0       0x8c ./Adafruit_FT6206.o
+                0x200007f0                writeRegister8
  .text.fillScreen
-                0x20000874       0x34 ./Adafruit_GFX_local.o
-                0x20000874                fillScreen
+                0x2000087c       0x34 ./Adafruit_GFX_local.o
+                0x2000087c                fillScreen
  .text.fillCircleHelper
-                0x200008a8      0x19c ./Adafruit_GFX_local.o
-                0x200008a8                fillCircleHelper
+                0x200008b0      0x19c ./Adafruit_GFX_local.o
+                0x200008b0                fillCircleHelper
  .text.fillRoundRect
-                0x20000a44      0x104 ./Adafruit_GFX_local.o
-                0x20000a44                fillRoundRect
+                0x20000a4c      0x104 ./Adafruit_GFX_local.o
+                0x20000a4c                fillRoundRect
  .text.drawChar
-                0x20000b48      0x210 ./Adafruit_GFX_local.o
-                0x20000b48                drawChar
- .text.height   0x20000d58       0x1c ./Adafruit_GFX_local.o
-                0x20000d58                height
- .text.delay    0x20000d74       0x3c ./Adafruit_ILI9341_local.o
-                0x20000d74                delay
+                0x20000b50      0x210 ./Adafruit_GFX_local.o
+                0x20000b50                drawChar
+ .text.height   0x20000d60       0x1c ./Adafruit_GFX_local.o
+                0x20000d60                height
+ .text.delay    0x20000d7c       0x3c ./Adafruit_ILI9341_local.o
+                0x20000d7c                delay
  .text.startWrite
-                0x20000db0       0x24 ./Adafruit_ILI9341_local.o
-                0x20000db0                startWrite
+                0x20000db8       0x24 ./Adafruit_ILI9341_local.o
+                0x20000db8                startWrite
  .text.spiWrite
-                0x20000dd4       0x34 ./Adafruit_ILI9341_local.o
-                0x20000dd4                spiWrite
+                0x20000ddc       0x34 ./Adafruit_ILI9341_local.o
+                0x20000ddc                spiWrite
  .text.endWrite
-                0x20000e08       0x24 ./Adafruit_ILI9341_local.o
-                0x20000e08                endWrite
+                0x20000e10       0x24 ./Adafruit_ILI9341_local.o
+                0x20000e10                endWrite
  .text.writeCommand
-                0x20000e2c       0x2c ./Adafruit_ILI9341_local.o
-                0x20000e2c                writeCommand
- .text.begin    0x20000e58      0x2f8 ./Adafruit_ILI9341_local.o
-                0x20000e58                begin
+                0x20000e34       0x2c ./Adafruit_ILI9341_local.o
+                0x20000e34                writeCommand
+ .text.begin    0x20000e60      0x2f8 ./Adafruit_ILI9341_local.o
+                0x20000e60                begin
  .text.setRotation
-                0x20001150       0xac ./Adafruit_ILI9341_local.o
-                0x20001150                setRotation
+                0x20001158       0xac ./Adafruit_ILI9341_local.o
+                0x20001158                setRotation
  .text.setAddrWindow
-                0x200011fc       0xc4 ./Adafruit_ILI9341_local.o
-                0x200011fc                setAddrWindow
+                0x20001204       0xc4 ./Adafruit_ILI9341_local.o
+                0x20001204                setAddrWindow
  .text.writePixel
-                0x200012c0       0x2c ./Adafruit_ILI9341_local.o
-                0x200012c0                writePixel
+                0x200012c8       0x2c ./Adafruit_ILI9341_local.o
+                0x200012c8                writePixel
  .text.writePixelCoordinates
-                0x200012ec       0x70 ./Adafruit_ILI9341_local.o
-                0x200012ec                writePixelCoordinates
+                0x200012f4       0x70 ./Adafruit_ILI9341_local.o
+                0x200012f4                writePixelCoordinates
  .text.writeColor
-                0x2000135c       0x48 ./Adafruit_ILI9341_local.o
-                0x2000135c                writeColor
+                0x20001364       0x48 ./Adafruit_ILI9341_local.o
+                0x20001364                writeColor
  .text.writeFillRect
-                0x200013a4      0x108 ./Adafruit_ILI9341_local.o
-                0x200013a4                writeFillRect
+                0x200013ac      0x108 ./Adafruit_ILI9341_local.o
+                0x200013ac                writeFillRect
  .text.writeFastVLine
-                0x200014ac       0x38 ./Adafruit_ILI9341_local.o
-                0x200014ac                writeFastVLine
+                0x200014b4       0x38 ./Adafruit_ILI9341_local.o
+                0x200014b4                writeFastVLine
  .text.fillRect
-                0x200014e4       0x34 ./Adafruit_ILI9341_local.o
-                0x200014e4                fillRect
- .text.map      0x20001518       0x40 ./main.o
-                0x20001518                map
- .text.redBtn   0x20001558       0xd4 ./main.o
-                0x20001558                redBtn
+                0x200014ec       0x34 ./Adafruit_ILI9341_local.o
+                0x200014ec                fillRect
+ .text.map      0x20001520       0x40 ./main.o
+                0x20001520                map
+ .text.redBtn   0x20001560       0xd4 ./main.o
+                0x20001560                redBtn
  .text.greenBtn
-                0x2000162c       0xd4 ./main.o
-                0x2000162c                greenBtn
+                0x20001634       0xd4 ./main.o
+                0x20001634                greenBtn
  .text.linebutton
-                0x20001700      0x1f4 ./main.o
-                0x20001700                linebutton
+                0x20001708      0x1f4 ./main.o
+                0x20001708                linebutton
  .text.n64button
-                0x200018f4      0x1f4 ./main.o
-                0x200018f4                n64button
+                0x200018fc      0x1f4 ./main.o
+                0x200018fc                n64button
  .text.start_stop_buttons
-                0x20001ae8      0x140 ./main.o
-                0x20001ae8                start_stop_buttons
+                0x20001af0      0x140 ./main.o
+                0x20001af0                start_stop_buttons
  .text.mode_buttons
-                0x20001c28      0x138 ./main.o
-                0x20001c28                mode_buttons
+                0x20001c30      0x138 ./main.o
+                0x20001c30                mode_buttons
  .text.config_spi
-                0x20001d60       0x54 ./main.o
-                0x20001d60                config_spi
+                0x20001d68       0x54 ./main.o
+                0x20001d68                config_spi
  .text.setup_screen
-                0x20001db4       0x8c ./main.o
-                0x20001db4                setup_screen
- .text.main     0x20001e40       0xa8 ./main.o
-                0x20001e40                main
- .text._close   0x20001ee8       0x18 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20001ee8                _close
- .text._exit    0x20001f00        0xc N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20001f00                _exit
- .text._fstat   0x20001f0c       0x24 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20001f0c                _fstat
- .text._isatty  0x20001f30       0x18 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20001f30                _isatty
- .text._lseek   0x20001f48       0x1c N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20001f48                _lseek
- .text._read    0x20001f64       0x1c N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20001f64                _read
+                0x20001dbc       0x8c ./main.o
+                0x20001dbc                setup_screen
+ .text.main     0x20001e48       0xa8 ./main.o
+                0x20001e48                main
+ .text._close   0x20001ef0       0x18 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20001ef0                _close
+ .text._exit    0x20001f08        0xc N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20001f08                _exit
+ .text._fstat   0x20001f14       0x24 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20001f14                _fstat
+ .text._isatty  0x20001f38       0x18 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20001f38                _isatty
+ .text._lseek   0x20001f50       0x1c N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20001f50                _lseek
+ .text._read    0x20001f6c       0x1c N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20001f6c                _read
  .text._write_r
-                0x20001f80       0x5c N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20001f80                _write_r
- .text._sbrk    0x20001fdc       0x94 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20001fdc                _sbrk
- .text._times   0x20002070       0x18 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20002070                _times
+                0x20001f88       0x5c N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20001f88                _write_r
+ .text._sbrk    0x20001fe4       0x94 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20001fe4                _sbrk
+ .text._times   0x20002078       0x18 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20002078                _times
  .text.NVIC_ClearPendingIRQ
-                0x20002088       0x3c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20002090       0x3c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.MSS_UART_init
-                0x200020c4      0x204 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x200020c4                MSS_UART_init
+                0x200020cc      0x204 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x200020cc                MSS_UART_init
  .text.MSS_UART_polled_tx
-                0x200022c8       0xe4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x200022c8                MSS_UART_polled_tx
+                0x200022d0       0xe4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x200022d0                MSS_UART_polled_tx
  .text.MSS_UART_isr
-                0x200023ac      0x11c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x200023b4      0x11c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.default_tx_handler
-                0x200024c8      0x108 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x200024d0      0x108 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.UART0_IRQHandler
-                0x200025d0       0x2c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x200025d0                UART0_IRQHandler
+                0x200025d8       0x2c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x200025d8                UART0_IRQHandler
  .text.UART1_IRQHandler
-                0x200025fc       0x2c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x200025fc                UART1_IRQHandler
+                0x20002604       0x2c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20002604                UART1_IRQHandler
  .text.NVIC_EnableIRQ
-                0x20002628       0x38 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20002630       0x38 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.NVIC_DisableIRQ
-                0x20002660       0x3c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20002668       0x3c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.NVIC_ClearPendingIRQ
-                0x2000269c       0x3c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x200026a4       0x3c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.MSS_SPI_init
-                0x200026d8      0x134 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x200026d8                MSS_SPI_init
+                0x200026e0      0x134 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x200026e0                MSS_SPI_init
  .text.recover_from_rx_overflow
-                0x2000280c      0x160 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20002814      0x160 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.MSS_SPI_configure_master_mode
-                0x2000296c      0x120 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x2000296c                MSS_SPI_configure_master_mode
+                0x20002974      0x120 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20002974                MSS_SPI_configure_master_mode
  .text.MSS_SPI_set_slave_select
-                0x20002a8c      0x108 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x20002a8c                MSS_SPI_set_slave_select
+                0x20002a94      0x108 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20002a94                MSS_SPI_set_slave_select
  .text.MSS_SPI_clear_slave_select
-                0x20002b94       0x90 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x20002b94                MSS_SPI_clear_slave_select
+                0x20002b9c       0x90 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20002b9c                MSS_SPI_clear_slave_select
  .text.MSS_SPI_transfer_frame
-                0x20002c24       0xec N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x20002c24                MSS_SPI_transfer_frame
+                0x20002c2c       0xec N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20002c2c                MSS_SPI_transfer_frame
  .text.fill_slave_tx_fifo
-                0x20002d10       0xe0 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20002d18       0xe0 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.read_slave_rx_fifo
-                0x20002df0       0xac N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20002df8       0xac N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.mss_spi_isr
-                0x20002e9c      0x2b0 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20002ea4      0x2b0 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.SPI0_IRQHandler
-                0x2000314c       0x2c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x2000314c                SPI0_IRQHandler
+                0x20003154       0x2c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20003154                SPI0_IRQHandler
  .text.SPI1_IRQHandler
-                0x20003178       0x2c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x20003178                SPI1_IRQHandler
+                0x20003180       0x2c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20003180                SPI1_IRQHandler
  .text.NVIC_EnableIRQ
-                0x200031a4       0x38 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x200031ac       0x38 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.NVIC_DisableIRQ
-                0x200031dc       0x3c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x200031e4       0x3c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.NVIC_ClearPendingIRQ
-                0x20003218       0x3c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20003220       0x3c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.MSS_I2C_init
-                0x20003254      0x16c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x20003254                MSS_I2C_init
+                0x2000325c      0x16c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x2000325c                MSS_I2C_init
  .text.MSS_I2C_write
-                0x200033c0       0xf4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x200033c0                MSS_I2C_write
+                0x200033c8       0xf4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x200033c8                MSS_I2C_write
  .text.MSS_I2C_write_read
-                0x200034b4      0x12c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x200034b4                MSS_I2C_write_read
+                0x200034bc      0x12c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x200034bc                MSS_I2C_write_read
  .text.MSS_I2C_wait_complete
-                0x200035e0       0x4c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x200035e0                MSS_I2C_wait_complete
+                0x200035e8       0x64 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x200035e8                MSS_I2C_wait_complete
  .text.enable_slave_if_required
-                0x2000362c       0x28 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x2000364c       0x28 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.mss_i2c_isr
-                0x20003654      0x8f4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20003674      0x8f4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.disable_interrupts
-                0x20003f48       0x24 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20003f68       0x24 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.restore_interrupts
-                0x20003f6c       0x18 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20003f8c       0x18 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.I2C0_IRQHandler
-                0x20003f84       0x2c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x20003f84                I2C0_IRQHandler
+                0x20003fa4       0x2c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20003fa4                I2C0_IRQHandler
  .text.I2C1_IRQHandler
-                0x20003fb0       0x2c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x20003fb0                I2C1_IRQHandler
+                0x20003fd0       0x2c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20003fd0                I2C1_IRQHandler
  .text.__get_PRIMASK
-                0x20003fdc       0x20 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
-                0x20003fdc                __get_PRIMASK
+                0x20003ffc       0x20 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+                0x20003ffc                __get_PRIMASK
  .text.__set_PRIMASK
-                0x20003ffc       0x18 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
-                0x20003ffc                __set_PRIMASK
+                0x2000401c       0x18 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+                0x2000401c                __set_PRIMASK
  .text.SystemInit
-                0x20004014        0xc N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20004014                SystemInit
+                0x20004034        0xc N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20004034                SystemInit
  .text.SystemCoreClockUpdate
-                0x20004020      0x150 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20004020                SystemCoreClockUpdate
+                0x20004040      0x150 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20004040                SystemCoreClockUpdate
  .text.GetSystemClock
-                0x20004170       0xe8 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .text          0x20004258       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-clock.o)
-                0x20004258                clock
- .text          0x20004284       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
-                0x20004284                __libc_init_array
- .text          0x200042d4       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
-                0x200042d4                free
-                0x200042e4                malloc
- .text          0x200042f4      0x5a4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x200042f4                _malloc_r
- .text          0x20004898       0xd4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
-                0x20004898                memset
- .text          0x2000496c        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
-                0x2000496c                __malloc_lock
-                0x20004970                __malloc_unlock
- .text          0x20004974       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-printf.o)
-                0x20004974                printf
-                0x200049ac                _printf_r
- .text          0x200049d8       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
-                0x200049d8                _sbrk_r
- .text          0x20004a00        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-timesr.o)
-                0x20004a00                _times_r
- .text          0x20004a08     0x1940 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
-                0x20004a24                _vfprintf_r
-                0x2000632c                vfprintf
- .text          0x20006348      0x104 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wsetup.o)
-                0x20006348                __swsetup_r
- *fill*         0x2000644c        0x4 00
- .text          0x20006450      0xfb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
-                0x20006570                _dtoa_r
- .text          0x20007408      0x178 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fflush.o)
-                0x20007408                _fflush_r
-                0x20007558                fflush
- .text          0x20007580      0x1c8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
-                0x20007580                __sfp_lock_acquire
-                0x20007584                __sfp_lock_release
-                0x20007588                __sinit_lock_acquire
-                0x2000758c                __sinit_lock_release
-                0x20007598                __fp_unlock_all
-                0x200075b0                __fp_lock_all
-                0x200075c8                _cleanup_r
-                0x200075d4                _cleanup
-                0x20007630                __sfmoreglue
-                0x20007660                __sfp
-                0x200076e8                __sinit
- .text          0x20007748      0x268 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
-                0x20007748                _malloc_trim_r
-                0x200077f0                _free_r
- .text          0x200079b0      0x334 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fvwrite.o)
-                0x200079b0                __sfvwrite_r
- .text          0x20007ce4       0xa0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fwalk.o)
-                0x20007ce4                _fwalk_reent
-                0x20007d38                _fwalk
- .text          0x20007d84       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
-                0x20007d84                __locale_charset
-                0x20007d90                _localeconv_r
-                0x20007d98                localeconv
-                0x20007da0                _setlocale_r
-                0x20007de8                setlocale
- .text          0x20007df8       0xdc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-makebuf.o)
-                0x20007df8                __smakebuf_r
- .text          0x20007ed4       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
-                0x20007ed4                memchr
- .text          0x20007f48      0x190 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
-                0x20007f48                memcpy
- .text          0x200080d8       0xb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memmove.o)
-                0x200080d8                memmove
- .text          0x20008190      0x958 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
-                0x20008190                __hi0bits
-                0x200081d0                __lo0bits
-                0x20008234                __mcmp
-                0x20008274                __ulp
-                0x200082c0                __b2d
-                0x20008368                __ratio
-                0x200083c8                _mprec_log10
-                0x20008400                __copybits
-                0x20008450                __any_on
-                0x200084a8                _Bfree
-                0x200084e0                _Balloc
-                0x2000854c                __d2b
-                0x2000861c                __mdiff
-                0x20008714                __lshift
-                0x200087d0                __multiply
-                0x20008904                __i2b
-                0x20008918                __multadd
-                0x200089a0                __pow5mult
-                0x20008a4c                __s2b
- .text          0x20008ae8      0x3b4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reallocr.o)
-                0x20008ae8                _realloc_r
- .text          0x20008e9c       0x24 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isinfd.o)
-                0x20008e9c                __isinfd
- .text          0x20008ec0       0x1c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isnand.o)
-                0x20008ec0                __isnand
- .text          0x20008edc       0x90 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-stdio.o)
-                0x20008edc                __sclose
-                0x20008ee4                __sseek
-                0x20008f0c                __swrite
-                0x20008f48                __sread
- .text          0x20008f6c      0x1dc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
-                0x20008f6c                strcmp
- .text          0x20009148       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
-                0x20009148                strlen
- .text          0x200091a8       0x5c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-callocr.o)
-                0x200091a8                _calloc_r
- .text          0x20009204       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-closer.o)
-                0x20009204                _close_r
- .text          0x2000922c       0xcc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fclose.o)
-                0x2000922c                _fclose_r
-                0x200092e8                fclose
- .text          0x200092f8       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fstatr.o)
-                0x200092f8                _fstat_r
- .text          0x20009324       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-isattyr.o)
-                0x20009324                _isatty_r
- .text          0x2000934c       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-lseekr.o)
-                0x2000934c                _lseek_r
- .text          0x20009378       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-readr.o)
-                0x20009378                _read_r
- *fill*         0x200093a4        0x4 00
- .text          0x200093a8      0x278 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivsi3.o)
-                0x200093a8                __aeabi_uidiv
-                0x200093a8                __udivsi3
-                0x20009604                __aeabi_uidivmod
- .text          0x20009620        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_dvmd_tls.o)
-                0x20009620                __aeabi_idiv0
-                0x20009620                __aeabi_ldiv0
- .text          0x20009624      0x370 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
-                0x20009624                __aeabi_drsub
-                0x2000962c                __aeabi_dsub
-                0x2000962c                __subdf3
-                0x20009630                __aeabi_dadd
-                0x20009630                __adddf3
-                0x200098a8                __floatunsidf
-                0x200098a8                __aeabi_ui2d
-                0x200098c8                __floatsidf
-                0x200098c8                __aeabi_i2d
-                0x200098ec                __aeabi_f2d
-                0x200098ec                __extendsfdf2
-                0x20009928                __floatundidf
-                0x20009928                __aeabi_ul2d
-                0x20009938                __floatdidf
-                0x20009938                __aeabi_l2d
- .text          0x20009994      0x424 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
-                0x20009994                __aeabi_dmul
-                0x20009994                __muldf3
-                0x20009be8                __divdf3
-                0x20009be8                __aeabi_ddiv
- .text          0x20009db8      0x110 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
-                0x20009db8                __gtdf2
-                0x20009db8                __gedf2
-                0x20009dc0                __ltdf2
-                0x20009dc0                __ledf2
-                0x20009dc8                __nedf2
-                0x20009dc8                __eqdf2
-                0x20009dc8                __cmpdf2
-                0x20009e44                __aeabi_cdrcmple
-                0x20009e54                __aeabi_cdcmpeq
-                0x20009e54                __aeabi_cdcmple
-                0x20009e64                __aeabi_dcmpeq
-                0x20009e78                __aeabi_dcmplt
-                0x20009e8c                __aeabi_dcmple
-                0x20009ea0                __aeabi_dcmpge
-                0x20009eb4                __aeabi_dcmpgt
- .text          0x20009ec8       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixdfsi.o)
-                0x20009ec8                __aeabi_d2iz
-                0x20009ec8                __fixdfsi
- .text          0x20009f18       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_aeabi_uldivmod.o)
-                0x20009f18                __aeabi_uldivmod
- .text          0x20009f44       0x58 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(bpabi.o)
-                0x20009f44                __gnu_uldivmod_helper
-                0x20009f70                __gnu_ldivmod_helper
- .text          0x20009f9c      0x364 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
-                0x20009f9c                __divdi3
- .text          0x2000a300      0x300 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
-                0x2000a300                __udivdi3
+                0x20004190       0xe8 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .text          0x20004278       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-clock.o)
+                0x20004278                clock
+ .text          0x200042a4       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x200042a4                __libc_init_array
+ .text          0x200042f4       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
+                0x200042f4                free
+                0x20004304                malloc
+ .text          0x20004314      0x5a4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x20004314                _malloc_r
+ .text          0x200048b8       0xd4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                0x200048b8                memset
+ .text          0x2000498c        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
+                0x2000498c                __malloc_lock
+                0x20004990                __malloc_unlock
+ .text          0x20004994       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-printf.o)
+                0x20004994                printf
+                0x200049cc                _printf_r
+ .text          0x200049f8       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
+                0x200049f8                _sbrk_r
+ .text          0x20004a20        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-timesr.o)
+                0x20004a20                _times_r
+ .text          0x20004a28     0x1940 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
+                0x20004a44                _vfprintf_r
+                0x2000634c                vfprintf
+ .text          0x20006368      0x104 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wsetup.o)
+                0x20006368                __swsetup_r
+ *fill*         0x2000646c        0x4 00
+ .text          0x20006470      0xfb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
+                0x20006590                _dtoa_r
+ .text          0x20007428      0x178 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fflush.o)
+                0x20007428                _fflush_r
+                0x20007578                fflush
+ .text          0x200075a0      0x1c8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
+                0x200075a0                __sfp_lock_acquire
+                0x200075a4                __sfp_lock_release
+                0x200075a8                __sinit_lock_acquire
+                0x200075ac                __sinit_lock_release
+                0x200075b8                __fp_unlock_all
+                0x200075d0                __fp_lock_all
+                0x200075e8                _cleanup_r
+                0x200075f4                _cleanup
+                0x20007650                __sfmoreglue
+                0x20007680                __sfp
+                0x20007708                __sinit
+ .text          0x20007768      0x268 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
+                0x20007768                _malloc_trim_r
+                0x20007810                _free_r
+ .text          0x200079d0      0x334 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fvwrite.o)
+                0x200079d0                __sfvwrite_r
+ .text          0x20007d04       0xa0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fwalk.o)
+                0x20007d04                _fwalk_reent
+                0x20007d58                _fwalk
+ .text          0x20007da4       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+                0x20007da4                __locale_charset
+                0x20007db0                _localeconv_r
+                0x20007db8                localeconv
+                0x20007dc0                _setlocale_r
+                0x20007e08                setlocale
+ .text          0x20007e18       0xdc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-makebuf.o)
+                0x20007e18                __smakebuf_r
+ .text          0x20007ef4       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+                0x20007ef4                memchr
+ .text          0x20007f68      0x190 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+                0x20007f68                memcpy
+ .text          0x200080f8       0xb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memmove.o)
+                0x200080f8                memmove
+ .text          0x200081b0      0x958 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
+                0x200081b0                __hi0bits
+                0x200081f0                __lo0bits
+                0x20008254                __mcmp
+                0x20008294                __ulp
+                0x200082e0                __b2d
+                0x20008388                __ratio
+                0x200083e8                _mprec_log10
+                0x20008420                __copybits
+                0x20008470                __any_on
+                0x200084c8                _Bfree
+                0x20008500                _Balloc
+                0x2000856c                __d2b
+                0x2000863c                __mdiff
+                0x20008734                __lshift
+                0x200087f0                __multiply
+                0x20008924                __i2b
+                0x20008938                __multadd
+                0x200089c0                __pow5mult
+                0x20008a6c                __s2b
+ .text          0x20008b08      0x3b4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reallocr.o)
+                0x20008b08                _realloc_r
+ .text          0x20008ebc       0x24 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isinfd.o)
+                0x20008ebc                __isinfd
+ .text          0x20008ee0       0x1c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isnand.o)
+                0x20008ee0                __isnand
+ .text          0x20008efc       0x90 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-stdio.o)
+                0x20008efc                __sclose
+                0x20008f04                __sseek
+                0x20008f2c                __swrite
+                0x20008f68                __sread
+ .text          0x20008f8c      0x1dc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+                0x20008f8c                strcmp
+ .text          0x20009168       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+                0x20009168                strlen
+ .text          0x200091c8       0x5c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-callocr.o)
+                0x200091c8                _calloc_r
+ .text          0x20009224       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-closer.o)
+                0x20009224                _close_r
+ .text          0x2000924c       0xcc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fclose.o)
+                0x2000924c                _fclose_r
+                0x20009308                fclose
+ .text          0x20009318       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fstatr.o)
+                0x20009318                _fstat_r
+ .text          0x20009344       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-isattyr.o)
+                0x20009344                _isatty_r
+ .text          0x2000936c       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-lseekr.o)
+                0x2000936c                _lseek_r
+ .text          0x20009398       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-readr.o)
+                0x20009398                _read_r
+ *fill*         0x200093c4        0x4 00
+ .text          0x200093c8      0x278 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivsi3.o)
+                0x200093c8                __aeabi_uidiv
+                0x200093c8                __udivsi3
+                0x20009624                __aeabi_uidivmod
+ .text          0x20009640        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_dvmd_tls.o)
+                0x20009640                __aeabi_idiv0
+                0x20009640                __aeabi_ldiv0
+ .text          0x20009644      0x370 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+                0x20009644                __aeabi_drsub
+                0x2000964c                __aeabi_dsub
+                0x2000964c                __subdf3
+                0x20009650                __aeabi_dadd
+                0x20009650                __adddf3
+                0x200098c8                __floatunsidf
+                0x200098c8                __aeabi_ui2d
+                0x200098e8                __floatsidf
+                0x200098e8                __aeabi_i2d
+                0x2000990c                __aeabi_f2d
+                0x2000990c                __extendsfdf2
+                0x20009948                __floatundidf
+                0x20009948                __aeabi_ul2d
+                0x20009958                __floatdidf
+                0x20009958                __aeabi_l2d
+ .text          0x200099b4      0x424 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
+                0x200099b4                __aeabi_dmul
+                0x200099b4                __muldf3
+                0x20009c08                __divdf3
+                0x20009c08                __aeabi_ddiv
+ .text          0x20009dd8      0x110 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
+                0x20009dd8                __gtdf2
+                0x20009dd8                __gedf2
+                0x20009de0                __ltdf2
+                0x20009de0                __ledf2
+                0x20009de8                __nedf2
+                0x20009de8                __eqdf2
+                0x20009de8                __cmpdf2
+                0x20009e64                __aeabi_cdrcmple
+                0x20009e74                __aeabi_cdcmpeq
+                0x20009e74                __aeabi_cdcmple
+                0x20009e84                __aeabi_dcmpeq
+                0x20009e98                __aeabi_dcmplt
+                0x20009eac                __aeabi_dcmple
+                0x20009ec0                __aeabi_dcmpge
+                0x20009ed4                __aeabi_dcmpgt
+ .text          0x20009ee8       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixdfsi.o)
+                0x20009ee8                __aeabi_d2iz
+                0x20009ee8                __fixdfsi
+ .text          0x20009f38       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_aeabi_uldivmod.o)
+                0x20009f38                __aeabi_uldivmod
+ .text          0x20009f64       0x58 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(bpabi.o)
+                0x20009f64                __gnu_uldivmod_helper
+                0x20009f90                __gnu_ldivmod_helper
+ .text          0x20009fbc      0x364 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
+                0x20009fbc                __divdi3
+ .text          0x2000a320      0x300 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
+                0x2000a320                __udivdi3
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -1085,7 +1085,7 @@ END GROUP
  .glue_7        0x00000000        0x0 linker stubs
  *(.vfp11_veneer)
  .vfp11_veneer  0x00000000        0x0 linker stubs
-                0x2000a600                . = ALIGN (0x4)
+                0x2000a620                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
@@ -1095,169 +1095,169 @@ END GROUP
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata.font   0x2000a600      0x500 ./Adafruit_GFX_local.o
- .rodata        0x2000ab00       0x50 ./main.o
- .rodata        0x2000ab50       0x1c N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .rodata.font   0x2000a620      0x500 ./Adafruit_GFX_local.o
+ .rodata        0x2000ab20       0x50 ./main.o
+ .rodata        0x2000ab70       0x1c N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .rodata.C.18.2576
-                0x2000ab6c       0x10 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .rodata        0x2000ab7c        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
-                0x2000ab7c                _global_impure_ptr
+                0x2000ab8c       0x10 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .rodata        0x2000ab9c        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x2000ab9c                _global_impure_ptr
  .rodata.str1.4
-                0x2000ab80        0x2 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x2000aba0        0x2 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
                                   0x4 (size before relaxing)
- *fill*         0x2000ab82        0x2 00
- .rodata        0x2000ab84       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
+ *fill*         0x2000aba2        0x2 00
+ .rodata        0x2000aba4       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
  .rodata.str1.4
-                0x2000aba4       0x42 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
+                0x2000abc4       0x42 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
                                  0x44 (size before relaxing)
- *fill*         0x2000abe6        0x2 00
+ *fill*         0x2000ac06        0x2 00
  .rodata.str1.4
-                0x2000abe8       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
+                0x2000ac08       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
                                  0x14 (size before relaxing)
- .rodata        0x2000abf8       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
-                0x2000abf8                __sf_fake_stdin
-                0x2000ac18                __sf_fake_stdout
-                0x2000ac38                __sf_fake_stderr
- .rodata        0x2000ac58       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .rodata        0x2000ac18       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
+                0x2000ac18                __sf_fake_stdin
+                0x2000ac38                __sf_fake_stdout
+                0x2000ac58                __sf_fake_stderr
+ .rodata        0x2000ac78       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
  .rodata.str1.4
-                0x2000ac8c       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+                0x2000acac       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
                                  0x18 (size before relaxing)
- *fill*         0x2000ac9c        0x4 00
- .rodata        0x2000aca0      0x128 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
-                0x2000aca0                __mprec_tens
-                0x2000ad78                __mprec_bigtens
-                0x2000ada0                __mprec_tinytens
+ *fill*         0x2000acbc        0x4 00
+ .rodata        0x2000acc0      0x128 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
+                0x2000acc0                __mprec_tens
+                0x2000ad98                __mprec_bigtens
+                0x2000adc0                __mprec_tinytens
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
  *(.eh_frame_hdr)
  *(.eh_frame)
  *(.init)
- .init          0x2000adc8        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x2000adc8                _init
- .init          0x2000adcc        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .init          0x2000ade8        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x2000ade8                _init
+ .init          0x2000adec        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
  *(.fini)
- .fini          0x2000add4        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x2000add4                _fini
- .fini          0x2000add8        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
-                0x2000ade0                PROVIDE (__preinit_array_start, .)
+ .fini          0x2000adf4        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x2000adf4                _fini
+ .fini          0x2000adf8        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x2000ae00                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x2000ade0                PROVIDE (__preinit_array_end, .)
-                0x2000ade0                PROVIDE (__init_array_start, .)
+                0x2000ae00                PROVIDE (__preinit_array_end, .)
+                0x2000ae00                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x2000ade0        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
-                0x2000ade4                PROVIDE (__init_array_end, .)
-                0x2000ade4                PROVIDE (__fini_array_start, .)
+ .init_array    0x2000ae00        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+                0x2000ae04                PROVIDE (__init_array_end, .)
+                0x2000ae04                PROVIDE (__fini_array_start, .)
  *(.fini_array)
- .fini_array    0x2000ade4        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .fini_array    0x2000ae04        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(SORT(.fini_array.*))
-                0x2000ade8                PROVIDE (__fini_array_end, .)
-                0x2000ade8                __exidx_start = .
+                0x2000ae08                PROVIDE (__fini_array_end, .)
+                0x2000ae08                __exidx_start = .
 
-.v4_bx          0x2000ade8        0x0
+.v4_bx          0x2000ae08        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.ARM.exidx      0x2000ade8        0x8
+.ARM.exidx      0x2000ae08        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x2000ade8        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
- .ARM.exidx     0x2000adf0        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
+ .ARM.exidx     0x2000ae08        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
+ .ARM.exidx     0x2000ae10        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
                                   0x8 (size before relaxing)
-                0x2000adf0                __exidx_end = .
-                0x2000adf0                _etext = .
-                0x2000adf0                PROVIDE (__text_end, .)
+                0x2000ae10                __exidx_end = .
+                0x2000ae10                _etext = .
+                0x2000ae10                PROVIDE (__text_end, .)
 
-.data           0x2000adf0      0x520
-                0x2000adf0                __data_load = LOADADDR (.data)
-                0x2000adf0                _sidata = LOADADDR (.data)
-                0x2000adf0                __data_start = .
-                0x2000adf0                _sdata = .
+.data           0x2000ae10      0x520
+                0x2000ae10                __data_load = LOADADDR (.data)
+                0x2000ae10                _sidata = LOADADDR (.data)
+                0x2000ae10                __data_start = .
+                0x2000ae10                _sdata = .
  *(.jcr)
- .jcr           0x2000adf0        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .jcr           0x2000adf0        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .jcr           0x2000ae10        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .jcr           0x2000ae10        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
  *(.got.plt)
  *(.got)
  *(.shdata)
  *(.data .data.* .gnu.linkonce.d.*)
  .data.SystemFrequency
-                0x2000adf4        0x4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x2000adf4                SystemFrequency
+                0x2000ae14        0x4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x2000ae14                SystemFrequency
  .data.SystemCoreClock
-                0x2000adf8        0x4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x2000adf8                SystemCoreClock
+                0x2000ae18        0x4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x2000ae18                SystemCoreClock
  .data.g_FrequencyPCLK0
-                0x2000adfc        0x4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x2000adfc                g_FrequencyPCLK0
+                0x2000ae1c        0x4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x2000ae1c                g_FrequencyPCLK0
  .data.g_FrequencyPCLK1
-                0x2000ae00        0x4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x2000ae00                g_FrequencyPCLK1
+                0x2000ae20        0x4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x2000ae20                g_FrequencyPCLK1
  .data.g_FrequencyACE
-                0x2000ae04        0x4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x2000ae04                g_FrequencyACE
+                0x2000ae24        0x4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x2000ae24                g_FrequencyACE
  .data.g_FrequencyFPGA
-                0x2000ae08        0x4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x2000ae08                g_FrequencyFPGA
- .data          0x2000ae0c       0xf4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
-                0x2000ae0c                _impure_ptr
- .data          0x2000af00      0x410 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x2000af00                __malloc_av_
-                0x2000b308                __malloc_sbrk_base
-                0x2000b30c                __malloc_trim_threshold
-                0x2000b310                . = ALIGN (0x4)
-                0x2000b310                _edata = .
+                0x2000ae28        0x4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x2000ae28                g_FrequencyFPGA
+ .data          0x2000ae2c       0xf4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x2000ae2c                _impure_ptr
+ .data          0x2000af20      0x410 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x2000af20                __malloc_av_
+                0x2000b328                __malloc_sbrk_base
+                0x2000b32c                __malloc_trim_threshold
+                0x2000b330                . = ALIGN (0x4)
+                0x2000b330                _edata = .
 
-.bss            0x2000b310      0x298
-                0x2000b310                __bss_start__ = .
-                0x2000b310                _sbss = .
+.bss            0x2000b330      0x298
+                0x2000b330                __bss_start__ = .
+                0x2000b330                _sbss = .
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x2000b310        0x1 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- *fill*         0x2000b311        0x3 00
+ .bss           0x2000b330        0x1 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ *fill*         0x2000b331        0x3 00
  .bss.MovementOn
-                0x2000b314        0x4 ./main.o
-                0x2000b314                MovementOn
+                0x2000b334        0x4 ./main.o
+                0x2000b334                MovementOn
  .bss.N64ControlOn
-                0x2000b318        0x4 ./main.o
-                0x2000b318                N64ControlOn
+                0x2000b338        0x4 ./main.o
+                0x2000b338                N64ControlOn
  .bss.g_stdio_uart_init_done
-                0x2000b31c        0x4 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x2000b33c        0x4 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .bss.heap_end.3594
-                0x2000b320        0x4 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .bss           0x2000b324       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x2000b324                __malloc_top_pad
-                0x2000b328                __malloc_current_mallinfo
-                0x2000b350                __malloc_max_sbrked_mem
-                0x2000b354                __malloc_max_total_mem
+                0x2000b340        0x4 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .bss           0x2000b344       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x2000b344                __malloc_top_pad
+                0x2000b348                __malloc_current_mallinfo
+                0x2000b370                __malloc_max_sbrked_mem
+                0x2000b374                __malloc_max_total_mem
  *(COMMON)
- COMMON         0x2000b358        0x8 ./main.o
-                0x2000b358                print
-                0x2000b35c                ts
- COMMON         0x2000b360       0x50 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x2000b360                g_mss_uart1
-                0x2000b388                g_mss_uart0
- COMMON         0x2000b3b0      0x108 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x2000b3b0                g_mss_spi1
-                0x2000b434                g_mss_spi0
- COMMON         0x2000b4b8       0xe8 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x2000b4b8                g_mss_i2c0
-                0x2000b52c                g_mss_i2c1
- COMMON         0x2000b5a0        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
-                0x2000b5a0                errno
-                0x2000b5a8                . = ALIGN (0x8)
- *fill*         0x2000b5a4        0x4 00
-                0x2000b5a8                __bss_end__ = .
-                0x2000b5a8                _end = .
-                0x2000b5a8                __end = _end
-                0x2000b5a8                _ebss = .
-                0x2000b5a8                PROVIDE (end, .)
+ COMMON         0x2000b378        0x8 ./main.o
+                0x2000b378                print
+                0x2000b37c                ts
+ COMMON         0x2000b380       0x50 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x2000b380                g_mss_uart1
+                0x2000b3a8                g_mss_uart0
+ COMMON         0x2000b3d0      0x108 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x2000b3d0                g_mss_spi1
+                0x2000b454                g_mss_spi0
+ COMMON         0x2000b4d8       0xe8 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x2000b4d8                g_mss_i2c0
+                0x2000b54c                g_mss_i2c1
+ COMMON         0x2000b5c0        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+                0x2000b5c0                errno
+                0x2000b5c8                . = ALIGN (0x8)
+ *fill*         0x2000b5c4        0x4 00
+                0x2000b5c8                __bss_end__ = .
+                0x2000b5c8                _end = .
+                0x2000b5c8                __end = _end
+                0x2000b5c8                _ebss = .
+                0x2000b5c8                PROVIDE (end, .)
 
-.stack          0x2000b5a8     0x3000
-                0x2000b5a8                . = ALIGN (0x4)
-                0x2000c5a8                . = (. + PROCESS_STACK_SIZE)
- *fill*         0x2000b5a8     0x1000 00
-                0x2000c5a8                . = ALIGN (0x4)
-                0x2000e5a8                . = (. + MAIN_STACK_SIZE)
- *fill*         0x2000c5a8     0x2000 00
-                0x2000e5a8                . = ALIGN (0x4)
+.stack          0x2000b5c8     0x3000
+                0x2000b5c8                . = ALIGN (0x4)
+                0x2000c5c8                . = (. + PROCESS_STACK_SIZE)
+ *fill*         0x2000b5c8     0x1000 00
+                0x2000c5c8                . = ALIGN (0x4)
+                0x2000e5c8                . = (. + MAIN_STACK_SIZE)
+ *fill*         0x2000c5c8     0x2000 00
+                0x2000e5c8                . = ALIGN (0x4)
 
 .stab
  *(.stab)
@@ -1337,19 +1337,19 @@ END GROUP
  .debug_pubnames
                 0x00000e3f       0xb4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_info     0x00000000     0x9b3d
+.debug_info     0x00000000     0x9b5a
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0xd0b ./Adafruit_FT6206.o
- .debug_info    0x00000d0b     0x1151 ./Adafruit_GFX_local.o
- .debug_info    0x00001e5c     0x125e ./Adafruit_ILI9341_local.o
- .debug_info    0x000030ba       0x5b ./glcdfont.o
- .debug_info    0x00003115      0xdb3 ./main.o
- .debug_info    0x00003ec8     0x10f0 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_info    0x00004fb8     0x15a4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_info    0x0000655c     0x1472 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
- .debug_info    0x000079ce     0x16e7 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
- .debug_info    0x000090b5      0x54c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
- .debug_info    0x00009601      0x53c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_info    0x00000000      0xd19 ./Adafruit_FT6206.o
+ .debug_info    0x00000d19     0x1151 ./Adafruit_GFX_local.o
+ .debug_info    0x00001e6a     0x125e ./Adafruit_ILI9341_local.o
+ .debug_info    0x000030c8       0x5b ./glcdfont.o
+ .debug_info    0x00003123      0xdb3 ./main.o
+ .debug_info    0x00003ed6     0x10f0 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_info    0x00004fc6     0x15a4 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_info    0x0000656a     0x1472 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_info    0x000079dc     0x16f6 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_info    0x000090d2      0x54c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_info    0x0000961e      0x53c N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_abbrev   0x00000000     0x1207
  *(.debug_abbrev)
@@ -1365,19 +1365,19 @@ END GROUP
  .debug_abbrev  0x0000101d       0xd9 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
  .debug_abbrev  0x000010f6      0x111 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_line     0x00000000     0x3773
+.debug_line     0x00000000     0x3776
  *(.debug_line)
- .debug_line    0x00000000      0x2e2 ./Adafruit_FT6206.o
- .debug_line    0x000002e2      0x841 ./Adafruit_GFX_local.o
- .debug_line    0x00000b23      0x789 ./Adafruit_ILI9341_local.o
- .debug_line    0x000012ac       0x2e ./glcdfont.o
- .debug_line    0x000012da      0x5b6 ./main.o
- .debug_line    0x00001890      0x559 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_line    0x00001de9      0x5c5 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_line    0x000023ae      0x759 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
- .debug_line    0x00002b07      0x741 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
- .debug_line    0x00003248      0x274 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
- .debug_line    0x000034bc      0x2b7 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_line    0x00000000      0x2e3 ./Adafruit_FT6206.o
+ .debug_line    0x000002e3      0x841 ./Adafruit_GFX_local.o
+ .debug_line    0x00000b24      0x789 ./Adafruit_ILI9341_local.o
+ .debug_line    0x000012ad       0x2e ./glcdfont.o
+ .debug_line    0x000012db      0x5b6 ./main.o
+ .debug_line    0x00001891      0x559 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_line    0x00001dea      0x5c5 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_line    0x000023af      0x759 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_line    0x00002b08      0x743 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_line    0x0000324b      0x274 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_line    0x000034bf      0x2b7 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_frame    0x00000000     0x2448
  *(.debug_frame)
@@ -1434,29 +1434,29 @@ END GROUP
  .debug_frame   0x000023d0       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
  .debug_frame   0x0000240c       0x3c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
 
-.debug_str      0x00000000     0x2d7c
+.debug_str      0x00000000     0x2d89
  *(.debug_str)
- .debug_str     0x00000000     0x1110 ./Adafruit_FT6206.o
-                               0x11b5 (size before relaxing)
- .debug_str     0x00001110      0x289 ./Adafruit_GFX_local.o
+ .debug_str     0x00000000     0x1115 ./Adafruit_FT6206.o
+                               0x11ba (size before relaxing)
+ .debug_str     0x00001115      0x289 ./Adafruit_GFX_local.o
                                 0x3f1 (size before relaxing)
- .debug_str     0x00001399      0x433 ./Adafruit_ILI9341_local.o
+ .debug_str     0x0000139e      0x433 ./Adafruit_ILI9341_local.o
                                0x11cc (size before relaxing)
- .debug_str     0x000017cc        0xe ./glcdfont.o
+ .debug_str     0x000017d1        0xe ./glcdfont.o
                                  0xaa (size before relaxing)
- .debug_str     0x000017da      0x1d8 ./main.o
+ .debug_str     0x000017df      0x1d8 ./main.o
                                0x11fc (size before relaxing)
- .debug_str     0x000019b2      0x497 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_str     0x000019b7      0x497 N:/eecs373/PolyBots/TouchScreen/touch_screen_new/SoftConsole/touch_screen_MSS_MSS_CM3_0/touch_screen_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
                                0x10c5 (size before relaxing)
- .debug_str     0x00001e49      0x60b N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_str     0x00001e4e      0x60b N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
                                0x14d6 (size before relaxing)
- .debug_str     0x00002454      0x359 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_str     0x00002459      0x359 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
                                0x16e7 (size before relaxing)
- .debug_str     0x000027ad      0x396 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                               0x1776 (size before relaxing)
- .debug_str     0x00002b43      0x142 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_str     0x000027b2      0x39e N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                               0x177e (size before relaxing)
+ .debug_str     0x00002b50      0x142 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
                                 0x28c (size before relaxing)
- .debug_str     0x00002c85       0xf7 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_str     0x00002c92       0xf7 N:\eecs373\PolyBots\TouchScreen\touch_screen_new\SoftConsole\touch_screen_MSS_MSS_CM3_0\touch_screen_MSS_MSS_CM3_0_hw_platform\Debug\libtouch_screen_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
                                 0x479 (size before relaxing)
 
 .debug_loc      0x00000000     0x2974

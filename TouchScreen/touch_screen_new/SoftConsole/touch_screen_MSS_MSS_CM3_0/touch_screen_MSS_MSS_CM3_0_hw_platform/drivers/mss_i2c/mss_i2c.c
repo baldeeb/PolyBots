@@ -420,6 +420,7 @@ mss_i2c_status_t MSS_I2C_wait_complete
     uint32_t timeout_ms
 )
 {
+	uint32_t counter  = 0;
 	mss_i2c_status_t i2c_status;
     
     ASSERT( (this_i2c == &g_mss_i2c0) || (this_i2c == &g_mss_i2c1) );
@@ -429,7 +430,8 @@ mss_i2c_status_t MSS_I2C_wait_complete
     /* Run the loop until state returns I2C_FAILED  or I2C_SUCESS*/
     do {
         i2c_status = this_i2c->master_status;
-    } while(MSS_I2C_IN_PROGRESS == i2c_status);
+        counter++;
+    } while(MSS_I2C_IN_PROGRESS == i2c_status && counter < 1000);
 
     return i2c_status;
 }

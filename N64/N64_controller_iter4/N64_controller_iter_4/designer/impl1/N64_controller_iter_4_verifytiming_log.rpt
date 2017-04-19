@@ -14,7 +14,7 @@ Opened an existing Libero design N64_controller_iter_4.adb.
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 Wrote timing report to file: N64_controller_iter_4_maxdelay_timing_report.txt
 
-The Report command succeeded ( 00:00:10 )
+The Report command succeeded ( 00:00:03 )
 Wrote timing report to file: N64_controller_iter_4_mindelay_timing_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -30,6 +30,6 @@ Design saved to file
 N:\eecs373\PolyBots\N64\N64_controller_iter4\N64_controller_iter_4\designer\impl1\N64_controlle\
 r_iter_4.adb.
 
-The Execute Script command succeeded ( 00:00:13 )
+The Execute Script command succeeded ( 00:00:07 )
 Design closed.
 

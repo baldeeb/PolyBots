@@ -69,12 +69,12 @@ void readData(struct Adafruit_FT6206 * ts, uint16_t *x, uint16_t *y) {
 	//  Wire.endTransmission();
 	//
 	//
-
+	  uint8_t zero =0;
 	  MSS_I2C_init(&g_mss_i2c1, FT6206_ADDR, MSS_I2C_PCLK_DIV_256 );
-	  MSS_I2C_write_read( &g_mss_i2c1, FT6206_ADDR, (uint8_t) 0,
-	                              sizeof(uint8_t), i2cdat, sizeof(i2cdat),
+	  MSS_I2C_write_read( &g_mss_i2c1, FT6206_ADDR, &zero,
+	                              sizeof(zero), i2cdat, sizeof(i2cdat),
 	                              MSS_I2C_RELEASE_BUS );
-	  MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
+	  MSS_I2C_wait_complete(&g_mss_i2c1, 1);
 	  ts->touches = i2cdat[0x02];
 
 	  //Serial.println(touches);
@@ -137,7 +137,7 @@ uint8_t readRegister8(uint8_t reg) {
 	  MSS_I2C_write_read(    &g_mss_i2c1, FT6206_ADDR, &reg,
               sizeof(reg), &x, sizeof(x),
               MSS_I2C_RELEASE_BUS);
-	  MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
+	  MSS_I2C_wait_complete(&g_mss_i2c1, 1);
 
 	  //  Serial.print("$"); Serial.print(reg, HEX);
 	  //  Serial.print(": 0x"); Serial.println(x, HEX);
@@ -162,7 +162,7 @@ void writeRegister8(uint8_t reg, uint8_t val) {
 					sizeof(reg),
 					MSS_I2C_RELEASE_BUS
 				);
-		MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
+		MSS_I2C_wait_complete(&g_mss_i2c1, 1);
 
 		MSS_I2C_write
 					(
@@ -172,7 +172,7 @@ void writeRegister8(uint8_t reg, uint8_t val) {
 						sizeof(val),
 						MSS_I2C_RELEASE_BUS
 					);
-			MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
+			MSS_I2C_wait_complete(&g_mss_i2c1, 1);
 }
 
 /****************/

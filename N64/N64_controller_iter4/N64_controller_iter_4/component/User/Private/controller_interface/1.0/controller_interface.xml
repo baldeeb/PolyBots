@@ -8,7 +8,23 @@
     <spirit:name>BIF_1</spirit:name>
     <spirit:busType spirit:vendor="AMBA" spirit:library="AMBA2" spirit:name="APB" spirit:version="r0p0"/>
     <spirit:slave></spirit:slave>
-    <spirit:signalMap></spirit:signalMap>
+    <spirit:signalMap>
+      <spirit:signalName>
+        <spirit:componentSignalName>PADDR</spirit:componentSignalName><spirit:busSignalName>PADDR</spirit:busSignalName></spirit:signalName>
+      <spirit:signalName>
+        <spirit:componentSignalName>PENABLE</spirit:componentSignalName><spirit:busSignalName>PENABLE</spirit:busSignalName></spirit:signalName>
+      <spirit:signalName>
+        <spirit:componentSignalName>PWRITE</spirit:componentSignalName><spirit:busSignalName>PWRITE</spirit:busSignalName></spirit:signalName>
+      <spirit:signalName>
+        <spirit:componentSignalName>PRDATA</spirit:componentSignalName><spirit:busSignalName>PRDATA</spirit:busSignalName></spirit:signalName>
+      <spirit:signalName>
+        <spirit:componentSignalName>PWDATA</spirit:componentSignalName><spirit:busSignalName>PWDATA</spirit:busSignalName></spirit:signalName>
+      <spirit:signalName>
+        <spirit:componentSignalName>PREADY</spirit:componentSignalName><spirit:busSignalName>PREADY</spirit:busSignalName></spirit:signalName>
+      <spirit:signalName>
+        <spirit:componentSignalName>PSLVERR</spirit:componentSignalName><spirit:busSignalName>PSLVERR</spirit:busSignalName></spirit:signalName>
+      <spirit:signalName>
+        <spirit:componentSignalName>PSEL</spirit:componentSignalName><spirit:busSignalName>PSELx</spirit:busSignalName></spirit:signalName></spirit:signalMap>
     <spirit:vendorExtensions></spirit:vendorExtensions>
   </spirit:busInterface>
   </spirit:busInterfaces>
@@ -86,14 +102,6 @@
       </spirit:signal>
     </spirit:signals>
     <spirit:hwParameters>
-      <spirit:hwParameter spirit:id="IDLE" spirit:name="IDLE" spirit:prompt="IDLE:" spirit:dataType="int" spirit:resolve="user">0</spirit:hwParameter>
-      <spirit:hwParameter spirit:id="INIT_BIT_SEND" spirit:name="INIT_BIT_SEND" spirit:prompt="INIT_BIT_SEND:" spirit:dataType="int" spirit:resolve="user">1</spirit:hwParameter>
-      <spirit:hwParameter spirit:id="SEND_N64_BIT" spirit:name="SEND_N64_BIT" spirit:prompt="SEND_N64_BIT:" spirit:dataType="int" spirit:resolve="user">2</spirit:hwParameter>
-      <spirit:hwParameter spirit:id="UPDATE_N64_BIT_COUNT" spirit:name="UPDATE_N64_BIT_COUNT" spirit:prompt="UPDATE_N64_BIT_COUNT:" spirit:dataType="int" spirit:resolve="user">3</spirit:hwParameter>
-      <spirit:hwParameter spirit:id="INIT_BIT_RECEIVE" spirit:name="INIT_BIT_RECEIVE" spirit:prompt="INIT_BIT_RECEIVE:" spirit:dataType="int" spirit:resolve="user">4</spirit:hwParameter>
-      <spirit:hwParameter spirit:id="RECEIVE_BIT" spirit:name="RECEIVE_BIT" spirit:prompt="RECEIVE_BIT:" spirit:dataType="int" spirit:resolve="user">5</spirit:hwParameter>
-      <spirit:hwParameter spirit:id="UPDATE_N64_BIT_RECEIVED_COUNT" spirit:name="UPDATE_N64_BIT_RECEIVED_COUNT" spirit:prompt="UPDATE_N64_BIT_RECEIVED_COUNT:" spirit:dataType="int" spirit:resolve="user">6</spirit:hwParameter>
-      <spirit:hwParameter spirit:id="WAITE" spirit:name="WAITE" spirit:prompt="WAITE:" spirit:dataType="int" spirit:resolve="user">7</spirit:hwParameter>
     </spirit:hwParameters>
   </spirit:hwModel>
   <spirit:choices>

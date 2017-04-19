@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Apr 17 15:43:32 2017
+// Created by SmartDesign Tue Apr 18 04:11:25 2017
 // Version: v11.7 SP1 11.7.1.14
 //////////////////////////////////////////////////////////////////////
 
@@ -100,10 +100,10 @@ wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
-wire   [19:0] touch_screen_MSS_0_MSS_MASTER_APB_PADDR;
 wire   [31:20]touch_screen_MSS_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] touch_screen_MSS_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] touch_screen_MSS_0_MSS_MASTER_APB_PADDR_0;
+wire   [19:0] touch_screen_MSS_0_MSS_MASTER_APB_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------

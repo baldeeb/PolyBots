@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
-Date: Thu Apr 06 12:03:34 2017
+Date: Mon Apr 17 23:26:37 2017
 Design Name: N64_controller_iter_4  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
 
 
@@ -22,11 +22,11 @@ Global Nets Information:
         |-----------------------------------------------------------------------|
         |FAB_CLK                               |      366 |        0 |       32 |
         |-----------------------------------------------------------------------|
-        |controller_interface_0/global_count6  |      100 |        0 |        0 |
+        |controller_interface_0/global_count7_1|      100 |        0 |        0 |
         |-----------------------------------------------------------------------|
-        |controller_interface_0/un1_data_line_1|       64 |        0 |        0 |
+        |controller_interface_0/state[2]       |      111 |        0 |        0 |
         |-----------------------------------------------------------------------|
-        |controller_interface_0/un21_data_line |       68 |        0 |        0 |
+        |controller_interface_0/un6_data_line  |       66 |        0 |        0 |
         |-----------------------------------------------------------------------|
 
 Nets Sharing Loads:
@@ -34,12 +34,13 @@ Nets Sharing Loads:
         |-----------------------------------------------------------------------------|
         |Global Net                            |Shares Loads With ...                 |
         |-----------------------------------------------------------------------------|
-        |FAB_CLK                               |controller_interface_0/un1_data_line_1|
-        |                                      |controller_interface_0/un21_data_line |
+        |FAB_CLK                               |controller_interface_0/un6_data_line  |
         |-----------------------------------------------------------------------------|
-        |controller_interface_0/un1_data_line_1|FAB_CLK                               |
+        |controller_interface_0/global_count7_1|controller_interface_0/state[2]       |
         |-----------------------------------------------------------------------------|
-        |controller_interface_0/un21_data_line |FAB_CLK                               |
+        |controller_interface_0/state[2]       |controller_interface_0/global_count7_1|
+        |-----------------------------------------------------------------------------|
+        |controller_interface_0/un6_data_line  |FAB_CLK                               |
         |-----------------------------------------------------------------------------|
 
 Summary of Global Net Placement:
@@ -49,9 +50,9 @@ Summary of Global Net Placement:
         |------------------------------------------------------------------------------------------|
         |FAB_CLK                               |MIDDLE_LEFT         |                              |
         |------------------------------------------------------------------------------------------|
-        |controller_interface_0/global_count6  |MIDDLE_RIGHT        |                              |
+        |controller_interface_0/global_count7_1|MIDDLE_RIGHT        |                              |
         |------------------------------------------------------------------------------------------|
-        |controller_interface_0/un1_data_line_1|MIDDLE_RIGHT        |                              |
+        |controller_interface_0/state[2]       |MIDDLE_RIGHT        |                              |
         |------------------------------------------------------------------------------------------|
-        |controller_interface_0/un21_data_line |MIDDLE_RIGHT        |                              |
+        |controller_interface_0/un6_data_line  |MIDDLE_RIGHT        |                              |
         |------------------------------------------------------------------------------------------|
