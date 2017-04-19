@@ -398,7 +398,7 @@ SIZE="59286"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_fp\motorCONTROL.pro,pro"
 STATE="utd"
-TIME="1492446917"
+TIME="1492455955"
 SIZE="2456"
 ENDFILE
 VALUE "<project>\designer\impl1\motorCONTROL_fp\projectData\motorCONTROL.pdb,pdb"
@@ -479,7 +479,7 @@ SIZE="552"
 ENDFILE
 VALUE "<project>\synthesis\motorCONTROL_syn.prj,prj"
 STATE="utd"
-TIME="1492446917"
+TIME="1492455955"
 SIZE="2850"
 ENDFILE
 ENDLIST
@@ -639,10 +639,10 @@ ENDLIST
 LIST PhySynthesisOptions
 ENDLIST
 LIST Profiles
-NAME="SoftConsole"
+NAME="SoftConsole v3.3"
 FUNCTION="SoftwareIDE"
 TOOL="SoftConsole"
-LOCATION="eclipse.exe"
+LOCATION="C:\Program Files (x86)\Microsemi\SoftConsole v3.3\Eclipse\eclipse.exe"
 PARAM=""
 BATCH=0
 LICENSE=""

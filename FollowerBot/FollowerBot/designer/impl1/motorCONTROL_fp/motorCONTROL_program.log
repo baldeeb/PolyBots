@@ -40,7 +40,7 @@ programmer '79978' : Verifying FPGA Array
 programmer '79978' :         Verifying FPGA Array -- pass
 programmer '79978' : Program System Init and Boot Clients...
 programmer '79978' : Verify System Init and Boot Clients...
-programmer '79978' : Finished: Sun Apr 16 23:54:23 2017 (Elapsed time 00:00:39)
+programmer '79978' : Finished: Tue Apr 18 04:27:31 2017 (Elapsed time 00:00:38)
 programmer '79978' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
