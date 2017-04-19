@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Apr 10 21:14:29 2017 ***************************************************************************
+                          Tue Apr 18 04:00:15 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
-File Name: N:\Project\NewProject-4-10\motorCONTROL\designer\impl1\motorCONTROL.adb
+File Name: N:\Project\GIT\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL.adb
 Design Name: motorCONTROL  Design State: compile
-Last Saved: Mon Apr 10 18:25:40 2017
+Last Saved: Fri Apr 14 15:06:14 2017
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Apr 10 21:14:21 2017:
-        N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL.edn
-        N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
+Source File(s) Imported on Tue Apr 18 04:00:09 2017:
+        N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.edn
+        N:\Project\GIT\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,9 +50,9 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL.edn
+Source      : N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.edn
 
-N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
+N:\Project\GIT\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
 Format      : EDIF
 Topcell     : motorCONTROL
 Speed grade : STD

@@ -1,23 +1,23 @@
 #--  Synopsys, Inc.
 #--  Version J-2015.03M-SP1-2
-#--  Project file N:\Project\NewProject-4-10\motorCONTROL\synthesis\scratchproject.prs
+#--  Project file N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\scratchproject.prs
 
 #project files
-add_file -verilog "N:/Project/NewProject-4-10/motorCONTROL/hdl/m_control.v"
-add_file -verilog "N:/Project/NewProject-4-10/motorCONTROL/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
-add_file -verilog "N:/Project/NewProject-4-10/motorCONTROL/component/work/motorCONTROL_MSS/mss_tshell.v"
-add_file -verilog "N:/Project/NewProject-4-10/motorCONTROL/component/work/motorCONTROL_MSS/MSS_CCC_0/motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
-add_file -verilog "N:/Project/NewProject-4-10/motorCONTROL/component/work/motorCONTROL_MSS/motorCONTROL_MSS.v"
-add_file -verilog -lib COREAPB3_LIB "N:/Project/NewProject-4-10/motorCONTROL/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v"
-add_file -verilog -lib COREAPB3_LIB "N:/Project/NewProject-4-10/motorCONTROL/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v"
-add_file -verilog -lib COREAPB3_LIB "N:/Project/NewProject-4-10/motorCONTROL/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v"
-add_file -verilog "N:/Project/NewProject-4-10/motorCONTROL/component/work/motorCONTROL/motorCONTROL.v"
-add_file -constraint "N:/Project/NewProject-4-10/motorCONTROL/component/work/motorCONTROL_MSS/mss_tshell_syn.sdc"
+add_file -verilog "N:/Project/GIT/MotorControlWork/motorCONTROL/hdl/m_control.v"
+add_file -verilog "N:/Project/GIT/MotorControlWork/motorCONTROL/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
+add_file -verilog "N:/Project/GIT/MotorControlWork/motorCONTROL/component/work/motorCONTROL_MSS/mss_tshell.v"
+add_file -verilog "N:/Project/GIT/MotorControlWork/motorCONTROL/component/work/motorCONTROL_MSS/MSS_CCC_0/motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
+add_file -verilog "N:/Project/GIT/MotorControlWork/motorCONTROL/component/work/motorCONTROL_MSS/motorCONTROL_MSS.v"
+add_file -verilog -lib COREAPB3_LIB "N:/Project/GIT/MotorControlWork/motorCONTROL/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v"
+add_file -verilog -lib COREAPB3_LIB "N:/Project/GIT/MotorControlWork/motorCONTROL/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v"
+add_file -verilog -lib COREAPB3_LIB "N:/Project/GIT/MotorControlWork/motorCONTROL/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v"
+add_file -verilog "N:/Project/GIT/MotorControlWork/motorCONTROL/component/work/motorCONTROL/motorCONTROL.v"
+add_file -constraint "N:/Project/GIT/MotorControlWork/motorCONTROL/component/work/motorCONTROL_MSS/mss_tshell_syn.sdc"
 
 
 
 #implementation: "synthesis"
-impl -add N:\Project\NewProject-4-10\motorCONTROL\synthesis -type fpga
+impl -add N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis -type fpga
 
 #
 #implementation attributes
@@ -71,5 +71,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "N:/Project/NewProject-4-10/motorCONTROL/synthesis/motorCONTROL.edn"
+project -result_file "N:/Project/GIT/MotorControlWork/motorCONTROL/synthesis/motorCONTROL.edn"
 impl -active "synthesis"

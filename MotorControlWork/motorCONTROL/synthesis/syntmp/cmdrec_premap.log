@@ -1,0 +1,15 @@
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\m_proasic.exe  -mp  1  -prjfile  N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\scratchproject.prs  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis   -part A2F200M3F  -package FBGA484  -grade STD    -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synlog\report\motorCONTROL_premap.xml  -top_level_module  motorCONTROL  -oedif  N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.edn  -conchk_prepass  N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\motorCONTROL_cck_prepass.rpt   -freq 100.000   -tcl  N:\Project\GIT\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc  N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synwork\motorCONTROL_mult.srs  -flow prepass  -gcc_prepass  -osrd  N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synwork\motorCONTROL_prem.srd  -qsap  N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.sap  -devicelib  C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v  -ologparam  N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\syntmp\motorCONTROL.plg  -osyn  N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synwork\motorCONTROL_prem.srd  -prjdir  N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\  -prjname  motorCONTROL_syn  -log  N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synlog\motorCONTROL_premap.srr 
+rc:0 success:1
+N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\scratchproject.prs|o|1492502390|2891
+N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.edn|o|1492196775|447032
+N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\motorCONTROL_cck_prepass.rpt|o|0|0
+N:\Project\GIT\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc|i|1492282994|202
+N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synwork\motorCONTROL_mult.srs|i|1492502394|12022
+N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synwork\motorCONTROL_prem.srd|o|1492502395|45520
+N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.sap|o|1492502395|2629
+C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\proasic\smartfusion.v|i|1449239730|72817
+N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\syntmp\motorCONTROL.plg|o|1492502394|0
+N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synwork\motorCONTROL_prem.srd|o|1492502395|45520
+N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synlog\motorCONTROL_premap.srr|o|1492502395|2282
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin\m_proasic.exe|i|1449756976|9590784
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\m_proasic.exe|i|1449758572|12124160

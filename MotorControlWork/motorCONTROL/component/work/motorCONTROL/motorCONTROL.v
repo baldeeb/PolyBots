@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Apr 14 12:05:52 2017
+// Created by SmartDesign Sun Apr 16 18:15:02 2017
 // Version: v11.7 SP1 11.7.1.14
 //////////////////////////////////////////////////////////////////////
 
@@ -122,10 +122,10 @@ wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
-wire   [19:0] motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR;
 wire   [31:20]motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR_0;
+wire   [19:0] motorCONTROL_MSS_0_MSS_MASTER_APB_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------

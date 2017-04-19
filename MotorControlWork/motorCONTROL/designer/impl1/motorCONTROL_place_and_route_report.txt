@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Apr 10 21:15:06 2017 ***************************************************************************
+                          Tue Apr 18 04:00:56 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.7 SP1.1
 Version: 11.7.1.14
-File Name: N:\Project\NewProject-4-10\motorCONTROL\designer\impl1\motorCONTROL.adb
+File Name: N:\Project\GIT\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL.adb
 Design Name: motorCONTROL  Design State: layout
-Last Saved: Mon Apr 10 21:14:31 2017
+Last Saved: Tue Apr 18 04:00:16 2017
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Apr 10 21:14:21 2017:
-        N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL.edn
-        N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
+Source File(s) Imported on Tue Apr 18 04:00:09 2017:
+        N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.edn
+        N:\Project\GIT\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,9 +50,9 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : N:\Project\NewProject-4-10\motorCONTROL\synthesis\motorCONTROL.edn
+Source      : N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\motorCONTROL.edn
 
-N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
+N:\Project\GIT\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.pdc
 Format      : EDIF
 Topcell     : motorCONTROL
 Speed grade : STD
@@ -553,16 +553,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Apr 10 21:14:40 2017
+Timing-driven Placer Started: Tue Apr 18 04:00:26 2017
 
-Placer Finished: Mon Apr 10 21:14:46 2017
-Total Placer CPU Time:     00:00:06
+Placer Finished: Tue Apr 18 04:00:33 2017
+Total Placer CPU Time:     00:00:07
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: motorCONTROL                    Started: Mon Apr 10 21:14:50 2017
+Design: motorCONTROL                    Started: Tue Apr 18 04:00:36 2017
 
  
 Iterative improvement...
@@ -570,9 +570,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: motorCONTROL                    
-Finished: Mon Apr 10 21:15:02 2017
-Total CPU Time:     00:00:11            Total Elapsed Time: 00:00:12
-Total Memory Usage: 172.1 Mbytes
+Finished: Tue Apr 18 04:00:48 2017
+Total CPU Time:     00:00:12            Total Elapsed Time: 00:00:12
+Total Memory Usage: 171.8 Mbytes
                         o - o - o - o - o - o
 
 

@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\syn_nfilter.exe  -link  -top  motorCONTROL  -multisrs  N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synwork\motorCONTROL_comp.srs  -osyn  N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synwork\motorCONTROL_mult.srs  -log  N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synlog\motorCONTROL_multi_srs_gen.srr 
+rc:0 success:1
+N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synwork\motorCONTROL_comp.srs|i|1492502392|46173
+N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synwork\motorCONTROL_mult.srs|o|1492502394|12022
+N:\Project\GIT\MotorControlWork\motorCONTROL\synthesis\synlog\motorCONTROL_multi_srs_gen.srr|o|1492502394|485
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin\syn_nfilter.exe|i|1449239724|3007488
+C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\syn_nfilter.exe|i|1449239726|3974144

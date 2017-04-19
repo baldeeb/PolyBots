@@ -11,27 +11,27 @@
     <hdl-type>Verilog</hdl-type>
     <project-description>
     </project-description>
-    <location>N:/eecs373/PolyBots/MotorControlWork/motorCONTROL/component/work/motorCONTROL</location>
-    <state>GENERATED ( Fri Apr 14 12:06:16 2017 )</state>
-    <swide-toolchain>SoftConsole workspace generated to N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\SoftConsole</swide-toolchain>
+    <location>N:/Project/GIT/MotorControlWork/motorCONTROL/component/work/motorCONTROL</location>
+    <state>GENERATED ( Sun Apr 16 18:15:18 2017 )</state>
+    <swide-toolchain>SoftConsole workspace generated to N:\Project\GIT\MotorControlWork\motorCONTROL\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
-    <file>N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v</file>
-    <file>N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v</file>
-    <file>N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v</file>
-    <file>N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
-    <file>N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.v</file>
-    <file>N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\motorCONTROL_MSS.v</file>
-    <file>N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
-    <file>N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell.v</file>
-    <file>N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\hdl\m_control.v</file>
+    <file>N:\Project\GIT\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v</file>
+    <file>N:\Project\GIT\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v</file>
+    <file>N:\Project\GIT\MotorControlWork\motorCONTROL\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v</file>
+    <file>N:\Project\GIT\MotorControlWork\motorCONTROL\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
+    <file>N:\Project\GIT\MotorControlWork\motorCONTROL\component\work\motorCONTROL\motorCONTROL.v</file>
+    <file>N:\Project\GIT\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\motorCONTROL_MSS.v</file>
+    <file>N:\Project\GIT\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\MSS_CCC_0\motorCONTROL_MSS_tmp_MSS_CCC_0_MSS_CCC.v</file>
+    <file>N:\Project\GIT\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell.v</file>
+    <file>N:\Project\GIT\MotorControlWork\motorCONTROL\hdl\m_control.v</file>
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>N:\Project\GIT\MotorControlWork\motorCONTROL\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
     <port-name>encoder[0]</port-name>
@@ -439,7 +439,7 @@ There is one APB3 Master interface.
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>HierSpiritDesign</core-exttype>
-    <core-location>N:/eecs373/PolyBots/MotorControlWork/motorCONTROL/component/work/motorCONTROL_MSS</core-location>
+    <core-location>N:/Project/GIT/MotorControlWork/motorCONTROL/component/work/motorCONTROL_MSS</core-location>
     <core-name>motorCONTROL_MSS_0</core-name>
   </core>
   <firmware_core type="FirmWareModule">

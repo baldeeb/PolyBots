@@ -1,7 +1,7 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Apr 10 21:14:10 2017
+# Timing Report written on Tue Apr 18 03:59:59 2017
 #
 
 
@@ -11,7 +11,7 @@ Requested Frequency:    25.0 MHz
 Wire load mode:         top
 Wire load model:        smartfusion
 Paths requested:        5
-Constraint File(s):    N:\Project\NewProject-4-10\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc
+Constraint File(s):    N:\Project\GIT\MotorControlWork\motorCONTROL\component\work\motorCONTROL_MSS\mss_tshell_syn.sdc
                        
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
 

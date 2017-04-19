@@ -2,7 +2,7 @@
 <device>
   <name>motorCONTROL</name>
   <version>1.0</version>
-  <description>CMSIS description for motorCONTROL.  Created by Microsemi SmartDesign on Fri Apr 14 12:05:57 2017</description>
+  <description>CMSIS description for motorCONTROL.  Created by Microsemi SmartDesign on Sun Apr 16 18:15:08 2017</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>

@@ -1,6 +1,6 @@
 <project name="motorCONTROL" version="1.1">
     <ProjectDirectory>
-        N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL_fp
+        N:\Project\GIT\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,17 +9,17 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL_fp\motorCONTROL.log
+        N:\Project\GIT\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL_fp\motorCONTROL.log
     </LogFile>
     <SerializationOption>
         Skip
     </SerializationOption>
     <programmer status="enable" type="FlashPro3" revision="UndefRev" connection="usb2.0">
         <name>
-            78999
+            79978
         </name>
         <id>
-            78999
+            79978
         </id>
     </programmer>
     <configuration>
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                N:\eecs373\PolyBots\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL_fp\motorCONTROL.pdb
+                N:\Project\GIT\MotorControlWork\motorCONTROL\designer\impl1\motorCONTROL_fp\motorCONTROL.pdb
             </filename>
             <local>
                 projectData\motorCONTROL.pdb
